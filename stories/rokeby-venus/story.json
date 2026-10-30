@@ -1,0 +1,786 @@
+{
+ "slug": "rokeby-venus",
+ "voice": "af_heart",
+ "speed": 1.0,
+ "tail": 1.0,
+ "meta": {
+  "painter": "Diego Velázquez",
+  "born": 1599,
+  "died": 1660,
+  "painting": "The Toilet of Venus ('The Rokeby Venus')",
+  "year": "1647–51",
+  "museum": "The National Gallery",
+  "city": "London",
+  "image": "venus",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Why did she take a meat cleaver <i>to this?</i>",
+  "name": "DIEGO VELÁZQUEZ",
+  "work": "The Rokeby Venus, 1647–51",
+  "focus": [
+   0.6,
+   0.48
+  ],
+  "answered_by": "why: Pankhurst's arrest + decades later: men gaping at it"
+ },
+ "say": {
+  "1914": "nineteen fourteen",
+  "1906": "nineteen oh six",
+  "1650": "sixteen fifty",
+  "10th": "tenth"
+ },
+ "ipa": {},
+ "_perf": "each phrase: [text, pause_after_s, speed_mult]. *word* = italic in captions only.",
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "A woman walks into the National Gallery...",
+     0.3,
+     0.95
+    ],
+    [
+     "with a *meat cleaver* up her sleeve.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "reveal",
+   "perf": [
+    [
+     "She's here for...",
+     0.4,
+     0.95
+    ],
+    [
+     "*this.*",
+     0.9,
+     0.8
+    ]
+   ]
+  },
+  {
+   "id": "velazquez",
+   "perf": [
+    [
+     "Velázquez painted her around 1650.",
+     0.35,
+     0.96
+    ],
+    [
+     "His only surviving female *nude.*",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "britain",
+   "perf": [
+    [
+     "In 1906, Britain raises a *fortune* to buy her.",
+     0.8,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "attack",
+   "perf": [
+    [
+     "Then, March 10th, 1914.",
+     0.45,
+     0.9
+    ],
+    [
+     "Mary Richardson, a *suffragette,*",
+     0.3,
+     0.95
+    ],
+    [
+     "stands there with a sketchbook...",
+     0.35,
+     0.95
+    ],
+    [
+     "then pulls out the *cleaver.*",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "guard",
+   "perf": [
+    [
+     "She smashes the glass.",
+     0.3,
+     0.95
+    ],
+    [
+     "The guard thinks it's the *skylight.*",
+     0.35,
+     0.95
+    ],
+    [
+     "Then he *slips* on the polished floor.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "damage",
+   "perf": [
+    [
+     "She hacks at Venus's back...",
+     0.3,
+     0.95
+    ],
+    [
+     "again,",
+     0.15,
+     0.92
+    ],
+    [
+     "and *again.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "why",
+   "perf": [
+    [
+     "Why?",
+     0.4,
+     0.88
+    ],
+    [
+     "The day before,",
+     0.2,
+     0.95
+    ],
+    [
+     "police had arrested her leader,",
+     0.25,
+     0.96
+    ],
+    [
+     "Emmeline *Pankhurst.*",
+     0.6,
+     0.92
+    ],
+    [
+     "The government was destroying Mrs Pankhurst,",
+     0.25,
+     0.96
+    ],
+    [
+     "she said...",
+     0.3,
+     0.95
+    ],
+    [
+     "so she'd destroy the most beautiful woman in *mythology.*",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "sentence",
+   "perf": [
+    [
+     "Six months in prison.",
+     0.35,
+     0.93
+    ],
+    [
+     "The *maximum.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "twist",
+   "perf": [
+    [
+     "Decades later,",
+     0.3,
+     0.95
+    ],
+    [
+     "she admitted another reason.",
+     0.45,
+     0.93
+    ],
+    [
+     "She didn't like how men *gaped* at her...",
+     0.3,
+     0.93
+    ],
+    [
+     "all day long.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cta",
+   "perf": [
+    [
+     "She's back in London.",
+     0.4,
+     0.95
+    ],
+    [
+     "Go see her.",
+     0.35,
+     0.93
+    ],
+    [
+     "Just... don't *gape.*",
+     0.0,
+     0.88
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Painted 1647–51; Velázquez's only surviving female nude",
+   "source": "https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus"
+  },
+  {
+   "claim": "Female nudes were extremely rare / forbidden in Inquisition-era Spain",
+   "source": "https://news.artnet.com/art-world/diego-velazquez-rokeby-venus-facts-2069892 ; en.wikipedia.org/wiki/Rokeby_Venus"
+  },
+  {
+   "claim": "Bought for the nation in 1906 after a public campaign by the National Art Collections Fund (£45,000)",
+   "source": "https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus ; https://theartnewspaper.com/2023/11/08/how-velazquezs-rokeby-venus-became-a-symbol-of-public-pride-and-then-political-protest"
+  },
+  {
+   "claim": "10 March 1914: suffragette Mary Richardson attacked it with a meat cleaver (concealed up her sleeve)",
+   "source": "https://artinsociety.com/from-the-rokeby-venus-to-fascism-pt-1-why-did-suffragettes-attack-artworks.html ; https://news.artnet.com/art-world/diego-velazquez-rokeby-venus-facts-2069892"
+  },
+  {
+   "claim": "She carried a sketchbook to look inconspicuous",
+   "source": "https://www.historytoday.com/miscellanies/deeds-not-words-slashing-rokeby-venus"
+  },
+  {
+   "claim": "The attendant first took the breaking glass for a skylight, then slipped on the polished floor",
+   "source": "https://artinsociety.com/from-the-rokeby-venus-to-fascism-pt-1-why-did-suffragettes-attack-artworks.html ; History Today (an attendant 'fell to the ground')"
+  },
+  {
+   "claim": "Cuts on Venus's back (visible later as discolouration along her spine); number reported as 7 or 8, so not stated",
+   "source": "History Today ; artnet ; The Art Newspaper"
+  },
+  {
+   "claim": "Protest at the arrest of Emmeline Pankhurst the previous day; 'I have tried to destroy the picture of the most beautiful woman in mythological history as a protest against the Government for destroying Mrs Pankhurst'",
+   "source": "artnet ; artinsociety"
+  },
+  {
+   "claim": "Sentenced to six months, the maximum for the offence",
+   "source": "https://artinsociety.com/from-the-rokeby-venus-to-fascism-pt-1-why-did-suffragettes-attack-artworks.html"
+  },
+  {
+   "claim": "Decades later: 'I didn't like the way men visitors to the gallery gaped at it all day' (quoted in Lynda Nead, The Female Nude, 1992)",
+   "source": "artinsociety ; History Today"
+  },
+  {
+   "claim": "Restored; on display at the National Gallery, London",
+   "source": "artnet ; National Gallery"
+  }
+ ],
+ "caption": "A woman walked into the National Gallery with a meat cleaver up her sleeve.\n\nOn 10 March 1914, suffragette Mary Richardson attacked Velázquez's Rokeby Venus, his only surviving female nude, which Britain had raised a fortune to buy in 1906. The guard mistook the breaking glass for a skylight, then slipped on the polished floor.\n\nHer statement: she had tried to destroy \"the most beautiful woman in mythological history\" in protest at the government's treatment of Emmeline Pankhurst, arrested the day before. Decades later she gave another reason: she didn't like the way men visitors gaped at it all day.\n\nThe painting was restored and still hangs in London.\n\n🖤 Was it vandalism or protest?",
+ "caption_short": "1914: a suffragette took a meat cleaver to Velázquez's Venus. Decades later she admitted a reason she hadn't given at the time. 🖤",
+ "youtube_title": "Why did a suffragette take a meat cleaver to this painting?",
+ "hashtags": [
+  "#velazquez",
+  "#rokebyvenus",
+  "#suffragettes",
+  "#arthistory",
+  "#nationalgallery",
+  "#london",
+  "#truecrime",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety"
+ ],
+ "images": {
+  "venus": {
+   "file": "src/venus.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "mirror": [
+     0.42,
+     0.37
+    ],
+    "head": [
+     0.82,
+     0.38
+    ],
+    "back": [
+     0.76,
+     0.55
+    ],
+    "hip": [
+     0.55,
+     0.66
+    ],
+    "legs": [
+     0.27,
+     0.66
+    ],
+    "cupid": [
+     0.2,
+     0.28
+    ],
+    "center": [
+     0.55,
+     0.5
+    ]
+   }
+  },
+  "damaged": {
+   "file": "src/damaged.jpg",
+   "points": {
+    "cleaver": [
+     0.86,
+     0.12
+    ],
+    "cuts_back": [
+     0.77,
+     0.52
+    ],
+    "cuts_hip": [
+     0.6,
+     0.62
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "meninas": {
+   "file": "src/meninas.jpg",
+   "points": {
+    "velazquez": [
+     0.235,
+     0.53
+    ]
+   }
+  },
+  "pankhurst": {
+   "file": "src/pankhurst.jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.21
+    ],
+    "bust": [
+     0.52,
+     0.35
+    ]
+   }
+  },
+  "beltrame": {
+   "file": "src/beltrame_t.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "top": [
+     0.55,
+     0.22
+    ],
+    "floor": [
+     0.35,
+     0.8
+    ],
+    "woman": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "richardson": {
+   "file": "src/richardson.jpg",
+   "points": {
+    "face": [
+     0.62,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "richardson",
+   "kind": "image",
+   "from": "center@0.62",
+   "to": "center@0.66",
+   "gray": 1,
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "hook.9-0.05",
+   "img": "damaged",
+   "kind": "image",
+   "from": "cleaver@1.2",
+   "to": "cleaver@1.32",
+   "gray": 1,
+   "hit": "small"
+  },
+  {
+   "at": "reveal-0.08",
+   "img": "venus",
+   "from": "mirror@2.4",
+   "to": "mirror@2.65",
+   "dim": 0.45
+  },
+  {
+   "at": "reveal.3-0.03",
+   "img": "venus",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "velazquez-0.08",
+   "img": "meninas",
+   "kind": "image",
+   "from": "velazquez@2.3",
+   "to": "velazquez@2.55",
+   "gray": 0.25
+  },
+  {
+   "at": "velazquez.5-0.05",
+   "img": "venus",
+   "from": "legs@1.6",
+   "to": "back@1.7",
+   "sway": 0.008
+  },
+  {
+   "at": "britain-0.08",
+   "img": "venus",
+   "from": "full@0.345",
+   "to": "full@0.33",
+   "frame": true,
+   "sway": 0.003
+  },
+  {
+   "at": "attack-0.08",
+   "img": "richardson",
+   "kind": "image",
+   "from": "face@0.68",
+   "to": "face@0.74",
+   "gray": 1,
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "attack.8-0.05",
+   "img": "venus",
+   "from": "full@1.08",
+   "to": "full@1.14",
+   "gray": 0.6,
+   "dim": 0.35,
+   "sway": 0.004
+  },
+  {
+   "at": "attack.13-0.05",
+   "img": "damaged",
+   "kind": "image",
+   "from": "cleaver@1.2",
+   "to": "cleaver@1.3",
+   "gray": 1,
+   "hit": "small"
+  },
+  {
+   "at": "guard-0.08",
+   "img": "beltrame",
+   "kind": "image",
+   "from": "center@0.74",
+   "to": "center@0.78",
+   "frame": true,
+   "hit": "small"
+  },
+  {
+   "at": "guard.4-0.05",
+   "img": "beltrame",
+   "kind": "image",
+   "from": "top@1.0",
+   "to": "top@1.06"
+  },
+  {
+   "at": "guard.10-0.05",
+   "img": "beltrame",
+   "kind": "image",
+   "from": "floor@1.3",
+   "to": "floor@1.4"
+  },
+  {
+   "at": "damage-0.08",
+   "img": "venus",
+   "from": "back@2.0",
+   "to": "back@2.2"
+  },
+  {
+   "at": "damage.5-0.04",
+   "img": "damaged",
+   "kind": "image",
+   "from": "cuts_back@1.5",
+   "to": "cuts_back@1.62",
+   "gray": 1,
+   "hit": "small"
+  },
+  {
+   "at": "damage.7-0.04",
+   "img": "damaged",
+   "kind": "image",
+   "from": "cuts_hip@1.55",
+   "to": "cuts_hip@1.7",
+   "gray": 1,
+   "hit": "small"
+  },
+  {
+   "at": "why-0.08",
+   "img": "damaged",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "why.4-0.05",
+   "img": "pankhurst",
+   "kind": "image",
+   "from": "face@1.45",
+   "to": "face@1.6",
+   "gray": 0.5
+  },
+  {
+   "at": "why.11-0.05",
+   "img": "pankhurst",
+   "kind": "image",
+   "from": "bust@1.08",
+   "to": "bust@1.16",
+   "gray": 0.5
+  },
+  {
+   "at": "why.19-0.05",
+   "img": "venus",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012
+  },
+  {
+   "at": "sentence-0.08",
+   "img": "richardson",
+   "kind": "image",
+   "from": "face@0.66",
+   "to": "face@0.7",
+   "gray": 1,
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "twist-0.08",
+   "img": "venus",
+   "from": "back@1.8",
+   "to": "back@1.9",
+   "dim": 0.2
+  },
+  {
+   "at": "twist.6-0.05",
+   "img": "venus",
+   "from": "hip@1.4",
+   "to": "hip@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "twist.14-0.05",
+   "img": "venus",
+   "from": "full@1.12",
+   "to": "full@1.0",
+   "dolly": [
+    0.12,
+    0
+   ],
+   "sway": 0.01
+  },
+  {
+   "at": "cta-0.06",
+   "img": "venus",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "sway": 0.01
+  },
+  {
+   "at": "cta.4-0.05",
+   "img": "venus",
+   "from": "mirror@2.0",
+   "to": "mirror@2.3"
+  },
+  {
+   "at": "cta.7-0.05",
+   "img": "venus",
+   "from": "mirror@2.6",
+   "to": "mirror@2.95",
+   "hit": "small"
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "hook.9",
+   "to": "reveal-0.1",
+   "text": "THE WEAPON · PHOTOGRAPHED 1914"
+  },
+  {
+   "type": "label",
+   "from": "velazquez",
+   "to": "velazquez.5-0.1",
+   "text": "VELÁZQUEZ · SELF-PORTRAIT IN LAS MENINAS"
+  },
+  {
+   "type": "label",
+   "from": "britain",
+   "to": "attack-0.1",
+   "text": "LONDON · 1906"
+  },
+  {
+   "type": "label",
+   "from": "attack",
+   "to": "attack.8-0.1",
+   "text": "LONDON · 10 MARCH 1914"
+  },
+  {
+   "type": "credit",
+   "from": "attack.4",
+   "to": "attack.8-0.1",
+   "text": "MARY RICHARDSON · POLICE PHOTO, c. 1914"
+  },
+  {
+   "type": "label",
+   "from": "guard",
+   "to": "damage-0.1",
+   "text": "ITALIAN PRESS · MARCH 1914"
+  },
+  {
+   "type": "label",
+   "from": "damage.5",
+   "to": "why.4-0.1",
+   "text": "THE DAMAGE · PHOTOGRAPHED 1914"
+  },
+  {
+   "type": "label",
+   "from": "why.4",
+   "to": "why.19-0.1",
+   "text": "EMMELINE PANKHURST · 1913"
+  },
+  {
+   "type": "stamp",
+   "from": "sentence.4",
+   "to": "twist-0.1",
+   "text": "6 MONTHS"
+  },
+  {
+   "type": "pin",
+   "from": "cta.1",
+   "to": "cta.7-0.05",
+   "text": "THE NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 0,
+  "bar": 5.0,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    48,
+    55,
+    60
+   ],
+   [
+    43,
+    50,
+    59
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "attack-0.2",
+    "damage$+0.3"
+   ],
+   "drop": [
+    "guard.10-0.05",
+    "guard$+0.5"
+   ],
+   "choir": [
+    "why.19",
+    "sentence-0.2"
+   ]
+  },
+  "heartbeat": [
+   "attack.8",
+   "attack.13-0.1"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "guard.12",
+   "fx": "whoosh",
+   "gain": 0.3
+  },
+  {
+   "at": "sentence.4",
+   "fx": "impact",
+   "gain": 0.55
+  },
+  {
+   "at": "cta.9",
+   "fx": "chime",
+   "gain": 0.4
+  }
+ ]
+}

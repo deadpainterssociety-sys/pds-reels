@@ -1,0 +1,819 @@
+{
+ "slug": "mona-lisa-theft",
+ "voice": "af_heart",
+ "speed": 0.92,
+ "tail": 1.0,
+ "meta": {
+  "painter": "Leonardo da Vinci",
+  "born": 1452,
+  "died": 1519,
+  "painting": "Mona Lisa",
+  "year": "c. 1503–1519",
+  "museum": "Musée du Louvre",
+  "city": "Paris",
+  "image": "mona",
+  "image_credit": "Musée du Louvre / C2RMF, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Who walked out <i>with her?</i>",
+  "name": "LEONARDO DA VINCI",
+  "work": "Mona Lisa, c. 1503–19",
+  "focus": [
+   0.5,
+   0.36
+  ],
+  "answered_by": "thief + reveal: Vincenzo Peruggia, a Louvre handyman"
+ },
+ "say": {
+  "1911": "nineteen eleven",
+  "1913": "nineteen thirteen"
+ },
+ "ipa": {
+  "Peruggia": "pɛɹˈuːdʒə"
+ },
+ "_perf": "each phrase: [text, pause_after_s, speed_mult]. *word* = italic in captions only.",
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "One morning in 1911,",
+     0.35,
+     0.95
+    ],
+    [
+     "a man walked out of the Louvre...",
+     0.45,
+     0.95
+    ],
+    [
+     "with *this* under his smock.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "fame",
+   "perf": [
+    [
+     "Back then,",
+     0.3,
+     0.95
+    ],
+    [
+     "she wasn't even the most famous painting in her room.",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "thief",
+   "perf": [
+    [
+     "The thief, Vincenzo Peruggia,",
+     0.35,
+     0.95
+    ],
+    [
+     "had worked there.",
+     0.4,
+     0.95
+    ],
+    [
+     "He'd helped install her *glass case.*",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "how",
+   "perf": [
+    [
+     "He lifted her off the wall,",
+     0.35,
+     0.95
+    ],
+    [
+     "slipped her out of the frame...",
+     0.4,
+     0.95
+    ],
+    [
+     "and was gone.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "nobody",
+   "perf": [
+    [
+     "Nobody noticed...",
+     0.45,
+     0.93
+    ],
+    [
+     "for *twenty-eight hours.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "painter",
+   "perf": [
+    [
+     "A painter came to paint her,",
+     0.35,
+     0.95
+    ],
+    [
+     "and found four empty *hooks.*",
+     0.5,
+     0.93
+    ],
+    [
+     "The guards assumed she was being *photographed.*",
+     0.8,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "panic",
+   "perf": [
+    [
+     "The Louvre shut for a week.",
+     0.4,
+     0.95
+    ],
+    [
+     "Even *Picasso* was questioned.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "crowds",
+   "perf": [
+    [
+     "Crowds queued...",
+     0.35,
+     0.95
+    ],
+    [
+     "just to stare at the *empty wall.*",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "florence",
+   "perf": [
+    [
+     "Two years later,",
+     0.35,
+     0.95
+    ],
+    [
+     "Peruggia took her to *Florence*",
+     0.35,
+     0.95
+    ],
+    [
+     "and tried to sell her.",
+     0.5,
+     0.95
+    ],
+    [
+     "The dealer called the police.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "motive",
+   "perf": [
+    [
+     "He said he was bringing her *home*, to Italy.",
+     0.5,
+     0.94
+    ],
+    [
+     "He served seven months.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "She came back to Paris...",
+     0.4,
+     0.95
+    ],
+    [
+     "the most *famous* painting in the world.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "She hangs in the Louvre, in Paris.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Stolen 21 August 1911 (a Monday, museum closed) in the early morning",
+   "source": "https://www.historyhit.com/culture/theft-mona-lisa/ ; https://europeana.eu/en/blog/did-picasso-steal-the-mona-lisa ; https://www.npr.org/2011/07/30/138800110/the-theft-that-made-the-mona-lisa-a-masterpiece"
+  },
+  {
+   "claim": "Before the theft it 'wasn't even the most famous painting in its gallery' (Zug, NPR)",
+   "source": "https://www.npr.org/2011/07/30/138800110/the-theft-that-made-the-mona-lisa-a-masterpiece"
+  },
+  {
+   "claim": "Vincenzo Peruggia, a handyman who had installed the protective glass cases; dressed in the white smock worn by employees",
+   "source": "NPR ; History Hit"
+  },
+  {
+   "claim": "Removed it from its frame and hid it under his clothes; walked out",
+   "source": "History Hit ; https://history.com/this-day-in-history/theft-of-mona-lisa-is-discovered"
+  },
+  {
+   "claim": "28 hours before anyone noticed the four bare hooks; a painter (Louis Béroud) asked; guards assumed it was being photographed",
+   "source": "NPR ; History Hit"
+  },
+  {
+   "claim": "Louvre closed for a week; Apollinaire arrested; Picasso suspected and questioned before the judge",
+   "source": "NPR ; History Hit ; Europeana"
+  },
+  {
+   "claim": "Crowds queued to see the empty space (Kafka among them)",
+   "source": "History Hit ; NPR"
+  },
+  {
+   "claim": "Missing 28 months; Dec 1913 Peruggia tried to sell it to Florence dealer Alfredo Geri, who brought in Uffizi director Giovanni Poggi; arrested that day",
+   "source": "History Hit ; NPR"
+  },
+  {
+   "claim": "Claimed patriotic motive (return it to Italy); served seven months of a one-year sentence",
+   "source": "History.com ; History Hit"
+  },
+  {
+   "claim": "Returned to the Louvre 4 January 1914; the theft made it one of the most famous artworks in the world",
+   "source": "History Hit ; NPR"
+  }
+ ],
+ "caption": "One morning in 1911, a man walked out of the Louvre with the Mona Lisa under his smock.\n\nVincenzo Peruggia had worked at the museum and had helped install her protective glass case. Nobody noticed for 28 hours: the guards assumed she was being photographed. The Louvre closed for a week, Apollinaire was arrested, Picasso was questioned, and crowds queued to stare at the empty wall.\n\nTwo years later Peruggia tried to sell her to a dealer in Florence, who called in the Uffizi's director. He was arrested that day.\n\nBefore the theft she wasn't even the most famous painting in her room. She came back the most famous painting in the world.\n\n🖤 Would you have noticed she was gone?",
+ "caption_short": "1911: a handyman walked out of the Louvre with the Mona Lisa under his smock. Nobody noticed for 28 hours. 🖤",
+ "youtube_title": "Who walked out of the Louvre with the Mona Lisa?",
+ "hashtags": [
+  "#monalisa",
+  "#leonardodavinci",
+  "#louvre",
+  "#arthistory",
+  "#arttheft",
+  "#paris",
+  "#truecrime",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety"
+ ],
+ "images": {
+  "mona": {
+   "file": "src/mona.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.43,
+     0.27
+    ],
+    "eyes": [
+     0.43,
+     0.235
+    ],
+    "smile": [
+     0.43,
+     0.31
+    ],
+    "hands": [
+     0.45,
+     0.8
+    ],
+    "center": [
+     0.5,
+     0.42
+    ]
+   }
+  },
+  "peruggia": {
+   "file": "src/peruggia.jpg",
+   "points": {
+    "front": [
+     0.66,
+     0.4
+    ],
+    "profile": [
+     0.32,
+     0.4
+    ],
+    "card": [
+     0.5,
+     0.42
+    ],
+    "prints": [
+     0.5,
+     0.82
+    ]
+   }
+  },
+  "excelsior": {
+   "file": "src/excelsior.jpg",
+   "points": {
+    "top": [
+     0.5,
+     0.22
+    ],
+    "row1": [
+     0.33,
+     0.2
+    ],
+    "p3": [
+     0.62,
+     0.2
+    ],
+    "walkout": [
+     0.15,
+     0.83
+    ],
+    "portrait": [
+     0.47,
+     0.52
+    ],
+    "headline": [
+     0.5,
+     0.11
+    ]
+   }
+  },
+  "empty": {
+   "file": "src/empty_wall.jpg",
+   "points": {
+    "hooks": [
+     0.46,
+     0.41
+    ],
+    "h1": [
+     0.395,
+     0.345
+    ],
+    "h2": [
+     0.535,
+     0.345
+    ],
+    "h3": [
+     0.345,
+     0.49
+    ],
+    "h4": [
+     0.575,
+     0.49
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "uffizi": {
+   "file": "src/uffizi1913.jpg",
+   "points": {
+    "painting": [
+     0.78,
+     0.4
+    ],
+    "men": [
+     0.38,
+     0.4
+    ],
+    "center": [
+     0.6,
+     0.45
+    ]
+   }
+  }
+ },
+ "maps": {
+  "route": {
+   "bbox": [
+    [
+     0.5,
+     42.6
+    ],
+    [
+     13.5,
+     49.6
+    ]
+   ],
+   "focus": [
+    "250",
+    "380"
+   ],
+   "cities": {
+    "paris": [
+     2.35,
+     48.86
+    ],
+    "florence": [
+     11.25,
+     43.77
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "excelsior",
+   "kind": "image",
+   "from": "top@1.25",
+   "to": "top@1.35",
+   "gray": 1,
+   "dim": 0.1
+  },
+  {
+   "at": "hook.12-0.03",
+   "img": "mona",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "fame-0.08",
+   "img": "mona",
+   "from": "full@0.6",
+   "to": "full@0.56",
+   "frame": true,
+   "sway": 0.003
+  },
+  {
+   "at": "thief-0.08",
+   "img": "peruggia",
+   "kind": "image",
+   "from": "front@1.5",
+   "to": "front@1.65",
+   "gray": 1
+  },
+  {
+   "at": "thief.7-0.05",
+   "img": "mona",
+   "from": "face@1.6",
+   "to": "face@1.8",
+   "sway": 0.006
+  },
+  {
+   "at": "how-0.08",
+   "img": "excelsior",
+   "kind": "image",
+   "from": "row1@1.45",
+   "to": "row1@1.55",
+   "gray": 1
+  },
+  {
+   "at": "how.6-0.05",
+   "img": "excelsior",
+   "kind": "image",
+   "from": "p3@1.5",
+   "to": "p3@1.6",
+   "gray": 1
+  },
+  {
+   "at": "how.12-0.05",
+   "img": "excelsior",
+   "kind": "image",
+   "from": "walkout@1.45",
+   "to": "walkout@1.55",
+   "gray": 1
+  },
+  {
+   "at": "nobody-0.08",
+   "img": "empty",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 1
+  },
+  {
+   "at": "painter-0.08",
+   "img": "empty",
+   "kind": "image",
+   "from": "hooks@1.35",
+   "to": "hooks@1.45",
+   "gray": 1
+  },
+  {
+   "at": "painter.11-0.05",
+   "img": "mona",
+   "from": "full@1.0",
+   "to": "full@1.04",
+   "gray": 1,
+   "contrast": 1.2
+  },
+  {
+   "at": "panic-0.08",
+   "img": "empty",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "panic.6-0.05",
+   "img": "mona",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "gray": 1,
+   "dim": 0.55
+  },
+  {
+   "at": "crowds-0.08",
+   "img": "empty",
+   "kind": "image",
+   "from": "hooks@1.3",
+   "to": "center@1.0",
+   "gray": 1
+  },
+  {
+   "at": "florence-0.08",
+   "kind": "map",
+   "map": {
+    "id": "route",
+    "pins": [
+     {
+      "city": "paris",
+      "at": "florence-0.05",
+      "label": "Paris"
+     },
+     {
+      "city": "florence",
+      "at": "florence.7",
+      "label": "Florence"
+     }
+    ],
+    "route": {
+     "from": "paris",
+     "to": "florence",
+     "at": "florence.3",
+     "to_at": "florence.7"
+    }
+   }
+  },
+  {
+   "at": "florence.13-0.05",
+   "img": "excelsior",
+   "kind": "image",
+   "from": "portrait@1.6",
+   "to": "portrait@1.75",
+   "gray": 1,
+   "hit": "small"
+  },
+  {
+   "at": "motive-0.08",
+   "img": "uffizi",
+   "kind": "image",
+   "from": "center@1.12",
+   "to": "painting@1.3",
+   "gray": 1
+  },
+  {
+   "at": "motive.9-0.05",
+   "img": "peruggia",
+   "kind": "image",
+   "from": "card@1.05",
+   "to": "card@1.12",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "mona",
+   "from": "full@1.08",
+   "to": "full@1.0",
+   "dolly": [
+    0.12,
+    0
+   ],
+   "sway": 0.012
+  },
+  {
+   "at": "payoff.5-0.05",
+   "img": "mona",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "mona",
+   "from": "face@1.7",
+   "to": "face@1.95",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": 0.15,
+   "to": "hook.12-0.1",
+   "text": "EXCELSIOR · RECONSTRUCTION OF THE THEFT"
+  },
+  {
+   "type": "label",
+   "from": "thief",
+   "to": "thief.7-0.1",
+   "text": "VINCENZO PERUGGIA · POLICE RECORD, 1909"
+  },
+  {
+   "type": "label",
+   "from": "how",
+   "to": "nobody-0.1",
+   "text": "PARIS · AUGUST 1911"
+  },
+  {
+   "type": "label",
+   "from": "nobody",
+   "to": "painter.11-0.1",
+   "text": "THE LOUVRE · AUGUST 1911"
+  },
+  {
+   "type": "hotspot",
+   "at": "painter.8",
+   "to": "painter.11-0.05",
+   "img": "empty",
+   "point": "h1"
+  },
+  {
+   "type": "hotspot",
+   "at": "painter.8+0.12",
+   "to": "painter.11-0.05",
+   "img": "empty",
+   "point": "h2"
+  },
+  {
+   "type": "hotspot",
+   "at": "painter.8+0.24",
+   "to": "painter.11-0.05",
+   "img": "empty",
+   "point": "h3"
+  },
+  {
+   "type": "hotspot",
+   "at": "painter.8+0.36",
+   "to": "painter.11-0.05",
+   "img": "empty",
+   "point": "h4"
+  },
+  {
+   "type": "stamp",
+   "from": "panic.3",
+   "to": "panic.6-0.05",
+   "text": "CLOSED"
+  },
+  {
+   "type": "title",
+   "from": "panic.6",
+   "to": "panic$+0.35",
+   "kicker": "SUSPECT, QUESTIONED BY THE JUDGE",
+   "text": "Pablo <i>Picasso</i>"
+  },
+  {
+   "type": "label",
+   "from": "florence.13",
+   "to": "motive-0.1",
+   "text": "EXCELSIOR · 14 DECEMBER 1913"
+  },
+  {
+   "type": "label",
+   "from": "motive",
+   "to": "motive.9-0.1",
+   "text": "FLORENCE · THE UFFIZI · DECEMBER 1913"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSÉE DU LOUVRE · PARIS"
+  }
+ ],
+ "nocap": [
+  [
+   "panic.6",
+   "panic$+0.35"
+  ]
+ ],
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "nobody-0.2",
+    "crowds$+0.2"
+   ],
+   "drop": [
+    "painter.11-0.05",
+    "painter$+0.3"
+   ],
+   "choir": [
+    "payoff",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.12-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "painter.8",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "painter.8+0.12",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "painter.8+0.24",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "painter.8+0.36",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "painter.17",
+   "fx": "shutter",
+   "gain": 0.6
+  },
+  {
+   "at": "panic.3",
+   "fx": "impact",
+   "gain": 0.55
+  }
+ ]
+}

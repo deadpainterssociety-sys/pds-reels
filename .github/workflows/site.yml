@@ -1,0 +1,21 @@
+# Publish the small public site (privacy/terms pages and the TikTok login landing page) whenever site/ changes.
+# The evening publish job redeploys it together with the day's video.
+name: site
+on:
+  push:
+    branches: [main]
+    paths: ["site/**"]
+  workflow_dispatch: {}
+concurrency: { group: pages, cancel-in-progress: false }
+permissions: { contents: read, pages: write, id-token: write }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.pages.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - id: pages
+        uses: actions/deploy-pages@v4

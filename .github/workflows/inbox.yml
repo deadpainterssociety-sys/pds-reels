@@ -1,0 +1,101 @@
+# Every 15 minutes during the day: read your Telegram answers, start revisions, and publish approved reels in the
+# evening window (config.json publish_window). Each publisher remembers what it posted, so nothing is ever posted twice.
+name: inbox
+on:
+  schedule:
+    - cron: "*/15 6-21 * * *"     # 07:00-22:45 Madrid (winter) / 08:00-23:45 (summer)
+  workflow_dispatch:
+    inputs:
+      now: { description: "Publish approved reels now, ignoring the time window", type: boolean, default: false }
+concurrency: { group: inbox, cancel-in-progress: false }
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: { contents: write, actions: write }
+    outputs:
+      slug: ${{ steps.pick.outputs.slug }}
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: bot
+        run: python3 automation/bot.py poll
+      - id: pick
+        env: { NOW: "${{ inputs.now || steps.bot.outputs.post_now }}" }
+        run: python3 automation/publish.py decide $([ "$NOW" = "true" ] || [ "$NOW" = "1" ] && echo --now)
+      - run: ./automation/commit.sh "inbox $(date -u +%FT%H:%M)"
+      - name: Start revisions you asked for
+        if: steps.bot.outputs.revise != '' && steps.bot.outputs.revise != '[]'
+        env: { REVISE: "${{ steps.bot.outputs.revise }}" }
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          for r in json.loads(os.environ["REVISE"]):
+              subprocess.run(["gh", "workflow", "run", "revise.yml", "-f", f"slug={r['slug']}", "-f", f"feedback={r['feedback']}"], check=True)
+          PY
+      - name: Write more stories now
+        if: steps.bot.outputs.stories != ''
+        run: gh workflow run stories.yml -f count=${{ steps.bot.outputs.stories }}
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ The inbox check failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+  publish:
+    needs: poll
+    if: needs.poll.outputs.slug != ''
+    concurrency: { group: pages, cancel-in-progress: false }
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions: { contents: write, pages: write, id-token: write }
+    environment: { name: github-pages, url: "${{ steps.pages.outputs.page_url }}" }
+    env:
+      SLUG: ${{ needs.poll.outputs.slug }}
+      GITHUB_TOKEN: ${{ github.token }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GH_PAT: ${{ secrets.GH_PAT }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ github.ref_name }}" }                 # the branch tip: includes the state the poll job just pushed
+      - name: Fetch the exact files you approved
+        run: |
+          python3 automation/release.py download "$SLUG"
+          command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
+      - name: Put the video at a public URL (GitHub Pages) for Instagram
+        id: site
+        if: env.IG_ACCESS_TOKEN != ''
+        run: |
+          python3 -c "import json,sys; sys.exit(0 if json.load(open('config.json'))['platforms'].get('instagram', True) else 1)" || exit 0
+          mkdir -p site/media
+          cp "stories/$SLUG/out/$SLUG.mp4" "site/media/$SLUG.mp4"
+          cp "stories/$SLUG/out/cover.jpg" "site/media/$SLUG-cover.jpg"
+      - if: hashFiles('site/media/*.mp4') != ''
+        uses: actions/configure-pages@v5
+      - if: hashFiles('site/media/*.mp4') != ''
+        uses: actions/upload-pages-artifact@v3
+        with: { path: site }
+      - if: hashFiles('site/media/*.mp4') != ''
+        id: pages
+        uses: actions/deploy-pages@v4
+      - name: Wait until the video is reachable
+        if: steps.pages.outcome == 'success'
+        run: |
+          for i in $(seq 1 24); do
+            code=$(curl -s -o /dev/null -w "%{http_code}" -I "${{ steps.pages.outputs.page_url }}media/$SLUG.mp4") && [ "$code" = "200" ] && exit 0
+            sleep 5
+          done; echo "video not reachable yet"; exit 1
+      - name: Publish (Instagram, YouTube, TikTok)
+        run: python3 automation/publish.py run "$SLUG" "${{ steps.pages.outputs.page_url }}"
+      - if: always()
+        run: ./automation/commit.sh "published $SLUG"
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ Publishing failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

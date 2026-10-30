@@ -1,0 +1,15 @@
+name: setup
+description: Python, Node, ffmpeg, models (cached) and the Remotion studio for the reel pipeline
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with: { python-version: "3.12", cache: pip, cache-dependency-path: requirements.txt }
+    - uses: actions/setup-node@v4
+      with: { node-version: "22", cache: npm, cache-dependency-path: studio/package-lock.json }
+    - uses: actions/cache@v4
+      with: { path: models, key: "models-v1-${{ hashFiles('setup.sh') }}" }
+    - shell: bash
+      run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+    - shell: bash
+      run: ./setup.sh

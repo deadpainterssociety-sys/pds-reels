@@ -1,0 +1,775 @@
+{
+ "slug": "night-watch-cut",
+ "voice": "af_heart",
+ "speed": 0.92,
+ "tail": 1.0,
+ "meta": {
+  "painter": "Rembrandt van Rijn",
+  "born": 1606,
+  "died": 1669,
+  "painting": "The Night Watch",
+  "year": "1642",
+  "museum": "Rijksmuseum",
+  "city": "Amsterdam",
+  "image": "nightwatch",
+  "image_credit": "Rijksmuseum, Amsterdam (on loan from the City of Amsterdam), via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Why is it <i>missing a piece?</i>",
+  "name": "REMBRANDT",
+  "work": "The Night Watch, 1642",
+  "focus": [
+   0.47,
+   0.66
+  ],
+  "answered_by": "1715: too big for its new wall in Amsterdam's town hall, so it was cut down on every side",
+  "zoom": 1.18
+ },
+ "say": {
+  "1642": "sixteen forty-two",
+  "1715": "seventeen fifteen",
+  "2021": "twenty twenty-one"
+ },
+ "ipa": {
+  "Rijksmuseum": "ɹˈaɪksmjuːzˌiːəm"
+ },
+ "_perf": "each phrase: [text, pause_after_s, speed_mult]. *word* = italic in captions only.",
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This is Rembrandt's most famous painting.",
+     0.4,
+     0.95
+    ],
+    [
+     "And it's missing *a piece.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "paid",
+   "perf": [
+    [
+     "In 1642,",
+     0.3,
+     0.95
+    ],
+    [
+     "Amsterdam militiamen paid him to paint them,",
+     0.35,
+     0.95
+    ],
+    [
+     "to hang in their *hall.*",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "move",
+   "perf": [
+    [
+     "In 1715,",
+     0.3,
+     0.95
+    ],
+    [
+     "it was moved to the town hall.",
+     0.4,
+     0.95
+    ],
+    [
+     "And it was too *big* for the wall.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cut",
+   "perf": [
+    [
+     "So they cut it down.",
+     0.5,
+     0.88
+    ],
+    [
+     "A strip off every side.",
+     0.35,
+     0.95
+    ],
+    [
+     "Over two feet off the left alone.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "lost",
+   "perf": [
+    [
+     "Gone with it:",
+     0.35,
+     0.95
+    ],
+    [
+     "two militiamen...",
+     0.3,
+     0.95
+    ],
+    [
+     "and a *child.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "never",
+   "perf": [
+    [
+     "The pieces were never found.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "copy",
+   "perf": [
+    [
+     "We know what was there",
+     0.3,
+     0.95
+    ],
+    [
+     "thanks to a small copy,",
+     0.3,
+     0.95
+    ],
+    [
+     "made before the cut.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "ai",
+   "perf": [
+    [
+     "In 2021,",
+     0.3,
+     0.95
+    ],
+    [
+     "the Rijksmuseum used that copy,",
+     0.3,
+     0.95
+    ],
+    [
+     "and an AI trained on Rembrandt,",
+     0.3,
+     0.95
+    ],
+    [
+     "to rebuild the missing strips,",
+     0.35,
+     0.95
+    ],
+    [
+     "and hung them back around the original.",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "For a few months,",
+     0.3,
+     0.95
+    ],
+    [
+     "for the first time in three hundred years,",
+     0.35,
+     0.95
+    ],
+    [
+     "the Night Watch was *complete* again.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Rijksmuseum, in Amsterdam.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Rembrandt's most famous painting; completed 1642; commissioned by Captain Frans Banninck Cocq and members of his civic militia company, to hang in the banquet hall of the Kloveniersdoelen (musketeers' hall)",
+   "source": "https://en.wikipedia.org/wiki/The_Night_Watch"
+  },
+  {
+   "claim": "In 1715 it moved to Amsterdam's City Hall (now the Royal Palace on Dam Square); too large for its new location, it was reduced: strips cut from all four sides, the largest from the left",
+   "source": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://nationalgallery.org.uk/paintings/NG289 (says 'probably in 1715')"
+  },
+  {
+   "claim": "Strips removed: left 64.4 cm (≈2 ft 1 in), top 23.3 cm, bottom 11.3 cm, right 7 cm",
+   "source": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://www.thehistoryblog.com/archives/date/2021/06/24"
+  },
+  {
+   "claim": "Lost on the left: three figures on a bridge — two militiamen and a young child",
+   "source": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://nationalgallery.org.uk/paintings/NG289"
+  },
+  {
+   "claim": "The cut pieces have never been found",
+   "source": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://news.artnet.com/art-world/operation-night-watch-1982686"
+  },
+  {
+   "claim": "The original composition is known from a much smaller copy attributed to Gerrit Lundens (66.8 x 85.4 cm), probably painted 1642–1655, before the cut; National Gallery London, on loan to the Rijksmuseum",
+   "source": "https://nationalgallery.org.uk/paintings/NG289 ; https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://news.artnet.com/art-world/operation-night-watch-1982686"
+  },
+  {
+   "claim": "2021 (Operation Night Watch): neural networks trained on Rembrandt's technique and colour, using the Lundens copy as the basis, generated the missing parts; printed on panels and temporarily placed around the original",
+   "source": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://news.artnet.com/art-world/operation-night-watch-1982686"
+  },
+  {
+   "claim": "'For the first time in 300 years The Night Watch is complete again' (press release title); shown for a few months in 2021 (Wikipedia: June–September; Commons photo of the panels dated 2 Oct 2021); not on permanent display",
+   "source": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again ; https://en.wikipedia.org/wiki/The_Night_Watch ; https://commons.wikimedia.org/wiki/File:Rembrandt%27s_Nachtwacht_-_missing_pieces.jpg"
+  },
+  {
+   "claim": "Hangs in the Rijksmuseum, Amsterdam (owned by the City of Amsterdam / Amsterdam Museum, on permanent loan), in the Night Watch Gallery",
+   "source": "https://en.wikipedia.org/wiki/The_Night_Watch"
+  }
+ ],
+ "caption": "In 1715, Rembrandt's Night Watch was moved to Amsterdam's town hall. It was too big for the wall, so they cut it down.\n\nA strip came off every side: 64 cm from the left alone, along with two militiamen and a child standing on a bridge. The pieces have never been found.\n\nWe only know what was there thanks to a small copy painted before the cut, attributed to Gerrit Lundens (National Gallery, London). In 2021 the Rijksmuseum used it, plus an AI trained on Rembrandt's style, to rebuild the lost strips and hung them around the original for a few months. For the first time in 300 years, the Night Watch was complete.\n\nP.S. It isn't a night scene. Layers of darkened varnish made people think it was, and the name stuck.\n\n🖤 Would you cut a Rembrandt to fit your wall?",
+ "caption_short": "1715: Rembrandt's Night Watch was too big for its new wall. So they cut it down, and two militiamen and a child went with the scraps. 🖤",
+ "youtube_title": "Why is Rembrandt's Night Watch missing a piece?",
+ "hashtags": [
+  "#rembrandt",
+  "#thenightwatch",
+  "#nightwatch",
+  "#rijksmuseum",
+  "#amsterdam",
+  "#arthistory",
+  "#dutchgoldenage",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety"
+ ],
+ "images": {
+  "nightwatch": {
+   "file": "src/nightwatch.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "girl": [
+     0.3,
+     0.6
+    ],
+    "duo": [
+     0.54,
+     0.58
+    ],
+    "captain": [
+     0.485,
+     0.54
+    ],
+    "ledge": [
+     0.06,
+     0.55
+    ],
+    "center": [
+     0.5,
+     0.55
+    ],
+    "ledge2": [
+     0.075,
+     0.55
+    ]
+   },
+   "commons": "File:The Nightwatch by Rembrandt - Rijksmuseum.jpg"
+  },
+  "lundens": {
+   "file": "src/lundens.jpg",
+   "long": 1920,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "lstrip": [
+     0.06,
+     0.55
+    ],
+    "bridge": [
+     0.08,
+     0.57
+    ],
+    "m1": [
+     0.038,
+     0.54
+    ],
+    "m2": [
+     0.08,
+     0.54
+    ],
+    "child": [
+     0.115,
+     0.615
+    ]
+   },
+   "credit": "Copy attributed to Gerrit Lundens, National Gallery, London (public domain), via Wikimedia Commons",
+   "commons": "File:Lundens - Nachtwache-Kopie.jpg"
+  },
+  "rembrandt": {
+   "file": "src/rembrandt.jpg",
+   "long": 1920,
+   "points": {
+    "face": [
+     0.47,
+     0.36
+    ]
+   },
+   "commons": "File:Self-portrait at 34 by Rembrandt.jpg"
+  },
+  "doelen": {
+   "file": "src/doelen.jpg",
+   "points": {
+    "tower": [
+     0.37,
+     0.62
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   },
+   "commons": "File:SA 8422-De Kloveniersdoelen aan de Amstel-De Kloveniersburgwal op de hoek van de Amstel met de toren \"Swijgh Utrecht\".jpg"
+  },
+  "townhall": {
+   "file": "src/townhall.jpg",
+   "long": 3840,
+   "points": {
+    "facade": [
+     0.43,
+     0.55
+    ],
+    "tower": [
+     0.43,
+     0.38
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   },
+   "commons": "File:Het stadhuis op de Dam in Amsterdam Rijksmuseum SK-A-34.jpeg"
+  },
+  "missing": {
+   "file": "src/missing.jpg",
+   "points": {
+    "center": [
+     0.42,
+     0.5
+    ],
+    "lpanel": [
+     0.22,
+     0.5
+    ],
+    "sign": [
+     0.42,
+     0.2
+    ]
+   },
+   "credit": "2021 reconstruction on display: photo by Hay Kranen, CC BY 4.0, via Wikimedia Commons",
+   "commons": "File:Rembrandt's Nachtwacht - missing pieces.jpg"
+  }
+ },
+ "maps": {},
+ "shots": [
+  {
+   "at": 0,
+   "img": "nightwatch",
+   "from": "girl@2.5",
+   "to": "girl@2.7",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.5-0.03",
+   "img": "nightwatch",
+   "from": "duo@1.0",
+   "to": "duo@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "nightwatch",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.41",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "paid-0.08",
+   "img": "rembrandt",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.35
+  },
+  {
+   "at": "paid.3-0.05",
+   "img": "nightwatch",
+   "from": "duo@1.9",
+   "to": "duo@2.05",
+   "sway": 0.006
+  },
+  {
+   "at": "paid.9-0.05",
+   "img": "doelen",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.46",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "move-0.08",
+   "img": "townhall",
+   "kind": "image",
+   "from": "facade@1.02",
+   "to": "tower@1.14",
+   "gray": 1
+  },
+  {
+   "at": "move.9-0.05",
+   "img": "lundens",
+   "kind": "image",
+   "from": "center@0.41",
+   "to": "center@0.43",
+   "frame": true,
+   "sway": 0.002,
+   "dim": -0.3,
+   "contrast": 1.1
+  },
+  {
+   "at": "cut.10-0.05",
+   "img": "lundens",
+   "kind": "image",
+   "from": "lstrip@0.8",
+   "to": "lstrip@0.9",
+   "sway": 0.003,
+   "dim": -0.3,
+   "contrast": 1.1
+  },
+  {
+   "at": "lost-0.08",
+   "img": "lundens",
+   "kind": "image",
+   "from": "bridge@1.6",
+   "to": "bridge@1.7",
+   "sway": 0.003,
+   "dim": -0.3,
+   "contrast": 1.1
+  },
+  {
+   "at": "never-0.08",
+   "img": "nightwatch",
+   "kind": "image",
+   "from": "ledge@1.3",
+   "to": "ledge@1.4",
+   "gray": 1,
+   "dim": 0.25
+  },
+  {
+   "at": "copy-0.08",
+   "img": "lundens",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.41",
+   "frame": true,
+   "sway": 0.002,
+   "dim": -0.3,
+   "contrast": 1.1
+  },
+  {
+   "at": "copy.10-0.05",
+   "img": "lundens",
+   "kind": "image",
+   "from": "bridge@1.2",
+   "to": "bridge@1.3",
+   "sway": 0.003,
+   "dim": -0.3,
+   "contrast": 1.1
+  },
+  {
+   "at": "ai-0.08",
+   "img": "missing",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dim": 0.15
+  },
+  {
+   "at": "ai.13-0.05",
+   "img": "missing",
+   "kind": "image",
+   "from": "lpanel@1.45",
+   "to": "lpanel@1.55",
+   "dim": 0.15
+  },
+  {
+   "at": "ai.18-0.05",
+   "img": "missing",
+   "kind": "image",
+   "from": "center@1.2",
+   "to": "center@1.02",
+   "dim": 0.15
+  },
+  {
+   "at": "payoff.4-0.05",
+   "img": "nightwatch",
+   "from": "girl@1.7",
+   "to": "girl@1.85",
+   "sway": 0.008
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "nightwatch",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "nightwatch",
+   "from": "captain@1.6",
+   "to": "captain@1.8",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.9",
+   "to": "paid-0.1",
+   "img": "nightwatch",
+   "point": "ledge2",
+   "rx": 75,
+   "ry": 230,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "paid",
+   "to": "paid.3-0.1",
+   "text": "REMBRANDT · SELF-PORTRAIT, 1640"
+  },
+  {
+   "type": "label",
+   "from": "paid.3",
+   "to": "paid.9-0.1",
+   "text": "AMSTERDAM · 1642"
+  },
+  {
+   "type": "label",
+   "from": "paid.9",
+   "to": "move-0.1",
+   "text": "THE MUSKETEERS' HALL"
+  },
+  {
+   "type": "label",
+   "from": "move",
+   "to": "move.9-0.1",
+   "text": "TOWN HALL · DAM SQUARE"
+  },
+  {
+   "type": "label",
+   "from": "move.9",
+   "to": "cut.5-0.1",
+   "text": "BEFORE 1715 · EARLY COPY"
+  },
+  {
+   "type": "cut",
+   "from": "cut.2",
+   "to": "lost-0.1",
+   "img": "lundens",
+   "box": [
+    0.127,
+    0.089,
+    0.983,
+    0.977
+   ],
+   "shade": "cut.6"
+  },
+  {
+   "type": "label",
+   "from": "cut.5",
+   "to": "cut.10-0.1",
+   "text": "ALL FOUR SIDES"
+  },
+  {
+   "type": "label",
+   "from": "cut.10",
+   "to": "lost-0.1",
+   "text": "LEFT SIDE · 64.4 CM"
+  },
+  {
+   "type": "hotspot",
+   "at": "lost.3",
+   "to": "lost$+0.3",
+   "img": "lundens",
+   "point": "m1"
+  },
+  {
+   "type": "hotspot",
+   "at": "lost.4",
+   "to": "lost$+0.3",
+   "img": "lundens",
+   "point": "m2"
+  },
+  {
+   "type": "hotspot",
+   "at": "lost.7",
+   "to": "lost$+0.3",
+   "img": "lundens",
+   "point": "child"
+  },
+  {
+   "type": "label",
+   "from": "never",
+   "to": "copy-0.1",
+   "text": "THE NIGHT WATCH TODAY · LEFT EDGE"
+  },
+  {
+   "type": "label",
+   "from": "ai",
+   "to": "payoff.4-0.1",
+   "text": "RIJKSMUSEUM · 2021"
+  },
+  {
+   "type": "credit",
+   "from": "ai",
+   "to": "payoff.4-0.1",
+   "text": "PHOTO: HAY KRANEN · CC BY 4.0"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "RIJKSMUSEUM · AMSTERDAM"
+  },
+  {
+   "type": "label",
+   "from": "copy.5",
+   "to": "ai-0.1",
+   "text": "EARLY COPY · GERRIT LUNDENS (ATTR.)"
+  }
+ ],
+ "music": {
+  "transpose": -2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "drop": [
+    "cut-0.05",
+    "cut.4+0.3"
+   ],
+   "cold": [
+    "lost-0.2",
+    "copy$+0.2"
+   ],
+   "choir": [
+    "payoff.12-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "cut.2",
+   "fx": "snip",
+   "gain": 0.7
+  },
+  {
+   "at": "cut.6",
+   "fx": "snip",
+   "gain": 0.5
+  },
+  {
+   "at": "lost.3",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "lost.4",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "lost.7",
+   "fx": "tick",
+   "gain": 0.55
+  }
+ ],
+ "lang": "en-us",
+ "rights": {
+  "creator_died": 1669,
+  "note": "Rembrandt d. 1669: public domain. Lundens copy PD; Berckheyde, Ekels PD; 2021 photo CC BY 4.0 (Hay Kranen) -> credited."
+ }
+}

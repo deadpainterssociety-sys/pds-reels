@@ -1,0 +1,43 @@
+# Your change request from Telegram: Claude edits the story, everything is rebuilt and sent back for review.
+name: revise
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "Story to change", required: true }
+      feedback: { description: "What to change", required: true }
+concurrency: { group: "revise-${{ inputs.slug }}", cancel-in-progress: true }
+permissions: { contents: write }
+jobs:
+  revise:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      SLUG: ${{ inputs.slug }}
+      FEEDBACK: ${{ inputs.feedback }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: "${{ github.ref_name }}" }
+      - uses: ./.github/actions/setup
+      - run: python3 automation/release.py download-src "$SLUG"
+      - name: Claude applies your feedback
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ./automation/run_claude.sh "REVISION of the existing reel stories/$SLUG (see 'Revisions' in CLAUDE.md). Gigi's feedback, verbatim: \"$FEEDBACK\". Apply it, keep every rule in PLAYBOOK.md and CLAUDE.md, re-run the pipeline steps 0-6 and the checks. Do not change the schedule."
+      - id: check
+        run: python3 automation/validate.py "$SLUG" --report-only
+      - name: Render and send the new version
+        env: { CONCURRENCY: "4" }
+        run: |
+          ./make_reel.sh "$SLUG" 7 8
+          python3 automation/release.py upload-src "$SLUG"
+          python3 automation/release.py upload "$SLUG"
+          python3 automation/bot.py review "$SLUG" --revised
+      - if: always()
+        run: ./automation/commit.sh "revised $SLUG"
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ I couldn't finish the revision of $SLUG — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

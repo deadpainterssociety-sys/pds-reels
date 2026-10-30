@@ -1,0 +1,51 @@
+# Morning: render today's reel, keep the files as a private draft release, and send it to Telegram for review.
+name: build
+on:
+  schedule:
+    - cron: "41 6 * * *"          # 07:41 Madrid (winter) / 08:41 (summer); the review arrives ~20 min later
+  workflow_dispatch:
+    inputs:
+      slug: { description: "Render this story now (empty = today's)", required: false, default: "" }
+concurrency: { group: "build", cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: pick
+        env: { SLUG: "${{ inputs.slug }}" }
+        run: |
+          if [ -n "$SLUG" ]; then echo "slug=$SLUG" >> $GITHUB_OUTPUT; else python3 automation/plan.py today; fi
+      - if: steps.pick.outputs.slug == ''
+        run: |
+          python3 - <<'PY'
+          import sys; sys.path.insert(0, "automation")
+          from common import CONFIG, schedule, today, state
+          import subprocess
+          todays = [e for e in schedule() if e["date"] == today()]
+          if not CONFIG.get("paused") and not todays:
+              subprocess.run(["python3", "automation/bot.py", "say", "⚠️ No reel is ready for today. The story writer will catch up tonight (or send /stories 1 now)."])
+          PY
+      - if: steps.pick.outputs.slug != ''
+        uses: ./.github/actions/setup
+      - name: Render
+        if: steps.pick.outputs.slug != ''
+        env: { CONCURRENCY: "4" }
+        run: |
+          python3 automation/release.py download-src ${{ steps.pick.outputs.slug }}
+          ./make_reel.sh ${{ steps.pick.outputs.slug }} 0 8
+      - if: steps.pick.outputs.slug != ''
+        run: |
+          python3 automation/release.py upload ${{ steps.pick.outputs.slug }}
+          python3 -c "import sys; sys.path.insert(0,'automation'); from common import set_state; set_state('${{ steps.pick.outputs.slug }}', status='built')"
+          python3 automation/bot.py review ${{ steps.pick.outputs.slug }}
+      - if: always() && steps.pick.outputs.slug != ''
+        run: ./automation/commit.sh "built ${{ steps.pick.outputs.slug }}"
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ Today's render failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

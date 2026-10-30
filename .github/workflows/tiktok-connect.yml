@@ -1,0 +1,24 @@
+# One-time: turn the code from the TikTok login page into a saved refresh token (needs GH_PAT to store it).
+name: tiktok-connect
+on:
+  workflow_dispatch:
+    inputs:
+      code: { description: "The code shown on the page after you approved (it expires in a few minutes)", required: true }
+permissions: { contents: read }
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_PAT: ${{ secrets.GH_PAT }}
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      CODE: ${{ inputs.code }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          OWNER=$(echo "$GITHUB_REPOSITORY" | cut -d/ -f1 | tr 'A-Z' 'a-z'); REPO=$(echo "$GITHUB_REPOSITORY" | cut -d/ -f2)
+          python3 automation/tiktok.py exchange "$CODE" "https://$OWNER.github.io/$REPO/tiktok/"
+          python3 automation/bot.py say "🎵 TikTok connected. Reels will land in your TikTok inbox as drafts (mode: $(python3 -c "import json;print(json.load(open('config.json'))['tiktok_mode'])"))."

@@ -1,0 +1,50 @@
+# Night shift: Claude researches, fact-checks and prepares new reels so there are always `buffer_days` ready.
+# Each story is written, voiced, checked by ear (recogniser) and by eye (stills + cover), then scheduled.
+name: stories
+on:
+  schedule:
+    - cron: "17 1 * * *"          # 02:17 Madrid (winter) / 03:17 (summer)
+  workflow_dispatch:
+    inputs:
+      count: { description: "How many stories to write now (empty = whatever keeps the buffer full)", required: false, default: "" }
+      idea: { description: "Optional idea for the first one (painting / angle)", required: false, default: "" }
+concurrency: { group: stories, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: need
+        env: { COUNT: "${{ inputs.count }}" }
+        run: python3 automation/plan.py needed "$COUNT"
+      - if: steps.need.outputs.n != '0'
+        uses: ./.github/actions/setup
+      - name: Claude writes the stories
+        if: steps.need.outputs.n != '0'
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          N: ${{ steps.need.outputs.n }}
+          IDEA: ${{ inputs.idea }}
+        run: |
+          TASK="Produce $N new reel(s), following CLAUDE.md exactly (it is your complete brief: research, script, voice, visuals, cover, checks, scheduling)."
+          if [ -n "$IDEA" ]; then TASK="$TASK Gigi suggested this idea - use it for the first reel if it passes the rules: $IDEA"; fi
+          ./automation/run_claude.sh "$TASK"
+      - id: check
+        if: always() && steps.need.outputs.n != '0'
+        run: python3 automation/validate.py
+      - name: Keep the source images in a private draft release (not in git)
+        if: always() && steps.check.outputs.ok != ''
+        env: { GITHUB_TOKEN: "${{ github.token }}", OK: "${{ steps.check.outputs.ok }}" }
+        run: for s in $OK; do python3 automation/release.py upload-src "$s"; done
+      - if: always() && steps.need.outputs.n != '0'
+        run: ./automation/commit.sh "stories $(date -u +%F) ${{ steps.check.outputs.ok }}"
+      - if: success() && steps.check.outputs.ok != ''
+        run: python3 automation/bot.py plan
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ The story writer failed tonight — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

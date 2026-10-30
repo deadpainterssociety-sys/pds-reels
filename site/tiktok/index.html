@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connect TikTok</title><link rel="stylesheet" href="../style.css"></head><body><main>
+<div class="k">Dead Painters Society</div><h1>Connect TikTok</h1>
+<p id="msg">Copy this code, then in GitHub open <b>Actions → tiktok-connect → Run workflow</b> and paste it. It expires in a few minutes.</p>
+<span class="code" id="code">—</span><button id="b">Copy code</button>
+<script>
+const p=new URLSearchParams(location.search), c=p.get("code"), e=p.get("error_description")||p.get("error");
+document.getElementById("code").textContent=c||("No code: "+(e||"open the login link from the bot first"));
+document.getElementById("b").onclick=()=>{navigator.clipboard.writeText(c||"");document.getElementById("b").textContent="Copied";};
+</script></main></body></html>

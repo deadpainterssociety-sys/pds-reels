@@ -1,0 +1,17 @@
+{
+ "_doc": "Settings for the automatic pipeline. Edit freely; every workflow reads this file at run time.",
+ "channel": "Dead Painters Society",
+ "handle": "@thedeadpainterssociety",
+ "timezone": "Europe/Madrid",
+ "buffer_days": 3,
+ "stories_per_run": 2,
+ "publish_window": ["18:00", "22:30"],
+ "max_posts_per_day": 1,
+ "platforms": {"instagram": true, "youtube": true, "tiktok": true},
+ "tiktok_mode": "inbox",
+ "youtube_privacy": "public",
+ "youtube_category": "27",
+ "instagram_api_version": "v23.0",
+ "claude_model": "opus",
+ "paused": false
+}

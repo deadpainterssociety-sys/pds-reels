@@ -1,0 +1,31 @@
+{
+ "_note": "Global pronunciation fixes per Kokoro language code. 'say' rewrites text before phonemizing (years, numbers, abbreviations); 'ipa' replaces one word's phonemes. Add every word the recogniser mishears, so tomorrow's reel doesn't repeat it.",
+ "en-us": {
+  "say": {
+   "1611": "sixteen eleven",
+   "1612": "sixteen twelve",
+   "1819": "eighteen nineteen",
+   "1874": "eighteen seventy-four",
+   "1878": "eighteen seventy-eight",
+   "1620": "sixteen twenty"
+  },
+  "ipa": {
+   "wall": "wˈɔl",
+   "Saturn": "sˈætɚn",
+   "Goya": "ɡˈɔɪə",
+   "Prado": "pɹˈɑːdoʊ",
+   "Gentileschi": "dʒɛntɪlˈɛski",
+   "Uffizi": "uːfˈiːtsi",
+   "Artemisia": "ˌɑːɹtəmˈiːziə",
+   "Medici": "mˈɛdɪtʃi",
+   "Tassi": "tˈɑːsi",
+   "Agostino": "ˌɑːɡəstˈiːnoʊ",
+   "militiamen": "məlˈɪʃəmən",
+   "Rijksmuseum": "ɹˈaɪksmjuːzˌiːəm"
+  }
+ },
+ "es": {
+  "say": {},
+  "ipa": {}
+ }
+}

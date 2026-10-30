@@ -1,0 +1,15 @@
+models/
+studio/node_modules/
+studio/public/fonts/
+studio/public/stories/
+studio/public/tex/
+stories/*/build/
+stories/*/out/*
+!stories/*/out/cover.jpg
+!stories/*/out/caption.txt
+*.part
+*.tmp
+__pycache__/
+stories/*/src/
+!stories/night-watch-cut/src/
+build/
