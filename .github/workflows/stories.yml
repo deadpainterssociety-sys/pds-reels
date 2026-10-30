@@ -47,4 +47,9 @@ jobs:
       - if: success() && steps.check.outputs.ok != ''
         run: python3 automation/bot.py plan
       - if: failure()
-        run: python3 automation/bot.py say "⚠️ The story writer failed tonight — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        run: |
+          if [ -f "$RUNNER_TEMP/claude_limit" ]; then
+            python3 automation/bot.py say "⏳ Claude hit your plan's usage limit while writing stories. Nothing is lost: it tries again on the next run (the reels already prepared still go out)."
+          else
+            python3 automation/bot.py say "⚠️ The story writer failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi

@@ -13,6 +13,7 @@ What you can send the bot:
   "yes" / "ok" / "sí"         approve the reel waiting for review       "no" / "skip"  skip it
   any other text              treated as a change request for the reel waiting for review
   /status  what is scheduled   /post  publish approved reels now   /stories 3  write 3 more stories now
+  /idea <painting — angle>  have Claude write that one next
   /pause /resume  stop or restart everything   /rule <text>  a rule for all future reels (added to PLAYBOOK.md)
 The chat is linked the first time someone sends /start (or set TELEGRAM_CHAT_ID).
 """
@@ -102,12 +103,13 @@ def status_text():
 
 
 HELP = ("Commands:\n/status — what's scheduled\n/post — publish approved reels now\n/stories 3 — write 3 more stories now\n"
+        "/idea &lt;painting — angle&gt; — have Claude write that one next\n"
         "/rule &lt;text&gt; — a rule for all future reels\n/pause, /resume\n\nOn a reel: ✅ / ❌ / ✏️ buttons, or just reply "
         "<i>yes</i>, <i>no</i>, or what you want changed.")
 
 
 def poll():
-    bs = bstate(); chat = chat_id(); revise, post_now, stories = [], False, 0
+    bs = bstate(); chat = chat_id(); revise, post_now, stories, idea = [], False, 0, ""
     for u in T.updates(bs.get("offset", 0)):
         bs["offset"] = u["update_id"] + 1
         if "callback_query" in u:
@@ -139,6 +141,11 @@ def poll():
         if text.startswith("/stories"):
             n = re.findall(r"\d+", text); stories = min(int(n[0]) if n else 2, 7)
             T.send(chat, f"📝 Writing {stories} new stor{'y' if stories == 1 else 'ies'} now (≈20 min each). I'll show you the covers."); continue
+        if text.startswith("/idea"):
+            idea = text[5:].strip()
+            if idea: stories = max(stories, 1); T.send(chat, f"💡 Got it — Claude will write this one now (≈30 min), if it passes the rules:\n<i>{T.esc(idea)}</i>")
+            else: T.send(chat, "Send it like this: <code>/idea Holbein, The Ambassadors — the hidden skull</code>")
+            continue
         if text.startswith("/pause") or text.startswith("/resume"):
             cfg = jload("config.json", {}); cfg["paused"] = text.startswith("/pause"); jsave("config.json", cfg)
             T.send(chat, "⏸ Paused: nothing will be written, rendered or posted." if cfg["paused"] else "▶️ Resumed."); continue
@@ -159,7 +166,19 @@ def poll():
         revise.append({"slug": target, "feedback": text})
         T.send(chat, f"✏️ Got it — reworking <b>{T.esc(title_of(target))}</b>:\n<i>{T.esc(text)}</i>\nThe new version arrives in ≈40 min.")
     jsave(BS, bs)
-    gh_output(revise=json.dumps(revise), post_now="1" if post_now else "", stories=str(stories) if stories else "")
+    gh_output(revise=json.dumps(revise), post_now="1" if post_now else "", stories=str(stories) if stories else "", idea=idea.replace("\n", " "))
+
+
+def nudge():
+    """17:30: one reminder if today's reel is still waiting for an answer"""
+    hm = now().strftime("%H:%M")
+    if not ("17:30" <= hm <= "17:59") or CONFIG.get("paused") or not chat_id(): return
+    for e in schedule():
+        s = state(e["slug"])
+        if e["date"] == today() and s["status"] == "sent" and not s.get("nudged"):
+            T.send(chat_id(), f"⏰ Today's reel is still waiting for you: {T.esc(title_of(e['slug']))}\n"
+                              f"Approve it before {CONFIG['publish_window'][1]} and it goes out today (buttons on the video above).")
+            set_state(e["slug"], nudged=True)
 
 
 def plan():
@@ -189,7 +208,7 @@ def posted(slug):
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "review": review(sys.argv[2], "--revised" in sys.argv)
-    elif cmd == "poll": poll()
+    elif cmd == "poll": poll(); nudge()
     elif cmd == "plan": plan()
     elif cmd == "posted": posted(sys.argv[2])
     elif cmd == "say":

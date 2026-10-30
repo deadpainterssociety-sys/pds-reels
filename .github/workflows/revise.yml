@@ -39,5 +39,10 @@ jobs:
           python3 automation/bot.py review "$SLUG" --revised
       - if: always()
         run: ./automation/commit.sh "revised $SLUG"
-      - if: failure()
-        run: python3 automation/bot.py say "⚠️ I couldn't finish the revision of $SLUG — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      - name: If it failed, put the previous version back up for review
+        if: failure()
+        run: |
+          python3 -c "import sys; sys.path.insert(0,'automation'); from common import set_state; set_state('$SLUG', status='sent')"
+          if [ -f "$RUNNER_TEMP/claude_limit" ]; then WHY="your Claude usage limit was reached"; else WHY="something went wrong (${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"; fi
+          python3 automation/bot.py say "⚠️ I couldn't make the changes to $SLUG: $WHY. The previous version is still valid — tap ✅ on it to publish, or send your change again later."
+          ./automation/commit.sh "revision of $SLUG failed"

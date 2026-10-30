@@ -38,7 +38,8 @@ jobs:
           PY
       - name: Write more stories now
         if: steps.bot.outputs.stories != ''
-        run: gh workflow run stories.yml -f count=${{ steps.bot.outputs.stories }}
+        env: { IDEA: "${{ steps.bot.outputs.idea }}", COUNT: "${{ steps.bot.outputs.stories }}" }
+        run: gh workflow run stories.yml -f count="$COUNT" -f idea="$IDEA"
       - if: failure()
         run: python3 automation/bot.py say "⚠️ The inbox check failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
