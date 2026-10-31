@@ -16,7 +16,9 @@ Names must be typed exactly as written here. GitHub encrypts them; nobody can re
    *Why public:* unlimited free Actions minutes and 4-CPU machines (renders twice as fast), and GitHub Pages can give
    Instagram the public video link it requires. Your secrets stay encrypted. (Private works too, but you'd need a paid
    plan for Pages or your own storage bucket, and the free 2,000 minutes/month would be tight.)
-3. Let Claude push the code: claude.ai → Settings → Connectors → **GitHub** → connect, and give it access to pds-reels.
+3. Let Claude push the code: claude.ai → Settings → Connectors → **GitHub** → connect, then install the Claude GitHub
+   App on your account: github.com/apps/claude → Install → *deadpainterssociety-sys* → Only select repositories →
+   **pds-reels** → Install.
    Then tell Claude "pushed?" — or upload the files yourself.
 4. Repo → **Settings → Pages** → Build and deployment → Source: **GitHub Actions**. Then Actions → **site** →
    Run workflow (publishes the privacy/terms pages and the TikTok login page).
