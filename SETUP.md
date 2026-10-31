@@ -12,11 +12,11 @@ Names must be typed exactly as written here. GitHub encrypts them; nobody can re
 ## 1. GitHub (10 min)
 
 1. Create an account at github.com if you don't have one.
-2. Create the repo: github.com/new → name **dps-reels** → **Public** → Create.
+2. Create the repo: github.com/new → name **pds-reels** (done) → **Public** → Create.
    *Why public:* unlimited free Actions minutes and 4-CPU machines (renders twice as fast), and GitHub Pages can give
    Instagram the public video link it requires. Your secrets stay encrypted. (Private works too, but you'd need a paid
    plan for Pages or your own storage bucket, and the free 2,000 minutes/month would be tight.)
-3. Let Claude push the code: claude.ai → Settings → Connectors → **GitHub** → connect, and give it access to dps-reels.
+3. Let Claude push the code: claude.ai → Settings → Connectors → **GitHub** → connect, and give it access to pds-reels.
    Then tell Claude "pushed?" — or upload the files yourself.
 4. Repo → **Settings → Pages** → Build and deployment → Source: **GitHub Actions**. Then Actions → **site** →
    Run workflow (publishes the privacy/terms pages and the TikTok login page).
@@ -41,7 +41,7 @@ Names must be typed exactly as written here. GitHub encrypts them; nobody can re
 1. github.com → your photo → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** →
    Generate new token.
 2. Name *dps-bot*, expiration **366 days** (put a reminder in your calendar), Repository access: **Only select
-   repositories → dps-reels**, Permissions → Repository → **Secrets: Read and write**. Generate.
+   repositories → pds-reels**, Permissions → Repository → **Secrets: Read and write**. Generate.
 3. Secret **`GH_PAT`** = that token.
 
 **Check point:** Actions tab → **setup-check** → Run workflow. In a minute the bot sends you a checklist.
@@ -84,11 +84,11 @@ Your account must be a **professional** account (Business or Creator): Instagram
 
 1. developers.tiktok.com → log in with your TikTok account → **Manage apps → Connect an app**.
 2. Fill in: name *DPS Publisher*, category *Entertainment*, description *Publishes our own art-history videos to our
-   own account*, and these URLs (replace YOURUSER with your GitHub username, lowercase):
-   - Terms of Service: `https://YOURUSER.github.io/dps-reels/terms.html`
-   - Privacy Policy: `https://YOURUSER.github.io/dps-reels/privacy.html`
-   - Platform **Web**, website: `https://YOURUSER.github.io/dps-reels/`
-3. **Add products**: **Login Kit** (Redirect URI: `https://YOURUSER.github.io/dps-reels/tiktok/`) and
+   own account*, and these URLs (already filled in for your repo):
+   - Terms of Service: `https://deadpainterssociety-sys.github.io/pds-reels/terms.html`
+   - Privacy Policy: `https://deadpainterssociety-sys.github.io/pds-reels/privacy.html`
+   - Platform **Web**, website: `https://deadpainterssociety-sys.github.io/pds-reels/`
+3. **Add products**: **Login Kit** (Redirect URI: `https://deadpainterssociety-sys.github.io/pds-reels/tiktok/`) and
    **Content Posting API** (turn on *Upload*; *Direct Post* too). Scopes: `user.info.basic`, `video.upload`, `video.publish`.
 4. Copy **Client key** → secret **`TIKTOK_CLIENT_KEY`**, **Client secret** → secret **`TIKTOK_CLIENT_SECRET`**.
    (Want to start today? Use the **Sandbox** tab: add your TikTok account as a target user and use the sandbox key/secret;
