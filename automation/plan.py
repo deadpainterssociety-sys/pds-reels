@@ -13,6 +13,8 @@ from common import CONFIG, gh_output, save_schedule, schedule, set_state, state,
 
 def needed(override=None):
     if CONFIG.get("paused"): gh_output(n=0); return 0
+    if "CLAUDE_CODE_OAUTH_TOKEN" in os.environ and not (os.environ["CLAUDE_CODE_OAUTH_TOKEN"].strip() or os.environ.get("ANTHROPIC_API_KEY", "").strip()):
+        print("Claude not set up yet (secret CLAUDE_CODE_OAUTH_TOKEN): nothing to do"); gh_output(n=0); return 0
     if override: n = int(override)
     else:
         ready = len(upcoming(("draft", "built", "sent", "revising", "approved")))

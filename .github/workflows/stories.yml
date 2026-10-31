@@ -20,7 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: need
-        env: { COUNT: "${{ inputs.count }}" }
+        env:
+          COUNT: ${{ inputs.count }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python3 automation/plan.py needed "$COUNT"
       - if: steps.need.outputs.n != '0'
         uses: ./.github/actions/setup

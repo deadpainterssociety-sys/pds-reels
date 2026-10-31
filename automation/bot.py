@@ -110,6 +110,8 @@ HELP = ("Commands:\n/status — what's scheduled\n/post — publish approved ree
 
 def poll():
     bs = bstate(); chat = chat_id(); revise, post_now, stories, idea = [], False, 0, ""
+    if not os.environ.get("TELEGRAM_BOT_TOKEN", "").strip():          # not set up yet: stay quiet instead of failing
+        print("Telegram not set up yet (secret TELEGRAM_BOT_TOKEN)"); gh_output(revise="[]", post_now="", stories="", idea=""); return
     for u in T.updates(bs.get("offset", 0)):
         bs["offset"] = u["update_id"] + 1
         if "callback_query" in u:
