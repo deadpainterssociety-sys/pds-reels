@@ -13,6 +13,7 @@ or by telling Claude in a chat.
 | 28 Oct 2026 | rokeby-venus | Velázquez, *Rokeby Venus* (National Gallery) | a suffragette attacked it with a meat cleaver in 1914 |
 | 29 Oct 2026 | mona-lisa-theft | Leonardo, *Mona Lisa* (Louvre) | stolen in 1911; the theft made it famous |
 | 30 Oct 2026 | night-watch-cut | Rembrandt, *The Night Watch* (Rijksmuseum) | cut down in 1715 to fit a wall |
+| 31 Oct 2026 | scream-madman | Munch, *The Scream* (National Museum, Oslo) | the pencil "madman" note blamed on a vandal was Munch's own |
 
 ## Ideas (to verify)
 
@@ -28,7 +29,6 @@ or by telling Claude in a chat.
 | Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | crime; most-stolen artwork claims need care |
 | Holbein, *The Ambassadors* (National Gallery) | the stretched skull you only see from the side | show the anamorphosis |
 | Van Eyck, *Arnolfini Portrait* (National Gallery) | "Jan van Eyck was here" over the mirror | |
-| Munch, *The Scream* (National Museum, Oslo) | the tiny pencil line "could only have been painted by a madman" — in Munch's own hand | Munch †1944: OK; check the 2021 museum finding |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | |
 | Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark: not next to another dark one |
 | David, *The Death of Marat* (Royal Museums of Fine Arts, Brussels) | murdered in his bath by Charlotte Corday | |

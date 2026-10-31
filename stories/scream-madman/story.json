@@ -1,0 +1,757 @@
+{
+ "slug": "scream-madman",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.94,
+ "tail": 1.0,
+ "meta": {
+  "title": "Munch — The Scream",
+  "image": "scream",
+  "place": "National Museum, Oslo",
+  "credit_line": "🎨 Edvard Munch, The Scream, 1893",
+  "painter": "Edvard Munch",
+  "painting": "The Scream",
+  "year": "1893",
+  "museum": "National Museum",
+  "city": "Oslo",
+  "mood": "mystery",
+  "angle": "the pencil 'madman' note on the sky, blamed on a vandal, was in Munch's own hand"
+ },
+ "rights": {
+  "creator_died": 1944,
+  "note": "Munch d. 1944; painting 1893 (PD EU and US). Commons images PD except Copenhagen 1904 photo (Peter Elfelt, listed CC BY 4.0) -> credited."
+ },
+ "cover": {
+  "question": "Who wrote <i>on The Scream?</i>",
+  "name": "EDVARD MUNCH",
+  "work": "The Scream, 1893",
+  "focus": [
+   0.48,
+   0.5
+  ],
+  "zoom": 1.06,
+  "answered_by": "reveal: 2021 infrared + handwriting comparison: the handwriting was Munch's own"
+ },
+ "say": {
+  "1904": "nineteen oh-four",
+  "2021": "twenty twenty-one",
+  "1895": "eighteen ninety-five",
+  "1893": "eighteen ninety-three"
+ },
+ "ipa": {
+  "Scream": "skɹˈiːmm"
+ },
+ "_perf": "each phrase: [text, pause_after_s, speed_mult]. *word* = italic in captions only.",
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Someone wrote on The *Scream* itself.",
+     0.35,
+     0.88
+    ],
+    [
+     "In pencil.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "note",
+   "perf": [
+    [
+     "Up in the red sky,",
+     0.3,
+     0.95
+    ],
+    [
+     "barely legible:",
+     0.35,
+     0.94
+    ],
+    [
+     "\"Can only have been painted",
+     0.25,
+     0.92
+    ],
+    [
+     "by a *madman!*\"",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "vandal",
+   "perf": [
+    [
+     "In 1904,",
+     0.3,
+     0.95
+    ],
+    [
+     "a Danish critic noticed it,",
+     0.3,
+     0.95
+    ],
+    [
+     "and blamed a visitor.",
+     0.4,
+     0.94
+    ],
+    [
+     "For years,",
+     0.25,
+     0.95
+    ],
+    [
+     "people took it for *graffiti.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "scan",
+   "perf": [
+    [
+     "Then, in 2021,",
+     0.3,
+     0.95
+    ],
+    [
+     "Norway's National Museum scanned it with infrared,",
+     0.3,
+     0.95
+    ],
+    [
+     "and compared it with Munch's letters and diaries.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "reveal",
+   "perf": [
+    [
+     "The handwriting matched.",
+     0.4,
+     0.92
+    ],
+    [
+     "It was *Munch's own.*",
+     1.0,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "why",
+   "perf": [
+    [
+     "In 1895,",
+     0.3,
+     0.95
+    ],
+    [
+     "he showed the painting in Kristiania, today's Oslo.",
+     0.35,
+     0.95
+    ],
+    [
+     "At a student debate,",
+     0.3,
+     0.95
+    ],
+    [
+     "a young medical student said",
+     0.25,
+     0.95
+    ],
+    [
+     "Munch's paintings made him doubt the artist's *sanity.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "reply",
+   "perf": [
+    [
+     "The museum thinks he wrote it, soon after.",
+     0.4,
+     0.94
+    ],
+    [
+     "The curator reads it as irony.",
+     0.4,
+     0.93
+    ],
+    [
+     "But it hurt:",
+     0.3,
+     0.9
+    ],
+    [
+     "for years, he kept coming back to it in his notes.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "The vandal was the painter *himself.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Museum, in Oslo.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Scream (1893, tempera and crayon/pastel on cardboard, 91 x 73.5 cm) by Edvard Munch is in the National Museum, Oslo (NG.M.00939); the painted 1893 version is on display there (museum opened 2022)",
+   "source": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939 ; https://munch.no/en/The-Scream/where-can-i-see-the-scream/ ; https://www.smithsonianmag.com/smart-news/the-scream-gets-a-new-home-in-norways-650m-museum-180980233/"
+  },
+  {
+   "claim": "At the top left of the painting, in the sky, is a barely legible pencil inscription: 'Kan kun være malet af en gal Mand!' ('Can only have been painted by a madman!')",
+   "source": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939 ; https://www.cbsnews.com/news/the-scream-hidden-message-edvard-munch-painted-by-a-madman/ ; https://www.theartnewspaper.com/2021/02/22/munch-vandalised-own-scream-painting-declaring-himself-a-madman-new-research-finds ; checked on the Commons scan: pencil in the red band of sky, upper left"
+  },
+  {
+   "claim": "The inscription is first mentioned in 1904, in connection with an exhibition in Copenhagen, when a Danish art critic thought a member of the public had written it",
+   "source": "https://www.nasjonalmuseet.no/en/stories/explore-the-collection/munch-malet-av-gal-mann-engelsk/ ; https://jerz.setonhill.edu/blog/2021/03/14/infrared-photo-confirms-munch-wrote-madman-inscription-first-noticed-in-1904/"
+  },
+  {
+   "claim": "It was long/widely believed to be vandalism by a viewer",
+   "source": "https://www.cbsnews.com/news/the-scream-hidden-message-edvard-munch-painted-by-a-madman/ ; https://www.theartnewspaper.com/2021/02/22/munch-vandalised-own-scream-painting-declaring-himself-a-madman-new-research-finds ; https://www.smithsonianmag.com/smart-news/who-wrote-cryptic-graffiti-edvard-munchs-scream-180977075/"
+  },
+  {
+   "claim": "February 2021: the National Museum of Norway, preparing the painting for its new building, used infrared imaging and compared the writing with Munch's letters and diaries; curator Mai Britt Guleng: 'The writing is without a doubt Munch's own'",
+   "source": "https://www.cbsnews.com/news/the-scream-hidden-message-edvard-munch-painted-by-a-madman/ ; https://www.livescience.com/scream-inscription-written-munch-himself.html ; https://apollo-magazine.com/munch-secret-message-scream/ ; https://www.nasjonalmuseet.no/en/stories/explore-the-collection/munch-malet-av-gal-mann-engelsk/"
+  },
+  {
+   "claim": "Autumn 1895: Munch exhibited at Blomqvist's in Kristiania (today's Oslo), including the 1893 Scream and Self-Portrait with Cigarette",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Cigarette ; https://www.nasjonalmuseet.no/en/stories/explore-the-collection/munch-malet-av-gal-mann-engelsk/"
+  },
+  {
+   "claim": "At an 1895 debate at the Student Society, medical student Johan Scharffenberg said Munch's paintings, particularly Self-Portrait with Cigarette, gave him reason to question the artist's sanity",
+   "source": "https://www.theartnewspaper.com/2021/02/22/munch-vandalised-own-scream-painting-declaring-himself-a-madman-new-research-finds ; https://www.nasjonalmuseet.no/en/stories/explore-the-collection/munch-malet-av-gal-mann-engelsk/"
+  },
+  {
+   "claim": "The museum: 'It is likely that Munch added the inscription in 1895, or shortly after, in response to the judgment on his work' (hedged in narration: 'The museum thinks')",
+   "source": "https://www.cbsnews.com/news/the-scream-hidden-message-edvard-munch-painted-by-a-madman/ ; https://apollo-magazine.com/munch-secret-message-scream/"
+  },
+  {
+   "claim": "Guleng reads the inscription as an ironic comment (a way of taking back control); hedged as the curator's reading",
+   "source": "https://apollo-magazine.com/munch-secret-message-scream/ ; https://www.scientificamerican.com/article/the-famed-painting-the-scream-holds-a-hidden-message/ ; https://hyperallergic.com/624180/edvard-munch-the-scream-madman-message/"
+  },
+  {
+   "claim": "Munch was deeply hurt: for years he referred to the comments in his notes",
+   "source": "https://www.theartnewspaper.com/2021/02/22/munch-vandalised-own-scream-painting-declaring-himself-a-madman-new-research-finds ; https://hyperallergic.com/624180/edvard-munch-the-scream-madman-message/"
+  },
+  {
+   "claim": "'The vandal was the painter himself': The Art Newspaper headline 'Munch vandalised own Scream painting, declaring himself a madman'",
+   "source": "https://www.theartnewspaper.com/2021/02/22/munch-vandalised-own-scream-painting-declaring-himself-a-madman-new-research-finds"
+  },
+  {
+   "claim": "Munch died in 1944 (painting public domain)",
+   "source": "https://en.wikipedia.org/wiki/Edvard_Munch"
+  }
+ ],
+ "images": {
+  "scream": {
+   "file": "src/scream.jpg",
+   "commons": "File:Edvard Munch - The Scream - NG.M.00939 - National Museum of Art, Architecture and Design.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.505,
+     0.555
+    ],
+    "mouth": [
+     0.51,
+     0.6
+    ],
+    "note": [
+     0.28,
+     0.148
+    ],
+    "sky": [
+     0.35,
+     0.17
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "figures": [
+     0.07,
+     0.44
+    ],
+    "sign": [
+     0.1,
+     0.975
+    ]
+   }
+  },
+  "munch": {
+   "file": "src/munch.jpg",
+   "commons": "File:\"Edvard Munch\" (Asta Nørregaard),1889.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.47,
+     0.31
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "cigarette": {
+   "file": "src/cigarette.jpg",
+   "commons": "File:Edvard Munch - Self-Portrait with Cigarette - NG.M.00470 - National Museum of Art, Architecture and Design.jpg",
+   "long": 2600,
+   "points": {
+    "face": [
+     0.49,
+     0.17
+    ],
+    "hand": [
+     0.52,
+     0.47
+    ],
+    "center": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "kristiania": {
+   "file": "src/kristiania.jpg",
+   "commons": "File:8851 Kristiania - no-nb digifoto 20160404 00043 bldsa L KK0272.jpg",
+   "long": 2600,
+   "points": {
+    "univ": [
+     0.19,
+     0.44
+    ],
+    "center": [
+     0.5,
+     0.47
+    ],
+    "people": [
+     0.45,
+     0.6
+    ]
+   },
+   "crop": [
+    0.015,
+    0.015,
+    0.015,
+    0.065
+   ]
+  },
+  "copenhagen": {
+   "file": "src/copenhagen.jpg",
+   "commons": "File:Kongens Nytorv, 1904.jpg",
+   "long": 2600,
+   "points": {
+    "hotel": [
+     0.25,
+     0.6
+    ],
+    "square": [
+     0.5,
+     0.62
+    ],
+    "men": [
+     0.66,
+     0.78
+    ]
+   },
+   "credit": "Kongens Nytorv, Copenhagen, 1904: photo by Peter Elfelt, CC BY 4.0, via Wikimedia Commons"
+  }
+ },
+ "maps": {},
+ "shots": [
+  {
+   "at": 0,
+   "img": "scream",
+   "from": "face@2.6",
+   "to": "face@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.4-0.03",
+   "img": "scream",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@3.0",
+   "to": "note@3.2",
+   "contrast": 1.1
+  },
+  {
+   "at": "note-0.08",
+   "img": "scream",
+   "kind": "image",
+   "from": "0.4,0.22@1.25",
+   "to": "0.36,0.2@1.4"
+  },
+  {
+   "at": "note.5-0.05",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@3.3",
+   "to": "note@3.5",
+   "contrast": 1.15
+  },
+  {
+   "at": "note.7-0.05",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@2.6",
+   "to": "note@2.75",
+   "contrast": 1.1,
+   "dim": 0.25
+  },
+  {
+   "at": "vandal-0.08",
+   "img": "copenhagen",
+   "kind": "image",
+   "from": "hotel@1.05",
+   "to": "hotel@1.15",
+   "gray": 1
+  },
+  {
+   "at": "vandal.6-0.05",
+   "img": "copenhagen",
+   "kind": "image",
+   "from": "men@1.9",
+   "to": "men@2.05",
+   "gray": 1
+  },
+  {
+   "at": "vandal.10-0.05",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@3.0",
+   "to": "note@3.1",
+   "gray": 1,
+   "contrast": 1.2
+  },
+  {
+   "at": "scan-0.08",
+   "img": "scream",
+   "kind": "image",
+   "from": "center@0.8",
+   "to": "center@0.78",
+   "frame": true,
+   "gray": 0.6
+  },
+  {
+   "at": "scan.3-0.05",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@2.4",
+   "to": "note@3.2",
+   "gray": 1,
+   "contrast": 1.5
+  },
+  {
+   "at": "scan.14-0.05",
+   "img": "munch",
+   "kind": "image",
+   "from": "face@1.15",
+   "to": "face@1.25",
+   "gray": 0.6
+  },
+  {
+   "at": "reveal.5-0.05",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@3.4",
+   "to": "note@3.6",
+   "contrast": 1.15,
+   "hit": "big"
+  },
+  {
+   "at": "why-0.08",
+   "img": "kristiania",
+   "kind": "image",
+   "from": "center@1.02",
+   "to": "univ@1.15",
+   "gray": 1
+  },
+  {
+   "at": "why.11-0.05",
+   "img": "kristiania",
+   "kind": "image",
+   "from": "people@1.8",
+   "to": "people@1.95",
+   "gray": 1
+  },
+  {
+   "at": "why.15-0.05",
+   "img": "cigarette",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.04"
+  },
+  {
+   "at": "why.21-0.05",
+   "img": "cigarette",
+   "kind": "image",
+   "from": "face@1.7",
+   "to": "face@1.85"
+  },
+  {
+   "at": "reply-0.08",
+   "img": "scream",
+   "kind": "image",
+   "from": "note@2.8",
+   "to": "note@2.95"
+  },
+  {
+   "at": "reply.8-0.05",
+   "img": "munch",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45"
+  },
+  {
+   "at": "reply.14-0.05",
+   "img": "cigarette",
+   "kind": "image",
+   "from": "face@2.1",
+   "to": "face@2.3",
+   "gray": 0.5
+  },
+  {
+   "at": "payoff-0.05",
+   "img": "scream",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "scream",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.7",
+   "to": "note-0.1",
+   "img": "scream",
+   "point": "note",
+   "rx": 470,
+   "ry": 70,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "note.3",
+   "to": "note.5-0.1",
+   "img": "scream",
+   "point": "note",
+   "rx": 200,
+   "ry": 40,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "hook.6",
+   "to": "note-0.1",
+   "text": "THE SCREAM · TOP LEFT CORNER"
+  },
+  {
+   "type": "title",
+   "from": "note.7",
+   "to": "note$+0.4",
+   "kicker": "PENCIL, ON THE SKY",
+   "text": "“Can only have been painted by a <i>madman!</i>”"
+  },
+  {
+   "type": "label",
+   "from": "vandal",
+   "to": "vandal.10-0.1",
+   "text": "COPENHAGEN · 1904"
+  },
+  {
+   "type": "stamp",
+   "from": "vandal.10",
+   "to": "scan-0.1",
+   "text": "VANDALISM?"
+  },
+  {
+   "type": "label",
+   "from": "scan",
+   "to": "scan.14-0.1",
+   "text": "NATIONAL MUSEUM, OSLO · 2021"
+  },
+  {
+   "type": "label",
+   "from": "scan.14",
+   "to": "reveal-0.1",
+   "text": "MUNCH AT 25 · BY ASTA NØRREGAARD"
+  },
+  {
+   "type": "title",
+   "from": "reveal.5",
+   "to": "reveal$+0.5",
+   "kicker": "THE HANDWRITING",
+   "text": "Edvard <i>Munch</i>"
+  },
+  {
+   "type": "label",
+   "from": "why",
+   "to": "why.15-0.1",
+   "text": "KRISTIANIA (OSLO) · c. 1900"
+  },
+  {
+   "type": "label",
+   "from": "why.15",
+   "to": "reply-0.1",
+   "text": "SELF-PORTRAIT WITH CIGARETTE, 1895"
+  },
+  {
+   "type": "credit",
+   "from": "vandal",
+   "to": "vandal.10-0.1",
+   "text": "PHOTO: PETER ELFELT · CC BY 4.0"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL MUSEUM · OSLO"
+  }
+ ],
+ "nocap": [
+  [
+   "note.7",
+   "note$+0.4"
+  ],
+  [
+   "reveal.5",
+   "reveal$+0.5"
+  ]
+ ],
+ "music": {
+  "transpose": 1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "vandal-0.2",
+    "scan$+0.2"
+   ],
+   "drop": [
+    "reveal-0.05",
+    "reveal$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "note.3",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "vandal.10",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "scan.6",
+   "fx": "shutter",
+   "gain": 0.4
+  }
+ ],
+ "caption": "Up in the red sky of Edvard Munch's The Scream (1893) there's a faint line of pencil: \"Kan kun være malet af en gal Mand!\" — \"Can only have been painted by a madman!\"\n\nIt was first mentioned in 1904, when a Danish critic assumed a visitor had scribbled it. For years it was taken for graffiti.\n\nIn 2021, preparing the painting for its new building, Norway's National Museum photographed it in infrared and compared the writing with Munch's letters and diaries. Curator Mai Britt Guleng's verdict: the handwriting is without a doubt Munch's own.\n\nThe likely trigger: in 1895 Munch showed The Scream in Kristiania (now Oslo). At a student debate, the medical student Johan Scharffenberg said Munch's paintings, especially Self-Portrait with Cigarette, made him question the artist's sanity. The museum thinks Munch wrote the line soon after. The curator reads it as irony, but he was hurt, and kept returning to it in his notes for years.\n\n🖤 Irony, or a cry for help? What do you read in it?",
+ "caption_short": "Someone wrote \"can only have been painted by a madman\" on The Scream. It was blamed on a vandal. In 2021, infrared showed it was Munch himself. 🖤",
+ "youtube_title": "Who wrote \"madman\" on Munch's The Scream?",
+ "hashtags": [
+  "#edvardmunch",
+  "#munch",
+  "#thescream",
+  "#nasjonalmuseet",
+  "#oslo",
+  "#norway",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety"
+ ],
+ "style": {}
+}
