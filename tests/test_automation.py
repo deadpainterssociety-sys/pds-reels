@@ -155,5 +155,26 @@ os.chdir(W); import importlib, common; importlib.reload(common)
 c = common.captions("test-a")
 check(len(c["instagram"]) > 300 and c["youtube_title"].endswith("#shorts") and len(c["tiktok"]) < 300, "Instagram / TikTok / YouTube sections parsed")
 
+print("\n11. Quality gate: week-1 rules (hook, opening shot, nudes)")
+import validate as V
+good = {"hook_type": "dark", "teaser": "The painting Goya hid on his wall", "tail": 2.2,
+        "lines": [{"perf": [["*Nobody* was ever supposed to see *this.*", 0.6, 0.93]]}]}
+bad = {"hook_type": "insane", "tail": 1.0, "lines": [{"perf": [["One morning in 1911,", 0.3, 0.95], ["a man walked out of the Louvre...", 0.4, 0.95], ["with *this* under his smock.", 0.8, 0.9]]}]}
+check(V.hook_problems(good) == [], "a one-line hook with type + teaser passes")
+pb = " | ".join(V.hook_problems(bad))
+check(all(k in pb for k in ("hook_type", "teaser missing", "words", "date or a scene-setting", "tail")), "date opening, long hook, no type/teaser, short tail: all caught")
+sd = os.path.join(tmp, "vis"); os.makedirs(os.path.join(sd, "build"))
+json.dump({"lines": [{"e": 3.0}]}, open(os.path.join(sd, "build", "timeline.json"), "w"))
+def shots_ok(shots, nude=False, zoom=1.0):
+    json.dump({"shots": shots}, open(os.path.join(sd, "build", "resolved.json"), "w"))
+    return V.visual_problems({"meta": {"image": "main", "nude": nude}, "cover": {"zoom": zoom}}, sd)
+check(shots_ok([{"t": 0, "img": "main", "from": [0.5, 0.3, 2.5], "to": [0.5, 0.3, 2.7]}, {"t": 3.1, "img": "photo", "gray": 1, "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1]}]) == [],
+      "opening on a painting close-up, archive after the hook: passes")
+check(any("open on the painting" in p for p in shots_ok([{"t": 0, "img": "photo", "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1]}])), "opening on an archive photo: rejected")
+check(any("until the hook ends" in p for p in shots_ok([{"t": 0, "img": "main", "from": [0.5, 0.3, 2], "to": [0.5, 0.3, 2]}, {"t": 1.5, "img": "photo", "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1]}])),
+      "archive image during the hook: rejected")
+check(len([p for p in shots_ok([{"t": 0, "img": "main", "from": [0.5, 0.3, 2], "to": [0.5, 0.3, 2]}, {"t": 4, "img": "main", "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1.05]}], nude=True) if "nude" in p]) == 2,
+      "nude: wide shot and wide cover rejected")
+
 print(f"\n{'ALL GOOD' if not fails else str(len(fails)) + ' FAILED'} — temp repo: {W}")
 sys.exit(1 if fails else 0)

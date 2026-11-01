@@ -1,5 +1,7 @@
 {
  "slug": "scream-madman",
+ "hook_type": "hidden",
+ "teaser": "The pencil note hidden on The Scream",
  "voice": "af_heart",
  "lang": "en-us",
  "speed": 0.94,

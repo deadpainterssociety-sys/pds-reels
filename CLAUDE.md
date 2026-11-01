@@ -22,10 +22,14 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 
 ### 1. Pick the story
 - `python automation/plan.py posted` lists every story already made: never repeat a painting.
-- Read `STORY_QUEUE.md` (Ideas) and the last 3–5 stories' moods/museums; alternate mood and museum (PLAYBOOK §2).
+- Read `STORY_QUEUE.md` (Ideas) and the last 3–5 stories' moods/museums/`hook_type`s; alternate mood and museum (PLAYBOOK §3).
 - Hard filters: painter died before 1956 (EU 70-year rule; for works after 1930 also mind the US rule), the painting hangs
   in a visitable museum, and Wikimedia Commons has a public-domain image of it ≥ 2000 px. If an idea fails, take another.
 - One throughline only. If you need a second story to explain the first, pick a different angle.
+- Decide the `hook_type` first (PLAYBOOK §2: `dark`, `time-gap`, `craft`, `sacred-strange`, `dark-legend`, `damage`,
+  `hidden`). Never the same type three reels in a row. If you can't say the promise in one of these, the angle is weak:
+  pick another. About one story in four may be a lesser-known painting with a dark or uncanny story.
+- Nudity in the painting → `meta.nude: true` and plan safe framing from the start (PLAYBOOK §1 "Nudes").
 - Slug: `painter-keyword` in lowercase ASCII (e.g. `caravaggio-goliath`).
 
 ### 2. Research and verify (this is what protects the channel)
@@ -48,8 +52,15 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 - Main image gets `"depth": true` (2.5D parallax) and `"long": 3840`.
 
 ### 4. Script (`lines`) — read PLAYBOOK §1 "Script and voice" again before writing
-- Shape: hook (≤ 2 s) → painting revealed by 3 s → 4–7 short backstory beats in time order → back to the painting →
+- Shape: hook → painting revealed by 3 s → 4–7 short backstory beats in time order → back to the painting →
   payoff that answers the cover question → **last line exactly in this form: "It hangs in the <Museum>, in <City>."**
+- **The hook (line 1) is ONE punchy line, ≤ 12 words, making a claim about the painting on screen**: "Nobody was ever
+  supposed to see *this.*" Never a date or a scene-setting ("One morning in 1911…", "A woman walks into…"): week-1
+  viewers swiped those away in under 2 s. Dates go in the second line.
+- `teaser` (≤ 48 characters): how the reel the day BEFORE announces this one on its silent NEXT card, e.g. "The nude the
+  Inquisition investigated", "Rembrandt's masterpiece, cut to fit a wall". A plain intriguing phrase: no question mark,
+  no "you won't believe", no superlatives.
+- `tail`: 2.2 (room for the NEXT card after the last line).
 - 130–145 spoken words. Short phrases; each phrase `[text, pause_after_s, speed]` (0.25–0.4 s between clauses,
   0.8–1.0 s after a beat lands; speed 0.9–0.97, 0.78–0.88 for words that must hit). `*word*` = italic caption.
 - Years and numbers: write digits in the text and add the spoken form to `say` ("1715": "seventeen fifteen").
@@ -61,14 +72,19 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 - Every line must come back N/N as written (digits vs words are fine). Fix mishearings: usually a name (add `ipa`), a
   word swallowed before "…" (give it its own phrase or rephrase), or a plural ghost ("hall" heard as "halls" → rephrase).
   Audition alternatives fast: `python pipeline/try_phrase.py af_heart en-us 0.88 "variant one" "variant two"`.
-- Duration 58–68 s, ≈ 130–140 wpm. Too fast → add pauses / lower speed (0.90–0.92 overall); too long → cut words.
+- Duration 59–69 s including the 2.2 s tail, ≈ 130–140 wpm. Too fast → add pauses / lower speed (0.90–0.92 overall); too long → cut words.
 
 ### 6. Visual plan (`images.*.points`, `shots`, `overlays`)
 - Find coordinates by LOOKING: `python pipeline/grid.py stories/<slug>/src/<img>.jpg` → Read the printed jpg; zoom into
   dark/small areas with `--crop x0,y0,x1,y1 --bright 2.2 --step 0.02`. Name points (`face`, `hand`, `child`…).
 - Anchors: `"line.k-0.05"` = 0.05 s before word k (0-based) of that line; `"line$"` = line end. Word indices: check
   `stories/<slug>/build/timeline.json` (words per line, with times).
-- Shots (see the reference reel): tease a detail of the painting at 0 s → reveal (`"hit": "big"`) on the hook's key word →
+- **Open on the painting**: shot 1 at 0 s is a close-up (zoom ≥ 1.5) of the MAIN image, in colour, on its most striking
+  detail (eyes, a face, the wound, the damage). Until the hook line ends only the main image is on screen; archive photos,
+  newspapers and portraits come after. `validate.py` rejects a story that breaks this.
+- Nudes (`meta.nude`, while `config.json` → `nude_safe_framing` is true): every shot of the main image and the cover stay at
+  zoom ≥ 1.5 on a face, hands, an object or the damage, never breasts, buttocks or genitals; no full-painting reveal.
+- Shots (see the reference reel): close-up of the painting at 0 s → reveal (`"hit": "big"`) on the hook's key word →
   a new shot on almost every phrase → archival/backstory images (`"gray": 1` for "the past") → back to the painting in
   colour for the payoff (`"hit": "big"` once more) → ending on a face/detail with the museum pin.
   Pose `"<point>@<zoom>"` (z = 1 fills the 9:16 frame; z < 1 + `"frame": true` = small framed picture). Keep motion
@@ -86,14 +102,19 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   readable and not covering faces, nothing blurry, black or empty, labels short (≤ 32 characters), the story is
   readable with the sound off. Extra moments: `python pipeline/preview_stills.py <slug> 12.5,20.1`. Fix and re-run
   `./make_reel.sh <slug> 3 6` until it is clean.
-- Cover (PLAYBOOK §1 "Cover"): question ≤ 2 lines (≈ 28 characters max), loaded words in `<i>…</i>`, answered by the
-  video; set `cover.focus` on the key face/detail; `cover.zoom` 1.1–1.25 if the top of the painting is dark and empty.
+- Cover (PLAYBOOK §1 "Cover" and §2): question ≤ 2 lines (≈ 28 characters max), loaded words in `<i>…</i>`, answered by
+  the video, selling the `hook_type`'s promise (never a vague superlative); set `cover.focus` on the most striking face or
+  detail — the picture decides as much as the words; `cover.zoom` 1.1–1.25 if the top of the painting is dark and empty
+  (≥ 1.5 for nudes).
+- The NEXT card: `build/resolved.json` has a `next` overlay when the next scheduled story already has a `teaser` (the
+  morning build re-resolves it, so a missing card at night is normal). Check it once you see it:
+  `python pipeline/preview_stills.py <slug> <duration − 0.3>`.
 
 ### 8. Captions
 - `caption` (Instagram/YouTube, 600–1200 characters): retell the story with the facts (numbers, names), end with a
   question to the audience (e.g. "🖤 Would you have noticed?"). An optional "P.S." with one extra verified fact is welcome.
-- `caption_short` (TikTok, ≤ 150 characters, the hook), `youtube_title` (≤ 70 characters, the cover question with the
-  painting's name), `hashtags` (10–12: painter, painting, museum, city, #arthistory, #painting, #museum, #artstory,
+- `caption_short` (TikTok, ≤ 150 characters, the hook), `youtube_title` (≤ 70 characters: the hook or cover question
+  first, then the painting's or painter's name, which people search for), `hashtags` (10–12: painter, painting, museum, city, #arthistory, #painting, #museum, #artstory,
   #deadpainterssociety, plus 1–2 topical).
 - `python pipeline/finalize.py <slug> --captions-only` → `out/caption.txt` (credits are added automatically from
   `meta` and every image with `"credit"`).
@@ -110,6 +131,8 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 - [ ] Stills and cover looked at and clean; cover question answered by the video.
 - [ ] CC images credited (image `credit` + `credit` overlay).
 - [ ] Scheduled; STORY_QUEUE updated.
+- [ ] `hook_type` set; hook ≤ 12 words with no date; shot 1 is a colour close-up of the painting; `teaser` written; `tail` 2.2.
+- [ ] `python automation/validate.py <slug> --report-only` prints no problems (fix every one it lists, then run it again).
 The workflow then runs `automation/validate.py`: a story missing any of these is dropped automatically.
 
 ## Revisions (when the task says REVISION)
@@ -124,8 +147,11 @@ changed. Do not reschedule.
 ## Story file reference (`stories/<slug>/story.json`)
 
 ```
-slug, voice "af_heart", lang "en-us", speed 0.92, tail 1.0
-meta      {painter, born, died, painting, year, museum, city, image (main image key), image_credit}
+slug, voice "af_heart", lang "en-us", speed 0.92, tail 2.2
+hook_type "dark"|"time-gap"|"craft"|"sacred-strange"|"dark-legend"|"damage"|"hidden"     (PLAYBOOK §2)
+teaser    "≤ 48 characters, shown on the previous reel's NEXT card"
+next      (optional) override the NEXT card text for THIS reel; false = no card (manual builds outside the schedule)
+meta      {painter, born, died, painting, year, museum, city, image (main image key), image_credit, nude?}
 rights    {creator_died, note}
 cover     {question (<i>…</i>), name (PAINTER IN CAPS), work ("Title, year"), focus [x,y], zoom, answered_by}
 say {}  ipa {}  lines [{id, perf: [[text, pause, speed], …]}]   facts [{claim, source}]

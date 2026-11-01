@@ -56,8 +56,14 @@ def review(slug, revised=False):
     dur = re.search(r"([\d.]+) s", qa); heard = re.search(r"recogniser match on the final file: ([\d.]+)", qa)
     head = ("✏️ <b>Revised version</b>" + (f" — you asked: <i>{T.esc(s.get('feedback', [''])[-1])}</i>" if s.get("feedback") else "")
             if revised else f"🎨 <b>Reel for {nice_date(date_for(slug))}</b>")
+    nxt = ""
+    try:
+        rs = json.load(open(os.path.join(out, "..", "build", "resolved.json")))
+        nxt = next((o.get("text", "") for o in rs.get("overlays", []) if o.get("type") == "next"), "")
+    except (OSError, ValueError): pass
     cap = (f"{head}\n\n<b>{T.esc(m.get('painter', ''))}</b>, <i>{T.esc(m.get('painting', ''))}</i> ({T.esc(m.get('year', ''))})\n"
-           f"📍 {T.esc(m.get('museum', ''))}, {T.esc(m.get('city', ''))}\n“{T.esc(q)}”\n\n"
+           f"📍 {T.esc(m.get('museum', ''))}, {T.esc(m.get('city', ''))}\n“{T.esc(q)}”\n"
+           f"🎣 {T.esc(st.get('hook_type', '?'))} · ⏭ NEXT card: {T.esc(nxt) if nxt else 'none'}\n\n"
            f"⏱ {dur.group(1) if dur else '?'} s · 🗣 voice check {heard.group(1) if heard else '?'} · 📚 {len(st.get('facts', []))} sourced facts")
     T.photo(chat, os.path.join(out, "cover.jpg"), cap)
     kb = [[{"text": "✅ Publish", "callback_data": f"ok:{slug}"}, {"text": "❌ Skip", "callback_data": f"no:{slug}"}],

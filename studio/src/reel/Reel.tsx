@@ -15,7 +15,7 @@ export type Shot = {
   peel?: { t0: number; t1: number; under: string };
 };
 export type Overlay = {
-  type: "label" | "title" | "pin" | "ring" | "hotspot" | "stamp" | "credit" | "cut"; t0: number; t1: number;
+  type: "label" | "title" | "pin" | "ring" | "hotspot" | "stamp" | "credit" | "cut" | "next"; t0: number; t1: number;
   text?: string; kicker?: string; sub?: string; point?: { x: number; y: number }; rx?: number; ry?: number; rot?: number; color?: string;
   box?: [number, number, number, number]; shade?: number;   // cut: kept area in image fractions [x0,y0,x1,y1]; shade = when the removed strips tint
 };
@@ -231,6 +231,20 @@ const Over: React.FC<{ o: Overlay; t: number; pt: (q: { x: number; y: number }) 
         <rect x={a.x} y={a.y} width={b.x - a.x} height={b.y - a.y} fill="none" stroke="#0B0B0B" strokeWidth={5.5} strokeDasharray="20 16"
           strokeDashoffset={-t * 40} style={{ opacity: kd }} />
       </svg>;
+    }
+    case "next": {  // silent end card: "NEXT" + tomorrow's teaser, in the caption zone once the last caption has gone
+      const kk = easeOut(ramp(t, o.t0, o.t0 + 0.45)); const kl = easeOut(ramp(t, o.t0 + 0.1, o.t0 + 0.7));
+      return <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(0,0,0,0) 48%, rgba(0,0,0,${0.62 * kk}) 82%)` }}>
+        <div style={{ position: "absolute", left: 90, right: 90, top: st.captionTop - 60, textAlign: "center", opacity: kk, transform: `translateY(${(1 - kk) * 26}px)` }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 22, marginBottom: 22 }}>
+            <div style={{ width: 70 * kl, height: 3, background: st.accent }} />
+            <div style={{ fontFamily: st.uiFont, fontWeight: 600, fontSize: 30, letterSpacing: 9, color: st.ink }}>{o.kicker ?? "NEXT"}</div>
+            <div style={{ width: 70 * kl, height: 3, background: st.accent }} />
+          </div>
+          <div style={{ fontFamily: st.titleFont, fontStyle: "italic", fontWeight: 500, fontSize: 74, lineHeight: 1.08, letterSpacing: -1.5, color: st.ink,
+            textShadow: "0 4px 30px rgba(0,0,0,0.9)" }}>{o.text}</div>
+        </div>
+      </AbsoluteFill>;
     }
     case "stamp": { // rubber stamp slam (max one per reel)
       const kk = easeIn(ramp(t, o.t0, o.t0 + 0.14)); const col = o.color ?? st.accent;

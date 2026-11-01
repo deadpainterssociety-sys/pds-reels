@@ -1,5 +1,7 @@
 {
  "slug": "mona-lisa-theft",
+ "hook_type": "damage",
+ "teaser": "The theft that made the Mona Lisa famous",
  "voice": "af_heart",
  "speed": 0.92,
  "tail": 1.0,

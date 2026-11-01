@@ -2,39 +2,43 @@
 
 Claude picks from **Ideas** (or finds better ones), verifies everything, and moves the line to **Done** with the slug.
 Every idea here is a lead to check, not a fact. Gigi can suggest ideas any time with the *stories* workflow's `idea` field
-or by telling Claude in a chat.
+or by telling Claude in a chat. Types are the `hook_type`s of PLAYBOOK §2 (a suggestion: the angle decides).
 
 ## Done
 
-| Date | Slug | Painting (museum) | Angle |
-|---|---|---|---|
-| 26 Oct 2026 | (pilot) | Artemisia Gentileschi, *Judith Beheading Holofernes* (Uffizi) | torture at the trial, the bracelet |
-| 27 Oct 2026 | goya-saturn | Goya, *Saturn Devouring His Son* (Prado) | painted on his own wall, never meant to be seen |
-| 28 Oct 2026 | rokeby-venus | Velázquez, *Rokeby Venus* (National Gallery) | a suffragette attacked it with a meat cleaver in 1914 |
-| 29 Oct 2026 | mona-lisa-theft | Leonardo, *Mona Lisa* (Louvre) | stolen in 1911; the theft made it famous |
-| 30 Oct 2026 | night-watch-cut | Rembrandt, *The Night Watch* (Rijksmuseum) | cut down in 1715 to fit a wall |
-| 31 Oct 2026 | scream-madman | Munch, *The Scream* (National Museum, Oslo) | the pencil "madman" note blamed on a vandal was Munch's own |
+| Date | Slug | Painting (museum) | Angle | Type |
+|---|---|---|---|---|
+| 26 Oct 2026 | (pilot) | Artemisia Gentileschi, *Judith Beheading Holofernes* (Uffizi) | torture at the trial, the bracelet | dark-legend |
+| 27 Oct 2026 | goya-saturn | Goya, *Saturn Devouring His Son* (Prado) | painted on his own wall, never meant to be seen | dark |
+| 28 Oct 2026 | rokeby-venus | Velázquez, *Rokeby Venus* (National Gallery) | a suffragette attacked it with a meat cleaver in 1914 | damage |
+| 29 Oct 2026 | mona-lisa-theft | Leonardo, *Mona Lisa* (Louvre) | stolen in 1911; the theft made it famous | damage |
+| 30 Oct 2026 | night-watch-cut | Rembrandt, *The Night Watch* (Rijksmuseum) | cut down in 1715 to fit a wall | damage |
+| 31 Oct 2026 | scream-madman | Munch, *The Scream* (National Museum, Oslo) | the pencil "madman" note blamed on a vandal was Munch's own | hidden |
 
 ## Ideas (to verify)
 
-| Painting (museum) | Possible angle | Notes |
-|---|---|---|
-| Caravaggio, *David with the Head of Goliath* (Galleria Borghese, Rome) | Goliath's head is the painter's own face; he was on the run for killing a man | the "plea for a pardon" reading is a theory: say so |
-| Goya, *The Naked Maja* (Prado) | the Inquisition demanded to know who ordered it | sources: Prado, the 1815 Inquisition file |
-| Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside | don't play a melody you can't source |
-| Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | the model claim is a legend: say so |
-| Titian, *Venus of Urbino* (Uffizi) | Mark Twain called it the "vilest" picture in the world | check the quote word for word |
-| Bruegel, *The Triumph of Death* (Prado) | find the human hook | |
-| Velázquez, *Las Meninas* (Prado) | the knight's cross on his chest was added after the painting was finished | when and by whom; "the king painted it" is legend |
-| Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | crime; most-stolen artwork claims need care |
-| Holbein, *The Ambassadors* (National Gallery) | the stretched skull you only see from the side | show the anamorphosis |
-| Van Eyck, *Arnolfini Portrait* (National Gallery) | "Jan van Eyck was here" over the mirror | |
-| Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | |
-| Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark: not next to another dark one |
-| David, *The Death of Marat* (Royal Museums of Fine Arts, Brussels) | murdered in his bath by Charlotte Corday | |
-| Sargent, *Madame X* (Met, New York) | one fallen strap ruined his Paris career; he repainted it | Sargent †1925: OK |
-| Klimt, *Portrait of Adele Bloch-Bauer I* (Neue Galerie, New York) | looted by the Nazis, won back in court by her niece | Klimt †1918: OK |
-| Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | another "cut" story: space it out from the Night Watch |
-| Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | |
-| Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | |
-| Whistler, *Whistler's Mother* (Musée d'Orsay) | it was meant as an "arrangement in grey and black" | |
+| Painting (museum) | Possible angle | Type | Notes |
+|---|---|---|---|
+| Caravaggio, *David with the Head of Goliath* (Galleria Borghese, Rome) | Goliath's head is the painter's own face; he was on the run for killing a man | dark-legend | the "plea for a pardon" reading is a theory: say so |
+| Vermeer, *Girl Reading a Letter at an Open Window* (Gemäldegalerie Alte Meister, Dresden) | a Cupid on the wall was painted over by someone else after Vermeer died; uncovered in 2021 | time-gap | check who/when for the overpaint in the museum's own restoration report; put the number of years in the cover |
+| Holbein, *The Ambassadors* (National Gallery) | the stretched skull you only see from the side | craft | show the anamorphosis |
+| Van Eyck, *Arnolfini Portrait* (National Gallery) | "Jan van Eyck was here" over the mirror; the tiny painter in the mirror | craft | |
+| Van Gogh, *Wheatfield with Crows* (Van Gogh Museum) | everyone calls it his last painting; it wasn't | hidden | Van Gogh Museum's own page on his last works |
+| Goya, *The Naked Maja* (Prado) | the Inquisition demanded to know who ordered it | hidden | **nude: safe framing** (PLAYBOOK §1); sources: Prado, the 1815 Inquisition file |
+| Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside | dark | don't play a melody you can't source; partial nudity: frame the score, not the bodies |
+| Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | dark-legend | **nude: safe framing**; the model claim is a legend: say so |
+| Titian, *Venus of Urbino* (Uffizi) | Mark Twain called it the "vilest" picture in the world | hidden | **nude: safe framing**; check the quote word for word |
+| Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
+| Fuseli, *The Nightmare* (Detroit Institute of Arts) | the demon on the sleeping woman; the scene echoed in *Frankenstein* | dark | lesser-known-ish; the Mary Shelley link is a scholarly reading: hedge |
+| Böcklin, *Isle of the Dead* (Kunstmuseum Basel) | painted five times; one version later hung in Hitler's office | dark | lesser-known; verify which version, where it hangs now |
+| Velázquez, *Las Meninas* (Prado) | the knight's cross on his chest was added after the painting was finished | hidden | when and by whom; "the king painted it" is legend |
+| Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | damage | crime; most-stolen artwork claims need care |
+| Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
+| Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark | dark: not next to another dark one |
+| David, *The Death of Marat* (Royal Museums of Fine Arts, Brussels) | murdered in his bath by Charlotte Corday | dark | |
+| Sargent, *Madame X* (Met, New York) | one fallen strap ruined his Paris career; he repainted it | hidden | Sargent †1925: OK |
+| Klimt, *Portrait of Adele Bloch-Bauer I* (Neue Galerie, New York) | looted by the Nazis, won back in court by her niece | damage | Klimt †1918: OK |
+| Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch |
+| Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | hidden | |
+| Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
+| Whistler, *Whistler's Mother* (Musée d'Orsay) | it was meant as an "arrangement in grey and black" | hidden | |

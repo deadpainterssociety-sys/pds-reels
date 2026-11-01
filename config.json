@@ -13,5 +13,7 @@
  "youtube_category": "27",
  "instagram_api_version": "v23.0",
  "claude_model": "opus",
+ "nude_safe_framing": true,
+ "_nude_safe_framing": "true = nudes are shown only in close-ups (YouTube may age-restrict them). Set false once Gigi confirms the Rokeby Venus Short was not restricted.",
  "paused": false
 }

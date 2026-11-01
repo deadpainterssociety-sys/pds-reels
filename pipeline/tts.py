@@ -66,7 +66,7 @@ for ln in story["lines"]:
         audio.append(a); audio.append(np.zeros(int(pause * SR), np.float32))
         t += dur + pause; l_e = t - pause
     tl.append({"id": ln["id"], "text": strip(" ".join(x[0] for x in ln["perf"])), "s": round(l_s, 3), "e": round(l_e, 3), "words": words_all})
-audio.append(np.zeros(int(float(story.get("tail", 1.0)) * SR), np.float32))
+audio.append(np.zeros(int(float(story.get("tail", 2.2)) * SR), np.float32))   # 2.2 s: room for the silent NEXT card
 full = np.concatenate(audio); full = full / np.abs(full).max() * 0.89
 sf.write(os.path.join(out, "voice.wav"), full, SR)
 json.dump({"voice": voice, "lang": lang, "duration": round(len(full) / SR, 3), "lines": tl},

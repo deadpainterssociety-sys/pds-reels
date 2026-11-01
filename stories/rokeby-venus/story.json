@@ -1,5 +1,7 @@
 {
  "slug": "rokeby-venus",
+ "hook_type": "damage",
+ "teaser": "Why a suffragette took a cleaver to Venus",
  "voice": "af_heart",
  "speed": 1.0,
  "tail": 1.0,

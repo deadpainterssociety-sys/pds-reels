@@ -1,8 +1,10 @@
 {
  "slug": "night-watch-cut",
+ "hook_type": "damage",
+ "teaser": "Rembrandt's masterpiece, cut to fit a wall",
  "voice": "af_heart",
  "speed": 0.92,
- "tail": 1.0,
+ "tail": 2.2,
  "meta": {
   "painter": "Rembrandt van Rijn",
   "born": 1606,

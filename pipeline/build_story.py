@@ -120,6 +120,34 @@ for ov in st.get("overlays", []):
     if isinstance(ov.get("point"), str):
         pt = st["images"][ov.get("img", MAIN)]["points"][ov["point"]]; o["point"] = {"x": pt[0], "y": pt[1]}
     overlays.append(o)
+
+
+def next_teaser():
+    """Text for the silent NEXT card: the `teaser` of the next story on the schedule (PLAYBOOK §1, 1 Nov).
+    story.json "next": "<text>" overrides it; "next": false switches the card off (manual builds outside the schedule)."""
+    if "next" in st: return (st["next"] or "").strip() or None
+    try: sch = sorted(json.load(open(os.path.join(ROOT, "schedule.json"))), key=lambda e: e["date"])
+    except (OSError, ValueError): return None
+    mine = [e["date"] for e in sch if e["slug"] == slug]
+    if not mine: return None
+    for e in sch:
+        if e["date"] <= mine[0] or e["slug"] == slug: continue
+        try: status = json.load(open(os.path.join(STORIES, e["slug"], "state.json"))).get("status", "draft")
+        except (OSError, ValueError): status = "draft"
+        if status in ("rejected", "skipped", "posted"): continue
+        try: return (json.load(open(os.path.join(STORIES, e["slug"], "story.json"))).get("teaser") or "").strip() or None
+        except (OSError, ValueError): return None   # the next story isn't written yet: no card (never tease the wrong day)
+    return None
+
+
+teaser = next_teaser()
+if teaser:
+    t0 = round(tl["lines"][-1]["e"] + 0.6, 3)   # after the last caption has gone
+    if tl["duration"] - t0 < 1.2: print(f"!! the NEXT card gets only {tl['duration'] - t0:.1f} s: set \"tail\": 2.2 and re-run from step 1")
+    overlays.append({"type": "next", "kicker": "NEXT", "text": teaser, "t0": t0, "t1": tl["duration"] + 1})
+    print(f"NEXT card: {teaser}")
+else:
+    print("NEXT card: none (no teaser for the next scheduled story)")
 for f in st.get("flashes", []): flashes.append(T(f))
 nocap = [[T(a), T(b)] for a, b in st.get("nocap", [])]
 words = [{"line": l["id"], "words": [{"w": w["w"], "s": w["s"], "e": w["e"], **({"em": 1} if w.get("em") else {})} for w in l["words"]]}

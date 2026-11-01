@@ -6,9 +6,53 @@ step output: ok=<slugs> rejected=<json [{slug, problems}]>
 """
 import datetime, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import ROOT, gh_output, save_schedule, schedule, set_state, state, story
+from common import CONFIG, ROOT, gh_output, save_schedule, schedule, set_state, state, story
 
 MIN_YEARS = 70
+HOOK_TYPES = ("dark", "time-gap", "craft", "sacred-strange", "dark-legend", "damage", "hidden")   # PLAYBOOK §2
+HOOK_MAX_WORDS = 12
+SCENE_SETTING = re.compile(r"^(one (morning|day|night|evening|afternoon)|in (the )?\d|on \w+ \d|once\b|it was\b|"
+                           r"(a|an|the) (man|woman|boy|girl|young|old|painter|artist|guard|visitor)\b.{0,20}\b(walk|walked|walks|enter|entered|enters))", re.I)
+CLOSE_UP = 1.5          # minimum zoom for the opening shot (and for every shot of a nude while nude_safe_framing is on)
+
+
+def visual_problems(st, sd):
+    """PLAYBOOK §1 (1 Nov): open on the painting in colour, close-up; only the painting until the hook ends; nudes stay close."""
+    p, m = [], st.get("meta", {})
+    rp, tp = os.path.join(sd, "build", "resolved.json"), os.path.join(sd, "build", "timeline.json")
+    if not (os.path.exists(rp) and os.path.exists(tp)): return p
+    r, t = json.load(open(rp)), json.load(open(tp))
+    shots, main = r.get("shots", []), m.get("image")
+    if not shots: return ["no shots"]
+    first = shots[0]
+    if first["img"] != main or first.get("gray") or first.get("kind") == "map":
+        p.append(f"the reel must open on the painting itself, in colour (shot 1 shows '{first['img']}')")
+    elif min(first["from"][2], first["to"][2]) < CLOSE_UP:
+        p.append(f"shot 1 must be a close-up of the painting (zoom ≥ {CLOSE_UP}, got {min(first['from'][2], first['to'][2]):.2f})")
+    hook_end = t["lines"][0]["e"] if t.get("lines") else 0
+    early = sorted({s["img"] for s in shots[1:] if s["t"] < hook_end - 0.05 and (s["img"] != main or s.get("gray"))})
+    if early: p.append(f"only the painting, in colour, until the hook ends at {hook_end:.1f} s (also shown: {', '.join(early)})")
+    if m.get("nude") and CONFIG.get("nude_safe_framing", True):
+        wide = [f"{s['t']:.1f}s" for s in shots if s["img"] == main and min(s["from"][2], s["to"][2]) < CLOSE_UP]
+        if wide: p.append(f"nude: shots of the painting must stay close-up (zoom ≥ {CLOSE_UP}) on safe details (wide at {', '.join(wide[:5])})")
+        if float(st.get("cover", {}).get("zoom") or 1) < CLOSE_UP: p.append(f"nude: cover.zoom must be ≥ {CLOSE_UP} on a face or safe detail")
+    return p
+
+
+def hook_problems(st):
+    """PLAYBOOK §1–2 (1 Nov): one punchy hook line, a hook_type, a teaser for the NEXT card, room for the card."""
+    p = []
+    if st.get("hook_type") not in HOOK_TYPES: p.append(f"hook_type must be one of: {', '.join(HOOK_TYPES)}")
+    tz = (st.get("teaser") or "").strip()
+    if not tz: p.append("teaser missing (≤ 48 characters, shown on the previous reel's NEXT card)")
+    elif len(tz) > 48: p.append(f"teaser is {len(tz)} characters (max 48)")
+    lines = st.get("lines") or [{}]
+    hook = " ".join(re.sub(r"\*", "", ph[0]) for ph in lines[0].get("perf", [])).strip()
+    if len(hook.split()) > HOOK_MAX_WORDS: p.append(f"hook is {len(hook.split())} words (max {HOOK_MAX_WORDS}: one punchy line)")
+    if re.search(r"\b1\d{3}\b", hook) or SCENE_SETTING.match(hook):
+        p.append("hook opens with a date or a scene-setting: start with a claim about the painting on screen")
+    if float(st.get("tail", 1.0)) < 2.0: p.append("tail must be ≥ 2.0 s (room for the NEXT card)")
+    return p
 
 
 def problems(slug):
@@ -41,6 +85,7 @@ def problems(slug):
         bad = [f"{l['id']} ({l.get('match')})" for l in t["lines"] if l.get("match") is not None and l["match"] < 0.85]
         if bad: p.append("voice check failed on: " + ", ".join(bad))
     if not st.get("caption") or not st.get("hashtags"): p.append("caption/hashtags missing")
+    p += hook_problems(st) + visual_problems(st, sd)
     if not any(e["slug"] == slug for e in schedule()): p.append("not on the schedule (run automation/plan.py add)")
     return p
 

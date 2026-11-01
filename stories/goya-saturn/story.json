@@ -1,5 +1,7 @@
 {
  "slug": "goya-saturn",
+ "hook_type": "dark",
+ "teaser": "The painting Goya hid on his dining-room wall",
  "voice": "af_heart",
  "speed": 1.0,
  "tail": 1.0,
