@@ -95,7 +95,7 @@ def main(weekly=False):
     try:
         import bot
         if bot.chat_id() and (not weekly or broken):
-            import telegram as T, re
+            import telegram as T
             lines = [re.sub(r"^\| (.*?) \| (.*?) \| (.*?) \|$", r"\1 <b>\2</b> — \3", r) for r in rows if r.startswith("|")]
             T.send(bot.chat_id(), ("⚠️ <b>Something needs attention</b>\n" if broken else "🔧 <b>Setup check</b>\n") + "\n".join(lines))
     except Exception as e: print("telegram report failed:", e)

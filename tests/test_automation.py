@@ -24,7 +24,7 @@ ENV = {**os.environ, "PATH": bin_dir + ":" + os.environ["PATH"], "TELEGRAM_API":
        "TELEGRAM_CHAT_ID": "42", "IG_API": srv.url, "IG_ACCESS_TOKEN": "IGOLD", "YT_OAUTH": srv.url, "YT_API": srv.url,
        "YT_CLIENT_ID": "cid", "YT_CLIENT_SECRET": "cs", "YT_REFRESH_TOKEN": "rt", "TIKTOK_API": srv.url, "TIKTOK_CLIENT_KEY": "ck",
        "TIKTOK_CLIENT_SECRET": "tcs", "TIKTOK_REFRESH_TOKEN": "rft.OLD", "GITHUB_API_URL": srv.url, "GITHUB_REPOSITORY": "o/r",
-       "GITHUB_TOKEN": "ghs_test", "GH_PAT": "github_pat_test", "POLL_SECONDS": "0.05", "GITHUB_OUTPUT": os.path.join(tmp, "out.txt")}
+       "GITHUB_TOKEN": "ghs_test", "GH_PAT": "github_pat_test", "CLAUDE_CODE_OAUTH_TOKEN": "sk-ant-oat01-test\nwrapped", "POLL_SECONDS": "0.05", "GITHUB_OUTPUT": os.path.join(tmp, "out.txt")}
 fails = []
 
 
