@@ -104,7 +104,7 @@ def main(slugs, report_only=False):
         else:
             ok.append(s); print("ok", s)
     gh_output(ok=" ".join(ok), rejected=json.dumps(rejected))
-    if rejected and os.environ.get("TELEGRAM_BOT_TOKEN"):
+    if rejected and not report_only and os.environ.get("TELEGRAM_BOT_TOKEN"):   # a dry check never alerts Gigi
         try:
             import bot, telegram as T
             T.send(bot.chat_id(), "⚠️ <b>Dropped a story that failed the quality check</b>\n" + "\n".join(

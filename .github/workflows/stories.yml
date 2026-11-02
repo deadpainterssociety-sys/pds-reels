@@ -56,6 +56,10 @@ jobs:
         if: success() && steps.late.outputs.render == 'true'
         env: { GH_TOKEN: "${{ github.token }}" }
         run: gh workflow run build.yml
+      - name: Keep the written stories if anything failed (Actions → this run → Artifacts)
+        if: failure() && steps.need.outputs.n != '0'
+        uses: actions/upload-artifact@v4
+        with: { name: stories-backup, path: "stories/\nSTORY_QUEUE.md\nschedule.json\npipeline/pronounce.json", retention-days: 14, if-no-files-found: ignore }
       - if: failure()
         run: |
           if [ -f "$RUNNER_TEMP/claude_limit" ]; then

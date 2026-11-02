@@ -12,6 +12,7 @@ done
 command -v claude >/dev/null || npm install -g @anthropic-ai/claude-code >/dev/null 2>&1
 export BASH_DEFAULT_TIMEOUT_MS=900000 BASH_MAX_TIMEOUT_MS=1800000   # image downloads can take ~10-25 min on CI IPs
 MODEL=$(python3 -c "import json; print(json.load(open('config.json')).get('claude_model', 'opus'))")
-claude -p "$1" --model "$MODEL" --fallback-model sonnet --permission-mode acceptEdits --max-turns 400 \
+# Claude never talks to Gigi or the platforms directly (CLAUDE.md): hide those secrets from its shell
+env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID -u GH_PAT -u GITHUB_TOKEN -u GH_TOKEN claude -p "$1" --model "$MODEL" --fallback-model sonnet --permission-mode acceptEdits --max-turns 400 \
   --allowedTools "Bash Read Write Edit Glob Grep WebSearch WebFetch TodoWrite" \
   --output-format stream-json --verbose | python3 automation/claude_log.py
