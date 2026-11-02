@@ -1,0 +1,774 @@
+{
+ "slug": "vermeer-cupid",
+ "hook_type": "time-gap",
+ "teaser": "The Cupid someone painted out of a Vermeer",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Johannes Vermeer",
+  "born": 1632,
+  "died": 1675,
+  "painting": "Girl Reading a Letter at an Open Window",
+  "year": "c. 1657–1659",
+  "museum": "Gemäldegalerie Alte Meister",
+  "city": "Dresden",
+  "image": "girl",
+  "image_credit": "Gemäldegalerie Alte Meister, Staatliche Kunstsammlungen Dresden, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1675,
+  "note": "Vermeer d. 1675: public domain. All images are faithful reproductions of PD paintings, tagged public domain on Commons."
+ },
+ "say": {
+  "1650s": "sixteen fifties",
+  "1675": "sixteen seventy-five",
+  "1979": "nineteen seventy-nine",
+  "2017": "twenty seventeen",
+  "2021": "twenty twenty-one",
+  "200": "two hundred"
+ },
+ "ipa": {
+  "Vermeer": "vɚmˈɪɹ"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Someone painted over a *god* in this painting.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "made",
+   "perf": [
+    [
+     "Vermeer painted it in Delft,",
+     0.3,
+     0.97
+    ],
+    [
+     "in the late 1650s.",
+     0.3,
+     0.97
+    ],
+    [
+     "A girl, reading a letter.",
+     0.3,
+     0.97
+    ],
+    [
+     "And behind her, on the wall,",
+     0.3,
+     0.97
+    ],
+    [
+     "a painting of *Cupid.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cover",
+   "perf": [
+    [
+     "Vermeer died in 1675.",
+     0.3,
+     0.97
+    ],
+    [
+     "Decades later,",
+     0.3,
+     0.97
+    ],
+    [
+     "someone covered Cupid with paint,",
+     0.3,
+     0.97
+    ],
+    [
+     "and left a *blank* wall.",
+     0.4,
+     0.9
+    ],
+    [
+     "Nobody knows who, or why.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "xray",
+   "perf": [
+    [
+     "In 1979,",
+     0.3,
+     0.97
+    ],
+    [
+     "an X-ray found him underneath.",
+     0.3,
+     0.97
+    ],
+    [
+     "And experts assumed",
+     0.25,
+     0.97
+    ],
+    [
+     "Vermeer had hidden him *himself.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "dirt",
+   "perf": [
+    [
+     "Then, in 2017,",
+     0.3,
+     0.97
+    ],
+    [
+     "a restorer looked closer.",
+     0.3,
+     0.97
+    ],
+    [
+     "Under the cover-up,",
+     0.3,
+     0.97
+    ],
+    [
+     "on top of Cupid,",
+     0.25,
+     0.97
+    ],
+    [
+     "was a layer of *dirt.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "meaning",
+   "perf": [
+    [
+     "That dirt meant Cupid had hung there,",
+     0.3,
+     0.97
+    ],
+    [
+     "in plain sight,",
+     0.3,
+     0.97
+    ],
+    [
+     "for decades.",
+     0.4,
+     0.92
+    ],
+    [
+     "Vermeer didn't hide him.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "back",
+   "perf": [
+    [
+     "By 2021,",
+     0.3,
+     0.97
+    ],
+    [
+     "after more than 200 years,",
+     0.3,
+     0.97
+    ],
+    [
+     "Cupid was back.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "He's stepping on a *mask:*",
+     0.3,
+     0.9
+    ],
+    [
+     "love, without lies.",
+     0.4,
+     0.9
+    ],
+    [
+     "Experts think",
+     0.25,
+     0.97
+    ],
+    [
+     "she's reading a *love* letter.",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Old Masters Picture Gallery, in Dresden.",
+     0.0,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "girl": {
+   "file": "src/girl.jpg",
+   "commons": "File:Jan Vermeer van Delft - Brieflezend meisje bij het venster (ca. 1657-59).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.465,
+     0.53
+    ],
+    "letter": [
+     0.37,
+     0.71
+    ],
+    "cupidface": [
+     0.58,
+     0.11
+    ],
+    "cupidpic": [
+     0.6,
+     0.26
+    ],
+    "wall": [
+     0.6,
+     0.27
+    ],
+    "mask": [
+     0.69,
+     0.44
+    ],
+    "masks": [
+     0.64,
+     0.43
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "masklow": [
+     0.65,
+     0.48
+    ]
+   }
+  },
+  "virginal": {
+   "file": "src/virginal.jpg",
+   "commons": "File:Jan Vermeer van Delft - Lady Standing at a Virginal - National Gallery, London.jpg",
+   "long": 3840,
+   "points": {
+    "cupid": [
+     0.66,
+     0.24
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "delft": {
+   "file": "src/delft.jpg",
+   "commons": "File:Johannes Vermeer - View of Delft - 92 - Mauritshuis.jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "city": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  "half": {
+   "file": "src/half.jpg",
+   "commons": "File:VermeerGirlWindowCupid.jpg",
+   "points": {
+    "cupid": [
+     0.64,
+     0.2
+    ],
+    "edge": [
+     0.58,
+     0.42
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "before": {
+   "file": "src/before.jpg",
+   "commons": "File:Johannes Vermeer - Girl Reading a Letter by an Open Window - Google Art Project.jpg",
+   "long": 3840,
+   "points": {
+    "face": [
+     0.465,
+     0.53
+    ],
+    "wall": [
+     0.6,
+     0.27
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "girl",
+   "from": "face@2.4",
+   "to": "face@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.4-0.03",
+   "img": "girl",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "made-0.08",
+   "img": "delft",
+   "kind": "image",
+   "from": "city@1.0",
+   "to": "city@1.1",
+   "gray": 1
+  },
+  {
+   "at": "made.9-0.05",
+   "img": "girl",
+   "from": "letter@1.8",
+   "to": "letter@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "made.14-0.05",
+   "img": "girl",
+   "from": "face@1.4",
+   "to": "cupidpic@1.5",
+   "sway": 0.006
+  },
+  {
+   "at": "made.20-0.05",
+   "img": "girl",
+   "from": "cupidpic@1.3",
+   "to": "cupidpic@1.42",
+   "sway": 0.006
+  },
+  {
+   "at": "cover-0.08",
+   "img": "virginal",
+   "kind": "image",
+   "from": "cupid@1.25",
+   "to": "cupid@1.4",
+   "gray": 0.6
+  },
+  {
+   "at": "cover.6-0.05",
+   "img": "girl",
+   "kind": "image",
+   "from": "wall@1.4",
+   "to": "wall@1.45"
+  },
+  {
+   "at": "cover.11-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "wall@1.45",
+   "to": "wall@1.5",
+   "hit": "small"
+  },
+  {
+   "at": "cover.16-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.5
+  },
+  {
+   "at": "xray-0.08",
+   "img": "before",
+   "kind": "image",
+   "from": "wall@1.5",
+   "to": "wall@1.6",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "xray.7-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "gray": 0.6
+  },
+  {
+   "at": "dirt-0.08",
+   "img": "half",
+   "kind": "image",
+   "from": "center@0.45",
+   "to": "center@0.47",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "dirt.7-0.05",
+   "img": "half",
+   "kind": "image",
+   "from": "edge@1.5",
+   "to": "edge@1.65"
+  },
+  {
+   "at": "dirt.14-0.05",
+   "img": "half",
+   "kind": "image",
+   "from": "edge@1.9",
+   "to": "edge@2.05"
+  },
+  {
+   "at": "meaning-0.08",
+   "img": "girl",
+   "kind": "image",
+   "from": "cupidpic@1.4",
+   "to": "cupidpic@1.5",
+   "gray": 0.7
+  },
+  {
+   "at": "meaning.12-0.05",
+   "img": "girl",
+   "kind": "image",
+   "from": "cupidpic@1.25",
+   "to": "cupidpic@1.35",
+   "gray": 0.7
+  },
+  {
+   "at": "back-0.08",
+   "img": "before",
+   "kind": "image",
+   "from": "center@1.05",
+   "to": "center@1.0",
+   "gray": 0.4
+  },
+  {
+   "at": "back.2-0.05",
+   "img": "half",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.06"
+  },
+  {
+   "at": "back.8-0.05",
+   "img": "girl",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "girl",
+   "from": "masklow@2.6",
+   "to": "masklow@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.5-0.05",
+   "img": "girl",
+   "from": "face@2.1",
+   "to": "face@2.25",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.8-0.05",
+   "img": "girl",
+   "from": "letter@1.9",
+   "to": "letter@2.1",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "girl",
+   "from": "face@1.6",
+   "to": "face@1.8",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.5",
+   "to": "made-0.1",
+   "img": "girl",
+   "point": "cupidpic",
+   "rx": 230,
+   "ry": 330,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "made",
+   "to": "made.9-0.1",
+   "text": "DELFT · VIEW BY VERMEER"
+  },
+  {
+   "type": "label",
+   "from": "made.9",
+   "to": "made.20-0.1",
+   "text": "VERMEER · c. 1657–59"
+  },
+  {
+   "type": "label",
+   "from": "cover",
+   "to": "cover.6-0.1",
+   "text": "SAME CUPID · VERMEER, c. 1670"
+  },
+  {
+   "type": "label",
+   "from": "cover.11",
+   "to": "xray-0.1",
+   "text": "BEFORE 2017 · THE BLANK WALL"
+  },
+  {
+   "type": "label",
+   "from": "xray",
+   "to": "xray.7-0.1",
+   "text": "1979 · X-RAY"
+  },
+  {
+   "type": "ring",
+   "at": "xray.3",
+   "to": "xray.7-0.1",
+   "img": "before",
+   "point": "wall",
+   "rx": 260,
+   "ry": 360,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "dirt",
+   "to": "dirt.7-0.1",
+   "text": "DRESDEN · 2019 · HALF DONE"
+  },
+  {
+   "type": "hotspot",
+   "at": "dirt.16",
+   "to": "dirt$+0.3",
+   "img": "half",
+   "point": "edge"
+  },
+  {
+   "type": "stamp",
+   "from": "meaning.12",
+   "to": "back-0.1",
+   "text": "NOT VERMEER"
+  },
+  {
+   "type": "label",
+   "from": "back.2",
+   "to": "back.8-0.1",
+   "text": "RESTORATION · 2017–2021"
+  },
+  {
+   "type": "hotspot",
+   "at": "payoff.3",
+   "to": "payoff.5-0.1",
+   "img": "girl",
+   "point": "mask"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "GEMÄLDEGALERIE · DRESDEN"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "xray-0.2",
+    "meaning$+0.2"
+   ],
+   "drop": [
+    "dirt.14-0.05",
+    "dirt$+0.3"
+   ],
+   "choir": [
+    "back.8-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "xray.3",
+   "fx": "shutter",
+   "gain": 0.5
+  },
+  {
+   "at": "dirt.18",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "meaning.12",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "payoff.4",
+   "fx": "chime",
+   "gain": 0.45
+  }
+ ],
+ "cover": {
+  "question": "Who hid here <i>for 200 years?</i>",
+  "name": "JOHANNES VERMEER",
+  "work": "Girl Reading a Letter at an Open Window, c. 1657",
+  "focus": [
+   0.58,
+   0.14
+  ],
+  "zoom": 1.15,
+  "answered_by": "Cupid: painted over decades after Vermeer died, X-rayed in 1979, uncovered by the 2017–2021 restoration"
+ },
+ "facts": [
+  {
+   "claim": "Painted by Johannes Vermeer c. 1657–1659 (Delft); a girl reading a letter at an open window; behind her on the wall, a painting of a full-length Cupid",
+   "source": "https://en.wikipedia.org/wiki/Girl_Reading_a_Letter_at_an_Open_Window ; https://hyperallergic.com/vermeer-restoration-finally-complete-reveals-a-painting-within-a-painting"
+  },
+  {
+   "claim": "Vermeer died in 1675",
+   "source": "https://en.wikipedia.org/wiki/Johannes_Vermeer"
+  },
+  {
+   "claim": "The Cupid was overpainted (leaving an apparently blank wall) decades after Vermeer completed the work / after his death, by an unknown party; who and why are unknown",
+   "source": "https://www.smithsonianmag.com/smart-news/restoration-reveals-long-lost-cupid-painted-over-after-vermeers-death-180972143/ ; https://www.theartnewspaper.com/news/hidden-cupid-resurfaces-in-one-of-vermeer-s-best-known-works ; https://essentialvermeer.com/cat_about/open.html (Dresden: 'at least several decades after the painting was made, and significantly after the artist's death')"
+  },
+  {
+   "claim": "X-rays revealed the hidden Cupid in 1979; scholars had assumed Vermeer himself painted over it",
+   "source": "https://hyperallergic.com/vermeer-restoration-finally-complete-reveals-a-painting-within-a-painting ; https://essentialvermeer.com/cat_about/open.html ; https://www.theartnewspaper.com/news/hidden-cupid-resurfaces-in-one-of-vermeer-s-best-known-works"
+  },
+  {
+   "claim": "In 2017 conservator Christoph Schölzel began the restoration; Uta Neidhardt: 'There was even a layer of dirt above the original varnish on the Cupid', showing the painting had stayed in its original state for decades",
+   "source": "https://www.smithsonianmag.com/smart-news/restoration-reveals-long-lost-cupid-painted-over-after-vermeers-death-180972143/ ; https://www.theartnewspaper.com/news/hidden-cupid-resurfaces-in-one-of-vermeer-s-best-known-works"
+  },
+  {
+   "claim": "Lab tests showed the Cupid was covered by someone other than Vermeer",
+   "source": "https://hyperallergic.com/vermeer-restoration-finally-complete-reveals-a-painting-within-a-painting ; https://www.smithsonianmag.com/smart-news/restoration-reveals-long-lost-cupid-painted-over-after-vermeers-death-180972143/"
+  },
+  {
+   "claim": "Restoration completed in 2021; Cupid visible again after about two and a half centuries (Art Newspaper, 2019); Wikipedia dates the overpaint to the late 18th century, so 'more than 200 years' holds either way",
+   "source": "https://www.theartnewspaper.com/news/hidden-cupid-resurfaces-in-one-of-vermeer-s-best-known-works ; https://en.wikipedia.org/wiki/Girl_Reading_a_Letter_at_an_Open_Window ; https://hyperallergic.com/vermeer-restoration-finally-complete-reveals-a-painting-within-a-painting"
+  },
+  {
+   "claim": "Cupid tramples a mask (masks = deception/pretence), read as true love overcoming deception; Neidhardt calls the Cupid 'the only clue suggesting a love story'",
+   "source": "https://hyperallergic.com/vermeer-restoration-finally-complete-reveals-a-painting-within-a-painting ; https://essentialvermeer.com/cat_about/open.html ; https://www.theartnewspaper.com/news/hidden-cupid-resurfaces-in-one-of-vermeer-s-best-known-works"
+  },
+  {
+   "claim": "The same Cupid appears in Vermeer's A Young Woman Standing at a Virginal (c. 1670–72, National Gallery, London)",
+   "source": "https://www.theartnewspaper.com/news/hidden-cupid-resurfaces-in-one-of-vermeer-s-best-known-works ; https://essentialvermeer.com/cat_about/open.html"
+  },
+  {
+   "claim": "Held since 1742 by Dresden; hangs in the Gemäldegalerie Alte Meister (Old Masters Picture Gallery), Staatliche Kunstsammlungen Dresden",
+   "source": "https://en.wikipedia.org/wiki/Girl_Reading_a_Letter_at_an_Open_Window ; https://hyperallergic.com/vermeer-restoration-finally-complete-reveals-a-painting-within-a-painting"
+  }
+ ],
+ "caption": "Someone painted over a god in this Vermeer.\n\nVermeer painted Girl Reading a Letter at an Open Window in Delft around 1657–59. On the wall behind her hung a painting of Cupid. Decades after Vermeer died in 1675, someone covered Cupid with paint and left a blank wall. Nobody knows who, or why.\n\nAn X-ray found him in 1979, and for decades experts assumed Vermeer had changed his mind and hidden Cupid himself. Then in 2017 Dresden's restorers looked closer: under the cover-up, on top of Cupid's varnish, was a layer of dirt. Cupid had hung there in plain sight for decades. It wasn't Vermeer.\n\nBy 2021 the overpaint was gone. Cupid is back, stepping on a mask, a symbol of love without deceit. Experts think she's reading a love letter.\n\nP.S. The same Cupid hangs on the wall in another Vermeer: A Young Woman Standing at a Virginal, in London's National Gallery.\n\n🖤 Which version do you prefer: with Cupid or without?",
+ "caption_short": "Someone painted over a god in this Vermeer, and for decades experts blamed Vermeer himself. A layer of dirt proved them wrong. 🖤",
+ "youtube_title": "Who hid on this wall for 200 years? Vermeer's hidden Cupid",
+ "hashtags": [
+  "#vermeer",
+  "#johannesvermeer",
+  "#girlreadingaletter",
+  "#gemaeldegaleriealtemeister",
+  "#dresden",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#artrestoration",
+  "#cupid"
+ ]
+}

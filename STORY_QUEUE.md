@@ -14,13 +14,13 @@ or by telling Claude in a chat. Types are the `hook_type`s of PLAYBOOK §2 (a su
 | 29 Oct 2026 | mona-lisa-theft | Leonardo, *Mona Lisa* (Louvre) | stolen in 1911; the theft made it famous | damage |
 | 30 Oct 2026 | night-watch-cut | Rembrandt, *The Night Watch* (Rijksmuseum) | cut down in 1715 to fit a wall | damage |
 | 31 Oct 2026 | scream-madman | Munch, *The Scream* (National Museum, Oslo) | the pencil "madman" note blamed on a vandal was Munch's own | hidden |
+| 3 Nov 2026 | vermeer-cupid | Vermeer, *Girl Reading a Letter at an Open Window* (Gemäldegalerie Alte Meister, Dresden) | Cupid painted over decades after Vermeer died; blamed on Vermeer until a dirt layer proved otherwise; uncovered 2017–2021 | time-gap |
 
 ## Ideas (to verify)
 
 | Painting (museum) | Possible angle | Type | Notes |
 |---|---|---|---|
 | Caravaggio, *David with the Head of Goliath* (Galleria Borghese, Rome) | Goliath's head is the painter's own face; he was on the run for killing a man | dark-legend | the "plea for a pardon" reading is a theory: say so |
-| Vermeer, *Girl Reading a Letter at an Open Window* (Gemäldegalerie Alte Meister, Dresden) | a Cupid on the wall was painted over by someone else after Vermeer died; uncovered in 2021 | time-gap | check who/when for the overpaint in the museum's own restoration report; put the number of years in the cover |
 | Holbein, *The Ambassadors* (National Gallery) | the stretched skull you only see from the side | craft | show the anamorphosis |
 | Van Eyck, *Arnolfini Portrait* (National Gallery) | "Jan van Eyck was here" over the mirror; the tiny painter in the mirror | craft | |
 | Van Gogh, *Wheatfield with Crows* (Van Gogh Museum) | everyone calls it his last painting; it wasn't | hidden | Van Gogh Museum's own page on his last works |
