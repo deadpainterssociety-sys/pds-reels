@@ -13,7 +13,7 @@
  "youtube_category": "27",
  "instagram_api_version": "v23.0",
  "claude_model": "opus",
- "cover_style": "B",
+ "cover_style": "D",
  "_cover_style": "Cover finish (pipeline/cover.py STYLES): A veil · B long veil · C frosted veil · D long veil, tight close-up · E warm frosted, tight close-up.",
  "nude_safe_framing": true,
  "_nude_safe_framing": "true = nudes are shown only in close-ups (YouTube may age-restrict them). Set false once Gigi confirms the Rokeby Venus Short was not restricted.",

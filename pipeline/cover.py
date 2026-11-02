@@ -30,7 +30,7 @@ STYLES = {
     "D": dict(label="Long veil, tight close-up", text_top=370, veil=0.72, hold=18, end=62, blur=0, tint=(11, 10, 9), bottom=0.35, tight=0.68),
     "E": dict(label="Warm frosted, tight close-up", text_top=380, veil=0.60, hold=16, end=58, blur=8, tint=(26, 17, 10), bottom=0.45, tight=0.68),
 }
-DEFAULT_STYLE = "B"
+DEFAULT_STYLE = "D"   # chosen by Gigi, 2 Nov 2026
 
 
 def closeup(src, iw, ih, focus, span, at, out):

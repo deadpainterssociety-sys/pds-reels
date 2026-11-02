@@ -63,7 +63,7 @@ marked "(1 Nov)" below come from that review and from the Inspiraggio competitor
 
 **Cover (Classic style, chosen 25 Oct; layout v3 from 2 Nov)**
 - **A close-up, never the whole painting (2 Nov).** The main character's face or bust (or the key scene, when the story is about another detail) fills the whole 9:16 frame, edge to edge. `cover.focus` = that face or detail, `cover.span` = how much of the painting's height shows (0.3 tight face · 0.45 bust · 0.6 half figure).
-- **The top is the painting itself, darkened (2 Nov):** a smooth, long, translucent veil behind the text instead of a black band. The finish (veil, frost, warmth) is the one Gigi chose: `config.json` → `cover_style`.
+- **The top is the painting itself, darkened (2 Nov):** a smooth, long, translucent veil behind the text instead of a black band. The finish is the one Gigi chose on 2 Nov: **D, long veil with a tight close-up** (`config.json` → `cover_style`).
 - **Text a little lower (2 Nov):** TikTok's and Instagram's 3:4 profile grid cuts about 240 px off the top, so the painter's name starts around 370 px.
 - **The image decides as much as the words (1 Nov).** The close-up must be readable at thumbnail size on a phone. (Inspiraggio: "This Painting Is Beyond Insane" got 2.25M views, "This Painting Is Absolutely Insane" got 32.8k. Same words; the picture made the difference.)
 - Painter in caps (Inter); painting and year in italic (Newsreader); an intriguing question in Newsreader 106 px with the loaded words in italics.
