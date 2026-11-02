@@ -82,8 +82,8 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 - **Open on the painting**: shot 1 at 0 s is a close-up (zoom ≥ 1.5) of the MAIN image, in colour, on its most striking
   detail (eyes, a face, the wound, the damage). Until the hook line ends only the main image is on screen; archive photos,
   newspapers and portraits come after. `validate.py` rejects a story that breaks this.
-- Nudes (`meta.nude`, while `config.json` → `nude_safe_framing` is true): every shot of the main image and the cover stay at
-  zoom ≥ 1.5 on a face, hands, an object or the damage, never breasts, buttocks or genitals; no full-painting reveal.
+- Nudes (`meta.nude`, while `config.json` → `nude_safe_framing` is true): every shot of the main image stays at
+  zoom ≥ 1.5 (and the cover at `span` ≤ 0.45) on a face, hands, an object or the damage, never breasts, buttocks or genitals; no full-painting reveal.
 - Shots (see the reference reel): close-up of the painting at 0 s → reveal (`"hit": "big"`) on the hook's key word →
   a new shot on almost every phrase → archival/backstory images (`"gray": 1` for "the past") → back to the painting in
   colour for the payoff (`"hit": "big"` once more) → ending on a face/detail with the museum pin.
@@ -103,9 +103,12 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   readable with the sound off. Extra moments: `python pipeline/preview_stills.py <slug> 12.5,20.1`. Fix and re-run
   `./make_reel.sh <slug> 3 6` until it is clean.
 - Cover (PLAYBOOK §1 "Cover" and §2): question ≤ 2 lines (≈ 28 characters max), loaded words in `<i>…</i>`, answered by
-  the video, selling the `hook_type`'s promise (never a vague superlative); set `cover.focus` on the most striking face or
-  detail — the picture decides as much as the words; `cover.zoom` 1.1–1.25 if the top of the painting is dark and empty
-  (≥ 1.5 for nudes).
+  the video, selling the `hook_type`'s promise (never a vague superlative). The cover is a CLOSE-UP, never the whole
+  painting: `cover.focus` on the main character's face or bust (or the key scene if the story is about another detail),
+  `cover.span` = how much of the painting's height shows (0.3 tight face · 0.45 bust, the default · 0.6 half figure or a
+  small scene; ≤ 0.45 for nudes, on a face). The focus lands at 60% of the frame height, under the text (`cover.at` to
+  move it). Look at `out/cover.jpg`: the face is not under the question, nothing awkward is cut, it is not blurry (the
+  script warns when the close-up is upscaled more than 2.4×).
 - The NEXT card: `build/resolved.json` has a `next` overlay when the next scheduled story already has a `teaser` (the
   morning build re-resolves it, so a missing card at night is normal). Check it once you see it:
   `python pipeline/preview_stills.py <slug> <duration − 0.3>`.
@@ -114,8 +117,17 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 - `caption` (Instagram/YouTube, 600–1200 characters): retell the story with the facts (numbers, names), end with a
   question to the audience (e.g. "🖤 Would you have noticed?"). An optional "P.S." with one extra verified fact is welcome.
 - `caption_short` (TikTok, ≤ 150 characters, the hook), `youtube_title` (≤ 70 characters: the hook or cover question
-  first, then the painting's or painter's name, which people search for), `hashtags` (10–12: painter, painting, museum, city, #arthistory, #painting, #museum, #artstory,
-  #deadpainterssociety, plus 1–2 topical).
+  first, then the painting's or painter's name, which people search for).
+- **Hashtags: Instagram and TikTok accept 5 at most**, so each platform gets its own best five (exactly 5, no more):
+  - `hashtags_instagram`: the painter · the painting · `#arthistory` · the museum or city (only if people know it:
+    `#prado`, `#louvre`, `#uffizi`; otherwise the city) · one topic tag that fits the story (`#darkart`, `#truecrime`,
+    `#mythology`, `#artrestoration`…).
+  - `hashtags_tiktok`: `#arthistory` · `#arttok` · the painter · the painting · one topic tag (`#darkhistory`,
+    `#truecrime`, `#mystery`, `#historytok`…).
+  - Use the spelling people actually search (`#vermeer`, not `#johannesvermeer`; `#thescream`, `#monalisa`). Never
+    `#fyp`, `#viral` or `#deadpainterssociety` in these five (nobody searches for those).
+  - `hashtags` (YouTube only, 10–12: painter, painting, museum, city, #arthistory, #painting, #museum, #artstory,
+    #deadpainterssociety, plus 1–2 topical).
 - `python pipeline/finalize.py <slug> --captions-only` → `out/caption.txt` (credits are added automatically from
   `meta` and every image with `"credit"`).
 
@@ -152,10 +164,10 @@ hook_type "dark"|"time-gap"|"craft"|"sacred-strange"|"dark-legend"|"damage"|"hid
 teaser    "≤ 48 characters, shown on the previous reel's NEXT card"
 next      (optional) override the NEXT card text for THIS reel; false = no card (manual builds outside the schedule)
 meta      {painter, born, died, painting, year, museum, city, image (main image key), image_credit, nude?}
+cover     {question (<i>…</i>), name (PAINTER IN CAPS), work ("Title, year"), focus [x,y], span, at?, answered_by}
 rights    {creator_died, note}
-cover     {question (<i>…</i>), name (PAINTER IN CAPS), work ("Title, year"), focus [x,y], zoom, answered_by}
 say {}  ipa {}  lines [{id, perf: [[text, pause, speed], …]}]   facts [{claim, source}]
-caption, caption_short, youtube_title, hashtags []
+caption, caption_short, youtube_title, hashtags [] (YouTube), hashtags_instagram [5], hashtags_tiktok [5]
 images    {key: {file, commons, depth?, long?, credit?, points {name: [x,y]}}}
 maps      {id: {bbox [[lon,lat],[lon,lat]], focus [...], cities {name: [lon,lat]}}}      (optional)
 shots     [{at, img, kind? ("image" = flat, omit for 2.5D on depth images; "map"), from, to, gray?, dim?, frame?,

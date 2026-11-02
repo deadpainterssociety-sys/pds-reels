@@ -35,7 +35,7 @@ def visual_problems(st, sd):
     if m.get("nude") and CONFIG.get("nude_safe_framing", True):
         wide = [f"{s['t']:.1f}s" for s in shots if s["img"] == main and min(s["from"][2], s["to"][2]) < CLOSE_UP]
         if wide: p.append(f"nude: shots of the painting must stay close-up (zoom ≥ {CLOSE_UP}) on safe details (wide at {', '.join(wide[:5])})")
-        if float(st.get("cover", {}).get("zoom") or 1) < CLOSE_UP: p.append(f"nude: cover.zoom must be ≥ {CLOSE_UP} on a face or safe detail")
+        if float(st.get("cover", {}).get("span", 0.45)) > 0.45: p.append("nude: cover.span must be ≤ 0.45, on a face or safe detail")
     return p
 
 
@@ -52,6 +52,10 @@ def hook_problems(st):
     if re.search(r"\b1\d{3}\b", hook) or SCENE_SETTING.match(hook):
         p.append("hook opens with a date or a scene-setting: start with a claim about the painting on screen")
     if float(st.get("tail", 1.0)) < 2.0: p.append("tail must be ≥ 2.0 s (room for the NEXT card)")
+    for k in ("hashtags_instagram", "hashtags_tiktok"):   # Instagram and TikTok accept 5 hashtags at most (2 Nov 2026)
+        tags = st.get(k) or []
+        if not tags: p.append(f"{k} missing (the best 5 for that platform)")
+        elif len(tags) > 5: p.append(f"{k} has {len(tags)} hashtags (max 5)")
     return p
 
 

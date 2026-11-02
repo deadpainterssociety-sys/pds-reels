@@ -41,7 +41,10 @@ else:
 for k, im in st["images"].items():
     if im.get("credit"): credits.append("📷 " + im["credit"])
 if st.get("ai_voice", True): credits.append("🎙️ AI voice narration")
-tags = " ".join(st.get("hashtags", []))
+tags = " ".join(st.get("hashtags", []))   # YouTube: the full list
+# Instagram and TikTok accept 5 hashtags at most (2 Nov 2026): each gets its own best five
+tags_ig = " ".join((st.get("hashtags_instagram") or st.get("hashtags", []))[:5])
+tags_tt = " ".join((st.get("hashtags_tiktok") or st.get("hashtags", []))[:5])
 yt_title = st.get("youtube_title") or re.sub(r"<[^>]+>", "", st["cover"]["question"])
 cred = "\n".join(credits)
 urls = []   # accuracy is the brand (PLAYBOOK §2): YouTube descriptions list the sources (links are clickable there only)
@@ -49,8 +52,8 @@ for f in st.get("facts", []):
     for u in re.findall(r"https?://[^\s;,)\]]+", f.get("source", "")):
         if u.rstrip(".") not in urls: urls.append(u.rstrip("."))
 srcs = ("\n\nSources:\n" + "\n".join(urls[:8])) if urls else ""
-txt = (f"=== INSTAGRAM (Reel) ===\n{st['caption']}\n\n{cred}\n\n{tags}\n\n"
-       f"=== TIKTOK ===\n{st.get('caption_short') or st['caption'].splitlines()[0]}\n{tags}\n\n"
+txt = (f"=== INSTAGRAM (Reel) ===\n{st['caption']}\n\n{cred}\n\n{tags_ig}\n\n"
+       f"=== TIKTOK ===\n{st.get('caption_short') or st['caption'].splitlines()[0]}\n{tags_tt}\n\n"
        f"=== YOUTUBE SHORTS ===\nTitle: {yt_title[:90]} #shorts\nDescription:\n{st['caption']}{srcs}\n\n{cred}\n\n{tags}\n")
 open(os.path.join(out, "caption.txt"), "w").write(txt)
 if ONLY_CAPTIONS: print(txt); sys.exit(0)

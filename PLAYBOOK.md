@@ -61,9 +61,11 @@ marked "(1 Nov)" below come from that review and from the Inspiraggio competitor
 - Whoosh on every cut, reverse sting + impact on reveals, ticks on map pins.
 - Final mix normalised to −14 LUFS mono (≈ −11 LUFS measured as stereo), the same as the Artemisia reel.
 
-**Cover (Classic style, chosen 25 Oct; layout updated 27 Oct)**
-- The painting fills the **full width** and the whole lower part of the frame (≈ bottom 2/3, from just under the title to the bottom edge). **No side margins, ever.** Vertical paintings are zoomed to the width (top/bottom cropped); horizontal ones to the height (sides cropped). `cover.focus` = the point to keep in view (face, key detail). The top fades to black behind the text.
-- **The image decides as much as the words (1 Nov).** Focus and zoom the cover on the most striking detail, big enough to read at thumbnail size on a phone. (Inspiraggio: "This Painting Is Beyond Insane" got 2.25M views, "This Painting Is Absolutely Insane" got 32.8k. Same words; the picture made the difference.)
+**Cover (Classic style, chosen 25 Oct; layout v3 from 2 Nov)**
+- **A close-up, never the whole painting (2 Nov).** The main character's face or bust (or the key scene, when the story is about another detail) fills the whole 9:16 frame, edge to edge. `cover.focus` = that face or detail, `cover.span` = how much of the painting's height shows (0.3 tight face · 0.45 bust · 0.6 half figure).
+- **The top is the painting itself, darkened (2 Nov):** a smooth, long, translucent veil behind the text instead of a black band. The finish (veil, frost, warmth) is the one Gigi chose: `config.json` → `cover_style`.
+- **Text a little lower (2 Nov):** TikTok's and Instagram's 3:4 profile grid cuts about 240 px off the top, so the painter's name starts around 370 px.
+- **The image decides as much as the words (1 Nov).** The close-up must be readable at thumbnail size on a phone. (Inspiraggio: "This Painting Is Beyond Insane" got 2.25M views, "This Painting Is Absolutely Insane" got 32.8k. Same words; the picture made the difference.)
 - Painter in caps (Inter); painting and year in italic (Newsreader); an intriguing question in Newsreader 106 px with the loaded words in italics.
 - **The video must answer the question.**
 - The cover is also the first frame of the video (0.1 s), so TikTok and YouTube can use it as the thumbnail. On Instagram, upload `cover.jpg` as the cover as well.
@@ -118,4 +120,6 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (1 Nov 2026) Nudes get safe framing (close-ups on faces, hands, objects) until we know YouTube didn't restrict the Rokeby Venus.
 - (1 Nov 2026) Every reel ends with the silent NEXT card showing the next story's teaser. The spoken ending stays plain.
 - (1 Nov 2026) Titles and covers follow the seven hook types in §2; never vague superlatives.
+- (2 Nov 2026) Instagram and TikTok accept 5 hashtags at most: each platform gets its own best five (`hashtags_instagram`, `hashtags_tiktok`).
+- (2 Nov 2026) Cover: a close-up of the main character's face or bust (or the key scene), never the whole painting; the text a little lower for TikTok's grid; the top a smooth translucent darkening of the painting, not black.
 <!-- new rules go here -->
