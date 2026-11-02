@@ -3,6 +3,10 @@
 # Auth: CLAUDE_CODE_OAUTH_TOKEN (from `claude setup-token`, uses your Claude subscription) or ANTHROPIC_API_KEY.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+# Tokens never contain spaces or line breaks; a copy from a terminal often adds a line break where the window wrapped it.
+for v in CLAUDE_CODE_OAUTH_TOKEN ANTHROPIC_API_KEY; do
+  if [ -n "${!v:-}" ]; then clean=$(printf '%s' "${!v}" | tr -d '[:space:]'); echo "::add-mask::$clean"; export "$v=$clean"; fi
+done
 [ -z "${ANTHROPIC_API_KEY:-}" ] && unset ANTHROPIC_API_KEY
 [ -z "${CLAUDE_CODE_OAUTH_TOKEN:-}" ] && unset CLAUDE_CODE_OAUTH_TOKEN
 command -v claude >/dev/null || npm install -g @anthropic-ai/claude-code >/dev/null 2>&1

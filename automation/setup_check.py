@@ -3,7 +3,7 @@
 usage: python automation/setup_check.py [--weekly]     (--weekly: only speak up on Telegram when something is broken)
 Never prints secret values. Also links the Telegram chat if you already sent /start to the bot.
 """
-import json, os, subprocess, sys, urllib.request
+import json, os, re, subprocess, sys, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import CONFIG, ROOT
 
@@ -37,8 +37,12 @@ def main(weekly=False):
         except Exception as e: row(False, "Telegram bot", str(e)[:150])
     else: row(False, "Telegram bot", "add secret TELEGRAM_BOT_TOKEN (from @BotFather)")
     # Claude
-    row(True if has("CLAUDE_CODE_OAUTH_TOKEN") or has("ANTHROPIC_API_KEY") else False, "Claude (writes the stories)",
-        "token present" if has("CLAUDE_CODE_OAUTH_TOKEN") or has("ANTHROPIC_API_KEY") else "add CLAUDE_CODE_OAUTH_TOKEN (run `claude setup-token`)")
+    tok = os.environ.get("CLAUDE_CODE_OAUTH_TOKEN", "").strip()
+    note = ""
+    if tok and re.search(r"\s", tok): note = " (it has a line break from copying; fixed automatically, but re-pasting it on one line is cleaner)"
+    if tok and not "".join(tok.split()).startswith("sk-ant-"): note = " — but it doesn't look like a Claude token (should start with sk-ant-): run `claude setup-token` again"
+    row(bool(tok or has("ANTHROPIC_API_KEY")) and "doesn't look" not in note, "Claude (writes the stories)",
+        ("token present" + note) if tok or has("ANTHROPIC_API_KEY") else "add CLAUDE_CODE_OAUTH_TOKEN (run `claude setup-token`)")
     # GH_PAT
     if has("GH_PAT"):
         r = subprocess.run(["gh", "secret", "list", "--repo", os.environ.get("GITHUB_REPOSITORY", "")], capture_output=True, text=True, stdin=subprocess.DEVNULL,

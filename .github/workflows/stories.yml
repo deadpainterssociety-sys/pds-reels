@@ -9,7 +9,7 @@ on:
       count: { description: "How many stories to write now (empty = whatever keeps the buffer full)", required: false, default: "" }
       idea: { description: "Optional idea for the first one (painting / angle)", required: false, default: "" }
 concurrency: { group: stories, cancel-in-progress: false }
-permissions: { contents: write }
+permissions: { contents: write, actions: write }
 jobs:
   write:
     runs-on: ubuntu-latest
@@ -49,6 +49,13 @@ jobs:
         run: ./automation/commit.sh "stories $(date -u +%F) ${{ steps.check.outputs.ok }}"
       - if: success() && steps.check.outputs.ok != ''
         run: python3 automation/bot.py plan
+      - id: late
+        if: success() && steps.check.outputs.ok != ''
+        run: python3 automation/plan.py missing
+      - name: Nothing planned for today yet? Render the new story now
+        if: success() && steps.late.outputs.render == 'true'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh workflow run build.yml
       - if: failure()
         run: |
           if [ -f "$RUNNER_TEMP/claude_limit" ]; then

@@ -14,6 +14,8 @@ src_out = os.path.abspath(sys.argv[1]); src_slug = sys.argv[2] if len(sys.argv) 
 srv = MockAPIs().start()
 tmp = tempfile.mkdtemp(prefix="dps-test-"); W = os.path.join(tmp, "repo")
 shutil.copytree(REPO, W, ignore=shutil.ignore_patterns("node_modules", "models", "build", ".git", "public"))
+for f in ("automation/bot_state.json", "schedule.json"):   # start from a clean slate, not the live system's state
+    if os.path.exists(os.path.join(W, f)): os.remove(os.path.join(W, f))
 bin_dir = os.path.join(tmp, "bin"); os.makedirs(bin_dir)
 open(os.path.join(bin_dir, "gh"), "w").write("#!/bin/sh\necho \"gh $*\" >> %s/gh.log\ncase \"$*\" in *\"secret set\"*) cat >> %s/gh.log;; esac\necho >> %s/gh.log\n" % (tmp, tmp, tmp))
 os.chmod(os.path.join(bin_dir, "gh"), 0o755)

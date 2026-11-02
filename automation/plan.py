@@ -5,10 +5,11 @@ usage:
   python automation/plan.py today            the reel to render this morning (step output slug=)
   python automation/plan.py add <slug>       put a finished story on the first free day from tomorrow on
   python automation/plan.py posted           slugs already posted or scheduled (Claude: never repeat these)
+  python automation/plan.py missing          render=true when nothing is planned today and there is still time (07-19 h)
 """
 import datetime, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import CONFIG, gh_output, save_schedule, schedule, set_state, state, today, upcoming
+from common import CONFIG, gh_output, now, save_schedule, schedule, set_state, state, today, upcoming
 
 
 def needed(override=None):
@@ -37,6 +38,13 @@ def todays():
     gh_output(slug="")
 
 
+def missing_today():
+    """after a late story run: render now when nothing is planned for today and there's still time to review + publish today"""
+    has = any(e["date"] == today() and state(e["slug"])["status"] not in ("rejected", "skipped") for e in schedule())
+    ok = not has and 7 <= now().hour < 19 and not CONFIG.get("paused")
+    print("render a reel for today now:", ok); gh_output(render="true" if ok else "false")
+
+
 def add(slug):
     sch = schedule()
     if any(e["slug"] == slug for e in sch): print("already scheduled:", slug); return
@@ -59,6 +67,7 @@ if __name__ == "__main__":
     c = sys.argv[1]
     if c == "needed": needed(sys.argv[2] if len(sys.argv) > 2 and sys.argv[2] else None)
     elif c == "today": todays()
+    elif c == "missing": missing_today()
     elif c == "add": add(sys.argv[2])
     elif c == "posted": used()
     else: raise SystemExit(__doc__)
