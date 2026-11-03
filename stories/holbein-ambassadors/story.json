@@ -1,0 +1,810 @@
+{
+ "slug": "holbein-ambassadors",
+ "hook_type": "craft",
+ "teaser": "The skull you can only see from the side",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Hans Holbein the Younger",
+  "born": 1497,
+  "died": 1543,
+  "painting": "The Ambassadors",
+  "year": "1533",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "ambassadors",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1543,
+  "note": "Holbein d. 1543: public domain. All images are PD reproductions (Wyngaerde panorama: 1849 Whittock engraving, PD)."
+ },
+ "say": {
+  "1533": "fifteen thirty-three"
+ },
+ "ipa": {
+  "Holbein": "hˈoʊlbaɪn"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "There's a skull hidden in this painting.",
+     0.3,
+     0.95
+    ],
+    [
+     "In plain *sight.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "london",
+   "perf": [
+    [
+     "In London, in the year 1533,",
+     0.3,
+     0.95
+    ],
+    [
+     "Hans Holbein painted two young Frenchmen.",
+     0.8,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "who",
+   "perf": [
+    [
+     "An ambassador to Henry the Eighth,",
+     0.3,
+     0.95
+    ],
+    [
+     "and his friend, a bishop.",
+     0.3,
+     0.95
+    ],
+    [
+     "Both under *thirty.*",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "objects",
+   "perf": [
+    [
+     "Around them, globes, instruments, books.",
+     0.35,
+     0.95
+    ],
+    [
+     "And a lute,",
+     0.25,
+     0.95
+    ],
+    [
+     "with one *broken* string.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "smear",
+   "perf": [
+    [
+     "Now look at their feet.",
+     0.35,
+     0.95
+    ],
+    [
+     "That gray smear,",
+     0.25,
+     0.95
+    ],
+    [
+     "stretched almost flat?",
+     0.4,
+     0.92
+    ],
+    [
+     "That's not a *stain.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "skull",
+   "perf": [
+    [
+     "Stand at the bottom right corner,",
+     0.25,
+     0.95
+    ],
+    [
+     "look up along the painting,",
+     0.3,
+     0.95
+    ],
+    [
+     "and it snaps into a *skull.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "craft",
+   "perf": [
+    [
+     "Holbein stretched it on purpose,",
+     0.25,
+     0.95
+    ],
+    [
+     "so it only appears",
+     0.2,
+     0.95
+    ],
+    [
+     "from one *angle.*",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "why",
+   "perf": [
+    [
+     "The ambassador's motto,",
+     0.25,
+     0.95
+    ],
+    [
+     "some historians think,",
+     0.3,
+     0.95
+    ],
+    [
+     "was: remember you will *die.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "And in the top corner,",
+     0.25,
+     0.95
+    ],
+    [
+     "half hidden by the curtain,",
+     0.3,
+     0.95
+    ],
+    [
+     "a tiny crucifix.",
+     0.5,
+     0.92
+    ],
+    [
+     "Death at their feet,",
+     0.3,
+     0.92
+    ],
+    [
+     "and hope, just out of *sight.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "ambassadors": {
+   "file": "src/ambassadors.jpg",
+   "commons": "File:Holbein-ambassadorsFXD.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "dint": [
+     0.23,
+     0.17
+    ],
+    "selve": [
+     0.82,
+     0.2
+    ],
+    "skulls": [
+     0.55,
+     0.87
+    ],
+    "globe": [
+     0.43,
+     0.23
+    ],
+    "instr": [
+     0.6,
+     0.3
+    ],
+    "lute": [
+     0.66,
+     0.61
+    ],
+    "string": [
+     0.6,
+     0.63
+    ],
+    "corner": [
+     0.85,
+     0.9
+    ],
+    "topleft": [
+     0.08,
+     0.1
+    ],
+    "crucifix": [
+     0.012,
+     0.065
+    ],
+    "low": [
+     0.5,
+     0.72
+    ],
+    "skullL": [
+     0.47,
+     0.9
+    ],
+    "feet": [
+     0.3,
+     0.86
+    ]
+   }
+  },
+  "skull": {
+   "file": "src/skull.jpg",
+   "commons": "File:Holbein Skull.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.55
+    ],
+    "eye": [
+     0.47,
+     0.5
+    ]
+   }
+  },
+  "holbein": {
+   "file": "src/holbein.jpg",
+   "commons": "File:Hans Holbein the Younger, self-portrait.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.38
+    ]
+   }
+  },
+  "henry": {
+   "file": "src/henry.jpg",
+   "commons": "File:Hans Holbein, the Younger, Around 1497-1543 - Portrait of Henry VIII of England - Google Art Project.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "face": [
+     0.55,
+     0.27
+    ]
+   }
+  },
+  "london": {
+   "file": "src/london.jpg",
+   "commons": "File:Panorama of London in 1543 Wyngaerde Section 2.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "bridge": [
+     0.55,
+     0.45
+    ],
+    "west": [
+     0.3,
+     0.45
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "ambassadors",
+   "from": "skullL@3.0",
+   "to": "skulls@3.2",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.7-0.03",
+   "img": "ambassadors",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "london-0.08",
+   "img": "london",
+   "kind": "image",
+   "from": "west@1.0",
+   "to": "bridge@1.08",
+   "gray": 1
+  },
+  {
+   "at": "london.6-0.05",
+   "img": "holbein",
+   "kind": "image",
+   "from": "face@1.2",
+   "to": "face@1.35",
+   "gray": 0.35
+  },
+  {
+   "at": "london.8-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "center@0.5",
+   "to": "center@0.52",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "who-0.08",
+   "img": "ambassadors",
+   "from": "dint@1.8",
+   "to": "dint@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "who.2-0.05",
+   "img": "henry",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "gray": 0.5
+  },
+  {
+   "at": "who.6-0.05",
+   "img": "ambassadors",
+   "from": "selve@1.8",
+   "to": "selve@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "who.11-0.05",
+   "img": "ambassadors",
+   "from": "dint@2.3",
+   "to": "dint@2.45",
+   "sway": 0.006
+  },
+  {
+   "at": "objects-0.08",
+   "img": "ambassadors",
+   "from": "globe@2.0",
+   "to": "globe@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "objects.3-0.05",
+   "img": "ambassadors",
+   "from": "instr@2.0",
+   "to": "instr@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "objects.5-0.05",
+   "img": "ambassadors",
+   "from": "lute@1.8",
+   "to": "lute@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "objects.8-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "string@3.0",
+   "to": "string@3.2"
+  },
+  {
+   "at": "smear-0.08",
+   "img": "ambassadors",
+   "from": "feet@2.6",
+   "to": "feet@2.75",
+   "sway": 0.006
+  },
+  {
+   "at": "smear.5-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "skulls@3.10",
+   "to": "skulls@3.25"
+  },
+  {
+   "at": "smear.11-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "skulls@3.4",
+   "to": "skulls@3.6"
+  },
+  {
+   "at": "skull-0.08",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "corner@1.4",
+   "to": "corner@1.55"
+  },
+  {
+   "at": "skull.6-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "skulls@3.10",
+   "to": "skulls@3.25"
+  },
+  {
+   "at": "skull.15-0.03",
+   "img": "skull",
+   "kind": "image",
+   "from": "face@1.0",
+   "to": "face@1.08",
+   "hit": "big"
+  },
+  {
+   "at": "craft-0.08",
+   "img": "skull",
+   "kind": "image",
+   "from": "eye@1.5",
+   "to": "eye@1.65"
+  },
+  {
+   "at": "craft.5-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "skulls@3.10",
+   "to": "skulls@3.25"
+  },
+  {
+   "at": "why-0.08",
+   "img": "ambassadors",
+   "from": "dint@2.5",
+   "to": "dint@2.7",
+   "sway": 0.005
+  },
+  {
+   "at": "why.6-0.05",
+   "img": "skull",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.6
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "topleft@1.6",
+   "to": "topleft@1.75"
+  },
+  {
+   "at": "payoff.10-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "crucifix@3.0",
+   "to": "crucifix@3.2"
+  },
+  {
+   "at": "payoff.13-0.05",
+   "img": "ambassadors",
+   "kind": "image",
+   "from": "skulls@3.10",
+   "to": "skulls@3.25"
+  },
+  {
+   "at": "payoff.17-0.05",
+   "img": "ambassadors",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "ambassadors",
+   "from": "selve@1.7",
+   "to": "selve@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "london",
+   "to": "london.6-0.1",
+   "text": "LONDON · WYNGAERDE, 1543"
+  },
+  {
+   "type": "label",
+   "from": "london.6",
+   "to": "london.8-0.1",
+   "text": "HANS HOLBEIN · SELF-PORTRAIT"
+  },
+  {
+   "type": "label",
+   "from": "london.8",
+   "to": "who-0.1",
+   "text": "THE AMBASSADORS · 1533"
+  },
+  {
+   "type": "title",
+   "from": "who",
+   "to": "who.2-0.1",
+   "kicker": "FRENCH AMBASSADOR",
+   "text": "Jean de <i>Dinteville</i>"
+  },
+  {
+   "type": "label",
+   "from": "who.2",
+   "to": "who.6-0.1",
+   "text": "HENRY VIII · BY HOLBEIN"
+  },
+  {
+   "type": "title",
+   "from": "who.6",
+   "to": "who.11-0.1",
+   "kicker": "BISHOP OF LAVAUR",
+   "text": "Georges de <i>Selve</i>"
+  },
+  {
+   "type": "ring",
+   "at": "objects.9",
+   "to": "smear-0.1",
+   "img": "ambassadors",
+   "point": "string",
+   "rx": 200,
+   "ry": 90,
+   "rot": -10
+  },
+  {
+   "type": "label",
+   "from": "skull",
+   "to": "skull.15-0.1",
+   "text": "VIEW FROM THE RIGHT EDGE"
+  },
+  {
+   "type": "label",
+   "from": "skull.15",
+   "to": "craft.5-0.1",
+   "text": "THE SAME SHAPE · CORRECTED"
+  },
+  {
+   "type": "label",
+   "from": "why.6",
+   "to": "payoff-0.1",
+   "text": "MEMENTO MORI"
+  },
+  {
+   "type": "ring",
+   "at": "payoff.11",
+   "to": "payoff.13-0.1",
+   "img": "ambassadors",
+   "point": "crucifix",
+   "rx": 110,
+   "ry": 300,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "An elongated shape between the men's feet becomes a skull when viewed from a particular angle (an anamorphic, distorted image)",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors ; https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  {
+   "claim": "Painted in London in 1533 (dated beneath the signature on the floor) by Hans Holbein the Younger",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors ; https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  {
+   "claim": "Left: Jean de Dinteville, French ambassador to the court of Henry VIII; right: his close friend Georges de Selve, Bishop of Lavaur; inscriptions give their ages as 29 and 25 (NG in-depth text: 28 and 24) — both under thirty",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors ; https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  {
+   "claim": "Between them: celestial and terrestrial globes, scientific instruments, books, and a lute with one broken string",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors ; https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  {
+   "claim": "The skull can only be seen properly if you look up at the painting from the bottom right corner",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors"
+  },
+  {
+   "claim": "The skull is a deliberately distorted (anamorphic) image that only reads correctly from an oblique angle",
+   "source": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein) ; https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors"
+  },
+  {
+   "claim": "Memento mori ('remember you will die') may have been de Dinteville's motto, which may explain the skull — hedged",
+   "source": "https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  {
+   "claim": "A crucifix is half hidden at the top left, pinned to/partly covered by the green curtain; it hints at the hope of redemption",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors ; https://en.wikipedia.org/wiki/The_Ambassadors_(Holbein)"
+  },
+  {
+   "claim": "Bought by the National Gallery, London, in 1890 from the Earl of Radnor; 207 x 209.5 cm",
+   "source": "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors"
+  }
+ ],
+ "cover": {
+  "question": "Where is the <i>hidden skull?</i>",
+  "name": "HANS HOLBEIN",
+  "work": "The Ambassadors, 1533",
+  "focus": [
+   0.55,
+   0.86
+  ],
+  "span": 0.45,
+  "answered_by": "The gray smear at their feet: an anamorphic skull that snaps into shape when seen from the side"
+ },
+ "nocap": [
+  [
+   "who",
+   "who.2-0.1"
+  ],
+  [
+   "who.6",
+   "who.11-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "london-0.2",
+    "who$+0.2"
+   ],
+   "drop": [
+    "smear.11-0.05",
+    "smear$+0.3"
+   ],
+   "choir": [
+    "payoff.17-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.7-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "objects.9",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "skull.15",
+   "fx": "impact",
+   "gain": 0.6
+  },
+  {
+   "at": "payoff.11",
+   "fx": "chime",
+   "gain": 0.45
+  }
+ ],
+ "caption": "There's a skull hidden in Holbein's The Ambassadors, in plain sight.\n\nIn London in 1533, Hans Holbein painted two young Frenchmen: Jean de Dinteville, ambassador to the court of Henry VIII, and his close friend Georges de Selve, Bishop of Lavaur. Both were under thirty. Around them: globes, scientific instruments, books, and a lute with one broken string.\n\nAt their feet floats a gray, stretched shape. Look up at the painting from the bottom right corner and it snaps into a skull. Holbein distorted it on purpose (a trick called anamorphosis), so it only appears from one angle.\n\n\"Memento mori\", remember you will die, may have been Dinteville's motto. And in the top left corner, half hidden by the curtain, there's a tiny crucifix: death at their feet, and hope just out of sight.\n\nP.S. The painting is over two metres wide, and the National Gallery bought it in 1890.\n\n🖤 Did you spot the skull before we told you?",
+ "caption_short": "There's a skull hidden in Holbein's The Ambassadors. You can only see it from one corner of the room. 💀",
+ "youtube_title": "Where is the hidden skull? Holbein's The Ambassadors",
+ "hashtags": [
+  "#holbein",
+  "#theambassadors",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#anamorphosis",
+  "#mementomori"
+ ],
+ "hashtags_instagram": [
+  "#holbein",
+  "#theambassadors",
+  "#arthistory",
+  "#nationalgallery",
+  "#mementomori"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#holbein",
+  "#theambassadors",
+  "#hiddendetails"
+ ]
+}
