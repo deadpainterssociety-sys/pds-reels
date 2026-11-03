@@ -1,7 +1,21 @@
 {
- "status": "approved",
- "updated": "2026-11-03T20:30:01+01:00",
+ "status": "posted",
+ "updated": "2026-11-03T20:32:32+01:00",
  "review_message": 25,
  "sent_at": "2026-11-03T09:03:07+01:00",
- "approved_at": "2026-11-03T20:30:01+01:00"
+ "approved_at": "2026-11-03T20:30:01+01:00",
+ "instagram": {
+  "skipped": "not set up yet (IG_ACCESS_TOKEN)",
+  "manual": true
+ },
+ "youtube": {
+  "id": "bCYw0fS-rYY",
+  "url": "https://youtube.com/shorts/bCYw0fS-rYY"
+ },
+ "tiktok": {
+  "skipped": "not set up yet (TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN)",
+  "manual": true
+ },
+ "posted_at": "2026-11-03T20:31:17+01:00",
+ "manual_sent": true
 }
