@@ -1,4 +1,6 @@
 {
- "status": "draft",
- "updated": "2026-11-03T03:23:12+01:00"
+ "status": "sent",
+ "updated": "2026-11-03T09:03:07+01:00",
+ "review_message": 25,
+ "sent_at": "2026-11-03T09:03:07+01:00"
 }
