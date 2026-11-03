@@ -120,7 +120,10 @@ def poll(emit=True):
     bs = bstate(); chat = chat_id(); revise, post_now, stories, idea = [], False, 0, ""
     if not os.environ.get("TELEGRAM_BOT_TOKEN", "").strip():          # not set up yet: stay quiet instead of failing
         print("Telegram not set up yet (secret TELEGRAM_BOT_TOKEN)"); gh_output(revise="[]", post_now="", stories="", idea=""); return {}
-    for u in T.updates(bs.get("offset", 0)):
+    ups = T.updates(bs.get("offset", 0))
+    print(f"telegram: {len(ups)} update(s) from offset {bs.get('offset', 0)}:",
+          ", ".join("button " + u["callback_query"].get("data", "") if "callback_query" in u else "message" for u in ups) or "none")
+    for u in ups:
         bs["offset"] = u["update_id"] + 1
         if "callback_query" in u:
             q = u["callback_query"]; cid = str(q["message"]["chat"]["id"])

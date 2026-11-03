@@ -2,6 +2,9 @@
 # evening window (config.json publish_window). Each publisher remembers what it posted, so nothing is ever posted twice.
 name: inbox
 on:
+  push:                             # a change to this listener starts it straight away
+    branches: [main]
+    paths: [".github/workflows/inbox.yml", "automation/bot.py"]
   schedule:
     - cron: "*/15 6-21 * * *"     # 07:00-22:45 Madrid (winter) / 08:00-23:45 (summer)
   workflow_dispatch:
