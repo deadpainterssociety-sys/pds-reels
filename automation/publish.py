@@ -18,15 +18,19 @@ def posted_today():
     return sum(1 for e in schedule() if (state(e["slug"]).get("posted_at") or "").startswith(today()))
 
 
-def decide(force=False):
-    if CONFIG.get("paused"): gh_output(slug=""); return
+def due(force=False):
+    """the oldest approved reel that should go out now ('' if none)"""
+    if CONFIG.get("paused"): return ""
     w0, w1 = CONFIG["publish_window"]; hm = now().strftime("%H:%M")
-    if not force and not (w0 <= hm <= w1): gh_output(slug=""); return
-    if not force and posted_today() >= CONFIG.get("max_posts_per_day", 1): gh_output(slug=""); return
+    if not force and not (w0 <= hm <= w1): return ""
+    if not force and posted_today() >= CONFIG.get("max_posts_per_day", 1): return ""
     for e in schedule():
-        if e["date"] <= today() and state(e["slug"])["status"] == "approved":
-            gh_output(slug=e["slug"]); return
-    gh_output(slug="")
+        if e["date"] <= today() and state(e["slug"])["status"] == "approved": return e["slug"]
+    return ""
+
+
+def decide(force=False):
+    gh_output(slug=due(force))
 
 
 def run(slug, base):

@@ -4,6 +4,8 @@ usage:
   python automation/bot.py review <slug> [--revised]   cover + 540p video with ✅ Publish / ❌ Skip / ✏️ Changes + captions + facts
   python automation/bot.py poll                        read button presses and messages -> update states; step outputs:
                                                          revise=[{"slug","feedback"}]  post_now=1  stories=<n>
+  python automation/bot.py listen [minutes]            the same, staying on the line (answers within seconds); starts
+                                                         revisions/stories itself; stops early when a reel is due
   python automation/bot.py plan                        the upcoming reels (covers) after Claude writes new ones
   python automation/bot.py posted <slug>               links after publishing (+ TikTok caption to paste in inbox mode)
   python automation/bot.py say "<html text>"           any message (alerts from the workflows)
@@ -114,10 +116,10 @@ HELP = ("Commands:\n/status — what's scheduled\n/post — publish approved ree
         "<i>yes</i>, <i>no</i>, or what you want changed.")
 
 
-def poll():
+def poll(emit=True):
     bs = bstate(); chat = chat_id(); revise, post_now, stories, idea = [], False, 0, ""
     if not os.environ.get("TELEGRAM_BOT_TOKEN", "").strip():          # not set up yet: stay quiet instead of failing
-        print("Telegram not set up yet (secret TELEGRAM_BOT_TOKEN)"); gh_output(revise="[]", post_now="", stories="", idea=""); return
+        print("Telegram not set up yet (secret TELEGRAM_BOT_TOKEN)"); gh_output(revise="[]", post_now="", stories="", idea=""); return {}
     for u in T.updates(bs.get("offset", 0)):
         bs["offset"] = u["update_id"] + 1
         if "callback_query" in u:
@@ -174,7 +176,50 @@ def poll():
         revise.append({"slug": target, "feedback": text})
         T.send(chat, f"✏️ Got it — reworking <b>{T.esc(title_of(target))}</b>:\n<i>{T.esc(text)}</i>\nThe new version arrives in ≈40 min.")
     jsave(BS, bs)
-    gh_output(revise=json.dumps(revise), post_now="1" if post_now else "", stories=str(stories) if stories else "", idea=idea.replace("\n", " "))
+    if emit: gh_output(revise=json.dumps(revise), post_now="1" if post_now else "", stories=str(stories) if stories else "", idea=idea.replace("\n", " "))
+    return {"revise": revise, "post_now": post_now, "stories": stories, "idea": idea}
+
+
+def _git(*a):
+    import subprocess
+    return subprocess.run(list(a), cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
+
+
+def sync():
+    """pick up what other jobs pushed meanwhile (new reels sent for review, revisions, posts) before acting on a tap"""
+    if os.path.isdir(os.path.join(ROOT, ".git")):
+        br = os.environ.get("GITHUB_REF_NAME", "main")
+        _git("git", "fetch", "-q", "--depth=50", "origin", br); _git("git", "rebase", "-q", "--autostash", f"origin/{br}")
+    global CONFIG
+    CONFIG.clear(); CONFIG.update(jload("config.json", {}))
+
+
+def listen(minutes):
+    """Stay on the line for `minutes`: Telegram long polling, so a button or a message gets an answer within seconds
+    (GitHub's schedule only starts this workflow about once an hour). Revisions and new stories start at once; when an
+    approved reel is due (or /post), stop so the workflow's publish job runs right away."""
+    import subprocess, time
+    import publish
+    if not os.environ.get("TELEGRAM_BOT_TOKEN", "").strip():
+        print("Telegram not set up yet (secret TELEGRAM_BOT_TOKEN)"); gh_output(revise="[]", post_now="", stories="", idea=""); return
+    end = time.time() + float(minutes) * 60; post_now = False; last_sync = 0
+    while True:
+        if time.time() - last_sync > 300: sync(); last_sync = time.time()
+        nudge()
+        if publish.due() or post_now: break
+        left = end - time.time()
+        if left <= 0: break
+        if not T.updates(bstate().get("offset", 0), wait=min(25, max(1, left))): continue
+        sync(); last_sync = time.time()
+        r = poll(emit=False)
+        post_now = post_now or r.get("post_now", False)
+        for x in r.get("revise", []):
+            subprocess.run(["gh", "workflow", "run", "revise.yml", "-f", f"slug={x['slug']}", "-f", f"feedback={x['feedback']}"], check=False)
+        if r.get("stories"):
+            subprocess.run(["gh", "workflow", "run", "stories.yml", "-f", f"count={r['stories']}", "-f", f"idea={r.get('idea', '')}"], check=False)
+        if os.path.isdir(os.path.join(ROOT, ".git")):   # save the new state now, so other jobs see your answer
+            subprocess.run([os.path.join(ROOT, "automation", "commit.sh"), f"inbox {now().strftime('%Y-%m-%dT%H:%M')}"], cwd=ROOT, check=False)
+    gh_output(revise="[]", post_now="1" if post_now else "", stories="", idea="")
 
 
 def nudge():
@@ -217,6 +262,7 @@ if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "review": review(sys.argv[2], "--revised" in sys.argv)
     elif cmd == "poll": poll(); nudge()
+    elif cmd == "listen": listen(sys.argv[2] if len(sys.argv) > 2 else 45)
     elif cmd == "plan": plan()
     elif cmd == "posted": posted(sys.argv[2])
     elif cmd == "say":

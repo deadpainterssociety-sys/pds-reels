@@ -1,4 +1,4 @@
-# Every 15 minutes during the day: read your Telegram answers, start revisions, and publish approved reels in the
+# During the day: listen to Telegram (answers within seconds), read your answers, start revisions, and publish approved reels in the
 # evening window (config.json publish_window). Each publisher remembers what it posted, so nothing is ever posted twice.
 name: inbox
 on:
@@ -11,7 +11,7 @@ concurrency: { group: inbox, cancel-in-progress: false }
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 70
     permissions: { contents: write, actions: write }
     outputs:
       slug: ${{ steps.pick.outputs.slug }}
@@ -21,8 +21,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - id: bot
-        run: python3 automation/bot.py poll
+      - id: bot      # stays on the line ~55 min; GitHub queues the next run, so someone is (almost) always listening
+        run: python3 automation/bot.py listen ${{ inputs.now && '0' || '55' }}
       - id: pick
         env: { NOW: "${{ inputs.now || steps.bot.outputs.post_now }}" }
         run: python3 automation/publish.py decide $([ "$NOW" = "true" ] || [ "$NOW" = "1" ] && echo --now)

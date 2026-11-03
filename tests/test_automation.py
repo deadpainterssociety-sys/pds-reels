@@ -180,5 +180,22 @@ check(any("until the hook ends" in p for p in shots_ok([{"t": 0, "img": "main", 
 check(len([p for p in shots_ok([{"t": 0, "img": "main", "from": [0.5, 0.3, 2], "to": [0.5, 0.3, 2]}, {"t": 4, "img": "main", "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1.05]}], nude=True) if "nude" in p]) == 2,
       "nude: wide shot and wide cover rejected")
 
+print("\n12. Listening mode: a tap is answered at once, a due reel stops the listener")
+import time as _t
+fake_story("test-l", "Painter L")
+cfg = json.load(open(os.path.join(W, "config.json"))); cfg["paused"] = False; json.dump(cfg, open(os.path.join(W, "config.json"), "w"))   # section 7 paused it
+sch = json.load(open(os.path.join(W, "schedule.json"))); sch.append({"date": "2026-11-09", "slug": "test-l"})
+json.dump(sch, open(os.path.join(W, "schedule.json"), "w"))
+json.dump({"status": "sent", "sent_at": "2026-11-09T09:00:00+01:00"}, open(os.path.join(W, "stories", "test-l", "state.json"), "w"))
+srv.push({"callback_query": {"id": "cbL", "data": "ok:test-l", "message": {"message_id": 140, "chat": {"id": 42}}}})
+srv.push({"message": {"chat": {"id": 42, "type": "private"}, "text": "/stories 2"}})
+t0 = _t.time(); _, o = run("automation/bot.py", "listen", "0.03", now="2026-11-09T12:00")
+check(state("test-l")["status"] == "approved" and any(c["body"].get("callback_query_id") == "cbL" for c in srv.tg("answerCallbackQuery")), "✅ tap answered and approved while listening")
+check("workflow run stories.yml -f count=2" in open(os.path.join(tmp, "gh.log")).read(), "/stories starts the story writer straight away")
+check(o.get("post_now") == "" and _t.time() - t0 < 30, "outside the window: listens until its time is up")
+t0 = _t.time(); _, o = run("automation/bot.py", "listen", "5", now="2026-11-09T18:03")
+check(_t.time() - t0 < 20, "18:03 with an approved reel: stops at once so the publish job runs")
+_, o = run("automation/publish.py", "decide", now="2026-11-09T18:03"); check(o.get("slug") in ("test-l", "test-b"), "…and an approved reel is picked for publishing (oldest first)")
+
 print(f"\n{'ALL GOOD' if not fails else str(len(fails)) + ' FAILED'} — temp repo: {W}")
 sys.exit(1 if fails else 0)

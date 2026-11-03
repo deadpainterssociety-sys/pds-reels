@@ -75,5 +75,6 @@ def answer(callback_id, text=""):
     except TelegramError: pass   # callbacks expire after a while; the chat message we also send is what counts
 
 
-def updates(offset):
-    return call("getUpdates", {"offset": offset, "timeout": 0, "allowed_updates": ["message", "callback_query"]})
+def updates(offset, wait=0):
+    """wait > 0: long polling — Telegram holds the request open until something arrives (or `wait` seconds pass)"""
+    return call("getUpdates", {"offset": offset, "timeout": int(wait), "allowed_updates": ["message", "callback_query"]}, timeout=int(wait) + 30)
