@@ -4,6 +4,17 @@ Claude picks from **Ideas** (or finds better ones), verifies everything, and mov
 Every idea here is a lead to check, not a fact. Gigi can suggest ideas any time with the *stories* workflow's `idea` field
 or by telling Claude in a chat. Types are the `hook_type`s of PLAYBOOK §2 (a suggestion: the angle decides).
 
+## Pinned (write these first)
+
+Timely stories Gigi asked for. A row with a date: write it in the run that falls within 5 days of that date and schedule it
+ON that date with `python automation/plan.py add <slug> <date>`. A row marked *next days*: write it in the next run and
+schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is written.
+
+| When | Painting (museum) | Angle | Type | Notes |
+|---|---|---|---|---|
+| next days (from 5 Nov) | Jacques-Louis David, *Napoleon Crossing the Alps* (five versions: Malmaison, Charlottenburg Berlin, Belvedere Vienna, Versailles) + Paul Delaroche, *Bonaparte Crossing the Alps* (Walker Art Gallery, Liverpool; a version in the Louvre) | the rearing horse is propaganda: he crossed the Great St Bernard on a mule, and Delaroche painted the truth 50 years later | hidden | ride the Napoleon wave (Gigi, 4 Nov). Verify: the mule, the guide, who commissioned David's version, that Napoleon refused to sit for it; pick ONE main painting and the museum where it hangs. Don't put it right next to *david-marat* (same painter) |
+| 2026-11-19 (Thu) | an *Odyssey* painting: Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne), or Turner, *Ulysses Deriding Polyphemus* (National Gallery, London), or another famous one | find the true twist (e.g. Waterhouse paints the sirens as birds with women's faces, as the Greeks did, not mermaids) | hidden | Nolan's *The Odyssey* reaches digital/VOD on 17 Nov: post on Thursday 19 Nov for the weekend viewers. Name the film only as context ("the story in Nolan's new film"), never use its images |
+
 ## Done
 
 | Date | Slug | Painting (museum) | Angle | Type |

@@ -5,10 +5,11 @@ check on Telegram. Free to run (GitHub Actions + open-source models); the storie
 
 ```
 02:30  stories   Claude picks a painting, verifies every fact, writes the script, fetches public-domain images,
-                 voices it, checks it by ear (speech recogniser) and by eye (stills + cover), schedules it
-08:00  build     today's reel is rendered and sent to Telegram: cover + video + captions + facts, ✅ ❌ ✏️
-any    inbox     reads your answers every 15 min; ✏️ / any text = Claude revises and re-sends (revise workflow)
-18:00  inbox     approved reel -> Instagram Reels, YouTube Shorts, TikTok (inbox draft until TikTok's audit)
+                 voices it, checks it by ear (speech recogniser) and by eye (stills + cover), schedules it (2 a day)
+08:00  build     today's two reels are rendered side by side and sent to Telegram: cover + video + captions + facts, ✅ ❌ ✏️
+any    inbox     listens to Telegram (answers in seconds); ✏️ / any text = Claude revises and re-sends (revise workflow)
+14:00  inbox     first approved reel -> Instagram Reels, YouTube Shorts, TikTok (inbox draft until TikTok's audit)
+21:00  inbox     second approved reel -> same
 Mon    setup-check   renews the Instagram token, checks every connection, tells you if anything is broken
 ```
 

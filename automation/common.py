@@ -35,7 +35,28 @@ def jsave(path, data):
 
 
 def schedule(): return jload("schedule.json", [])
-def save_schedule(s): jsave("schedule.json", sorted(s, key=lambda e: e["date"]))
+def save_schedule(s): jsave("schedule.json", sorted(s, key=lambda e: e["date"]))   # stable: same-day order = slot order
+
+
+# Posting slots (Madrid time). Two a day from 5 Nov 2026: the first scheduled reel of a day goes out at slots[0],
+# the second at slots[1]. A reel approved late goes out as soon as it's approved (until publish_until).
+def slots(): return list(CONFIG.get("slots") or [CONFIG.get("publish_window", ["18:00"])[0]])
+def per_day(): return len(slots())
+def publish_until(): return CONFIG.get("publish_until") or CONFIG.get("publish_window", ["", "22:30"])[1]
+DROPPED = ("rejected", "skipped")
+
+
+def day_entries(date, sch=None):
+    """that day's reels that still count (not rejected/skipped), in slot order"""
+    return [e for e in (sch if sch is not None else schedule()) if e["date"] == date and state(e["slug"])["status"] not in DROPPED]
+
+
+def slot_time(slug):
+    d = date_for(slug)
+    if not d: return slots()[0]
+    names = [e["slug"] for e in day_entries(d)]
+    i = names.index(slug) if slug in names else 0
+    return slots()[min(i, per_day() - 1)]
 
 
 def slug_for(date):

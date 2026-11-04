@@ -8,7 +8,7 @@ retries what failed (max 3 attempts each). A platform whose secrets are missing 
 """
 import os, sys, traceback
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import CONFIG, date_for, gh_output, now, schedule, set_state, state, today
+from common import CONFIG, date_for, gh_output, now, publish_until, schedule, set_state, slots, state, today
 
 NEEDS = {"instagram": ["IG_ACCESS_TOKEN"], "youtube": ["YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"],
          "tiktok": ["TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN"]}
@@ -21,9 +21,11 @@ def posted_today():
 def due(force=False):
     """the oldest approved reel that should go out now ('' if none)"""
     if CONFIG.get("paused"): return ""
-    w0, w1 = CONFIG["publish_window"]; hm = now().strftime("%H:%M")
-    if not force and not (w0 <= hm <= w1): return ""
-    if not force and posted_today() >= CONFIG.get("max_posts_per_day", 1): return ""
+    hm = now().strftime("%H:%M")
+    if not force:
+        if hm > publish_until(): return ""
+        opened = sum(1 for t in slots() if hm >= t)          # slots already reached today
+        if posted_today() >= opened: return ""               # 14:00 → first reel, 21:00 → second reel
     for e in schedule():
         if e["date"] <= today() and state(e["slug"])["status"] == "approved": return e["slug"]
     return ""

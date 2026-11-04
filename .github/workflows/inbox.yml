@@ -1,5 +1,5 @@
 # During the day: listen to Telegram (answers within seconds), read your answers, start revisions, and publish approved reels in the
-# evening window (config.json publish_window). Each publisher remembers what it posted, so nothing is ever posted twice.
+# posting slots (config.json slots: 14:00 and 21:00). Each publisher remembers what it posted, so nothing is ever posted twice.
 name: inbox
 on:
   push:                             # a change to this listener starts it straight away

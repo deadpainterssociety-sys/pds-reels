@@ -1,51 +1,68 @@
-# Morning: render today's reel, keep the files as a private draft release, and send it to Telegram for review.
+# Morning: render today's reels (one per posting slot, two a day), keep the files as private draft releases, and send each
+# one to Telegram for review. The two renders run side by side on separate machines.
 name: build
 on:
   schedule:
-    - cron: "41 6 * * *"          # 07:41 Madrid (winter) / 08:41 (summer); the review arrives ~20 min later
+    - cron: "41 6 * * *"          # 07:41 Madrid (winter) / 08:41 (summer); the reviews arrive ~20-40 min later
   workflow_dispatch:
     inputs:
       slug: { description: "Render this story now (empty = today's)", required: false, default: "" }
 concurrency: { group: "build", cancel-in-progress: false }
 permissions: { contents: write }
 jobs:
+  pick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs: { slugs: "${{ steps.pick.outputs.slugs }}" }
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: pick
+        env: { SLUG: "${{ inputs.slug }}" }
+        run: |
+          if [ -n "$SLUG" ]; then echo "slugs=[\"$SLUG\"]" >> "$GITHUB_OUTPUT"; else python3 automation/plan.py today; fi
+      - if: inputs.slug == ''
+        run: ./automation/commit.sh "planned today's reels"        # drafts pulled forward to fill today's slots
+      - if: steps.pick.outputs.slugs == '[]'
+        run: |
+          python3 - <<'PY'
+          import sys; sys.path.insert(0, "automation")
+          from common import CONFIG, day_entries, today
+          import subprocess
+          if not CONFIG.get("paused") and not day_entries(today()):
+              subprocess.run(["python3", "automation/bot.py", "say", "⚠️ No reel is ready for today. The story writer will catch up tonight (or send /stories 2 now)."])
+          PY
+
   build:
+    needs: pick
+    if: needs.pick.outputs.slugs != '[]' && needs.pick.outputs.slugs != ''
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: { slug: "${{ fromJSON(needs.pick.outputs.slugs) }}" }
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       GITHUB_TOKEN: ${{ github.token }}
+      SLUG: ${{ matrix.slug }}
     steps:
       - uses: actions/checkout@v4
-      - id: pick
-        env: { SLUG: "${{ inputs.slug }}" }
-        run: |
-          if [ -n "$SLUG" ]; then echo "slug=$SLUG" >> $GITHUB_OUTPUT; else python3 automation/plan.py today; fi
-      - if: steps.pick.outputs.slug == ''
-        run: |
-          python3 - <<'PY'
-          import sys; sys.path.insert(0, "automation")
-          from common import CONFIG, schedule, today, state
-          import subprocess
-          todays = [e for e in schedule() if e["date"] == today()]
-          if not CONFIG.get("paused") and not todays:
-              subprocess.run(["python3", "automation/bot.py", "say", "⚠️ No reel is ready for today. The story writer will catch up tonight (or send /stories 1 now)."])
-          PY
-      - if: steps.pick.outputs.slug != ''
-        uses: ./.github/actions/setup
+        with: { ref: "${{ github.ref_name }}" }                  # includes the plan the pick job just saved
+      - uses: ./.github/actions/setup
       - name: Render
-        if: steps.pick.outputs.slug != ''
         env: { CONCURRENCY: "4" }
         run: |
-          python3 automation/release.py download-src ${{ steps.pick.outputs.slug }}
-          ./make_reel.sh ${{ steps.pick.outputs.slug }} 0 8
-      - if: steps.pick.outputs.slug != ''
-        run: |
-          python3 automation/release.py upload ${{ steps.pick.outputs.slug }}
-          python3 -c "import sys; sys.path.insert(0,'automation'); from common import set_state; set_state('${{ steps.pick.outputs.slug }}', status='built')"
-          python3 automation/bot.py review ${{ steps.pick.outputs.slug }}
-      - if: always() && steps.pick.outputs.slug != ''
-        run: ./automation/commit.sh "built ${{ steps.pick.outputs.slug }}"
+          python3 automation/release.py download-src "$SLUG"
+          ./make_reel.sh "$SLUG" 0 8
+      - run: |
+          python3 automation/release.py upload "$SLUG"
+          python3 -c "import sys; sys.path.insert(0,'automation'); from common import set_state; set_state('$SLUG', status='built')"
+          python3 automation/bot.py review "$SLUG"
+      - if: always()
+        run: ./automation/commit.sh "built $SLUG"
       - if: failure()
-        run: python3 automation/bot.py say "⚠️ Today's render failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        run: python3 automation/bot.py say "⚠️ The render of $SLUG failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

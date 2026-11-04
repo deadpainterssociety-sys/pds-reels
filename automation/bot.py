@@ -22,7 +22,8 @@ The chat is linked the first time someone sends /start (or set TELEGRAM_CHAT_ID)
 import datetime, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import telegram as T
-from common import (CONFIG, ROOT, captions, date_for, gh_output, jload, jsave, now, out_dir, schedule, set_state, state, story,
+from common import (CONFIG, ROOT, captions, date_for, gh_output, jload, jsave, now, out_dir, publish_until, schedule, set_state,
+                    slot_time, slots, state, story,
                     title_of, today, upcoming)
 
 BS = "automation/bot_state.json"
@@ -36,13 +37,13 @@ def chat_id(): return os.environ.get("TELEGRAM_CHAT_ID", "").strip() or bstate()
 
 def when_text(slug):
     """human 'when will this go out' for an approved reel"""
-    d = date_for(slug) or today(); w0, w1 = CONFIG["publish_window"]
+    d = date_for(slug) or today(); t = slot_time(slug)
     if d > today():
-        return f"on {datetime.date.fromisoformat(d).strftime('%a %d %b')} at {w0}"
+        return f"on {datetime.date.fromisoformat(d).strftime('%a %d %b')} at {t}"
     hm = now().strftime("%H:%M")
-    if hm < w0: return f"today at {w0}"
-    if hm <= w1: return "within the next 15 minutes"
-    return f"tomorrow at {w0}"
+    if hm < t: return f"today at {t}"
+    if hm <= publish_until(): return "in the next few minutes"
+    return f"tomorrow at {slots()[0]}"
 
 
 def nice_date(d): return datetime.date.fromisoformat(d).strftime("%a %d %b") if d else "unscheduled"
@@ -57,7 +58,7 @@ def review(slug, revised=False):
     qa = open(os.path.join(out, "qa.txt")).read() if os.path.exists(os.path.join(out, "qa.txt")) else ""
     dur = re.search(r"([\d.]+) s", qa); heard = re.search(r"recogniser match on the final file: ([\d.]+)", qa)
     head = ("✏️ <b>Revised version</b>" + (f" — you asked: <i>{T.esc(s.get('feedback', [''])[-1])}</i>" if s.get("feedback") else "")
-            if revised else f"🎨 <b>Reel for {nice_date(date_for(slug))}</b>")
+            if revised else f"🎨 <b>Reel for {nice_date(date_for(slug))} · {slot_time(slug)}</b>")
     nxt = ""
     try:
         rs = json.load(open(os.path.join(out, "..", "build", "resolved.json")))
@@ -226,14 +227,16 @@ def listen(minutes):
 
 
 def nudge():
-    """17:30: one reminder if today's reel is still waiting for an answer"""
-    hm = now().strftime("%H:%M")
-    if not ("17:30" <= hm <= "17:59") or CONFIG.get("paused") or not chat_id(): return
+    """one reminder ~1 h before each posting slot if that slot's reel is still waiting for an answer"""
+    if CONFIG.get("paused") or not chat_id(): return
+    n = now(); hm = n.strftime("%H:%M")
     for e in schedule():
-        s = state(e["slug"])
-        if e["date"] == today() and s["status"] == "sent" and not s.get("nudged"):
-            T.send(chat_id(), f"⏰ Today's reel is still waiting for you: {T.esc(title_of(e['slug']))}\n"
-                              f"Approve it before {CONFIG['publish_window'][1]} and it goes out today (buttons on the video above).")
+        if e["date"] != today(): continue
+        s = state(e["slug"]); t = slot_time(e["slug"])
+        h, m = map(int, t.split(":")); lead = (n.replace(hour=h, minute=m, second=0, microsecond=0) - n).total_seconds() / 60
+        if s["status"] == "sent" and not s.get("nudged") and 30 <= lead <= 60:
+            T.send(chat_id(), f"⏰ The {t} reel is still waiting for you: {T.esc(title_of(e['slug']))}\n"
+                              f"Approve it and it goes out at {t} (buttons on the video above).")
             set_state(e["slug"], nudged=True)
 
 

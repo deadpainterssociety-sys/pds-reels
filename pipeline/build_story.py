@@ -128,10 +128,9 @@ def next_teaser():
     if "next" in st: return (st["next"] or "").strip() or None
     try: sch = sorted(json.load(open(os.path.join(ROOT, "schedule.json"))), key=lambda e: e["date"])
     except (OSError, ValueError): return None
-    mine = [e["date"] for e in sch if e["slug"] == slug]
-    if not mine: return None
-    for e in sch:
-        if e["date"] <= mine[0] or e["slug"] == slug: continue
+    idx = [i for i, e in enumerate(sch) if e["slug"] == slug]
+    if not idx: return None
+    for e in sch[idx[0] + 1:]:                     # the next reel in posting order (two a day: the evening one is "next")
         try: status = json.load(open(os.path.join(STORIES, e["slug"], "state.json"))).get("status", "draft")
         except (OSError, ValueError): status = "draft"
         if status in ("rejected", "skipped", "posted"): continue

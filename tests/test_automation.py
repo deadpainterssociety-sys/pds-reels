@@ -16,6 +16,9 @@ tmp = tempfile.mkdtemp(prefix="dps-test-"); W = os.path.join(tmp, "repo")
 shutil.copytree(REPO, W, ignore=shutil.ignore_patterns("node_modules", "models", "build", ".git", "public"))
 for f in ("automation/bot_state.json", "schedule.json"):   # start from a clean slate, not the live system's state
     if os.path.exists(os.path.join(W, f)): os.remove(os.path.join(W, f))
+def set_cfg(**kv):
+    c = json.load(open(os.path.join(W, "config.json"))); c.update(kv); json.dump(c, open(os.path.join(W, "config.json"), "w"), indent=1)
+set_cfg(slots=["18:00"], publish_until="22:30", stories_per_run=2, paused=False)   # sections 1-12: one reel a day at 18:00
 bin_dir = os.path.join(tmp, "bin"); os.makedirs(bin_dir)
 open(os.path.join(bin_dir, "gh"), "w").write("#!/bin/sh\necho \"gh $*\" >> %s/gh.log\ncase \"$*\" in *\"secret set\"*) cat >> %s/gh.log;; esac\necho >> %s/gh.log\n" % (tmp, tmp, tmp))
 os.chmod(os.path.join(bin_dir, "gh"), 0o755)
@@ -208,6 +211,28 @@ check(o.get("post_now") == "" and _t.time() - t0 < 30, "outside the window: list
 t0 = _t.time(); _, o = run("automation/bot.py", "listen", "5", now="2026-11-09T18:03")
 check(_t.time() - t0 < 20, "18:03 with an approved reel: stops at once so the publish job runs")
 _, o = run("automation/publish.py", "decide", now="2026-11-09T18:03"); check(o.get("slug") in ("test-l", "test-b"), "…and an approved reel is picked for publishing (oldest first)")
+
+print("\n13. Two reels a day (14:00 and 21:00), pinned dates")
+set_cfg(slots=["14:00", "21:00"], publish_until="23:00", stories_per_run=3, buffer_days=3, paused=False)
+json.dump([], open(os.path.join(W, "schedule.json"), "w"))
+for x in ("t2-a", "t2-b", "t2-c", "t2-pin"): fake_story(x, "Painter " + x)
+_, o = run("automation/plan.py", "needed", now="2026-12-01T02:20"); check(o.get("n") == "3", f"empty buffer: 3 per run towards 6 ready (got {o.get('n')})")
+for x in ("t2-a", "t2-b", "t2-c"): run("automation/plan.py", "add", x, now="2026-12-01T02:30")
+sch = json.load(open(os.path.join(W, "schedule.json")))
+check([e["date"] for e in sch] == ["2026-12-02", "2026-12-02", "2026-12-03"], f"two per day: {[(e['slug'], e['date']) for e in sch]}")
+r, _ = run("automation/plan.py", "add", "t2-pin", "2026-12-02", now="2026-12-01T02:40")
+sch = json.load(open(os.path.join(W, "schedule.json"))); day = [e["slug"] for e in sch if e["date"] == "2026-12-02"]
+check("t2-pin" in day and len(day) == 2 and "t2-b" not in day, f"pinned onto a full day: the last unpinned reel moves on ({[(e['slug'], e['date']) for e in sch]})")
+_, o = run("automation/plan.py", "today", now="2026-12-02T07:41"); check(json.loads(o.get("slugs", "[]")) == ["t2-a", "t2-pin"], f"morning: both of today's reels rendered ({o.get('slugs')})")
+for x in ("t2-a", "t2-pin"): json.dump({"status": "approved"}, open(os.path.join(W, "stories", x, "state.json"), "w"))
+_, o = run("automation/publish.py", "decide", now="2026-12-02T13:50"); check(o.get("slug") == "", "13:50: nothing yet")
+_, o = run("automation/publish.py", "decide", now="2026-12-02T14:02"); check(o.get("slug") == "t2-a", "14:02: the first reel")
+json.dump({"status": "posted", "posted_at": "2026-12-02T14:03:00+01:00"}, open(os.path.join(W, "stories", "t2-a", "state.json"), "w"))
+_, o = run("automation/publish.py", "decide", now="2026-12-02T17:00"); check(o.get("slug") == "", "17:00: the second one waits for its slot")
+_, o = run("automation/publish.py", "decide", now="2026-12-02T21:01"); check(o.get("slug") == "t2-pin", "21:01: the second reel")
+json.dump({"status": "sent"}, open(os.path.join(W, "stories", "t2-pin", "state.json"), "w"))
+n0 = len(srv.tg("sendMessage")); run("automation/bot.py", "poll", now="2026-12-02T20:15")
+check(len(srv.tg("sendMessage")) > n0 and "21:00" in srv.tg("sendMessage")[-1]["body"]["text"], "20:15: reminder for the 21:00 reel still waiting")
 
 print(f"\n{'ALL GOOD' if not fails else str(len(fails)) + ' FAILED'} — temp repo: {W}")
 sys.exit(1 if fails else 0)

@@ -48,7 +48,7 @@ Names must be typed exactly as written here. GitHub encrypts them; nobody can re
 
 **Check point:** Actions tab → **setup-check** → Run workflow. In a minute the bot sends you a checklist.
 Then Actions → **stories** → Run workflow → count `3`. In ~1 hour you get the covers of the first 3 reels, and every
-morning a reel to review. Until steps 5–7 are done, the 18:00 message gives you the file + captions to post by hand.
+morning two reels to review. Until steps 5–7 are done, the posting message gives you the file + captions to post by hand.
 
 ---
 
@@ -110,10 +110,14 @@ those posts private, permanently.)
 
 | When (Madrid) | What happens | You |
 |---|---|---|
-| ~02:30 | Claude writes the next story (keeps 3 days ready) | — |
-| ~08:00 | Today's reel arrives on Telegram: cover, video, captions, facts | ✅ / ❌ / ✏️ |
+| ~02:30 | Claude writes the next stories (keeps 3 days = 6 reels ready) | — |
+| ~08:00–08:30 | Today's two reels arrive on Telegram: cover, video, captions, facts | ✅ / ❌ / ✏️ on each |
 | any time | ✏️ or any message = change request → new version in ~40 min | review again |
-| 18:00 | Approved reel goes out on Instagram, YouTube, TikTok (draft) | paste the TikTok caption |
+| 14:00 | The first approved reel goes out on Instagram, YouTube, TikTok (draft) | paste the TikTok caption |
+| 21:00 | The second one | paste the TikTok caption |
+
+A reel approved after its time goes out as soon as you approve it (until 23:00). One reminder comes ~1 h before each slot
+if a reel is still waiting. Times live in `config.json` → `slots`.
 
 Telegram commands: `/status` · `/post` (publish approved now) · `/stories 3` · `/rule <text>` (a rule for all future
 reels) · `/pause` · `/resume`. Settings (times, platforms, buffer) live in `config.json`.
