@@ -1,4 +1,7 @@
-"""Instagram Reels via the Instagram API with Instagram Login (graph.instagram.com).
+"""Instagram Reels. Works with either kind of token Meta's dashboard hands out (detected automatically):
+  - Instagram Login token (starts with "IG…")  -> graph.instagram.com, account "me"
+  - Facebook Login / unified login / system-user token (starts with "EAA…") -> graph.facebook.com, the Instagram business
+    account id found through the connected Facebook Page (or the IG_USER_ID secret, if set)
 
 Needs: an Instagram professional account (Business or Creator) and a Meta app with the Instagram product
 ('API setup with Instagram login'), permissions instagram_business_basic + instagram_business_content_publish.
@@ -15,12 +18,20 @@ import json, os, sys, time, urllib.error, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import CONFIG, captions, env, set_github_secret
 
-BASE = os.environ.get("IG_API", "https://graph.instagram.com").rstrip("/")
 V = CONFIG.get("instagram_api_version", "v23.0")
 
 
+def fb_token(): return not env("IG_ACCESS_TOKEN").strip().startswith("IG")
+
+
+def base():
+    if os.environ.get("IG_API"): return os.environ["IG_API"].rstrip("/")
+    return "https://graph.facebook.com" if fb_token() else "https://graph.instagram.com"
+
+
 def req(method, path, **params):
-    params["access_token"] = env("IG_ACCESS_TOKEN")
+    BASE = base()
+    params["access_token"] = env("IG_ACCESS_TOKEN").strip()
     data = urllib.parse.urlencode(params).encode() if method == "POST" else None
     url = f"{BASE}/{V}/{path}" + ("" if data else "?" + urllib.parse.urlencode(params))
     try:
@@ -30,7 +41,25 @@ def req(method, path, **params):
         raise RuntimeError(f"Instagram {path}: HTTP {e.code} {body}")
 
 
+_UID = None
+
+
+def uid():
+    """the account to post as: "me" for Instagram Login tokens; the Instagram business account id for Facebook tokens"""
+    global _UID
+    if _UID: return _UID
+    if not fb_token(): _UID = "me"; return _UID
+    if os.environ.get("IG_USER_ID", "").strip(): _UID = os.environ["IG_USER_ID"].strip(); return _UID
+    for pg in req("GET", "me/accounts", fields="name,instagram_business_account{id,username}").get("data", []):
+        ig = pg.get("instagram_business_account")
+        if ig: _UID = ig["id"]; print(f"instagram: posting as @{ig.get('username')} (via the Facebook Page {pg.get('name')})"); return _UID
+    raise RuntimeError("This Facebook token sees no Instagram business account: connect @thedeadpainterssociety to a Facebook Page "
+                       "(or add the IG_USER_ID secret with the account's id)")
+
+
 def me():
+    if fb_token():
+        m = req("GET", uid(), fields="id,username"); m["account_type"] = "BUSINESS (Facebook login)"; return m
     return req("GET", "me", fields="user_id,username,account_type")
 
 
@@ -40,7 +69,9 @@ def check():
 
 def refresh():
     """long-lived tokens last 60 days and can be refreshed once they are > 24 h old"""
-    url = f"{BASE}/refresh_access_token?" + urllib.parse.urlencode({"grant_type": "ig_refresh_token", "access_token": env("IG_ACCESS_TOKEN")})
+    if fb_token():
+        print("instagram: Facebook/system-user token — nothing to refresh (system-user tokens never expire)"); return True
+    url = f"{base()}/refresh_access_token?" + urllib.parse.urlencode({"grant_type": "ig_refresh_token", "access_token": env("IG_ACCESS_TOKEN")})
     r = json.load(urllib.request.urlopen(url, timeout=60))
     days = int(r.get("expires_in", 0)) // 86400
     saved = set_github_secret("IG_ACCESS_TOKEN", r["access_token"])
@@ -48,10 +79,10 @@ def refresh():
 
 
 def publish(slug, video_url, cover_url=None, wait=600):
-    uid = "me"
+    uid_ = uid()
     params = {"media_type": "REELS", "video_url": video_url, "caption": captions(slug)["instagram"][:2200], "share_to_feed": "true"}
     if cover_url: params["cover_url"] = cover_url
-    cid = req("POST", f"{uid}/media", **params)["id"]
+    cid = req("POST", f"{uid_}/media", **params)["id"]
     t0 = time.time()
     while True:
         time.sleep(float(os.environ.get("POLL_SECONDS", 15)))
@@ -60,7 +91,7 @@ def publish(slug, video_url, cover_url=None, wait=600):
         if code == "FINISHED": break
         if code in ("ERROR", "EXPIRED"): raise RuntimeError(f"Instagram processing failed: {st.get('status')}")
         if time.time() - t0 > wait: raise RuntimeError("Instagram container not ready after 10 min")
-    mid = req("POST", f"{uid}/media_publish", creation_id=cid)["id"]
+    mid = req("POST", f"{uid_}/media_publish", creation_id=cid)["id"]
     link = req("GET", mid, fields="permalink").get("permalink")
     return {"id": mid, "url": link}
 

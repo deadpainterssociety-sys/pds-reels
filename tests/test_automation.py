@@ -180,6 +180,16 @@ check(any("until the hook ends" in p for p in shots_ok([{"t": 0, "img": "main", 
 check(len([p for p in shots_ok([{"t": 0, "img": "main", "from": [0.5, 0.3, 2], "to": [0.5, 0.3, 2]}, {"t": 4, "img": "main", "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1.05]}], nude=True) if "nude" in p]) == 2,
       "nude: wide shot and wide cover rejected")
 
+print("\n11b. Instagram with a Facebook-login / system-user token (EAA…)")
+r, _ = run("automation/instagram.py", "check")
+ENV["IG_ACCESS_TOKEN"] = "EAAsystemuser"
+r, _ = run("automation/instagram.py", "check")
+check("thedeadpainterssociety" in r.stdout and "Facebook login" in r.stdout, "EAA token: finds the Instagram account through the Facebook Page")
+r, _ = run("automation/instagram.py", "publish", "test-a", "https://o.github.io/r/media/test-a.mp4")
+check("instagram.com/reel/" in r.stdout and srv.calls("/17841/media"), "EAA token: publishes as the business account")
+r, _ = run("automation/instagram.py", "refresh"); check("nothing to refresh" in r.stdout, "EAA token: no refresh needed")
+ENV["IG_ACCESS_TOKEN"] = "IGOLD"
+
 print("\n12. Listening mode: a tap is answered at once, a due reel stops the listener")
 import time as _t
 fake_story("test-l", "Painter L")

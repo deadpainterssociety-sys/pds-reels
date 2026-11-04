@@ -54,6 +54,10 @@ class H(BaseHTTPRequestHandler):
             return self.reply({"ok": True, "result": {"message_id": STATE["msg"]}})
         # ---------- Instagram ----------
         if p.endswith("/me") and "access_token" in q: return self.reply({"user_id": "1784", "username": "thedeadpainterssociety", "account_type": "BUSINESS"})
+        if p.endswith("/me/accounts"): return self.reply({"data": [{"name": "Dead Painters Society", "instagram_business_account": {"id": "17841", "username": "thedeadpainterssociety"}}]})
+        if p.endswith("/17841") and method == "GET": return self.reply({"id": "17841", "username": "thedeadpainterssociety"})
+        if p.endswith("/17841/media"): return self.reply({"id": "container1"})
+        if p.endswith("/17841/media_publish"): return self.reply({"id": "media1"})
         if p.endswith("/me/media"): return self.reply({"id": "container1"})
         if p.endswith("/container1"): return self.reply({"status_code": "FINISHED"})
         if p.endswith("/me/media_publish"): return self.reply({"id": "media1"})
