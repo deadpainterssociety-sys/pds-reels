@@ -21,7 +21,23 @@ from common import CONFIG, captions, env, set_github_secret
 V = CONFIG.get("instagram_api_version", "v23.0")
 
 
-def fb_token(): return not env("IG_ACCESS_TOKEN").strip().startswith("IG")
+_MODE = None   # "instagram" (graph.instagram.com, account "me") or "facebook" (graph.facebook.com, business account id)
+
+
+def fb_token():
+    """which API this token speaks. "IG…" tokens are Instagram Login; others are tried on Instagram first
+    (some dashboards now hand out Instagram tokens that don't start with IG), then on Facebook."""
+    global _MODE
+    if _MODE: return _MODE == "facebook"
+    tok = env("IG_ACCESS_TOKEN").strip()
+    if tok.startswith("IG"): _MODE = "instagram"; return False
+    if os.environ.get("IG_API"): _MODE = "facebook"; return True     # tests: one mock serves both APIs, decide by prefix
+    try:
+        json.load(urllib.request.urlopen(f"https://graph.instagram.com/{V}/me?" + urllib.parse.urlencode(
+            {"fields": "user_id,username", "access_token": tok}), timeout=60)); _MODE = "instagram"
+    except Exception: _MODE = "facebook"
+    print("instagram: token works with the", "Instagram Login API" if _MODE == "instagram" else "Facebook Graph API")
+    return _MODE == "facebook"
 
 
 def base():
@@ -50,7 +66,9 @@ def uid():
     if _UID: return _UID
     if not fb_token(): _UID = "me"; return _UID
     if os.environ.get("IG_USER_ID", "").strip(): _UID = os.environ["IG_USER_ID"].strip(); return _UID
-    for pg in req("GET", "me/accounts", fields="name,instagram_business_account{id,username}").get("data", []):
+    try: pages = req("GET", "me/accounts", fields="name,instagram_business_account{id,username}").get("data", [])
+    except RuntimeError: pages = []
+    for pg in pages:
         ig = pg.get("instagram_business_account")
         if ig: _UID = ig["id"]; print(f"instagram: posting as @{ig.get('username')} (via the Facebook Page {pg.get('name')})"); return _UID
     try:   # a system-user token (unified login) may have no Page: the token itself names the Instagram account it covers
@@ -59,14 +77,17 @@ def uid():
             if g.get("scope") in ("instagram_content_publish", "instagram_basic") and g.get("target_ids"):
                 _UID = g["target_ids"][0]; print(f"instagram: posting as account {_UID} (from the token's permissions)"); return _UID
     except RuntimeError as e: print("instagram: debug_token:", e)
-    for b in req("GET", "me/businesses", fields="id,name").get("data", []):   # accounts owned by the business portfolio
+    try: bizs = req("GET", "me/businesses", fields="id,name").get("data", [])
+    except RuntimeError: bizs = []                                          # token without business permissions
+    for b in bizs:   # accounts owned by the business portfolio
         for edge in ("owned_instagram_accounts", "instagram_business_accounts"):
             try: accts = req("GET", f"{b['id']}/{edge}", fields="id,username").get("data", [])
             except RuntimeError: continue
             if accts:
                 _UID = accts[0]["id"]; print(f"instagram: posting as @{accts[0].get('username')} (portfolio {b.get('name')})"); return _UID
-    who = req("GET", "me", fields="id,name")
-    raise RuntimeError(f"This token (it belongs to '{who.get('name')}') sees no Instagram account: add the IG_USER_ID secret "
+    try: who = req("GET", "me", fields="id,name").get("name", "?")
+    except RuntimeError: who = "?"
+    raise RuntimeError(f"This token (it belongs to '{who}') sees no Instagram account: add the IG_USER_ID secret "
                        "with the Instagram account's ID (Meta app dashboard → Instagram API → step 2, the number under the username)")
 
 
