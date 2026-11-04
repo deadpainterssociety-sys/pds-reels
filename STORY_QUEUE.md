@@ -17,13 +17,14 @@ or by telling Claude in a chat. Types are the `hook_type`s of PLAYBOOK §2 (a su
 | 3 Nov 2026 | vermeer-cupid | Vermeer, *Girl Reading a Letter at an Open Window* (Gemäldegalerie Alte Meister, Dresden) | Cupid painted over decades after Vermeer died; blamed on Vermeer until a dirt layer proved otherwise; uncovered 2017–2021 | time-gap |
 | 4 Nov 2026 | caravaggio-goliath | Caravaggio, *David with the Head of Goliath* (Galleria Borghese, Rome) | his own face on Goliath's severed head; a killer under a death sentence; hedged plea for a pardon | dark-legend |
 | 5 Nov 2026 | holbein-ambassadors | Holbein, *The Ambassadors* (National Gallery) | the anamorphic skull you only see from the bottom-right corner; the half-hidden crucifix | craft |
+| 6 Nov 2026 | vangogh-crows | Van Gogh, *Wheatfield with Crows* (Van Gogh Museum, Amsterdam) | called his last painting; finished c. 10 July 1890, weeks before his death; last was probably the unfinished *Tree Roots* | hidden |
+| 7 Nov 2026 | david-marat | David, *The Death of Marat* (Royal Museums of Fine Arts of Belgium, Brussels) | the letter in his hand is signed by his killer, Charlotte Corday; David erased her, the skin disease, posed him like Christ | dark |
 
 ## Ideas (to verify)
 
 | Painting (museum) | Possible angle | Type | Notes |
 |---|---|---|---|
 | Van Eyck, *Arnolfini Portrait* (National Gallery) | "Jan van Eyck was here" over the mirror; the tiny painter in the mirror | craft | |
-| Van Gogh, *Wheatfield with Crows* (Van Gogh Museum) | everyone calls it his last painting; it wasn't | hidden | Van Gogh Museum's own page on his last works |
 | Goya, *The Naked Maja* (Prado) | the Inquisition demanded to know who ordered it | hidden | **nude: safe framing** (PLAYBOOK §1); sources: Prado, the 1815 Inquisition file |
 | Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside | dark | don't play a melody you can't source; partial nudity: frame the score, not the bodies |
 | Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | dark-legend | **nude: safe framing**; the model claim is a legend: say so |
@@ -35,7 +36,6 @@ or by telling Claude in a chat. Types are the `hook_type`s of PLAYBOOK §2 (a su
 | Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | damage | crime; most-stolen artwork claims need care |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark | dark: not next to another dark one |
-| David, *The Death of Marat* (Royal Museums of Fine Arts, Brussels) | murdered in his bath by Charlotte Corday | dark | |
 | Sargent, *Madame X* (Met, New York) | one fallen strap ruined his Paris career; he repainted it | hidden | Sargent †1925: OK |
 | Klimt, *Portrait of Adele Bloch-Bauer I* (Neue Galerie, New York) | looted by the Nazis, won back in court by her niece | damage | Klimt †1918: OK |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch |

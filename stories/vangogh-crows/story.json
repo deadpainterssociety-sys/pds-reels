@@ -1,0 +1,774 @@
+{
+ "slug": "vangogh-crows",
+ "hook_type": "hidden",
+ "teaser": "Van Gogh's last painting that wasn't",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Vincent van Gogh",
+  "born": 1853,
+  "died": 1890,
+  "painting": "Wheatfield with Crows",
+  "year": "1890",
+  "museum": "Van Gogh Museum",
+  "city": "Amsterdam",
+  "image": "wheat",
+  "image_credit": "Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation), via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1890,
+  "note": "Van Gogh d. 1890: public domain. VGM scans PD; Bonger photo CC0 (Rijksmuseum); Auberge Ravoux photo CC BY-SA 4.0 (Wapakk) -> credited."
+ },
+ "say": {
+  "1890": "eighteen ninety",
+  "10th": "tenth"
+ },
+ "ipa": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Everyone calls this Van Gogh's last painting.",
+     0.4,
+     0.95
+    ],
+    [
+     "It *wasn't.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "july",
+   "perf": [
+    [
+     "In July 1890,",
+     0.3,
+     0.95
+    ],
+    [
+     "in a village outside Paris,",
+     0.3,
+     0.95
+    ],
+    [
+     "Vincent painted a storm over the wheat,",
+     0.3,
+     0.95
+    ],
+    [
+     "and a sky full of *crows.*",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "letter",
+   "perf": [
+    [
+     "He wrote to his brother",
+     0.25,
+     0.95
+    ],
+    [
+     "that he had tried to express sadness,",
+     0.3,
+     0.93
+    ],
+    [
+     "extreme *loneliness.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "death",
+   "perf": [
+    [
+     "Less than three weeks later,",
+     0.3,
+     0.95
+    ],
+    [
+     "he shot himself.",
+     0.5,
+     0.88
+    ],
+    [
+     "He died two days after.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "myth",
+   "perf": [
+    [
+     "A best-selling novel,",
+     0.25,
+     0.95
+    ],
+    [
+     "then the Hollywood film Lust for Life,",
+     0.3,
+     0.95
+    ],
+    [
+     "told it as one moment:",
+     0.35,
+     0.95
+    ],
+    [
+     "the crows,",
+     0.3,
+     0.92
+    ],
+    [
+     "then the *gun.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "truth",
+   "perf": [
+    [
+     "But his letters suggest",
+     0.25,
+     0.95
+    ],
+    [
+     "he finished it around July 10th,",
+     0.3,
+     0.95
+    ],
+    [
+     "more than two weeks before he died.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "roots",
+   "perf": [
+    [
+     "The Van Gogh Museum thinks",
+     0.25,
+     0.95
+    ],
+    [
+     "his last painting was probably *this:*",
+     0.4,
+     0.92
+    ],
+    [
+     "Tree Roots.",
+     0.4,
+     0.9
+    ],
+    [
+     "Left *unfinished.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "His brother-in-law wrote",
+     0.25,
+     0.95
+    ],
+    [
+     "that the morning before his death,",
+     0.3,
+     0.93
+    ],
+    [
+     "Vincent had painted a patch of woods,",
+     0.3,
+     0.93
+    ],
+    [
+     "full of sun and *life.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "back",
+   "perf": [
+    [
+     "The crows were never the *goodbye.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Van Gogh Museum, in Amsterdam.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "wheat": {
+   "file": "src/wheat.jpg",
+   "commons": "File:Korenveld met kraaien - s0149V1962 - Van Gogh Museum.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "crows": [
+     0.72,
+     0.31
+    ],
+    "crowsR": [
+     0.86,
+     0.24
+    ],
+    "crowLow": [
+     0.4,
+     0.46
+    ],
+    "sky": [
+     0.33,
+     0.17
+    ],
+    "sun": [
+     0.55,
+     0.25
+    ],
+    "path": [
+     0.56,
+     0.62
+    ],
+    "dark": [
+     0.12,
+     0.12
+    ]
+   }
+  },
+  "roots": {
+   "file": "src/roots.jpg",
+   "commons": "File:Boomwortels - s0195V1962 - Van Gogh Museum.jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "roots": [
+     0.33,
+     0.5
+    ],
+    "low": [
+     0.3,
+     0.8
+    ],
+    "green": [
+     0.62,
+     0.3
+    ]
+   }
+  },
+  "vincent": {
+   "file": "src/vincent.jpg",
+   "commons": "File:Vincent van Gogh - Self-Portrait - Google Art Project.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.53,
+     0.45
+    ]
+   }
+  },
+  "bonger": {
+   "file": "src/bonger.jpg",
+   "commons": "File:Andries Bonger op middelbare leeftijd, RP-F-00-1433.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "face": [
+     0.5,
+     0.33
+    ]
+   }
+  },
+  "auberge": {
+   "file": "src/auberge.jpg",
+   "commons": "File:Auberge Ravoux.jpg",
+   "long": 2400,
+   "credit": "Auberge Ravoux, Auvers-sur-Oise: photo by Wapakk, CC BY-SA 4.0, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "facade": [
+     0.53,
+     0.35
+    ],
+    "plaque": [
+     0.52,
+     0.4
+    ]
+   }
+  },
+  "thunder": {
+   "file": "src/thunder.jpg",
+   "commons": "File:Vincent van Gogh - Wheatfield Under Thunderclouds - VGM F778.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "sky": [
+     0.4,
+     0.35
+    ],
+    "field": [
+     0.5,
+     0.7
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "wheat",
+   "from": "crows@2.4",
+   "to": "crows@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.5-0.03",
+   "img": "wheat",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "wheat",
+   "from": "center@0.3",
+   "to": "center@0.29",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "july-0.08",
+   "img": "vincent",
+   "from": "face@1.2",
+   "to": "face@1.35",
+   "kind": "image",
+   "gray": 0.35
+  },
+  {
+   "at": "july.8-0.05",
+   "img": "wheat",
+   "from": "sky@1.6",
+   "to": "sky@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "july.15-0.05",
+   "img": "wheat",
+   "from": "crowsR@2.0",
+   "to": "crowsR@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "letter-0.08",
+   "img": "thunder",
+   "from": "sky@1.0",
+   "to": "field@1.08",
+   "kind": "image",
+   "gray": 0.6
+  },
+  {
+   "at": "letter.11-0.05",
+   "img": "wheat",
+   "from": "path@1.8",
+   "to": "path@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "death-0.08",
+   "img": "auberge",
+   "from": "facade@1.0",
+   "to": "facade@1.1",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "death.8-0.05",
+   "img": "auberge",
+   "from": "plaque@1.7",
+   "to": "plaque@1.85",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "myth-0.08",
+   "img": "wheat",
+   "from": "crowLow@1.6",
+   "to": "crowLow@1.75",
+   "kind": "image",
+   "gray": 0.7
+  },
+  {
+   "at": "myth.15-0.05",
+   "img": "wheat",
+   "from": "crows@2.2",
+   "to": "crows@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "myth.17-0.05",
+   "img": "wheat",
+   "from": "dark@2.2",
+   "to": "dark@2.4",
+   "kind": "image",
+   "dim": 0.15
+  },
+  {
+   "at": "truth-0.08",
+   "img": "wheat",
+   "from": "center@0.3",
+   "to": "center@0.31",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "truth.10-0.05",
+   "img": "wheat",
+   "from": "path@1.3",
+   "to": "path@1.42",
+   "sway": 0.006
+  },
+  {
+   "at": "roots-0.08",
+   "img": "vincent",
+   "from": "face@1.45",
+   "to": "face@1.6",
+   "kind": "image",
+   "gray": 0.6
+  },
+  {
+   "at": "roots.10-0.03",
+   "img": "roots",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "kind": "image",
+   "hit": "big"
+  },
+  {
+   "at": "roots.13-0.05",
+   "img": "roots",
+   "from": "low@1.8",
+   "to": "low@1.95",
+   "kind": "image"
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "bonger",
+   "from": "face@1.5",
+   "to": "face@1.65",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "payoff.9-0.05",
+   "img": "roots",
+   "from": "center@0.3",
+   "to": "center@0.31",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "payoff.16-0.05",
+   "img": "roots",
+   "from": "green@1.7",
+   "to": "green@1.85",
+   "kind": "image"
+  },
+  {
+   "at": "back-0.08",
+   "img": "wheat",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "wheat",
+   "from": "sun@1.6",
+   "to": "sun@1.8",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "july",
+   "to": "july.8-0.1",
+   "text": "VINCENT · SELF-PORTRAIT, 1889"
+  },
+  {
+   "type": "label",
+   "from": "july.8",
+   "to": "letter-0.1",
+   "text": "AUVERS-SUR-OISE · JULY 1890"
+  },
+  {
+   "type": "label",
+   "from": "letter",
+   "to": "letter.11-0.1",
+   "text": "LETTER TO THEO · c. 10 JULY 1890"
+  },
+  {
+   "type": "label",
+   "from": "death",
+   "to": "myth-0.1",
+   "text": "AUBERGE RAVOUX · HIS INN"
+  },
+  {
+   "type": "credit",
+   "from": "death",
+   "to": "myth-0.1",
+   "text": "PHOTO: WAPAKK · CC BY-SA 4.0"
+  },
+  {
+   "type": "label",
+   "from": "myth",
+   "to": "truth-0.1",
+   "text": "THE LEGEND · 1934 NOVEL, 1956 FILM"
+  },
+  {
+   "type": "label",
+   "from": "truth",
+   "to": "roots-0.1",
+   "text": "FINISHED c. 10 JULY 1890"
+  },
+  {
+   "type": "title",
+   "from": "roots.11",
+   "to": "roots.13-0.1",
+   "kicker": "PROBABLY HIS LAST · 1890",
+   "text": "<i>Tree Roots</i>"
+  },
+  {
+   "type": "label",
+   "from": "roots.13",
+   "to": "payoff-0.1",
+   "text": "UNFINISHED"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "payoff.9-0.1",
+   "text": "ANDRIES BONGER · THEO'S IN-LAW"
+  },
+  {
+   "type": "label",
+   "from": "payoff.9",
+   "to": "back-0.1",
+   "text": "TREE ROOTS · JULY 1890"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "VAN GOGH MUSEUM · AMSTERDAM"
+  }
+ ],
+ "nocap": [
+  [
+   "roots.11",
+   "roots.13-0.1"
+  ]
+ ],
+ "cover": {
+  "question": "Was this <i>really</i> his <i>last?</i>",
+  "name": "VINCENT VAN GOGH",
+  "work": "Wheatfield with Crows, 1890",
+  "focus": [
+   0.72,
+   0.3
+  ],
+  "span": 0.8,
+  "answered_by": "No: finished around 10 July 1890, weeks before he died; his last was probably Tree Roots, left unfinished"
+ },
+ "music": {
+  "transpose": 1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "letter-0.2",
+    "death$+0.2"
+   ],
+   "drop": [
+    "myth.17-0.05",
+    "myth$+0.3"
+   ],
+   "choir": [
+    "back-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "myth.19",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "truth",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "roots.13",
+   "fx": "chime",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Wheatfield with Crows, painted July 1890 in Auvers-sur-Oise, a village outside Paris; many have claimed it as his last painting",
+   "source": "https://en.wikipedia.org/wiki/Wheatfield_with_Crows ; https://hyperallergic.com/486142/contrary-to-popular-belief-wheatfield-with-crows-was-not-vincent-van-goghs-last-painting/"
+  },
+  {
+   "claim": "In a letter to Theo and Jo (letter 898, on or about 10 July 1890) he described vast wheatfields under troubled skies and said he had tried to express sadness, extreme loneliness",
+   "source": "https://vangoghletters.org/vg/letters/let898/letter.html ; https://en.wikipedia.org/wiki/Wheatfield_with_Crows"
+  },
+  {
+   "claim": "He shot himself on 27 July 1890 and died two days later, on 29 July 1890",
+   "source": "https://www.theartnewspaper.com/news/van-gogh-s-last-painting ; https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+  },
+  {
+   "claim": "The myth: Irving Stone's bestselling 1930s novel (Lust for Life) has him die a day after painting it; Minnelli's 1956 film Lust for Life shows him painting it right before shooting himself",
+   "source": "https://hyperallergic.com/486142/contrary-to-popular-belief-wheatfield-with-crows-was-not-vincent-van-goghs-last-painting/ ; https://en.wikipedia.org/wiki/Wheatfield_with_Crows"
+  },
+  {
+   "claim": "The evidence of his letters suggests it was completed around 10 July 1890, about two and a half weeks before his death",
+   "source": "https://en.wikipedia.org/wiki/Wheatfield_with_Crows ; https://hyperallergic.com/486142/contrary-to-popular-belief-wheatfield-with-crows-was-not-vincent-van-goghs-last-painting/"
+  },
+  {
+   "claim": "The Van Gogh Museum says Tree Roots (1890) is probably his last painting (Van Tilborgh & Maes, 2012); it is unfinished",
+   "source": "https://hyperallergic.com/486142/contrary-to-popular-belief-wheatfield-with-crows-was-not-vincent-van-goghs-last-painting/ ; https://www.theartnewspaper.com/news/van-gogh-s-last-painting ; https://en.wikipedia.org/wiki/Tree_Roots"
+  },
+  {
+   "claim": "Andries Bonger, Theo's brother-in-law, wrote in 1893: 'the morning before his death he had painted an underwood, full of sun and life'",
+   "source": "https://www.theartnewspaper.com/news/van-gogh-s-last-painting ; https://hyperallergic.com/486142/contrary-to-popular-belief-wheatfield-with-crows-was-not-vincent-van-goghs-last-painting/"
+  },
+  {
+   "claim": "He died at the Auberge Ravoux in Auvers, where he had a room",
+   "source": "https://en.wikipedia.org/wiki/Auberge_Ravoux ; https://www.finestresullarte.info/en/news/here-is-where-van-gogh-painted-his-last-picture-before-he-died"
+  },
+  {
+   "claim": "Wheatfield with Crows hangs in the Van Gogh Museum, Amsterdam",
+   "source": "https://en.wikipedia.org/wiki/Wheatfield_with_Crows ; https://www.vangoghmuseum.nl/en/collection/s0149V1962"
+  }
+ ],
+ "caption": "For decades, Wheatfield with Crows was sold as Vincent van Gogh's last painting: the storm, the black crows, then the gun.\n\nHe painted it in Auvers-sur-Oise, outside Paris, in July 1890. Around 10 July he wrote to his brother Theo and Theo's wife Jo that he had painted vast wheatfields under troubled skies, and had tried to express sadness, extreme loneliness. On 27 July he shot himself. He died two days later.\n\nIrving Stone's novel Lust for Life and the 1956 Hollywood film turned the crows into his farewell. But his letters date the painting more than two weeks before his death. The Van Gogh Museum thinks his last work was probably Tree Roots, left unfinished.\n\nP.S. In 1893 Theo's brother-in-law, Andries Bonger, wrote that the morning before his death Vincent had painted \"an underwood, full of sun and life\".\n\n🖤 Did you believe the crows story too?",
+ "caption_short": "Everyone calls Wheatfield with Crows Van Gogh's last painting. It wasn't. 🖤",
+ "youtube_title": "It wasn't his last painting | Van Gogh, Wheatfield with Crows",
+ "hashtags": [
+  "#vangogh",
+  "#wheatfieldwithcrows",
+  "#vincentvangogh",
+  "#vangoghmuseum",
+  "#amsterdam",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#treeroots"
+ ],
+ "hashtags_instagram": [
+  "#vangogh",
+  "#wheatfieldwithcrows",
+  "#arthistory",
+  "#vangoghmuseum",
+  "#arthistoryfacts"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vangogh",
+  "#wheatfieldwithcrows",
+  "#mythbusting"
+ ]
+}

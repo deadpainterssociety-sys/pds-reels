@@ -1,0 +1,813 @@
+{
+ "slug": "david-marat",
+ "hook_type": "dark",
+ "teaser": "The murder victim holding his killer's letter",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Jacques-Louis David",
+  "born": 1748,
+  "died": 1825,
+  "painting": "The Death of Marat",
+  "year": "1793",
+  "museum": "Royal Museums of Fine Arts of Belgium",
+  "city": "Brussels",
+  "image": "marat",
+  "image_credit": "Royal Museums of Fine Arts of Belgium, Brussels, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1825,
+  "note": "David d. 1825: public domain. Boze (d. 1826) PD; Baudry (d. 1886) CC0 scan; Hauer pastel photo CC0; 1793 engraving CC0 (Carnavalet); Pieta photo CC0 (Jebulon)."
+ },
+ "say": {
+  "1793": "seventeen ninety-three",
+  "13": "thirteenth"
+ },
+ "ipa": {
+  "Marat": "mɑːɹˈɑː",
+  "Corday": "kɔːɹdˈeɪ"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "The letter in his hand",
+     0.25,
+     0.95
+    ],
+    [
+     "is signed by his *killer.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "bath",
+   "perf": [
+    [
+     "Paris, July 13, 1793.",
+     0.4,
+     0.95
+    ],
+    [
+     "Jean-Paul Marat,",
+     0.25,
+     0.95
+    ],
+    [
+     "a firebrand journalist of the Revolution,",
+     0.3,
+     0.95
+    ],
+    [
+     "is working in his bath,",
+     0.25,
+     0.95
+    ],
+    [
+     "to ease a painful skin disease.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "visit",
+   "perf": [
+    [
+     "A young woman talks her way in.",
+     0.3,
+     0.95
+    ],
+    [
+     "She says she can name the traitors.",
+     0.35,
+     0.95
+    ],
+    [
+     "He writes them *down.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "knife",
+   "perf": [
+    [
+     "Then Charlotte Corday pulls out a kitchen knife,",
+     0.25,
+     0.95
+    ],
+    [
+     "and stabs him in the *chest.*",
+     0.9,
+     0.86
+    ],
+    [
+     "Four days later,",
+     0.25,
+     0.95
+    ],
+    [
+     "she is guillotined.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "david",
+   "perf": [
+    [
+     "The Convention asked its star painter,",
+     0.25,
+     0.95
+    ],
+    [
+     "Jacques-Louis David,",
+     0.3,
+     0.93
+    ],
+    [
+     "to paint him for the people.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "choices",
+   "perf": [
+    [
+     "David erased the skin disease.",
+     0.3,
+     0.93
+    ],
+    [
+     "He left the killer out.",
+     0.35,
+     0.93
+    ],
+    [
+     "And he posed the body",
+     0.2,
+     0.95
+    ],
+    [
+     "like the dead *Christ.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Corday is nowhere in the painting.",
+     0.35,
+     0.93
+    ],
+    [
+     "Except in his hand:",
+     0.3,
+     0.93
+    ],
+    [
+     "a letter,",
+     0.25,
+     0.93
+    ],
+    [
+     "dated the day she killed him,",
+     0.3,
+     0.93
+    ],
+    [
+     "signed with her *name.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Royal Museums of Fine Arts of Belgium, in Brussels.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "marat": {
+   "file": "src/marat.jpg",
+   "commons": "File:Death of Marat by David.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ],
+    "letter": [
+     0.75,
+     0.56
+    ],
+    "date": [
+     0.82,
+     0.555
+    ],
+    "name": [
+     0.79,
+     0.565
+    ],
+    "face": [
+     0.2,
+     0.48
+    ],
+    "wound": [
+     0.27,
+     0.57
+    ],
+    "tub": [
+     0.3,
+     0.68
+    ],
+    "quill": [
+     0.47,
+     0.92
+    ],
+    "knife": [
+     0.18,
+     0.96
+    ],
+    "crate": [
+     0.73,
+     0.9
+    ],
+    "wall": [
+     0.55,
+     0.22
+    ],
+    "arm": [
+     0.3,
+     0.84
+    ]
+   }
+  },
+  "boze": {
+   "file": "src/boze.jpg",
+   "commons": "File:Joseph Boze - Portrait de Jean-Paul Marat (1743-1793), homme politique - P28 - Musée Carnavalet.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.55,
+     0.45
+    ]
+   }
+  },
+  "baudry": {
+   "file": "src/baudry.jpg",
+   "commons": "File:Paul Baudry - Charlotte Corday - c 1860 - Nantes Museum of Art.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "corday": [
+     0.8,
+     0.15
+    ],
+    "knife": [
+     0.2,
+     0.57
+    ],
+    "room": [
+     0.45,
+     0.3
+    ],
+    "victim": [
+     0.15,
+     0.58
+    ]
+   }
+  },
+  "corday": {
+   "file": "src/corday.jpg",
+   "commons": "File:AR-Corday-Hauer-Livre.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "guillotine": {
+   "file": "src/guillotine.jpg",
+   "commons": "File:Exécution à la guillotine de Charlotte Corday le 17 juillet 1793. Place de la Révolution, actuelle place de la Concorde, G.28824.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "cart": [
+     0.75,
+     0.6
+    ]
+   }
+  },
+  "pieta": {
+   "file": "src/pieta.jpg",
+   "commons": "File:Michelangelo's Pietà Saint Peter's Basilica Vatican City.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "arm": [
+     0.32,
+     0.55
+    ],
+    "christ": [
+     0.37,
+     0.36
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "marat",
+   "from": "letter@2.6",
+   "to": "letter@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "marat",
+   "from": "name@3.4",
+   "to": "name@3.6",
+   "kind": "image"
+  },
+  {
+   "at": "hook.9-0.03",
+   "img": "marat",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "bath-0.08",
+   "img": "baudry",
+   "from": "room@1.2",
+   "to": "room@1.32",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "bath.4-0.05",
+   "img": "boze",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "kind": "image",
+   "gray": 0.35
+  },
+  {
+   "at": "bath.12-0.05",
+   "img": "marat",
+   "from": "tub@1.5",
+   "to": "tub@1.62",
+   "gray": 0.5,
+   "sway": 0.006
+  },
+  {
+   "at": "visit-0.08",
+   "img": "corday",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "kind": "image",
+   "gray": 0.4
+  },
+  {
+   "at": "visit.7-0.05",
+   "img": "baudry",
+   "from": "corday@1.6",
+   "to": "corday@1.75",
+   "kind": "image",
+   "gray": 0.6
+  },
+  {
+   "at": "visit.14-0.05",
+   "img": "marat",
+   "from": "quill@2.0",
+   "to": "quill@2.15",
+   "kind": "image",
+   "gray": 0.5
+  },
+  {
+   "at": "knife-0.08",
+   "img": "baudry",
+   "from": "victim@1.4",
+   "to": "knife@1.55",
+   "kind": "image",
+   "gray": 0.3
+  },
+  {
+   "at": "knife.9-0.05",
+   "img": "marat",
+   "from": "wound@2.4",
+   "to": "wound@2.6",
+   "kind": "image"
+  },
+  {
+   "at": "knife.14-0.05",
+   "img": "guillotine",
+   "from": "center@0.5",
+   "to": "center@0.52",
+   "kind": "image",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "david-0.08",
+   "img": "marat",
+   "from": "crate@1.7",
+   "to": "crate@1.85",
+   "kind": "image"
+  },
+  {
+   "at": "david.8-0.05",
+   "img": "marat",
+   "from": "center@0.48",
+   "to": "center@0.5",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "choices-0.08",
+   "img": "boze",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "kind": "image",
+   "gray": 0.5
+  },
+  {
+   "at": "choices.2-0.05",
+   "img": "marat",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "choices.5-0.05",
+   "img": "marat",
+   "from": "wall@1.4",
+   "to": "wall@1.5",
+   "kind": "image",
+   "dim": -0.25
+  },
+  {
+   "at": "choices.10-0.05",
+   "img": "pieta",
+   "from": "christ@1.3",
+   "to": "arm@1.45",
+   "kind": "image",
+   "gray": 0.3
+  },
+  {
+   "at": "choices.15-0.05",
+   "img": "marat",
+   "from": "arm@1.6",
+   "to": "arm@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "marat",
+   "from": "wall@1.2",
+   "to": "wall@1.3",
+   "kind": "image",
+   "dim": -0.25
+  },
+  {
+   "at": "payoff.6-0.03",
+   "img": "marat",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.10-0.05",
+   "img": "marat",
+   "from": "letter@2.4",
+   "to": "letter@2.55",
+   "kind": "image"
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "marat",
+   "from": "date@3.6",
+   "to": "date@3.8",
+   "kind": "image"
+  },
+  {
+   "at": "payoff.18-0.05",
+   "img": "marat",
+   "from": "name@3.6",
+   "to": "name@3.8",
+   "kind": "image"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "marat",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "bath",
+   "to": "bath.4-0.1",
+   "text": "PARIS · 13 JULY 1793"
+  },
+  {
+   "type": "title",
+   "from": "bath.4",
+   "to": "bath.12-0.1",
+   "kicker": "JOURNALIST · REVOLUTIONARY",
+   "text": "Jean-Paul <i>Marat</i>"
+  },
+  {
+   "type": "label",
+   "from": "visit",
+   "to": "visit.7-0.1",
+   "text": "CHARLOTTE CORDAY · AGE 24"
+  },
+  {
+   "type": "label",
+   "from": "visit.7",
+   "to": "visit.14-0.1",
+   "text": "BAUDRY · c. 1860"
+  },
+  {
+   "type": "label",
+   "from": "knife",
+   "to": "knife.9-0.1",
+   "text": "BAUDRY · c. 1860"
+  },
+  {
+   "type": "hotspot",
+   "at": "knife.13",
+   "to": "knife.14-0.1",
+   "img": "marat",
+   "point": "wound"
+  },
+  {
+   "type": "label",
+   "from": "knife.14",
+   "to": "david-0.1",
+   "text": "PARIS · 17 JULY 1793"
+  },
+  {
+   "type": "label",
+   "from": "david",
+   "to": "david.8-0.1",
+   "text": "\"TO MARAT, DAVID\""
+  },
+  {
+   "type": "label",
+   "from": "david.8",
+   "to": "choices-0.1",
+   "text": "THE DEATH OF MARAT · 1793"
+  },
+  {
+   "type": "label",
+   "from": "choices",
+   "to": "choices.2-0.1",
+   "text": "MARAT · BY BOZE, 1793"
+  },
+  {
+   "type": "label",
+   "from": "choices.10",
+   "to": "choices.15-0.1",
+   "text": "MICHELANGELO · PIETÀ"
+  },
+  {
+   "type": "ring",
+   "at": "payoff.13",
+   "to": "payoff.18-0.1",
+   "img": "marat",
+   "point": "date",
+   "rx": 110,
+   "ry": 320,
+   "rot": -12
+  },
+  {
+   "type": "label",
+   "from": "payoff.12",
+   "to": "payoff.18-0.1",
+   "text": "\"DU 13 JUILLET 1793\""
+  },
+  {
+   "type": "label",
+   "from": "payoff.18",
+   "to": "ending-0.1",
+   "text": "\"MARIE ANNE CHARLOTTE CORDAY\""
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "FINE ARTS MUSEUM · BRUSSELS"
+  }
+ ],
+ "nocap": [
+  [
+   "bath.4",
+   "bath.12-0.1"
+  ]
+ ],
+ "cover": {
+  "question": "Whose <i>letter</i> is in his <i>hand?</i>",
+  "name": "JACQUES-LOUIS DAVID",
+  "work": "The Death of Marat, 1793",
+  "focus": [
+   0.22,
+   0.5
+  ],
+  "span": 0.45,
+  "answered_by": "His killer's: Charlotte Corday's name and the date of the murder are painted on the letter"
+ },
+ "music": {
+  "transpose": -2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "bath-0.2",
+    "visit$+0.2"
+   ],
+   "drop": [
+    "knife.14-0.05",
+    "knife$+0.3"
+   ],
+   "choir": [
+    "payoff.6-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.9-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "knife.9",
+   "fx": "impact",
+   "gain": 0.6
+  },
+  {
+   "at": "knife.19",
+   "fx": "snip",
+   "gain": 0.5
+  },
+  {
+   "at": "payoff.13",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "payoff.19",
+   "fx": "chime",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The letter in Marat's hand in the painting is addressed from Charlotte Corday ('Du 13 juillet 1793. Marie anne Charlotte Corday au citoyen Marat'); its text is a fictional expression, not her real words",
+   "source": "https://en.wikipedia.org/wiki/The_Death_of_Marat ; https://uen.pressbooks.pub/arth2720/chapter/david-death-of-marat/"
+  },
+  {
+   "claim": "Marat, a radical journalist of the French Revolution (L'Ami du peuple), was murdered in Paris on 13 July 1793 while working in his bath, where he spent much time because of a painful skin disease",
+   "source": "https://en.wikipedia.org/wiki/The_Death_of_Marat ; https://uen.pressbooks.pub/arth2720/chapter/david-death-of-marat/"
+  },
+  {
+   "claim": "Corday, 24, came from Caen; turned away in the morning, she returned in the evening saying she had a list of names of traitors (Girondins in Caen); Marat had her let in and wrote down the names",
+   "source": "https://en.wikipedia.org/wiki/Charlotte_Corday"
+  },
+  {
+   "claim": "She stabbed him in the chest with a kitchen knife she had bought in Paris",
+   "source": "https://en.wikipedia.org/wiki/Charlotte_Corday ; https://en.wikipedia.org/wiki/The_Death_of_Marat"
+  },
+  {
+   "claim": "Corday was guillotined on 17 July 1793, four days after the murder",
+   "source": "https://en.wikipedia.org/wiki/Charlotte_Corday ; https://commons.wikimedia.org/wiki/File:Ex%C3%A9cution_%C3%A0_la_guillotine_de_Charlotte_Corday_le_17_juillet_1793._Place_de_la_R%C3%A9volution,_actuelle_place_de_la_Concorde,_G.28824.jpg"
+  },
+  {
+   "claim": "The National Convention asked David (who also organised Marat's funeral) to paint him; David answered 'I heard the voice of the people. I obeyed'",
+   "source": "https://www.artinsociety.com/jacques-louis-davids-the-death-of-marat.html ; https://revolution.chnm.org/items/show/256 ; https://sunsite.icm.edu.pl/cgfa/jdavid/s-jdavid26.htm"
+  },
+  {
+   "claim": "David depicted Marat as cured of his skin disease, with the killer absent from the scene",
+   "source": "https://www.artinsociety.com/jacques-louis-davids-the-death-of-marat.html ; https://fine-arts-museum.be/en/exhibitions/the-death-of-marat"
+  },
+  {
+   "claim": "David based Marat's figure on the dead Christ of Michelangelo's Pietà (the hanging arm); often compared to it",
+   "source": "https://uen.pressbooks.pub/arth2720/chapter/david-death-of-marat/ ; https://en.wikipedia.org/wiki/The_Death_of_Marat"
+  },
+  {
+   "claim": "The writing block is inscribed 'À MARAT, DAVID'",
+   "source": "https://uen.pressbooks.pub/arth2720/chapter/david-death-of-marat/"
+  },
+  {
+   "claim": "In the Royal Museums of Fine Arts of Belgium, Brussels, since 1893 (bequest of Jules David-Chassagnol, 1886)",
+   "source": "https://fine-arts-museum.be/en/exhibitions/the-death-of-marat ; https://en.wikipedia.org/wiki/The_Death_of_Marat"
+  }
+ ],
+ "caption": "Look at the letter in his hand. It's signed by the woman who just killed him.\n\nOn 13 July 1793, Jean-Paul Marat, the most radical journalist of the French Revolution, was working in his bath, as he often did because of a painful skin disease. Charlotte Corday, 24, talked her way in by offering him the names of traitors. He wrote them down. Then she stabbed him in the chest with a kitchen knife. Four days later she was guillotined.\n\nThe Convention asked Jacques-Louis David to paint him. David erased the skin disease, left the killer out of the room, and gave Marat the hanging arm of Michelangelo's dead Christ. On the block he wrote: \"À Marat, David\".\n\nCorday appears only on the paper: \"Du 13 juillet 1793. Marie Anne Charlotte Corday au citoyen Marat.\" The words below her name are David's invention.\n\n🖤 Would you have noticed whose letter it was?",
+ "caption_short": "The letter in Marat's hand is signed by his killer. David painted her out of the room, but not off the page. 🖤",
+ "youtube_title": "The letter in his hand is signed by his killer | David, The Death of Marat",
+ "hashtags": [
+  "#jacqueslouisdavid",
+  "#deathofmarat",
+  "#marat",
+  "#charlottecorday",
+  "#brussels",
+  "#finearts",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#frenchrevolution"
+ ],
+ "hashtags_instagram": [
+  "#jacqueslouisdavid",
+  "#deathofmarat",
+  "#arthistory",
+  "#brussels",
+  "#truecrime"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#jacqueslouisdavid",
+  "#deathofmarat",
+  "#truecrime"
+ ]
+}
