@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       now: { description: "Publish approved reels now, ignoring the time window", type: boolean, default: false }
-concurrency: { group: inbox, cancel-in-progress: false }
+concurrency: { group: inbox, cancel-in-progress: false }   # only the listener in this group (a newer queued run replaces an older queued one)
 jobs:
   poll:
     runs-on: ubuntu-latest

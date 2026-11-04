@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
   schedule:
     - cron: "29 7 * * 1"          # Mondays
-concurrency: { group: inbox, cancel-in-progress: false }   # shares the Telegram offset with the inbox job
+concurrency: { group: setup-check, cancel-in-progress: false }   # never in the inbox group: queued checks would knock the listener out of the queue
 permissions: { contents: write, pages: read }
 jobs:
   check:

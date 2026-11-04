@@ -30,7 +30,8 @@ def main(weekly=False):
     if has("TELEGRAM_BOT_TOKEN"):
         try:
             import telegram as T, bot
-            me = T.call("getMe"); bot.poll()
+            me = T.call("getMe")
+            if not bot.chat_id(): bot.poll()   # only to link the chat the first time; afterwards the inbox listener owns Telegram
             chat = bot.chat_id()
             row(True, "Telegram bot", f"@{me['username']}" + ("" if chat else f" — now send <code>/start</code> to @{me['username']} and run this check again"))
             if not chat: broken.append("Telegram chat not linked")
