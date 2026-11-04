@@ -1,7 +1,9 @@
 {
- "status": "sent",
- "updated": "2026-11-02T17:52:36+01:00",
+ "status": "posted",
+ "updated": "2026-11-04T20:30:00+01:00",
  "review_message": 17,
  "sent_at": "2026-11-02T15:33:13+01:00",
- "nudged": true
+ "nudged": true,
+ "posted_at": "2026-11-02T19:00:00+01:00",
+ "manual": true
 }
