@@ -188,6 +188,8 @@ check("thedeadpainterssociety" in r.stdout and "Facebook login" in r.stdout, "EA
 r, _ = run("automation/instagram.py", "publish", "test-a", "https://o.github.io/r/media/test-a.mp4")
 check("instagram.com/reel/" in r.stdout and srv.calls("/17841/media"), "EAA token: publishes as the business account")
 r, _ = run("automation/instagram.py", "refresh"); check("nothing to refresh" in r.stdout, "EAA token: no refresh needed")
+STATE["no_pages"] = True; r, _ = run("automation/instagram.py", "check"); STATE["no_pages"] = False
+check("from the token's permissions" in r.stdout and "thedeadpainterssociety" in r.stdout, "system-user token without a Page: account found from the token")
 ENV["IG_ACCESS_TOKEN"] = "IGOLD"
 
 print("\n12. Listening mode: a tap is answered at once, a due reel stops the listener")

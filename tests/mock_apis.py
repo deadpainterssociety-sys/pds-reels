@@ -54,6 +54,8 @@ class H(BaseHTTPRequestHandler):
             return self.reply({"ok": True, "result": {"message_id": STATE["msg"]}})
         # ---------- Instagram ----------
         if p.endswith("/me") and "access_token" in q: return self.reply({"user_id": "1784", "username": "thedeadpainterssociety", "account_type": "BUSINESS"})
+        if p.endswith("/debug_token"): return self.reply({"data": {"granular_scopes": [{"scope": "instagram_content_publish", "target_ids": ["17841"]}]}})
+        if p.endswith("/me/accounts") and STATE.get("no_pages"): return self.reply({"data": []})
         if p.endswith("/me/accounts"): return self.reply({"data": [{"name": "Dead Painters Society", "instagram_business_account": {"id": "17841", "username": "thedeadpainterssociety"}}]})
         if p.endswith("/17841") and method == "GET": return self.reply({"id": "17841", "username": "thedeadpainterssociety"})
         if p.endswith("/17841/media"): return self.reply({"id": "container1"})

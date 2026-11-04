@@ -53,6 +53,12 @@ def uid():
     for pg in req("GET", "me/accounts", fields="name,instagram_business_account{id,username}").get("data", []):
         ig = pg.get("instagram_business_account")
         if ig: _UID = ig["id"]; print(f"instagram: posting as @{ig.get('username')} (via the Facebook Page {pg.get('name')})"); return _UID
+    try:   # a system-user token (unified login) may have no Page: the token itself names the Instagram account it covers
+        d = req("GET", "debug_token", input_token=env("IG_ACCESS_TOKEN").strip()).get("data", {})
+        for g in d.get("granular_scopes", []):
+            if g.get("scope") in ("instagram_content_publish", "instagram_basic") and g.get("target_ids"):
+                _UID = g["target_ids"][0]; print(f"instagram: posting as account {_UID} (from the token's permissions)"); return _UID
+    except RuntimeError as e: print("instagram: debug_token:", e)
     raise RuntimeError("This Facebook token sees no Instagram business account: connect @thedeadpainterssociety to a Facebook Page "
                        "(or add the IG_USER_ID secret with the account's id)")
 
