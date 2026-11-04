@@ -59,8 +59,15 @@ def uid():
             if g.get("scope") in ("instagram_content_publish", "instagram_basic") and g.get("target_ids"):
                 _UID = g["target_ids"][0]; print(f"instagram: posting as account {_UID} (from the token's permissions)"); return _UID
     except RuntimeError as e: print("instagram: debug_token:", e)
-    raise RuntimeError("This Facebook token sees no Instagram business account: connect @thedeadpainterssociety to a Facebook Page "
-                       "(or add the IG_USER_ID secret with the account's id)")
+    for b in req("GET", "me/businesses", fields="id,name").get("data", []):   # accounts owned by the business portfolio
+        for edge in ("owned_instagram_accounts", "instagram_business_accounts"):
+            try: accts = req("GET", f"{b['id']}/{edge}", fields="id,username").get("data", [])
+            except RuntimeError: continue
+            if accts:
+                _UID = accts[0]["id"]; print(f"instagram: posting as @{accts[0].get('username')} (portfolio {b.get('name')})"); return _UID
+    who = req("GET", "me", fields="id,name")
+    raise RuntimeError(f"This token (it belongs to '{who.get('name')}') sees no Instagram account: add the IG_USER_ID secret "
+                       "with the Instagram account's ID (Meta app dashboard → Instagram API → step 2, the number under the username)")
 
 
 def me():
