@@ -97,8 +97,27 @@ def me():
     return req("GET", "me", fields="user_id,username,account_type")
 
 
+def expiry():
+    """Facebook-style tokens: when does this one expire? ('never' for system-user tokens)"""
+    try: d = req("GET", "debug_token", input_token=env("IG_ACCESS_TOKEN").strip()).get("data", {})
+    except RuntimeError: return None
+    exp = int(d.get("expires_at") or 0)
+    if not exp: return "never"
+    import datetime
+    return datetime.datetime.fromtimestamp(exp, datetime.timezone.utc).date().isoformat()
+
+
 def check():
-    m = me(); print(f"instagram ok: @{m.get('username')} ({m.get('account_type')})"); return m
+    m = me(); note = ""
+    if fb_token():
+        e = expiry()
+        if e and e != "never":
+            import datetime
+            left = (datetime.date.fromisoformat(e) - datetime.date.today()).days
+            note = f" · token expires {e} ({left} days)" + (" — generate a new one in the Meta app and replace IG_ACCESS_TOKEN" if left < 14 else "")
+            if left < 0: raise RuntimeError(f"Instagram token expired on {e}: generate a new one in the Meta app (step 2) and replace IG_ACCESS_TOKEN")
+        elif e == "never": note = " · token never expires"
+    print(f"instagram ok: @{m.get('username')} ({m.get('account_type')}){note}"); return m
 
 
 def refresh():
