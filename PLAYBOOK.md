@@ -122,4 +122,6 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (1 Nov 2026) Titles and covers follow the seven hook types in §2; never vague superlatives.
 - (2 Nov 2026) Instagram and TikTok accept 5 hashtags at most: each platform gets its own best five (`hashtags_instagram`, `hashtags_tiktok`).
 - (2 Nov 2026) Cover: a close-up of the main character's face or bust (or the key scene), never the whole painting; the text a little lower for TikTok's grid; the top a smooth translucent darkening of the painting, not black.
+- (4 Nov 2026) Two reels a day, at 14:00 and 21:00 (Madrid). The two reels of a day differ in mood and museum. Timely stories (a film, an anniversary, a trend) go in STORY_QUEUE's Pinned list.
+- (4 Nov 2026) Keep the reels' own audio style as it is; Gigi adds trending sounds herself in the TikTok/Instagram apps.
 <!-- new rules go here -->
