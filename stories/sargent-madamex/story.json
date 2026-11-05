@@ -1,0 +1,756 @@
+{
+ "slug": "sargent-madamex",
+ "hook_type": "hidden",
+ "teaser": "The fallen strap that drove Sargent from Paris",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "madamex": {
+   "file": "src/madamex.jpg",
+   "commons": "File:Madame X (Madame Pierre Gautreau) MET DT278076.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "strap": [
+     0.4,
+     0.33
+    ],
+    "shoulder": [
+     0.38,
+     0.35
+    ],
+    "bust": [
+     0.47,
+     0.33
+    ],
+    "face": [
+     0.51,
+     0.25
+    ],
+    "hand": [
+     0.33,
+     0.54
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "rstrap": [
+     0.55,
+     0.32
+    ]
+   }
+  },
+  "original": {
+   "file": "src/original.jpg",
+   "commons": "File:Portrait of Madame X (original hanging strap).jpg",
+   "points": {
+    "center": [
+     0.45,
+     0.45
+    ],
+    "strap": [
+     0.29,
+     0.29
+    ],
+    "face": [
+     0.54,
+     0.14
+    ],
+    "bust": [
+     0.42,
+     0.25
+    ]
+   },
+   "long": 800
+  },
+  "atelier": {
+   "file": "src/atelier.jpg",
+   "commons": "File:John Singer Sargent in atelier.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "man": [
+     0.75,
+     0.5
+    ],
+    "painting": [
+     0.66,
+     0.45
+    ]
+   }
+  },
+  "sargent": {
+   "file": "src/sargent.jpg",
+   "commons": "File:John Singer Sargent, Autoportrait, 1886.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.52,
+     0.4
+    ]
+   }
+  },
+  "toast": {
+   "file": "src/toast.jpg",
+   "commons": "File:Madame Gautreau Drinking a Toast.jpg",
+   "points": {
+    "face": [
+     0.6,
+     0.34
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "say": {
+  "1884": "eighteen eighty-four",
+  "1916": "nineteen sixteen"
+ },
+ "ipa": {
+  "Gautreau": "ɡoʊtɹˈoʊ"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "One strap on this dress nearly ended Sargent's *career.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "paris",
+   "perf": [
+    [
+     "Paris, 1884.",
+     0.35,
+     0.95
+    ],
+    [
+     "John Singer Sargent",
+     0.2,
+     0.95
+    ],
+    [
+     "was a rising young portrait painter.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "sitter",
+   "perf": [
+    [
+     "His model: Virginie Gautreau,",
+     0.25,
+     0.95
+    ],
+    [
+     "an American-born beauty,",
+     0.25,
+     0.95
+    ],
+    [
+     "famous for her pale, powdered skin.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "salon",
+   "perf": [
+    [
+     "He showed the portrait at the Salon,",
+     0.25,
+     0.95
+    ],
+    [
+     "without her name.",
+     0.3,
+     0.93
+    ],
+    [
+     "But everyone knew who she was.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "strap",
+   "perf": [
+    [
+     "And in his version,",
+     0.2,
+     0.95
+    ],
+    [
+     "her right strap had slipped",
+     0.2,
+     0.95
+    ],
+    [
+     "off her *shoulder.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "scandal",
+   "perf": [
+    [
+     "Critics mocked it.",
+     0.3,
+     0.93
+    ],
+    [
+     "Her mother asked him to take it down.",
+     0.35,
+     0.93
+    ],
+    [
+     "He *refused.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "repaint",
+   "perf": [
+    [
+     "After the Salon,",
+     0.25,
+     0.95
+    ],
+    [
+     "he painted the strap",
+     0.2,
+     0.95
+    ],
+    [
+     "back up onto her shoulder.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "london",
+   "perf": [
+    [
+     "Soon after, he left Paris for London,",
+     0.3,
+     0.95
+    ],
+    [
+     "and took her with him.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "In 1916, he sold her to the Met.",
+     0.35,
+     0.95
+    ],
+    [
+     "\"I suppose it is the best thing I have done,\"",
+     0.3,
+     0.93
+    ],
+    [
+     "he wrote.",
+     0.4,
+     0.95
+    ],
+    [
+     "But he asked them to hide her name.",
+     0.35,
+     0.93
+    ],
+    [
+     "So the world calls her",
+     0.2,
+     0.93
+    ],
+    [
+     "*Madame X.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Metropolitan Museum of Art, in New York.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "John Singer Sargent",
+  "born": 1856,
+  "died": 1925,
+  "painting": "Madame X (Madame Pierre Gautreau)",
+  "year": "1883–84",
+  "museum": "Metropolitan Museum of Art",
+  "city": "New York",
+  "image": "madamex",
+  "image_credit": "The Metropolitan Museum of Art, New York (Arthur Hoppock Hearn Fund, 1916), via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1925,
+  "note": "Sargent d. 1925: public domain. Met image PD; c.1884 photo of the original state PD; Giraudon studio photo PD; self-portrait and Madame Gautreau Drinking a Toast PD."
+ },
+ "cover": {
+  "question": "Why was <i>this strap</i> repainted?",
+  "name": "JOHN SINGER SARGENT",
+  "work": "Madame X, 1884",
+  "focus": [
+   0.46,
+   0.3
+  ],
+  "span": 0.45,
+  "answered_by": "At the 1884 Salon it had slipped off her shoulder; Paris mocked it, so Sargent painted it back up and soon left Paris for London"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "madamex",
+   "from": "strap@2.6",
+   "to": "strap@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.4-0.03",
+   "img": "madamex",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "madamex",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "paris-0.08",
+   "img": "atelier",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 1
+  },
+  {
+   "at": "paris.2-0.05",
+   "img": "sargent",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.65",
+   "gray": 0.35
+  },
+  {
+   "at": "sitter-0.08",
+   "img": "toast",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.65",
+   "gray": 0.3
+  },
+  {
+   "at": "sitter.10-0.05",
+   "img": "madamex",
+   "from": "face@2.4",
+   "to": "face@2.55",
+   "sway": 0.006
+  },
+  {
+   "at": "salon-0.08",
+   "img": "original",
+   "kind": "image",
+   "from": "center@0.5",
+   "to": "center@0.52",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "salon.10-0.05",
+   "img": "original",
+   "kind": "image",
+   "from": "center@0.62",
+   "to": "center@0.66",
+   "gray": 1,
+   "frame": true
+  },
+  {
+   "at": "strap-0.08",
+   "img": "original",
+   "kind": "image",
+   "from": "center@0.72",
+   "to": "center@0.76",
+   "gray": 1,
+   "frame": true
+  },
+  {
+   "at": "scandal-0.08",
+   "img": "toast",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 0.6
+  },
+  {
+   "at": "scandal.11-0.05",
+   "img": "sargent",
+   "kind": "image",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "gray": 0.5
+  },
+  {
+   "at": "repaint-0.08",
+   "img": "original",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "gray": 1,
+   "frame": true
+  },
+  {
+   "at": "repaint.6-0.05",
+   "img": "madamex",
+   "from": "strap@2.3",
+   "to": "strap@2.45",
+   "sway": 0.006
+  },
+  {
+   "at": "london-0.08",
+   "img": "atelier",
+   "kind": "image",
+   "from": "man@1.3",
+   "to": "man@1.4",
+   "gray": 1
+  },
+  {
+   "at": "london.7-0.05",
+   "img": "atelier",
+   "kind": "image",
+   "from": "painting@1.7",
+   "to": "painting@1.85",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "madamex",
+   "from": "bust@1.6",
+   "to": "bust@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.8-0.05",
+   "img": "sargent",
+   "kind": "image",
+   "from": "face@1.85",
+   "to": "face@2.0"
+  },
+  {
+   "at": "payoff.20-0.05",
+   "img": "madamex",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.33-0.03",
+   "img": "madamex",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "madamex",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.1",
+   "to": "hook.4-0.1",
+   "img": "madamex",
+   "point": "strap",
+   "rx": 90,
+   "ry": 230,
+   "rot": -8
+  },
+  {
+   "type": "label",
+   "from": "paris",
+   "to": "paris.2-0.1",
+   "text": "SARGENT'S STUDIO · 1880s"
+  },
+  {
+   "type": "title",
+   "from": "paris.2",
+   "to": "sitter-0.1",
+   "kicker": "PAINTER · SELF-PORTRAIT",
+   "text": "John Singer <i>Sargent</i>"
+  },
+  {
+   "type": "title",
+   "from": "sitter.2",
+   "to": "sitter.10-0.1",
+   "kicker": "THE MODEL",
+   "text": "Virginie <i>Gautreau</i>"
+  },
+  {
+   "type": "label",
+   "from": "salon",
+   "to": "salon.10-0.1",
+   "text": "PARIS SALON · 1884"
+  },
+  {
+   "type": "label",
+   "from": "salon.10",
+   "to": "scandal-0.1",
+   "text": "THE ORIGINAL · PHOTO, 1884"
+  },
+  {
+   "type": "ring",
+   "at": "strap.6",
+   "to": "strap$+0.3",
+   "img": "original",
+   "point": "strap",
+   "rx": 110,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "scandal",
+   "to": "scandal.11-0.1",
+   "text": "GAUTREAU · BY SARGENT, c. 1883"
+  },
+  {
+   "type": "ring",
+   "at": "repaint.7",
+   "to": "repaint$+0.2",
+   "img": "madamex",
+   "point": "strap",
+   "rx": 90,
+   "ry": 230,
+   "rot": -8
+  },
+  {
+   "type": "label",
+   "from": "london",
+   "to": "payoff-0.1",
+   "text": "SARGENT'S STUDIO · 1880s"
+  },
+  {
+   "type": "label",
+   "from": "payoff.1",
+   "to": "payoff.8-0.1",
+   "text": "THE MET · NEW YORK · 1916"
+  },
+  {
+   "type": "label",
+   "from": "payoff.8",
+   "to": "payoff.20-0.1",
+   "text": "SARGENT · LETTER TO THE MET"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "THE MET · NEW YORK"
+  },
+  {
+   "type": "label",
+   "from": "repaint",
+   "to": "repaint.6-0.1",
+   "text": "THE ORIGINAL · PHOTO, 1884"
+  }
+ ],
+ "nocap": [
+  [
+   "paris.2",
+   "sitter-0.1"
+  ],
+  [
+   "sitter.2",
+   "sitter.10-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "paris-0.2",
+    "london$+0.2"
+   ],
+   "drop": [
+    "scandal.11-0.05",
+    "scandal$+0.3"
+   ],
+   "choir": [
+    "payoff.33-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "strap.9",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "repaint.7",
+   "fx": "pop",
+   "gain": 0.45
+  },
+  {
+   "at": "payoff.1",
+   "fx": "shutter",
+   "gain": 0.35
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Sargent (born 12 January 1856), a young American portrait painter based in Paris, painted Virginie Amélie Avegno Gautreau in 1883–84; it was not a commission",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X ; https://en.wikipedia.org/wiki/Virginie_Am%C3%A9lie_Avegno_Gautreau"
+  },
+  {
+   "claim": "Gautreau, born in New Orleans in 1859, was a celebrated Paris beauty ('la belle Mme Gautreau'), known for her pale skin, which she emphasised with lavender-coloured powder",
+   "source": "https://en.wikipedia.org/wiki/Virginie_Am%C3%A9lie_Avegno_Gautreau"
+  },
+  {
+   "claim": "Shown at the 1884 Paris Salon as 'Portrait de Mme ***' (no name); the sitter was nonetheless widely recognised",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X ; https://www.metmuseum.org/art/collection/search/12127"
+  },
+  {
+   "claim": "As exhibited in 1884, the jewelled right strap of her dress had slipped off her shoulder (photographed in that state)",
+   "source": "https://fashionhistory.fitnyc.edu/1884-sargent-madame-x/ ; https://en.wikipedia.org/wiki/Portrait_of_Madame_X ; https://commons.wikimedia.org/wiki/File:Portrait_of_Madame_X_(original_hanging_strap).jpg"
+  },
+  {
+   "claim": "The portrait provoked scandal and ridicule at the Salon; critics mocked it",
+   "source": "https://fashionhistory.fitnyc.edu/1884-sargent-madame-x/ ; https://en.wikipedia.org/wiki/Portrait_of_Madame_X ; https://www.metmuseum.org/art/collection/search/12127"
+  },
+  {
+   "claim": "Her mother asked Sargent to withdraw the painting from the exhibition; he refused",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X ; https://en.wikipedia.org/wiki/Virginie_Am%C3%A9lie_Avegno_Gautreau"
+  },
+  {
+   "claim": "After the Salon (by autumn 1884), Sargent repainted the strap up onto her shoulder; X-rays confirm the change",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Madame_X ; https://fashionhistory.fitnyc.edu/1884-sargent-madame-x/"
+  },
+  {
+   "claim": "The poor reception soon prompted Sargent to leave France for England; since Gautreau rejected the painting, he took it with him to London and kept it in his studio",
+   "source": "https://fashionhistory.fitnyc.edu/1884-sargent-madame-x/ ; https://en.wikipedia.org/wiki/Virginie_Am%C3%A9lie_Avegno_Gautreau ; https://en.wikipedia.org/wiki/Portrait_of_Madame_X"
+  },
+  {
+   "claim": "In 1916 (after Gautreau's death in 1915) he sold it to the Metropolitan Museum of Art, writing 'I suppose it is the best thing I have done', and asked the museum to disguise the sitter's name; it is known as Madame X",
+   "source": "https://www.metmuseum.org/art/collection/search/12127 ; https://fashionhistory.fitnyc.edu/1884-sargent-madame-x/ ; https://www.metmuseum.org/perspectives/how-madame-x-came-to-the-met"
+  },
+  {
+   "claim": "Hangs in the Metropolitan Museum of Art, New York (accession 16.53)",
+   "source": "https://www.metmuseum.org/art/collection/search/12127"
+  }
+ ],
+ "caption": "One strap on this dress nearly ended John Singer Sargent's career.\n\nIn 1884 Sargent, a rising young portrait painter in Paris, showed his portrait of Virginie Gautreau at the Salon, titled only \"Madame ***\". Everyone knew who she was: an American-born beauty famous for her pale, powdered skin. In his version, the jewelled right strap had slipped off her shoulder.\n\nCritics mocked it. Her mother asked him to take it down. He refused. After the Salon he painted the strap back up onto her shoulder, but soon left Paris for London, taking the rejected portrait with him.\n\nHe kept it in his studio for more than thirty years. In 1916 he sold it to the Metropolitan Museum of Art: \"I suppose it is the best thing I have done.\" He asked the museum to hide her name, so the world knows her as Madame X.\n\nP.S. A photograph from 1884 still shows the fallen strap.\n\n🖤 Was the strap really that scandalous?",
+ "caption_short": "One fallen strap nearly ended Sargent's career. He painted it back up, then left Paris for good. 🖤",
+ "youtube_title": "Why was this strap repainted? | Sargent, Madame X",
+ "hashtags": [
+  "#johnsingersargent",
+  "#sargent",
+  "#madamex",
+  "#themet",
+  "#metmuseum",
+  "#newyork",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#belleepoque"
+ ],
+ "hashtags_instagram": [
+  "#johnsingersargent",
+  "#madamex",
+  "#arthistory",
+  "#metmuseum",
+  "#scandal"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#johnsingersargent",
+  "#madamex",
+  "#historytok"
+ ]
+}

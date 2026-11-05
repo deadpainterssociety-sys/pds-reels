@@ -12,7 +12,16 @@
   "slug": "vangogh-crows"
  },
  {
-  "date": "2026-11-07",
-  "slug": "david-marat"
+  "date": "2026-11-06",
+  "slug": "sargent-madamex"
+ },
+ {
+  "date": "2026-11-06",
+  "slug": "millais-ophelia"
+ },
+ {
+  "date": "2026-11-08",
+  "slug": "david-napoleon-alps",
+  "pinned": true
  }
 ]

@@ -1,0 +1,731 @@
+{
+ "slug": "millais-ophelia",
+ "hook_type": "craft",
+ "teaser": "The drowning painted from a real woman in a bath",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "ophelia": {
+   "file": "src/ophelia.jpg",
+   "commons": "File:John Everett Millais - Ophelia - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.25,
+     0.6
+    ],
+    "faceband": [
+     0.32,
+     0.6
+    ],
+    "hands": [
+     0.46,
+     0.58
+    ],
+    "flowers": [
+     0.4,
+     0.74
+    ],
+    "dress": [
+     0.7,
+     0.72
+    ],
+    "roses": [
+     0.66,
+     0.22
+    ],
+    "willow": [
+     0.25,
+     0.28
+    ],
+    "water": [
+     0.55,
+     0.86
+    ],
+    "center": [
+     0.5,
+     0.55
+    ],
+    "loosestrife": [
+     0.96,
+     0.2
+    ]
+   }
+  },
+  "millais": {
+   "file": "src/millais.jpg",
+   "commons": "File:Portrait of John Everett Millais by William Holman Hunt.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.55,
+     0.42
+    ]
+   }
+  },
+  "selfie": {
+   "file": "src/selfie.jpg",
+   "commons": "File:Elizabeth Siddal - Self Portrait (1853-4).jpg",
+   "points": {
+    "face": [
+     0.53,
+     0.45
+    ]
+   }
+  },
+  "river": {
+   "file": "src/river.jpg",
+   "commons": "File:Hogsmill River in Hogsmill LNR.JPG",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ],
+    "stream": [
+     0.5,
+     0.7
+    ]
+   },
+   "credit": "Hogsmill River today: photo by Dudley Miles, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ },
+ "say": {
+  "1851": "eighteen fifty-one"
+ },
+ "ipa": {
+  "Millais": "mˈɪleɪ",
+  "Siddal": "sˈɪdəl"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "To paint this drowning,",
+     0.2,
+     0.95
+    ],
+    [
+     "Millais put a real woman in a *bath.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "river",
+   "perf": [
+    [
+     "First, the river.",
+     0.35,
+     0.95
+    ],
+    [
+     "In 1851,",
+     0.25,
+     0.95
+    ],
+    [
+     "the young John Everett Millais",
+     0.2,
+     0.95
+    ],
+    [
+     "set up by a river in Surrey.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "months",
+   "perf": [
+    [
+     "For five months,",
+     0.25,
+     0.95
+    ],
+    [
+     "he painted the riverbank from life.",
+     0.35,
+     0.95
+    ],
+    [
+     "That's why flowers from different seasons",
+     0.2,
+     0.95
+    ],
+    [
+     "bloom here side by side.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "studio",
+   "perf": [
+    [
+     "Then, in his London studio,",
+     0.25,
+     0.95
+    ],
+    [
+     "he painted Ophelia herself.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "siddal",
+   "perf": [
+    [
+     "Elizabeth Siddal, a young model,",
+     0.25,
+     0.95
+    ],
+    [
+     "lay in a bath full of water,",
+     0.25,
+     0.95
+    ],
+    [
+     "in an old embroidered dress",
+     0.2,
+     0.95
+    ],
+    [
+     "he bought for four pounds.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "lamps",
+   "perf": [
+    [
+     "Oil lamps under the tub",
+     0.2,
+     0.95
+    ],
+    [
+     "kept the water warm.",
+     0.4,
+     0.93
+    ],
+    [
+     "One day,",
+     0.2,
+     0.95
+    ],
+    [
+     "the lamps went *out.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "cold",
+   "perf": [
+    [
+     "Millais was so absorbed, he didn't notice.",
+     0.35,
+     0.93
+    ],
+    [
+     "She got very cold,",
+     0.25,
+     0.93
+    ],
+    [
+     "and fell *ill.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "father",
+   "perf": [
+    [
+     "Her father ordered Millais",
+     0.2,
+     0.95
+    ],
+    [
+     "to pay fifty pounds in doctor's bills.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "So the drowning girl",
+     0.2,
+     0.93
+    ],
+    [
+     "is a real woman,",
+     0.25,
+     0.93
+    ],
+    [
+     "lying in a bath",
+     0.2,
+     0.93
+    ],
+    [
+     "that was slowly turning *cold.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in Tate Britain, in London.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "John Everett Millais",
+  "born": 1829,
+  "died": 1896,
+  "painting": "Ophelia",
+  "year": "1851–52",
+  "museum": "Tate Britain",
+  "city": "London",
+  "image": "ophelia",
+  "image_credit": "Tate, London (presented by Sir Henry Tate 1894), via Wikimedia Commons / Google Art Project (public domain)"
+ },
+ "rights": {
+  "creator_died": 1896,
+  "note": "Millais d. 1896: public domain. Holman Hunt drawing (d. 1910) PD; Siddal self-portrait (d. 1862) PD; Hogsmill River photo CC BY-SA 3.0 (Dudley Miles) -> credited."
+ },
+ "cover": {
+  "question": "Who is <i>really</i> in the water?",
+  "name": "JOHN EVERETT MILLAIS",
+  "work": "Ophelia, 1851–52",
+  "focus": [
+   0.27,
+   0.6
+  ],
+  "span": 0.45,
+  "answered_by": "A real woman, the model Elizabeth Siddal, lying in a bath in Millais's studio; when the lamps warming it went out, she fell ill"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "ophelia",
+   "from": "face@2.6",
+   "to": "face@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.3-0.03",
+   "img": "ophelia",
+   "from": "faceband@1.0",
+   "to": "faceband@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "center@0.44",
+   "to": "center@0.42",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "river-0.08",
+   "img": "river",
+   "kind": "image",
+   "from": "stream@1.0",
+   "to": "stream@1.08",
+   "gray": 0.6,
+   "dim": 0.3
+  },
+  {
+   "at": "river.5-0.05",
+   "img": "millais",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 0.35
+  },
+  {
+   "at": "river.10-0.05",
+   "img": "ophelia",
+   "from": "roses@1.6",
+   "to": "roses@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "months.3-0.05",
+   "img": "ophelia",
+   "from": "willow@1.5",
+   "to": "willow@1.62",
+   "sway": 0.006
+  },
+  {
+   "at": "months.9-0.05",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "flowers@2.4",
+   "to": "flowers@2.6"
+  },
+  {
+   "at": "months.15-0.05",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "loosestrife@1.6",
+   "to": "roses@1.7"
+  },
+  {
+   "at": "studio-0.08",
+   "img": "ophelia",
+   "from": "hands@2.0",
+   "to": "hands@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "siddal-0.08",
+   "img": "selfie",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.3
+  },
+  {
+   "at": "siddal.5-0.05",
+   "img": "ophelia",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "siddal.12-0.05",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "dress@2.0",
+   "to": "dress@2.15"
+  },
+  {
+   "at": "lamps-0.08",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "water@1.8",
+   "to": "water@1.95",
+   "gray": 0.3
+  },
+  {
+   "at": "lamps.9-0.05",
+   "img": "ophelia",
+   "from": "face@2.3",
+   "to": "face@2.45",
+   "gray": 0.3,
+   "sway": 0.004
+  },
+  {
+   "at": "lamps.13-0.03",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "face@2.6",
+   "to": "face@2.7",
+   "gray": 0.6,
+   "dim": 0.35
+  },
+  {
+   "at": "cold-0.08",
+   "img": "millais",
+   "kind": "image",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "gray": 0.5
+  },
+  {
+   "at": "cold.7-0.05",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "hands@2.4",
+   "to": "hands@2.55",
+   "gray": 0.6
+  },
+  {
+   "at": "cold.11-0.05",
+   "img": "selfie",
+   "kind": "image",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "gray": 0.8
+  },
+  {
+   "at": "father-0.08",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "flowers@2.0",
+   "to": "flowers@2.15",
+   "gray": 0.5
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "ophelia",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.6-0.03",
+   "img": "ophelia",
+   "from": "faceband@1.0",
+   "to": "faceband@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "ophelia",
+   "from": "face@2.3",
+   "to": "face@2.5",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "ophelia",
+   "kind": "image",
+   "from": "center@0.44",
+   "to": "center@0.42",
+   "frame": true,
+   "sway": 0.002
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "river",
+   "to": "river.5-0.1",
+   "text": "HOGSMILL RIVER · SURREY · TODAY"
+  },
+  {
+   "type": "credit",
+   "from": "river",
+   "to": "river.5-0.1",
+   "text": "PHOTO: DUDLEY MILES · CC BY-SA 3.0"
+  },
+  {
+   "type": "title",
+   "from": "river.5",
+   "to": "river.10-0.1",
+   "kicker": "PAINTER · AGE 22",
+   "text": "John Everett <i>Millais</i>"
+  },
+  {
+   "type": "label",
+   "from": "river.10",
+   "to": "months.9-0.1",
+   "text": "PAINTED OUTDOORS · 1851"
+  },
+  {
+   "type": "label",
+   "from": "months.9",
+   "to": "studio-0.1",
+   "text": "FLOWERS OF DIFFERENT SEASONS"
+  },
+  {
+   "type": "label",
+   "from": "studio",
+   "to": "siddal-0.1",
+   "text": "THE FIGURE · LONDON STUDIO"
+  },
+  {
+   "type": "title",
+   "from": "siddal",
+   "to": "siddal.5-0.1",
+   "kicker": "THE MODEL · SELF-PORTRAIT",
+   "text": "Elizabeth <i>Siddal</i>"
+  },
+  {
+   "type": "label",
+   "from": "siddal.12",
+   "to": "lamps-0.1",
+   "text": "THE DRESS · £4"
+  },
+  {
+   "type": "label",
+   "from": "father",
+   "to": "payoff-0.1",
+   "text": "THE DOCTOR'S BILL · £50"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "TATE BRITAIN · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "river.5",
+   "river.10-0.1"
+  ],
+  [
+   "siddal",
+   "siddal.5-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "river-0.2",
+    "father$+0.2"
+   ],
+   "drop": [
+    "lamps.13-0.05",
+    "lamps$+0.3"
+   ],
+   "choir": [
+    "payoff.6-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.3-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "lamps.13",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "father.6",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "siddal.20",
+   "fx": "tick",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Millais (born 8 June 1829, so 22 in 1851) painted Ophelia in 1851–52; it was exhibited at the Royal Academy in 1852",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  },
+  {
+   "claim": "He painted the landscape outdoors by the Hogsmill River in Surrey (Ewell / Old Malden) over a period of five months in 1851",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  },
+  {
+   "claim": "Because of the five months, flowers that bloom at different times of the year appear together in the painting",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia"
+  },
+  {
+   "claim": "The figure of Ophelia was painted indoors in his studio in Gower Street, London",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  },
+  {
+   "claim": "Elizabeth Siddal (born 1829), a young model, posed in a bath full of water; Millais bought the antique silver-embroidered dress for four pounds ('old and dirty')",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Elizabeth_Siddal"
+  },
+  {
+   "claim": "Oil lamps placed under the tub kept the water warm; on one occasion the lamps went out and Millais, absorbed in his work, did not notice",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Elizabeth_Siddal ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  },
+  {
+   "claim": "Siddal got very cold and became ill (a severe cold; some accounts say pneumonia); she recovered",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Elizabeth_Siddal ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  },
+  {
+   "claim": "Her father ordered Millais to pay £50 in medical bills (per Millais's son, he eventually accepted a lower sum; the matter was settled)",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  },
+  {
+   "claim": "Ophelia is in Tate Britain, London (Henry Tate gift, 1894)",
+   "source": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506 ; https://en.wikipedia.org/wiki/Ophelia_(painting)"
+  }
+ ],
+ "caption": "To paint this drowning, Millais put a real woman in a bath.\n\nIn 1851 the young John Everett Millais spent five months painting the riverbank by the Hogsmill River in Surrey, from life.\n\nThe figure he painted back in his London studio. The model, Elizabeth Siddal, lay in a bath full of water, wearing an old embroidered dress Millais bought for four pounds. Oil lamps under the tub kept the water warm. One day they went out, and Millais was so absorbed he didn't notice. Siddal got very cold and fell ill. Her father ordered Millais to pay £50 in doctor's bills.\n\nSo the drowning girl is a real woman, lying in a bath that was slowly turning cold.\n\nP.S. Because he painted the riverbank over five months, flowers that bloom at different times of year appear together.\n\n🖤 Would you have posed for this?",
+ "caption_short": "To paint this drowning, Millais put a real woman in a bath. Then the lamps warming it went out. 🖤",
+ "youtube_title": "Who is really in the water? | Millais, Ophelia",
+ "hashtags": [
+  "#millais",
+  "#ophelia",
+  "#tatebritain",
+  "#tate",
+  "#london",
+  "#arthistory",
+  "#preraphaelite",
+  "#elizabethsiddal",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety"
+ ],
+ "hashtags_instagram": [
+  "#millais",
+  "#ophelia",
+  "#arthistory",
+  "#tatebritain",
+  "#preraphaelite"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#millais",
+  "#ophelia",
+  "#historytok"
+ ]
+}

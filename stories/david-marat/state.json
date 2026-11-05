@@ -1,4 +1,14 @@
 {
- "status": "draft",
- "updated": "2026-11-04T03:26:35+01:00"
+ "status": "rejected",
+ "updated": "2026-11-05T03:49:46+01:00",
+ "problems": [
+  "image marat not downloaded",
+  "image boze not downloaded",
+  "image baudry not downloaded",
+  "image corday not downloaded",
+  "image guillotine not downloaded",
+  "image pieta not downloaded",
+  "out/stills.jpg missing (pipeline steps not run?)",
+  "build/timeline.json missing (pipeline steps not run?)"
+ ]
 }

@@ -12,7 +12,6 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 | When | Painting (museum) | Angle | Type | Notes |
 |---|---|---|---|---|
-| next days (from 5 Nov) | Jacques-Louis David, *Napoleon Crossing the Alps* (five versions: Malmaison, Charlottenburg Berlin, Belvedere Vienna, Versailles) + Paul Delaroche, *Bonaparte Crossing the Alps* (Walker Art Gallery, Liverpool; a version in the Louvre) | the rearing horse is propaganda: he crossed the Great St Bernard on a mule, and Delaroche painted the truth 50 years later | hidden | ride the Napoleon wave (Gigi, 4 Nov). Verify: the mule, the guide, who commissioned David's version, that Napoleon refused to sit for it; pick ONE main painting and the museum where it hangs. Don't put it right next to *david-marat* (same painter) |
 | 2026-11-19 (Thu) | an *Odyssey* painting: Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne), or Turner, *Ulysses Deriding Polyphemus* (National Gallery, London), or another famous one | find the true twist (e.g. Waterhouse paints the sirens as birds with women's faces, as the Greeks did, not mermaids) | hidden | Nolan's *The Odyssey* reaches digital/VOD on 17 Nov: post on Thursday 19 Nov for the weekend viewers. Name the film only as context ("the story in Nolan's new film"), never use its images |
 
 ## Done
@@ -30,6 +29,9 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 5 Nov 2026 | holbein-ambassadors | Holbein, *The Ambassadors* (National Gallery) | the anamorphic skull you only see from the bottom-right corner; the half-hidden crucifix | craft |
 | 6 Nov 2026 | vangogh-crows | Van Gogh, *Wheatfield with Crows* (Van Gogh Museum, Amsterdam) | called his last painting; finished c. 10 July 1890, weeks before his death; last was probably the unfinished *Tree Roots* | hidden |
 | 7 Nov 2026 | david-marat | David, *The Death of Marat* (Royal Museums of Fine Arts of Belgium, Brussels) | the letter in his hand is signed by his killer, Charlotte Corday; David erased her, the skin disease, posed him like Christ | dark |
+| 6 Nov 2026 | sargent-madamex | Sargent, *Madame X* (Met, New York) | the fallen strap at the 1884 Salon; repainted; he left Paris; sold to the Met in 1916 asking to hide her name | hidden |
+| 6 Nov 2026 | millais-ophelia | Millais, *Ophelia* (Tate Britain) | Siddal posed in a bath; the lamps went out, she fell ill; her father demanded £50 | craft |
+| 8 Nov 2026 | david-napoleon-alps | David, *Napoleon Crossing the Alps* (Belvedere, Vienna) | he crossed on a mule led by a guide; refused to pose; Delaroche painted the truth in 1850 | hidden |
 
 ## Ideas (to verify)
 
@@ -47,9 +49,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | damage | crime; most-stolen artwork claims need care |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark | dark: not next to another dark one |
-| Sargent, *Madame X* (Met, New York) | one fallen strap ruined his Paris career; he repainted it | hidden | Sargent †1925: OK |
 | Klimt, *Portrait of Adele Bloch-Bauer I* (Neue Galerie, New York) | looted by the Nazis, won back in court by her niece | damage | Klimt †1918: OK |
-| Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch |
+| Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
 | Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | hidden | |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
 | Whistler, *Whistler's Mother* (Musée d'Orsay) | it was meant as an "arrangement in grey and black" | hidden | |
