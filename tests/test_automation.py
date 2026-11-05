@@ -72,6 +72,10 @@ check("test-a.mp4" in names and "cover.jpg" in names and STATE["releases"][0]["d
 os.remove(os.path.join(W, "stories/test-a/out/test-a.mp4"))
 run("automation/release.py", "download", "test-a")
 check(os.path.getsize(os.path.join(W, "stories/test-a/out/test-a.mp4")) == os.path.getsize(os.path.join(src_out, f"{src_slug}.mp4")), "master downloaded intact")
+os.remove(os.path.join(W, "stories/test-a/out/test-a.mp4")); os.remove(os.path.join(W, "stories/test-a/out/stills.jpg"))
+run("automation/release.py", "download-publish", "test-a")
+check(os.path.exists(os.path.join(W, "stories/test-a/out/test-a.mp4")) and not os.path.exists(os.path.join(W, "stories/test-a/out/stills.jpg")),
+      "publishing fetches only the video, cover and captions")
 
 print("\n3. Review on Telegram")
 run("automation/bot.py", "review", "test-a", now="2026-11-02T08:05")

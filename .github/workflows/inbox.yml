@@ -72,8 +72,9 @@ jobs:
       - uses: actions/checkout@v4
         with: { ref: "${{ github.ref_name }}" }                 # the branch tip: includes the state the poll job just pushed
       - name: Fetch the exact files you approved
+        timeout-minutes: 15
         run: |
-          python3 automation/release.py download "$SLUG"
+          python3 automation/release.py download-publish "$SLUG"
           command -v ffmpeg >/dev/null || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null)
       - name: Put the video at a public URL (GitHub Pages) for Instagram
         id: site
