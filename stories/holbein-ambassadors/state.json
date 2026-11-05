@@ -1,13 +1,6 @@
 {
- "status": "rejected",
- "updated": "2026-11-04T03:27:29+01:00",
- "problems": [
-  "image ambassadors not downloaded",
-  "image skull not downloaded",
-  "image holbein not downloaded",
-  "image henry not downloaded",
-  "image london not downloaded",
-  "out/stills.jpg missing (pipeline steps not run?)",
-  "build/timeline.json missing (pipeline steps not run?)"
- ]
+ "status": "draft",
+ "updated": "2026-11-05T11:30:00+01:00",
+ "validated_at": "2026-11-05T11:30:00+01:00",
+ "note": "restored 5 Nov: wrongly dropped by the nightly re-check"
 }

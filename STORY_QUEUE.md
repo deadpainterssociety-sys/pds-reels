@@ -24,13 +24,13 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 29 Oct 2026 | mona-lisa-theft | Leonardo, *Mona Lisa* (Louvre) | stolen in 1911; the theft made it famous | damage |
 | 30 Oct 2026 | night-watch-cut | Rembrandt, *The Night Watch* (Rijksmuseum) | cut down in 1715 to fit a wall | damage |
 | 31 Oct 2026 | scream-madman | Munch, *The Scream* (National Museum, Oslo) | the pencil "madman" note blamed on a vandal was Munch's own | hidden |
-| 3 Nov 2026 | vermeer-cupid | Vermeer, *Girl Reading a Letter at an Open Window* (Gemäldegalerie Alte Meister, Dresden) | Cupid painted over decades after Vermeer died; blamed on Vermeer until a dirt layer proved otherwise; uncovered 2017–2021 | time-gap |
-| 4 Nov 2026 | caravaggio-goliath | Caravaggio, *David with the Head of Goliath* (Galleria Borghese, Rome) | his own face on Goliath's severed head; a killer under a death sentence; hedged plea for a pardon | dark-legend |
-| 5 Nov 2026 | holbein-ambassadors | Holbein, *The Ambassadors* (National Gallery) | the anamorphic skull you only see from the bottom-right corner; the half-hidden crucifix | craft |
-| 6 Nov 2026 | vangogh-crows | Van Gogh, *Wheatfield with Crows* (Van Gogh Museum, Amsterdam) | called his last painting; finished c. 10 July 1890, weeks before his death; last was probably the unfinished *Tree Roots* | hidden |
-| 7 Nov 2026 | david-marat | David, *The Death of Marat* (Royal Museums of Fine Arts of Belgium, Brussels) | the letter in his hand is signed by his killer, Charlotte Corday; David erased her, the skin disease, posed him like Christ | dark |
-| 6 Nov 2026 | sargent-madamex | Sargent, *Madame X* (Met, New York) | the fallen strap at the 1884 Salon; repainted; he left Paris; sold to the Met in 1916 asking to hide her name | hidden |
-| 6 Nov 2026 | millais-ophelia | Millais, *Ophelia* (Tate Britain) | Siddal posed in a bath; the lamps went out, she fell ill; her father demanded £50 | craft |
+| 2 Nov 2026 | vermeer-cupid | Vermeer, *Girl Reading a Letter at an Open Window* (Gemäldegalerie Alte Meister, Dresden) | Cupid painted over decades after Vermeer died; blamed on Vermeer until a dirt layer proved otherwise; uncovered 2017–2021 | time-gap |
+| 3 Nov 2026 | caravaggio-goliath | Caravaggio, *David with the Head of Goliath* (Galleria Borghese, Rome) | his own face on Goliath's severed head; a killer under a death sentence; hedged plea for a pardon | dark-legend |
+| 4 Nov 2026 | vangogh-crows | Van Gogh, *Wheatfield with Crows* (Van Gogh Museum, Amsterdam) | called his last painting; finished c. 10 July 1890, weeks before his death; last was probably the unfinished *Tree Roots* | hidden |
+| 5 Nov 2026 | sargent-madamex | Sargent, *Madame X* (Met, New York) | the fallen strap at the 1884 Salon; repainted; he left Paris; sold to the Met in 1916 asking to hide her name | hidden |
+| 5 Nov 2026 | millais-ophelia | Millais, *Ophelia* (Tate Britain) | Siddal posed in a bath; the lamps went out, she fell ill; her father demanded £50 | craft |
+| 6 Nov 2026 | holbein-ambassadors | Holbein, *The Ambassadors* (National Gallery) | the anamorphic skull you only see from the bottom-right corner; the half-hidden crucifix | craft |
+| 6 Nov 2026 | david-marat | David, *The Death of Marat* (Royal Museums of Fine Arts of Belgium, Brussels) | the letter in his hand is signed by his killer, Charlotte Corday; David erased her, the skin disease, posed him like Christ | dark |
 | 8 Nov 2026 | david-napoleon-alps | David, *Napoleon Crossing the Alps* (Belvedere, Vienna) | he crossed on a mule led by a guide; refused to pose; Delaroche painted the truth in 1850 | hidden |
 
 ## Ideas (to verify)

@@ -3,7 +3,7 @@
 usage:
   python automation/plan.py needed [n]       how many new stories to write now (keeps config.buffer_days of reels ready)
   python automation/plan.py today            today's reels to render this morning (step outputs slugs=[…], slug=first)
-  python automation/plan.py add <slug> [date] put a finished story in the first free slot from tomorrow on
+  python automation/plan.py add <slug> [date] put a finished story in the first free slot (from today if it's before 07:00)
                                              (date = YYYY-MM-DD: pin it to that day, e.g. a film release or anniversary)
   python automation/plan.py posted           slugs already posted or scheduled (Claude: never repeat these)
   python automation/plan.py missing          render=true when today still has a free slot and there is still time (07-19 h)
@@ -76,7 +76,8 @@ def add(slug, date=None):
                 while len(day_entries(d.isoformat(), sch)) >= per_day(): d += datetime.timedelta(days=1)
                 print(f"moving {mv['slug']} from {date} to {d.isoformat()} to make room"); sch.remove(mv); mv["date"] = d.isoformat(); sch.append(mv)
     else:
-        d = datetime.date.fromisoformat(today()) + datetime.timedelta(days=1)
+        # written at night (before the 07:41 build)? it can still go out today; otherwise from tomorrow on
+        d = datetime.date.fromisoformat(today()) + datetime.timedelta(days=0 if now().hour < 7 else 1)
         while len(day_entries(d.isoformat(), sch)) >= per_day(): d += datetime.timedelta(days=1)
         e = {"date": d.isoformat(), "slug": slug}
     sch.append(e); save_schedule(sch)

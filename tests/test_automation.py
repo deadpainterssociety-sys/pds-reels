@@ -59,7 +59,7 @@ def fake_story(slug, painter):
 print("\n1. Planning")
 fake_story("test-a", "Painter A"); fake_story("test-b", "Painter B")
 _, o = run("automation/plan.py", "needed", now="2026-11-01T02:20"); check(o.get("n") == "2", f"buffer empty -> write 2 per night (got {o.get('n')})")
-run("automation/plan.py", "add", "test-a", now="2026-11-01T02:30"); run("automation/plan.py", "add", "test-b", now="2026-11-01T02:31")
+run("automation/plan.py", "add", "test-a", now="2026-11-01T10:30"); run("automation/plan.py", "add", "test-b", now="2026-11-01T10:31")
 sch = json.load(open(os.path.join(W, "schedule.json")))
 check([e["date"] for e in sch] == ["2026-11-02", "2026-11-03"], f"scheduled on the next free days: {sch}")
 _, o = run("automation/plan.py", "needed", now="2026-11-01T02:40"); check(o.get("n") == "1", f"2 ready of 3 -> 1 more (got {o.get('n')})")
@@ -217,10 +217,10 @@ set_cfg(slots=["14:00", "21:00"], publish_until="23:00", stories_per_run=3, buff
 json.dump([], open(os.path.join(W, "schedule.json"), "w"))
 for x in ("t2-a", "t2-b", "t2-c", "t2-pin"): fake_story(x, "Painter " + x)
 _, o = run("automation/plan.py", "needed", now="2026-12-01T02:20"); check(o.get("n") == "3", f"empty buffer: 3 per run towards 6 ready (got {o.get('n')})")
-for x in ("t2-a", "t2-b", "t2-c"): run("automation/plan.py", "add", x, now="2026-12-01T02:30")
+for x in ("t2-a", "t2-b", "t2-c"): run("automation/plan.py", "add", x, now="2026-12-01T10:30")
 sch = json.load(open(os.path.join(W, "schedule.json")))
 check([e["date"] for e in sch] == ["2026-12-02", "2026-12-02", "2026-12-03"], f"two per day: {[(e['slug'], e['date']) for e in sch]}")
-r, _ = run("automation/plan.py", "add", "t2-pin", "2026-12-02", now="2026-12-01T02:40")
+r, _ = run("automation/plan.py", "add", "t2-pin", "2026-12-02", now="2026-12-01T10:40")
 sch = json.load(open(os.path.join(W, "schedule.json"))); day = [e["slug"] for e in sch if e["date"] == "2026-12-02"]
 check("t2-pin" in day and len(day) == 2 and "t2-b" not in day, f"pinned onto a full day: the last unpinned reel moves on ({[(e['slug'], e['date']) for e in sch]})")
 _, o = run("automation/plan.py", "today", now="2026-12-02T07:41"); check(json.loads(o.get("slugs", "[]")) == ["t2-a", "t2-pin"], f"morning: both of today's reels rendered ({o.get('slugs')})")
@@ -233,6 +233,16 @@ _, o = run("automation/publish.py", "decide", now="2026-12-02T21:01"); check(o.g
 json.dump({"status": "sent"}, open(os.path.join(W, "stories", "t2-pin", "state.json"), "w"))
 n0 = len(srv.tg("sendMessage")); run("automation/bot.py", "poll", now="2026-12-02T20:15")
 check(len(srv.tg("sendMessage")) > n0 and "21:00" in srv.tg("sendMessage")[-1]["body"]["text"], "20:15: reminder for the 21:00 reel still waiting")
+
+print("\n14. A story written at night goes out the same day; the night run only re-checks its own stories")
+fake_story("t3-night", "Painter N")
+run("automation/plan.py", "add", "t3-night", now="2026-12-10T02:45")
+sch = json.load(open(os.path.join(W, "schedule.json")))
+check(any(e["slug"] == "t3-night" and e["date"] == "2026-12-10" for e in sch), "written at 02:45 -> scheduled today, not tomorrow")
+json.dump({"status": "draft", "validated_at": "2026-12-09T03:00:00+01:00"}, open(os.path.join(W, "stories", "t2-c", "state.json"), "w"))
+shutil.rmtree(os.path.join(W, "stories", "t2-c", "out"), ignore_errors=True)    # like a fresh runner: no files of older stories
+r, o = run("automation/validate.py", now="2026-12-10T03:00")
+check(state("t2-c")["status"] == "draft" and "t2-c" not in r.stdout, "an older, already-checked story is left alone")
 
 print(f"\n{'ALL GOOD' if not fails else str(len(fails)) + ' FAILED'} — temp repo: {W}")
 sys.exit(1 if fails else 0)

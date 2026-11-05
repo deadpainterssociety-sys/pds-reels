@@ -6,7 +6,7 @@ step output: ok=<slugs> rejected=<json [{slug, problems}]>
 """
 import datetime, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import CONFIG, ROOT, gh_output, save_schedule, schedule, set_state, state, story
+from common import CONFIG, ROOT, now, gh_output, save_schedule, schedule, set_state, state, story
 
 MIN_YEARS = 70
 HOOK_TYPES = ("dark", "time-gap", "craft", "sacred-strange", "dark-legend", "damage", "hidden")   # PLAYBOOK §2
@@ -95,7 +95,9 @@ def problems(slug):
 
 
 def main(slugs, report_only=False):
-    slugs = slugs or [e["slug"] for e in schedule() if state(e["slug"])["status"] == "draft"]
+    # by default only the stories written in THIS run: earlier ones already passed, and their source images live in a
+    # release, not on this machine (checking them again here wrongly dropped david-marat and holbein-ambassadors)
+    slugs = slugs or [e["slug"] for e in schedule() if state(e["slug"])["status"] == "draft" and not state(e["slug"]).get("validated_at")]
     ok, rejected = [], []
     for s in slugs:
         pr = problems(s)
@@ -107,6 +109,7 @@ def main(slugs, report_only=False):
             print(f"REJECTED {s}:", *pr, sep="\n  - ")
         else:
             ok.append(s); print("ok", s)
+            if not report_only: set_state(s, validated_at=now().isoformat(timespec="seconds"))
     gh_output(ok=" ".join(ok), rejected=json.dumps(rejected))
     if rejected and not report_only and os.environ.get("TELEGRAM_BOT_TOKEN"):   # a dry check never alerts Gigi
         try:
