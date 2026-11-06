@@ -1,6 +1,8 @@
 {
- "status": "draft",
- "updated": "2026-11-05T11:30:00+01:00",
+ "status": "sent",
+ "updated": "2026-11-06T09:16:00+01:00",
  "validated_at": "2026-11-05T11:30:00+01:00",
- "note": "restored 5 Nov: wrongly dropped by the nightly re-check"
+ "note": "restored 5 Nov: wrongly dropped by the nightly re-check",
+ "review_message": 79,
+ "sent_at": "2026-11-06T09:16:00+01:00"
 }
