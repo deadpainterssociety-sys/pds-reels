@@ -86,8 +86,13 @@ def main(weekly=False):
             instagram.req("GET", f"{instagram.uid()}/insights", metric="reach", period="day")
             row(True, "Instagram numbers (learning loop)", "insights readable")
         except Exception as e:
-            row(None, "Instagram numbers (learning loop)", "not yet: add the instagram_manage_insights permission and generate a new token "
-                "(SETUP step 6)" if ("permission" in str(e).lower() or "(#10)" in str(e) or "(#200)" in str(e)) else str(e)[:150])
+            ti = instagram.token_info()
+            has_perm = [x for x in ti.get("scopes") or [] if "insights" in x]
+            what = (f" — this token is a {ti.get('type', '?').lower().replace('_', ' ')} token of the app '{ti.get('app')}' with: "
+                    f"{', '.join(ti.get('scopes') or []) or 'no permissions listed'}") if ti.get("scopes") is not None else ""
+            if has_perm: what += " — the insights permission IS there, so Meta refuses for another reason: " + str(e)[:160]
+            row(None, "Instagram numbers (learning loop)", ("not yet: the token needs instagram_manage_insights" + what)
+                if ("permission" in str(e).lower() or "(#10)" in str(e) or "(#200)" in str(e)) else str(e)[:150] + what)
     if CONFIG["platforms"].get("tiktok", True):
         if not has("TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET"): row(False, "TikTok", "add TIKTOK_CLIENT_KEY and TIKTOK_CLIENT_SECRET")
         elif not has("TIKTOK_REFRESH_TOKEN"):

@@ -97,6 +97,15 @@ def me():
     return req("GET", "me", fields="user_id,username,account_type")
 
 
+def token_info():
+    """Facebook-style tokens: type, app, permissions granted (debug_token); {} for Instagram-login tokens"""
+    if not fb_token(): return {}
+    try: d = req("GET", "debug_token", input_token=env("IG_ACCESS_TOKEN").strip()).get("data", {})
+    except RuntimeError as e: return {"error": str(e)[:200]}
+    return {"type": d.get("type"), "app": d.get("application"), "scopes": d.get("scopes") or [g.get("scope") for g in d.get("granular_scopes", [])],
+            "expires_at": d.get("expires_at"), "valid": d.get("is_valid")}
+
+
 def expiry():
     """Facebook-style tokens: when does this one expire? ('never' for system-user tokens)"""
     try: d = req("GET", "debug_token", input_token=env("IG_ACCESS_TOKEN").strip()).get("data", {})
