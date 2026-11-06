@@ -124,4 +124,5 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (2 Nov 2026) Cover: a close-up of the main character's face or bust (or the key scene), never the whole painting; the text a little lower for TikTok's grid; the top a smooth translucent darkening of the painting, not black.
 - (4 Nov 2026) Two reels a day, at 14:00 and 21:00 (Madrid). The two reels of a day differ in mood and museum. Timely stories (a film, an anniversary, a trend) go in STORY_QUEUE's Pinned list.
 - (4 Nov 2026) Keep the reels' own audio style as it is; Gigi adds trending sounds herself in the TikTok/Instagram apps.
+- (6 Nov 2026) Names are pronounced as in their original language (French especially): an English accent is fine, English pronunciation is not — Jean-Paul Marat = "zhahn-pol mah-RAH", Jacques-Louis David = "zhahk lwee dah-VEED", Charlotte = "shar-LOT". Give every foreign name an `ipa` entry (story-level when the spelling is also an English name, like David or Louis; `pipeline/pronounce.json` when it is unambiguous, like Jean or Jacques) and check the phonemes before building.
 <!-- new rules go here -->
