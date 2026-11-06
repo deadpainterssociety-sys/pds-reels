@@ -1,11 +1,12 @@
 {
- "status": "sent",
- "updated": "2026-11-06T10:14:43+01:00",
+ "status": "approved",
+ "updated": "2026-11-06T10:16:32+01:00",
  "validated_at": "2026-11-05T11:30:00+01:00",
  "note": "restored 5 Nov: wrongly dropped by the nightly re-check",
  "review_message": 92,
  "sent_at": "2026-11-06T10:14:43+01:00",
  "feedback": [
   "Lovely video. Love everything but one thing, and it’s important you fix it from now on for all the future videos: The correct pronunciation of names in their respective original languages (in this case, correct the pronunciation of JEAN-Paul Marat and Jacques Louis DAVID (with french pronunciation). Correct this for all future videos to come. At least for french names, they sound especially bad in english pronunciation (english ACCENT is fine, not the pronunciation)"
- ]
+ ],
+ "approved_at": "2026-11-06T10:16:32+01:00"
 }
