@@ -3,9 +3,9 @@
 usage: python automation/setup_check.py [--weekly]     (--weekly: only speak up on Telegram when something is broken)
 Never prints secret values. Also links the Telegram chat if you already sent /start to the bot.
 """
-import json, os, re, subprocess, sys, urllib.request
+import json, os, re, subprocess, sys, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import CONFIG, ROOT
+from common import today, CONFIG, ROOT
 
 rows, broken = [], []
 
@@ -71,6 +71,23 @@ def main(weekly=False):
             with contextlib.redirect_stdout(buf): mod.check()
             row(True, name, buf.getvalue().strip().split(": ", 1)[-1])
         except Exception as e: row(False, name, str(e)[:180])
+    # Learning loop: can we READ the numbers? (➖ = posting works, but the brief misses these numbers)
+    if has("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"):
+        try:
+            ana = os.environ.get("YT_ANALYTICS_API", "https://youtubeanalytics.googleapis.com").rstrip("/")
+            q = urllib.parse.urlencode({"ids": "channel==MINE", "startDate": "2026-10-01", "endDate": today(), "metrics": "views"})
+            youtube.http("GET", f"{ana}/v2/reports?{q}", {"Authorization": f"Bearer {youtube.token()}"})
+            row(True, "YouTube numbers (learning loop)", "Analytics API readable")
+        except Exception as e:
+            row(None, "YouTube numbers (learning loop)", "not yet: enable the YouTube Analytics API and get a refresh token with "
+                "the yt-analytics.readonly scope (SETUP step 5)" if ("403" in str(e) or "401" in str(e)) else str(e)[:150])
+    if has("IG_ACCESS_TOKEN"):
+        try:
+            instagram.req("GET", f"{instagram.uid()}/insights", metric="reach", period="day")
+            row(True, "Instagram numbers (learning loop)", "insights readable")
+        except Exception as e:
+            row(None, "Instagram numbers (learning loop)", "not yet: add the instagram_manage_insights permission and generate a new token "
+                "(SETUP step 6)" if ("permission" in str(e).lower() or "(#10)" in str(e) or "(#200)" in str(e)) else str(e)[:150])
     if CONFIG["platforms"].get("tiktok", True):
         if not has("TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET"): row(False, "TikTok", "add TIKTOK_CLIENT_KEY and TIKTOK_CLIENT_SECRET")
         elif not has("TIKTOK_REFRESH_TOKEN"):

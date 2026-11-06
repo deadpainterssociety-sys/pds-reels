@@ -66,6 +66,9 @@ class H(BaseHTTPRequestHandler):
             v = STATE.get("ig_views", {}).get(m2.group(1), 500)
             return self.reply({"data": [{"name": k, "values": [{"value": x}]} for k, x in
                                         [("views", v), ("reach", int(v * .8)), ("likes", v // 20), ("comments", 2), ("shares", v // 100), ("saved", v // 200), ("ig_reels_avg_watch_time", 15500)]]})
+        if re.match(r".*/(me|17841)/insights$", p):
+            if STATE.get("ig_no_insights"): return self.reply({"error": {"message": "(#10) Application does not have permission for this action"}}, 400)
+            return self.reply({"data": [{"name": "reach", "values": [{"value": 120}]}]})
         if re.match(r".*/IGM\w+$", p) and method == "GET": return self.reply({"like_count": 25, "comments_count": 2})
         if (p.endswith("/17841/media") or p.endswith("/me/media")) and method == "GET":
             return self.reply({"data": STATE.get("ig_media", [])})
