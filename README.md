@@ -12,8 +12,6 @@ any    inbox     listens to Telegram (answers in seconds); ✏️ / any text = C
 21:00  inbox     second approved reel -> same
 every 3 h  metrics  each reel's numbers -> private data store (🔥 alert when one takes off)
 Mon+Thu  lab     Claude analyses the numbers (LAB.md) -> brief on Telegram with ✅/❌ per proposed formula change
-every 3 h  metrics  each reel's numbers -> private data store (🔥 alert when one takes off)
-Mon+Thu  lab     Claude analyses the numbers (LAB.md) -> brief on Telegram with ✅/❌ per proposed formula change
 Mon    setup-check   renews the Instagram token, checks every connection, tells you if anything is broken
 ```
 
