@@ -356,6 +356,21 @@
      0.45
     ]
    }
+  },
+  "side": {
+   "file": "src/side.jpg",
+   "commons": "File:Holbein Ambassadors anamorphosis.jpg",
+   "credit": "The Ambassadors seen from the side (anamorphosis): Jean-no, CC BY-SA 3.0, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "skull": [
+     0.59,
+     0.75
+    ]
+   }
   }
  },
  "shots": [
@@ -497,21 +512,23 @@
   },
   {
    "at": "skull.15-0.03",
-   "img": "skull",
+   "img": "side",
    "kind": "image",
-   "from": "face@1.0",
-   "to": "face@1.08",
-   "hit": "big"
+   "from": "center@0.38",
+   "to": "center@0.41",
+   "frame": true,
+   "hit": "big",
+   "dim": -0.15
   },
   {
-   "at": "craft-0.08",
+   "at": "craft.5-0.05",
    "img": "skull",
    "kind": "image",
    "from": "eye@1.5",
    "to": "eye@1.65"
   },
   {
-   "at": "craft.5-0.05",
+   "at": "craft.9-0.05",
    "img": "ambassadors",
    "kind": "image",
    "from": "skulls@3.10",
@@ -625,13 +642,35 @@
   {
    "type": "label",
    "from": "skull",
-   "to": "skull.15-0.1",
-   "text": "VIEW FROM THE RIGHT EDGE"
+   "to": "skull.6-0.1",
+   "text": "BOTTOM RIGHT CORNER"
   },
   {
    "type": "label",
    "from": "skull.15",
    "to": "craft.5-0.1",
+   "text": "VIEW FROM THE RIGHT EDGE"
+  },
+  {
+   "type": "credit",
+   "from": "skull.15",
+   "to": "craft.5-0.1",
+   "text": "JEAN-NO · CC BY-SA 3.0"
+  },
+  {
+   "type": "ring",
+   "at": "craft",
+   "to": "craft.5-0.1",
+   "img": "side",
+   "point": "skull",
+   "rx": 120,
+   "ry": 75,
+   "rot": -15
+  },
+  {
+   "type": "label",
+   "from": "craft.5",
+   "to": "craft.9-0.1",
    "text": "THE SAME SHAPE · CORRECTED"
   },
   {
@@ -714,6 +753,10 @@
   [
    "who.6",
    "who.11-0.1"
+  ],
+  [
+   "skull.15",
+   "craft.5-0.1"
   ]
  ],
  "music": {
