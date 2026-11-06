@@ -186,19 +186,26 @@ def commons(items, d, deadline):
     C = importlib.util.module_from_spec(spec); spec.loader.exec_module(C)
     os.makedirs(d, exist_ok=True); meta = {}
     for it in items:
-        if time.time() > deadline: meta[it["name"]] = {"error": "time limit", "requested": it.get("search") or it.get("title")}; continue
+        if time.time() > deadline: meta[it["name"]] = {"error": "time limit", "requested": it.get("queries") or it.get("search") or it.get("title")}; continue
         try:
-            if it.get("search"):   # best match by query: biggest JPEG/PNG whose title has every "must" word
-                r = C.api(action="query", generator="search", gsrsearch=it["search"], gsrnamespace=6, gsrlimit=15,
-                          prop="imageinfo", iiprop="size|mime")
-                pages = sorted(r.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
-                cands = [(p["title"], p["imageinfo"][0]["width"], p["imageinfo"][0]["height"]) for p in pages if "imageinfo" in p
-                         and p["imageinfo"][0].get("mime") in ("image/jpeg", "image/png")
-                         and all(w.lower() in p["title"].lower() for w in it.get("must", []))]
+            if it.get("search") or it.get("queries"):   # best match: biggest JPEG/PNG whose title has every "must" word,
+                cands, seen = [], set()                    # none of the "exclude" words, and an aspect ratio (w/h) in range
+                for q in it.get("queries") or [it["search"]]:
+                    r = C.api(action="query", generator="search", gsrsearch=q, gsrnamespace=6, gsrlimit=20, prop="imageinfo", iiprop="size|mime")
+                    pages = sorted(r.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+                    lo, hi = it.get("aspect", [0, 99])
+                    for p in pages:
+                        if "imageinfo" not in p or p["title"] in seen: continue
+                        ii = p["imageinfo"][0]; t = p["title"].lower(); seen.add(p["title"])
+                        if ii.get("mime") not in ("image/jpeg", "image/png"): continue
+                        if not all(w.lower() in t for w in it.get("must", [])) or any(w.lower() in t for w in it.get("exclude", [])): continue
+                        if not lo <= ii["width"] / max(1, ii["height"]) <= hi: continue
+                        cands.append((p["title"], ii["width"], ii["height"]))
+                    time.sleep(1)
+                    if cands: break
                 big = [c for c in cands if c[1] >= it.get("min_w", 1200)] or cands
-                if not big: raise RuntimeError(f"no match for {it['search']}: " + ", ".join(p["title"] for p in pages[:6]))
+                if not big: raise RuntimeError(f"no match for {it.get('queries') or it['search']}")
                 it = {**it, "title": max(big[:6], key=lambda c: c[1] * c[2])[0], "alternatives": cands[:8]}
-                time.sleep(1)
             inf = C.info(it["title"]); time.sleep(1)
             w = it.get("width", 3840); data = None
             tries = [C.thumb_url(inf["url"], x) for x in C.STD_WIDTHS if x <= w and x < inf["w"]] if inf["w"] > w else [inf["url"]]
@@ -209,11 +216,11 @@ def commons(items, d, deadline):
             if data:
                 ext = ".png" if data[:4] == b"\x89PNG" else ".jpg"
                 open(os.path.join(d, it["name"] + ext), "wb").write(data)
-                meta[it["name"]] = {**inf, "requested": it.get("search") or it["title"], "alternatives": it.get("alternatives"), "bytes": len(data)}
+                meta[it["name"]] = {**inf, "requested": it.get("queries") or it.get("search") or it["title"], "alternatives": it.get("alternatives"), "bytes": len(data)}
                 print(f"commons {it['name']}: {inf['w']}x{inf['h']} {inf['license']} ({len(data) // 1024} KB)", flush=True)
             time.sleep(2)
         except Exception as e:
-            meta[it["name"]] = {"error": str(e)[:300], "requested": it.get("search") or it.get("title")}; print("commons FAIL", it["name"], e)
+            meta[it["name"]] = {"error": str(e)[:300], "requested": it.get("queries") or it.get("search") or it.get("title")}; print("commons FAIL", it["name"], e)
     json.dump(meta, open(os.path.join(d, "meta.json"), "w"), indent=1, ensure_ascii=False)
 
 
