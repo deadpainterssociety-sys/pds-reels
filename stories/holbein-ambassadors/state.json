@@ -1,8 +1,11 @@
 {
- "status": "sent",
- "updated": "2026-11-06T09:16:00+01:00",
+ "status": "revising",
+ "updated": "2026-11-06T09:53:39+01:00",
  "validated_at": "2026-11-05T11:30:00+01:00",
  "note": "restored 5 Nov: wrongly dropped by the nightly re-check",
  "review_message": 79,
- "sent_at": "2026-11-06T09:16:00+01:00"
+ "sent_at": "2026-11-06T09:16:00+01:00",
+ "feedback": [
+  "The skull thing is a bit unclear. The view from the side where the skull finally appears is a bit too close up, which may make some people confused. I’m missing a picture from the side but from a bit far away (you see the whole painting and the tiny skull from the side which seems to pop out in 3D. Check if there is a public image of a picture of the painting from the side but a bit more far away. If not, it’s fine as it is"
+ ]
 }
