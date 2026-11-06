@@ -1,0 +1,749 @@
+{
+ "slug": "vaneyck-arnolfini",
+ "hook_type": "hidden",
+ "teaser": "The painter hiding in a mirror",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "arnolfini": {
+   "file": "src/arnolfini.jpg",
+   "commons": "File:Van Eyck - Arnolfini Portrait.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "mirror": [
+     0.508,
+     0.29
+    ],
+    "manface": [
+     0.28,
+     0.215
+    ],
+    "wifeface": [
+     0.745,
+     0.245
+    ],
+    "hands": [
+     0.53,
+     0.42
+    ],
+    "dog": [
+     0.53,
+     0.88
+    ],
+    "chandelier": [
+     0.5,
+     0.13
+    ]
+   }
+  },
+  "hires": {
+   "file": "src/hires.jpg",
+   "commons": "File:Van Eyck - Arnolfini Portrait.jpg",
+   "long": 6000,
+   "points": {
+    "mirror": [
+     0.508,
+     0.29
+    ],
+    "glass": [
+     0.508,
+     0.297
+    ],
+    "men": [
+     0.511,
+     0.299
+    ],
+    "sign": [
+     0.485,
+     0.218
+    ],
+    "roundel": [
+     0.511,
+     0.252
+    ]
+   }
+  },
+  "detail": {
+   "file": "src/detail.jpg",
+   "commons": "File:Jan van Eyck - Portrait of Giovanni Arnolfini and his Wife (detail) - WGA7695.jpg",
+   "points": {
+    "mirror": [
+     0.45,
+     0.6
+    ],
+    "roundel": [
+     0.5,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "turban": {
+   "file": "src/turban.jpg",
+   "commons": "File:Portrait of a Man in a red turban (by Jan van Eyck).jpg",
+   "long": 3000,
+   "points": {
+    "face": [
+     0.37,
+     0.6
+    ]
+   }
+  },
+  "bruges": {
+   "file": "src/bruges.jpg",
+   "commons": "File:Belfry at Grand Market Square at rainy day dusk Bruges Belgium.jpg",
+   "long": 3840,
+   "points": {
+    "belfry": [
+     0.25,
+     0.38
+    ],
+    "center": [
+     0.4,
+     0.5
+    ]
+   },
+   "credit": "Market Square and Belfry, Bruges: photo by Tim Adams, CC BY 3.0, via Wikimedia Commons"
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Look in the mirror.",
+     0.3,
+     0.92
+    ],
+    [
+     "Someone is *watching* this couple.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "date",
+   "perf": [
+    [
+     "Bruges, 1434.",
+     0.35,
+     0.95
+    ],
+    [
+     "Jan van Eyck paints an Italian merchant,",
+     0.25,
+     0.95
+    ],
+    [
+     "probably Giovanni Arnolfini,",
+     0.25,
+     0.95
+    ],
+    [
+     "and his wife.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "mirror",
+   "perf": [
+    [
+     "On the back wall hangs a round, convex mirror.",
+     0.35,
+     0.95
+    ],
+    [
+     "Around its frame,",
+     0.2,
+     0.95
+    ],
+    [
+     "ten tiny painted scenes",
+     0.2,
+     0.95
+    ],
+    [
+     "from the Passion of Christ.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "glass",
+   "perf": [
+    [
+     "And in the glass,",
+     0.25,
+     0.95
+    ],
+    [
+     "the whole room, bent.",
+     0.35,
+     0.93
+    ],
+    [
+     "And two men in the doorway.",
+     0.35,
+     0.93
+    ],
+    [
+     "One in blue,",
+     0.25,
+     0.93
+    ],
+    [
+     "one in *red.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "sign",
+   "perf": [
+    [
+     "Above the mirror,",
+     0.25,
+     0.95
+    ],
+    [
+     "in big letters on the wall,",
+     0.25,
+     0.95
+    ],
+    [
+     "he signs in Latin:",
+     0.35,
+     0.93
+    ],
+    [
+     "*Jan van Eyck was here.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "red",
+   "perf": [
+    [
+     "So the man in red",
+     0.2,
+     0.95
+    ],
+    [
+     "is probably the painter himself.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "panofsky",
+   "perf": [
+    [
+     "In 1934,",
+     0.3,
+     0.95
+    ],
+    [
+     "the historian Erwin Panofsky argued",
+     0.2,
+     0.95
+    ],
+    [
+     "the two men were witnesses,",
+     0.25,
+     0.95
+    ],
+    [
+     "and the painting, a record of a marriage.",
+     0.6,
+     0.93
+    ],
+    [
+     "Many historians now doubt it.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "But either way,",
+     0.25,
+     0.95
+    ],
+    [
+     "for almost six hundred years,",
+     0.3,
+     0.95
+    ],
+    [
+     "the painter has stood in that doorway,",
+     0.3,
+     0.93
+    ],
+    [
+     "watching *us* watch them.",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "say": {
+  "1434": "fourteen thirty-four",
+  "1934": "nineteen thirty-four"
+ },
+ "ipa": {},
+ "meta": {
+  "painter": "Jan van Eyck",
+  "born": 1390,
+  "died": 1441,
+  "painting": "The Arnolfini Portrait",
+  "year": "1434",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "arnolfini",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1441,
+  "note": "Van Eyck d. 1441: public domain (Arnolfini Portrait and Portrait of a Man in a Turban). Bruges Markt photo CC BY 3.0 (Tim Adams) -> credited."
+ },
+ "cover": {
+  "question": "Who's <i>in the mirror?</i>",
+  "name": "JAN VAN EYCK",
+  "work": "The Arnolfini Portrait, 1434",
+  "focus": [
+   0.508,
+   0.285
+  ],
+  "span": 0.3,
+  "answered_by": "Two men in the doorway, one in red, probably van Eyck himself, who signed above it 'Jan van Eyck was here 1434'"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "arnolfini",
+   "from": "mirror@3.0",
+   "to": "mirror@3.2",
+   "sway": 0.004
+  },
+  {
+   "at": "hook.6-0.03",
+   "img": "arnolfini",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "date-0.08",
+   "img": "bruges",
+   "from": "belfry@1.0",
+   "to": "belfry@1.08",
+   "kind": "image",
+   "gray": 0.5
+  },
+  {
+   "at": "date.2-0.05",
+   "img": "turban",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "kind": "image",
+   "gray": 0.3
+  },
+  {
+   "at": "date.9-0.05",
+   "img": "arnolfini",
+   "from": "manface@2.0",
+   "to": "manface@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "date.12-0.05",
+   "img": "arnolfini",
+   "from": "wifeface@2.0",
+   "to": "wifeface@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "mirror-0.08",
+   "img": "arnolfini",
+   "from": "mirror@2.2",
+   "to": "mirror@2.4",
+   "sway": 0.004
+  },
+  {
+   "at": "mirror.9-0.05",
+   "img": "detail",
+   "from": "mirror@1.0",
+   "to": "mirror@1.08",
+   "kind": "image"
+  },
+  {
+   "at": "mirror.12-0.05",
+   "img": "hires",
+   "from": "roundel@8.0",
+   "to": "roundel@8.4",
+   "kind": "image"
+  },
+  {
+   "at": "glass-0.08",
+   "img": "hires",
+   "from": "glass@5.0",
+   "to": "glass@5.3",
+   "kind": "image"
+  },
+  {
+   "at": "glass.8-0.05",
+   "img": "hires",
+   "from": "men@8.0",
+   "to": "men@8.4",
+   "kind": "image"
+  },
+  {
+   "at": "sign-0.08",
+   "img": "hires",
+   "from": "sign@6.0",
+   "to": "sign@6.4",
+   "kind": "image"
+  },
+  {
+   "at": "red-0.08",
+   "img": "hires",
+   "from": "men@8.0",
+   "to": "men@8.3",
+   "kind": "image"
+  },
+  {
+   "at": "red.5-0.05",
+   "img": "turban",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "kind": "image"
+  },
+  {
+   "at": "panofsky-0.08",
+   "img": "arnolfini",
+   "from": "center@0.5",
+   "to": "center@0.48",
+   "kind": "image",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "panofsky.7-0.05",
+   "img": "hires",
+   "from": "men@7.0",
+   "to": "men@7.3",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "panofsky.12-0.05",
+   "img": "arnolfini",
+   "from": "hands@1.8",
+   "to": "hands@1.95",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "panofsky.20-0.05",
+   "img": "arnolfini",
+   "from": "center@0.5",
+   "to": "center@0.52",
+   "kind": "image",
+   "frame": true,
+   "gray": 0.5
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "arnolfini",
+   "from": "mirror@1.8",
+   "to": "mirror@2.0",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.8-0.05",
+   "img": "hires",
+   "from": "men@8.0",
+   "to": "men@8.4",
+   "kind": "image"
+  },
+  {
+   "at": "payoff.15-0.05",
+   "img": "arnolfini",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "arnolfini",
+   "from": "hands@1.7",
+   "to": "hands@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "date",
+   "to": "date.2-0.1",
+   "text": "BRUGES · THE MARKT TODAY"
+  },
+  {
+   "type": "credit",
+   "from": "date",
+   "to": "date.2-0.1",
+   "text": "PHOTO: TIM ADAMS · CC BY 3.0"
+  },
+  {
+   "type": "title",
+   "from": "date.2",
+   "to": "date.9-0.1",
+   "kicker": "PROBABLY A SELF-PORTRAIT · 1433",
+   "text": "Jan <i>van Eyck</i>"
+  },
+  {
+   "type": "label",
+   "from": "date.9",
+   "to": "mirror-0.1",
+   "text": "GIOVANNI ARNOLFINI (PROBABLY)"
+  },
+  {
+   "type": "label",
+   "from": "mirror.12",
+   "to": "glass-0.1",
+   "text": "THE PASSION · 10 SCENES"
+  },
+  {
+   "type": "ring",
+   "at": "glass.9",
+   "to": "sign-0.1",
+   "img": "hires",
+   "point": "men",
+   "rx": 130,
+   "ry": 190,
+   "rot": 0
+  },
+  {
+   "type": "title",
+   "from": "sign.13",
+   "to": "red-0.1",
+   "kicker": "\"JAN VAN EYCK WAS HERE\" · 1434",
+   "text": "<i>Johannes de eyck fuit hic</i>"
+  },
+  {
+   "type": "ring",
+   "at": "red.2",
+   "to": "red.5-0.1",
+   "img": "hires",
+   "point": "men",
+   "rx": 130,
+   "ry": 190,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "panofsky",
+   "to": "panofsky.20-0.1",
+   "text": "ERWIN PANOFSKY · 1934"
+  },
+  {
+   "type": "label",
+   "from": "panofsky.20",
+   "to": "payoff-0.1",
+   "text": "A WEDDING? NOT ANYMORE"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "date.2",
+   "date.9-0.1"
+  ],
+  [
+   "sign.13",
+   "red-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": 3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "date-0.2",
+    "mirror$+0.2"
+   ],
+   "drop": [
+    "sign.12-0.05",
+    "sign.12+0.4"
+   ],
+   "choir": [
+    "payoff.15-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "glass.9",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "glass.16",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "glass.19",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "sign.13",
+   "fx": "chime",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Painted by Jan van Eyck in 1434 (dated), oil on oak, in Bruges",
+   "source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait ; https://www.nationalgallery.org.uk/audio/audio-descriptions/jan-van-eyck-s-the-arnolfini-portrait"
+  },
+  {
+   "claim": "The sitters are probably Giovanni di Nicolao Arnolfini, an Italian merchant working in Bruges, and his wife",
+   "source": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait ; https://en.wikipedia.org/wiki/Arnolfini_Portrait"
+  },
+  {
+   "claim": "A convex mirror hangs on the back wall; ten spokes on its frame each hold a tiny roundel with a scene from the Passion of Christ",
+   "source": "https://www.nationalgallery.org.uk/audio/audio-descriptions/jan-van-eyck-s-the-arnolfini-portrait ; https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"
+  },
+  {
+   "claim": "The mirror shows the room distorted and two men in the doorway, one in red and one in blue",
+   "source": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait ; https://www.nationalgallery.org.uk/audio/audio-descriptions/jan-van-eyck-s-the-arnolfini-portrait ; https://en.wikipedia.org/wiki/Arnolfini_Portrait"
+  },
+  {
+   "claim": "Above the mirror, painted as if in large letters on the wall: 'Johannes de eyck fuit hic 1434' (Jan van Eyck was here 1434)",
+   "source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait ; https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"
+  },
+  {
+   "claim": "The figure in red is presumably/probably the artist himself",
+   "source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait"
+  },
+  {
+   "claim": "In 1934 Erwin Panofsky argued the painting was a legal record of a marriage, with the two reflected men as the required witnesses; this is not accepted by all art historians, and the National Gallery says it is no longer read as a marriage ceremony",
+   "source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait ; https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"
+  },
+  {
+   "claim": "Portrait of a Man (in a red turban), 1433, National Gallery, is possibly a self-portrait of van Eyck",
+   "source": "https://fineartconnoisseur.com/2017/07/portrait-of-the-week-jan-van-eyck-portrait-of-a-man/ ; https://en.wikipedia.org/wiki/Jan_van_Eyck"
+  },
+  {
+   "claim": "The National Gallery, London, bought it in 1842; it hangs there today",
+   "source": "https://en.wikipedia.org/wiki/Arnolfini_Portrait ; https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"
+  }
+ ],
+ "caption": "Look in the mirror. Someone is watching this couple.\n\nBruges, 1434. Jan van Eyck painted an Italian merchant, probably Giovanni di Nicolao Arnolfini, and his wife. On the back wall hangs a round convex mirror; around its frame, ten tiny painted scenes from the Passion of Christ.\n\nIn the glass: the whole room, bent, and two men in the doorway. One in blue, one in red. Above the mirror, in big letters on the wall, van Eyck signed in Latin: \"Johannes de eyck fuit hic 1434\" – Jan van Eyck was here. So the man in red is probably the painter himself.\n\nIn 1934 the historian Erwin Panofsky argued that the two men were witnesses and the painting a record of a marriage. Many historians now doubt it. But for almost 600 years, the painter has stood in that doorway, watching us watch them. It hangs in the National Gallery, London.\n\nP.S. She isn't pregnant: she's holding up a bulky, fashionable gown.\n\n🖤 Did you ever notice him?",
+ "caption_short": "Look in the mirror: two tiny men in the doorway. One is probably Jan van Eyck himself. 🖤",
+ "youtube_title": "Who's in the mirror? | Van Eyck, The Arnolfini Portrait",
+ "hashtags": [
+  "#vaneyck",
+  "#janvaneyck",
+  "#arnolfiniportrait",
+  "#arnolfini",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#hiddendetails"
+ ],
+ "hashtags_instagram": [
+  "#vaneyck",
+  "#arnolfiniportrait",
+  "#arthistory",
+  "#nationalgallery",
+  "#hiddendetails"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vaneyck",
+  "#arnolfiniportrait",
+  "#mystery"
+ ]
+}

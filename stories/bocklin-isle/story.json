@@ -1,0 +1,776 @@
+{
+ "slug": "bocklin-isle",
+ "hook_type": "dark",
+ "teaser": "A widow's painting that Hitler had to own",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "isle": {
+   "file": "src/isle.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel III (Alte Nationalgalerie, Berlin).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "figure": [
+     0.375,
+     0.8
+    ],
+    "boat": [
+     0.37,
+     0.84
+    ],
+    "coffin": [
+     0.395,
+     0.835
+    ],
+    "tombsL": [
+     0.27,
+     0.47
+    ],
+    "tombsR": [
+     0.71,
+     0.5
+    ],
+    "cypress": [
+     0.53,
+     0.3
+    ],
+    "stairs": [
+     0.52,
+     0.75
+    ]
+   }
+  },
+  "basel": {
+   "file": "src/basel.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel I (Basel, Kunstmuseum).jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "figure": [
+     0.415,
+     0.8
+    ]
+   }
+  },
+  "met": {
+   "file": "src/met.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel II (Metropolitan Museum of Art).jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "figure": [
+     0.505,
+     0.8
+    ]
+   }
+  },
+  "selfdeath": {
+   "file": "src/selfdeath.jpg",
+   "commons": "File:Arnold Boecklin-fiedelnder Tod.jpg",
+   "long": 3000,
+   "points": {
+    "face": [
+     0.4,
+     0.27
+    ],
+    "death": [
+     0.66,
+     0.17
+    ]
+   }
+  },
+  "chancellery": {
+   "file": "src/chancellery.jpg",
+   "commons": "File:Bundesarchiv Bild 183-R89708, Berlin, Neue Reichskanzlei.jpg",
+   "credit": "New Reich Chancellery, 1940: Bundesarchiv, Bild 183-R89708, CC BY-SA 3.0 DE, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "facade": [
+     0.3,
+     0.45
+    ]
+   }
+  },
+  "berghof": {
+   "file": "src/berghof.jpg",
+   "commons": "File:Bundesarchiv Bild 183-1999-0412-502, Obersalzberg, Berghof von Adolf Hitler.jpg",
+   "credit": "The Berghof, Obersalzberg: Bundesarchiv, Bild 183-1999-0412-502, CC BY-SA 3.0 DE, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This was one of Hitler's *favorite* paintings.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "widow",
+   "perf": [
+    [
+     "But it began with a widow.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "florence",
+   "perf": [
+    [
+     "Florence, 1880.",
+     0.35,
+     0.95
+    ],
+    [
+     "Marie Berna, whose husband died years before,",
+     0.25,
+     0.95
+    ],
+    [
+     "visits Arnold Böcklin's studio.",
+     0.7,
+     0.93
+    ],
+    [
+     "She asks for a picture to *dream* on.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "paint",
+   "perf": [
+    [
+     "He paints her a rocky island,",
+     0.25,
+     0.95
+    ],
+    [
+     "dark cypress trees,",
+     0.25,
+     0.95
+    ],
+    [
+     "tombs cut into the cliffs.",
+     0.5,
+     0.93
+    ],
+    [
+     "And, at her request,",
+     0.25,
+     0.95
+    ],
+    [
+     "a *coffin* in a boat,",
+     0.3,
+     0.9
+    ],
+    [
+     "and a figure in white.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "versions",
+   "perf": [
+    [
+     "He paints it five times.",
+     0.35,
+     0.93
+    ],
+    [
+     "His dealer gives it a name:",
+     0.3,
+     0.95
+    ],
+    [
+     "*Isle of the Dead.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "prints",
+   "perf": [
+    [
+     "Prints spread across Germany.",
+     0.3,
+     0.95
+    ],
+    [
+     "Rachmaninoff writes a symphonic poem",
+     0.2,
+     0.95
+    ],
+    [
+     "after seeing a black-and-white copy.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "hitler",
+   "perf": [
+    [
+     "Then, in the 1930s,",
+     0.3,
+     0.95
+    ],
+    [
+     "Adolf Hitler buys the third version.",
+     0.4,
+     0.93
+    ],
+    [
+     "It hangs at his mountain home,",
+     0.25,
+     0.95
+    ],
+    [
+     "then, from 1940,",
+     0.25,
+     0.95
+    ],
+    [
+     "in his new Reich Chancellery in Berlin.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "A picture made to mourn one man,",
+     0.3,
+     0.93
+    ],
+    [
+     "watching over the man",
+     0.2,
+     0.93
+    ],
+    [
+     "who sent millions to their *deaths.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Old National Gallery, in Berlin.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "say": {
+  "1880": "eighteen eighty",
+  "1930s": "nineteen thirties",
+  "1940": "nineteen forty"
+ },
+ "ipa": {
+  "Böcklin": "bˈɜːklɪn"
+ },
+ "meta": {
+  "painter": "Arnold Böcklin",
+  "born": 1827,
+  "died": 1901,
+  "painting": "Isle of the Dead (third version)",
+  "year": "1883",
+  "museum": "Alte Nationalgalerie",
+  "city": "Berlin",
+  "image": "isle",
+  "image_credit": "Alte Nationalgalerie, Staatliche Museen zu Berlin, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1901,
+  "note": "Böcklin d. 1901: public domain (all versions, self-portrait). Bundesarchiv photos of the Berghof and the New Reich Chancellery CC BY-SA 3.0 DE -> credited."
+ },
+ "cover": {
+  "question": "Who kept this <i>on his wall?</i>",
+  "name": "ARNOLD BÖCKLIN",
+  "work": "Isle of the Dead, 1883",
+  "focus": [
+   0.385,
+   0.79
+  ],
+  "span": 0.5,
+  "answered_by": "Adolf Hitler: he bought the third version and hung it at the Berghof, then from 1940 in the New Reich Chancellery"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "isle",
+   "from": "figure@2.4",
+   "to": "figure@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.5-0.03",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "widow-0.08",
+   "img": "isle",
+   "from": "figure@1.8",
+   "to": "figure@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "florence-0.08",
+   "img": "basel",
+   "from": "center@0.5",
+   "to": "center@0.48",
+   "kind": "image",
+   "frame": true,
+   "gray": 0.6,
+   "dim": -0.2
+  },
+  {
+   "at": "florence.2-0.05",
+   "img": "met",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "kind": "image",
+   "gray": 0.5,
+   "dim": -0.45
+  },
+  {
+   "at": "florence.9-0.05",
+   "img": "selfdeath",
+   "from": "face@1.2",
+   "to": "face@1.32",
+   "kind": "image",
+   "gray": 0.4
+  },
+  {
+   "at": "florence.13-0.05",
+   "img": "met",
+   "from": "center@0.5",
+   "to": "center@0.48",
+   "kind": "image",
+   "frame": true,
+   "dim": -0.2
+  },
+  {
+   "at": "paint-0.08",
+   "img": "isle",
+   "from": "tombsL@1.5",
+   "to": "tombsL@1.62",
+   "sway": 0.006
+  },
+  {
+   "at": "paint.6-0.05",
+   "img": "isle",
+   "from": "cypress@1.4",
+   "to": "cypress@1.52",
+   "sway": 0.006
+  },
+  {
+   "at": "paint.9-0.05",
+   "img": "isle",
+   "from": "tombsR@1.6",
+   "to": "tombsR@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "paint.14-0.05",
+   "img": "isle",
+   "from": "boat@1.6",
+   "to": "boat@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "paint.19-0.05",
+   "img": "isle",
+   "from": "coffin@2.6",
+   "to": "coffin@2.75",
+   "sway": 0.004
+  },
+  {
+   "at": "paint.23-0.05",
+   "img": "isle",
+   "from": "figure@3.0",
+   "to": "figure@3.15",
+   "sway": 0.004
+  },
+  {
+   "at": "versions-0.08",
+   "img": "basel",
+   "from": "center@0.5",
+   "to": "center@0.48",
+   "kind": "image",
+   "frame": true,
+   "dim": -0.2
+  },
+  {
+   "at": "versions.5-0.05",
+   "img": "isle",
+   "from": "center@0.46",
+   "to": "center@0.44",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "versions.11-0.05",
+   "img": "isle",
+   "from": "cypress@1.1",
+   "to": "cypress@1.18",
+   "hit": "small",
+   "sway": 0.008
+  },
+  {
+   "at": "prints-0.08",
+   "img": "isle",
+   "from": "center@0.46",
+   "to": "center@0.48",
+   "kind": "image",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "prints.4-0.05",
+   "img": "isle",
+   "from": "figure@1.6",
+   "to": "figure@1.75",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hitler-0.08",
+   "img": "isle",
+   "from": "stairs@1.4",
+   "to": "stairs@1.55",
+   "kind": "image",
+   "gray": 0.8,
+   "dim": 0.1
+  },
+  {
+   "at": "hitler.10-0.05",
+   "img": "berghof",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hitler.16-0.05",
+   "img": "chancellery",
+   "from": "facade@1.0",
+   "to": "facade@1.08",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "isle",
+   "from": "figure@2.2",
+   "to": "figure@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.7-0.05",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "isle",
+   "from": "boat@1.7",
+   "to": "boat@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "florence",
+   "to": "florence.2-0.1",
+   "text": "FLORENCE · 1880"
+  },
+  {
+   "type": "label",
+   "from": "florence.2",
+   "to": "florence.9-0.1",
+   "text": "VERSION FOR MARIE BERNA"
+  },
+  {
+   "type": "title",
+   "from": "florence.9",
+   "to": "florence.13-0.1",
+   "kicker": "SELF-PORTRAIT WITH DEATH · 1872",
+   "text": "Arnold <i>Böcklin</i>"
+  },
+  {
+   "type": "label",
+   "from": "florence.13",
+   "to": "paint-0.1",
+   "text": "\"A PICTURE TO DREAM ON\""
+  },
+  {
+   "type": "ring",
+   "at": "paint.19",
+   "to": "versions-0.1",
+   "img": "isle",
+   "point": "coffin",
+   "rx": 170,
+   "ry": 90,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "versions",
+   "to": "versions.5-0.1",
+   "text": "FIRST VERSION · BASEL"
+  },
+  {
+   "type": "label",
+   "from": "versions.5",
+   "to": "versions.11-0.1",
+   "text": "THIRD VERSION · 1883"
+  },
+  {
+   "type": "title",
+   "from": "versions.11",
+   "to": "prints-0.1",
+   "kicker": "DIE TOTENINSEL",
+   "text": "<i>Isle of the Dead</i>"
+  },
+  {
+   "type": "label",
+   "from": "prints.4",
+   "to": "hitler-0.1",
+   "text": "RACHMANINOFF · OP. 29 · 1909"
+  },
+  {
+   "type": "label",
+   "from": "hitler",
+   "to": "hitler.10-0.1",
+   "text": "BOUGHT BY HITLER · 1930s"
+  },
+  {
+   "type": "label",
+   "from": "hitler.10",
+   "to": "hitler.16-0.1",
+   "text": "THE BERGHOF · OBERSALZBERG"
+  },
+  {
+   "type": "credit",
+   "from": "hitler.10",
+   "to": "hitler.16-0.1",
+   "text": "BUNDESARCHIV · CC BY-SA 3.0 DE"
+  },
+  {
+   "type": "label",
+   "from": "hitler.16",
+   "to": "payoff-0.1",
+   "text": "NEW REICH CHANCELLERY · 1940"
+  },
+  {
+   "type": "credit",
+   "from": "hitler.16",
+   "to": "payoff-0.1",
+   "text": "BUNDESARCHIV · CC BY-SA 3.0 DE"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "ALTE NATIONALGALERIE · BERLIN"
+  }
+ ],
+ "nocap": [
+  [
+   "florence.9",
+   "florence.13-0.1"
+  ],
+  [
+   "versions.11",
+   "prints-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "florence-0.2",
+    "versions$+0.2"
+   ],
+   "drop": [
+    "hitler.4-0.1",
+    "hitler.6+0.3"
+   ],
+   "choir": [
+    "payoff.7-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "paint.19",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "versions.11",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "hitler.4",
+   "fx": "impact",
+   "gain": 0.5
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Isle of the Dead was a favorite painting of Adolf Hitler",
+   "source": "https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883 ; https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting)"
+  },
+  {
+   "claim": "In April 1880 Marie Berna, widow of Georg von Berna (died 1865), visited Böcklin's studio in Florence and saw the unfinished first version",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "She commissioned 'ein Bild zum Träumen' (a picture to dream on/over)",
+   "source": "https://de.wikipedia.org/wiki/Die_Toteninsel (citing Böcklin's letter to Marie Berna, 29 June 1880) ; http://www.tor.com/2011/10/28/a-picture-to-dream-over-the-isle-of-the-dead"
+  },
+  {
+   "claim": "The painting shows a rocky island with cypress trees and tombs/portals cut into the cliffs; at Berna's request Böcklin added the coffin and the white-shrouded figure in the boat",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting) ; https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883"
+  },
+  {
+   "claim": "Böcklin painted five versions (1880, 1880, 1883, 1884, 1886), plus a 1901 version with his son Carlo",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting) ; https://www.smb.museum/presse/pressemitteilungen/detail/museumsinsel-berlin-alte-nationalgalerie-ausstellung-boecklin-jenseits-des-mythos-fuehrt-2027-alle-vier-noch-erhaltenen-versionen-der-toteninsel-zusammen/"
+  },
+  {
+   "claim": "The title 'Die Toteninsel' was given by his dealer Fritz Gurlitt (1883), for whom the third version was painted",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Reproductions were hugely popular in Germany; Rachmaninoff's symphonic poem Isle of the Dead, Op. 29 (1909) was inspired by a black-and-white print",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting) ; https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883"
+  },
+  {
+   "claim": "Hitler acquired the third (1883) version in the 1930s (1933 per en.wikipedia, 1936 per de.wikipedia) and hung it at the Berghof, then from 1940 in the New Reich Chancellery in Berlin",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting) ; https://de.wikipedia.org/wiki/Die_Toteninsel (citing Birgit Schwarz, Geniewahn. Hitler und die Kunst, 2009)"
+  },
+  {
+   "claim": "The third version hangs in the Alte Nationalgalerie (Old National Gallery), Berlin",
+   "source": "https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883 ; https://en.wikipedia.org/wiki/Isle_of_the_Dead_(painting)"
+  }
+ ],
+ "caption": "This was one of Hitler's favorite paintings. But it began with a widow.\n\nFlorence, 1880. Marie Berna, whose husband had died years before, visited Arnold Böcklin's studio and asked for \"a picture to dream on\". He painted her a rocky island with dark cypress trees and tombs cut into the cliffs, and, at her request, a coffin in a boat and a figure in white.\n\nBöcklin painted it five times. His dealer, Fritz Gurlitt, gave it the name that stuck: Isle of the Dead. Prints spread across Germany; Rachmaninoff wrote his symphonic poem after seeing a black-and-white copy.\n\nIn the 1930s Adolf Hitler bought the third version (1883). It hung at the Berghof, his mountain home, and from 1940 in his new Reich Chancellery in Berlin.\n\nA picture made to mourn one man, watching over the man who sent millions to their deaths. It hangs in the Alte Nationalgalerie in Berlin.\n\n🖤 Would you hang it in your home?",
+ "caption_short": "A widow asked for a picture to dream on. Decades later, Hitler hung it in his Chancellery. 🖤",
+ "youtube_title": "Who kept this on his wall? | Böcklin, Isle of the Dead",
+ "hashtags": [
+  "#bocklin",
+  "#arnoldbocklin",
+  "#isleofthedead",
+  "#toteninsel",
+  "#altenationalgalerie",
+  "#berlin",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#darkart"
+ ],
+ "hashtags_instagram": [
+  "#bocklin",
+  "#isleofthedead",
+  "#arthistory",
+  "#berlin",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#bocklin",
+  "#isleofthedead",
+  "#darkhistory"
+ ]
+}

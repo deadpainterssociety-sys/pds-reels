@@ -32,24 +32,24 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 6 Nov 2026 | holbein-ambassadors | Holbein, *The Ambassadors* (National Gallery) | the anamorphic skull you only see from the bottom-right corner; the half-hidden crucifix | craft |
 | 6 Nov 2026 | david-marat | David, *The Death of Marat* (Royal Museums of Fine Arts of Belgium, Brussels) | the letter in his hand is signed by his killer, Charlotte Corday; David erased her, the skin disease, posed him like Christ | dark |
 | 8 Nov 2026 | david-napoleon-alps | David, *Napoleon Crossing the Alps* (Belvedere, Vienna) | he crossed on a mule led by a guide; refused to pose; Delaroche painted the truth in 1850 | hidden |
+| 7 Nov 2026 | klimt-adele | Klimt, *Adele Bloch-Bauer I* (Neue Galerie, New York) | seized by the Nazis in 1938, renamed "Lady in Gold" to hide she was Jewish; niece Maria Altmann sued, won it back in 2006 | damage |
+| 7 Nov 2026 | bocklin-isle | Böcklin, *Isle of the Dead*, 3rd version 1883 (Alte Nationalgalerie, Berlin) | a widow's "picture to dream on"; Hitler bought the 1883 version, hung it at the Berghof, then the Reich Chancellery | dark |
+| 8 Nov 2026 | vaneyck-arnolfini | Van Eyck, *The Arnolfini Portrait* (National Gallery) | the two men in the mirror, one in red probably van Eyck; "Jan van Eyck was here"; Panofsky's witness theory, now doubted | hidden |
 
 ## Ideas (to verify)
 
 | Painting (museum) | Possible angle | Type | Notes |
 |---|---|---|---|
-| Van Eyck, *Arnolfini Portrait* (National Gallery) | "Jan van Eyck was here" over the mirror; the tiny painter in the mirror | craft | |
 | Goya, *The Naked Maja* (Prado) | the Inquisition demanded to know who ordered it | hidden | **nude: safe framing** (PLAYBOOK §1); sources: Prado, the 1815 Inquisition file |
 | Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside | dark | don't play a melody you can't source; partial nudity: frame the score, not the bodies |
 | Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | dark-legend | **nude: safe framing**; the model claim is a legend: say so |
 | Titian, *Venus of Urbino* (Uffizi) | Mark Twain called it the "vilest" picture in the world | hidden | **nude: safe framing**; check the quote word for word |
 | Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
 | Fuseli, *The Nightmare* (Detroit Institute of Arts) | the demon on the sleeping woman; the scene echoed in *Frankenstein* | dark | lesser-known-ish; the Mary Shelley link is a scholarly reading: hedge |
-| Böcklin, *Isle of the Dead* (Kunstmuseum Basel) | painted five times; one version later hung in Hitler's office | dark | lesser-known; verify which version, where it hangs now |
 | Velázquez, *Las Meninas* (Prado) | the knight's cross on his chest was added after the painting was finished | hidden | when and by whom; "the king painted it" is legend |
 | Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | damage | crime; most-stolen artwork claims need care |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark | dark: not next to another dark one |
-| Klimt, *Portrait of Adele Bloch-Bauer I* (Neue Galerie, New York) | looted by the Nazis, won back in court by her niece | damage | Klimt †1918: OK |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
 | Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | hidden | |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
