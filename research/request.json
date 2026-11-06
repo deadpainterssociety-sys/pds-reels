@@ -1,0 +1,534 @@
+{
+ "max_units": 4000,
+ "max_discovered": 30,
+ "max_found": 15,
+ "seeds": [
+  {
+   "id": "UCePDFpCr78_qmVtpoB1Axaw",
+   "group": "creator"
+  },
+  {
+   "handle": "@inspiraggio",
+   "group": "creator"
+  },
+  {
+   "id": "UC3R-xanNgtoa8b7gpVexVlA",
+   "group": "edu"
+  },
+  {
+   "handle": "@theartassignment",
+   "group": "edu"
+  },
+  {
+   "handle": "@nerdwriter1",
+   "group": "creator"
+  },
+  {
+   "id": "UClUA1p4Cyzz2IMJoXCQu6eQ",
+   "group": "creator"
+  },
+  {
+   "id": "UCl3tRSkISghtUQrGLzz-vBg",
+   "group": "creator"
+  },
+  {
+   "id": "UCVxcLBQn1mxteBJ8UFFzZgw",
+   "group": "creator"
+  },
+  {
+   "id": "UCwnluLaEH-ESIfLj7klGmPw",
+   "group": "creator"
+  },
+  {
+   "id": "UCjEN3UivGLEsLfuAN57y_Vw",
+   "group": "creator"
+  },
+  {
+   "id": "UCM-3ayB6HFZDFvWBIbAJK8A",
+   "group": "creator"
+  },
+  {
+   "id": "UCR3UTy3YEmydPW3_lZ-67Bg",
+   "group": "creator"
+  },
+  {
+   "id": "UCD0yYUsx9vpuhu2dkk8_a9w",
+   "group": "edu"
+  },
+  {
+   "id": "UCYolUMkZFhOX_RLdcFVy3pQ",
+   "group": "edu"
+  },
+  {
+   "handle": "@MothLightMedia",
+   "group": "adjacent"
+  },
+  {
+   "handle": "@JacobGeller",
+   "group": "adjacent"
+  },
+  {
+   "handle": "@TheCulturalTutor",
+   "group": "creator"
+  },
+  {
+   "handle": "@marymcgillivray",
+   "group": "creator"
+  },
+  {
+   "handle": "@baumgartnerrestoration",
+   "group": "adjacent"
+  },
+  {
+   "handle": "@greatartcitiesexplained",
+   "group": "creator"
+  },
+  {
+   "handle": "@Hochelaga",
+   "group": "adjacent"
+  },
+  {
+   "handle": "@thearthistorybabes",
+   "group": "creator"
+  },
+  {
+   "id": "UCVDro8TZ8GiEj3B0RXBZhHw",
+   "group": "institution"
+  },
+  {
+   "handle": "@louisianachannel",
+   "group": "institution"
+  },
+  {
+   "handle": "@art21",
+   "group": "institution"
+  },
+  {
+   "handle": "@sothebys",
+   "group": "institution"
+  },
+  {
+   "handle": "@christies",
+   "group": "institution"
+  },
+  {
+   "handle": "@tate",
+   "group": "institution"
+  },
+  {
+   "handle": "@metmuseum",
+   "group": "institution"
+  },
+  {
+   "handle": "@MoMAvideos",
+   "group": "institution"
+  },
+  {
+   "handle": "@moma",
+   "group": "institution"
+  },
+  {
+   "handle": "@nationalgallery",
+   "group": "institution"
+  },
+  {
+   "handle": "@museodelprado",
+   "group": "institution"
+  },
+  {
+   "handle": "@gettymuseum",
+   "group": "institution"
+  },
+  {
+   "handle": "@rijksmuseum",
+   "group": "institution"
+  },
+  {
+   "handle": "@museedulouvre",
+   "group": "institution"
+  },
+  {
+   "handle": "@googleartsculture",
+   "group": "institution"
+  },
+  {
+   "handle": "@crashcourse",
+   "group": "edu-giant"
+  },
+  {
+   "handle": "@TEDEd",
+   "group": "edu-giant"
+  },
+  {
+   "handle": "@theschooloflifetv",
+   "group": "edu-giant"
+  },
+  {
+   "id": "UCp1AdynFojb-WMTFG6KTcsg",
+   "group": "faded"
+  },
+  {
+   "id": "UC-xeF1cZSlE2CWbKwc7on2g",
+   "group": "spanish"
+  },
+  {
+   "handle": "@AntonioGarciaVillaran",
+   "group": "spanish"
+  },
+  {
+   "handle": "@AcademiaPlay",
+   "group": "spanish"
+  }
+ ],
+ "searches": [
+  {
+   "q": "painting",
+   "duration": "medium",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "painting",
+   "duration": "long",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "art history",
+   "duration": "medium",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "art history",
+   "duration": "long",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "famous paintings",
+   "duration": "medium",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "artist documentary",
+   "duration": "long",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "masterpiece painting",
+   "duration": "medium",
+   "after": "2025-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "disturbing paintings",
+   "duration": "any",
+   "after": "2024-01-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "museum",
+   "duration": "medium",
+   "after": "2025-06-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "historia del arte",
+   "duration": "medium",
+   "after": "2025-01-01",
+   "lang": "es",
+   "tag": "discover"
+  },
+  {
+   "q": "art history",
+   "duration": "short",
+   "after": "2026-05-01",
+   "lang": "en",
+   "tag": "discover"
+  },
+  {
+   "q": "goya black paintings",
+   "duration": "medium",
+   "after": null,
+   "lang": "en",
+   "tag": "topic"
+  },
+  {
+   "q": "caravaggio",
+   "duration": "medium",
+   "after": null,
+   "lang": "en",
+   "tag": "topic"
+  },
+  {
+   "q": "hieronymus bosch",
+   "duration": "medium",
+   "after": null,
+   "lang": "en",
+   "tag": "topic"
+  },
+  {
+   "q": "mona lisa",
+   "duration": "medium",
+   "after": null,
+   "lang": "en",
+   "tag": "topic"
+  },
+  {
+   "q": "van gogh",
+   "duration": "medium",
+   "after": null,
+   "lang": "en",
+   "tag": "topic"
+  },
+  {
+   "q": "artemisia gentileschi",
+   "duration": "medium",
+   "after": null,
+   "lang": "en",
+   "tag": "topic"
+  }
+ ],
+ "channel_searches": [
+  "art history",
+  "paintings explained"
+ ],
+ "commons": [
+  {
+   "name": "saturn",
+   "search": "Goya Saturno devorando a su hijo Prado",
+   "must": [
+    "saturn"
+   ],
+   "width": 3840
+  },
+  {
+   "name": "fight",
+   "search": "Goya Duelo a garrotazos",
+   "must": [
+    "garrotazos"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "sabbath",
+   "search": "Goya El aquelarre gran cabrón",
+   "must": [
+    "aquelarre"
+   ],
+   "width": 3840
+  },
+  {
+   "name": "pilgrimage",
+   "search": "Goya La romería de San Isidro",
+   "must": [
+    "isidro"
+   ],
+   "width": 3840
+  },
+  {
+   "name": "dog",
+   "search": "Goya Perro semihundido",
+   "must": [
+    "perro"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "judith",
+   "search": "Goya Judith y Holofernes pinturas negras",
+   "must": [
+    "judith"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "soup",
+   "search": "Goya Dos viejos comiendo sopa",
+   "must": [
+    "sopa"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "two-old-men",
+   "search": "Goya Dos viejos pinturas negras",
+   "must": [
+    "viejos"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "leocadia",
+   "search": "Goya La Leocadia",
+   "must": [
+    "leocadia"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "atropos",
+   "search": "Goya Átropos Las Parcas",
+   "must": [
+    "parcas"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "holy-office",
+   "search": "Goya Peregrinación a la fuente de San Isidro Santo Oficio",
+   "must": [
+    "isidro"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "asmodea",
+   "search": "Goya Asmodea",
+   "must": [
+    "asmodea"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "men-reading",
+   "search": "Goya Hombres leyendo",
+   "must": [
+    "leyendo"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "women-laughing",
+   "search": "Goya Mujeres riendo",
+   "must": [
+    "riendo"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "arrieta",
+   "search": "Goya self-portrait with Doctor Arrieta",
+   "must": [
+    "arrieta"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "selfportrait-1815",
+   "search": "Goya autorretrato 1815 Prado",
+   "must": [
+    "autorretrato"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "lopez-portrait",
+   "search": "Vicente López Portaña retrato de Goya 1826",
+   "must": [
+    "goya"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "third-may",
+   "search": "Goya El tres de mayo de 1808",
+   "must": [
+    "mayo"
+   ],
+   "width": 3840
+  },
+  {
+   "name": "sleep-reason",
+   "search": "Goya El sueño de la razón produce monstruos",
+   "must": [
+    "sueño"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "milkmaid",
+   "search": "Goya La lechera de Burdeos",
+   "must": [
+    "lechera"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "rubens-saturn",
+   "search": "Rubens Saturno devorando a un hijo Prado",
+   "must": [
+    "rubens"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "quinta",
+   "search": "Quinta del Sordo",
+   "must": [
+    "quinta"
+   ],
+   "width": 1920
+  },
+  {
+   "name": "laurent-saturn",
+   "search": "Laurent Saturno Quinta del Sordo fotografía",
+   "must": [
+    "laurent"
+   ],
+   "width": 1920
+  },
+  {
+   "name": "laurent-quinta",
+   "search": "J. Laurent Quinta del Sordo Goya pinturas murales",
+   "must": [
+    "laurent"
+   ],
+   "width": 1920
+  },
+  {
+   "name": "expo-1878",
+   "search": "Exposition Universelle 1878 Trocadéro",
+   "must": [
+    "1878"
+   ],
+   "width": 1920
+  },
+  {
+   "name": "disasters",
+   "search": "Goya Desastres de la guerra grande hazaña con muertos",
+   "must": [
+    "hazaña"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "ferdinand",
+   "search": "Goya Fernando VII retrato manto real",
+   "must": [
+    "fernando"
+   ],
+   "width": 2560
+  },
+  {
+   "name": "prado-1900",
+   "search": "Museo del Prado fachada 1900 fotografía",
+   "must": [
+    "prado"
+   ],
+   "width": 1920
+  }
+ ]
+}

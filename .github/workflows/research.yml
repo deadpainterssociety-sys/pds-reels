@@ -1,0 +1,33 @@
+# Market research and image downloads for long-form videos (read-only YouTube API calls + Wikimedia Commons).
+# Triggered by a change to research/request.json. The results are encrypted with research/pubkey.pem and pushed to
+# the branch research-data (this repo is public; only the holder of the private key can read them).
+name: research
+on:
+  push:
+    paths: ["research/request.json"]
+  workflow_dispatch:
+concurrency: { group: research, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 automation/yt_research.py run research/request.json research-out
+      - name: Encrypt and push to research-data
+        if: always()
+        run: |
+          [ -d research-out ] || exit 0
+          tar czf r.tgz -C research-out .
+          openssl rand -out k.bin 32
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in r.tgz -out r.enc -pass file:k.bin
+          openssl pkeyutl -encrypt -pubin -inkey research/pubkey.pem -pkeyopt rsa_padding_mode:oaep -in k.bin -out key.enc
+          mkdir pub && split -b 45m -d r.enc pub/part- && mv key.enc pub/ && rm -f k.bin
+          cd pub && git init -q && git checkout -q -b research-data && git add -A
+          git -c user.name=github-actions -c user.email=41898282+github-actions[bot]@users.noreply.github.com commit -qm "research run ${{ github.run_id }}"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" research-data
