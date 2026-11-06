@@ -55,7 +55,8 @@ morning two reels to review. Until steps 5–7 are done, the posting message giv
 ## 5. YouTube (15 min)
 
 1. console.cloud.google.com → top bar → **New project** → name *DPS* → Create (and select it).
-2. Menu → APIs & Services → **Library** → search *YouTube Data API v3* → **Enable**.
+2. Menu → APIs & Services → **Library** → search *YouTube Data API v3* → **Enable**. Do the same for **YouTube Analytics API**
+   (the learning loop reads each Short's average % viewed, shares and subscribers from it).
 3. Menu → **Google Auth Platform** (OAuth consent screen) → Get started → app name *DPS Publisher*, your email →
    Audience **External** → finish. Then **Audience → Publish app** → status **In production**.
    ⚠️ Important: if it stays in *Testing*, the connection dies every 7 days.
@@ -64,7 +65,7 @@ morning two reels to review. Until steps 5–7 are done, the posting message giv
    **Client secret** → secret **`YT_CLIENT_SECRET`**.
 5. Open developers.google.com/oauthplayground → ⚙ (top right) → tick **Use your own OAuth credentials** → paste the
    Client ID and secret. On the left, in *Input your own scopes*, paste:
-   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly`
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly`
    → **Authorize APIs** → sign in with the Google account that owns the channel (pick the DPS channel if asked) →
    on "Google hasn't verified this app" click **Advanced → Go to DPS Publisher** → Allow.
 6. Click **Exchange authorization code for tokens** → copy the **Refresh token** → secret **`YT_REFRESH_TOKEN`**.
@@ -81,6 +82,9 @@ Your account must be a **professional** account (Business or Creator): Instagram
 3. Leave the app in Development mode — it works for your own account. If Meta says the account isn't a tester:
    App roles → Roles → **Instagram Testers** → add @thedeadpainterssociety, then accept the invite in Instagram
    (Settings → Apps and websites → Tester invites) and generate the token again.
+
+   For the learning loop, the token also needs the permission **instagram_manage_insights** (app → Permisos y funciones →
+   add it, then generate the token again). Without it, posting works but the brief has no Instagram numbers.
 
 ## 7. TikTok (20 min + TikTok's review)
 
@@ -120,7 +124,16 @@ A reel approved after its time goes out as soon as you approve it (until 23:00).
 if a reel is still waiting. Times live in `config.json` → `slots`.
 
 Telegram commands: `/status` · `/post` (publish approved now) · `/stories 3` · `/rule <text>` (a rule for all future
-reels) · `/pause` · `/resume`. Settings (times, platforms, buffer) live in `config.json`.
+reels) · `/brief` (the latest analysis brief) · `/pause` · `/resume`. Settings (times, platforms, buffer) live in `config.json`.
 
 If something breaks, the bot tells you with a link to the failed run. Mondays, setup-check renews the Instagram token
 and checks every connection.
+
+## The learning loop (from 6 Nov 2026)
+
+| When | What | You |
+|---|---|---|
+| every 3 h | `metrics`: each recent reel's YouTube + Instagram numbers go into a private data store (draft release *dps-data*); a 🔥 message when a reel takes off | — |
+| any time | send the bot a screenshot of TikTok Studio → Analytics → Content (TikTok isn't connected yet) | 📊 a screenshot a week |
+| Mon + Thu ~10:30 | `lab`: Claude reads all the numbers (LAB.md) and sends a brief: what worked, why, and 1–3 proposals (a playbook rule or a one-week test), each with ✅ / ❌ | ✅ / ❌ |
+| after ✅ | the rule goes into PLAYBOOK.md (or the test into EXPERIMENTS.md) and tonight's stories follow it | — |

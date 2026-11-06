@@ -33,6 +33,9 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   `hidden`). Never the same type three reels in a row. If you can't say the promise in one of these, the angle is weak:
   pick another. About one story in four may be a lesser-known painting with a dark or uncanny story.
 - Nudity in the painting → `meta.nude: true` and plan safe framing from the start (PLAYBOOK §1 "Nudes").
+- **A test running in `EXPERIMENTS.md`?** Give each new story the arm that keeps the two arms balanced (count the
+  stories that already have `"experiment": {"id": …}` for it; on a tie take A), follow that arm's instruction, and
+  record `"experiment": {"id": "E1", "arm": "A"}` in story.json. Everything else stays as the playbook says.
 - Slug: `painter-keyword` in lowercase ASCII (e.g. `caravaggio-goliath`).
 
 ### 2. Research and verify (this is what protects the channel)
@@ -165,6 +168,7 @@ changed. Do not reschedule.
 slug, voice "af_heart", lang "en-us", speed 0.92, tail 2.2
 hook_type "dark"|"time-gap"|"craft"|"sacred-strange"|"dark-legend"|"damage"|"hidden"     (PLAYBOOK §2)
 teaser    "≤ 48 characters, shown on the previous reel's NEXT card"
+experiment {id, arm} while a test runs (EXPERIMENTS.md)
 next      (optional) override the NEXT card text for THIS reel; false = no card (manual builds outside the schedule)
 meta      {painter, born, died, painting, year, museum, city, image (main image key), image_credit, nude?}
 cover     {question (<i>…</i>), name (PAINTER IN CAPS), work ("Title, year"), focus [x,y], span, at?, answered_by}

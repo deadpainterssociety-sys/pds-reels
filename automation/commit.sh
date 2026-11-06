@@ -4,7 +4,7 @@
 set -uo pipefail
 cd "$(dirname "$0")/.."
 msg=$1; shift
-paths=${*:-"stories schedule.json config.json automation/bot_state.json STORY_QUEUE.md PLAYBOOK.md pipeline/pronounce.json"}
+paths=${*:-"stories schedule.json config.json automation/bot_state.json STORY_QUEUE.md PLAYBOOK.md EXPERIMENTS.md pipeline/pronounce.json"}
 git config user.name "dps-bot"; git config user.email "dps-bot@users.noreply.github.com"
 for p in $paths; do [ -e "$p" ] && git add -A "$p"; done
 git diff --cached --quiet && { echo "nothing to commit"; exit 0; }

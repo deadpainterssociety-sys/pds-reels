@@ -4,7 +4,7 @@ usage: python tests/test_automation.py <dir with a finished reel's out/ files> [
 Copies the repo to a temp folder, fakes two built reels from those files, then walks through a few days:
 plan -> release upload/download -> Telegram review -> approve / change request / yes -> publish window -> posted.
 """
-import json, os, shutil, subprocess, sys, tempfile
+import csv, json, os, re, shutil, subprocess, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
@@ -24,7 +24,7 @@ open(os.path.join(bin_dir, "gh"), "w").write("#!/bin/sh\necho \"gh $*\" >> %s/gh
 os.chmod(os.path.join(bin_dir, "gh"), 0o755)
 
 ENV = {**os.environ, "PATH": bin_dir + ":" + os.environ["PATH"], "TELEGRAM_API": srv.url, "TELEGRAM_BOT_TOKEN": "123:abc",
-       "TELEGRAM_CHAT_ID": "42", "IG_API": srv.url, "IG_ACCESS_TOKEN": "IGOLD", "YT_OAUTH": srv.url, "YT_API": srv.url,
+       "TELEGRAM_CHAT_ID": "42", "IG_API": srv.url, "IG_ACCESS_TOKEN": "IGOLD", "YT_OAUTH": srv.url, "YT_API": srv.url, "YT_ANALYTICS_API": srv.url,
        "YT_CLIENT_ID": "cid", "YT_CLIENT_SECRET": "cs", "YT_REFRESH_TOKEN": "rt", "TIKTOK_API": srv.url, "TIKTOK_CLIENT_KEY": "ck",
        "TIKTOK_CLIENT_SECRET": "tcs", "TIKTOK_REFRESH_TOKEN": "rft.OLD", "GITHUB_API_URL": srv.url, "GITHUB_REPOSITORY": "o/r",
        "GITHUB_TOKEN": "ghs_test", "GH_PAT": "github_pat_test", "CLAUDE_CODE_OAUTH_TOKEN": "sk-ant-oat01-test\nwrapped", "POLL_SECONDS": "0.05", "GITHUB_OUTPUT": os.path.join(tmp, "out.txt")}
@@ -72,9 +72,10 @@ check("test-a.mp4" in names and "cover.jpg" in names and STATE["releases"][0]["d
 os.remove(os.path.join(W, "stories/test-a/out/test-a.mp4"))
 run("automation/release.py", "download", "test-a")
 check(os.path.getsize(os.path.join(W, "stories/test-a/out/test-a.mp4")) == os.path.getsize(os.path.join(src_out, f"{src_slug}.mp4")), "master downloaded intact")
-os.remove(os.path.join(W, "stories/test-a/out/test-a.mp4")); os.remove(os.path.join(W, "stories/test-a/out/stills.jpg"))
+for f in ("test-a.mp4", "stills.jpg", "qa.txt"):
+    if os.path.exists(os.path.join(W, "stories/test-a/out", f)): os.remove(os.path.join(W, "stories/test-a/out", f))
 run("automation/release.py", "download-publish", "test-a")
-check(os.path.exists(os.path.join(W, "stories/test-a/out/test-a.mp4")) and not os.path.exists(os.path.join(W, "stories/test-a/out/stills.jpg")),
+check(os.path.exists(os.path.join(W, "stories/test-a/out/test-a.mp4")) and not os.path.exists(os.path.join(W, "stories/test-a/out/qa.txt")),
       "publishing fetches only the video, cover and captions")
 
 print("\n3. Review on Telegram")
@@ -247,6 +248,57 @@ json.dump({"status": "draft", "validated_at": "2026-12-09T03:00:00+01:00"}, open
 shutil.rmtree(os.path.join(W, "stories", "t2-c", "out"), ignore_errors=True)    # like a fresh runner: no files of older stories
 r, o = run("automation/validate.py", now="2026-12-10T03:00")
 check(state("t2-c")["status"] == "draft" and "t2-c" not in r.stdout, "an older, already-checked story is left alone")
+
+print("\n15. Learning loop: metrics -> table -> brief -> ✅ applies it")
+sch = json.load(open(os.path.join(W, "schedule.json")))
+for i in range(5):
+    x = f"t5-{i}"; fake_story(x, f"Painter {i}")
+    sch.append({"date": "2026-12-20", "slug": x})
+    json.dump({"status": "posted", "posted_at": "2026-12-20T14:00:00+01:00", "youtube": {"id": f"YT{i}"}, "instagram": {"id": f"IGM{i}"}},
+              open(os.path.join(W, "stories", x, "state.json"), "w"))
+json.dump(sch, open(os.path.join(W, "schedule.json"), "w"))
+STATE["yt_views"] = {"YT0": 900, "YT1": 1000, "YT2": 1100, "YT3": 950, "YT4": 6000}
+r, _ = run("automation/metrics.py", "collect", now="2026-12-21T10:00")          # 20 h after posting
+check(r.returncode == 0 and re.search(r"collected \d+ reels", r.stdout) and "t5-4" in json.dumps(json.loads(STATE["assets"][max(a["id"] for rel in STATE["releases"] if rel["name"] == "dps-data" for a in rel["assets"] if a["name"] == "metrics.json")])["reels"]), f"collect: reels from YouTube + Instagram ({r.stdout[-160:]} {r.stderr[-200:]})")
+r, _ = run("automation/metrics.py", "collect", now="2026-12-21T18:00")          # 28 h
+check(any("taking off" in c["body"].get("text", "") for c in srv.tg("sendMessage")), "🔥 alert for the reel at 5× the usual views")
+d = os.path.join(W, "lab"); r, _ = run("automation/metrics.py", "pull", d, now="2026-12-21T18:05")
+m = json.load(open(os.path.join(d, "metrics.json")))
+yt = m["reels"]["t5-4"]["youtube"]["snapshots"]; ig = m["reels"]["t5-4"]["instagram"]["snapshots"]
+check(len(yt) == 2 and yt[-1]["avg_view_pct"] == 41.5 and ig[-1]["shares"] is not None and ig[-1]["avg_watch_s"] == 15.5,
+      "snapshots carry views, % viewed, shares, saves, watch time")
+r, _ = run("automation/metrics.py", "tiktok-add", "t5-1", '{"views": 2000, "likes": 90, "shares": 12, "watched_full_pct": 22.5}', d, now="2026-12-22T10:00")
+r, _ = run("automation/metrics.py", "table", d)
+rows = list(csv.DictReader(open(os.path.join(d, "table.csv"))))
+r4 = next(x for x in rows if x["slug"] == "t5-4")
+check(len(rows) >= 5 and r4["youtube_views_24h"] and r4["hook_type"] and rows and any(x.get("tiktok_views_24h") or x.get("tiktok_shares_saves_per_1k") for x in rows),
+      f"table.csv: {len(rows)} reels, views at 24 h interpolated, TikTok numbers included")
+STATE["yt_no_analytics"] = True; STATE["ig_no_insights"] = True
+r, _ = run("automation/metrics.py", "collect", now="2026-12-21T21:00")
+m = json.loads(STATE["assets"][max(a["id"] for rel in STATE["releases"] if rel["name"] == "dps-data" for a in rel["assets"] if a["name"] == "metrics.json")])
+check("yt-analytics.readonly" in m["notes"].get("youtube_analytics", "") and "instagram_manage_insights" in m["notes"].get("instagram_insights", ""),
+      "missing permissions are noted (and the brief will say what to do)")
+STATE["yt_no_analytics"] = False; STATE["ig_no_insights"] = False
+json.dump({"summary": "Two strong days. t5-4 did 6,000 views in a day.", "proposals": [
+    {"kind": "rule", "title": "Open on the face", "change": "The first shot is a face close-up.", "why": "faces hold", "evidence": "n=5", "confidence": "medium"},
+    {"kind": "experiment", "title": "Question vs statement hook", "change": "Alternate", "why": "unclear", "confidence": "low",
+     "experiment": {"id": "E1", "question": "Question or statement hook?", "a": "hook as a question", "b": "hook as a statement", "metric": "YouTube avg % viewed"}}]},
+          open(os.path.join(d, "brief.json"), "w"))
+n0 = len(srv.tg("sendMessage")); r, _ = run("automation/lab.py", "publish", d, now="2026-12-24T10:20")
+msgs = srv.tg("sendMessage")[n0:]
+check(r.returncode == 0 and len(msgs) == 3 and "lab:2026-12-24:P1:y" in json.dumps(msgs[1]["body"]), f"brief sent: summary + 2 proposals with ✅/❌ ({r.stderr[-200:]})")
+srv.push({"callback_query": {"id": "cbP1", "data": "lab:2026-12-24:P1:y", "message": {"message_id": 300, "chat": {"id": 42}}}})
+srv.push({"callback_query": {"id": "cbP2", "data": "lab:2026-12-24:P2:y", "message": {"message_id": 301, "chat": {"id": 42}}}})
+srv.push({"message": {"chat": {"id": 42, "type": "private"}, "photo": [{"file_id": "small"}, {"file_id": "AgACbigfile123"}]}})
+run("automation/bot.py", "poll", now="2026-12-24T11:00")
+pb = open(os.path.join(W, "PLAYBOOK.md")).read(); ex = open(os.path.join(W, "EXPERIMENTS.md")).read()
+check("brief 2026-12-24 P1) The first shot is a face close-up." in pb, "✅ on a rule: added to the playbook")
+check("| E1 | Question or statement hook? | hook as a question | hook as a statement |" in ex, "✅ on a test: it starts in EXPERIMENTS.md")
+names = [a["name"] for rel in STATE["releases"] if rel["name"] == "dps-data" for a in rel["assets"]]
+check(any(n.startswith("tiktok-") for n in names) and "brief-2026-12-24.json" in names, "TikTok screenshot and brief stored privately")
+srv.push({"callback_query": {"id": "cbP1b", "data": "lab:2026-12-24:P1:y", "message": {"message_id": 300, "chat": {"id": 42}}}})
+run("automation/bot.py", "poll", now="2026-12-24T11:05")
+check(open(os.path.join(W, "PLAYBOOK.md")).read().count("The first shot is a face close-up.") == 1, "a second tap doesn't add it twice")
 
 print(f"\n{'ALL GOOD' if not fails else str(len(fails)) + ' FAILED'} — temp repo: {W}")
 sys.exit(1 if fails else 0)

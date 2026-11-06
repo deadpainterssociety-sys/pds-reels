@@ -107,6 +107,43 @@ def download(slug, only=None, files=None):
         open(os.path.join(out_dir(slug), a["name"]), "wb").write(data); print("downloaded", a["name"], len(data) // 1024, "KB")
 
 
+# ---------- private data store (draft release "dps-data"): metrics, briefs, TikTok screenshots ----------
+DATA = "dps-data"
+
+
+def data_release():
+    for page in range(1, 6):
+        for r in gh("GET", f"/repos/{REPO}/releases?per_page=100&page={page}"):
+            if r.get("name") == DATA or r.get("tag_name") == DATA: return r
+    return gh("POST", f"/repos/{REPO}/releases", {"tag_name": DATA, "name": DATA, "draft": True,
+                                                   "body": "Private data of the learning loop (metrics, briefs, TikTok screenshots). Draft = not public."})
+
+
+def data_list(prefix=""):
+    return [a["name"] for a in data_release().get("assets", []) if a["name"].startswith(prefix)]
+
+
+def data_get(name):
+    """bytes of a data file, or None"""
+    rel = data_release()
+    a = next((a for a in rel.get("assets", []) if a["name"] == name), None)
+    if not a: return None
+    class NoRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, *a, **k): return None
+    rq = urllib.request.Request(a["url"], headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Accept": "application/octet-stream"})
+    try: return urllib.request.build_opener(NoRedirect).open(rq, timeout=60).read()
+    except urllib.error.HTTPError as e:
+        if e.code not in (301, 302, 303, 307, 308): raise
+        return _fetch(e.headers["Location"])
+
+
+def data_put(name, data, ctype="application/json"):
+    rel = data_release()
+    for a in rel.get("assets", []):
+        if a["name"] == name: gh("DELETE", f"/repos/{REPO}/releases/assets/{a['id']}")
+    gh("POST", f"{rel['upload_url'].split('{')[0]}?name={name}", data, {"Content-Type": ctype})
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "download-publish": download(sys.argv[2], files=PUBLISH_FILES)
     else: {"upload": upload, "download": download, "upload-src": upload_src, "download-src": download_src}[sys.argv[1]](sys.argv[2])

@@ -22,6 +22,7 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       GH_TOKEN: ${{ github.token }}
+      GITHUB_TOKEN: ${{ github.token }}          # brief approvals + TikTok screenshots (private data release)
     steps:
       - uses: actions/checkout@v4
       - id: bot      # stays on the line ~55 min; GitHub queues the next run, so someone is (almost) always listening

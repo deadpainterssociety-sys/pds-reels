@@ -13,3 +13,6 @@ __pycache__/
 stories/*/src/
 !stories/night-watch-cut/src/
 build/
+
+# learning loop working files (private data lives in the dps-data draft release)
+lab/

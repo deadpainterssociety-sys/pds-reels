@@ -4,6 +4,7 @@ usage:
   python automation/bot.py review <slug> [--revised]   cover + 540p video with ✅ Publish / ❌ Skip / ✏️ Changes + captions + facts
   python automation/bot.py poll                        read button presses and messages -> update states; step outputs:
                                                          revise=[{"slug","feedback"}]  post_now=1  stories=<n>
+  python automation/bot.py brief [date]                the lab's latest brief, one ✅/❌ message per proposal
   python automation/bot.py listen [minutes]            the same, staying on the line (answers within seconds); starts
                                                          revisions/stories itself; stops early when a reel is due
   python automation/bot.py plan                        the upcoming reels (covers) after Claude writes new ones
@@ -113,7 +114,8 @@ def status_text():
 
 HELP = ("Commands:\n/status — what's scheduled\n/post — publish approved reels now\n/stories 3 — write 3 more stories now\n"
         "/idea &lt;painting — angle&gt; — have Claude write that one next\n"
-        "/rule &lt;text&gt; — a rule for all future reels\n/pause, /resume\n\nOn a reel: ✅ / ❌ / ✏️ buttons, or just reply "
+        "/rule &lt;text&gt; — a rule for all future reels\n/brief — the latest analysis brief again\n/pause, /resume\n\n"
+        "📊 Send a screenshot of TikTok Studio → Analytics → Content any time: it goes into the next brief.\n\nOn a reel: ✅ / ❌ / ✏️ buttons, or just reply "
         "<i>yes</i>, <i>no</i>, or what you want changed.")
 
 
@@ -130,6 +132,10 @@ def poll(emit=True):
             q = u["callback_query"]; cid = str(q["message"]["chat"]["id"])
             if cid != str(chat): T.answer(q["id"]); continue
             act, _, slug = q.get("data", "").partition(":")
+            if act == "lab":                                   # a proposal of the analysis brief: lab:<date>:<id>:y|n
+                d, pid, yn = (slug.split(":") + ["", "", ""])[:3]
+                T.answer(q["id"], "Applying…" if yn == "y" else "Dropped")
+                decide_proposal(chat, d, pid, yn == "y", q["message"]["message_id"]); continue
             if act == "noop" or not slug: T.answer(q["id"]); continue
             stt = state(slug)["status"]
             if stt not in ("sent", "built", "approved", "skipped"):
@@ -143,6 +149,8 @@ def poll(emit=True):
             continue
         msg = u.get("message") or {}
         text = (msg.get("text") or "").strip(); cid = str(msg.get("chat", {}).get("id", ""))
+        if (msg.get("photo") or (msg.get("document") or {}).get("mime_type", "").startswith("image/")) and cid == str(chat):
+            save_screenshot(chat, msg); continue
         if not text: continue
         if not chat and msg.get("chat", {}).get("type") == "private" and text.startswith("/start"):
             chat = bs["chat_id"] = cid
@@ -151,6 +159,7 @@ def poll(emit=True):
         low = text.lower().strip(" .!")
         if text.startswith("/start") or text.startswith("/help"): T.send(chat, HELP); continue
         if text.startswith("/status"): T.send(chat, status_text()); continue
+        if text.startswith("/brief"): send_brief(None); continue
         if text.startswith("/post"): post_now = True; T.send(chat, "📣 Publishing approved reels now…"); continue
         if text.startswith("/stories"):
             n = re.findall(r"\d+", text); stories = min(int(n[0]) if n else 2, 7)
@@ -182,6 +191,92 @@ def poll(emit=True):
     jsave(BS, bs)
     if emit: gh_output(revise=json.dumps(revise), post_now="1" if post_now else "", stories=str(stories) if stories else "", idea=idea.replace("\n", " "))
     return {"revise": revise, "post_now": post_now, "stories": stories, "idea": idea}
+
+
+# ---------------------------------------------------------------- learning loop (lab briefs, TikTok screenshots)
+def save_screenshot(chat, msg):
+    """a TikTok analytics screenshot -> private data release, read by the next brief"""
+    import release, urllib.request
+    fid = (msg["photo"][-1] if msg.get("photo") else msg["document"])["file_id"]
+    path = T.call("getFile", {"file_id": fid})["file_path"]
+    data = urllib.request.urlopen(f"{T.BASE}/file/bot{os.environ['TELEGRAM_BOT_TOKEN'].strip()}/{path}", timeout=60).read()
+    name = f"tiktok-{now().strftime('%Y-%m-%dT%H%M%S')}-{fid[-6:]}.jpg"
+    try: release.data_put(name, data, "image/jpeg")
+    except SystemExit as e: T.send(chat, f"⚠️ Couldn't store the screenshot: {T.esc(str(e)[:200])}"); return
+    T.send(chat, "📊 Got it. Those TikTok numbers go into the next brief (Mon/Thu).")
+
+
+def _brief(d):
+    import release
+    if not d:
+        names = sorted(release.data_list("brief-"))
+        if not names: return None, None
+        d = names[-1][len("brief-"):-len(".json")]
+    raw = release.data_get(f"brief-{d}.json")
+    return (d, json.loads(raw)) if raw else (d, None)
+
+
+def send_brief(d):
+    """the lab's brief: a summary, then one message per proposal with ✅ / ❌"""
+    d, b = _brief(d)
+    if not b: T.send(chat_id(), "No brief yet. The first one comes on the next Monday or Thursday."); return
+    T.send(chat_id(), f"🧪 <b>Brief · {nice_date(d)}</b>\n\n{T.esc(b.get('summary', ''))}")
+    for p in b.get("proposals", []):
+        dec = p.get("decision")
+        txt = (f"<b>{T.esc(p['id'])} · {T.esc(p.get('title', ''))}</b>"
+               + (f"  <i>({'test' if p.get('kind') == 'experiment' else 'rule'}, confidence: {T.esc(p.get('confidence', '?'))})</i>")
+               + f"\n\n<b>Change:</b> {T.esc(p.get('change', ''))}\n<b>Why:</b> {T.esc(p.get('why', ''))}"
+               + (f"\n<b>Data:</b> {T.esc(p['evidence'])}" if p.get("evidence") else "")
+               + (f"\n\n{'✅ applied' if dec == 'yes' else '❌ dropped'}" if dec else ""))
+        kb = None if dec else [[{"text": "✅ Apply", "callback_data": f"lab:{d}:{p['id']}:y"},
+                                {"text": "❌ No", "callback_data": f"lab:{d}:{p['id']}:n"}]]
+        T.send(chat_id(), txt, kb)
+
+
+def decide_proposal(chat, d, pid, yes, message_id=None):
+    import release
+    d, b = _brief(d)
+    p = next((x for x in (b or {}).get("proposals", []) if x["id"] == pid), None)
+    if not p: T.send(chat, "That proposal isn't in the brief any more."); return
+    if p.get("decision"):
+        T.send(chat, f"{pid} was already {'applied' if p['decision'] == 'yes' else 'dropped'}."); return
+    p["decision"] = "yes" if yes else "no"; p["decided_at"] = now().isoformat(timespec="seconds")
+    if yes:
+        if p.get("kind") == "experiment": start_experiment(d, p)
+        else:
+            pb = os.path.join(ROOT, "PLAYBOOK.md"); txt = open(pb).read()
+            line = f"- ({today()}, from data · brief {d} {pid}) {p['change']}"
+            txt = txt.replace("<!-- new rules go here -->", line + "\n<!-- new rules go here -->"); open(pb, "w").write(txt)
+            if p.get("concludes"): finish_experiment(p["concludes"], f"{p['change']} (brief {d})")
+    release.data_put(f"brief-{d}.json", json.dumps(b, indent=1, ensure_ascii=False).encode())
+    if message_id:
+        try: T.buttons_only(chat, message_id, [[{"text": "✅ applied" if yes else "❌ dropped", "callback_data": "noop"}]])
+        except Exception: pass
+    T.send(chat, ("🧪 Test started: tonight's stories alternate the two versions." if p.get("kind") == "experiment"
+                  else "📌 In the playbook: every new reel follows it from tonight.") if yes else f"❌ {pid} dropped.")
+
+
+EXP = "EXPERIMENTS.md"
+
+
+def start_experiment(d, p):
+    e = p.get("experiment") or {}
+    path = os.path.join(ROOT, EXP); txt = open(path).read() if os.path.exists(path) else ""
+    row = (f"| {e.get('id', p['id'])} | {e.get('question', p.get('title', ''))} | {e.get('a', '')} | {e.get('b', '')} | "
+           f"{e.get('metric', '')} | {today()} | {e.get('reels', 14)} reels |")
+    txt = txt.replace("<!-- running -->", row + "\n<!-- running -->"); open(path, "w").write(txt)
+
+
+def finish_experiment(eid, result):
+    path = os.path.join(ROOT, EXP)
+    if not os.path.exists(path): return
+    lines = open(path).read().split("\n"); keep, done = [], None
+    for l in lines:
+        if l.startswith(f"| {eid} |") and done is None: done = l; continue
+        keep.append(l)
+    txt = "\n".join(keep)
+    if done: txt = txt.replace("<!-- finished -->", done.rstrip(" |") + f" | {today()}: {result} |\n<!-- finished -->")
+    open(path, "w").write(txt)
 
 
 def _git(*a):
@@ -270,6 +365,7 @@ if __name__ == "__main__":
     elif cmd == "poll": poll(); nudge()
     elif cmd == "listen": listen(sys.argv[2] if len(sys.argv) > 2 else 45)
     elif cmd == "plan": plan()
+    elif cmd == "brief": send_brief(sys.argv[2] if len(sys.argv) > 2 else None)
     elif cmd == "posted": posted(sys.argv[2])
     elif cmd == "say":
         if chat_id(): T.send(chat_id(), sys.argv[2])

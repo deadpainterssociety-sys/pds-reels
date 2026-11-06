@@ -10,6 +10,8 @@ check on Telegram. Free to run (GitHub Actions + open-source models); the storie
 any    inbox     listens to Telegram (answers in seconds); ✏️ / any text = Claude revises and re-sends (revise workflow)
 14:00  inbox     first approved reel -> Instagram Reels, YouTube Shorts, TikTok (inbox draft until TikTok's audit)
 21:00  inbox     second approved reel -> same
+every 3 h  metrics  each reel's numbers -> private data store (🔥 alert when one takes off)
+Mon+Thu  lab     Claude analyses the numbers (LAB.md) -> brief on Telegram with ✅/❌ per proposed formula change
 Mon    setup-check   renews the Instagram token, checks every connection, tells you if anything is broken
 ```
 

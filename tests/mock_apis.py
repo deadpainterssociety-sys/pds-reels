@@ -40,6 +40,7 @@ class H(BaseHTTPRequestHandler):
         CALLS.append({"method": method, "path": u.path, "query": q, "body": body, "headers": dict(self.headers), "size": len(raw)})
         p = u.path; port = self.server.server_address[1]
         # ---------- Telegram ----------
+        if p.startswith("/file/bot"): return self.reply(None, raw=b"\xff\xd8\xff fake tiktok screenshot")
         m = re.match(r"/bot([^/]+)/(\w+)", p)
         if m:
             meth = m.group(2)
@@ -50,6 +51,7 @@ class H(BaseHTTPRequestHandler):
             if meth == "answerCallbackQuery": return self.reply({"ok": True, "result": True})
             if meth == "editMessageReplyMarkup": return self.reply({"ok": True, "result": True})
             if meth == "sendMediaGroup": return self.reply({"ok": True, "result": [{"message_id": 1}]})
+            if meth == "getFile": return self.reply({"ok": True, "result": {"file_path": "photos/file_1.jpg"}})
             STATE["msg"] += 1
             return self.reply({"ok": True, "result": {"message_id": STATE["msg"]}})
         # ---------- Instagram ----------
@@ -58,6 +60,15 @@ class H(BaseHTTPRequestHandler):
         if p.endswith("/me/accounts") and STATE.get("no_pages"): return self.reply({"data": []})
         if p.endswith("/me/accounts"): return self.reply({"data": [{"name": "Dead Painters Society", "instagram_business_account": {"id": "17841", "username": "thedeadpainterssociety"}}]})
         if p.endswith("/17841") and method == "GET": return self.reply({"id": "17841", "username": "thedeadpainterssociety"})
+        m2 = re.match(r".*/(IGM\w+)/insights$", p)
+        if m2:
+            if STATE.get("ig_no_insights"): return self.reply({"error": {"message": "(#10) Application does not have permission for this action"}}, 400)
+            v = STATE.get("ig_views", {}).get(m2.group(1), 500)
+            return self.reply({"data": [{"name": k, "values": [{"value": x}]} for k, x in
+                                        [("views", v), ("reach", int(v * .8)), ("likes", v // 20), ("comments", 2), ("shares", v // 100), ("saved", v // 200), ("ig_reels_avg_watch_time", 15500)]]})
+        if re.match(r".*/IGM\w+$", p) and method == "GET": return self.reply({"like_count": 25, "comments_count": 2})
+        if (p.endswith("/17841/media") or p.endswith("/me/media")) and method == "GET":
+            return self.reply({"data": STATE.get("ig_media", [])})
         if p.endswith("/17841/media"): return self.reply({"id": "container1"})
         if p.endswith("/17841/media_publish"): return self.reply({"id": "media1"})
         if p.endswith("/me/media"): return self.reply({"id": "container1"})
@@ -67,7 +78,17 @@ class H(BaseHTTPRequestHandler):
         if p == "/refresh_access_token": return self.reply({"access_token": "IGNEW", "expires_in": 5184000})
         # ---------- YouTube ----------
         if p == "/token": return self.reply({"access_token": "ya29.test"})
-        if p.startswith("/youtube/v3/channels"): return self.reply({"items": [{"snippet": {"title": "Dead Painters Society"}}]})
+        if p.startswith("/youtube/v3/channels"):
+            return self.reply({"items": [{"snippet": {"title": "Dead Painters Society"}, "contentDetails": {"relatedPlaylists": {"uploads": "UU1"}}}]})
+        if p.startswith("/youtube/v3/playlistItems"): return self.reply({"items": STATE.get("yt_uploads", [])})
+        if p.startswith("/youtube/v3/videos") and method == "GET":
+            ids = q.get("id", "").split(",")
+            return self.reply({"items": [{"id": i, "statistics": {"viewCount": str(STATE.get("yt_views", {}).get(i, 1000)), "likeCount": "40", "commentCount": "3"}} for i in ids if i]})
+        if p == "/v2/reports":
+            if STATE.get("yt_no_analytics"): return self.reply({"error": {"code": 403, "message": "insufficient scope"}}, 403)
+            ids = q.get("filters", "").replace("video==", "").split(",")
+            return self.reply({"columnHeaders": [{"name": n} for n in ("video", "views", "averageViewPercentage", "averageViewDuration", "shares", "subscribersGained", "likes", "comments")],
+                               "rows": [[i, STATE.get("yt_views", {}).get(i, 1000), 41.5, 25, 6, 2, 40, 3] for i in ids if i]})
         if p.startswith("/upload/youtube/v3/videos"): return self.reply({}, headers={"Location": f"http://127.0.0.1:{port}/yt-session/1"})
         if p == "/yt-session/1": return self.reply({"id": "YTVID1", "status": {"privacyStatus": "public"}})
         # ---------- TikTok ----------
@@ -80,16 +101,20 @@ class H(BaseHTTPRequestHandler):
         # ---------- GitHub releases ----------
         if p == "/repos/o/r/releases" and method == "GET": return self.reply(STATE["releases"])
         if p == "/repos/o/r/releases" and method == "POST":
-            rel = {"id": 1, "name": body["name"], "tag_name": body["tag_name"], "draft": body.get("draft"), "assets": [],
-                   "upload_url": f"http://127.0.0.1:{port}/uploads/repos/o/r/releases/1/assets{{?name,label}}"}
+            rid = len(STATE["releases"]) + 1
+            rel = {"id": rid, "name": body["name"], "tag_name": body["tag_name"], "draft": body.get("draft"), "assets": [],
+                   "upload_url": f"http://127.0.0.1:{port}/uploads/repos/o/r/releases/{rid}/assets{{?name,label}}"}
             STATE["releases"].append(rel); return self.reply(rel, 201)
-        if p == "/uploads/repos/o/r/releases/1/assets":
+        m = re.match(r"/uploads/repos/o/r/releases/(\d+)/assets", p)
+        if m:
+            rel = STATE["releases"][int(m.group(1)) - 1]
             aid = STATE["aid"]; STATE["aid"] += 1; STATE["assets"][aid] = raw
-            STATE["releases"][0]["assets"].append({"id": aid, "name": q["name"], "url": f"http://127.0.0.1:{port}/repos/o/r/releases/assets/{aid}"})
+            rel["assets"].append({"id": aid, "name": q["name"], "url": f"http://127.0.0.1:{port}/repos/o/r/releases/assets/{aid}"})
             return self.reply({"id": aid}, 201)
         m = re.match(r"/repos/o/r/releases/assets/(\d+)", p)
         if m and method == "DELETE":
-            aid = int(m.group(1)); STATE["releases"][0]["assets"] = [a for a in STATE["releases"][0]["assets"] if a["id"] != aid]
+            aid = int(m.group(1))
+            for rel in STATE["releases"]: rel["assets"] = [a for a in rel["assets"] if a["id"] != aid]
             return self.reply({}, 204, raw=b"")
         if m: return self.reply({}, 302, headers={"Location": f"http://127.0.0.1:{port}/signed/{m.group(1)}"}, raw=b"")
         m = re.match(r"/signed/(\d+)", p)
