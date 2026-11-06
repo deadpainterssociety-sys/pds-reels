@@ -1,6 +1,6 @@
 {
- "status": "approved",
- "updated": "2026-11-06T10:15:29+01:00",
+ "status": "posted",
+ "updated": "2026-11-06T14:06:06+01:00",
  "validated_at": "2026-11-05T11:30:00+01:00",
  "note": "restored 5 Nov: wrongly dropped by the nightly re-check",
  "review_message": 79,
@@ -8,5 +8,19 @@
  "feedback": [
   "The skull thing is a bit unclear. The view from the side where the skull finally appears is a bit too close up, which may make some people confused. I’m missing a picture from the side but from a bit far away (you see the whole painting and the tiny skull from the side which seems to pop out in 3D. Check if there is a public image of a picture of the painting from the side but a bit more far away. If not, it’s fine as it is"
  ],
- "approved_at": "2026-11-06T10:15:29+01:00"
+ "approved_at": "2026-11-06T10:15:29+01:00",
+ "instagram": {
+  "id": "18111204287346447",
+  "url": "https://www.instagram.com/reel/DfZq5duD1_n/"
+ },
+ "youtube": {
+  "id": "aAktQjqKk7o",
+  "url": "https://youtube.com/shorts/aAktQjqKk7o"
+ },
+ "tiktok": {
+  "skipped": "not set up yet (TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN)",
+  "manual": true
+ },
+ "posted_at": "2026-11-06T14:04:45+01:00",
+ "manual_sent": true
 }
