@@ -83,13 +83,24 @@ def main(weekly=False):
                 "the yt-analytics.readonly scope (SETUP step 5)" if ("403" in str(e) or "401" in str(e)) else str(e)[:150])
     if has("IG_ACCESS_TOKEN"):
         try:
-            instagram.req("GET", f"{instagram.uid()}/insights", metric="reach", period="day")
-            row(True, "Instagram numbers (learning loop)", "insights readable")
+            import glob
+            mids = sorted(((json.load(open(f)).get("posted_at") or "", (json.load(open(f)).get("instagram") or {}).get("id"))
+                           for f in glob.glob(os.path.join(ROOT, "stories", "*", "state.json"))), reverse=True)
+            mid = next((m for _, m in mids if m), None)
+            if mid:   # what the loop actually reads: a reel's own insights
+                r = instagram.req("GET", f"{mid}/insights", metric="views,reach,shares,saved")
+                row(True, "Instagram numbers (learning loop)", "reel insights readable (" + ", ".join(
+                    f"{d['name']} {(d.get('values') or [{}])[0].get('value')}" for d in r.get("data", [])) + ")")
+            else:
+                instagram.req("GET", f"{instagram.uid()}/insights", metric="reach", period="day")
+                row(True, "Instagram numbers (learning loop)", "insights readable")
         except Exception as e:
             ti = instagram.token_info()
             has_perm = [x for x in ti.get("scopes") or [] if "insights" in x]
-            what = (f" — this token is a {ti.get('type', '?').lower().replace('_', ' ')} token of the app '{ti.get('app')}' with: "
-                    f"{', '.join(ti.get('scopes') or []) or 'no permissions listed'}") if ti.get("scopes") is not None else ""
+            what = (f" — this token is a {str(ti.get('type') or '?').lower().replace('_', ' ')} token of the app '{ti.get('app')}' with: "
+                    f"{', '.join(ti.get('scopes') or []) or 'no permissions listed'}") if ti.get("scopes") is not None else \
+                   (f" — (couldn't read the token's permissions: {ti['error']})" if ti.get("error") else "")
+            what += f" — Meta said: {str(e)[:220]}"
             if has_perm: what += " — the insights permission IS there, so Meta refuses for another reason: " + str(e)[:160]
             row(None, "Instagram numbers (learning loop)", ("not yet: the token needs instagram_manage_insights" + what)
                 if ("permission" in str(e).lower() or "(#10)" in str(e) or "(#200)" in str(e)) else str(e)[:150] + what)
