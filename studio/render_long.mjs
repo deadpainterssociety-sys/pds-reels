@@ -35,9 +35,12 @@ for (let i = 0; i < N; i++) {
   await render(f, a, b, `chunk ${i + 1}/${N}`);
 }
 const patches = (process.env.PATCH || "").split(",").filter(Boolean).map((r) => r.split("-").map(Number));
+const built = fs.statSync(path.join(sdir, "build", "resolved.json")).mtimeMs;
 for (const [a, b] of patches) {
   if (!(a >= 0 && b >= a && b < total)) throw new Error(`bad PATCH range ${a}-${b} (the video has ${total} frames)`);
-  await render(path.join(cdir, `patch-${a}-${b}.mp4`), a, b, `patch ${a}-${b}`);
+  const f = path.join(cdir, `patch-${a}-${b}.mp4`);   // a patch rendered after the last build_story is current: keep it
+  if (fs.existsSync(f) && fs.statSync(f).mtimeMs > built) { console.log(`patch ${a}-${b} already done`); continue; }
+  await render(f, a, b, `patch ${a}-${b}`);
 }
 const list = path.join(cdir, "list.txt"); fs.writeFileSync(list, parts.map((p) => `file '${p}'`).join("\n") + "\n");
 const joined = path.join(cdir, "joined.mp4");
@@ -58,8 +61,12 @@ const probe = JSON.parse(spawnSync("ffprobe", ["-v", "error", "-select_streams",
   "-of", "json", joined], { encoding: "utf8" }).stdout || "{}");
 const cs = (probe.streams || [])[0] || {}, full = cs.color_range === "pc";
 const graph = []; let cur = "0:v";
-patches.forEach(([a], i) => {   // each patch starts exactly on its frame; outside it the old picture passes through
-  graph.push(`[${i + 2}:v]setpts=PTS-STARTPTS+(${a}/${fps})/TB[p${i}]`, `[${cur}][p${i}]overlay=eof_action=pass:repeatlast=0[o${i}]`); cur = `o${i}`;
+// Each patch starts exactly on its frame; outside it the old picture passes through. overlay wants yuva420p for the
+// patch: convert with the range stated, or swscale squeezes full-range values into limited range (washed-out blacks).
+const rng = full ? "pc" : "tv";
+patches.forEach(([a], i) => {
+  graph.push(`[${i + 2}:v]setpts=PTS-STARTPTS+(${a}/${fps})/TB,scale=in_range=${rng}:out_range=${rng},format=yuva420p[p${i}]`,
+    `[${cur}][p${i}]overlay=eof_action=pass:repeatlast=0[o${i}]`); cur = `o${i}`;
 });
 if (full) {
   graph.push(`[${cur}]colorspace=space=bt709:ispace=${cs.color_space === "bt709" ? "bt709" : "bt470bg"}:range=tv:irange=pc:primaries=bt709:iprimaries=bt709:trc=bt709:itrc=bt709:format=yuv420p[v]`);

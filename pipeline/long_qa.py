@@ -61,11 +61,14 @@ grab = dict(zip(frames, got)); scores = []
 for n, p in want.items():
     if n not in grab: continue
     x = np.asarray(Image.open(grab[n]).convert("RGB"), np.float32); y = np.asarray(Image.open(p).convert("RGB").resize((480, 270), Image.BILINEAR), np.float32)
-    mse = float(((x - y) ** 2).mean()); psnr = 99 if mse == 0 else 10 * np.log10(255 ** 2 / mse); scores.append((psnr, n / FPS))
+    mse = float(((x - y) ** 2).mean()); psnr = 99 if mse == 0 else 10 * np.log10(255 ** 2 / mse)
+    scores.append((psnr, n / FPS, float(x.mean() - y.mean())))
 scores.sort()
-print(f"frames vs stills: {len(scores)} compared, worst {scores[0][0]:.1f} dB at {scores[0][1]:.2f} s, median {scores[len(scores) // 2][0]:.1f} dB")
-for s, t in scores:
-    if s < 24: problems.append(f"frame at {t:.2f} s differs from its still ({s:.1f} dB)")
+med = scores[len(scores) // 2][0]
+print(f"frames vs stills: {len(scores)} compared, worst {scores[0][0]:.1f} dB at {scores[0][1]:.2f} s, median {med:.1f} dB, "
+      f"largest brightness shift {max(abs(d) for *_, d in scores):.1f}/255")
+for s, t, d in scores:   # a stale still also shows up here: re-run preview_stills.py, then look again
+    if s < min(24, med - 9) or abs(d) > 4: problems.append(f"frame at {t:.2f} s differs from its still ({s:.1f} dB, brightness {d:+.1f})")
 
 # ---------- sound: offset against the mix, loudness
 if a: run(["ffmpeg", "-v", "error", "-y", "-i", video, "-map", "0:a", "-ac", "1", "-ar", "44100", f"{tmp}/a.wav"])
