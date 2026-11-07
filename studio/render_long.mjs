@@ -41,7 +41,19 @@ const summary = meter.slice(meter.lastIndexOf("Summary:"));
 const I = Number((summary.match(/I:\s+(-?[\d.]+) LUFS/) || [])[1]), TP = Number((summary.match(/Peak:\s+(-?[\d.]+) dBFS/) || [])[1]);
 const gain = Number.isFinite(I) && Number.isFinite(TP) ? Math.min(0, -14 - I, -1 - TP) : 0;
 console.log(`mix ${I} LUFS, true peak ${TP} dBTP -> gain ${gain.toFixed(1)} dB`);
-execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", joined, "-i", mix, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+// Remotion's chunks come out full-range BT.601 (its frames are JPEGs). YouTube and most players expect limited-range
+// BT.709, so convert once here (exact colour math, one x264 "medium" pass of ~20 min for 10 minutes; the Shorts are
+// brought to limited range by finalize.py's re-encode). Chunks that are already standard are copied untouched.
+const probe = JSON.parse(spawnSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=color_range,color_space",
+  "-of", "json", joined], { encoding: "utf8" }).stdout || "{}");
+const cs = (probe.streams || [])[0] || {};
+const video = cs.color_range === "pc"
+  ? ["-vf", `colorspace=space=bt709:ispace=${cs.color_space === "bt709" ? "bt709" : "bt470bg"}:range=tv:irange=pc:primaries=bt709:iprimaries=bt709:trc=bt709:itrc=bt709:format=yuv420p`,
+     "-c:v", "libx264", "-preset", "medium", "-crf", String(process.env.CRF_FINAL || 19),
+     "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv"]
+  : ["-c:v", "copy"];
+console.log(cs.color_range === "pc" ? "video: full-range BT.601 -> limited BT.709 (one x264 pass)" : "video: already standard, copied");
+execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", joined, "-i", mix, "-map", "0:v", "-map", "1:a", ...video,
   ...(gain < -0.05 ? ["-af", `volume=${gain.toFixed(2)}dB`] : []), "-c:a", "aac", "-b:a", "320k", "-shortest", "-movflags", "+faststart", out]);
 fs.rmSync(joined, { force: true });   // the chunks stay (a fix re-renders only its chunk); the silent join is not needed again
 console.log(`${id}: ${parts.length} chunks joined -> ${out}`);

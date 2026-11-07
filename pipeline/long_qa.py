@@ -30,7 +30,10 @@ fps = eval(v["r_frame_rate"]); vd = float(v.get("duration", 0)); ad = float(a.ge
 print(f"video {v['codec_name']} {v['width']}x{v['height']} {fps:g} fps {v['pix_fmt']} {vd:.2f} s, {v.get('nb_frames')} frames, "
       f"{int(v.get('bit_rate', 0)) / 1e6:.1f} Mb/s · audio {a and a['codec_name']} {a and a['sample_rate']} Hz {a and a['channels']} ch {ad:.2f} s · "
       f"file {int(pr['format']['size']) / 1e6:.0f} MB")
+print(f"colour: range {v.get('color_range')}, matrix {v.get('color_space')}, primaries {v.get('color_primaries')}, transfer {v.get('color_transfer')}")
 if (v["codec_name"], v["width"], v["height"], round(fps, 3), v["pix_fmt"]) != ("h264", 1920, 1080, 24.0, "yuv420p"): problems.append("video stream is not 1080p24 yuv420p H.264")
+if (v.get("color_range"), v.get("color_space"), v.get("color_primaries"), v.get("color_transfer")) != ("tv", "bt709", "bt709", "bt709"):
+    problems.append("colour is not tagged limited-range BT.709")
 if not a or a["codec_name"] != "aac": problems.append("no AAC audio")
 if abs(vd - D) > 0.1 or abs(ad - D) > 0.1: problems.append(f"length: video {vd:.2f} s, audio {ad:.2f} s, story {D:.2f} s")
 with open(video, "rb") as f:   # top-level boxes: moov must come before mdat (YouTube starts processing sooner)
@@ -51,13 +54,13 @@ seams = [f for c in cuts if c > 0 for f in (c - 1, c)]
 chap = [round((o["t0"] + 1.6) * FPS) for o in rs["overlays"] if o["type"] == "chapter"]
 frames = sorted(set(want) | set(seams) | set(chap))
 sel = "+".join(f"eq(n\\,{n})" for n in frames)
-run(["ffmpeg", "-v", "error", "-i", video, "-vf", f"select='{sel}',scale=480:270", "-fps_mode", "passthrough", "-q:v", "3", f"{tmp}/f%04d.jpg"])
-got = sorted(glob.glob(f"{tmp}/f*.jpg"))
+run(["ffmpeg", "-v", "error", "-i", video, "-vf", f"select='{sel}',scale=480:270,format=rgb24", "-fps_mode", "passthrough", f"{tmp}/f%04d.png"])
+got = sorted(glob.glob(f"{tmp}/f*.png"))
 if len(got) != len(frames): problems.append(f"extracted {len(got)} frames, wanted {len(frames)}")
 grab = dict(zip(frames, got)); scores = []
 for n, p in want.items():
     if n not in grab: continue
-    x = np.asarray(Image.open(grab[n]).convert("L"), np.float32); y = np.asarray(Image.open(p).convert("L").resize((480, 270), Image.BILINEAR), np.float32)
+    x = np.asarray(Image.open(grab[n]).convert("RGB"), np.float32); y = np.asarray(Image.open(p).convert("RGB").resize((480, 270), Image.BILINEAR), np.float32)
     mse = float(((x - y) ** 2).mean()); psnr = 99 if mse == 0 else 10 * np.log10(255 ** 2 / mse); scores.append((psnr, n / FPS))
 scores.sort()
 print(f"frames vs stills: {len(scores)} compared, worst {scores[0][0]:.1f} dB at {scores[0][1]:.2f} s, median {scores[len(scores) // 2][0]:.1f} dB")
