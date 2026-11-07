@@ -35,6 +35,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 7 Nov 2026 | klimt-adele | Klimt, *Adele Bloch-Bauer I* (Neue Galerie, New York) | seized by the Nazis in 1938, renamed "Lady in Gold" to hide she was Jewish; niece Maria Altmann sued, won it back in 2006 | damage |
 | 7 Nov 2026 | bocklin-isle | Böcklin, *Isle of the Dead*, 3rd version 1883 (Alte Nationalgalerie, Berlin) | a widow's "picture to dream on"; Hitler bought the 1883 version, hung it at the Berghof, then the Reich Chancellery | dark |
 | 8 Nov 2026 | vaneyck-arnolfini | Van Eyck, *The Arnolfini Portrait* (National Gallery) | the two men in the mirror, one in red probably van Eyck; "Jan van Eyck was here"; Panofsky's witness theory, now doubted | hidden |
+| 9 Nov 2026 | gericault-medusa | Géricault, *The Raft of the Medusa* (Louvre) | 150 on a raft cut loose, 15 alive; Géricault painted severed limbs from the morgue as they rotted; hedged severed head on the roof | dark |
+| 9 Nov 2026 | vaneyck-justjudges | Van Eyck, *Ghent Altarpiece*, *Just Judges* panel (St Bavo's Cathedral, Ghent) | stolen April 1934; 1 million francs ransom; St John returned in a Brussels luggage locker; Goedertier's deathbed claim; 1945 copy with Leopold III's face; never found | damage |
 
 ## Ideas (to verify)
 
@@ -47,9 +49,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
 | Fuseli, *The Nightmare* (Detroit Institute of Arts) | the demon on the sleeping woman; the scene echoed in *Frankenstein* | dark | lesser-known-ish; the Mary Shelley link is a scholarly reading: hedge |
 | Velázquez, *Las Meninas* (Prado) | the knight's cross on his chest was added after the painting was finished | hidden | when and by whom; "the king painted it" is legend |
-| Van Eyck, *Ghent Altarpiece* (St Bavo's Cathedral, Ghent) | the *Just Judges* panel was stolen in 1934 and never found | damage | crime; most-stolen artwork claims need care |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
-| Géricault, *The Raft of the Medusa* (Louvre) | the real shipwreck: 15 survivors out of ~150 | dark | dark: not next to another dark one |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
 | Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | hidden | |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |

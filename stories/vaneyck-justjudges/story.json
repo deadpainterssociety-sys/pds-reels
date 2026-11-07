@@ -1,0 +1,720 @@
+{
+ "slug": "vaneyck-justjudges",
+ "hook_type": "damage",
+ "teaser": "The stolen panel that was never found",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Jan and Hubert van Eyck",
+  "born": 1390,
+  "died": 1441,
+  "painting": "The Ghent Altarpiece (The Just Judges panel)",
+  "year": "1432",
+  "museum": "St Bavo's Cathedral",
+  "city": "Ghent",
+  "image": "altar",
+  "image_credit": "St Bavo's Cathedral, Ghent, via Wikimedia Commons (public domain)"
+ },
+ "say": {
+  "1432": "fourteen thirty-two",
+  "1934": "nineteen thirty-four",
+  "1945": "nineteen forty-five"
+ },
+ "ipa": {
+  "Goedertier": "ɡˈuːdəɹtiːɹ",
+  "Arsène": "ɑːɹsˈɛn",
+  "Ghent": "ɡˈɛnt",
+  "Bavo's": "bˈɑːvoʊz",
+  "Eyck": "ˈaɪk"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "These judges are a *copy.*",
+     0.4,
+     0.9
+    ],
+    [
+     "The real ones were stolen,",
+     0.3,
+     0.93
+    ],
+    [
+     "never *found.*",
+     0.75,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "altar",
+   "perf": [
+    [
+     "This is the Ghent Altarpiece,",
+     0.3,
+     0.95
+    ],
+    [
+     "by the van Eyck brothers,",
+     0.25,
+     0.95
+    ],
+    [
+     "finished in 1432.",
+     0.7,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "theft",
+   "perf": [
+    [
+     "One night in April 1934,",
+     0.3,
+     0.94
+    ],
+    [
+     "a thief took its lower left panel",
+     0.3,
+     0.94
+    ],
+    [
+     "from the cathedral.",
+     0.7,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "ransom",
+   "perf": [
+    [
+     "Then the bishop got a ransom note:",
+     0.3,
+     0.94
+    ],
+    [
+     "one million Belgian *francs.*",
+     0.7,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "proof",
+   "perf": [
+    [
+     "To prove he had it,",
+     0.25,
+     0.95
+    ],
+    [
+     "he returned the saint painted on its back,",
+     0.3,
+     0.94
+    ],
+    [
+     "in a luggage locker at a Brussels station.",
+     0.7,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "refuse",
+   "perf": [
+    [
+     "Belgium refused to pay.",
+     0.75,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "broker",
+   "perf": [
+    [
+     "That November, a broker named Arsène Goedertier",
+     0.25,
+     0.94
+    ],
+    [
+     "collapsed after a political speech.",
+     0.4,
+     0.94
+    ],
+    [
+     "Dying, he told his lawyer",
+     0.25,
+     0.93
+    ],
+    [
+     "only he knew where it was.",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "papers",
+   "perf": [
+    [
+     "In his papers:",
+     0.3,
+     0.94
+    ],
+    [
+     "copies of the ransom letters.",
+     0.4,
+     0.93
+    ],
+    [
+     "But no panel.",
+     0.75,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "copy",
+   "perf": [
+    [
+     "In 1945, a copy filled the gap.",
+     0.4,
+     0.94
+    ],
+    [
+     "Its painter gave one judge",
+     0.25,
+     0.94
+    ],
+    [
+     "the face of Belgium's *king.*",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Nobody knows if the real judges",
+     0.2,
+     0.93
+    ],
+    [
+     "still *exist.*",
+     0.75,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in St. Bavo's Cathedral, in Ghent.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "altar": {
+   "file": "src/altar.jpg",
+   "commons": "File:Lamgods open.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "judges": [
+     0.055,
+     0.8
+    ],
+    "panel": [
+     0.055,
+     0.78
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "god": [
+     0.5,
+     0.17
+    ],
+    "lamb": [
+     0.5,
+     0.67
+    ],
+    "faces": [
+     0.075,
+     0.77
+    ]
+   }
+  },
+  "judges": {
+   "file": "src/judges.jpg",
+   "commons": "File:Ghent Altarpiece E - Just Judges (original painting).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ],
+    "front": [
+     0.45,
+     0.6
+    ],
+    "faces": [
+     0.6,
+     0.52
+    ]
+   }
+  },
+  "goedertier": {
+   "file": "src/goedertier.jpg",
+   "commons": "File:Arsène Goedertier - Lam Gods - België.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "leopold": {
+   "file": "src/leopold.jpg",
+   "commons": "File:Leopold III van België (1934).jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.3
+    ]
+   }
+  },
+  "poster": {
+   "file": "src/poster.jpg",
+   "commons": "File:Rechtvaardige rechters parket oproep.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "left": [
+     0.3,
+     0.5
+    ],
+    "john": [
+     0.65,
+     0.5
+    ],
+    "text": [
+     0.5,
+     0.8
+    ]
+   },
+   "credit": "Photo: Vdkdaan, CC BY-SA 3.0, via Wikimedia Commons"
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "altar",
+   "from": "judges@2.6",
+   "to": "judges@2.8",
+   "sway": 0.005
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "altar",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.9-0.05",
+   "img": "altar",
+   "from": "center@0.45",
+   "to": "center@0.43",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "altar-0.08",
+   "img": "altar",
+   "from": "god@1.7",
+   "to": "god@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "altar.10-0.05",
+   "img": "altar",
+   "from": "lamb@1.8",
+   "to": "lamb@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "theft-0.08",
+   "img": "poster",
+   "from": "center@0.95",
+   "to": "center@1.0",
+   "kind": "image",
+   "gray": 1,
+   "dim": 0.1
+  },
+  {
+   "at": "theft.5-0.05",
+   "img": "poster",
+   "from": "left@1.6",
+   "to": "left@1.75",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "ransom-0.08",
+   "img": "judges",
+   "from": "front@1.1",
+   "to": "front@1.2",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "ransom.7-0.05",
+   "img": "judges",
+   "from": "faces@1.7",
+   "to": "faces@1.85",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "proof-0.08",
+   "img": "poster",
+   "from": "john@1.6",
+   "to": "john@1.75",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "refuse-0.08",
+   "img": "judges",
+   "from": "center@1.05",
+   "to": "center@1.0",
+   "kind": "image",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "broker-0.08",
+   "img": "goedertier",
+   "from": "face@0.5",
+   "to": "face@0.53",
+   "kind": "image",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "broker.12-0.05",
+   "img": "judges",
+   "from": "faces@2.0",
+   "to": "faces@2.15",
+   "kind": "image",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "papers-0.08",
+   "img": "poster",
+   "from": "text@1.5",
+   "to": "text@1.6",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "papers.8-0.05",
+   "img": "poster",
+   "from": "left@1.3",
+   "to": "left@1.4",
+   "kind": "image",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "copy-0.08",
+   "img": "altar",
+   "from": "panel@2.3",
+   "to": "panel@2.45",
+   "sway": 0.004
+  },
+  {
+   "at": "copy.7-0.05",
+   "img": "leopold",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "judges",
+   "from": "front@1.4",
+   "to": "front@1.5",
+   "kind": "image",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "altar",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "altar",
+   "from": "judges@2.2",
+   "to": "judges@2.4",
+   "sway": 0.005
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "theft",
+   "to": "ransom-0.1",
+   "text": "POLICE NOTICE · 12 APRIL 1934"
+  },
+  {
+   "type": "credit",
+   "from": "theft",
+   "to": "ransom-0.1",
+   "text": "PHOTO: VDKDAAN · CC BY-SA 3.0"
+  },
+  {
+   "type": "label",
+   "from": "ransom",
+   "to": "proof-0.1",
+   "text": "THE ORIGINAL · OLD PHOTO"
+  },
+  {
+   "type": "label",
+   "from": "proof",
+   "to": "refuse-0.1",
+   "text": "ITS BACK · ST JOHN THE BAPTIST"
+  },
+  {
+   "type": "credit",
+   "from": "proof",
+   "to": "refuse-0.1",
+   "text": "PHOTO: VDKDAAN · CC BY-SA 3.0"
+  },
+  {
+   "type": "label",
+   "from": "broker",
+   "to": "broker.12-0.1",
+   "text": "ARSÈNE GOEDERTIER · 1876–1934"
+  },
+  {
+   "type": "label",
+   "from": "papers",
+   "to": "copy-0.1",
+   "text": "THE MISSING PANEL"
+  },
+  {
+   "type": "credit",
+   "from": "papers",
+   "to": "copy-0.1",
+   "text": "PHOTO: VDKDAAN · CC BY-SA 3.0"
+  },
+  {
+   "type": "label",
+   "from": "copy",
+   "to": "copy.7-0.1",
+   "text": "THE COPY · VAN DER VEKEN, 1945"
+  },
+  {
+   "type": "label",
+   "from": "copy.7",
+   "to": "payoff-0.1",
+   "text": "LEOPOLD III · KING, 1934–1951"
+  },
+  {
+   "type": "stamp",
+   "to": "papers$+0.3",
+   "text": "NEVER FOUND",
+   "from": "papers.9"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "ST BAVO'S CATHEDRAL · GHENT"
+  }
+ ],
+ "music": {
+  "transpose": -1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "theft-0.2",
+    "papers$+0.2"
+   ],
+   "drop": [
+    "refuse-0.05",
+    "refuse$+0.3"
+   ],
+   "choir": [
+    "payoff.6-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "theft.6",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "ransom.8",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "papers.9",
+   "fx": "impact",
+   "gain": 0.45
+  }
+ ],
+ "nocap": [],
+ "cover": {
+  "question": "Where are <i>the real judges?</i>",
+  "name": "JAN VAN EYCK",
+  "work": "The Ghent Altarpiece, 1432",
+  "focus": [
+   0.065,
+   0.78
+  ],
+  "span": 0.42,
+  "answered_by": "nobody knows: the panel was stolen in 1934, the man who claimed to know where it was died, and it was never found; a 1945 copy hangs in its place"
+ },
+ "rights": {
+  "creator_died": 1441,
+  "note": "Jan van Eyck d. 1441 (Hubert d. 1426): public domain. The Just Judges in the current photo is Jef Van der Veken's 1945 copy of a 15th-century panel (Commons: public domain). Pre-1934 photo of the original PD; Goedertier photo PD (late 19th c.); Leopold III photo 1934 Willem van de Poll CC0; 1934 police notice photo CC BY-SA 3.0 (Vdkdaan) -> credited."
+ },
+ "facts": [
+  {
+   "claim": "The Just Judges panel in the altarpiece today is a copy; the original was stolen in 1934 and has never been found",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges ; https://www.brusselstimes.com/49026/missing-van-eyck-panel-in-a-tunnel-under-ghent-the-end-of-belgium-s-biggest-mystery ; https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/"
+  },
+  {
+   "claim": "The Ghent Altarpiece is attributed to the brothers Hubert and Jan van Eyck; Jan completed it in 1432",
+   "source": "https://en.wikipedia.org/wiki/Ghent_Altarpiece"
+  },
+  {
+   "claim": "Stolen on the night of 10 (to 11) April 1934 from St Bavo's Cathedral, Ghent: the lower left panel (Just Judges, with St John the Baptist on its reverse)",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges ; https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/ ; https://commons.wikimedia.org/wiki/File:Rechtvaardige_rechters_parket_oproep.jpg (1934 police notice: 'la nuit du 10 au 11 avril 1934 … le panneau gauche')"
+  },
+  {
+   "claim": "The Bishop of Ghent received a ransom demand of one million Belgian francs",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges (citing Charney, Stealing the Mystic Lamb, 2010) ; https://www.futilitycloset.com/category/crime/page/18"
+  },
+  {
+   "claim": "As proof, the ransomer returned the St John the Baptist part, found in a luggage locker at Brussels North station",
+   "source": "https://www.vrt.be/vrtnws/en/2024/04/10/the-mystery-of-the-disappearance-of-the-just-judges-90-years-on/ ; https://en.wikipedia.org/wiki/The_Just_Judges"
+  },
+  {
+   "claim": "The government refused to pay",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges (citing Charney 2010)"
+  },
+  {
+   "claim": "In late November 1934 Arsène Goedertier (a broker, 1876–1934) collapsed after a speech at a political meeting; dying, he told his lawyer Georges de Vos that he alone knew where the panel was; he died 25 November 1934",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges (citing Charney 2010; Guardian 2013) ; https://www.futilitycloset.com/category/crime/page/18"
+  },
+  {
+   "claim": "His lawyer found carbon copies of the ransom letters among his papers, but no panel",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges ; https://www.futilitycloset.com/category/crime/page/18"
+  },
+  {
+   "claim": "Jef Van der Veken painted a replacement copy in 1945 and gave one of the judges the features of King Leopold III",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges (citing Schrever, Historiek, 2010)"
+  },
+  {
+   "claim": "Whether the original still exists is unknown (some believe it destroyed); the altarpiece is displayed in St Bavo's Cathedral, Ghent",
+   "source": "https://en.wikipedia.org/wiki/The_Just_Judges ; https://en.wikipedia.org/wiki/Ghent_Altarpiece"
+  }
+ ],
+ "caption": "On the night of 10 April 1934, a thief walked out of St Bavo's Cathedral in Ghent with the lower left panel of the Ghent Altarpiece, the van Eyck brothers' masterpiece finished in 1432. The panel showed the Just Judges on horseback, with St John the Baptist painted on its back.\n\nThe Bishop of Ghent then received a ransom demand: one million Belgian francs. To prove he had it, the thief returned St John the Baptist, left in a luggage locker at Brussels North station. Belgium refused to pay.\n\nThat November, a broker named Arsène Goedertier collapsed after a political speech. Dying, he told his lawyer that he alone knew where the panel was. In his papers: carbon copies of the ransom letters. But no panel.\n\nIn 1945 the restorer Jef Van der Veken painted a copy to fill the gap, and gave one judge the face of King Leopold III. The real Just Judges have never been found.\n\n🖤 Where do you think it is?",
+ "caption_short": "These judges are a copy. The real panel was stolen in 1934 and never found. 🖤",
+ "youtube_title": "Where are the real judges? | Van Eyck, Ghent Altarpiece",
+ "hashtags": [
+  "#vaneyck",
+  "#janvaneyck",
+  "#ghentaltarpiece",
+  "#justjudges",
+  "#stbavoscathedral",
+  "#ghent",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#arttheft"
+ ],
+ "hashtags_instagram": [
+  "#vaneyck",
+  "#ghentaltarpiece",
+  "#arthistory",
+  "#ghent",
+  "#arttheft"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vaneyck",
+  "#ghentaltarpiece",
+  "#mystery"
+ ]
+}
