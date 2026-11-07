@@ -122,6 +122,8 @@ YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
   machine; re-run the same command after a crash) and trims the sound to -14 LUFS / -1 dBTP, the level YouTube plays
   at (the mix itself is untouched). `pipeline/long_qa.py` checks the streams, every still against the finished video,
   the sound's offset and loudness, and draws a contact sheet of the chapter starts and chunk seams: look at it.
+  A small fix after the render (a card's text, one shot) needs no new chunk: `PATCH=a-b,c-d node render_long.mjs …`
+  re-renders only those frames and lays them over the old ones. Re-run `preview_stills.py` before `long_qa.py`.
 - **Shape.** A 30–50 s cold open on the most arresting image and one question → title card → 5–7 chapters with
   chapter cards, each ending on an open question → a twist near the middle → the payoff → the plain line
   "It hangs in the <Museum>, in <City>." → a 20 s end screen.
@@ -133,7 +135,9 @@ YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
 - **Topics.** A famous painting or painter with a true, sourced legend; first choice: stories whose Short did well
   on YouTube, or topics where an existing video already passed ~400K views.
 - **Facts and credits.** Every narrated claim in `facts`; hedges where sources hedge; CC images credited on screen
-  and in the description (`long_finalize.py` writes chapters, sources, credits and subtitles).
+  and in the description (`long_finalize.py` writes chapters, sources, credits and subtitles). A quote card shows the
+  exact words of a cited source; for a translation, the words of a translation a source prints (the narration may
+  paraphrase). Check the cards against the sources before the long render.
 - **Funnel.** Cut two Shorts from each long video and link them to it with YouTube's related-video field.
 - **Measure.** Click-through rate, average % viewed, views at 7 days, subscribers per 1,000 views — long videos are
   compared only with long videos.
