@@ -343,7 +343,7 @@ ov("label", A("c1d"), A("c1e", end=True), text="THE QUINTA DEL SORDO · c. 1900"
 ov("credit", A("c1d"), A("c1e", end=True), text="PHOTO: MANUEL ASENJO, c. 1900")
 ov("lower", A("c1g", off=0.2), A("c1g", "his", off=-0.2), text="Leocadia Weiss", sub="1788–1856")
 ov("label", A("c2a", off=0.3), A("c2c", end=True), text="SELF-PORTRAIT WITH DR ARRIETA · 1820 · MINNEAPOLIS INSTITUTE OF ART")
-ov("quote", A("c2d", "To"), A("c2d", end=True, off=0.4), text="Goya, grateful, to his friend Arrieta… at the end of the year 1819, at seventy-three years of age.",
+ov("quote", A("c2d", "To"), A("c2d", end=True, off=0.4), text="Goya thankful, to his friend Arrieta… at the end of 1819, at seventy-three years of age.",   # verbatim (NYU Medical Humanities translation)
    sub="INSCRIPTION ON THE PAINTING, 1820")
 ov("label", A("c3a", off=0.3), A("c3a", end=True), text="FOR COMPARISON · GOYA, THE MEADOW OF SAN ISIDRO, 1788")
 ov("label", A("c3b"), A("c3b", end=True), text="JUDITH AND HOLOFERNES ON THE WALL · J. LAURENT, 1874")
@@ -388,7 +388,7 @@ ov("credit", A("c6f", "Experts"), A("c6f", end=True, off=0.5), text="LEFT: J. LA
 ov("year", A("c6h", "The", 2, off=-0.2), A("c6h", end=True, off=0.6), text="1878")
 ov("label", A("c6i"), A("c6i", "next", off=-0.3), text="THE SPANISH SECTION · TROCADÉRO, PARIS · 1878")
 ov("credit", A("c6i"), A("c6i", "next", off=-0.3), text="PHOTO: WIKIMEDIA COMMONS / C. TEIXIDOR CADENAS · CC BY-SA 4.0")
-ov("quote", A("c6i", "a", 2, off=-0.2), A("c6i", end=True, off=0.6), text="A monster of immorality, impudence, and ingratitude.", sub="P. G. HAMERTON · THE PORTFOLIO · 1879")
+ov("quote", A("c6i", "a", 2, off=-0.2), A("c6i", end=True, off=0.6), text="Monster of immorality, impudence, and ingratitude.", sub="P. G. HAMERTON · THE PORTFOLIO · 1879")   # verbatim (The Met)
 ov("year", A("c6j"), A("c6j", "They", off=-0.1), text="1881")
 ov("year", A("c7a", off=0.0), A("c7a", "a", off=1.8), text="2003")
 ov("lower", A("c7a", "Juan", off=-0.1), A("c7a", "makes", off=1.0), text="Juan José Junquera", sub="ART HISTORIAN · 2003")
@@ -396,7 +396,7 @@ ov("stamp", A("c7a", "Goya", off=0.05), A("c7a", end=True, off=0.5), text="NOT G
 ov("pin", A("c7b", "If", off=0.1), A("c7b", end=True, off=0.4), text="THE FIRST FLOOR")
 ov("lower", A("c7d", "The", 1, off=-0.1), A("c7d", "said", 1, off=1.4), text="Nigel Glendinning", sub="GOYA SCHOLAR")
 ov("label", A("end1"), A("end2", end=True), text="THE DOG · c. 1820–23 · MUSEO DEL PRADO")
-ov("quote", A("end4", off=0.1), A("end4", end=True, off=0.6), text="The most beautiful picture in the world.", sub="ANTONIO SAURA, ON THE DOG")
+ov("quote", A("end4", off=0.1), A("end4", end=True, off=0.6), text="The world’s most beautiful picture.", sub="ANTONIO SAURA, ON THE DOG")   # verbatim in every source (narration paraphrases)
 ov("end", A("end7", end=True, off=1.0), A("end7", end=True, off=21.0), kicker="NEXT", text="")
 
 # ---------------------------------------------------------------- sound
@@ -428,7 +428,7 @@ FACTS = [
  {"claim": "An illness at 46 (1792-93) left Goya deaf", "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://en.wikipedia.org/wiki/Francisco_Goya"},
  {"claim": "Leocadia Weiss (1790-1856) lived with him at the Quinta with her daughter Rosario (b. 1814)", "source": "https://en.wikipedia.org/wiki/Francisco_Goya"},
  {"claim": "He wanted distance from the court of Ferdinand VII", "source": "https://en.wikipedia.org/wiki/Quinta_del_Sordo"},
- {"claim": "Late 1819 acute illness; Self-Portrait with Dr Arrieta (1820, Minneapolis Institute of Art) and its inscription", "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Dr_Arrieta"},
+ {"claim": "Late 1819 acute illness; Self-Portrait with Dr Arrieta (1820, Minneapolis Institute of Art) and its inscription (card: 'Goya thankful, to his friend Arrieta… at the end of 1819, at seventy-three years of age.')", "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Dr_Arrieta ; https://medhum.med.nyu.edu/view/10321 ; https://search.artsmia.org/id/1226"},
  {"claim": "14 murals in oil directly on the plaster of two rooms, c. 1820-23, painted over earlier rural scenes; never titled, signed or written about", "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son ; https://stephenphelan.co.uk/articles/the-black-paintings/"},
  {"claim": "Ground-floor/dining-room and first-floor arrangement (Brugada 1828, Yriarte 1867)", "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"},
  {"claim": "Saturn traditionally faced La Leocadia; the eyes were badly damaged and repainted", "source": "https://fundaciongoyaenaragon.es/eng/obra/saturno-devorando-a-un-hijo/660"},
@@ -438,7 +438,7 @@ FACTS = [
  {"claim": "Mariano gave the house to Javier in 1830 and inherited it again in 1854; bought by Émile d'Erlanger in 1873", "source": "https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"},
  {"claim": "J. Laurent photographed the murals in situ in 1874; transfer to canvas by Salvador Martínez Cubells, the Prado's chief restorer, with extensive repainting", "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son ; https://www.eeweems.com/goya/lubow5.html"},
  {"claim": "Witches' Sabbath was cut, possibly to fit a space in Paris; shown at the Trocadéro, 20 May - 10 Nov 1878; donated to the State (decree 20 Dec 1881)", "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"},
- {"claim": "Hamerton (The Portfolio, 1879) called Goya 'a monster of immorality, impudence, and ingratitude'", "source": "https://www.metmuseum.org/art/collection/search/626365"},
+ {"claim": "Hamerton (The Portfolio, 1879) called Goya a 'monster of immorality, impudence, and ingratitude'", "source": "https://www.metmuseum.org/art/collection/search/626365"},
  {"claim": "The house was demolished in 1909", "source": "https://en.wikipedia.org/wiki/Quinta_del_Sordo"},
  {"claim": "Junquera (2003): one-storey records, Javier as author, Mariano selling; Glendinning 'totally unconvinced'; the Prado accepts them", "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://www.eeweems.com/goya/lubow5.html"},
  {"claim": "Antonio Saura called The Dog 'the world's most beautiful picture'", "source": "https://en.wikipedia.org/wiki/The_Dog_(Goya) ; https://stephenphelan.co.uk/articles/the-black-paintings/"},
