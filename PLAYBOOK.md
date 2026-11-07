@@ -117,7 +117,11 @@ YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
 - **Cadence and length.** One long video a week (Thursday), 10–12 minutes, never under 8:00 (mid-roll ads). 16:9.
 - **Same show as the Shorts.** Same narrator voice and speed family, same procedural music, living 2.5D paintings,
   grain, serif type, red accent. `story.json` → `"format": "long"`; build with `plan → tts → align → build_story →
-  score → thumb → studio/render_long.mjs → long_finalize` (see `stories/goya-black-paintings/plan.py`).
+  score → thumb → studio/render_long.mjs → long_finalize → long_qa` (see `stories/goya-black-paintings/plan.py`).
+- **Render and check.** `render_long.mjs` renders six resumable chunks (≈ 1 h 45 min for 10 minutes on a 2-core
+  machine; re-run the same command after a crash) and trims the sound to -14 LUFS / -1 dBTP, the level YouTube plays
+  at (the mix itself is untouched). `pipeline/long_qa.py` checks the streams, every still against the finished video,
+  the sound's offset and loudness, and draws a contact sheet of the chapter starts and chunk seams: look at it.
 - **Shape.** A 30–50 s cold open on the most arresting image and one question → title card → 5–7 chapters with
   chapter cards, each ending on an open question → a twist near the middle → the payoff → the plain line
   "It hangs in the <Museum>, in <City>." → a 20 s end screen.

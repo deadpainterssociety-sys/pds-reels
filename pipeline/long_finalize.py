@@ -5,7 +5,7 @@ reads   build/resolved.json, build/timeline.json, build/video.mp4, story.json (y
 writes  out/<slug>.mp4 (the master, moov at the front), out/<slug>_review_720p.mp4, out/captions.srt,
         out/description.txt, out/chapters.txt, out/titles.txt
 """
-import json, os, re, subprocess, sys
+import json, os, re, shutil, subprocess, sys
 from paths import story_dir
 
 sdir = story_dir(sys.argv[1]); st = json.load(open(f"{sdir}/story.json")); slug = st["slug"]
@@ -30,16 +30,26 @@ for (a, _), (b, n) in zip(ch, ch[1:]):
     if b - a < 10: print(f"!! chapter '{n}' starts less than 10 s after the previous one")
 open(f"{out}/chapters.txt", "w").write(chapters + "\n")
 
-# ---------- subtitles: phrase-sized cues from the aligned words (<= 42 characters a line, <= 2 lines, 1-6 s)
+# ---------- subtitles: one cue per spoken phrase (from story.json), short phrases merged, long ones split in two
+perf = {l["id"]: [ph[0] for ph in l["perf"]] for l in st["lines"]}
 cues = []
 for l in tl["lines"]:
-    cur = []
-    for w in l["words"]:
-        txt = " ".join(x["w"] for x in cur + [w]).replace("*", "")
-        if cur and (len(txt) > 84 or w["s"] - cur[0]["s"] > 6): cues.append(cur); cur = []
-        cur.append(w)
-        if re.search(r"[.?!…]$|\.\.\.$", w["w"]) and len(" ".join(x["w"] for x in cur)) > 18: cues.append(cur); cur = []
-    if cur: cues.append(cur)
+    words = l["words"]; k = 0; groups = []
+    for ph in perf.get(l["id"], []):
+        n = len(ph.replace("...", "…").split()); groups.append(words[k:k + n]); k += n
+    if k < len(words): groups.append(words[k:])
+    merged = []
+    for g in groups:
+        if not g: continue
+        if merged and len(" ".join(x["w"] for x in merged[-1] + g)) <= 84 and g[-1]["e"] - merged[-1][0]["s"] <= 6.5 \
+                and not re.search(r"[.?!…]$|\.\.\.$", merged[-1][-1]["w"]):
+            merged[-1] = merged[-1] + g
+        else: merged.append(g)
+    for g in merged:
+        if len(" ".join(x["w"] for x in g)) > 84:   # split at the word boundary nearest the middle
+            best = min(range(1, len(g)), key=lambda i: abs(len(" ".join(x["w"] for x in g[:i])) - len(" ".join(x["w"] for x in g[i:]))))
+            cues += [g[:best], g[best:]]
+        else: cues.append(g)
 
 
 def srt_t(t):
@@ -71,6 +81,7 @@ for s in rs["shots"]:
     used |= {x for x in [s.get("img"), s.get("img2")] + list(s.get("imgs") or []) if x}
     for k in ("back", "left", "right", "front"): used |= set((s.get("room") or {}).get(k) or [])
 credits_pd, credits_cc = [], []
+custom = yt.get("credits")
 for k in sorted(used):
     m = src.get(k)
     if not m: continue
@@ -92,7 +103,7 @@ Sources
 """ + "\n".join(f"- {u}" for u in sources) + """
 
 Images (Wikimedia Commons)
-""" + "\n".join(f"- {c}" for c in credits_cc) + ("\n- Paintings and prints by Francisco de Goya and others: public domain (Museo del Prado, Minneapolis Institute of Art, The Met)." if credits_pd else "") + f"""
+""" + ("\n".join(f"- {c}" for c in custom) if custom else "\n".join(f"- {c}" for c in credits_cc) + ("\n- Paintings and prints by Francisco de Goya and others: public domain (Museo del Prado, Minneapolis Institute of Art, The Met)." if credits_pd else "")) + f"""
 
 Narration: synthetic voice. Music and sound: original, made for this channel.
 {' '.join(yt.get('hashtags', []))}
@@ -103,10 +114,14 @@ open(f"{out}/titles.txt", "w").write("\n".join(yt.get("titles", [])) + "\n")
 # ---------- master + review copy
 video = f"{sdir}/build/video.mp4"
 if os.path.exists(video):
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-c", "copy", "-movflags", "+faststart", f"{out}/{slug}.mp4"], check=True)
+    master = f"{out}/{slug}.mp4"   # render_long.mjs already wrote the moov atom first: a hard link costs no disk space
+    if os.path.exists(master): os.remove(master)
+    try: os.link(video, master)
+    except OSError: shutil.copy(video, master)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-vf", "scale=1280:720", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27",
-                    "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", f"{out}/{slug}_review_720p.mp4"], check=True)
-    print("master ->", f"{out}/{slug}.mp4")
+                    "-maxrate", "2200k", "-bufsize", "4400k", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart",
+                    f"{out}/{slug}_review_720p.mp4"], check=True)
+    print("master ->", master, f"({os.path.getsize(master) / 1e6:.0f} MB)")
 else:
     print("(no build/video.mp4 yet: render first)")
 print(f"chapters: {len(ch)} · subtitles: {len(lines)} cues · description: {len(desc)} characters")
