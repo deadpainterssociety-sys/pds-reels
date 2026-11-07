@@ -3,7 +3,7 @@
 usage: python pipeline/long_finalize.py <story>
 reads   build/resolved.json, build/timeline.json, build/video.mp4, story.json (youtube.titles, facts, src/sources.json)
 writes  out/<slug>.mp4 (the master, moov at the front), out/<slug>_review_720p.mp4, out/<slug>_upload_1080p.mp4 (only when
-        the master is over 480 MB: chat attachments stop at 500 MiB), out/captions.srt,
+        the master is over 380 MB: chat attachments stop at 400 MiB), out/captions.srt,
         out/description.txt, out/chapters.txt, out/titles.txt
 """
 import glob, json, os, re, shutil, subprocess, sys
@@ -125,15 +125,15 @@ if os.path.exists(video):
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", video, "-vf", "scale=1280:720", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27",
                         "-maxrate", "2200k", "-bufsize", "4400k", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", review], check=True)
     print("master ->", master, f"({os.path.getsize(master) / 1e6:.0f} MB)")
-    # Files sent in the chat must stay under 500 MiB. A bigger master also gets a 1080p upload copy sized to ~470 MB
-    # (two-pass x264, sound copied; YouTube re-encodes everything anyway, so the difference is hard to see).
+    # Files sent in the chat must stay under 400 MiB. A bigger master also gets a 1080p upload copy sized to ~370 MB
+    # (two-pass x264 'slow', sound copied; YouTube re-encodes everything anyway, so the difference is hard to see).
     upload = f"{out}/{slug}_upload_1080p.mp4"
-    if os.path.getsize(master) > 480e6 and not fresh(upload):
+    if os.path.getsize(master) > 380e6 and not fresh(upload):
         dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", master],
                                    capture_output=True, text=True).stdout)
-        vk = int((470e6 * 8 / dur - 330e3) / 1000)   # kb/s for the picture, leaving room for the 320k sound
+        vk = int((370e6 * 8 / dur - 330e3) / 1000)   # kb/s for the picture, leaving room for the 320k sound
         log = os.path.join(sdir, "build", "x264pass")
-        common = ["-map", "0:v", "-c:v", "libx264", "-preset", "medium", "-b:v", f"{vk}k", "-pix_fmt", "yuv420p", "-passlogfile", log,
+        common = ["-map", "0:v", "-c:v", "libx264", "-preset", "slow", "-b:v", f"{vk}k", "-pix_fmt", "yuv420p", "-passlogfile", log,
                   "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv"]
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", master, *common, "-pass", "1", "-an", "-f", "null", "/dev/null"], check=True)
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", master, *common, "-pass", "2", "-maxrate", f"{int(vk * 1.6)}k",
