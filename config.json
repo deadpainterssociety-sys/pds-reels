@@ -18,5 +18,7 @@
  "_cover_style": "Cover finish (pipeline/cover.py STYLES): A veil · B long veil · C frosted veil · D long veil, tight close-up · E warm frosted, tight close-up.",
  "nude_safe_framing": true,
  "_nude_safe_framing": "true = nudes are shown only in close-ups (YouTube may age-restrict them). Set false once Gigi confirms the Rokeby Venus Short was not restricted.",
- "paused": false
+ "paused": false,
+ "learning_platforms": ["youtube"],
+ "_learning_platforms": "Platforms whose numbers the learning loop reads and judges. YouTube only since 6 Nov 2026 (Gigi: what works on YouTube is the key; the other apps are noise)."
 }

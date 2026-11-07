@@ -7,12 +7,17 @@ proposals must be concrete, honest and backed by numbers. You run unattended: no
 Goal: reels with the highest viral potential — people stop scrolling (hook), watch to the end (retention), pass it on
 (shares + saves) and follow (follows per view). Views are the result; those four are the levers.
 
+**YouTube decides (Gigi, 6 Nov 2026).** What works on YouTube is the key; what works on other apps is noise. Judge every
+reel, every test and every proposal on YouTube numbers only. Instagram and TikTok numbers, when present, get at most
+one line of context and never count as evidence. Long videos (`features.format == "long"`) are judged apart from the
+Shorts: compare them only with each other (views at 7 days, average % viewed, subscribers per 1,000 views).
+
 ## Inputs (already downloaded into `lab/`)
 
 - `lab/metrics.json`: every posted reel — `features` (what it was: painting, museum, hook_type, hook wording, cover
   question, slot 14:00/21:00, weekday, length, experiment arm) and per platform `snapshots` taken over time
   (`age_h` = hours since posting). `notes` lists data that is missing because a permission is missing.
-- `lab/tiktok/*.jpg`: NEW TikTok Studio screenshots Gigi sent. Read each one (Read tool), match every video to a slug
+- `lab/tiktok/*.jpg` (optional, context only): TikTok Studio screenshots, if Gigi sent any. Read each one (Read tool), match every video to a slug
   (by date posted, title/cover text, thumbnail), and record what you can read, e.g.
   `python automation/metrics.py tiktok-add <slug> '{"views": 1234, "likes": 56, "comments": 3, "shares": 7, "saves": 4, "follows": 2, "avg_watch_s": 14.2, "watched_full_pct": 18.5, "at": "2026-11-09T10:00:00+01:00"}' lab`
   Only numbers you can actually read; `at` = when the screenshot was taken if visible, else now.
@@ -25,19 +30,18 @@ Goal: reels with the highest viral potential — people stop scrolling (hook), w
 1. `python automation/metrics.py table lab` → `lab/table.csv` (one row per reel; views at 24 h / 72 h / 7 d per platform,
    last known likes, comments, shares, saves, follows/subs, average % viewed / watch time, and per-1,000-view rates).
    Do the maths in Python (pandas is fine: `pip install pandas --break-system-packages -q`). Never estimate in prose.
-2. Compare like with like: the same platform and the same age (prefer 72 h; use 24 h for the newest reels). Each
-   platform has its own baseline: our **median**. A reel is a hit at ≥ 2× the median on views or on two of the four
-   levers, a miss at ≤ 0.5×.
-3. The four levers, per platform when available:
-   - hook: YouTube `avg_view_pct` (and swipe data if present), Instagram `avg_watch_s` / reach vs views, TikTok `watched_full_pct`
+2. Compare like with like on YouTube: the same format (Short vs long) and the same age (prefer 72 h; use 24 h for the
+   newest reels). The baseline is our YouTube **median**. A reel is a hit at ≥ 2× the median on views or on two of the
+   four levers, a miss at ≤ 0.5×.
+3. The four levers, on YouTube:
+   - hook: `avg_view_pct` (and swipe data if present)
    - retention: average watch time ÷ reel length
-   - shares + saves per 1,000 views
-   - follows (YouTube subs) per 1,000 views
+   - shares per 1,000 views
+   - subscribers gained per 1,000 views
 4. Patterns: compare groups by `hook_type`, hook length and wording style, cover question style, painting fame,
    museum, slot (14:00 vs 21:00), weekday, length. With small groups (< 4 reels) say "too early" instead of concluding.
 5. Running test (EXPERIMENTS.md): compare arm A vs arm B on its main metric. Conclude only when both arms have ≥ 5 reels
-   with 72 h data and the difference is ≥ 20 % and points the same way on at least two platforms; otherwise report the
-   interim numbers and keep it running.
+   with 72 h data on YouTube and the difference there is ≥ 20 %; otherwise report the interim numbers and keep it running.
 6. The playbook's standing rules are fixed and are never proposals: true, sourced stories with one throughline; the
    plain ending "It hangs in the …, in …"; no Vincent branding; painter dead 70+ years; English; the cover style D; the
    reels' own audio stays as it is (Gigi adds trending sounds in the apps); Gigi's dated rules in PLAYBOOK §4.
@@ -63,7 +67,8 @@ Goal: reels with the highest viral potential — people stop scrolling (hook), w
 - 0 to 3 proposals; fewer, better ones. Each `change` must be something the story writer can follow literally.
 - Propose a new test only when none is running (or the running one is concluded in this brief): one variable, two arms
   that are otherwise identical, a main metric, 14 reels (7 per arm, one week at two reels a day).
-- Missing data (permissions, no TikTok screenshots) goes into the summary in one line, with what Gigi needs to do.
+- Missing YouTube data (a permission, a broken token) goes into the summary in one line, with what Gigi needs to do.
+  Missing Instagram or TikTok data is not worth mentioning.
 
 `lab/brief.md`: the same brief as a readable page (for the record).
 

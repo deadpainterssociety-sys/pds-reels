@@ -11,7 +11,7 @@ times = sorted({round((s["t"] + e) / 2, 2) for s, e in zip(sh, ends)} | {float(x
 odir = os.path.join(sdir, "build", "stills")
 subprocess.run(["node", "stills.mjs", rs["slug"], ",".join(map(str, times)), odir], cwd=STUDIO, check=True)
 fs = sorted(glob.glob(os.path.join(odir, "*.jpg")), key=lambda f: float(os.path.basename(f)[:-4]))
-cols, tw, th = 8, 270, 480
+cols, tw, th = (5, 480, 270) if rs.get("format") == "long" else (8, 270, 480)
 rows = (len(fs) + cols - 1) // cols
 sheet = Image.new("RGB", (cols * tw, rows * (th + 22)), (16, 16, 16)); d = ImageDraw.Draw(sheet)
 for i, f in enumerate(fs):

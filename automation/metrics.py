@@ -53,7 +53,7 @@ def features(slug):
             "youtube_title": st.get("youtube_title"), "nude": bool(m.get("nude")), "words": words,
             "duration_s": s.get("duration_s"), "experiment": st.get("experiment"),
             "slot": slot_time(slug), "posted_at": posted, "weekday": pt.strftime("%a") if pt else None,
-            "posted_hour": pt.hour if pt else None, "manual": bool(s.get("manual"))}
+            "posted_hour": pt.hour if pt else None, "manual": bool(s.get("manual")), "format": st.get("format", "reel")}
 
 
 # ---------------------------------------------------------------- YouTube
@@ -138,8 +138,9 @@ def collect():
         slug = yt_ids[vid]; r = m["reels"][slug]
         age = (t - _parse(r["features"]["posted_at"])).total_seconds() / 3600
         r["youtube"].setdefault("snapshots", []).append({"at": _iso(t), "age_h": round(age, 1), **nums})
-    for slug in slugs:
+    for slug in slugs:   # Instagram numbers only when config.json "learning_platforms" lists it (6 Nov 2026: YouTube decides)
         r = m["reels"][slug]; mid = r.get("instagram", {}).get("id")
+        if "instagram" not in CONFIG.get("learning_platforms", ["youtube"]): notes.pop("instagram_insights", None); break
         if not mid or not os.environ.get("IG_ACCESS_TOKEN", "").strip(): continue
         try: nums = instagram_numbers(mid, notes)
         except Exception as e: print("instagram:", slug, e); continue

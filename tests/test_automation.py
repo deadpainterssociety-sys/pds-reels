@@ -258,6 +258,7 @@ for i in range(5):
               open(os.path.join(W, "stories", x, "state.json"), "w"))
 json.dump(sch, open(os.path.join(W, "schedule.json"), "w"))
 STATE["yt_views"] = {"YT0": 900, "YT1": 1000, "YT2": 1100, "YT3": 950, "YT4": 6000}
+set_cfg(learning_platforms=["youtube", "instagram"])                            # Instagram coverage kept; YouTube-only checked below
 r, _ = run("automation/metrics.py", "collect", now="2026-12-21T10:00")          # 20 h after posting
 check(r.returncode == 0 and re.search(r"collected \d+ reels", r.stdout) and "t5-4" in json.dumps(json.loads(STATE["assets"][max(a["id"] for rel in STATE["releases"] if rel["name"] == "dps-data" for a in rel["assets"] if a["name"] == "metrics.json")])["reels"]), f"collect: reels from YouTube + Instagram ({r.stdout[-160:]} {r.stderr[-200:]})")
 r, _ = run("automation/metrics.py", "collect", now="2026-12-21T18:00")          # 28 h
@@ -279,6 +280,11 @@ m = json.loads(STATE["assets"][max(a["id"] for rel in STATE["releases"] if rel["
 check("yt-analytics.readonly" in m["notes"].get("youtube_analytics", "") and "instagram_manage_insights" in m["notes"].get("instagram_insights", ""),
       "missing permissions are noted (and the brief will say what to do)")
 STATE["yt_no_analytics"] = False; STATE["ig_no_insights"] = False
+set_cfg(learning_platforms=["youtube"]); n_ig = len(srv.calls("/insights"))
+r, _ = run("automation/metrics.py", "collect", now="2026-12-21T22:00")
+m = json.loads(STATE["assets"][max(a["id"] for rel in STATE["releases"] if rel["name"] == "dps-data" for a in rel["assets"] if a["name"] == "metrics.json")])
+check(r.returncode == 0 and len(srv.calls("/insights")) == n_ig and "instagram_insights" not in m["notes"],
+      "YouTube decides (6 Nov 2026): with learning_platforms = youtube, no Instagram insights are read or noted")
 json.dump({"summary": "Two strong days. t5-4 did 6,000 views in a day.", "proposals": [
     {"kind": "rule", "title": "Open on the face", "change": "The first shot is a face close-up.", "why": "faces hold", "evidence": "n=5", "confidence": "medium"},
     {"kind": "experiment", "title": "Question vs statement hook", "change": "Alternate", "why": "unclear", "confidence": "low",

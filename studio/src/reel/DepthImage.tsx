@@ -29,8 +29,8 @@ const loadImg = (src: string) => new Promise<HTMLImageElement>((res, rej) => { c
 
 export const DepthImage: React.FC<{
   src: string; depth: string; iw: number; ih: number; pose: Pose; shift?: [number, number]; dolly?: number;
-  gray?: number; bright?: number; contrast?: number; bg?: [number, number, number];
-}> = ({ src, depth, iw, ih, pose, shift = [0, 0], dolly = 0, gray = 0, bright = 1, contrast = 1, bg = [0.04, 0.04, 0.04] }) => {
+  gray?: number; bright?: number; contrast?: number; bg?: [number, number, number]; fw?: number; fh?: number;
+}> = ({ src, depth, iw, ih, pose, shift = [0, 0], dolly = 0, gray = 0, bright = 1, contrast = 1, bg = [0.04, 0.04, 0.04], fw = W, fh = H }) => {
   const ref = useRef<HTMLCanvasElement>(null);
   const glRef = useRef<{ gl: WebGLRenderingContext; prog: WebGLProgram } | null>(null);
   const [handle] = useState(() => delayRender("depth-textures"));
@@ -61,14 +61,15 @@ export const DepthImage: React.FC<{
     })().catch((e) => { console.error(e); if (!done.current) { done.current = true; continueRender(handle); } });
     return () => { dead = true; };
   }, [src, depth]);
+  useEffect(() => () => { glRef.current?.gl.getExtension("WEBGL_lose_context")?.loseContext(); }, []);   // free the context on unmount
 
   useLayoutEffect(() => {
     const g = glRef.current; if (!g) return;
     const { gl, prog } = g; const u = (n: string) => gl.getUniformLocation(prog, n);
-    const pl = place(iw, ih, pose);
-    gl.viewport(0, 0, W, H);
+    const pl = place(iw, ih, pose, true, fw, fh);
+    gl.viewport(0, 0, fw, fh);
     gl.uniform4f(u("place"), pl.left, pl.top, pl.dw, pl.dh);
-    gl.uniform2f(u("res"), W, H);
+    gl.uniform2f(u("res"), fw, fh);
     gl.uniform2f(u("shift"), shift[0], shift[1]);
     gl.uniform1f(u("dolly"), dolly);
     gl.uniform2f(u("focus"), pose.x, pose.y);
@@ -78,5 +79,5 @@ export const DepthImage: React.FC<{
     gl.finish();
     if (ready && !done.current) { done.current = true; continueRender(handle); }
   });
-  return <canvas ref={ref} width={W} height={H} style={{ position: "absolute", left: 0, top: 0, width: W, height: H }} />;
+  return <canvas ref={ref} width={fw} height={fh} style={{ position: "absolute", left: 0, top: 0, width: fw, height: fh }} />;
 };

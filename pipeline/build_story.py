@@ -22,6 +22,7 @@ tl = json.load(open(os.path.join(sdir, "build", "timeline.json")))
 L = {l["id"]: l for l in tl["lines"]}
 pub = os.path.join(PUBLIC, "stories", slug); os.makedirs(pub, exist_ok=True)
 MAIN = st["meta"]["image"]
+LONG = st.get("format") == "long"   # 16:9 long-form: bigger images, no whoosh on every cut, no NEXT card, 16:9 maps
 
 
 def T(a):
@@ -54,7 +55,7 @@ for name, spec in st["images"].items():
     if spec.get("crop"):  # [left, top, right, bottom] fractions to trim (museum labels, inventory numbers, scan borders)
         l, t_, r, b = spec["crop"]
         im = im.crop((round(im.width * l), round(im.height * t_), round(im.width * (1 - r)), round(im.height * (1 - b))))
-    s = spec.get("long", 2600) / max(im.size)
+    s = spec.get("long", 3600 if LONG else 2600) / max(im.size)
     if s < 1: im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
     elif spec.get("upscale", 1) > 1:  # small sources: modest upscale + unsharp so close-ups survive
         s = min(s, spec["upscale"]); im = im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
@@ -85,7 +86,7 @@ def pose(p, img):
 maps = {}
 for mid, spec in st.get("maps", {}).items():
     sp, mp = os.path.join(sdir, "build", f"map_{mid}_spec.json"), os.path.join(sdir, "build", f"map_{mid}.json")
-    json.dump(spec, open(sp, "w"))
+    json.dump({**spec, **({"size": [1920, 1080]} if LONG else {})}, open(sp, "w"))
     subprocess.run(["node", "tools/map.mjs", sp, mp], cwd=STUDIO, check=True, capture_output=True)
     maps[mid] = json.load(open(mp))
 
@@ -96,7 +97,7 @@ for s in st["shots"]:
     if s.get("kind") == "map": img = img if img in images else MAIN
     if img not in images and s.get("fallback"): img = s["fallback"]
     o = {"t": T(s["at"]), "img": img, "from": pose(s.get("from", "full"), img), "to": pose(s.get("to", s.get("from", "full")), img)}
-    for k in ("gray", "dim", "contrast", "dolly", "sway", "frame", "kind"):
+    for k in ("gray", "dim", "contrast", "dolly", "sway", "frame", "kind", "fade", "img2", "labels", "room", "imgs"):
         if k in s: o[k] = s[k]
     if s.get("kind") == "map":
         m = s["map"]
@@ -105,7 +106,7 @@ for s in st["shots"]:
     if s.get("kind") == "peel":
         o["peel"] = {"t0": T(s["peel"]["at"]), "t1": T(s["peel"]["to"]), "under": s["peel"]["under"]}
     if s.get("hit") == "big": flashes.append(o["t"]); shakes.append(o["t"])
-    shots.append(o); cuts.append((o["t"], s.get("hit"), s.get("whoosh", True)))
+    shots.append(o); cuts.append((o["t"], s.get("hit"), s.get("whoosh", not LONG)))
 shots.sort(key=lambda x: x["t"])
 for a, b in zip(shots, shots[1:]):
     if b["t"] - a["t"] < 0.35: print(f"!! very short shot at {a['t']:.2f}s ({b['t'] - a['t']:.2f}s) — intended?")
@@ -139,7 +140,7 @@ def next_teaser():
     return None
 
 
-teaser = next_teaser()
+teaser = None if LONG else next_teaser()
 if teaser:
     t0 = round(tl["lines"][-1]["e"] + 0.6, 3)   # after the last caption has gone
     if tl["duration"] - t0 < 1.2: print(f"!! the NEXT card gets only {tl['duration'] - t0:.1f} s: set \"tail\": 2.2 and re-run from step 1")
@@ -155,8 +156,9 @@ sfx = [{"t": T(x["at"]), "fx": x["fx"], "gain": x.get("gain", 0.5)} for x in st.
 music = dict(st.get("music", {}))
 if "sections" in music: music["sections"] = {k: [T(a), T(b)] for k, (a, b) in music["sections"].items()}
 if "heartbeat" in music: music["heartbeat"] = [T(music["heartbeat"][0]), T(music["heartbeat"][1])]
+if "segments" in music: music["segments"] = [{**g, "t": T(g["at"])} for g in music["segments"]]
 
-resolved = {"slug": slug, "duration": tl["duration"], "audio": f"stories/{slug}/audio.wav", "images": images, "shots": shots,
+resolved = {"slug": slug, "format": st.get("format", "reel"), "duration": tl["duration"], "audio": f"stories/{slug}/audio.wav", "images": images, "shots": shots,
             "overlays": overlays, "flashes": sorted(flashes), "shakes": sorted(shakes), "words": words, "nocap": nocap, "maps": maps,
             "style": st.get("style", {}), "cuts": cuts, "sfx": sfx, "music": music}
 json.dump(resolved, open(os.path.join(sdir, "build", "resolved.json"), "w"), ensure_ascii=False)

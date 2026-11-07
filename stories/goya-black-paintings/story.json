@@ -1,0 +1,4184 @@
+{
+ "slug": "goya-black-paintings",
+ "format": "long",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "Francisco de Goya",
+  "born": 1746,
+  "died": 1828,
+  "painting": "The Black Paintings",
+  "year": "c. 1820–1823",
+  "museum": "Museo del Prado",
+  "city": "Madrid",
+  "image": "saturn",
+  "image_credit": "Museo del Prado, via Wikimedia Commons (public domain)"
+ },
+ "youtube": {
+  "titles": [
+   "The House Where Goya Painted His Nightmares",
+   "Nobody Was Supposed to See These Paintings"
+  ],
+  "description_lead": "In 1819, a deaf, 72-year-old Francisco de Goya bought a farmhouse outside Madrid and covered two of its rooms with fourteen nightmares. He never titled them, never signed them and never wrote a word about them. This is the story of the Black Paintings: why he painted them, how they were peeled off the walls, and why some historians once doubted he painted them at all.",
+  "hashtags": [
+   "#arthistory",
+   "#goya",
+   "#blackpaintings"
+  ],
+  "thumbnail": {
+   "image": "saturn",
+   "focus": [
+    0.37,
+    0.185
+   ],
+   "span": 0.2,
+   "words": "HIS DINING ROOM"
+  }
+ },
+ "say": {
+  "1870s": "eighteen seventies",
+  "1819": "eighteen nineteen",
+  "1823": "eighteen twenty-three",
+  "1824": "eighteen twenty-four",
+  "1828": "eighteen twenty-eight",
+  "1873": "eighteen seventy-three",
+  "1878": "eighteen seventy-eight",
+  "1881": "eighteen eighty-one",
+  "1909": "nineteen oh nine",
+  "2003": "two thousand three"
+ },
+ "ipa": {
+  "Goya": "ɡˈɔɪə",
+  "Goya's": "ɡˈɔɪəz",
+  "Prado": "pɹˈɑːdoʊ",
+  "Prado's": "pɹˈɑːdoʊz",
+  "Saturn": "sˈætɚn",
+  "Leocadia": "lˌeɪoʊkˈɑːdiə",
+  "Rosario": "ɹoʊsˈɑːɹioʊ",
+  "Manzanares": "mˌɑːnsɑːnˈɑːɹɛs",
+  "Quinta": "kˈiːntə",
+  "Sordo": "sˈɔːɹdoʊ",
+  "Arrieta": "ˌɑːɹiˈeɪtə",
+  "Mariano": "mˌɑːɹiˈɑːnoʊ",
+  "Bordeaux": "bɔːɹdˈoʊ",
+  "Brugada": "bɹuːɡˈɑːdə",
+  "Erlanger": "ˈɛɹlɑːnʒeɪ",
+  "Émile": "eɪmˈiːl",
+  "Laurent": "loʊɹˈɑːn",
+  "Martínez": "mɑːɹtˈiːnɛs",
+  "Cubells": "kuːbˈɛlz",
+  "Trocadéro": "tɹˌoʊkədˈɛɹoʊ",
+  "Junquera": "huːŋkˈɛɹə",
+  "Javier": "hɑːvjˈɛɹ",
+  "Saura": "sˈaʊɹə",
+  "Weiss": "vˈaɪs",
+  "Rubens": "ɹˈuːbənz"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "In the 1870s,",
+     0.33,
+     0.95
+    ],
+    [
+     "a photographer carried his camera",
+     0.2,
+     1.0
+    ],
+    [
+     "into an empty house on the edge of Madrid.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "The plaster was cracking.",
+     0.45,
+     0.95
+    ],
+    [
+     "The house was falling apart.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "And on the walls...",
+     0.52,
+     0.9
+    ],
+    [
+     "someone had painted *nightmares.*",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "A giant, eating a man.",
+     0.59,
+     0.9
+    ],
+    [
+     "Witches, gathered around a goat.",
+     0.59,
+     0.92
+    ],
+    [
+     "Two old people grinning over a bowl of soup,",
+     0.33,
+     0.95
+    ],
+    [
+     "like corpses at dinner.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "*Nobody* was supposed to see these.",
+     0.65,
+     0.9
+    ],
+    [
+     "They had no titles.",
+     0.33,
+     0.95
+    ],
+    [
+     "No signature.",
+     0.39,
+     0.95
+    ],
+    [
+     "The man who painted them never wrote a single word about them.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "cold6",
+   "perf": [
+    [
+     "He was the most famous painter in Spain.",
+     0.45,
+     0.95
+    ],
+    [
+     "Francisco de Goya.",
+     0.78,
+     0.88
+    ],
+    [
+     "And these were the walls of his own home.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "cold7",
+   "perf": [
+    [
+     "This is the story of the Black Paintings.",
+     0.45,
+     0.95
+    ],
+    [
+     "Why he painted them,",
+     0.26,
+     0.97
+    ],
+    [
+     "and how they escaped.",
+     2.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "Madrid.",
+     0.39,
+     0.9
+    ],
+    [
+     "February, 1819.",
+     0.78,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "Goya is seventy-two years old.",
+     0.39,
+     0.95
+    ],
+    [
+     "He has painted kings, queens and dukes for more than thirty years.",
+     0.52,
+     1.0
+    ],
+    [
+     "He is rich. He is famous.",
+     0.45,
+     0.97
+    ],
+    [
+     "And he hasn't heard a sound in twenty-six years.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "An illness took his hearing when he was forty-six.",
+     0.45,
+     0.97
+    ],
+    [
+     "Since then, he has lived through a war with Napoleon,",
+     0.33,
+     1.0
+    ],
+    [
+     "and painted what he saw.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "Now he buys a house outside the city,",
+     0.33,
+     1.0
+    ],
+    [
+     "across the Manzanares river.",
+     0.39,
+     0.97
+    ],
+    [
+     "A farmhouse with two large rooms.",
+     0.91,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "The neighbours already have a name for it.",
+     0.39,
+     0.97
+    ],
+    [
+     "La Quinta del Sordo.",
+     0.45,
+     0.9
+    ],
+    [
+     "The Deaf Man's House.",
+     0.78,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1f",
+   "perf": [
+    [
+     "Not because of Goya.",
+     0.39,
+     0.95
+    ],
+    [
+     "The man who owned it before him was deaf, too.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1g",
+   "perf": [
+    [
+     "Goya moves in with Leocadia Weiss,",
+     0.26,
+     0.97
+    ],
+    [
+     "a woman more than forty years younger,",
+     0.33,
+     1.0
+    ],
+    [
+     "his housekeeper and companion,",
+     0.33,
+     1.0
+    ],
+    [
+     "and her little daughter, Rosario.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1h",
+   "perf": [
+    [
+     "Why here?",
+     0.45,
+     0.9
+    ],
+    [
+     "Historians think he wanted to get away.",
+     0.33,
+     0.97
+    ],
+    [
+     "From the court,",
+     0.26,
+     0.97
+    ],
+    [
+     "and from the king,",
+     0.26,
+     0.97
+    ],
+    [
+     "Ferdinand the Seventh.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "At the end of that year,",
+     0.33,
+     0.97
+    ],
+    [
+     "Goya nearly dies.",
+     0.78,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "We don't know what the illness was.",
+     0.39,
+     0.97
+    ],
+    [
+     "We know how close it came...",
+     0.39,
+     0.95
+    ],
+    [
+     "because he painted it.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "A doctor holds him up",
+     0.2,
+     1.0
+    ],
+    [
+     "and puts a glass to his lips.",
+     0.45,
+     0.97
+    ],
+    [
+     "Behind them, faces wait in the dark.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2d",
+   "perf": [
+    [
+     "At the bottom, Goya painted a thank-you note.",
+     0.52,
+     0.97
+    ],
+    [
+     "To his friend, Doctor Arrieta,",
+     0.33,
+     0.95
+    ],
+    [
+     "for the skill and care",
+     0.2,
+     0.97
+    ],
+    [
+     "with which he saved his life,",
+     0.39,
+     0.95
+    ],
+    [
+     "in his acute and dangerous illness,",
+     0.33,
+     0.97
+    ],
+    [
+     "at the end of 1819,",
+     0.33,
+     0.97
+    ],
+    [
+     "at seventy-three years of age.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "He survives.",
+     0.59,
+     0.9
+    ],
+    [
+     "And when he can stand again,",
+     0.26,
+     0.97
+    ],
+    [
+     "he picks up his brushes...",
+     0.45,
+     0.95
+    ],
+    [
+     "and starts on the walls.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "The rooms were already decorated.",
+     0.33,
+     0.97
+    ],
+    [
+     "Cheerful country scenes.",
+     0.26,
+     0.97
+    ],
+    [
+     "Little figures in a landscape.",
+     0.65,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "Goya paints over all of it.",
+     0.39,
+     0.95
+    ],
+    [
+     "In oil, straight onto the plaster.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "Downstairs is the dining room.",
+     0.45,
+     0.95
+    ],
+    [
+     "One wall holds a crowd of pilgrims,",
+     0.2,
+     0.97
+    ],
+    [
+     "stumbling home through the dark,",
+     0.33,
+     1.0
+    ],
+    [
+     "mouths wide open.",
+     0.33,
+     0.95
+    ],
+    [
+     "Singing, or screaming.",
+     0.59,
+     0.93
+    ],
+    [
+     "Painted by a man who hadn't heard a voice in almost thirty years.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "On the other long wall,",
+     0.2,
+     0.97
+    ],
+    [
+     "witches gather around a huge black goat.",
+     0.39,
+     0.97
+    ],
+    [
+     "The Devil, preaching in the dark.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "By the door, a woman in black",
+     0.2,
+     0.97
+    ],
+    [
+     "leans on what looks like a grave.",
+     0.39,
+     0.95
+    ],
+    [
+     "Many think it's Leocadia.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "Two old men.",
+     0.39,
+     0.95
+    ],
+    [
+     "One shouts into the other's ear,",
+     0.39,
+     0.95
+    ],
+    [
+     "the way you'd talk to a deaf man.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c3g",
+   "perf": [
+    [
+     "Judith, about to cut off a general's head.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3h",
+   "perf": [
+    [
+     "And on the back wall, facing the woman in black,",
+     0.65,
+     0.93
+    ],
+    [
+     "is *Saturn.*",
+     1.56,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "c3i",
+   "perf": [
+    [
+     "Upstairs, there is a second room.",
+     0.39,
+     0.95
+    ],
+    [
+     "Two men club each other,",
+     0.2,
+     0.97
+    ],
+    [
+     "sunk to their knees in the earth.",
+     0.52,
+     0.95
+    ],
+    [
+     "The Fates float over the land, one holding scissors.",
+     0.39,
+     0.97
+    ],
+    [
+     "Two figures fly over a rock while soldiers take aim.",
+     0.52,
+     0.97
+    ],
+    [
+     "Men reading.",
+     0.33,
+     0.97
+    ],
+    [
+     "Women laughing.",
+     0.33,
+     0.97
+    ],
+    [
+     "A procession of the Inquisition.",
+     0.65,
+     0.95
+    ],
+    [
+     "And by the door...",
+     0.45,
+     0.92
+    ],
+    [
+     "a dog.",
+     0.78,
+     0.88
+    ],
+    [
+     "We'll come back to the dog.",
+     1.17,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3j",
+   "perf": [
+    [
+     "Fourteen paintings.",
+     0.45,
+     0.9
+    ],
+    [
+     "No titles.",
+     0.33,
+     0.95
+    ],
+    [
+     "No signatures.",
+     0.33,
+     0.95
+    ],
+    [
+     "No dates.",
+     0.52,
+     0.95
+    ],
+    [
+     "Every name you know them by was given later, by other people.",
+     0.65,
+     0.97
+    ],
+    [
+     "Today we call them the Black Paintings.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "In the old legend,",
+     0.26,
+     0.97
+    ],
+    [
+     "the titan Saturn is warned",
+     0.2,
+     0.97
+    ],
+    [
+     "that one of his children will overthrow him.",
+     0.45,
+     0.97
+    ],
+    [
+     "So, as each one is born,",
+     0.26,
+     0.97
+    ],
+    [
+     "he swallows it.",
+     0.91,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "Rubens painted the scene for the King of Spain,",
+     0.33,
+     0.97
+    ],
+    [
+     "almost two hundred years earlier.",
+     0.45,
+     0.97
+    ],
+    [
+     "Goya could have seen it in the royal collection.",
+     0.78,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "In Rubens, Saturn is a god doing his job.",
+     0.39,
+     0.97
+    ],
+    [
+     "Calm.",
+     0.33,
+     0.92
+    ],
+    [
+     "Calculating.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "Goya's Saturn is something else.",
+     0.45,
+     0.95
+    ],
+    [
+     "Look at his eyes.",
+     0.59,
+     0.9
+    ],
+    [
+     "He doesn't look powerful.",
+     0.33,
+     0.95
+    ],
+    [
+     "He looks *terrified.*",
+     0.52,
+     0.9
+    ],
+    [
+     "Like someone who can't stop what he's doing.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "And look at who he's eating.",
+     0.39,
+     0.95
+    ],
+    [
+     "It isn't swallowed. It's being torn apart.",
+     0.52,
+     0.95
+    ],
+    [
+     "The head is already gone.",
+     0.52,
+     0.93
+    ],
+    [
+     "And it doesn't look like a baby.",
+     0.39,
+     0.95
+    ],
+    [
+     "One scholar argues it's an adult.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4f",
+   "perf": [
+    [
+     "Here's the strange part.",
+     0.45,
+     0.93
+    ],
+    [
+     "Even those eyes aren't entirely by Goya.",
+     0.52,
+     0.95
+    ],
+    [
+     "They were so badly damaged",
+     0.2,
+     0.97
+    ],
+    [
+     "that a restorer had to repaint them.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4g",
+   "perf": [
+    [
+     "And some historians claim the original wall showed something else,",
+     0.33,
+     0.97
+    ],
+    [
+     "something sexual,",
+     0.33,
+     0.95
+    ],
+    [
+     "that was painted out when the walls came down.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4h",
+   "perf": [
+    [
+     "What does it mean?",
+     0.45,
+     0.93
+    ],
+    [
+     "Time devouring everything.",
+     0.33,
+     0.97
+    ],
+    [
+     "Old age eating youth.",
+     0.33,
+     0.97
+    ],
+    [
+     "Spain devouring its own children in war.",
+     0.33,
+     0.97
+    ],
+    [
+     "A man afraid of going mad.",
+     0.52,
+     0.95
+    ],
+    [
+     "Every one of these has been argued.",
+     0.39,
+     0.97
+    ],
+    [
+     "Goya never said.",
+     0.78,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4i",
+   "perf": [
+    [
+     "All we know is where he put it.",
+     0.39,
+     0.95
+    ],
+    [
+     "In the room where he ate.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "In 1823,",
+     0.33,
+     0.95
+    ],
+    [
+     "a French army marches into Spain",
+     0.2,
+     1.0
+    ],
+    [
+     "and hands King Ferdinand back his absolute power.",
+     0.65,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "Liberals are arrested,",
+     0.26,
+     0.97
+    ],
+    [
+     "exiled,",
+     0.26,
+     0.97
+    ],
+    [
+     "executed.",
+     0.65,
+     0.92
+    ],
+    [
+     "And Goya has friends on the wrong side.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "That year, he signs the house over to his grandson, Mariano.",
+     0.39,
+     0.97
+    ],
+    [
+     "Then he goes into hiding,",
+     0.26,
+     0.97
+    ],
+    [
+     "at the home of a friend, a priest.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "In May 1824,",
+     0.26,
+     0.97
+    ],
+    [
+     "he asks the king for permission to leave,",
+     0.26,
+     0.97
+    ],
+    [
+     "to take the waters at a spa in France.",
+     0.78,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "The king says yes.",
+     0.52,
+     0.95
+    ],
+    [
+     "Goya crosses the border at seventy-eight,",
+     0.26,
+     0.97
+    ],
+    [
+     "deaf, and alone,",
+     0.33,
+     0.95
+    ],
+    [
+     "and settles in Bordeaux.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "He comes back to Madrid only briefly.",
+     0.45,
+     0.97
+    ],
+    [
+     "On the sixteenth of April, 1828,",
+     0.26,
+     0.97
+    ],
+    [
+     "he dies in Bordeaux, at eighty-two.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5g",
+   "perf": [
+    [
+     "He leaves fourteen paintings",
+     0.2,
+     0.97
+    ],
+    [
+     "on the walls of a house that isn't his anymore.",
+     0.52,
+     0.95
+    ],
+    [
+     "And in all his letters,",
+     0.26,
+     0.97
+    ],
+    [
+     "not one word about them.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "After his death, a painter friend, Antonio Brugada,",
+     0.26,
+     0.97
+    ],
+    [
+     "walks through the house and lists what's on the walls.",
+     0.52,
+     0.97
+    ],
+    [
+     "Forty years later, a French writer does the same.",
+     0.52,
+     0.97
+    ],
+    [
+     "Those two lists are how we know where each painting hung.",
+     0.91,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "The house passes through the family, then to strangers.",
+     0.45,
+     0.97
+    ],
+    [
+     "Fifty years on, it's falling apart.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "In 1873,",
+     0.26,
+     0.97
+    ],
+    [
+     "a rich banker from Paris buys it.",
+     0.26,
+     0.97
+    ],
+    [
+     "Baron Émile d'Erlanger.",
+     0.78,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "Before anything is touched,",
+     0.26,
+     0.97
+    ],
+    [
+     "a photographer, Jean Laurent, records the walls.",
+     0.52,
+     0.97
+    ],
+    [
+     "That's the photographer from the beginning of this story.",
+     0.52,
+     0.97
+    ],
+    [
+     "His pictures are the closest we will ever get to what Goya actually painted.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "Then the Baron hires the Prado's chief restorer,",
+     0.26,
+     0.97
+    ],
+    [
+     "Salvador Martínez Cubells,",
+     0.39,
+     0.93
+    ],
+    [
+     "to take the paintings off the walls.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6f",
+   "perf": [
+    [
+     "Piece by piece,",
+     0.26,
+     0.95
+    ],
+    [
+     "the paint is lifted off the plaster",
+     0.2,
+     0.97
+    ],
+    [
+     "and glued onto canvas.",
+     0.52,
+     0.95
+    ],
+    [
+     "What breaks is painted back in.",
+     0.78,
+     0.93
+    ],
+    [
+     "Experts agree that much of what we see today was repainted.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6h",
+   "perf": [
+    [
+     "The witches were even cut down,",
+     0.26,
+     0.97
+    ],
+    [
+     "probably to fit a wall in Paris.",
+     0.65,
+     0.95
+    ],
+    [
+     "Because that was the plan.",
+     0.45,
+     0.95
+    ],
+    [
+     "Paris.",
+     0.39,
+     0.9
+    ],
+    [
+     "The World's Fair of 1878.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6i",
+   "perf": [
+    [
+     "They hang in the Trocadéro Palace from May to November.",
+     0.52,
+     0.97
+    ],
+    [
+     "They don't sell.",
+     0.78,
+     0.93
+    ],
+    [
+     "The next year, a British critic calls Goya",
+     0.26,
+     0.97
+    ],
+    [
+     "a monster of immorality, impudence, and ingratitude.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6j",
+   "perf": [
+    [
+     "In 1881, the Baron gives them to Spain.",
+     0.39,
+     0.97
+    ],
+    [
+     "They go to the Prado.",
+     0.65,
+     0.95
+    ],
+    [
+     "And the Deaf Man's House?",
+     0.52,
+     0.93
+    ],
+    [
+     "Demolished, in 1909.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "In 2003,",
+     0.26,
+     0.97
+    ],
+    [
+     "a Spanish art historian, Juan José Junquera,",
+     0.26,
+     0.97
+    ],
+    [
+     "makes an explosive claim.",
+     0.52,
+     0.95
+    ],
+    [
+     "Goya didn't paint them.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "His evidence:",
+     0.26,
+     0.95
+    ],
+    [
+     "property records that describe the house with only one floor.",
+     0.45,
+     0.97
+    ],
+    [
+     "If the upstairs room didn't exist in Goya's time,",
+     0.26,
+     0.97
+    ],
+    [
+     "who painted its walls?",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "His suspect: Goya's own son, Javier.",
+     0.45,
+     0.95
+    ],
+    [
+     "And the grandson, Mariano, short of money,",
+     0.26,
+     0.97
+    ],
+    [
+     "would have sold them as his grandfather's.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "Most experts reject it.",
+     0.39,
+     0.95
+    ],
+    [
+     "The British Goya scholar Nigel Glendinning",
+     0.2,
+     0.97
+    ],
+    [
+     "said he was totally unconvinced.",
+     0.45,
+     0.95
+    ],
+    [
+     "The Prado still hangs them as Goya's.",
+     0.65,
+     0.95
+    ],
+    [
+     "But the doubt says something true.",
+     0.33,
+     0.95
+    ],
+    [
+     "We have no letter,",
+     0.26,
+     0.97
+    ],
+    [
+     "no title,",
+     0.26,
+     0.97
+    ],
+    [
+     "no witness.",
+     0.45,
+     0.95
+    ],
+    [
+     "Just the walls.",
+     1.82,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "end1",
+   "perf": [
+    [
+     "Which brings us back to the dog.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "end2",
+   "perf": [
+    [
+     "A small dog,",
+     0.26,
+     0.95
+    ],
+    [
+     "sunk up to its neck in something.",
+     0.33,
+     0.97
+    ],
+    [
+     "Sand, or mud. We don't know.",
+     0.39,
+     0.97
+    ],
+    [
+     "Looking up into an enormous empty space.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "end3",
+   "perf": [
+    [
+     "No legend.",
+     0.39,
+     0.93
+    ],
+    [
+     "No story.",
+     0.39,
+     0.93
+    ],
+    [
+     "Just a dog,",
+     0.33,
+     0.93
+    ],
+    [
+     "and nothing.",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "end4",
+   "perf": [
+    [
+     "The Spanish painter Antonio Saura",
+     0.2,
+     0.97
+    ],
+    [
+     "called it the most beautiful picture in the world.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "end5",
+   "perf": [
+    [
+     "Maybe it's the one Goya understood best.",
+     0.39,
+     0.95
+    ],
+    [
+     "Old.",
+     0.33,
+     0.92
+    ],
+    [
+     "Deaf.",
+     0.33,
+     0.92
+    ],
+    [
+     "Looking up",
+     0.26,
+     0.93
+    ],
+    [
+     "at something no one else could see.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "end6",
+   "perf": [
+    [
+     "Goya painted it on the wall of his house,",
+     0.33,
+     0.95
+    ],
+    [
+     "for no one.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "end7",
+   "perf": [
+    [
+     "It hangs in the Prado, in Madrid.",
+     0.65,
+     0.92
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "saturn": {
+   "file": "src/saturn.jpg",
+   "depth": true,
+   "points": {
+    "eyes": [
+     0.37,
+     0.18
+    ],
+    "mouth": [
+     0.37,
+     0.235
+    ],
+    "bite": [
+     0.42,
+     0.3
+    ],
+    "body": [
+     0.45,
+     0.36
+    ],
+    "hands": [
+     0.48,
+     0.4
+    ],
+    "victim": [
+     0.47,
+     0.44
+    ],
+    "legs": [
+     0.45,
+     0.7
+    ]
+   }
+  },
+  "judith": {
+   "file": "src/judith.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.6,
+     0.29
+    ],
+    "knife": [
+     0.3,
+     0.2
+    ],
+    "victim": [
+     0.22,
+     0.56
+    ]
+   }
+  },
+  "leocadia": {
+   "file": "src/leocadia.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.31,
+     0.15
+    ],
+    "mound": [
+     0.55,
+     0.5
+    ],
+    "rail": [
+     0.7,
+     0.24
+    ]
+   }
+  },
+  "two-old": {
+   "file": "src/two-old.jpg",
+   "depth": true,
+   "points": {
+    "old": [
+     0.5,
+     0.11
+    ],
+    "shout": [
+     0.8,
+     0.12
+    ]
+   }
+  },
+  "soup": {
+   "file": "src/soup.jpg",
+   "depth": true,
+   "points": {
+    "crone": [
+     0.33,
+     0.32
+    ],
+    "skull": [
+     0.72,
+     0.5
+    ],
+    "spoon": [
+     0.22,
+     0.72
+    ]
+   }
+  },
+  "pilgrimage": {
+   "file": "src/pilgrimage.jpg",
+   "depth": true,
+   "points": {
+    "singers": [
+     0.25,
+     0.42
+    ],
+    "right": [
+     0.85,
+     0.6
+    ],
+    "left": [
+     0.08,
+     0.5
+    ]
+   }
+  },
+  "sabbath": {
+   "file": "src/sabbath.jpg",
+   "depth": true,
+   "points": {
+    "goat": [
+     0.1,
+     0.35
+    ],
+    "crowd": [
+     0.45,
+     0.35
+    ],
+    "girl": [
+     0.93,
+     0.55
+    ]
+   }
+  },
+  "dog": {
+   "file": "src/dog.jpg",
+   "depth": true,
+   "points": {
+    "head": [
+     0.38,
+     0.81
+    ],
+    "sky": [
+     0.5,
+     0.35
+    ]
+   }
+  },
+  "fight": {
+   "file": "src/fight.jpg",
+   "depth": true,
+   "points": {
+    "left": [
+     0.27,
+     0.32
+    ],
+    "right": [
+     0.42,
+     0.33
+    ],
+    "knees": [
+     0.36,
+     0.68
+    ]
+   }
+  },
+  "atropos": {
+   "file": "src/atropos.jpg",
+   "depth": true,
+   "points": {
+    "lens": [
+     0.33,
+     0.4
+    ],
+    "middle": [
+     0.6,
+     0.3
+    ],
+    "man": [
+     0.86,
+     0.42
+    ]
+   }
+  },
+  "asmodea": {
+   "file": "src/asmodea.jpg",
+   "depth": true,
+   "points": {
+    "flyers": [
+     0.25,
+     0.42
+    ],
+    "soldiers": [
+     0.88,
+     0.85
+    ],
+    "rock": [
+     0.68,
+     0.35
+    ]
+   }
+  },
+  "holy-office": {
+   "file": "src/holy-office.jpg",
+   "depth": true,
+   "points": {
+    "crowd": [
+     0.78,
+     0.55
+    ]
+   }
+  },
+  "men-reading": {
+   "file": "src/men-reading.jpg",
+   "depth": true,
+   "points": {
+    "faces": [
+     0.5,
+     0.38
+    ]
+   }
+  },
+  "women-laughing": {
+   "file": "src/women-laughing.jpg",
+   "depth": true,
+   "points": {
+    "faces": [
+     0.52,
+     0.37
+    ]
+   }
+  },
+  "arrieta": {
+   "file": "src/arrieta.jpg",
+   "depth": true,
+   "points": {
+    "doctor": [
+     0.62,
+     0.27
+    ],
+    "goya": [
+     0.79,
+     0.31
+    ],
+    "glass": [
+     0.74,
+     0.42
+    ],
+    "faces": [
+     0.1,
+     0.42
+    ],
+    "hands": [
+     0.73,
+     0.72
+    ]
+   }
+  },
+  "selfportrait": {
+   "file": "src/selfportrait.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.45,
+     0.38
+    ]
+   }
+  },
+  "third-may": {
+   "file": "src/third-may.jpg",
+   "depth": true,
+   "points": {
+    "white": [
+     0.31,
+     0.5
+    ],
+    "rifles": [
+     0.62,
+     0.48
+    ],
+    "dead": [
+     0.25,
+     0.85
+    ]
+   }
+  },
+  "disasters": {
+   "file": "src/disasters.jpg",
+   "crop": [
+    0.21,
+    0.18,
+    0.22,
+    0.27
+   ],
+   "points": {
+    "bodies": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "sleep-reason": {
+   "file": "src/sleep-reason.jpg",
+   "points": {
+    "sleeper": [
+     0.45,
+     0.62
+    ],
+    "owls": [
+     0.55,
+     0.42
+    ]
+   }
+  },
+  "milkmaid": {
+   "file": "src/milkmaid.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.52,
+     0.38
+    ]
+   }
+  },
+  "duaso": {
+   "file": "src/duaso.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.48,
+     0.25
+    ]
+   }
+  },
+  "ferdinand": {
+   "file": "src/ferdinand.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.52,
+     0.22
+    ]
+   }
+  },
+  "rubens-saturn": {
+   "file": "src/rubens-saturn.jpg",
+   "crop": [
+    0.015,
+    0.012,
+    0.03,
+    0.012
+   ],
+   "depth": true,
+   "points": {
+    "face": [
+     0.6,
+     0.35
+    ],
+    "child": [
+     0.72,
+     0.43
+    ]
+   }
+  },
+  "laurent-soup": {
+   "file": "src/laurent-soup.jpg",
+   "crop": [
+    0.02,
+    0.03,
+    0.02,
+    0.16
+   ],
+   "points": {
+    "faces": [
+     0.42,
+     0.42
+    ]
+   }
+  },
+  "laurent-saturn": {
+   "file": "src/laurent-saturn.jpg",
+   "crop": [
+    0.08,
+    0.02,
+    0.08,
+    0.1
+   ],
+   "points": {
+    "face": [
+     0.45,
+     0.17
+    ],
+    "all": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "laurent-dog": {
+   "file": "src/laurent-dog.jpg",
+   "crop": [
+    0.16,
+    0.05,
+    0.1,
+    0.16
+   ],
+   "points": {
+    "dog": [
+     0.38,
+     0.72
+    ]
+   }
+  },
+  "laurent-sabbath": {
+   "file": "src/laurent-sabbath.jpg",
+   "crop": [
+    0.02,
+    0.12,
+    0.02,
+    0.17
+   ],
+   "points": {
+    "crowd": [
+     0.6,
+     0.45
+    ]
+   }
+  },
+  "laurent-judith": {
+   "file": "src/laurent-judith.jpg",
+   "crop": [
+    0.05,
+    0.03,
+    0.05,
+    0.1
+   ],
+   "points": {
+    "all": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "quinta-1900": {
+   "file": "src/quinta-1900.jpg",
+   "depth": true,
+   "points": {
+    "door": [
+     0.45,
+     0.48
+    ],
+    "people": [
+     0.55,
+     0.82
+    ]
+   }
+  },
+  "laurent-twoold": {
+   "file": "src/laurent-twoold.jpg",
+   "crop": [
+    0.1,
+    0.03,
+    0.08,
+    0.1
+   ],
+   "points": {
+    "all": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "expo-1878": {
+   "file": "src/expo-1878.jpg",
+   "crop": [
+    0.08,
+    0.1,
+    0.08,
+    0.08
+   ],
+   "depth": true,
+   "points": {
+    "palace": [
+     0.42,
+     0.3
+    ]
+   }
+  },
+  "expo-photo": {
+   "file": "src/expo-photo.jpg",
+   "depth": true,
+   "points": {
+    "arch": [
+     0.5,
+     0.45
+    ],
+    "wall": [
+     0.12,
+     0.35
+    ]
+   }
+  },
+  "erlanger": {
+   "file": "src/erlanger.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.45,
+     0.22
+    ]
+   }
+  },
+  "pradera": {
+   "file": "src/pradera.jpg",
+   "depth": true,
+   "points": {
+    "picnic": [
+     0.3,
+     0.75
+    ],
+    "city": [
+     0.6,
+     0.45
+    ]
+   }
+  },
+  "plaster": {
+   "file": "tex:plaster"
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "laurent-soup",
+   "from": "full@0.92",
+   "to": "faces@1.25",
+   "gray": 1,
+   "frame": false
+  },
+  {
+   "at": "cold2",
+   "img": "laurent-saturn",
+   "from": "all@1.0",
+   "to": "face@1.5",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "cold3.4",
+   "img": "saturn",
+   "from": "bite@1.0",
+   "to": "bite@1.12",
+   "fade": 0.9
+  },
+  {
+   "at": "cold4",
+   "img": "saturn",
+   "from": "mouth@1.6",
+   "to": "eyes@1.9",
+   "hit": "small"
+  },
+  {
+   "at": "cold4.5",
+   "img": "sabbath",
+   "from": "crowd@1.4",
+   "to": "goat@1.25",
+   "fade": 0.5
+  },
+  {
+   "at": "cold4.10",
+   "img": "soup",
+   "from": "crone@1.3",
+   "to": "skull@1.5",
+   "fade": 0.5
+  },
+  {
+   "at": "cold5",
+   "img": "laurent-dog",
+   "from": "dog@1.0",
+   "to": "dog@1.3",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "cold5.12",
+   "img": "leocadia",
+   "from": "face@1.6",
+   "to": "face@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "cold6",
+   "img": "selfportrait",
+   "from": "face@1.05",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "cold6.11",
+   "img": "two-old",
+   "from": "old@1.4",
+   "to": "shout@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "cold7",
+   "img": "pilgrimage",
+   "from": "left@1.0",
+   "to": "singers@1.15",
+   "fade": 0.8
+  },
+  {
+   "at": "cold7.12",
+   "img": "saturn",
+   "from": "full@0.31",
+   "to": "full@0.34",
+   "frame": true,
+   "fade": 1.0,
+   "dim": 0.15
+  },
+  {
+   "at": "c1a",
+   "img": "quinta-1900",
+   "from": "full@1.0",
+   "to": "door@1.2",
+   "gray": 0.85,
+   "fade": 1.0
+  },
+  {
+   "at": "c1b",
+   "img": "selfportrait",
+   "from": "full@1.0",
+   "to": "face@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c1b.8",
+   "img": "ferdinand",
+   "from": "full@0.55",
+   "to": "face@1.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c1b.19",
+   "img": "selfportrait",
+   "from": "face@1.35",
+   "to": "face@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c1c",
+   "img": "selfportrait",
+   "from": "face@1.65",
+   "to": "face@1.4"
+  },
+  {
+   "at": "c1c.16",
+   "img": "third-may",
+   "from": "full@1.0",
+   "to": "white@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c1c.20",
+   "img": "disasters",
+   "from": "full@1.0",
+   "to": "bodies@1.3",
+   "fade": 0.6,
+   "gray": 0.2
+  },
+  {
+   "at": "c1d",
+   "img": "quinta-1900",
+   "from": "door@1.15",
+   "to": "full@1.0",
+   "gray": 0.85,
+   "fade": 0.8
+  },
+  {
+   "at": "c1e.8",
+   "img": "quinta-1900",
+   "from": "people@1.5",
+   "to": "door@1.7",
+   "gray": 0.85,
+   "fade": 0.6
+  },
+  {
+   "at": "c1f",
+   "img": "selfportrait",
+   "from": "face@1.3",
+   "to": "face@1.55",
+   "fade": 0.6
+  },
+  {
+   "at": "c1g",
+   "img": "leocadia",
+   "from": "face@1.6",
+   "to": "full@0.75",
+   "fade": 0.8
+  },
+  {
+   "at": "c1h",
+   "img": "ferdinand",
+   "from": "face@1.3",
+   "to": "full@0.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c1h.16",
+   "img": "ferdinand",
+   "from": "face@1.8",
+   "to": "face@2.1"
+  },
+  {
+   "at": "c2a",
+   "img": "arrieta",
+   "from": "full@0.6",
+   "to": "goya@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c2b",
+   "img": "arrieta",
+   "from": "goya@1.6",
+   "to": "doctor@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c",
+   "img": "arrieta",
+   "from": "glass@1.3",
+   "to": "doctor@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c.12",
+   "img": "arrieta",
+   "from": "faces@1.6",
+   "to": "faces@1.9",
+   "fade": 0.6,
+   "dim": -0.4
+  },
+  {
+   "at": "c2d",
+   "img": "arrieta",
+   "from": "full@1.0",
+   "to": "full@1.15",
+   "fade": 0.8,
+   "dim": 0.35
+  },
+  {
+   "at": "c2e",
+   "img": "arrieta",
+   "from": "goya@2.0",
+   "to": "goya@2.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c2e.9",
+   "img": "plaster",
+   "from": "full@1.0",
+   "to": "full@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c3a",
+   "img": "pradera",
+   "from": "full@1.0",
+   "to": "picnic@1.25",
+   "fade": 0.8
+  },
+  {
+   "at": "c3b",
+   "img": "laurent-judith",
+   "from": "all@0.9",
+   "to": "all@1.1",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c3c",
+   "img": "saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "judith",
+     "saturn"
+    ],
+    "left": [
+     "pilgrimage"
+    ],
+    "right": [
+     "sabbath"
+    ],
+    "move": [
+     0,
+     650
+    ],
+    "yaw": [
+     0,
+     0
+    ]
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c3c.8",
+   "img": "pilgrimage",
+   "from": "left@1.0",
+   "to": "singers@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c3c.20",
+   "img": "pilgrimage",
+   "from": "singers@1.6",
+   "to": "singers@1.9",
+   "fade": 0.4
+  },
+  {
+   "at": "c3c.23",
+   "img": "pilgrimage",
+   "from": "singers@1.1",
+   "to": "right@1.0"
+  },
+  {
+   "at": "c3d",
+   "img": "sabbath",
+   "from": "crowd@1.0",
+   "to": "goat@1.1",
+   "fade": 0.6,
+   "dim": -0.25
+  },
+  {
+   "at": "c3d.13",
+   "img": "sabbath",
+   "from": "goat@1.5",
+   "to": "goat@1.75",
+   "fade": 0.4,
+   "dim": -0.3
+  },
+  {
+   "at": "c3e",
+   "img": "leocadia",
+   "from": "full@0.62",
+   "to": "face@1.2",
+   "fade": 0.6,
+   "frame": true
+  },
+  {
+   "at": "c3e.14",
+   "img": "leocadia",
+   "from": "face@1.6",
+   "to": "face@1.9"
+  },
+  {
+   "at": "c3f",
+   "img": "two-old",
+   "from": "old@1.1",
+   "to": "old@1.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c3f.3",
+   "img": "two-old",
+   "from": "shout@1.6",
+   "to": "shout@1.9",
+   "fade": 0.4
+  },
+  {
+   "at": "c3g",
+   "img": "judith",
+   "from": "knife@1.2",
+   "to": "face@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c3h",
+   "img": "saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "judith",
+     "saturn"
+    ],
+    "left": [
+     "pilgrimage"
+    ],
+    "right": [
+     "sabbath"
+    ],
+    "move": [
+     500,
+     1150
+    ],
+    "yaw": [
+     0,
+     6
+    ]
+   },
+   "fade": 0.6
+  },
+  {
+   "at": "c3h.11",
+   "img": "saturn",
+   "from": "eyes@1.9",
+   "to": "eyes@2.2",
+   "hit": "big"
+  },
+  {
+   "at": "c3i",
+   "img": "fight",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "men-reading",
+     "women-laughing"
+    ],
+    "left": [
+     "asmodea",
+     "holy-office"
+    ],
+    "right": [
+     "atropos",
+     "fight"
+    ],
+    "move": [
+     0,
+     600
+    ],
+    "yaw": [
+     -4,
+     4
+    ]
+   },
+   "fade": 1.0
+  },
+  {
+   "at": "c3i.6",
+   "img": "fight",
+   "from": "left@1.3",
+   "to": "knees@1.25",
+   "fade": 0.5
+  },
+  {
+   "at": "c3i.19",
+   "img": "atropos",
+   "from": "lens@1.2",
+   "to": "middle@1.3",
+   "fade": 0.5
+  },
+  {
+   "at": "c3i.27",
+   "img": "asmodea",
+   "from": "flyers@1.25",
+   "to": "soldiers@1.3",
+   "fade": 0.5
+  },
+  {
+   "at": "c3i.37",
+   "img": "men-reading",
+   "from": "faces@1.0",
+   "to": "faces@1.25",
+   "fade": 0.4
+  },
+  {
+   "at": "c3i.39",
+   "img": "women-laughing",
+   "from": "faces@1.0",
+   "to": "faces@1.25",
+   "fade": 0.4
+  },
+  {
+   "at": "c3i.42-0.25",
+   "img": "holy-office",
+   "from": "crowd@1.2",
+   "to": "crowd@1.45",
+   "fade": 0.4
+  },
+  {
+   "at": "c3i.46",
+   "img": "dog",
+   "from": "full@0.3",
+   "to": "full@0.33",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c3i.52",
+   "img": "dog",
+   "from": "head@1.6",
+   "to": "head@1.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c3j",
+   "img": "saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "grid",
+   "imgs": [
+    "saturn",
+    "judith",
+    "pilgrimage",
+    "leocadia",
+    "two-old",
+    "soup",
+    "dog",
+    "sabbath",
+    "men-reading",
+    "women-laughing",
+    "fight",
+    "asmodea",
+    "atropos",
+    "holy-office"
+   ],
+   "fade": 0.6
+  },
+  {
+   "at": "c3j.8",
+   "img": "laurent-sabbath",
+   "from": "crowd@1.0",
+   "to": "crowd@1.25",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c3j.20",
+   "img": "soup",
+   "from": "full@1.0",
+   "to": "crone@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c4a",
+   "img": "rubens-saturn",
+   "from": "full@0.32",
+   "to": "face@1.0",
+   "fade": 1.0
+  },
+  {
+   "at": "c4a.17",
+   "img": "rubens-saturn",
+   "from": "child@1.4",
+   "to": "child@1.7",
+   "fade": 0.5
+  },
+  {
+   "at": "c4b",
+   "img": "rubens-saturn",
+   "from": "face@1.2",
+   "to": "full@0.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c4c",
+   "img": "rubens-saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "saturn",
+   "labels": [
+    "RUBENS · 1636",
+    "GOYA · c. 1820–23"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c4d",
+   "img": "saturn",
+   "from": "full@0.31",
+   "to": "body@1.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c4d.5",
+   "img": "saturn",
+   "from": "eyes@1.6",
+   "to": "eyes@2.2",
+   "fade": 0.4
+  },
+  {
+   "at": "c4e",
+   "img": "saturn",
+   "from": "hands@1.4",
+   "to": "body@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c4e.13",
+   "img": "saturn",
+   "from": "mouth@1.9",
+   "to": "mouth@2.2",
+   "fade": 0.4
+  },
+  {
+   "at": "c4e.25",
+   "img": "saturn",
+   "from": "victim@1.5",
+   "to": "victim@1.35",
+   "fade": 0.5
+  },
+  {
+   "at": "c4f",
+   "img": "laurent-saturn",
+   "from": "face@1.4",
+   "to": "face@1.8",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c4f.11",
+   "img": "saturn",
+   "from": "eyes@2.2",
+   "to": "eyes@2.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c4g",
+   "img": "laurent-saturn",
+   "from": "all@1.0",
+   "to": "all@1.12",
+   "gray": 1,
+   "fade": 0.8,
+   "dim": -0.3
+  },
+  {
+   "at": "c4h",
+   "img": "saturn",
+   "from": "full@0.31",
+   "to": "full@0.36",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c4h.11",
+   "img": "third-may",
+   "from": "dead@1.4",
+   "to": "rifles@1.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c4h.18",
+   "img": "sleep-reason",
+   "from": "sleeper@1.2",
+   "to": "owls@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c4h.31",
+   "img": "selfportrait",
+   "from": "face@1.7",
+   "to": "face@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c4i",
+   "img": "saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "judith",
+     "saturn"
+    ],
+    "left": [
+     "pilgrimage"
+    ],
+    "right": [
+     "sabbath"
+    ],
+    "move": [
+     200,
+     900
+    ],
+    "yaw": [
+     -6,
+     0
+    ]
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c5a",
+   "img": "ferdinand",
+   "from": "full@0.55",
+   "to": "face@1.3",
+   "fade": 1.0
+  },
+  {
+   "at": "c5b",
+   "img": "third-may",
+   "from": "rifles@1.2",
+   "to": "white@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c5b.5",
+   "img": "selfportrait",
+   "from": "face@1.4",
+   "to": "face@1.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c5c",
+   "img": "quinta-1900",
+   "from": "full@1.0",
+   "to": "door@1.3",
+   "gray": 0.85,
+   "fade": 0.6
+  },
+  {
+   "at": "c5c.11",
+   "img": "duaso",
+   "from": "full@0.7",
+   "to": "face@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c5d",
+   "img": "map-exile",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "exile",
+    "pins": [
+     {
+      "city": "madrid",
+      "at": "c5d.8",
+      "label": "Madrid"
+     },
+     {
+      "city": "bordeaux",
+      "at": "c5e.14",
+      "label": "Bordeaux"
+     }
+    ],
+    "route": {
+     "from": "madrid",
+     "to": "bordeaux",
+     "at": "c5e.5",
+     "to_at": "c5e.14"
+    }
+   },
+   "fade": 0.6
+  },
+  {
+   "at": "c5f",
+   "img": "milkmaid",
+   "from": "full@0.62",
+   "to": "face@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c5f.7",
+   "img": "selfportrait",
+   "from": "face@1.2",
+   "to": "face@1.6",
+   "fade": 0.8,
+   "gray": 0.6
+  },
+  {
+   "at": "c5g",
+   "img": "saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "judith",
+     "saturn"
+    ],
+    "left": [
+     "pilgrimage"
+    ],
+    "right": [
+     "sabbath"
+    ],
+    "move": [
+     900,
+     150
+    ],
+    "yaw": [
+     0,
+     0
+    ],
+    "dim": 0.35
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c5g.14",
+   "img": "laurent-soup",
+   "from": "full@0.95",
+   "to": "faces@1.3",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6a",
+   "img": "laurent-sabbath",
+   "from": "full@1.0",
+   "to": "crowd@1.2",
+   "gray": 1,
+   "fade": 1.0
+  },
+  {
+   "at": "c6a.27",
+   "img": "saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "judith",
+     "saturn"
+    ],
+    "left": [
+     "pilgrimage"
+    ],
+    "right": [
+     "sabbath"
+    ],
+    "front": [
+     "leocadia",
+     "two-old"
+    ],
+    "door": true,
+    "move": [
+     300,
+     300
+    ],
+    "yaw": [
+     0,
+     180
+    ]
+   },
+   "fade": 0.6
+  },
+  {
+   "at": "c6b",
+   "img": "quinta-1900",
+   "from": "door@1.1",
+   "to": "full@1.0",
+   "gray": 0.85,
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.9",
+   "img": "laurent-twoold",
+   "from": "all@0.95",
+   "to": "all@1.1",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c6c",
+   "img": "quinta-1900",
+   "from": "full@1.1",
+   "to": "full@1.0",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6c.9",
+   "img": "erlanger",
+   "from": "full@0.62",
+   "to": "face@1.15",
+   "fade": 0.6
+  },
+  {
+   "at": "c6d",
+   "img": "laurent-saturn",
+   "from": "all@0.85",
+   "to": "all@1.0",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6d.11",
+   "img": "laurent-soup",
+   "from": "full@0.9",
+   "to": "full@1.05",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c6d.20",
+   "img": "laurent-dog",
+   "from": "dog@1.0",
+   "to": "dog@1.35",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c6e",
+   "img": "laurent-judith",
+   "from": "all@0.95",
+   "to": "all@1.15",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6f",
+   "img": "saturn",
+   "from": "full@0.33",
+   "to": "full@0.35",
+   "kind": "peel",
+   "peel": {
+    "at": "c6f.6",
+    "to": "c6f.13$",
+    "under": "plaster"
+   }
+  },
+  {
+   "at": "c6f.14",
+   "img": "saturn",
+   "from": "eyes@1.8",
+   "to": "eyes@2.0",
+   "fade": 0.6,
+   "contrast": 1.1
+  },
+  {
+   "at": "c6f.20",
+   "img": "laurent-saturn",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "saturn",
+   "labels": [
+    "1874 · ON THE WALL",
+    "TODAY · ON CANVAS"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c6h",
+   "img": "sabbath",
+   "from": "goat@1.0",
+   "to": "crowd@1.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c6h.18",
+   "img": "expo-1878",
+   "from": "palace@1.2",
+   "to": "full@1.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c6i",
+   "img": "expo-photo",
+   "from": "arch@1.0",
+   "to": "wall@1.25",
+   "gray": 0.4,
+   "fade": 0.8
+  },
+  {
+   "at": "c6i.14-0.20",
+   "img": "selfportrait",
+   "from": "face@1.3",
+   "to": "face@1.55",
+   "fade": 0.6,
+   "gray": 0.3
+  },
+  {
+   "at": "c6j",
+   "img": "saturn",
+   "from": "full@0.31",
+   "to": "full@0.34",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6j.13",
+   "img": "quinta-1900",
+   "from": "full@1.0",
+   "to": "full@1.15",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6j.18",
+   "img": "quinta-1900",
+   "from": "full@1.0",
+   "to": "full@1.04",
+   "gray": 1,
+   "kind": "peel",
+   "peel": {
+    "at": "c6j.18+0.40",
+    "to": "c6j$+0.60",
+    "under": "plaster"
+   }
+  },
+  {
+   "at": "c7a",
+   "img": "fight",
+   "from": "full@1.0",
+   "to": "left@1.2",
+   "fade": 1.0,
+   "dim": 0.15
+  },
+  {
+   "at": "c7a.13",
+   "img": "fight",
+   "from": "right@1.6",
+   "to": "right@1.9",
+   "hit": "small"
+  },
+  {
+   "at": "c7b",
+   "img": "quinta-1900",
+   "from": "full@1.0",
+   "to": "door@1.2",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c7b.12",
+   "img": "fight",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "back": [
+     "men-reading",
+     "women-laughing"
+    ],
+    "left": [
+     "asmodea",
+     "holy-office"
+    ],
+    "right": [
+     "atropos",
+     "fight"
+    ],
+    "move": [
+     600,
+     200
+    ],
+    "yaw": [
+     3,
+     -3
+    ],
+    "dim": 0.15
+   },
+   "fade": 0.6
+  },
+  {
+   "at": "c7c",
+   "img": "two-old",
+   "from": "shout@1.2",
+   "to": "old@1.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c7c.6",
+   "img": "soup",
+   "from": "crone@1.4",
+   "to": "skull@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c7d",
+   "img": "fight",
+   "from": "left@1.15",
+   "to": "right@1.25",
+   "fade": 0.8,
+   "dim": 0.1
+  },
+  {
+   "at": "c7d.15",
+   "img": "saturn",
+   "from": "full@0.31",
+   "to": "full@0.34",
+   "frame": true,
+   "fade": 0.6
+  },
+  {
+   "at": "c7d.22",
+   "img": "fight",
+   "from": "full",
+   "to": "full",
+   "kind": "room",
+   "room": {
+    "move": [
+     100,
+     700
+    ],
+    "yaw": [
+     0,
+     0
+    ],
+    "dim": 0.1
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "end1",
+   "img": "dog",
+   "from": "full@0.3",
+   "to": "full@0.33",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "end2",
+   "img": "dog",
+   "from": "sky@1.0",
+   "to": "head@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "end3",
+   "img": "dog",
+   "from": "head@1.6",
+   "to": "head@2.0",
+   "fade": 0.8
+  },
+  {
+   "at": "end4",
+   "img": "dog",
+   "from": "full@1.0",
+   "to": "sky@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "end5",
+   "img": "selfportrait",
+   "from": "face@1.5",
+   "to": "face@1.8",
+   "fade": 0.8,
+   "gray": 0.4
+  },
+  {
+   "at": "end5.9",
+   "img": "dog",
+   "from": "head@1.3",
+   "to": "sky@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "end6",
+   "img": "dog",
+   "from": "full@0.3",
+   "to": "full@0.29",
+   "frame": true,
+   "fade": 1.0
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold7.12$+0.90",
+   "to": "c1a-0.60",
+   "kicker": "FRANCISCO DE GOYA · 1819–1823",
+   "text": "The Black Paintings"
+  },
+  {
+   "type": "chapter",
+   "from": "c1h$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "The Fever"
+  },
+  {
+   "type": "chapter",
+   "from": "c2e$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "Fourteen Nightmares"
+  },
+  {
+   "type": "chapter",
+   "from": "c3j$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "Saturn"
+  },
+  {
+   "type": "chapter",
+   "from": "c4i$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "The Escape"
+  },
+  {
+   "type": "chapter",
+   "from": "c5g$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "Peeled Off the Walls"
+  },
+  {
+   "type": "chapter",
+   "from": "c6j$+0.35",
+   "to": "c7a+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "The Doubt"
+  },
+  {
+   "type": "chapter",
+   "from": "c1a-0.55",
+   "to": "c1a+2.20",
+   "kicker": "CHAPTER I",
+   "text": "The Deaf Man's House"
+  },
+  {
+   "type": "label",
+   "from": "cold1+0.40",
+   "to": "cold1$+0.30",
+   "text": "QUINTA DEL SORDO · MADRID · 1874"
+  },
+  {
+   "type": "credit",
+   "from": "cold1+0.40",
+   "to": "cold2$",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "label",
+   "from": "cold4",
+   "to": "cold4.5-0.10",
+   "text": "SATURN · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "cold4.5",
+   "to": "cold4.10-0.10",
+   "text": "WITCHES' SABBATH · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "cold4.10",
+   "to": "cold4$+0.60",
+   "text": "TWO OLD PEOPLE EATING SOUP · c. 1820–23"
+  },
+  {
+   "type": "lower",
+   "from": "cold6.8-0.10",
+   "to": "cold6.11-0.20",
+   "text": "Francisco de Goya",
+   "sub": "1746–1828"
+  },
+  {
+   "type": "year",
+   "from": "c1a+2.30",
+   "to": "c1b.8-0.30",
+   "text": "1819"
+  },
+  {
+   "type": "label",
+   "from": "c1b.8",
+   "to": "c1b.19-0.10",
+   "text": "FERDINAND VII · GOYA, 1814"
+  },
+  {
+   "type": "label",
+   "from": "c1c.16",
+   "to": "c1c.20-0.10",
+   "text": "THE THIRD OF MAY 1808 · GOYA, 1814"
+  },
+  {
+   "type": "label",
+   "from": "c1c.20",
+   "to": "c1c$+0.60",
+   "text": "THE DISASTERS OF WAR · PLATE 39"
+  },
+  {
+   "type": "label",
+   "from": "c1d",
+   "to": "c1e$",
+   "text": "THE QUINTA DEL SORDO · c. 1900"
+  },
+  {
+   "type": "credit",
+   "from": "c1d",
+   "to": "c1e$",
+   "text": "PHOTO: MANUEL ASENJO, c. 1900"
+  },
+  {
+   "type": "lower",
+   "from": "c1g+0.20",
+   "to": "c1g.13-0.20",
+   "text": "Leocadia Weiss",
+   "sub": "1788–1856"
+  },
+  {
+   "type": "label",
+   "from": "c2a+0.30",
+   "to": "c2c$",
+   "text": "SELF-PORTRAIT WITH DR ARRIETA · 1820 · MINNEAPOLIS INSTITUTE OF ART"
+  },
+  {
+   "type": "quote",
+   "from": "c2d.8",
+   "to": "c2d$+0.40",
+   "text": "Goya, grateful, to his friend Arrieta… at the end of the year 1819, at seventy-three years of age.",
+   "sub": "INSCRIPTION ON THE PAINTING, 1820"
+  },
+  {
+   "type": "label",
+   "from": "c3a+0.30",
+   "to": "c3a$",
+   "text": "FOR COMPARISON · GOYA, THE MEADOW OF SAN ISIDRO, 1788"
+  },
+  {
+   "type": "label",
+   "from": "c3b",
+   "to": "c3b$",
+   "text": "JUDITH AND HOLOFERNES ON THE WALL · J. LAURENT, 1874"
+  },
+  {
+   "type": "credit",
+   "from": "c3b",
+   "to": "c3b$",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "pin",
+   "from": "c3c+0.20",
+   "to": "c3c.8-0.10",
+   "text": "GROUND FLOOR · THE DINING ROOM"
+  },
+  {
+   "type": "credit",
+   "from": "c3c+0.20",
+   "to": "c3c.8-0.10",
+   "text": "RECONSTRUCTION AFTER THE 1828 INVENTORY · APPROXIMATE"
+  },
+  {
+   "type": "label",
+   "from": "c3c.8",
+   "to": "c3c$",
+   "text": "A PILGRIMAGE TO SAN ISIDRO · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "c3d",
+   "to": "c3d$",
+   "text": "WITCHES' SABBATH (THE GREAT HE-GOAT) · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "c3e",
+   "to": "c3e$",
+   "text": "LA LEOCADIA · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "c3f",
+   "to": "c3f$",
+   "text": "TWO OLD MEN · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "c3g",
+   "to": "c3g$",
+   "text": "JUDITH AND HOLOFERNES · c. 1820–23"
+  },
+  {
+   "type": "pin",
+   "from": "c3i+0.20",
+   "to": "c3i.6-0.10",
+   "text": "FIRST FLOOR"
+  },
+  {
+   "type": "credit",
+   "from": "c3i+0.20",
+   "to": "c3i.6-0.10",
+   "text": "RECONSTRUCTION AFTER THE 1828 INVENTORY · APPROXIMATE"
+  },
+  {
+   "type": "label",
+   "from": "c3i.46",
+   "to": "c3i$",
+   "text": "THE DOG · c. 1820–23"
+  },
+  {
+   "type": "label",
+   "from": "c3j.8",
+   "to": "c3j.20-0.10",
+   "text": "WITCHES' SABBATH ON THE WALL · J. LAURENT, 1874"
+  },
+  {
+   "type": "credit",
+   "from": "c3j.8",
+   "to": "c3j.20-0.10",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "label",
+   "from": "c4a+0.30",
+   "to": "c4b$",
+   "text": "SATURN · PETER PAUL RUBENS, 1636–38 · MUSEO DEL PRADO"
+  },
+  {
+   "type": "label",
+   "from": "c4d",
+   "to": "c4d.5-0.10",
+   "text": "SATURN · GOYA, c. 1820–23 · MUSEO DEL PRADO"
+  },
+  {
+   "type": "ring",
+   "from": "c4d.8+0.10",
+   "to": "c4d.9-0.10",
+   "point": "eyes",
+   "img": "saturn",
+   "rx": 230,
+   "ry": 120,
+   "rot": -6
+  },
+  {
+   "type": "label",
+   "from": "c4f",
+   "to": "c4f.11-0.10",
+   "text": "SATURN ON THE WALL · J. LAURENT, 1874"
+  },
+  {
+   "type": "credit",
+   "from": "c4f",
+   "to": "c4f.11-0.10",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "label",
+   "from": "c4h.18",
+   "to": "c4h.24-0.10",
+   "text": "THE SLEEP OF REASON PRODUCES MONSTERS · GOYA, 1799"
+  },
+  {
+   "type": "pin",
+   "from": "c4i+0.20",
+   "to": "c4i$+0.80",
+   "text": "THE DINING ROOM"
+  },
+  {
+   "type": "year",
+   "from": "c5a+0.10",
+   "to": "c5a.2+1.60",
+   "text": "1823"
+  },
+  {
+   "type": "label",
+   "from": "c5c.11",
+   "to": "c5c$",
+   "text": "JOSÉ DUASO Y LATRE · GOYA, 1824"
+  },
+  {
+   "type": "year",
+   "from": "c5d",
+   "to": "c5d.8",
+   "text": "1824"
+  },
+  {
+   "type": "label",
+   "from": "c5f",
+   "to": "c5f.7-0.10",
+   "text": "THE MILKMAID OF BORDEAUX · GOYA, c. 1825–27"
+  },
+  {
+   "type": "year",
+   "from": "c5f.7+0.20",
+   "to": "c5f$+0.60",
+   "text": "1828"
+  },
+  {
+   "type": "credit",
+   "from": "c5g.14",
+   "to": "c5g$+1.00",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "credit",
+   "from": "c6b.9",
+   "to": "c6b$+0.50",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE / C. TEIXIDOR CADENAS · CC BY-SA 4.0"
+  },
+  {
+   "type": "lower",
+   "from": "c6a.6-0.10",
+   "to": "c6a.8+1.20",
+   "text": "Antonio Brugada",
+   "sub": "PAINTER · THE 1828 INVENTORY"
+  },
+  {
+   "type": "credit",
+   "from": "c6a",
+   "to": "c6a.27-0.10",
+   "text": "PHOTO: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "pin",
+   "from": "c6a.27+0.20",
+   "to": "c6a$+0.40",
+   "text": "THE DINING ROOM · LOOKING BACK TO THE DOOR"
+  },
+  {
+   "type": "year",
+   "from": "c6c",
+   "to": "c6c.2+1.40",
+   "text": "1873"
+  },
+  {
+   "type": "credit",
+   "from": "c6c",
+   "to": "c6c.9-0.10",
+   "text": "PHOTO: MANUEL ASENJO, c. 1900"
+  },
+  {
+   "type": "lower",
+   "from": "c6c.9-0.10",
+   "to": "c6c$+0.60",
+   "text": "Baron Émile d'Erlanger",
+   "sub": "BANKER · OWNER FROM 1873"
+  },
+  {
+   "type": "credit",
+   "from": "c6c.9",
+   "to": "c6c$+0.60",
+   "text": "PHOTO: WIKIMEDIA COMMONS / NELLY12145 · CC BY-SA 4.0"
+  },
+  {
+   "type": "lower",
+   "from": "c6d.4+0.20",
+   "to": "c6d.11-0.20",
+   "text": "Jean Laurent",
+   "sub": "PHOTOGRAPHER · 1816–1886"
+  },
+  {
+   "type": "credit",
+   "from": "c6d",
+   "to": "c6e$",
+   "text": "PHOTOS: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "lower",
+   "from": "c6e.8-0.10",
+   "to": "c6e$+0.40",
+   "text": "Salvador Martínez Cubells",
+   "sub": "RESTORER, MUSEO DEL PRADO"
+  },
+  {
+   "type": "credit",
+   "from": "c6f.20",
+   "to": "c6f$+0.50",
+   "text": "LEFT: J. LAURENT, 1874 · IPCE · CC BY-SA 2.5 ES"
+  },
+  {
+   "type": "year",
+   "from": "c6h.16-0.20",
+   "to": "c6h$+0.60",
+   "text": "1878"
+  },
+  {
+   "type": "label",
+   "from": "c6i",
+   "to": "c6i.14-0.30",
+   "text": "THE SPANISH SECTION · TROCADÉRO, PARIS · 1878"
+  },
+  {
+   "type": "credit",
+   "from": "c6i",
+   "to": "c6i.14-0.30",
+   "text": "PHOTO: WIKIMEDIA COMMONS / C. TEIXIDOR CADENAS · CC BY-SA 4.0"
+  },
+  {
+   "type": "quote",
+   "from": "c6i.21-0.20",
+   "to": "c6i$+0.60",
+   "text": "A monster of immorality, impudence, and ingratitude.",
+   "sub": "P. G. HAMERTON · THE PORTFOLIO · 1879"
+  },
+  {
+   "type": "year",
+   "from": "c6j",
+   "to": "c6j.8-0.10",
+   "text": "1881"
+  },
+  {
+   "type": "year",
+   "from": "c7a",
+   "to": "c7a.2+1.80",
+   "text": "2003"
+  },
+  {
+   "type": "lower",
+   "from": "c7a.6-0.10",
+   "to": "c7a.9+1.00",
+   "text": "Juan José Junquera",
+   "sub": "ART HISTORIAN · 2003"
+  },
+  {
+   "type": "stamp",
+   "from": "c7a.13+0.05",
+   "to": "c7a$+0.50",
+   "text": "NOT GOYA?"
+  },
+  {
+   "type": "pin",
+   "from": "c7b.12+0.10",
+   "to": "c7b$+0.40",
+   "text": "THE FIRST FLOOR"
+  },
+  {
+   "type": "lower",
+   "from": "c7d.4-0.10",
+   "to": "c7d.10+1.40",
+   "text": "Nigel Glendinning",
+   "sub": "GOYA SCHOLAR"
+  },
+  {
+   "type": "label",
+   "from": "end1",
+   "to": "end2$",
+   "text": "THE DOG · c. 1820–23 · MUSEO DEL PRADO"
+  },
+  {
+   "type": "quote",
+   "from": "end4+0.10",
+   "to": "end4$+0.60",
+   "text": "The most beautiful picture in the world.",
+   "sub": "ANTONIO SAURA, ON THE DOG"
+  },
+  {
+   "type": "end",
+   "from": "end7$+1.00",
+   "to": "end7$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "cold1.4+0.10",
+   "fx": "shutter",
+   "gain": 0.5
+  },
+  {
+   "at": "c6d.8",
+   "fx": "shutter",
+   "gain": 0.5
+  },
+  {
+   "at": "c3h.11",
+   "fx": "riser",
+   "gain": 0.35
+  },
+  {
+   "at": "c6h.4",
+   "fx": "snip",
+   "gain": 0.6
+  },
+  {
+   "at": "c7a.13",
+   "fx": "sting",
+   "gain": 0.4
+  },
+  {
+   "at": "c1h$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c2e$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c3j$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c4i$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c5g$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c6j$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c1a-0.55",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "end4-0.20",
+   "fx": "chime",
+   "gain": 0.25
+  }
+ ],
+ "music": {
+  "bar": 5.5,
+  "music_db": -13,
+  "transpose": 0,
+  "chords": [
+   [
+    38,
+    45,
+    50
+   ],
+   [
+    38,
+    45,
+    49
+   ],
+   [
+    34,
+    41,
+    50
+   ],
+   [
+    33,
+    40,
+    49
+   ]
+  ],
+  "segments": [
+   {
+    "at": "c1a",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 0
+   },
+   {
+    "at": "c2a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": -2
+   },
+   {
+    "at": "c3a",
+    "chords": [
+     [
+      28,
+      40,
+      47
+     ],
+     [
+      36,
+      43,
+      48
+     ],
+     [
+      31,
+      38,
+      47
+     ],
+     [
+      35,
+      42,
+      47
+     ]
+    ],
+    "transpose": 0
+   },
+   {
+    "at": "c4a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": -3
+   },
+   {
+    "at": "c5a",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 2
+   },
+   {
+    "at": "c6a",
+    "chords": [
+     [
+      28,
+      40,
+      47
+     ],
+     [
+      36,
+      43,
+      48
+     ],
+     [
+      31,
+      38,
+      47
+     ],
+     [
+      35,
+      42,
+      47
+     ]
+    ],
+    "transpose": -1
+   },
+   {
+    "at": "c7a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": 1
+   },
+   {
+    "at": "end1",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 0
+   }
+  ],
+  "sections": {
+   "cold": [
+    "cold1",
+    "cold2$"
+   ],
+   "choir": [
+    "c3h.11-0.30",
+    "c4a-1.00"
+   ],
+   "drop": [
+    "c6i.10-0.10",
+    "c6i.12$+0.30"
+   ]
+  },
+  "heartbeat": [
+   "c3g",
+   "c3h.11-0.20"
+  ]
+ },
+ "maps": {
+  "exile": {
+   "bbox": [
+    [
+     -9.5,
+     36.0
+    ],
+    [
+     3.5,
+     47.5
+    ]
+   ],
+   "focus": [
+    "724",
+    "250"
+   ],
+   "cities": {
+    "madrid": [
+     -3.7,
+     40.42
+    ],
+    "bordeaux": [
+     -0.58,
+     44.84
+    ]
+   }
+  }
+ },
+ "next": false,
+ "facts": [
+  {
+   "claim": "Goya bought the Quinta del Sordo on 27 February 1819, from a previous owner who was deaf; he was 72",
+   "source": "https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654 ; https://en.wikipedia.org/wiki/Quinta_del_Sordo ; https://en.wikipedia.org/wiki/Black_Paintings"
+  },
+  {
+   "claim": "An illness at 46 (1792-93) left Goya deaf",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "Leocadia Weiss (1790-1856) lived with him at the Quinta with her daughter Rosario (b. 1814)",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "He wanted distance from the court of Ferdinand VII",
+   "source": "https://en.wikipedia.org/wiki/Quinta_del_Sordo"
+  },
+  {
+   "claim": "Late 1819 acute illness; Self-Portrait with Dr Arrieta (1820, Minneapolis Institute of Art) and its inscription",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Dr_Arrieta"
+  },
+  {
+   "claim": "14 murals in oil directly on the plaster of two rooms, c. 1820-23, painted over earlier rural scenes; never titled, signed or written about",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son ; https://stephenphelan.co.uk/articles/the-black-paintings/"
+  },
+  {
+   "claim": "Ground-floor/dining-room and first-floor arrangement (Brugada 1828, Yriarte 1867)",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"
+  },
+  {
+   "claim": "Saturn traditionally faced La Leocadia; the eyes were badly damaged and repainted",
+   "source": "https://fundaciongoyaenaragon.es/eng/obra/saturno-devorando-a-un-hijo/660"
+  },
+  {
+   "claim": "Rubens's Saturn (1636-38) for the king; calm vs Goya's madness; Ciofalo: the victim appears to be an adult; claim of an erased sexual detail",
+   "source": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+  },
+  {
+   "claim": "1823 restoration of absolutism; house signed over to grandson Mariano in 1823; hiding at priest José Duaso's; 2 May 1824 request to take the waters at Plombières",
+   "source": "https://fundaciongoyaenaragon.es/eng/obra/jose-duaso-y-latre/195 ; https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"
+  },
+  {
+   "claim": "Goya died in Bordeaux on 16 April 1828, aged 82; he did not write of the Black Paintings",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "Mariano gave the house to Javier in 1830 and inherited it again in 1854; bought by Émile d'Erlanger in 1873",
+   "source": "https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"
+  },
+  {
+   "claim": "J. Laurent photographed the murals in situ in 1874; transfer to canvas by Salvador Martínez Cubells, the Prado's chief restorer, with extensive repainting",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son ; https://www.eeweems.com/goya/lubow5.html"
+  },
+  {
+   "claim": "Witches' Sabbath was cut, possibly to fit a space in Paris; shown at the Trocadéro, 20 May - 10 Nov 1878; donated to the State (decree 20 Dec 1881)",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://fundaciongoyaenaragon.es/eng/obra/la-leocadia/654"
+  },
+  {
+   "claim": "Hamerton (The Portfolio, 1879) called Goya 'a monster of immorality, impudence, and ingratitude'",
+   "source": "https://www.metmuseum.org/art/collection/search/626365"
+  },
+  {
+   "claim": "The house was demolished in 1909",
+   "source": "https://en.wikipedia.org/wiki/Quinta_del_Sordo"
+  },
+  {
+   "claim": "Junquera (2003): one-storey records, Javier as author, Mariano selling; Glendinning 'totally unconvinced'; the Prado accepts them",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://www.eeweems.com/goya/lubow5.html"
+  },
+  {
+   "claim": "Antonio Saura called The Dog 'the world's most beautiful picture'",
+   "source": "https://en.wikipedia.org/wiki/The_Dog_(Goya) ; https://stephenphelan.co.uk/articles/the-black-paintings/"
+  }
+ ],
+ "rights": {
+  "creator_died": 1828,
+  "note": "All paintings public domain; CC BY-SA archive photos credited on screen and in the description."
+ }
+}

@@ -108,6 +108,32 @@ sort cleanly by the promise the title makes. Every story declares one `hook_type
   at 2000 px or more.
 - Best hooks: the seven `hook_type`s in §2. A crime, a scandal, a hidden detail, a lie everybody believes, something done TO the painting.
 
+## 3b. Long-form videos (YouTube, from 6 Nov 2026)
+
+From the YouTube market study (6 Nov 2026): the winners tell one dark or astonishing painting story in 8–12 minutes,
+every week, with a text-free close-up thumbnail and a short statement title; the decliners got longer and rarer.
+YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
+
+- **Cadence and length.** One long video a week (Thursday), 10–12 minutes, never under 8:00 (mid-roll ads). 16:9.
+- **Same show as the Shorts.** Same narrator voice and speed family, same procedural music, living 2.5D paintings,
+  grain, serif type, red accent. `story.json` → `"format": "long"`; build with `plan → tts → align → build_story →
+  score → thumb → studio/render_long.mjs → long_finalize` (see `stories/goya-black-paintings/plan.py`).
+- **Shape.** A 30–50 s cold open on the most arresting image and one question → title card → 5–7 chapters with
+  chapter cards, each ending on an open question → a twist near the middle → the payoff → the plain line
+  "It hangs in the <Museum>, in <City>." → a 20 s end screen.
+- **Pace.** ≈ 135 wpm (story `speed` 0.94, phrase pauses ×1.3), a new shot every 4–8 s, crossfades between related
+  shots, hard cuts with a hit only on reveals. Dates as big year cards, names as lower thirds, quotes as quote cards.
+- **Title.** A statement of ≤ 9 words and ≤ 60 characters, no numbers; legend or praise first, horror second. Two
+  titles and two thumbnails tested per video (Test & Compare).
+- **Thumbnail.** Style D close-up at 1280×720 (`pipeline/thumb.py`): A = no text, B = at most three words.
+- **Topics.** A famous painting or painter with a true, sourced legend; first choice: stories whose Short did well
+  on YouTube, or topics where an existing video already passed ~400K views.
+- **Facts and credits.** Every narrated claim in `facts`; hedges where sources hedge; CC images credited on screen
+  and in the description (`long_finalize.py` writes chapters, sources, credits and subtitles).
+- **Funnel.** Cut two Shorts from each long video and link them to it with YouTube's related-video field.
+- **Measure.** Click-through rate, average % viewed, views at 7 days, subscribers per 1,000 views — long videos are
+  compared only with long videos.
+
 ## 4. Learned from feedback
 
 Rules Gigi added after watching reels or reading the analytics. They override anything above.

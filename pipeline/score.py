@@ -34,15 +34,24 @@ t = np.arange(len(v)) / SR
 
 def mask(a, b, fade=0.6):
     m = ((t >= a) & (t < b)).astype(float); k = int(fade * SR) | 1
-    return np.convolve(m, np.hanning(k) / np.hanning(k).sum(), mode="same")
+    return signal.fftconvolve(m, np.hanning(k) / np.hanning(k).sum(), mode="same")   # FFT: same result, fast on 10-minute mixes
 
 
 tr = M.get("transpose", 0); bar = M.get("bar", 5.0)
 seq = M.get("chords", [[38, 45, 50], [38, 45, 49], [34, 41, 50], [33, 40, 49]])
-music = np.zeros(len(t))
+segs = sorted(M.get("segments", []), key=lambda g: g["t"])   # long-form: a new progression per chapter, same instruments
+def seg_at(x):
+    g = [s for s in segs if s["t"] <= x + 1e-6]
+    return (g[-1].get("chords", seq), g[-1].get("transpose", tr), g[-1]["t"]) if g else (seq, tr, 0.0)
+music = np.zeros(len(t)); drone = np.zeros(len(t))
 for i in range(int(D / bar) + 2):
-    S.place(music, S.pad([n + tr for n in seq[i % len(seq)]], bar * 1.5, 900), i * bar, 0.55)
-music += np.sin(2 * np.pi * S.midi(seq[0][0] + tr - 12) * t) * 0.16          # sub drone on the root
+    sq, tp, t0 = seg_at(i * bar); j = int(round((i * bar - t0) / bar))
+    S.place(music, S.pad([n + tp for n in sq[j % len(sq)]], bar * 1.5, 900), i * bar, 0.55)
+for k, g in enumerate([{"t": 0.0, "chords": seq, "transpose": tr}] + segs):   # sub drone on each section's root, crossfaded
+    a = g["t"]; b = segs[k]["t"] if k < len(segs) else D + 1
+    root = g.get("chords", seq)[0][0] + g.get("transpose", tr) - 12
+    drone += np.sin(2 * np.pi * S.midi(root) * t) * 0.16 * mask(a, b, 2.0)
+music += drone
 sec = M.get("sections", {})
 if "cold" in sec:
     m = mask(*sec["cold"]); music *= 1 - 0.65 * m
@@ -72,7 +81,7 @@ for x in rs["sfx"]:
     S.place(fx, FX[x["fx"]](), x["t"] - lead, x["gain"])
 fx /= max(1.0, np.abs(fx).max())
 
-mix = v + music * 10 ** (-12 / 20) * S.duck_env(v) + fx * 10 ** (-6.5 / 20)
+mix = v + music * 10 ** (M.get("music_db", -12) / 20) * S.duck_env(v) + fx * 10 ** (M.get("fx_db", -6.5) / 20)
 fade = int(0.8 * SR); mix[-fade:] *= np.linspace(1, 0, fade)
 mix *= 10 ** ((-14.0 - pyln.Meter(SR).integrated_loudness(mix)) / 20)
 mix = np.where(np.abs(mix) > 0.7, np.sign(mix) * (0.7 + 0.28 * np.tanh((np.abs(mix) - 0.7) / 0.28)), mix)   # soft clip

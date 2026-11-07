@@ -81,7 +81,7 @@ def main(weekly=False):
         except Exception as e:
             row(None, "YouTube numbers (learning loop)", "not yet: enable the YouTube Analytics API and get a refresh token with "
                 "the yt-analytics.readonly scope (SETUP step 5)" if ("403" in str(e) or "401" in str(e)) else str(e)[:150])
-    if has("IG_ACCESS_TOKEN"):
+    if has("IG_ACCESS_TOKEN") and "instagram" in CONFIG.get("learning_platforms", ["youtube"]):
         try:
             import glob
             mids = sorted(((json.load(open(f)).get("posted_at") or "", (json.load(open(f)).get("instagram") or {}).get("id"))
