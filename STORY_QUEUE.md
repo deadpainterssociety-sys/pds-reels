@@ -37,6 +37,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 8 Nov 2026 | vaneyck-arnolfini | Van Eyck, *The Arnolfini Portrait* (National Gallery) | the two men in the mirror, one in red probably van Eyck; "Jan van Eyck was here"; Panofsky's witness theory, now doubted | hidden |
 | 9 Nov 2026 | gericault-medusa | Géricault, *The Raft of the Medusa* (Louvre) | 150 on a raft cut loose, 15 alive; Géricault painted severed limbs from the morgue as they rotted; hedged severed head on the roof | dark |
 | 9 Nov 2026 | vaneyck-justjudges | Van Eyck, *Ghent Altarpiece*, *Just Judges* panel (St Bavo's Cathedral, Ghent) | stolen April 1934; 1 million francs ransom; St John returned in a Brussels luggage locker; Goedertier's deathbed claim; 1945 copy with Leopold III's face; never found | damage |
+| 10 Nov 2026 | anthonissen-whale | Van Anthonissen, *View of Scheveningen Sands* (Fitzwilliam Museum, Cambridge) | a beached sperm whale painted out by a later owner (18th–19th c.); uncovered by Shan Kuang in 2014 | time-gap |
+| 10 Nov 2026 | fuseli-nightmare | Fuseli, *The Nightmare* (Detroit Institute of Arts) | the 'mare' is a folklore spirit, not a horse; first drawing (March 1781) had no horse; the head is a visual pun; 20 guineas vs £500+ for the prints | hidden |
 
 ## Ideas (to verify)
 
@@ -47,7 +49,6 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | dark-legend | **nude: safe framing**; the model claim is a legend: say so |
 | Titian, *Venus of Urbino* (Uffizi) | Mark Twain called it the "vilest" picture in the world | hidden | **nude: safe framing**; check the quote word for word |
 | Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
-| Fuseli, *The Nightmare* (Detroit Institute of Arts) | the demon on the sleeping woman; the scene echoed in *Frankenstein* | dark | lesser-known-ish; the Mary Shelley link is a scholarly reading: hedge |
 | Velázquez, *Las Meninas* (Prado) | the knight's cross on his chest was added after the painting was finished | hidden | when and by whom; "the king painted it" is legend |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |

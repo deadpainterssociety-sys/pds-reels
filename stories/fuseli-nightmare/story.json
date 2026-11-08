@@ -1,0 +1,727 @@
+{
+ "slug": "fuseli-nightmare",
+ "hook_type": "hidden",
+ "teaser": "The demon sitting on a sleeper's chest",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Henry Fuseli",
+  "born": 1741,
+  "died": 1825,
+  "painting": "The Nightmare",
+  "year": "1781",
+  "museum": "Detroit Institute of Arts",
+  "city": "Detroit",
+  "image": "nightmare",
+  "image_credit": "Detroit Institute of Arts, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Why is there <i>a horse</i> in her room?",
+  "name": "HENRY FUSELI",
+  "work": "The Nightmare, 1781",
+  "focus": [
+   0.285,
+   0.235
+  ],
+  "span": 0.62,
+  "answered_by": "A visual pun: the 'mare' in nightmare was a spirit that sat on sleepers' chests, not a horse; Fuseli's first drawing had no horse"
+ },
+ "say": {
+  "1781": "seventeen eighty-one",
+  "1782": "seventeen eighty-two"
+ },
+ "ipa": {
+  "Fuseli": "fjˈuːzəli"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "That horse isn't the nightmare.",
+     0.4,
+     0.92
+    ],
+    [
+     "The thing on her chest *is.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "In 1781,",
+     0.3,
+     0.95
+    ],
+    [
+     "in London,",
+     0.25,
+     0.95
+    ],
+    [
+     "a Swiss painter, Henry Fuseli,",
+     0.25,
+     0.94
+    ],
+    [
+     "painted a woman asleep,",
+     0.25,
+     0.94
+    ],
+    [
+     "thrown back across her bed.",
+     0.75,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "demon",
+   "perf": [
+    [
+     "On her chest crouches a demon.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "mare",
+   "perf": [
+    [
+     "In old northern folklore,",
+     0.3,
+     0.94
+    ],
+    [
+     "the mare was a spirit",
+     0.25,
+     0.93
+    ],
+    [
+     "that sat on sleepers' chests,",
+     0.25,
+     0.93
+    ],
+    [
+     "to torment and suffocate them.",
+     0.8,
+     0.92
+    ],
+    [
+     "That's the mare in *nightmare.*",
+     0.35,
+     0.9
+    ],
+    [
+     "Not a horse.",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "drawing",
+   "perf": [
+    [
+     "Fuseli's first drawing,",
+     0.25,
+     0.94
+    ],
+    [
+     "from March 1781,",
+     0.3,
+     0.94
+    ],
+    [
+     "had no horse at all.",
+     0.8,
+     0.9
+    ],
+    [
+     "He added the head later,",
+     0.3,
+     0.94
+    ],
+    [
+     "in the painting.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "show",
+   "perf": [
+    [
+     "In 1782,",
+     0.3,
+     0.95
+    ],
+    [
+     "it was shown at the Royal Academy.",
+     0.35,
+     0.94
+    ],
+    [
+     "Critics were horrified,",
+     0.25,
+     0.92
+    ],
+    [
+     "and *fascinated.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "money",
+   "perf": [
+    [
+     "Fuseli sold it for twenty guineas.",
+     0.35,
+     0.94
+    ],
+    [
+     "Printed copies made his publisher",
+     0.2,
+     0.94
+    ],
+    [
+     "over five hundred *pounds.*",
+     0.85,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Scholars see the horse as a visual pun.",
+     0.35,
+     0.93
+    ],
+    [
+     "A joke on the word.",
+     0.8,
+     0.9
+    ],
+    [
+     "The real nightmare",
+     0.2,
+     0.92
+    ],
+    [
+     "is the one sitting on her *chest.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Detroit Institute of Arts, in Detroit.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "nightmare": {
+   "file": "src/nightmare.jpg",
+   "commons": "File:Johann Heinrich Füssli - The Nightmare 55.5.A-d1-2019-04-15.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "horse": [
+     0.27,
+     0.23
+    ],
+    "demonface": [
+     0.65,
+     0.15
+    ],
+    "demon": [
+     0.66,
+     0.27
+    ],
+    "face": [
+     0.85,
+     0.65
+    ],
+    "hand": [
+     0.81,
+     0.9
+    ],
+    "reveal": [
+     0.55,
+     0.45
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "northcote": {
+   "file": "src/northcote.jpg",
+   "commons": "File:Henry Fuseli by James Northcote.jpg",
+   "points": {
+    "face": [
+     0.53,
+     0.29
+    ]
+   }
+  },
+  "print": {
+   "file": "src/print.jpg",
+   "commons": "File:Füssli - The Nightmare, 1781, 1885,0314.198.jpg",
+   "points": {
+    "demon": [
+     0.76,
+     0.22
+    ],
+    "face": [
+     0.82,
+     0.55
+    ],
+    "empty": [
+     0.22,
+     0.2
+    ],
+    "center": [
+     0.5,
+     0.48
+    ]
+   }
+  },
+  "ra": {
+   "file": "src/ra.jpg",
+   "commons": "File:Tentoonstelling in de Royal Academy in Londen in 1787, RP-P-OB-63.289.jpg",
+   "long": 3840,
+   "points": {
+    "crowd": [
+     0.45,
+     0.52
+    ],
+    "center": [
+     0.5,
+     0.48
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "nightmare",
+   "from": "horse@2.3",
+   "to": "horse@2.5",
+   "sway": 0.006,
+   "dim": -0.2
+  },
+  {
+   "at": "hook.5-0.03",
+   "img": "nightmare",
+   "from": "demonface@2.2",
+   "to": "demonface@2.35",
+   "sway": 0.005,
+   "dim": -0.2
+  },
+  {
+   "at": "hook.9-0.03",
+   "img": "nightmare",
+   "from": "reveal@1.0",
+   "to": "reveal@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big",
+   "dim": -0.2
+  },
+  {
+   "at": "painted-0.08",
+   "img": "nightmare",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.44",
+   "frame": true,
+   "sway": 0.002,
+   "dim": -0.2
+  },
+  {
+   "at": "painted.4-0.05",
+   "img": "northcote",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "gray": 0.35
+  },
+  {
+   "at": "painted.9-0.05",
+   "img": "nightmare",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "sway": 0.006,
+   "dim": -0.2
+  },
+  {
+   "at": "demon-0.08",
+   "img": "nightmare",
+   "from": "demon@1.8",
+   "to": "demon@1.95",
+   "sway": 0.006,
+   "hit": "small",
+   "dim": -0.2
+  },
+  {
+   "at": "mare-0.08",
+   "img": "nightmare",
+   "kind": "image",
+   "from": "demonface@2.4",
+   "to": "demonface@2.55",
+   "gray": 1,
+   "dim": -0.3
+  },
+  {
+   "at": "mare.9-0.05",
+   "img": "print",
+   "kind": "image",
+   "from": "demon@1.4",
+   "to": "demon@1.5",
+   "gray": 1,
+   "dim": -0.2
+  },
+  {
+   "at": "mare.19-0.05",
+   "img": "nightmare",
+   "from": "demon@2.0",
+   "to": "demon@2.15",
+   "sway": 0.006,
+   "dim": -0.2
+  },
+  {
+   "at": "mare.24-0.05",
+   "img": "nightmare",
+   "from": "horse@2.0",
+   "to": "horse@2.15",
+   "sway": 0.006,
+   "hit": "small",
+   "dim": -0.2
+  },
+  {
+   "at": "drawing-0.08",
+   "img": "print",
+   "kind": "image",
+   "from": "center@0.41",
+   "to": "center@0.42",
+   "frame": true,
+   "sway": 0.002,
+   "dim": -0.2
+  },
+  {
+   "at": "drawing.6-0.05",
+   "img": "print",
+   "kind": "image",
+   "from": "empty@1.3",
+   "to": "empty@1.4",
+   "dim": -0.2
+  },
+  {
+   "at": "drawing.11-0.05",
+   "img": "nightmare",
+   "from": "horse@1.8",
+   "to": "horse@1.95",
+   "sway": 0.006,
+   "dim": -0.2
+  },
+  {
+   "at": "show-0.08",
+   "img": "ra",
+   "kind": "image",
+   "from": "crowd@1.75",
+   "to": "crowd@1.9",
+   "gray": 1
+  },
+  {
+   "at": "show.9-0.05",
+   "img": "nightmare",
+   "from": "demonface@2.5",
+   "to": "demonface@2.65",
+   "sway": 0.005,
+   "dim": -0.2
+  },
+  {
+   "at": "money-0.08",
+   "img": "northcote",
+   "kind": "image",
+   "from": "face@1.6",
+   "to": "face@1.72",
+   "gray": 0.35
+  },
+  {
+   "at": "money.6-0.05",
+   "img": "nightmare",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.005,
+   "dim": -0.2
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "nightmare",
+   "from": "horse@1.6",
+   "to": "horse@1.75",
+   "sway": 0.006,
+   "dim": -0.2
+  },
+  {
+   "at": "payoff.13-0.05",
+   "img": "nightmare",
+   "from": "reveal@1.0",
+   "to": "reveal@1.06",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big",
+   "dim": -0.2
+  },
+  {
+   "at": "payoff.19-0.05",
+   "img": "nightmare",
+   "from": "demon@1.7",
+   "to": "demon@1.85",
+   "sway": 0.006,
+   "dim": -0.2
+  },
+  {
+   "at": "ending-0.08",
+   "img": "nightmare",
+   "from": "face@1.7",
+   "to": "face@1.9",
+   "sway": 0.006,
+   "dim": -0.2
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.4-0.1",
+   "text": "LONDON · 1781"
+  },
+  {
+   "type": "label",
+   "from": "painted.4",
+   "to": "painted.9-0.1",
+   "text": "FUSELI · BY JAMES NORTHCOTE"
+  },
+  {
+   "type": "label",
+   "from": "mare",
+   "to": "mare.9-0.1",
+   "text": "THE MARE · NORSE FOLKLORE"
+  },
+  {
+   "type": "label",
+   "from": "drawing",
+   "to": "drawing.11-0.1",
+   "text": "FUSELI · CHALK STUDY"
+  },
+  {
+   "type": "ring",
+   "at": "drawing.7",
+   "to": "drawing.11-0.1",
+   "img": "print",
+   "point": "empty",
+   "rx": 180,
+   "ry": 160,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "show",
+   "to": "show.9-0.1",
+   "text": "ROYAL ACADEMY SHOW · 1787 VIEW"
+  },
+  {
+   "type": "label",
+   "from": "money",
+   "to": "money.6-0.1",
+   "text": "SOLD FOR 20 GUINEAS"
+  },
+  {
+   "type": "label",
+   "from": "money.6",
+   "to": "payoff-0.1",
+   "text": "PRINTS · OVER £500 TO J. R. SMITH"
+  },
+  {
+   "type": "ring",
+   "at": "payoff.3",
+   "to": "payoff.13-0.1",
+   "img": "nightmare",
+   "point": "horse",
+   "rx": 170,
+   "ry": 190,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "DETROIT INSTITUTE OF ARTS"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "mare-0.2",
+    "drawing$+0.2"
+   ],
+   "drop": [
+    "mare.24-0.1",
+    "mare$+0.3"
+   ],
+   "choir": [
+    "payoff.13-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.9-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "demon.5",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "drawing.7",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "money.5",
+   "fx": "chime",
+   "gain": 0.35
+  },
+  {
+   "at": "payoff.7",
+   "fx": "pop",
+   "gain": 0.35
+  }
+ ],
+ "rights": {
+  "creator_died": 1825,
+  "note": "Fuseli d. 1825: public domain (painting, chalk study at the British Museum). Northcote (d. 1831) portrait PD. Martini 1787 Royal Academy print CC0 (Rijksmuseum)."
+ },
+ "facts": [
+  {
+   "claim": "The Nightmare, oil on canvas, painted by the Swiss-born Henry Fuseli (1741–1825) in 1781 in London (first drawing inscribed 'St. Martin's Lane, March 1781'); a woman asleep, draped across her bed, with an ape-like incubus crouching on her chest",
+   "source": "https://en.wikipedia.org/wiki/The_Nightmare ; https://www.gutenberg.org/ebooks/38591 (Knowles, The Life and Writings of Henry Fuseli, 1831, vol. 1, ch. IV) ; https://en.wikipedia.org/wiki/Henry_Fuseli"
+  },
+  {
+   "claim": "In Germanic/Scandinavian folklore the mare is a malicious spirit that sits or 'rides' on sleepers' chests, bringing bad dreams; Wikipedia (citing Stewart 2002): a spirit sent to torment or suffocate sleepers; the word is etymologically unrelated to mare, the female horse",
+   "source": "https://en.wikipedia.org/wiki/Mare_(folklore) ; https://en.wikipedia.org/wiki/The_Nightmare"
+  },
+  {
+   "claim": "Fuseli's first drawing, dated by him 'St. Martin's Lane, March 1781', 'is composed without the head of the mare. This subsequent thought is added in the picture' (Knowles); Wikipedia: a preliminary chalk sketch did not include the horse",
+   "source": "https://www.gutenberg.org/ebooks/38591 (Knowles, The Life and Writings of Henry Fuseli, 1831, vol. 1, ch. IV) ; https://en.wikipedia.org/wiki/The_Nightmare"
+  },
+  {
+   "claim": "Shown at the Royal Academy exhibition of 1782, where it 'excited ... an uncommon degree of interest' (Knowles); critics reacted with horrified fascination (Wikipedia)",
+   "source": "https://www.gutenberg.org/ebooks/38591 (Knowles, The Life and Writings of Henry Fuseli, 1831, vol. 1, ch. IV) ; https://en.wikipedia.org/wiki/The_Nightmare"
+  },
+  {
+   "claim": "Fuseli sold the picture for twenty guineas; it was engraved by Burke and published by J. R. Smith, who 'acknowledged to have gained upwards of five hundred pounds by the sale of the prints'",
+   "source": "https://www.gutenberg.org/ebooks/38591 (Knowles, The Life and Writings of Henry Fuseli, 1831, vol. 1, ch. IV) ; https://en.wikipedia.org/wiki/The_Nightmare"
+  },
+  {
+   "claim": "The horse's head is viewed as a visual pun on the word 'nightmare' (Ellis, The History of Gothic Fiction, 2000)",
+   "source": "https://en.wikipedia.org/wiki/The_Nightmare"
+  },
+  {
+   "claim": "On-screen chalk study without the horse: Fuseli, The Nightmare, drawing, British Museum 1885,0314.198 (not claimed to be the March 1781 drawing)",
+   "source": "https://commons.wikimedia.org/wiki/File:F%C3%BCssli_-_The_Nightmare,_1781,_1885,0314.198.jpg"
+  },
+  {
+   "claim": "The painting is in the Detroit Institute of Arts, Detroit",
+   "source": "https://en.wikipedia.org/wiki/The_Nightmare ; https://dia.org/collection/nightmare-45573"
+  }
+ ],
+ "caption": "In 1781, in London, the Swiss painter Henry Fuseli painted a woman asleep, thrown back across her bed, with a demon crouching on her chest. And a horse's head, with blank white eyes, pushing through the curtain.\n\nBut the horse isn't the nightmare. In old Germanic and Scandinavian folklore, the mare was a spirit that sat on sleepers' chests, tormenting and suffocating them. That is the 'mare' in nightmare. It has nothing to do with horses.\n\nFuseli's first drawing, from March 1781, had no horse at all: his friend and biographer John Knowles wrote that the head was added later, in the painting. Scholars read it as a visual pun.\n\nShown at the Royal Academy in 1782, it caused a sensation. Fuseli sold it for twenty guineas; the publisher of the prints said he made over five hundred pounds.\n\n🖤 Have you ever felt something sitting on your chest in your sleep?",
+ "caption_short": "That horse isn't the nightmare. The demon on her chest is. Fuseli's horse was a pun on the word. 🖤",
+ "youtube_title": "That horse isn't the nightmare | Fuseli, The Nightmare",
+ "hashtags": [
+  "#fuseli",
+  "#thenightmare",
+  "#henryfuseli",
+  "#detroitinstituteofarts",
+  "#detroit",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#folklore",
+  "#darkart"
+ ],
+ "hashtags_instagram": [
+  "#fuseli",
+  "#thenightmare",
+  "#arthistory",
+  "#detroit",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#fuseli",
+  "#thenightmare",
+  "#folklore"
+ ]
+}

@@ -1,0 +1,799 @@
+{
+ "slug": "anthonissen-whale",
+ "hook_type": "time-gap",
+ "teaser": "The dead whale someone painted out",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Hendrick van Anthonissen",
+  "born": 1605,
+  "died": 1656,
+  "painting": "View of Scheveningen Sands",
+  "year": "c. 1641",
+  "museum": "Fitzwilliam Museum",
+  "city": "Cambridge",
+  "image": "sands",
+  "image_credit": "Fitzwilliam Museum, Cambridge, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Who painted out <i>the whale?</i>",
+  "name": "HENDRICK VAN ANTHONISSEN",
+  "work": "View of Scheveningen Sands, c. 1641",
+  "focus": [
+   0.74,
+   0.73
+  ],
+  "span": 0.6,
+  "answered_by": "A later owner, experts think, in the 18th or 19th century; maybe a dead animal seemed offensive, maybe it sold better"
+ },
+ "say": {
+  "1641": "sixteen forty-one",
+  "1873": "eighteen seventy-three",
+  "2014": "twenty fourteen"
+ },
+ "ipa": {
+  "Scheveningen": "skˈeɪvənɪŋən",
+  "Anthonissen": "ˌɑntoʊnˈɪsən",
+  "Kuang": "kwˈɑŋ"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Someone painted a dead whale",
+     0.25,
+     0.94
+    ],
+    [
+     "out of *this* picture.",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "Around 1641,",
+     0.3,
+     0.95
+    ],
+    [
+     "the Dutch painter Hendrick van Anthonissen",
+     0.25,
+     0.95
+    ],
+    [
+     "painted the beach, near The Hague.",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "crowd",
+   "perf": [
+    [
+     "Crowds on the sand.",
+     0.3,
+     0.95
+    ],
+    [
+     "People on the dunes.",
+     0.3,
+     0.95
+    ],
+    [
+     "All staring at the sea...",
+     0.3,
+     0.94
+    ],
+    [
+     "at *nothing.*",
+     0.85,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "museum",
+   "perf": [
+    [
+     "In 1873,",
+     0.3,
+     0.95
+    ],
+    [
+     "it was given to the Fitzwilliam Museum.",
+     0.35,
+     0.94
+    ],
+    [
+     "Nobody knew anything was *missing.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "clean",
+   "perf": [
+    [
+     "In 2014,",
+     0.3,
+     0.95
+    ],
+    [
+     "a student conservator, Shan Kuang,",
+     0.25,
+     0.94
+    ],
+    [
+     "began removing the old varnish.",
+     0.75,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "man",
+   "perf": [
+    [
+     "A tiny man appeared,",
+     0.3,
+     0.94
+    ],
+    [
+     "standing on the horizon.",
+     0.35,
+     0.94
+    ],
+    [
+     "Beside him,",
+     0.25,
+     0.95
+    ],
+    [
+     "something like a *sail.*",
+     0.85,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "fin",
+   "perf": [
+    [
+     "It wasn't a sail.",
+     0.3,
+     0.9
+    ],
+    [
+     "It was a *fin.*",
+     0.8,
+     0.84
+    ],
+    [
+     "Under a thick layer of later paint",
+     0.25,
+     0.94
+    ],
+    [
+     "lay a stranded sperm whale.",
+     0.35,
+     0.92
+    ],
+    [
+     "The man stood on its *back.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "why",
+   "perf": [
+    [
+     "Experts think a later owner",
+     0.2,
+     0.95
+    ],
+    [
+     "had it painted out.",
+     0.35,
+     0.94
+    ],
+    [
+     "Maybe a dead animal seemed offensive.",
+     0.3,
+     0.95
+    ],
+    [
+     "Maybe it sold *better.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Now the whale is back.",
+     0.35,
+     0.92
+    ],
+    [
+     "And the crowd finally has",
+     0.2,
+     0.94
+    ],
+    [
+     "something to *stare at.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Fitzwilliam Museum, in Cambridge.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "sands": {
+   "file": "src/sands.jpg",
+   "commons": "File:View of Scheveningen sands, by Hendrick van Anthonissen.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "whale": [
+     0.745,
+     0.735
+    ],
+    "fin": [
+     0.765,
+     0.69
+    ],
+    "man": [
+     0.736,
+     0.695
+    ],
+    "crowd": [
+     0.585,
+     0.8
+    ],
+    "dunes": [
+     0.07,
+     0.6
+    ],
+    "rider": [
+     0.74,
+     0.79
+    ],
+    "seaL": [
+     0.6,
+     0.76
+    ],
+    "center": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  "before": {
+   "file": "src/before.jpg",
+   "commons": "File:Hendrick van Anthonissen - View of Scheveningen sands before restauration in 2014.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "sea": [
+     0.75,
+     0.72
+    ],
+    "man": [
+     0.736,
+     0.695
+    ],
+    "fin": [
+     0.765,
+     0.685
+    ]
+   }
+  },
+  "beverwijk": {
+   "file": "src/beverwijk.jpg",
+   "commons": "File:Gestrande walvis bij Beverwijk, 1601, RP-P-OB-4635.jpg",
+   "long": 3840,
+   "points": {
+    "whale": [
+     0.42,
+     0.55
+    ],
+    "man": [
+     0.33,
+     0.42
+    ],
+    "crowd": [
+     0.62,
+     0.72
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "fitz": {
+   "file": "src/fitz.jpg",
+   "commons": "File:The exterior of the Fitzwilliam Museum - geograph.org.uk - 7980099.jpg",
+   "credit": "Fitzwilliam Museum exterior: photo by Malcolm Neal, CC BY-SA 2.0, via Wikimedia Commons (geograph.org.uk)",
+   "points": {
+    "portico": [
+     0.7,
+     0.45
+    ]
+   }
+  },
+  "momper": {
+   "file": "src/momper.jpg",
+   "commons": "File:Frans de Momper - View of Scheveningen from the dunes.jpg",
+   "long": 3840,
+   "points": {
+    "beach": [
+     0.33,
+     0.76
+    ],
+    "center": [
+     0.5,
+     0.6
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "sands",
+   "from": "whale@2.3",
+   "to": "whale@2.5",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.7-0.03",
+   "img": "sands",
+   "from": "whale@1.35",
+   "to": "whale@1.42",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "painted-0.08",
+   "img": "momper",
+   "kind": "image",
+   "from": "beach@1.8",
+   "to": "beach@1.95",
+   "gray": 1,
+   "dim": -0.2
+  },
+  {
+   "at": "painted.8-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "center@0.3",
+   "to": "center@0.31",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "crowd-0.08",
+   "img": "sands",
+   "from": "crowd@2.2",
+   "to": "crowd@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "crowd.4-0.05",
+   "img": "sands",
+   "from": "dunes@2.0",
+   "to": "dunes@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "crowd.8-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "center@0.31",
+   "to": "center@0.3",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "museum-0.08",
+   "img": "fitz",
+   "kind": "image",
+   "from": "portico@1.25",
+   "to": "portico@1.38",
+   "gray": 0.3
+  },
+  {
+   "at": "museum.9-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "center@0.3",
+   "to": "center@0.32",
+   "frame": true,
+   "gray": 0.4,
+   "sway": 0.002
+  },
+  {
+   "at": "clean-0.08",
+   "img": "sands",
+   "from": "seaL@2.4",
+   "to": "seaL@2.55",
+   "sway": 0.005
+  },
+  {
+   "at": "man-0.08",
+   "img": "before",
+   "kind": "image",
+   "from": "center@0.3",
+   "to": "center@0.31",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "fin.4-0.05",
+   "img": "sands",
+   "from": "fin@2.4",
+   "to": "fin@2.6",
+   "sway": 0.004,
+   "hit": "small"
+  },
+  {
+   "at": "fin.8-0.05",
+   "img": "before",
+   "kind": "image",
+   "from": "center@0.31",
+   "to": "center@0.3",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "fin.15-0.05",
+   "img": "sands",
+   "from": "whale@1.3",
+   "to": "whale@1.4",
+   "sway": 0.008,
+   "hit": "small"
+  },
+  {
+   "at": "fin.20-0.05",
+   "img": "sands",
+   "from": "man@2.5",
+   "to": "man@2.65",
+   "sway": 0.004
+  },
+  {
+   "at": "why-0.08",
+   "img": "before",
+   "kind": "image",
+   "from": "center@0.3",
+   "to": "center@0.32",
+   "frame": true,
+   "gray": 0.6,
+   "sway": 0.002
+  },
+  {
+   "at": "why.9-0.05",
+   "img": "beverwijk",
+   "kind": "image",
+   "from": "whale@1.1",
+   "to": "whale@1.22",
+   "gray": 1
+  },
+  {
+   "at": "why.15-0.05",
+   "img": "beverwijk",
+   "kind": "image",
+   "from": "crowd@1.4",
+   "to": "crowd@1.5",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "sands",
+   "kind": "image",
+   "from": "center@0.3",
+   "to": "center@0.31",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "payoff.5-0.05",
+   "img": "sands",
+   "from": "crowd@2.0",
+   "to": "crowd@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.10-0.05",
+   "img": "sands",
+   "from": "whale@1.35",
+   "to": "whale@1.42",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "sands",
+   "from": "rider@1.8",
+   "to": "rider@2.0",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.8-0.1",
+   "text": "SCHEVENINGEN · 1640s"
+  },
+  {
+   "type": "label",
+   "from": "painted.8",
+   "to": "crowd-0.1",
+   "text": "THE PAINTING UNTIL 2014"
+  },
+  {
+   "type": "ring",
+   "at": "crowd.13",
+   "to": "museum-0.1",
+   "img": "before",
+   "point": "sea",
+   "rx": 170,
+   "ry": 70,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "museum",
+   "to": "museum.9-0.1",
+   "text": "FITZWILLIAM MUSEUM · CAMBRIDGE"
+  },
+  {
+   "type": "credit",
+   "from": "museum",
+   "to": "museum.9-0.1",
+   "text": "PHOTO: MALCOLM NEAL · CC BY-SA 2.0"
+  },
+  {
+   "type": "label",
+   "from": "museum.9",
+   "to": "clean-0.1",
+   "text": "GIFT OF RICHARD KERRICH · 1873"
+  },
+  {
+   "type": "label",
+   "from": "clean",
+   "to": "man-0.1",
+   "text": "HAMILTON KERR INSTITUTE · 2014"
+  },
+  {
+   "type": "hotspot",
+   "at": "man.2",
+   "to": "fin.4-0.1",
+   "img": "before",
+   "point": "man"
+  },
+  {
+   "type": "ring",
+   "at": "man.13",
+   "to": "fin.4-0.1",
+   "img": "before",
+   "point": "fin",
+   "rx": 60,
+   "ry": 45,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "fin.8",
+   "to": "fin.15-0.1",
+   "text": "THE OVERPAINT"
+  },
+  {
+   "type": "ring",
+   "at": "fin.21",
+   "to": "why-0.1",
+   "img": "sands",
+   "point": "man",
+   "rx": 70,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "why",
+   "to": "why.9-0.1",
+   "text": "PAINTED OUT · 18TH–19TH C."
+  },
+  {
+   "type": "label",
+   "from": "why.9",
+   "to": "payoff-0.1",
+   "text": "BEACHED WHALE · PRINT, 1602"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "payoff.5-0.1",
+   "text": "RESTORED · 2014"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "FITZWILLIAM MUSEUM · CAMBRIDGE"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 0,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "museum-0.2",
+    "man$+0.2"
+   ],
+   "drop": [
+    "fin-0.05",
+    "fin.4+0.3"
+   ],
+   "choir": [
+    "payoff.10-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.7-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "man.2",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "man.13",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "fin.7",
+   "fx": "impact",
+   "gain": 0.45
+  },
+  {
+   "at": "fin.21",
+   "fx": "tick",
+   "gain": 0.5
+  }
+ ],
+ "rights": {
+  "creator_died": 1656,
+  "note": "Van Anthonissen d. 1656: public domain (before/after images PD). De Momper PD. Saenredam 1602 print CC0 (Rijksmuseum). Fitzwilliam exterior photo by Malcolm Neal CC BY-SA 2.0 -> credited."
+ },
+ "facts": [
+  {
+   "claim": "View of Scheveningen Sands by Hendrick van Anthonissen (1605–1656), painted around 1641; shows groups of people on the beach at Scheveningen and others on the dunes/cliffs; Scheveningen is a seaside district of The Hague",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://en.wikipedia.org/wiki/View_of_Scheveningen_Sands ; https://en.wikipedia.org/wiki/Scheveningen"
+  },
+  {
+   "claim": "Given to the Fitzwilliam Museum in 1873 by Richard Kerrich with other Dutch landscapes; the documentation shows nobody knew it included a whale",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://www.thehistoryblog.com/archives/30801"
+  },
+  {
+   "claim": "In 2014 Shan Kuang, a postgraduate conservator at the Hamilton Kerr Institute, removed the old varnish and overpaint",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://www.varsity.co.uk/news/7300"
+  },
+  {
+   "claim": "While cleaning, a small figure appeared standing on the horizon, next to 'a shape that looked like a sail'; the 'sail' was the whale's fin, and the man was standing on the whale's back",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://www.varsity.co.uk/news/7300"
+  },
+  {
+   "claim": "Under a thick layer of repaint lay a beached (stranded) sperm whale, the original focus of the composition",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://www.varsity.co.uk/news/7300 ; https://www.thehistoryblog.com/archives/30801"
+  },
+  {
+   "claim": "The overpaint was not by the artist; analysis dates it to the 18th or 19th century, before 1873; a previous owner probably had it painted out (hedged: 'experts think')",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://www.varsity.co.uk/news/7300 ; https://www.thehistoryblog.com/archives/30801"
+  },
+  {
+   "claim": "Why is unknown: Kuang suggested a dead animal may have been considered offensive, or the picture was more marketable without the whale",
+   "source": "https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan ; https://www.varsity.co.uk/news/7300"
+  },
+  {
+   "claim": "The restored painting, whale included, is on permanent display at the Fitzwilliam Museum, Cambridge (Dutch Golden Age gallery)",
+   "source": "https://www.varsity.co.uk/news/7300 ; https://www.cam.ac.uk/research/news/whale-tale-a-dutch-seascape-and-its-lost-leviathan"
+  },
+  {
+   "claim": "On-screen print: beached sperm whale at Beverwijk (stranded 1601), engraving by Jan Saenredam, 1602",
+   "source": "https://www.thehistoryblog.com/archives/30801 ; https://commons.wikimedia.org/wiki/File:Gestrande_walvis_bij_Beverwijk,_1601,_RP-P-OB-4635.jpg"
+  }
+ ],
+ "caption": "Around 1641, Hendrick van Anthonissen painted the beach at Scheveningen, near The Hague: crowds on the sand, people on the dunes, all looking out to sea. At nothing, it seemed.\n\nIn 1873 the painting was given to the Fitzwilliam Museum in Cambridge. Nobody knew anything was missing. Then in 2014 student conservator Shan Kuang, at the Hamilton Kerr Institute, began removing the old varnish. A tiny man appeared, standing on the horizon, next to what looked like a sail.\n\nIt was a fin. Under a thick layer of later paint lay a stranded sperm whale, with the man standing on its back. Experts think a later owner had it painted out, in the 18th or 19th century. Maybe a dead animal seemed offensive. Maybe the picture simply sold better.\n\nP.S. The museum notes there were many whale strandings on the Dutch coast in the first half of the 17th century.\n\n🐋 Would you have bought it with the whale?",
+ "caption_short": "Someone painted a dead whale out of this 1641 beach scene. In 2014, a conservator found it again. 🐋",
+ "youtube_title": "Someone painted out the whale | van Anthonissen, Scheveningen Sands",
+ "hashtags": [
+  "#vananthonissen",
+  "#scheveningen",
+  "#fitzwilliammuseum",
+  "#cambridge",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#artrestoration",
+  "#dutchgoldenage"
+ ],
+ "hashtags_instagram": [
+  "#vananthonissen",
+  "#scheveningensands",
+  "#arthistory",
+  "#cambridge",
+  "#artrestoration"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vananthonissen",
+  "#scheveningensands",
+  "#mystery"
+ ]
+}
