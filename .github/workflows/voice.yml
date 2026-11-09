@@ -56,7 +56,9 @@ jobs:
           fi
       - name: The best reference clips
         if: inputs.mode != 'story'
-        run: python3 pipeline/voice_ref.py "$RUNNER_TEMP"/vt/rec.* "$RUNNER_TEMP/vt/refs" 3 > /dev/null; python3 -c "import json,sys; r=json.load(open(sys.argv[1])); print({k: v for k, v in r.items() if k != 'clips'}, len(r['clips']), 'clips')" "$RUNNER_TEMP/vt/refs/report.json"
+        run: |
+          python3 pipeline/voice_ref.py "$RUNNER_TEMP"/vt/rec.* "$RUNNER_TEMP/vt/refs" 3 > /dev/null
+          python3 -c "import json,sys; r=json.load(open(sys.argv[1])); print({k: v for k, v in r.items() if k != 'clips'}, len(r['clips']), 'clips')" "$RUNNER_TEMP/vt/refs/report.json"
       - name: Four test versions
         if: inputs.mode != 'story'
         run: |
