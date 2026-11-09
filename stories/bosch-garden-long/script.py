@@ -35,7 +35,7 @@ L = [
           ["and then changed his mind.", 0.7, 0.93]]),
  ("c2f", [["On the right,", 0.2, 0.95], ["Hell.", 0.4, 0.9], ["Fire, darkness,", 0.25, 0.93], ["torture,", 0.25, 0.93],
           ["and enormous musical instruments.", 0.7, 0.93]]),
- ("c2f2", [["A monster with the head of a bird", 0.15, 0.97], ["sits on a throne,", 0.2, 0.95], ["eating sinners,", 0.25, 0.93],
+ ("c2f2", [["A monster with the head of a bird", 0.15, 0.97], ["sits on a throne,", 0.2, 0.95], ["eating the damned,", 0.25, 0.93],
            ["and passing them out below.", 0.6, 0.93], ["A pig in a nun's veil", 0.15, 0.95], ["leans on a man,", 0.15, 0.95],
            ["trying to get him to sign a document.", 0.6, 0.95], ["And in the middle of it all,", 0.2, 0.95],
            ["a man made of tree trunks and a broken shell,", 0.2, 0.97], ["with a tavern inside him.", 0.5, 0.93],

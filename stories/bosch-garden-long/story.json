@@ -507,7 +507,7 @@
      0.95
     ],
     [
-     "eating sinners,",
+     "eating the damned,",
      0.33,
      0.93
     ],
@@ -2280,7 +2280,7 @@
    "fade": 0.6
   },
   {
-   "at": "c2f2.14",
+   "at": "c2f2.15",
    "img": "prince",
    "from": "throne@1.1",
    "to": "throne@1.2",
@@ -2294,14 +2294,14 @@
    "fade": 0.6
   },
   {
-   "at": "c2f2.37",
+   "at": "c2f2.38",
    "img": "hell_pd",
    "from": "tree@1.6",
    "to": "tree@1.8",
    "fade": 0.6
   },
   {
-   "at": "c2f2.59",
+   "at": "c2f2.60",
    "img": "treeman",
    "from": "face@1.6",
    "to": "face@1.9",
@@ -3085,7 +3085,7 @@
   },
   {
    "type": "ring",
-   "from": "c2f2.59+0.20",
+   "from": "c2f2.60+0.20",
    "to": "c2f2$+0.60",
    "point": "face",
    "img": "treeman",
