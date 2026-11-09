@@ -1,29 +1,318 @@
 {
+ "commons_minutes": 25,
  "commons": [
   {
-   "name": "pradera",
+   "name": "raft",
+   "title": "File:JEAN LOUIS THÉODORE GÉRICAULT - La Balsa de la Medusa (Museo del Louvre, 1818-19).jpg",
+   "width": 6000
+  },
+  {
+   "name": "gericault",
+   "title": "File:Portrait of Théodore Gericault MET DP879349.jpg",
+   "width": 3840
+  },
+  {
+   "name": "plan",
+   "title": "File:Plan du Radeau de la Méduse.jpg",
+   "width": 3840
+  },
+  {
+   "name": "heads",
+   "title": "File:Géricault - The Severed Heads, 1810s, NM 2113.png",
+   "width": 3840
+  },
+  {
+   "name": "mutiny",
+   "title": "File:Géricault - The Mutiny on the Raft of the Medusa, 1818.jpg",
+   "width": 3840
+  },
+  {
+   "name": "limbs",
+   "title": "File:Géricault - Morceaux anatomiques, 1818, 1819.jpg",
+   "width": 3840
+  },
+  {
+   "name": "abandon",
    "queries": [
-    "La pradera de San Isidro Goya 1788",
-    "Goya Meadow of San Isidro Prado",
-    "La pradera de San Isidro"
+    "Morel-Fatio abandon du radeau de la Méduse",
+    "Abandon du radeau de la Méduse Morel-Fatio"
    ],
    "must": [
-    "pradera"
+    "radeau"
    ],
    "exclude": [
-    "laurent",
-    "fotograf",
-    "romer",
-    "detalle",
-    "detail"
+    "géricault",
+    "gericault"
    ],
    "aspect": [
-    1.7,
-    2.6
+    0,
+    99
    ],
    "width": 3840,
    "min_w": 1200
+  },
+  {
+   "name": "deathbed",
+   "queries": [
+    "Géricault on his deathbed",
+    "Géricault sur son lit de mort",
+    "Ary Scheffer mort de Géricault"
+   ],
+   "must": [
+    "ricault"
+   ],
+   "exclude": [
+    "radeau",
+    "raft"
+   ],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "argus_sketch",
+   "queries": [
+    "Géricault scène de naufrage esquisse Louvre",
+    "Géricault radeau de la Méduse esquisse",
+    "Géricault sketch Raft of the Medusa"
+   ],
+   "must": [
+    "ricault"
+   ],
+   "exclude": [
+    "balsa",
+    "detail",
+    "détail"
+   ],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "book",
+   "queries": [
+    "Naufrage de la frégate la Méduse Corréard Savigny 1817",
+    "Naufrage de la frégate la Méduse 1818 titre",
+    "Narrative of a voyage to Senegal 1816 frontispiece"
+   ],
+   "must": [],
+   "exclude": [
+    "géricault",
+    "gericault",
+    "radeau de la méduse (louvre"
+   ],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 600
+  },
+  {
+   "name": "louis18",
+   "queries": [
+    "Louis XVIII Gérard portrait",
+    "Portrait of Louis XVIII of France"
+   ],
+   "must": [
+    "louis"
+   ],
+   "exclude": [
+    "coin",
+    "medal",
+    "statue"
+   ],
+   "aspect": [
+    0.5,
+    1.0
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "delacroix",
+   "queries": [
+    "Delacroix self-portrait 1837 Louvre",
+    "Eugène Delacroix autoportrait"
+   ],
+   "must": [
+    "delacroix"
+   ],
+   "exclude": [
+    "liberty",
+    "liberté"
+   ],
+   "aspect": [
+    0.5,
+    1.0
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "dante",
+   "queries": [
+    "Delacroix The Barque of Dante 1822",
+    "La Barque de Dante Delacroix"
+   ],
+   "must": [
+    "dante"
+   ],
+   "exclude": [],
+   "aspect": [
+    1.0,
+    1.8
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "egyptian_hall",
+   "queries": [
+    "Egyptian Hall Piccadilly 1815",
+    "Egyptian Hall Piccadilly Bullock"
+   ],
+   "must": [
+    "egyptian"
+   ],
+   "exclude": [],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 800
+  },
+  {
+   "name": "monomaniac",
+   "queries": [
+    "Géricault monomaniac of envy Lyon",
+    "Géricault La Monomane de l'envie",
+    "Géricault Insane Woman"
+   ],
+   "must": [
+    "ricault"
+   ],
+   "exclude": [],
+   "aspect": [
+    0.6,
+    1.0
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "frigate",
+   "queries": [
+    "frégate la Méduse 1816 gravure",
+    "Medusa frigate 1816 engraving",
+    "naufrage de la Méduse gravure"
+   ],
+   "must": [],
+   "exclude": [
+    "géricault",
+    "gericault",
+    "louvre"
+   ],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 800
+  },
+  {
+   "name": "rochefort",
+   "queries": [
+    "Rochefort arsenal 19th century engraving",
+    "Port de Rochefort Vernet"
+   ],
+   "must": [
+    "rochefort"
+   ],
+   "exclude": [],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 1200
+  },
+  {
+   "name": "raft_model",
+   "queries": [
+    "Medusa raft model Musée de la Marine",
+    "radeau de la Méduse maquette"
+   ],
+   "must": [],
+   "exclude": [
+    "géricault",
+    "gericault",
+    "louvre"
+   ],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 800
+  },
+  {
+   "name": "salon1819",
+   "queries": [
+    "Salon de 1819 Louvre",
+    "Salon 1819 exhibition Paris"
+   ],
+   "must": [
+    "1819"
+   ],
+   "exclude": [],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 800
+  },
+  {
+   "name": "savigny",
+   "queries": [
+    "Jean Baptiste Henri Savigny portrait",
+    "Henri Savigny chirurgien Méduse"
+   ],
+   "must": [
+    "savigny"
+   ],
+   "exclude": [],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 400
+  },
+  {
+   "name": "correard",
+   "queries": [
+    "Alexandre Corréard portrait",
+    "Corréard ingénieur Méduse"
+   ],
+   "must": [
+    "corr"
+   ],
+   "exclude": [],
+   "aspect": [
+    0,
+    99
+   ],
+   "width": 3840,
+   "min_w": 400
   }
- ],
- "commons_minutes": 8
+ ]
 }

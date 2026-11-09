@@ -114,7 +114,8 @@ From the YouTube market study (6 Nov 2026): the winners tell one dark or astonis
 every week, with a text-free close-up thumbnail and a short statement title; the decliners got longer and rarer.
 YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
 
-- **Cadence and length.** One long video a week (Thursday), 10–12 minutes, never under 8:00 (mid-roll ads). 16:9.
+- **Cadence and length.** Two long videos a week, Monday and Thursday at 18:00 Madrid (Gigi, 9 Nov 2026), 10–12 minutes,
+  never under 8:00 (mid-roll ads). 16:9. Each one is the long version of a Short we posted, so the Short can link to it.
 - **Same show as the Shorts.** Same narrator voice and speed family, same procedural music, living 2.5D paintings,
   grain, serif type, red accent. `story.json` → `"format": "long"`; build with `plan → tts → align → build_story →
   score → thumb → studio/render_long.mjs → long_finalize → long_qa` (see `stories/goya-black-paintings/plan.py`).
