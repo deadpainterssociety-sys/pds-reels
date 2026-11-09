@@ -18,6 +18,8 @@ What you can send the bot:
   /status  what is scheduled   /post  publish approved reels now   /stories 3  write 3 more stories now
   /idea <painting — angle>  have Claude write that one next
   /pause /resume  stop or restart everything   /rule <text>  a rule for all future reels (added to PLAYBOOK.md)
+  a voice message / audio file   clone that voice: test versions come back with ✅ buttons (automation/voice.py)
+  /voice [on|off|help]           the narration voice
 The chat is linked the first time someone sends /start (or set TELEGRAM_CHAT_ID).
 """
 import datetime, json, os, re, sys
@@ -114,7 +116,9 @@ def status_text():
 
 HELP = ("Commands:\n/status — what's scheduled\n/post — publish approved reels now\n/stories 3 — write 3 more stories now\n"
         "/idea &lt;painting — angle&gt; — have Claude write that one next\n"
-        "/rule &lt;text&gt; — a rule for all future reels\n/brief — the latest analysis brief again\n/pause, /resume\n\n"
+        "/rule &lt;text&gt; — a rule for all future reels\n/brief — the latest analysis brief again\n/pause, /resume\n"
+        "/voice — the narration voice (on, off, help)\n\n"
+        "🎙 Send a voice message (1–3 min, reading in English) to clone that voice: you get test versions to choose from.\n"
         "📊 Send a screenshot of TikTok Studio → Analytics → Content any time: it goes into the next brief.\n\nOn a reel: ✅ / ❌ / ✏️ buttons, or just reply "
         "<i>yes</i>, <i>no</i>, or what you want changed.")
 
@@ -136,6 +140,10 @@ def poll(emit=True):
                 d, pid, yn = (slug.split(":") + ["", "", ""])[:3]
                 T.answer(q["id"], "Applying…" if yn == "y" else "Dropped")
                 decide_proposal(chat, d, pid, yn == "y", q["message"]["message_id"]); continue
+            if act == "vc":                                    # a voice test version: vc:<run>:<n>
+                import voice
+                run, _, n = slug.partition(":"); T.answer(q["id"], "Setting the voice…")
+                voice.choose(chat, run, n, q["message"]["message_id"]); continue
             if act == "noop" or not slug: T.answer(q["id"]); continue
             stt = state(slug)["status"]
             if stt not in ("sent", "built", "approved", "skipped"):
@@ -151,6 +159,10 @@ def poll(emit=True):
         text = (msg.get("text") or "").strip(); cid = str(msg.get("chat", {}).get("id", ""))
         if (msg.get("photo") or (msg.get("document") or {}).get("mime_type", "").startswith("image/")) and cid == str(chat):
             save_screenshot(chat, msg); continue
+        if (msg.get("voice") or msg.get("audio") or msg.get("video_note") or msg.get("video")
+                or (msg.get("document") or {}).get("mime_type", "").startswith(("audio/", "video/"))) and cid == str(chat):
+            import voice
+            voice.intake(chat, msg); continue          # a recording for the cloned voice
         if not text: continue
         if not chat and msg.get("chat", {}).get("type") == "private" and text.startswith("/start"):
             chat = bs["chat_id"] = cid
@@ -159,6 +171,13 @@ def poll(emit=True):
         low = text.lower().strip(" .!")
         if text.startswith("/start") or text.startswith("/help"): T.send(chat, HELP); continue
         if text.startswith("/status"): T.send(chat, status_text()); continue
+        if text.startswith("/voice"):
+            import voice
+            arg = text[6:].strip().lower()
+            if arg in ("on", "off"): voice.switch(chat, arg == "on")
+            elif arg.startswith("help"): T.send(chat, voice.TIPS)
+            else: T.send(chat, voice.status_text())
+            continue
         if text.startswith("/brief"): send_brief(None); continue
         if text.startswith("/post"): post_now = True; T.send(chat, "📣 Publishing approved reels now…"); continue
         if text.startswith("/stories"):

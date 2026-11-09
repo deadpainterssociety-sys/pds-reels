@@ -1,5 +1,7 @@
 name: setup
 description: Python, Node, ffmpeg, models (cached) and the Remotion studio for the reel pipeline
+inputs:
+  voice: { description: "auto = Chatterbox + reference clip when config.json voice_clone is on · install = Chatterbox only", required: false, default: "auto" }
 runs:
   using: composite
   steps:
@@ -13,3 +15,18 @@ runs:
       run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
     - shell: bash
       run: ./setup.sh
+    # The cloned voice (config.json voice_clone.enabled, or a job that asks for it): Chatterbox's own environment + the
+    # reference clip from the private data release.
+    - id: vc
+      shell: bash
+      run: |
+        on=$(python3 -c "import json; print('true' if (json.load(open('config.json')).get('voice_clone') or {}).get('enabled') else 'false')")
+        [ "${{ inputs.voice }}" = "install" ] && on=true
+        echo "on=$on" >> "$GITHUB_OUTPUT"
+    - if: steps.vc.outputs.on == 'true'
+      uses: actions/cache@v4
+      with: { path: ".venv-cb", key: "venv-cb-${{ runner.os }}-py312-${{ hashFiles('requirements-clone.txt', 'automation/voice_env.sh') }}" }
+    - if: steps.vc.outputs.on == 'true'
+      shell: bash
+      env: { GITHUB_TOKEN: "${{ github.token }}" }
+      run: ./automation/voice_env.sh ${{ inputs.voice == 'install' && '--no-ref' || '' }}

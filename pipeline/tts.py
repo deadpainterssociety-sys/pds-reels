@@ -9,10 +9,23 @@ story.json fields: voice (e.g. af_heart), lang (en-us | en-gb | es | fr-fr | it 
   lines [{id, perf: [[text, pause_after_s, speed_mult], ...]}]
 *word* marks caption emphasis only (stripped before synthesis). pipeline/pronounce.json holds global fixes.
 """
-import json, re, sys, os
+import json, re, sys, os, subprocess
+from paths import KOKORO_MODEL, KOKORO_VOICES, MODELS, PIPE, ROOT, story_dir
+
+# Gigi's cloned voice (config.json voice_clone, picked on Telegram): pipeline/tts_clone.py does this job in Chatterbox's own
+# environment. VOICE=kokoro forces the old voice for one run.
+_cv = json.load(open(os.path.join(ROOT, "config.json"))).get("voice_clone") or {}
+if _cv.get("enabled") and os.environ.get("VOICE", "") != "kokoro":
+    _py = os.environ.get("CHATTERBOX_PY") or os.path.join(ROOT, ".venv-cb", "bin", "python")
+    _ref = os.path.join(MODELS, "voice", "ref.wav")
+    if os.path.exists(_py) and os.path.exists(_ref):
+        sys.exit(subprocess.run([_py, os.path.join(PIPE, "tts_clone.py"), sys.argv[1]]).returncode)
+    _miss = "the Chatterbox environment (automation/voice_env.sh)" if not os.path.exists(_py) else "the reference clip models/voice/ref.wav"
+    if os.environ.get("CI") == "true": sys.exit(f"voice_clone is on but {_miss} is missing")
+    print(f"WARNING: voice_clone is on but {_miss} is missing here: using Kokoro (long videos: voice them with the voice workflow)")
+
 import numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
-from paths import KOKORO_MODEL, KOKORO_VOICES, PIPE, story_dir
 
 sdir = story_dir(sys.argv[1])
 story = json.load(open(os.path.join(sdir, "story.json")))

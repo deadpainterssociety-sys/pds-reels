@@ -1,0 +1,83 @@
+# The cloned voice (Chatterbox, pipeline/tts_clone.py).
+#  test      a recording Gigi sent the bot (private data release) -> the 3 best 10-13 s clips -> four versions of the opening
+#            of the Medusa Short -> Telegram with ✅ buttons (her tap sets config.json voice_clone; automation/voice.py)
+#  story     voice a long video's narration (long videos are rendered outside CI, where Chatterbox can't run): story.json
+#            + phrase cache come in on branch voice-in-<slug>, voice.wav + timeline.json go back on voice-out-<slug>
+#  selftest  the test pipeline on a stand-in recording made with the old synthetic voice (no real person): checks the
+#            install and measures the speed. Sends nothing to Telegram.
+# Recordings and reference clips never touch git or the logs: this repo is public.
+name: voice
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: "test | story | selftest", required: true, default: "test" }
+      sample: { description: "test: the recording's name in the data release (empty = the latest)", required: false, default: "" }
+      slug: { description: "story: the story to voice (its files wait on branch voice-in-<slug>)", required: false, default: "" }
+concurrency: { group: "voice-${{ inputs.mode }}-${{ inputs.slug }}", cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GITHUB_TOKEN: ${{ github.token }}
+      MODE: ${{ inputs.mode }}
+      SAMPLE: ${{ inputs.sample }}
+      SLUG: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with: { voice: "${{ inputs.mode == 'story' && 'auto' || 'install' }}" }
+      - name: The recording
+        if: inputs.mode != 'story'
+        run: |
+          mkdir -p "$RUNNER_TEMP/vt"
+          if [ "$MODE" = "selftest" ]; then
+            python3 - "$RUNNER_TEMP/vt/rec.wav" <<'PY'
+          import sys, numpy as np, soundfile as sf
+          sys.path.insert(0, "pipeline")
+          from kokoro_onnx import Kokoro
+          from paths import KOKORO_MODEL, KOKORO_VOICES
+          k = Kokoro(KOKORO_MODEL, KOKORO_VOICES); parts = []
+          text = ("I want to tell you about a painting that nobody was supposed to see. It hung in a dining room for years. "
+                  "The man who painted it was old, and deaf, and tired of the court. So he painted for himself. "
+                  "Dark figures, a dog half buried in sand, a giant eating his own child. Visitors walked past it every day. "
+                  "Nobody wrote about it. And when he left the house, he left the paintings behind, on the walls. "
+                  "Fifty years later, a restorer peeled them off the plaster, one by one, and moved them to canvas.")
+          for s in text.split(". "):
+              a, sr = k.create(s.strip(". ") + ".", voice="am_michael", speed=0.95, lang="en-us"); parts += [a, np.zeros(int(0.45 * sr))]
+          a = np.concatenate(parts).astype(np.float32); a += np.random.default_rng(1).normal(0, 0.002, len(a)).astype(np.float32)
+          sf.write(sys.argv[1], a, sr); print(f"stand-in recording: {len(a) / sr:.0f} s")
+          PY
+          else
+            python3 automation/voice.py sample "$SAMPLE" "$RUNNER_TEMP/vt/rec.bin"
+          fi
+      - name: The best reference clips
+        if: inputs.mode != 'story'
+        run: python3 pipeline/voice_ref.py "$RUNNER_TEMP"/vt/rec.* "$RUNNER_TEMP/vt/refs" 3 > /dev/null; python3 -c "import json,sys; r=json.load(open(sys.argv[1])); print({k: v for k, v in r.items() if k != 'clips'}, len(r['clips']), 'clips')" "$RUNNER_TEMP/vt/refs/report.json"
+      - name: Four test versions
+        if: inputs.mode != 'story'
+        run: |
+          cp "$RUNNER_TEMP/vt/refs/report.json" "$RUNNER_TEMP/vt/report.json"
+          if python3 -c "import json,sys; sys.exit(1 if json.load(open(sys.argv[1])).get('error') else 0)" "$RUNNER_TEMP/vt/report.json"; then
+            .venv-cb/bin/python pipeline/voice_test.py "$RUNNER_TEMP/vt/refs" "$RUNNER_TEMP/vt" gericault-medusa 6 2>&1 | grep -v "heard\"" | grep -vi "warn\|deprecat\|sampling\|it/s\]" || true
+            python3 -c "import json,sys; [print(v['label'], v['model'], 'match', v['match'], 'cpu/s', v['cpu_per_s'], 'made in', v['make_s'], 's') for v in json.load(open(sys.argv[1]))]" "$RUNNER_TEMP/vt/variants.json"
+          fi
+      - name: Send them to Telegram
+        if: inputs.mode == 'test'
+        run: python3 automation/voice.py send "$RUNNER_TEMP/vt" "${{ github.run_id }}"
+      - name: Stand-in results (synthetic voice only)
+        if: inputs.mode == 'selftest'
+        uses: actions/upload-artifact@v4
+        with: { name: voice-selftest, path: "${{ runner.temp }}/vt/v*.mp3\n${{ runner.temp }}/vt/variants.json", retention-days: 2 }
+
+      - name: Voice the story
+        if: inputs.mode == 'story'
+        run: |
+          python3 automation/voice.py ci-in "$SLUG"
+          .venv-cb/bin/python pipeline/tts_clone.py "$SLUG" 2>&1 | grep -vi "warn\|deprecat\|sampling\|it/s\]"
+          python3 automation/voice.py ci-out "$SLUG"
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ The voice job ($MODE) failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
