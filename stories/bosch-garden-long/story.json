@@ -3819,13 +3819,13 @@
   ],
   "credits": [],
   "thumbnail": {
-   "image": "garden",
+   "image": "owl_boy",
    "focus": [
-    0.5,
-    0.5
+    0.42,
+    0.4
    ],
-   "span": 0.3,
-   "words": "WHAT DOES IT MEAN?"
+   "span": 0.62,
+   "words": "NOBODY KNOWS"
   },
   "intro_chapter": "Nobody knows what this painting means",
   "outro_chapter": "The Owls"

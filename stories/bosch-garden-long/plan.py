@@ -52,7 +52,7 @@ story = {
              "description_lead": "Hieronymus Bosch left no letters, no diary and no title. For five hundred years, the people who owned and studied The Garden of Earthly Delights have read it as a party, a wedding gift, a sermon against lust, a secret heresy and, in 2014, a song written on a sinner's backside. This is the true story of the painting and of everyone who tried to read it: the Nassau counts in Brussels, the Duke of Alba, Philip II and the monks of El Escorial, Wilhelm Fraenger, and the student who turned the 'butt music' into a viral tune.",
              "hashtags": ["#arthistory", "#bosch", "#prado"],
              "credits": [],
-             "thumbnail": {"image": "garden", "focus": [0.5, 0.5], "span": 0.3, "words": "WHAT DOES IT MEAN?"},
+             "thumbnail": {"image": "owl_boy", "focus": [0.42, 0.40], "span": 0.62, "words": "NOBODY KNOWS"},
              "intro_chapter": "Nobody knows what this painting means", "outro_chapter": "The Owls"},
 }
 json.dump(story, open(os.path.join(HERE, "story.json"), "w"), indent=1, ensure_ascii=False)
