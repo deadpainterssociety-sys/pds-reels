@@ -1519,11 +1519,2130 @@
    ]
   }
  ],
- "images": {},
- "shots": [],
- "overlays": [],
- "sfx": [],
- "music": {},
+ "images": {
+  "garden": {
+   "file": "src/garden.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "left_panel": [
+     0.12,
+     0.5
+    ],
+    "centre_panel": [
+     0.505,
+     0.5
+    ],
+    "hell_panel": [
+     0.88,
+     0.5
+    ],
+    "fountain": [
+     0.505,
+     0.27
+    ],
+    "riders": [
+     0.48,
+     0.36
+    ],
+    "pool": [
+     0.505,
+     0.43
+    ],
+    "owl_l": [
+     0.262,
+     0.645
+    ],
+    "owl_r": [
+     0.716,
+     0.635
+    ],
+    "eden": [
+     0.13,
+     0.66
+    ]
+   }
+  },
+  "centre": {
+   "file": "src/centre.jpg",
+   "depth": true,
+   "points": {
+    "owl_l": [
+     0.035,
+     0.645
+    ],
+    "owl_r": [
+     0.905,
+     0.635
+    ],
+    "pool": [
+     0.5,
+     0.43
+    ],
+    "riders": [
+     0.45,
+     0.36
+    ],
+    "fountain": [
+     0.5,
+     0.25
+    ],
+    "tower": [
+     0.18,
+     0.17
+    ],
+    "birds": [
+     0.14,
+     0.57
+    ],
+    "fruit": [
+     0.37,
+     0.62
+    ],
+    "sky": [
+     0.5,
+     0.08
+    ],
+    "mussel": [
+     0.3,
+     0.71
+    ]
+   }
+  },
+  "left": {
+   "file": "src/left.jpg",
+   "depth": true,
+   "points": {
+    "god": [
+     0.52,
+     0.69
+    ],
+    "fountain": [
+     0.5,
+     0.38
+    ],
+    "top": [
+     0.5,
+     0.1
+    ],
+    "animals": [
+     0.5,
+     0.86
+    ]
+   }
+  },
+  "hell_pd": {
+   "file": "src/hell_pd.jpg",
+   "depth": true,
+   "points": {
+    "fire": [
+     0.5,
+     0.1
+    ],
+    "ears": [
+     0.28,
+     0.28
+    ],
+    "tree_face": [
+     0.59,
+     0.355
+    ],
+    "tree": [
+     0.42,
+     0.4
+    ],
+    "tavern": [
+     0.33,
+     0.4
+    ],
+    "prince": [
+     0.82,
+     0.66
+    ],
+    "instruments": [
+     0.25,
+     0.66
+    ],
+    "butt": [
+     0.17,
+     0.77
+    ],
+    "pignun": [
+     0.91,
+     0.93
+    ],
+    "lake": [
+     0.65,
+     0.55
+    ]
+   }
+  },
+  "closed": {
+   "file": "src/closed.jpg",
+   "points": {
+    "god": [
+     0.135,
+     0.13
+    ],
+    "words": [
+     0.49,
+     0.075
+    ],
+    "sphere": [
+     0.5,
+     0.5
+    ],
+    "land": [
+     0.35,
+     0.58
+    ]
+   }
+  },
+  "instruments": {
+   "file": "src/instruments.jpg",
+   "depth": true,
+   "points": {
+    "lute": [
+     0.14,
+     0.55
+    ],
+    "harp": [
+     0.25,
+     0.3
+    ],
+    "butt": [
+     0.3,
+     0.86
+    ],
+    "book": [
+     0.13,
+     0.92
+    ],
+    "sinner": [
+     0.32,
+     0.88
+    ]
+   }
+  },
+  "prince": {
+   "file": "src/prince.jpg",
+   "depth": true,
+   "points": {
+    "head": [
+     0.58,
+     0.38
+    ],
+    "throne": [
+     0.5,
+     0.7
+    ]
+   }
+  },
+  "treeman": {
+   "file": "src/treeman.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.62,
+     0.9
+    ],
+    "disk": [
+     0.5,
+     0.55
+    ],
+    "bagpipe": [
+     0.45,
+     0.35
+    ]
+   }
+  },
+  "knife": {
+   "file": "src/knife.jpg",
+   "points": {
+    "blade": [
+     0.5,
+     0.55
+    ]
+   }
+  },
+  "strawberry": {
+   "file": "src/strawberry.jpg",
+   "depth": true,
+   "points": {
+    "berry": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "egg": {
+   "file": "src/egg.jpg",
+   "points": {
+    "egg": [
+     0.35,
+     0.45
+    ]
+   }
+  },
+  "owl_fountain": {
+   "file": "src/owl_fountain.jpg",
+   "depth": true,
+   "points": {
+    "owl": [
+     0.51,
+     0.53
+    ]
+   }
+  },
+  "owl_boy": {
+   "file": "src/owl_boy.jpg",
+   "depth": true,
+   "points": {
+    "eyes": [
+     0.4,
+     0.4
+    ]
+   }
+  },
+  "bosch": {
+   "file": "src/bosch.jpg",
+   "crop": [
+    0.03,
+    0.03,
+    0.03,
+    0.2
+   ],
+   "points": {
+    "face": [
+     0.47,
+     0.25
+    ]
+   }
+  },
+  "lakenmarkt": {
+   "file": "src/lakenmarkt.jpg",
+   "depth": true,
+   "points": {
+    "street": [
+     0.5,
+     0.25
+    ],
+    "stalls": [
+     0.5,
+     0.5
+    ],
+    "people": [
+     0.45,
+     0.85
+    ]
+   }
+  },
+  "haywain": {
+   "file": "src/haywain.jpg",
+   "depth": true,
+   "points": {
+    "wagon": [
+     0.5,
+     0.45
+    ],
+    "hell": [
+     0.88,
+     0.5
+    ]
+   }
+  },
+  "engelbert": {
+   "file": "src/engelbert.jpg",
+   "crop": [
+    0.07,
+    0.05,
+    0.07,
+    0.05
+   ],
+   "points": {
+    "face": [
+     0.52,
+     0.3
+    ]
+   }
+  },
+  "henry": {
+   "file": "src/henry.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.6,
+     0.27
+    ],
+    "hands": [
+     0.6,
+     0.85
+    ]
+   }
+  },
+  "curia": {
+   "file": "src/curia.png",
+   "depth": true,
+   "points": {
+    "palace": [
+     0.5,
+     0.45
+    ],
+    "square": [
+     0.3,
+     0.6
+    ]
+   }
+  },
+  "william": {
+   "file": "src/william.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.56,
+     0.35
+    ]
+   }
+  },
+  "alba": {
+   "file": "src/alba.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.5,
+     0.17
+    ],
+    "baton": [
+     0.65,
+     0.75
+    ]
+   }
+  },
+  "philip": {
+   "file": "src/philip.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.48,
+     0.13
+    ],
+    "hand": [
+     0.3,
+     0.75
+    ]
+   }
+  },
+  "escorial": {
+   "file": "src/escorial.jpg",
+   "depth": true,
+   "points": {
+    "church": [
+     0.5,
+     0.3
+    ],
+    "front": [
+     0.5,
+     0.55
+    ],
+    "people": [
+     0.4,
+     0.85
+    ]
+   }
+  },
+  "siguenza2": {
+   "file": "src/siguenza2.jpg",
+   "points": {
+    "face": [
+     0.4,
+     0.38
+    ]
+   }
+  },
+  "siguenza3": {
+   "file": "src/siguenza3.jpg",
+   "crop": [
+    0.08,
+    0.04,
+    0.08,
+    0.04
+   ],
+   "points": {
+    "monk": [
+     0.5,
+     0.32
+    ],
+    "pen": [
+     0.4,
+     0.38
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "centre",
+   "from": "owl_r@3.0",
+   "to": "owl_r@2.7"
+  },
+  {
+   "at": "cold1.7-0.10",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.04",
+   "hit": "big"
+  },
+  {
+   "at": "cold2",
+   "img": "philip",
+   "from": "face@1.5",
+   "to": "face@1.7",
+   "fade": 0.5,
+   "gray": 0.4
+  },
+  {
+   "at": "cold2.6",
+   "img": "escorial",
+   "from": "church@1.4",
+   "to": "church@1.6",
+   "fade": 0.5,
+   "gray": 0.4
+  },
+  {
+   "at": "cold2.12",
+   "img": "centre",
+   "from": "riders@1.9",
+   "to": "pool@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3",
+   "img": "bosch",
+   "from": "full@0.62",
+   "to": "face@0.9",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "cold3.10",
+   "img": "garden",
+   "from": "centre_panel@1.6",
+   "to": "centre_panel@1.75",
+   "fade": 0.6
+  },
+  {
+   "at": "cold4",
+   "img": "centre",
+   "from": "pool@2.2",
+   "to": "pool@2.5",
+   "fade": 0.6
+  },
+  {
+   "at": "cold4.10",
+   "img": "centre",
+   "from": "fountain@1.8",
+   "to": "tower@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "cold4.16",
+   "img": "centre",
+   "from": "riders@2.4",
+   "to": "riders@2.6",
+   "fade": 0.3
+  },
+  {
+   "at": "cold4.18",
+   "img": "hell_pd",
+   "from": "fire@1.2",
+   "to": "fire@1.35",
+   "fade": 0.3
+  },
+  {
+   "at": "cold4.20",
+   "img": "hell_pd",
+   "from": "tree_face@2.4",
+   "to": "tree_face@2.7",
+   "fade": 0.3
+  },
+  {
+   "at": "cold4.22",
+   "img": "instruments",
+   "from": "book@2.0",
+   "to": "book@2.3",
+   "fade": 0.3
+  },
+  {
+   "at": "cold5",
+   "img": "garden",
+   "from": "full@0.86",
+   "to": "full@0.9",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "cold5.10",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.06",
+   "fade": 1.0
+  },
+  {
+   "at": "c1a",
+   "img": "map-journey",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "journey",
+    "pins": [
+     {
+      "city": "hertogenbosch",
+      "at": "c1a.10",
+      "label": "'s-Hertogenbosch"
+     }
+    ]
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c1a.11",
+   "img": "bosch",
+   "from": "face@1.2",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c1b",
+   "img": "lakenmarkt",
+   "from": "street@1.4",
+   "to": "street@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c1b.15",
+   "img": "lakenmarkt",
+   "from": "people@1.6",
+   "to": "people@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c1c",
+   "img": "lakenmarkt",
+   "from": "stalls@1.3",
+   "to": "stalls@1.5",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c1d",
+   "img": "haywain",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c1d.15",
+   "img": "haywain",
+   "from": "wagon@1.7",
+   "to": "wagon@1.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c1e",
+   "img": "bosch",
+   "from": "face@1.5",
+   "to": "face@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c1e.18",
+   "img": "lakenmarkt",
+   "from": "street@1.8",
+   "to": "stalls@1.8",
+   "fade": 0.8,
+   "gray": 0.5
+  },
+  {
+   "at": "c1f",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.08",
+   "fade": 1.0
+  },
+  {
+   "at": "c2a",
+   "img": "garden",
+   "from": "full@0.8",
+   "to": "full@0.84",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2b",
+   "img": "closed",
+   "from": "full@0.56",
+   "to": "full@0.6",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2b.7",
+   "img": "closed",
+   "from": "sphere@1.1",
+   "to": "land@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c",
+   "img": "closed",
+   "from": "sphere@1.0",
+   "to": "sphere@1.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c.7",
+   "img": "closed",
+   "from": "god@1.9",
+   "to": "god@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c.20",
+   "img": "closed",
+   "from": "words@1.8",
+   "to": "words@1.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c2d",
+   "img": "closed",
+   "from": "full@0.6",
+   "to": "full@0.62",
+   "frame": true,
+   "fade": 0.5
+  },
+  {
+   "at": "c2d.3-0.05",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.04",
+   "hit": "big"
+  },
+  {
+   "at": "c2e",
+   "img": "left",
+   "from": "god@1.15",
+   "to": "god@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c2e.9",
+   "img": "left",
+   "from": "fountain@1.15",
+   "to": "fountain@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c2e.23",
+   "img": "left",
+   "from": "god@1.45",
+   "to": "god@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c2f",
+   "img": "hell_pd",
+   "from": "fire@1.1",
+   "to": "fire@1.25",
+   "fade": 0.8
+  },
+  {
+   "at": "c2f.6",
+   "img": "knife",
+   "from": "blade@1.1",
+   "to": "blade@1.25",
+   "fade": 0.4
+  },
+  {
+   "at": "c2f.7",
+   "img": "hell_pd",
+   "from": "instruments@1.6",
+   "to": "instruments@1.8",
+   "fade": 0.5
+  },
+  {
+   "at": "c2f2",
+   "img": "prince",
+   "from": "head@1.2",
+   "to": "head@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c2f2.14",
+   "img": "prince",
+   "from": "throne@1.1",
+   "to": "throne@1.2",
+   "fade": 0.5
+  },
+  {
+   "at": "c2f2.6",
+   "img": "hell_pd",
+   "from": "pignun@3.0",
+   "to": "pignun@3.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c2f2.37",
+   "img": "hell_pd",
+   "from": "tree@1.6",
+   "to": "tree@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c2f2.59",
+   "img": "treeman",
+   "from": "face@1.6",
+   "to": "face@1.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c2g",
+   "img": "centre",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "fade": 1.0
+  },
+  {
+   "at": "c2g.6",
+   "img": "centre",
+   "from": "riders@1.7",
+   "to": "pool@1.8",
+   "fade": 0.5
+  },
+  {
+   "at": "c2g.10",
+   "img": "centre",
+   "from": "birds@2.2",
+   "to": "birds@2.4",
+   "fade": 0.4
+  },
+  {
+   "at": "c2g.12",
+   "img": "strawberry",
+   "from": "berry@1.1",
+   "to": "berry@1.25",
+   "fade": 0.4
+  },
+  {
+   "at": "c2g.14",
+   "img": "centre",
+   "from": "pool@2.3",
+   "to": "pool@2.5",
+   "fade": 0.4
+  },
+  {
+   "at": "c2g.18",
+   "img": "centre",
+   "from": "tower@2.0",
+   "to": "fountain@2.0",
+   "fade": 0.5
+  },
+  {
+   "at": "c2h",
+   "img": "centre",
+   "from": "owl_l@2.6",
+   "to": "owl_l@2.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c2h.3",
+   "img": "hell_pd",
+   "from": "lake@1.6",
+   "to": "lake@1.8",
+   "fade": 0.5
+  },
+  {
+   "at": "c2h.8",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "c3a",
+   "img": "bosch",
+   "from": "face@1.3",
+   "to": "face@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c3a.5",
+   "img": "garden",
+   "from": "centre_panel@1.5",
+   "to": "centre_panel@1.6",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c3b",
+   "img": "map-journey",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "journey",
+    "pins": [
+     {
+      "city": "hertogenbosch",
+      "at": "c3b",
+      "label": "'s-Hertogenbosch"
+     },
+     {
+      "city": "brussels",
+      "at": "c3b.18",
+      "label": "Brussels"
+     }
+    ]
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c3b.19",
+   "img": "henry",
+   "from": "face@1.2",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c3c",
+   "img": "garden",
+   "from": "full@0.86",
+   "to": "full@0.9",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c3c.6",
+   "img": "hell_pd",
+   "from": "ears@2.0",
+   "to": "ears@2.2",
+   "fade": 0.8,
+   "dim": 0.2
+  },
+  {
+   "at": "c3d",
+   "img": "curia",
+   "from": "palace@1.2",
+   "to": "palace@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d.14",
+   "img": "curia",
+   "from": "square@1.4",
+   "to": "square@1.6",
+   "fade": 0.8,
+   "dim": 0.2,
+   "gray": 0.3
+  },
+  {
+   "at": "c3e",
+   "img": "centre",
+   "from": "fountain@1.6",
+   "to": "fountain@1.8",
+   "fade": 0.8
+  },
+  {
+   "at": "c3e.15",
+   "img": "curia",
+   "from": "palace@1.5",
+   "to": "palace@1.7",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c3e.37",
+   "img": "hell_pd",
+   "from": "ears@1.6",
+   "to": "ears@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c3f",
+   "img": "egg",
+   "from": "egg@1.2",
+   "to": "egg@1.35",
+   "fade": 0.5
+  },
+  {
+   "at": "c3g",
+   "img": "engelbert",
+   "from": "face@1.2",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c3g.17",
+   "img": "henry",
+   "from": "face@1.4",
+   "to": "face@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c4a",
+   "img": "william",
+   "from": "face@1.2",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c4b",
+   "img": "map-journey",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "journey",
+    "pins": [
+     {
+      "city": "brussels",
+      "at": "c4b",
+      "label": "Brussels"
+     }
+    ]
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c4b.9",
+   "img": "william",
+   "from": "face@1.6",
+   "to": "face@1.8",
+   "fade": 0.6,
+   "gray": 0.4
+  },
+  {
+   "at": "c4c",
+   "img": "alba",
+   "from": "face@1.3",
+   "to": "face@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c4c.9",
+   "img": "alba",
+   "from": "baton@1.2",
+   "to": "face@1.1",
+   "fade": 0.6,
+   "gray": 0.3
+  },
+  {
+   "at": "c4c.14",
+   "img": "garden",
+   "from": "full@0.9",
+   "to": "full@0.95",
+   "frame": true,
+   "fade": 0.6,
+   "gray": 0.5
+  },
+  {
+   "at": "c4d",
+   "img": "alba",
+   "from": "face@1.7",
+   "to": "face@1.9",
+   "fade": 0.8,
+   "gray": 0.4
+  },
+  {
+   "at": "c4d.3",
+   "img": "map-journey",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "journey",
+    "pins": [
+     {
+      "city": "brussels",
+      "at": "c4d.3",
+      "label": "Brussels"
+     },
+     {
+      "city": "escorial",
+      "at": "c4d.16",
+      "label": "Spain"
+     }
+    ],
+    "route": {
+     "from": "brussels",
+     "to": "escorial",
+     "at": "c4d.3+0.20",
+     "to_at": "c4d$"
+    }
+   },
+   "fade": 0.6
+  },
+  {
+   "at": "c4e",
+   "img": "garden",
+   "from": "centre_panel@1.4",
+   "to": "centre_panel@1.5",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c4e.10",
+   "img": "philip",
+   "from": "full@1.0",
+   "to": "face@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c5a",
+   "img": "philip",
+   "from": "face@1.5",
+   "to": "face@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c5a.8",
+   "img": "haywain",
+   "from": "hell@1.8",
+   "to": "hell@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c5b",
+   "img": "escorial",
+   "from": "full@1.0",
+   "to": "church@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c5b.12",
+   "img": "map-journey",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "journey",
+    "pins": [
+     {
+      "city": "escorial",
+      "at": "c5b.12",
+      "label": "El Escorial"
+     }
+    ]
+   },
+   "fade": 0.6
+  },
+  {
+   "at": "c5c",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c5c.3",
+   "img": "strawberry",
+   "from": "berry@1.2",
+   "to": "berry@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c5d",
+   "img": "hell_pd",
+   "from": "tree_face@2.0",
+   "to": "tree_face@2.3",
+   "fade": 0.8,
+   "dim": 0.15
+  },
+  {
+   "at": "c5e",
+   "img": "siguenza3",
+   "from": "full@0.6",
+   "to": "monk@0.8",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c5e.7",
+   "img": "siguenza2",
+   "from": "face@1.2",
+   "to": "face@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c5f",
+   "img": "strawberry",
+   "from": "berry@1.0",
+   "to": "berry@1.15",
+   "fade": 0.8
+  },
+  {
+   "at": "c5f.10",
+   "img": "centre",
+   "from": "fruit@2.2",
+   "to": "fruit@2.4",
+   "fade": 0.5
+  },
+  {
+   "at": "c5f.17",
+   "img": "strawberry",
+   "from": "berry@1.3",
+   "to": "berry@1.5",
+   "fade": 0.6,
+   "gray": 0.4
+  },
+  {
+   "at": "c5g",
+   "img": "siguenza2",
+   "from": "face@1.4",
+   "to": "face@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c5g.14",
+   "img": "garden",
+   "from": "full@0.95",
+   "to": "full@1.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c5g.22",
+   "img": "hell_pd",
+   "from": "tavern@2.4",
+   "to": "tavern@2.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c5h",
+   "img": "escorial",
+   "from": "front@1.3",
+   "to": "people@1.5",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c6a",
+   "img": "centre",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "fade": 0.8,
+   "gray": 0.5
+  },
+  {
+   "at": "c6b",
+   "img": "centre",
+   "from": "pool@1.8",
+   "to": "pool@2.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.9",
+   "img": "centre",
+   "from": "riders@1.8",
+   "to": "riders@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c6c",
+   "img": "owl_fountain",
+   "from": "owl@1.1",
+   "to": "owl@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c6c.12",
+   "img": "centre",
+   "from": "tower@2.1",
+   "to": "tower@2.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c6d",
+   "img": "centre",
+   "from": "birds@1.9",
+   "to": "birds@2.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c6e",
+   "img": "lakenmarkt",
+   "from": "people@1.4",
+   "to": "people@1.6",
+   "fade": 0.8,
+   "gray": 0.4
+  },
+  {
+   "at": "c6e.19",
+   "img": "philip",
+   "from": "face@1.6",
+   "to": "face@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c6f",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.04",
+   "fade": 0.8
+  },
+  {
+   "at": "c6f.18",
+   "img": "garden",
+   "from": "left_panel@2.4",
+   "to": "left_panel@2.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c6f.25",
+   "img": "garden",
+   "from": "hell_panel@2.4",
+   "to": "hell_panel@2.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c7a",
+   "img": "hell_pd",
+   "from": "instruments@1.2",
+   "to": "instruments@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c7b",
+   "img": "hell_pd",
+   "from": "instruments@1.6",
+   "to": "butt@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c7b.8",
+   "img": "instruments",
+   "from": "full@1.0",
+   "to": "full@1.08",
+   "fade": 0.6
+  },
+  {
+   "at": "c7c",
+   "img": "instruments",
+   "from": "lute@1.5",
+   "to": "lute@1.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c7c.12",
+   "img": "instruments",
+   "from": "sinner@1.9",
+   "to": "butt@2.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c7d",
+   "img": "instruments",
+   "from": "book@2.0",
+   "to": "book@2.2",
+   "fade": 0.6
+  },
+  {
+   "at": "c7d.13",
+   "img": "instruments",
+   "from": "butt@2.2",
+   "to": "butt@2.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c7e",
+   "img": "instruments",
+   "from": "full@1.1",
+   "to": "full@1.2",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c7e.12",
+   "img": "instruments",
+   "from": "book@2.4",
+   "to": "book@2.6",
+   "fade": 0.6,
+   "gray": 0.3
+  },
+  {
+   "at": "c7f",
+   "img": "instruments",
+   "from": "butt@2.5",
+   "to": "butt@2.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c7f.13",
+   "img": "haywain",
+   "from": "hell@1.8",
+   "to": "hell@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c7f.25",
+   "img": "instruments",
+   "from": "book@2.2",
+   "to": "book@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c7g",
+   "img": "instruments",
+   "from": "lute@1.3",
+   "to": "lute@1.4",
+   "fade": 0.8,
+   "dim": 0.35
+  },
+  {
+   "at": "end1",
+   "img": "garden",
+   "from": "full@1.0",
+   "to": "full@1.03",
+   "fade": 0.8
+  },
+  {
+   "at": "end1.10",
+   "img": "centre",
+   "from": "full@1.0",
+   "to": "full@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "end2",
+   "img": "centre",
+   "from": "owl_r@2.4",
+   "to": "owl_r@2.9",
+   "fade": 0.8
+  },
+  {
+   "at": "end2.15",
+   "img": "owl_boy",
+   "from": "eyes@1.2",
+   "to": "eyes@1.35",
+   "fade": 0.6
+  },
+  {
+   "at": "end3",
+   "img": "garden",
+   "from": "full@0.86",
+   "to": "full@0.84",
+   "frame": true,
+   "fade": 1.0
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold5.10",
+   "to": "cold5$+0.60",
+   "kicker": "HIERONYMUS BOSCH · c. 1490–1500",
+   "text": "The Garden of Earthly Delights"
+  },
+  {
+   "type": "chapter",
+   "from": "c1f$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "The Doors"
+  },
+  {
+   "type": "chapter",
+   "from": "c2h$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "The Palace"
+  },
+  {
+   "type": "chapter",
+   "from": "c3g$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "The Duke"
+  },
+  {
+   "type": "chapter",
+   "from": "c4e$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "The King and the Monk"
+  },
+  {
+   "type": "chapter",
+   "from": "c5h$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "The Heretic"
+  },
+  {
+   "type": "chapter",
+   "from": "c6f$+0.35",
+   "to": "c7a+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "The Song"
+  },
+  {
+   "type": "chapter",
+   "from": "c1a-0.55",
+   "to": "c1a+2.00",
+   "kicker": "CHAPTER I",
+   "text": "The Painter"
+  },
+  {
+   "type": "label",
+   "from": "cold1+0.30",
+   "to": "cold1$+0.60",
+   "text": "THE GARDEN OF EARTHLY DELIGHTS · PRADO"
+  },
+  {
+   "type": "label",
+   "from": "cold2",
+   "to": "cold2.6-0.10",
+   "text": "PHILIP II · TITIAN"
+  },
+  {
+   "type": "label",
+   "from": "cold2.6",
+   "to": "cold2.12-0.10",
+   "text": "EL ESCORIAL · LOUIS DE CAULLERY"
+  },
+  {
+   "type": "label",
+   "from": "cold3",
+   "to": "cold3.10-0.10",
+   "text": "PORTRAIT DRAWING · c. 1550 · ARRAS"
+  },
+  {
+   "type": "lower",
+   "from": "c1a.11+0.10",
+   "to": "c1a$+0.60",
+   "text": "Jheronimus van Aken",
+   "sub": "c. 1450–1516 · DRAWING, c. 1550"
+  },
+  {
+   "type": "label",
+   "from": "c1b",
+   "to": "c1c$",
+   "text": "'S-HERTOGENBOSCH · THE CLOTH MARKET · c. 1530"
+  },
+  {
+   "type": "label",
+   "from": "c1d",
+   "to": "c1d$+0.40",
+   "text": "BOSCH · THE HAYWAIN · PRADO"
+  },
+  {
+   "type": "label",
+   "from": "c1e.18",
+   "to": "c1e$+0.40",
+   "text": "'S-HERTOGENBOSCH · c. 1530"
+  },
+  {
+   "type": "stamp",
+   "from": "c1f.1+0.10",
+   "to": "c1f$+0.30",
+   "text": "≈ 25 PAINTINGS"
+  },
+  {
+   "type": "label",
+   "from": "c2b",
+   "to": "c2c$",
+   "text": "THE OUTER PANELS · GRISAILLE"
+  },
+  {
+   "type": "ring",
+   "from": "c2c.7+0.30",
+   "to": "c2c.20-0.20",
+   "point": "god",
+   "img": "closed",
+   "rx": 90,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "quote",
+   "from": "c2c.28-0.10",
+   "to": "c2c$+0.60",
+   "text": "For he spake, and it was done. For he commanded, and they were created.",
+   "sub": "PSALMS 33:9 AND 148:5 · INSCRIBED ON THE OUTER PANELS"
+  },
+  {
+   "type": "label",
+   "from": "c2e",
+   "to": "c2e$+0.30",
+   "text": "LEFT PANEL · THE GARDEN OF EDEN"
+  },
+  {
+   "type": "label",
+   "from": "c2f",
+   "to": "c2f2$+0.30",
+   "text": "RIGHT PANEL · HELL"
+  },
+  {
+   "type": "ring",
+   "from": "c2f2.59+0.20",
+   "to": "c2f2$+0.60",
+   "point": "face",
+   "img": "treeman",
+   "rx": 170,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c2g",
+   "to": "c2h.8-0.10",
+   "text": "CENTRE PANEL · THE GARDEN"
+  },
+  {
+   "type": "ring",
+   "from": "c2h+0.30",
+   "to": "c2h.3-0.10",
+   "point": "owl_l",
+   "img": "centre",
+   "rx": 150,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "year",
+   "from": "c3a",
+   "to": "c3a.5-0.10",
+   "text": "AUGUST 1516"
+  },
+  {
+   "type": "year",
+   "from": "c3b",
+   "to": "c3b.2-0.20",
+   "text": "1517"
+  },
+  {
+   "type": "lower",
+   "from": "c3b.2-0.05",
+   "to": "c3b.17-0.20",
+   "text": "Antonio de Beatis",
+   "sub": "SECRETARY TO CARDINAL LUIGI D'ARAGONA · NO PORTRAIT"
+  },
+  {
+   "type": "lower",
+   "from": "c3b.19+0.40",
+   "to": "c3b$+0.80",
+   "text": "Henry III of Nassau",
+   "sub": "1483–1538 · JAN GOSSAERT"
+  },
+  {
+   "type": "quote",
+   "from": "c3c.6-0.10",
+   "to": "c3c$+0.90",
+   "text": "There are some panels on which bizarre things have been painted.",
+   "sub": "ANTONIO DE BEATIS · TRAVEL JOURNAL, 1517"
+  },
+  {
+   "type": "label",
+   "from": "c3d",
+   "to": "c3d.14-0.10",
+   "text": "BRUSSELS · THE COURT QUARTER · 17TH-C. PRINT"
+  },
+  {
+   "type": "quote",
+   "from": "c3d.14-0.10",
+   "to": "c3d$+0.90",
+   "text": "The Count had it made because he liked to hold frequent banquets and to see his guests get drunk.",
+   "sub": "ANTONIO DE BEATIS · TRAVEL JOURNAL, 1517 (TR. J. R. HALE)"
+  },
+  {
+   "type": "lower",
+   "from": "c3g.10-0.10",
+   "to": "c3g.17-0.10",
+   "text": "Engelbert II of Nassau",
+   "sub": "DIED 1504 · RIJKSMUSEUM"
+  },
+  {
+   "type": "lower",
+   "from": "c4a.10-0.10",
+   "to": "c4a$+0.80",
+   "text": "William of Orange",
+   "sub": "1533–1584 · ADRIAEN THOMASZ. KEY"
+  },
+  {
+   "type": "year",
+   "from": "c4c",
+   "to": "c4c.2-0.10",
+   "text": "1568"
+  },
+  {
+   "type": "lower",
+   "from": "c4c.5-0.05",
+   "to": "c4c.9-0.10",
+   "text": "The Duke of Alba",
+   "sub": "1507–1582 · ANTONIS MOR"
+  },
+  {
+   "type": "year",
+   "from": "c4e.7",
+   "to": "c4e.10-0.10",
+   "text": "1591"
+  },
+  {
+   "type": "lower",
+   "from": "c4e.16-0.10",
+   "to": "c4e$+1.20",
+   "text": "Philip II of Spain",
+   "sub": "1527–1598 · TITIAN"
+  },
+  {
+   "type": "label",
+   "from": "c5a.8",
+   "to": "c5a$+0.30",
+   "text": "BOSCH · THE HAYWAIN · HELL (DETAIL)"
+  },
+  {
+   "type": "year",
+   "from": "c5b",
+   "to": "c5b.2-0.10",
+   "text": "1593"
+  },
+  {
+   "type": "label",
+   "from": "c5b.2",
+   "to": "c5b.12-0.10",
+   "text": "EL ESCORIAL · LOUIS DE CAULLERY"
+  },
+  {
+   "type": "title",
+   "from": "c5c.6-0.10",
+   "to": "c5c.14-0.10",
+   "kicker": "ESCORIAL DELIVERY RECORD · 1593",
+   "text": "The Variety of the World"
+  },
+  {
+   "type": "title",
+   "from": "c5c.3-0.10",
+   "to": "c5c$+0.70",
+   "kicker": "«DEL MADROÑO»",
+   "text": "The Strawberry Tree"
+  },
+  {
+   "type": "year",
+   "from": "c5e",
+   "to": "c5e.2-0.10",
+   "text": "1605"
+  },
+  {
+   "type": "lower",
+   "from": "c5e.7-0.05",
+   "to": "c5e$+0.80",
+   "text": "Fray José de Sigüenza",
+   "sub": "1544–1606 · LIBRARIAN AND HISTORIAN OF EL ESCORIAL"
+  },
+  {
+   "type": "year",
+   "from": "c6a.1",
+   "to": "c6a.3-0.10",
+   "text": "1947"
+  },
+  {
+   "type": "lower",
+   "from": "c6a.6-0.10",
+   "to": "c6a$+0.80",
+   "text": "Wilhelm Fraenger",
+   "sub": "GERMAN ART HISTORIAN · NO PUBLIC-DOMAIN PORTRAIT"
+  },
+  {
+   "type": "label",
+   "from": "c6c",
+   "to": "c6c.12-0.10",
+   "text": "LEFT PANEL · THE FOUNTAIN OF LIFE"
+  },
+  {
+   "type": "quote",
+   "from": "c6f.7-0.10",
+   "to": "c6f.18-0.10",
+   "text": "A false Paradise given over to the sin of lust.",
+   "sub": "MUSEO DEL PRADO"
+  },
+  {
+   "type": "year",
+   "from": "c7a.2",
+   "to": "c7a.5-0.10",
+   "text": "FEBRUARY 2014"
+  },
+  {
+   "type": "lower",
+   "from": "c7b.6-0.10",
+   "to": "c7b$+0.50",
+   "text": "Amelia Hamrick",
+   "sub": "MUSIC STUDENT · OKLAHOMA CHRISTIAN UNIVERSITY"
+  },
+  {
+   "type": "ring",
+   "from": "c7c.16+0.10",
+   "to": "c7c$+0.60",
+   "point": "butt",
+   "img": "instruments",
+   "rx": 200,
+   "ry": 150,
+   "rot": -10
+  },
+  {
+   "type": "label",
+   "from": "c7f.13",
+   "to": "c7f.25-0.10",
+   "text": "BOSCH · THE HAYWAIN · HELL (DETAIL)"
+  },
+  {
+   "type": "quote",
+   "from": "c7g.9-0.10",
+   "to": "c7g$+1.20",
+   "text": "I think Bosch may have just been slapping notes up there to make it look like music.",
+   "sub": "AMELIA HAMRICK · ASSOCIATED PRESS, 2014"
+  },
+  {
+   "type": "ring",
+   "from": "end2.7+0.30",
+   "to": "end2$",
+   "point": "owl_r",
+   "img": "centre",
+   "rx": 150,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "end3+0.10",
+   "to": "end3$+1.00",
+   "text": "MUSEO DEL PRADO · MADRID · ROOM 56A"
+  },
+  {
+   "type": "end",
+   "from": "end3$+1.00",
+   "to": "end3$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "cold1.7",
+   "fx": "impact",
+   "gain": 0.35
+  },
+  {
+   "at": "c2d.3",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "c4c.9",
+   "fx": "tick",
+   "gain": 0.3
+  },
+  {
+   "at": "c7c.18",
+   "fx": "chime",
+   "gain": 0.25
+  },
+  {
+   "at": "end2.15",
+   "fx": "chime",
+   "gain": 0.2
+  },
+  {
+   "at": "c1f$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c2h$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c3g$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c4e$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c5h$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c6f$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c1a-0.55",
+   "fx": "impact",
+   "gain": 0.3
+  }
+ ],
+ "music": {
+  "bar": 5.5,
+  "music_db": -13,
+  "transpose": 1,
+  "chords": [
+   [
+    33,
+    40,
+    48
+   ],
+   [
+    29,
+    36,
+    45
+   ],
+   [
+    36,
+    43,
+    52
+   ],
+   [
+    28,
+    40,
+    44
+   ]
+  ],
+  "segments": [
+   {
+    "at": "c1a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": 1
+   },
+   {
+    "at": "c2a",
+    "chords": [
+     [
+      28,
+      40,
+      47
+     ],
+     [
+      36,
+      43,
+      48
+     ],
+     [
+      31,
+      38,
+      47
+     ],
+     [
+      35,
+      42,
+      47
+     ]
+    ],
+    "transpose": 2
+   },
+   {
+    "at": "c3a",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 0
+   },
+   {
+    "at": "c4a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": -1
+   },
+   {
+    "at": "c5a",
+    "chords": [
+     [
+      28,
+      40,
+      47
+     ],
+     [
+      36,
+      43,
+      48
+     ],
+     [
+      31,
+      38,
+      47
+     ],
+     [
+      35,
+      42,
+      47
+     ]
+    ],
+    "transpose": 1
+   },
+   {
+    "at": "c6a",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 2
+   },
+   {
+    "at": "c7a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": 0
+   },
+   {
+    "at": "end1",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 1
+   }
+  ],
+  "sections": {
+   "cold": [
+    "cold1",
+    "cold3$"
+   ],
+   "choir": [
+    "c2d-0.20",
+    "c2e-0.30"
+   ],
+   "drop": [
+    "c7d.13",
+    "c7d$+0.30"
+   ]
+  },
+  "heartbeat": [
+   "c2c",
+   "c2d.3-0.20"
+  ]
+ },
  "facts": [
   {
    "claim": "No title was given to the work at the time; the modern title is later; Bosch left no letters or diaries; he did not date his paintings",
@@ -1566,7 +3685,7 @@
    "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
   },
   {
-   "claim": "Centre panel: nude figures, oversized animals and fruit, pool with riders, five broken structures in the water, two owls at the edges staring at the viewer",
+   "claim": "Centre panel: nude figures, oversized animals and fruit, pool with riders, broken structures in the water; Prado: 'two different types of owl that evoke evil' (both owls face the viewer, visible in the painting)",
    "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html)"
   },
   {
