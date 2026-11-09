@@ -1,0 +1,1714 @@
+{
+ "slug": "bosch-garden-long",
+ "format": "long",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "Hieronymus Bosch",
+  "born": 1450,
+  "died": 1516,
+  "painting": "The Garden of Earthly Delights",
+  "year": "c. 1490–1500",
+  "museum": "Museo del Prado",
+  "city": "Madrid",
+  "image": "garden",
+  "image_credit": "Museo del Prado, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1516,
+  "note": "Paintings public domain; three CC BY-SA 4.0 photos (hell panel scan, Harrewijn print, Sigüenza portrait) credited in the description and on screen."
+ },
+ "say": {
+  "1450": "fourteen fifty",
+  "1486": "fourteen eighty-six",
+  "1516": "fifteen sixteen",
+  "1517": "fifteen seventeen",
+  "1504": "fifteen oh four",
+  "1560s": "fifteen sixties",
+  "1568": "fifteen sixty-eight",
+  "1591": "fifteen ninety-one",
+  "1593": "fifteen ninety-three",
+  "1605": "sixteen oh five",
+  "1947": "nineteen forty-seven",
+  "2014": "twenty fourteen",
+  "1961": "nineteen sixty-one",
+  "1978": "nineteen seventy-eight",
+  "500-year-old": "five-hundred-year-old"
+ },
+ "ipa": {
+  "'s-Hertogenbosch": "sˌɛɹtoʊxənbˈɑːs",
+  "Jheronimus": "jɛɹˈoʊnɪməs",
+  "Aken": "ˈɑːkən",
+  "Bosch": "bˈɑːʃ",
+  "Bosch's": "bˈɑːʃɪz",
+  "Beatis": "beɪˈɑːtɪs",
+  "Nassau": "nˈæsɔː",
+  "Engelbert": "ˈɛŋɡəlbɜːɹt",
+  "Alba": "ˈælbə",
+  "Escorial": "ˌɛskɔːɹiˈɑːl",
+  "Fray": "fɹˈaɪ",
+  "José": "hoʊsˈeɪ",
+  "Sigüenza": "sɪɡwˈɛnθə",
+  "Fraenger": "fɹˈɛŋɚ",
+  "Adamites": "ˈædəmˌaɪts",
+  "Hamrick": "hˈæmɹɪk",
+  "Prado": "pɹˈɑːdoʊ",
+  "triptych": "tɹˈɪptɪk",
+  "spake": "spˈeɪk"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "Nobody knows for sure what this painting *means.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "Not the kings who owned it.",
+     0.39,
+     0.95
+    ],
+    [
+     "Not the monks who guarded it.",
+     0.39,
+     0.95
+    ],
+    [
+     "Not the scholars who have spent their lives on it.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "The man who painted it left no letters,",
+     0.26,
+     0.95
+    ],
+    [
+     "no diary,",
+     0.39,
+     0.95
+    ],
+    [
+     "not even a title.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "For five hundred years,",
+     0.26,
+     0.95
+    ],
+    [
+     "people have looked into this garden",
+     0.2,
+     0.97
+    ],
+    [
+     "and seen completely different things.",
+     0.65,
+     0.95
+    ],
+    [
+     "A party.",
+     0.39,
+     0.92
+    ],
+    [
+     "A sermon.",
+     0.39,
+     0.92
+    ],
+    [
+     "A heresy.",
+     0.39,
+     0.92
+    ],
+    [
+     "A song.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "This is the story of The Garden of Earthly Delights,",
+     0.26,
+     0.95
+    ],
+    [
+     "and of everyone who tried to read it.",
+     2.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "He was born around 1450,",
+     0.26,
+     0.95
+    ],
+    [
+     "in a Dutch town called 's-Hertogenbosch.",
+     0.52,
+     0.92
+    ],
+    [
+     "His name was Jheronimus van Aken.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "His grandfather was a painter.",
+     0.33,
+     0.95
+    ],
+    [
+     "So was his father.",
+     0.33,
+     0.95
+    ],
+    [
+     "So were most of his uncles.",
+     0.39,
+     0.95
+    ],
+    [
+     "Painting was the family trade.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "Around 1486,",
+     0.26,
+     0.97
+    ],
+    [
+     "he joined the Brotherhood of Our Lady,",
+     0.26,
+     0.95
+    ],
+    [
+     "a devout religious brotherhood",
+     0.2,
+     0.97
+    ],
+    [
+     "of the town's leading citizens.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "He signed a few of his paintings",
+     0.2,
+     0.97
+    ],
+    [
+     "with the name of his town.",
+     0.39,
+     0.95
+    ],
+    [
+     "Jheronimus Bosch.",
+     0.65,
+     0.9
+    ],
+    [
+     "He never dated them.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "And that is almost all we know.",
+     0.65,
+     0.9
+    ],
+    [
+     "No letters.",
+     0.39,
+     0.92
+    ],
+    [
+     "No diary.",
+     0.39,
+     0.92
+    ],
+    [
+     "Not one word about his own work.",
+     0.65,
+     0.9
+    ],
+    [
+     "Just a few lines in the town records,",
+     0.2,
+     0.97
+    ],
+    [
+     "and in the brotherhood's account books.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1f",
+   "perf": [
+    [
+     "About twenty-five paintings are confidently his today.",
+     0.52,
+     0.95
+    ],
+    [
+     "This is the most famous of them.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "It is a triptych.",
+     0.39,
+     0.93
+    ],
+    [
+     "Three panels of oak,",
+     0.26,
+     0.95
+    ],
+    [
+     "almost two metres tall,",
+     0.26,
+     0.95
+    ],
+    [
+     "more than three metres wide when it's open.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "Closed,",
+     0.39,
+     0.92
+    ],
+    [
+     "it doesn't look strange at all.",
+     0.52,
+     0.93
+    ],
+    [
+     "A grey world.",
+     0.39,
+     0.92
+    ],
+    [
+     "Water,",
+     0.26,
+     0.93
+    ],
+    [
+     "land,",
+     0.26,
+     0.93
+    ],
+    [
+     "plants.",
+     0.39,
+     0.93
+    ],
+    [
+     "No animals yet.",
+     0.39,
+     0.93
+    ],
+    [
+     "No people.",
+     0.78,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "It is the third day of Creation.",
+     0.52,
+     0.93
+    ],
+    [
+     "Up in the corner sits God,",
+     0.26,
+     0.95
+    ],
+    [
+     "tiny,",
+     0.26,
+     0.93
+    ],
+    [
+     "with a book on his lap.",
+     0.52,
+     0.95
+    ],
+    [
+     "Across the top, two lines from the Psalms.",
+     0.39,
+     0.95
+    ],
+    [
+     "For he spake, and it was done.",
+     0.39,
+     0.9
+    ],
+    [
+     "For he commanded, and they were created.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2d",
+   "perf": [
+    [
+     "Then the doors open.",
+     1.56,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "On the left,",
+     0.26,
+     0.95
+    ],
+    [
+     "Eden.",
+     0.39,
+     0.92
+    ],
+    [
+     "God presents Eve to Adam.",
+     0.52,
+     0.93
+    ],
+    [
+     "The museum says Bosch first painted a different scene here,",
+     0.2,
+     0.97
+    ],
+    [
+     "the creation of Eve,",
+     0.26,
+     0.95
+    ],
+    [
+     "and then changed his mind.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2f",
+   "perf": [
+    [
+     "On the right,",
+     0.26,
+     0.95
+    ],
+    [
+     "Hell.",
+     0.52,
+     0.9
+    ],
+    [
+     "Fire, darkness,",
+     0.33,
+     0.93
+    ],
+    [
+     "torture,",
+     0.33,
+     0.93
+    ],
+    [
+     "and enormous musical instruments.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2f2",
+   "perf": [
+    [
+     "A monster with the head of a bird",
+     0.2,
+     0.97
+    ],
+    [
+     "sits on a throne,",
+     0.26,
+     0.95
+    ],
+    [
+     "eating sinners,",
+     0.33,
+     0.93
+    ],
+    [
+     "and passing them out below.",
+     0.78,
+     0.93
+    ],
+    [
+     "A pig in a nun's veil",
+     0.2,
+     0.95
+    ],
+    [
+     "leans on a man,",
+     0.2,
+     0.95
+    ],
+    [
+     "trying to get him to sign a document.",
+     0.78,
+     0.95
+    ],
+    [
+     "And in the middle of it all,",
+     0.26,
+     0.95
+    ],
+    [
+     "a man made of tree trunks and a broken shell,",
+     0.26,
+     0.97
+    ],
+    [
+     "with a tavern inside him.",
+     0.65,
+     0.93
+    ],
+    [
+     "One historian thought that face might be Bosch himself.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2g",
+   "perf": [
+    [
+     "And in the middle,",
+     0.39,
+     0.93
+    ],
+    [
+     "the garden.",
+     0.65,
+     0.9
+    ],
+    [
+     "Crowds of naked people.",
+     0.33,
+     0.95
+    ],
+    [
+     "Giant birds.",
+     0.33,
+     0.93
+    ],
+    [
+     "Giant fruit.",
+     0.39,
+     0.93
+    ],
+    [
+     "Riders circling a pool.",
+     0.52,
+     0.95
+    ],
+    [
+     "Strange buildings standing in the water.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2h",
+   "perf": [
+    [
+     "Is it paradise?",
+     0.52,
+     0.92
+    ],
+    [
+     "Or is it a warning?",
+     0.65,
+     0.92
+    ],
+    [
+     "People have been arguing about it ever since.",
+     2.2,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "Bosch died in August 1516.",
+     0.52,
+     0.93
+    ],
+    [
+     "The first time anyone writes about this painting",
+     0.2,
+     0.97
+    ],
+    [
+     "is the very next year.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "In 1517,",
+     0.26,
+     0.95
+    ],
+    [
+     "Antonio de Beatis,",
+     0.26,
+     0.93
+    ],
+    [
+     "secretary to an Italian cardinal,",
+     0.26,
+     0.95
+    ],
+    [
+     "is travelling through Europe with his master.",
+     0.52,
+     0.97
+    ],
+    [
+     "In Brussels,",
+     0.26,
+     0.95
+    ],
+    [
+     "they visit the palace of Count Henry the Third of Nassau.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "In his journal, de Beatis notes",
+     0.26,
+     0.95
+    ],
+    [
+     "that there are some panels on which bizarre things have been painted.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "In the same palace,",
+     0.26,
+     0.95
+    ],
+    [
+     "he notices something else.",
+     0.39,
+     0.95
+    ],
+    [
+     "An enormous bed.",
+     0.52,
+     0.9
+    ],
+    [
+     "He writes that",
+     0.2,
+     0.95
+    ],
+    [
+     "the Count had it made because he liked to hold frequent banquets",
+     0.2,
+     0.95
+    ],
+    [
+     "and to see his guests get drunk.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "So what was the painting for?",
+     0.52,
+     0.92
+    ],
+    [
+     "Some historians think it was made for a wedding.",
+     0.39,
+     0.95
+    ],
+    [
+     "Others think that famous bed was really a ceremonial platform,",
+     0.39,
+     0.97
+    ],
+    [
+     "that the painting hung in a hall for councils and court hearings,",
+     0.26,
+     0.97
+    ],
+    [
+     "as a lesson about justice.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "Even the furniture is disputed.",
+     0.78,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3g",
+   "perf": [
+    [
+     "The Prado believes the triptych was ordered by Henry's uncle,",
+     0.2,
+     0.97
+    ],
+    [
+     "Engelbert of Nassau,",
+     0.26,
+     0.93
+    ],
+    [
+     "who died in 1504",
+     0.2,
+     0.95
+    ],
+    [
+     "and named his nephew as his heir.",
+     2.2,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "By the 1560s,",
+     0.26,
+     0.95
+    ],
+    [
+     "it belongs to Henry's nephew,",
+     0.39,
+     0.95
+    ],
+    [
+     "a prince,",
+     0.26,
+     0.95
+    ],
+    [
+     "William of Orange.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "The Netherlands are ruled by the King of Spain.",
+     0.39,
+     0.95
+    ],
+    [
+     "And William becomes the leader of the revolt against him.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "In 1568,",
+     0.26,
+     0.95
+    ],
+    [
+     "the king's general,",
+     0.26,
+     0.95
+    ],
+    [
+     "the Duke of Alba,",
+     0.39,
+     0.92
+    ],
+    [
+     "seizes William's property in Brussels.",
+     0.52,
+     0.95
+    ],
+    [
+     "The Garden goes with it.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "The Duke gives it to his son Fernando,",
+     0.26,
+     0.95
+    ],
+    [
+     "born outside his marriage.",
+     0.78,
+     0.95
+    ],
+    [
+     "It goes south,",
+     0.26,
+     0.95
+    ],
+    [
+     "to Spain.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "When Fernando dies, his things are sold.",
+     0.52,
+     0.95
+    ],
+    [
+     "And in 1591,",
+     0.26,
+     0.95
+    ],
+    [
+     "the buyer is the king himself.",
+     0.65,
+     0.93
+    ],
+    [
+     "Philip the Second of Spain.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "Philip is the most Catholic king in Europe.",
+     0.52,
+     0.93
+    ],
+    [
+     "And he collects Bosch's paintings,",
+     0.2,
+     0.95
+    ],
+    [
+     "one after another.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "In 1593,",
+     0.26,
+     0.95
+    ],
+    [
+     "he sends the Garden to his new monastery-palace,",
+     0.2,
+     0.97
+    ],
+    [
+     "El Escorial,",
+     0.26,
+     0.92
+    ],
+    [
+     "in the mountains outside Madrid.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "The record of the gift describes",
+     0.2,
+     0.97
+    ],
+    [
+     "a painting of the variety of the world.",
+     0.52,
+     0.93
+    ],
+    [
+     "And it gives the name people knew it by.",
+     0.39,
+     0.95
+    ],
+    [
+     "The strawberry tree.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "But by now,",
+     0.26,
+     0.95
+    ],
+    [
+     "some Spaniards are whispering",
+     0.2,
+     0.97
+    ],
+    [
+     "that Bosch's pictures are tainted with heresy.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "In 1605,",
+     0.26,
+     0.95
+    ],
+    [
+     "a monk of the Escorial,",
+     0.26,
+     0.95
+    ],
+    [
+     "Fray José de Sigüenza,",
+     0.39,
+     0.92
+    ],
+    [
+     "writes their defence.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "The garden,",
+     0.26,
+     0.93
+    ],
+    [
+     "he says,",
+     0.26,
+     0.95
+    ],
+    [
+     "is about the vanity of pleasure.",
+     0.52,
+     0.93
+    ],
+    [
+     "Sweet,",
+     0.26,
+     0.92
+    ],
+    [
+     "like the taste of a strawberry,",
+     0.26,
+     0.95
+    ],
+    [
+     "and gone just as fast.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5g",
+   "perf": [
+    [
+     "And he writes the line people still quote about Bosch.",
+     0.52,
+     0.95
+    ],
+    [
+     "Other painters, he says,",
+     0.2,
+     0.95
+    ],
+    [
+     "show people as they look on the outside.",
+     0.52,
+     0.95
+    ],
+    [
+     "Bosch dares to paint them",
+     0.2,
+     0.93
+    ],
+    [
+     "as they are inside.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5h",
+   "perf": [
+    [
+     "The Garden stays at the Escorial",
+     0.2,
+     0.97
+    ],
+    [
+     "for more than three hundred years.",
+     2.2,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "Then,",
+     0.26,
+     0.93
+    ],
+    [
+     "in 1947,",
+     0.39,
+     0.95
+    ],
+    [
+     "a German scholar,",
+     0.26,
+     0.95
+    ],
+    [
+     "Wilhelm Fraenger,",
+     0.39,
+     0.92
+    ],
+    [
+     "turns everything upside down.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "The garden,",
+     0.26,
+     0.93
+    ],
+    [
+     "he says,",
+     0.26,
+     0.95
+    ],
+    [
+     "isn't a warning at all.",
+     0.52,
+     0.93
+    ],
+    [
+     "It's a joyful new paradise,",
+     0.26,
+     0.95
+    ],
+    [
+     "a world of innocence.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "He claims Bosch secretly belonged to a sect of heretics,",
+     0.26,
+     0.95
+    ],
+    [
+     "the Adamites,",
+     0.39,
+     0.92
+    ],
+    [
+     "and that the painting was made for their grand master.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "The idea caught on.",
+     0.39,
+     0.93
+    ],
+    [
+     "Popular books still repeat it.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "But most scholars have turned away from it.",
+     0.52,
+     0.93
+    ],
+    [
+     "Bosch was a member of a Catholic brotherhood",
+     0.2,
+     0.97
+    ],
+    [
+     "in good standing.",
+     0.52,
+     0.95
+    ],
+    [
+     "And his greatest collector was the king",
+     0.2,
+     0.97
+    ],
+    [
+     "who hunted heretics.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6f",
+   "perf": [
+    [
+     "Today, the museum reads the middle panel",
+     0.2,
+     0.97
+    ],
+    [
+     "as a false paradise,",
+     0.39,
+     0.92
+    ],
+    [
+     "given over to the sin of lust.",
+     0.65,
+     0.93
+    ],
+    [
+     "Between the first sin on the left,",
+     0.26,
+     0.95
+    ],
+    [
+     "and its punishment on the right.",
+     2.2,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "And then,",
+     0.26,
+     0.93
+    ],
+    [
+     "in February 2014,",
+     0.39,
+     0.95
+    ],
+    [
+     "the painting goes viral.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "A twenty-year-old music student in Oklahoma,",
+     0.26,
+     0.95
+    ],
+    [
+     "Amelia Hamrick,",
+     0.39,
+     0.93
+    ],
+    [
+     "is looking at the Hell panel late one night.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "Down in the corner,",
+     0.26,
+     0.95
+    ],
+    [
+     "a sinner lies pinned under a giant lute.",
+     0.52,
+     0.95
+    ],
+    [
+     "And across his backside,",
+     0.26,
+     0.95
+    ],
+    [
+     "there are notes.",
+     0.52,
+     0.9
+    ],
+    [
+     "Painted on a stave.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "She turns them into modern notation,",
+     0.26,
+     0.95
+    ],
+    [
+     "records them,",
+     0.26,
+     0.95
+    ],
+    [
+     "and posts the tune online.",
+     0.52,
+     0.95
+    ],
+    [
+     "The internet calls it",
+     0.2,
+     0.95
+    ],
+    [
+     "the 500-year-old butt song from Hell.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7e",
+   "perf": [
+    [
+     "But music historians point out a few problems.",
+     0.52,
+     0.93
+    ],
+    [
+     "She wasn't the first.",
+     0.39,
+     0.93
+    ],
+    [
+     "Scholars had written it out back in 1961,",
+     0.26,
+     0.97
+    ],
+    [
+     "and a band had recorded it in 1978.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c7f",
+   "perf": [
+    [
+     "And there's no clef.",
+     0.39,
+     0.92
+    ],
+    [
+     "Without one,",
+     0.26,
+     0.95
+    ],
+    [
+     "nobody can say which notes those are.",
+     0.65,
+     0.93
+    ],
+    [
+     "Bosch painted the same kind of make-believe music",
+     0.2,
+     0.97
+    ],
+    [
+     "in other works too.",
+     0.52,
+     0.95
+    ],
+    [
+     "It has the look of music.",
+     0.39,
+     0.93
+    ],
+    [
+     "Not the sound.",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7g",
+   "perf": [
+    [
+     "Even Hamrick had her doubts.",
+     0.39,
+     0.93
+    ],
+    [
+     "She told a reporter:",
+     0.39,
+     0.95
+    ],
+    [
+     "I think Bosch may have just been slapping notes up there",
+     0.13,
+     0.95
+    ],
+    [
+     "to make it look like music.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "end1",
+   "perf": [
+    [
+     "A party.",
+     0.39,
+     0.92
+    ],
+    [
+     "A wedding.",
+     0.39,
+     0.92
+    ],
+    [
+     "A sermon.",
+     0.39,
+     0.92
+    ],
+    [
+     "A heresy.",
+     0.39,
+     0.92
+    ],
+    [
+     "A song.",
+     0.78,
+     0.9
+    ],
+    [
+     "Five hundred years of readers,",
+     0.26,
+     0.95
+    ],
+    [
+     "and every one of them found something different.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "end2",
+   "perf": [
+    [
+     "And in the middle of the garden,",
+     0.26,
+     0.95
+    ],
+    [
+     "two owls stare straight out of the painting.",
+     0.65,
+     0.92
+    ],
+    [
+     "At you.",
+     1.3,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "end3",
+   "perf": [
+    [
+     "It hangs in the Prado,",
+     0.26,
+     0.92
+    ],
+    [
+     "in Madrid.",
+     0.65,
+     0.9
+    ]
+   ]
+  }
+ ],
+ "images": {},
+ "shots": [],
+ "overlays": [],
+ "sfx": [],
+ "music": {},
+ "facts": [
+  {
+   "claim": "No title was given to the work at the time; the modern title is later; Bosch left no letters or diaries; he did not date his paintings",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights ; https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  {
+   "claim": "Bosch born Jheronimus van Aken c. 1450 in 's-Hertogenbosch; grandfather Jan van Aken a painter, four of his five sons painters; father Anthonius",
+   "source": "https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  {
+   "claim": "Joined the Brotherhood of Our Lady in 1486/7, a devotional confraternity of about 40 influential citizens",
+   "source": "https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  {
+   "claim": "Signed several works 'Jheronimus Bosch'; surname from his town; known only from municipal records and the Brotherhood's account books",
+   "source": "https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  {
+   "claim": "About 25 paintings confidently attributed to Bosch today",
+   "source": "https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  {
+   "claim": "Triptych of oak panels; height 185.8 cm, centre 172.5 cm wide, wings 76.5 cm each (open c. 3.25 m); dated 1490–1500 by the Prado",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html)"
+  },
+  {
+   "claim": "Outer panels in grisaille: Third Day of Creation, vegetation but no human or animal life; tiny God with a Bible on his lap; Psalm 33:9 and 148:5 inscriptions 'For he spake, and it was done' / 'For he commanded, and they were created'",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html) ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Left panel: God presenting Eve to Adam; Bosch first painted the Creation of Eve and changed it (Prado)",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html)"
+  },
+  {
+   "claim": "Right panel 'musical Hell' with instruments of torture; tavern inside the tree-man; Belting proposed the tree-man's face as a self-portrait",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html) ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Bird-headed monster on a throne/toilet eating corpses and excreting them; pig in a nun's veil trying to get a man to sign legal documents",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Centre panel: nude figures, oversized animals and fruit, pool with riders, five broken structures in the water, two owls at the edges staring at the viewer",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html)"
+  },
+  {
+   "claim": "Bosch died 9 August 1516; the triptych is first documented in 1517 in Henry III of Nassau's Brussels palace",
+   "source": "https://en.wikipedia.org/wiki/Hieronymus_Bosch ; https://www.theparisreview.org/blog/?p=104835"
+  },
+  {
+   "claim": "Antonio de Beatis, secretary to Cardinal Luigi d'Aragona, travelled 1517–18; in the Nassau palace he wrote 'there are some panels on which bizarre things have been painted'",
+   "source": "https://en.wikipedia.org/wiki/Antonio_de_Beatis ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights (Silver, Per Contra)"
+  },
+  {
+   "claim": "De Beatis on the great bed: 'the Count had it made because he liked to hold frequent banquets and to see his guests get drunk' (Hale tr.)",
+   "source": "https://www.theparisreview.org/blog/?p=104835"
+  },
+  {
+   "claim": "Possibly commissioned for a wedding (Harbison)",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "The 'bed' was probably a lit de justice (ceremonial platform); the triptych likely hung in a hall for councils and court hearings, as an exemplum iustitiae (Koldeweij 2023)",
+   "source": "https://jeroenboschplaza.com/recensie/koldeweij-2023/?lang=en"
+  },
+  {
+   "claim": "Engelbert II of Nassau commissioned it (Prado; Stedelijk Museum Breda); he died 31 May 1504 and named his nephew Henry III his successor",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html) ; https://stedelijkmuseumbreda.nl/en/see-do/de-lusten-van-engelbrecht/research ; https://en.wikipedia.org/wiki/Engelbert_II_of_Nassau"
+  },
+  {
+   "claim": "Provenance: René de Châlon 1538–44, William I of Orange 1544–67 (Henry's nephew); expropriated in Brussels by the Duke of Alba, 28 May 1568; to Alba's illegitimate son Fernando de Toledo; taken to Spain",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html) ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Philip II bought it at Fernando de Toledo's posthumous sale in 1591; sent to El Escorial 8 July 1593",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html) ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Philip II, 'the most orthodox Catholic of them all', acquired many Bosch paintings",
+   "source": "https://www.uvm.edu/~hag/bosch/gibson-bosch-iconography.pdf ; https://en.wikipedia.org/wiki/Hieronymus_Bosch"
+  },
+  {
+   "claim": "1593 gift record: a painting 'depicting the variety of the world', known as 'Del Madroño' (strawberry tree)",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights (Larsen)"
+  },
+  {
+   "claim": "Late-16th-century evidence that some Spaniards thought Bosch's works tainted with heresy; Sigüenza refuted it",
+   "source": "https://www.uvm.edu/~hag/bosch/gibson-bosch-iconography.pdf"
+  },
+  {
+   "claim": "Fray José de Sigüenza (1544–1606), librarian and historian (later prior) of El Escorial, History of the Order of St Jerome c. 1605; called it the 'strawberry plant', about the vanity and transient taste of strawberries",
+   "source": "https://www.uvm.edu/~hag/bosch/gibson-bosch-iconography.pdf ; https://en.wikipedia.org/wiki/Jos%C3%A9_de_Sig%C3%BCenza ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Sigüenza: others paint men as they appear outside; Bosch has the courage to paint them as they are inside",
+   "source": "https://alianzaeditorial.es/primer_capitulo/hieronymus-bosch-el-bosco.pdf"
+  },
+  {
+   "claim": "At El Escorial for over 340 years before moving to the Prado (1933 per the Prado's provenance; 1939 per Wikipedia)",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html) ; https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "Wilhelm Fraenger (1947): centre panel a joyful millennial paradise of innocence; Bosch an Adamite; commissioned by the sect's Grand Master",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights ; https://alchemywebsite.com/bosch/Interpretation_Fraenger.html"
+  },
+  {
+   "claim": "Fraenger's theory gained popularity, many popular books still accept it; scholars have increasingly turned away from it; Bosch a member of the Brotherhood of Our Lady, not an Adamite",
+   "source": "https://alchemywebsite.com/bosch/Interpretation_Fraenger.html ; https://www.uvm.edu/~hag/bosch/gibson-bosch-iconography.pdf"
+  },
+  {
+   "claim": "Prado: centre panel 'a false Paradise given over to the sin of lust'; sin begins in Eden and is punished in Hell",
+   "source": "Museo del Prado, The Garden of Earthly Delights Triptych (collection page, copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html)"
+  },
+  {
+   "claim": "Feb 2014: Amelia Hamrick, 20, Oklahoma Christian University student (music), late at night, transcribed the notes on a sinner's backside to modern notation, recorded and posted it",
+   "source": "https://m.washingtontimes.com/news/2014/feb/23/okla-college-student-uncovers-hidden-song/"
+  },
+  {
+   "claim": "Media called it the '500-year-old butt song from Hell'",
+   "source": "https://news.artnet.com/art-world/bosch-butt-song-from-hell-309732"
+  },
+  {
+   "claim": "Earlier transcriptions: Lenneberg 1961, Dixon 1981; recorded by Atrium Musicae (Codex Gluteo) 1978; no clef, so pitch can't be known; faux 'Strichnotation' Bosch also used in the Haywain, the Last Judgement and The Singers in the Egg; music book under the lute",
+   "source": "https://earlymusicmuse.com/bosch1/"
+  },
+  {
+   "claim": "Hamrick: 'I think Bosch may have just been slapping notes up there to make it look like music.'",
+   "source": "https://m.washingtontimes.com/news/2014/feb/23/okla-college-student-uncovers-hidden-song/"
+  }
+ ],
+ "next": false,
+ "maps": {
+  "journey": {
+   "bbox": [
+    [
+     -9.5,
+     39.0
+    ],
+    [
+     9.0,
+     53.5
+    ]
+   ],
+   "focus": [
+    "0",
+    "0"
+   ],
+   "cities": {
+    "hertogenbosch": [
+     5.3,
+     51.69
+    ],
+    "brussels": [
+     4.35,
+     50.85
+    ],
+    "escorial": [
+     -4.15,
+     40.59
+    ]
+   }
+  }
+ },
+ "youtube": {
+  "titles": [
+   "Nobody Knows What This Painting Means",
+   "500 Years of Arguing About One Painting"
+  ],
+  "description_lead": "Hieronymus Bosch left no letters, no diary and no title. For five hundred years, the people who owned and studied The Garden of Earthly Delights have read it as a party, a wedding gift, a sermon against lust, a secret heresy and, in 2014, a song written on a sinner's backside. This is the true story of the painting and of everyone who tried to read it: the Nassau counts in Brussels, the Duke of Alba, Philip II and the monks of El Escorial, Wilhelm Fraenger, and the student who turned the 'butt music' into a viral tune.",
+  "hashtags": [
+   "#arthistory",
+   "#bosch",
+   "#prado"
+  ],
+  "credits": [],
+  "thumbnail": {
+   "image": "garden",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "span": 0.3,
+   "words": "WHAT DOES IT MEAN?"
+  },
+  "intro_chapter": "Nobody knows what this painting means",
+  "outro_chapter": "The Owls"
+ }
+}

@@ -1,130 +1,30 @@
 {
- "commons_minutes": 25,
+ "commons_minutes": 15,
  "commons": [
   {
-   "name": "garden",
-   "title": "File:The Garden of Earthly Delights by Bosch High Resolution 2.jpg",
-   "width": 8000
+   "name": "hell_pd",
+   "title": "File:Hieronymus Bosch - The Garden of Earthly Delights - Hell.jpg",
+   "width": 1778
   },
   {
-   "name": "hell",
-   "title": "File:Hell panel, Garden of Earthly Delights.jpg",
-   "width": 6329
+   "name": "left",
+   "title": "File:Hieronymus Bosch - The Garden of Earthly Delights - The Earthly Paradise (Garden of Eden).jpg",
+   "width": 1769
   },
   {
-   "name": "centre",
-   "title": "File:Hieronymus Bosch - The Garden of Earthly Delights - Garden of Earthly Delights (Ecclesia's Paradise).jpg",
-   "width": 4016
+   "name": "siguenza2",
+   "title": "File:José de Sigüenza.jpg",
+   "width": 1594
   },
   {
-   "name": "closed",
-   "title": "File:El Bosco - Tríptico del Jardín de las delicias.jpg",
-   "width": 1806
+   "name": "siguenza3",
+   "title": "File:Manuel salvador carmona-fray jose de Sigüenza.JPG",
+   "width": 1200
   },
   {
-   "name": "closed_wga",
-   "title": "File:Hieronymus Bosch - Triptych of Garden of Earthly Delights (outer wings) - WGA2506.jpg",
-   "width": 936
-  },
-  {
-   "name": "bosch",
-   "title": "File:Jheronimus Bosch.jpg",
-   "width": 2492
-  },
-  {
-   "name": "lakenmarkt",
-   "title": "File:De lakenmarkt te ’s-Hertogenbosch circa 1530 - Noordbrabants Museum.jpg",
-   "width": 1876
-  },
-  {
-   "name": "haywain",
-   "title": "File:Bosch - Haywain Triptych.jpg",
-   "width": 6000
-  },
-  {
-   "name": "engelbert",
-   "title": "File:Portret van Engelbrecht II, graaf van Nassau Rijksmuseum SK-A-3140.jpeg",
-   "width": 1661
-  },
-  {
-   "name": "henry",
-   "title": "File:Jan Gossaert - Henry III of Nassau-Breda - Google Art Project.jpg",
-   "width": 3590
-  },
-  {
-   "name": "coudenberg",
-   "title": "File:DH Palatium Bruxellense ducis Brabantiae Butkens Harrewijn 1726.jpg",
-   "width": 4032
-  },
-  {
-   "name": "curia",
-   "title": "File:Curia Brabantiae.png",
-   "width": 1396
-  },
-  {
-   "name": "william",
-   "title": "File:William I, Prince of Orange by Adriaen Thomasz. Key Rijksmuseum Amsterdam SK-A-3148.jpg",
-   "width": 3000
-  },
-  {
-   "name": "alba",
-   "title": "File:Fernando Álvarez de Toledo, III Duque de Alba, retratado por Antonio Moro.jpg",
-   "width": 3000
-  },
-  {
-   "name": "philip",
-   "title": "File:Philip II portrait by Titian.jpg",
-   "width": 3000
-  },
-  {
-   "name": "escorial",
-   "title": "File:Louis de Caullery - View of the Royal Monastery of San Lorenzo de El Escorial.jpg",
-   "width": 3999
-  },
-  {
-   "name": "siguenza",
-   "title": "File:Retrato de fray José de Sigüenza, Bartolomé Carducho.jpg",
-   "width": 2159
-  },
-  {
-   "name": "owl_fountain",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, left panel - Detail Fountain Of Life with owl (center).jpg",
-   "width": 2974
-  },
-  {
-   "name": "strawberry",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, central panel - Detail Strawberry.jpg",
-   "width": 1500
-  },
-  {
-   "name": "prince",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail Bird-headed monster or The Prince of Hell - close-up head (lower right).jpg",
-   "width": 2600
-  },
-  {
-   "name": "instruments",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail musical instruments (left).jpg",
-   "width": 1944
-  },
-  {
-   "name": "treeman",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail disk of tree man.jpg",
-   "width": 2400
-  },
-  {
-   "name": "knife",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail knife right (mid-right).jpg",
-   "width": 2623
-  },
-  {
-   "name": "key",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail Key.jpg",
-   "width": 2400
-  },
-  {
-   "name": "egg",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, central panel - Detail Egg.jpg",
-   "width": 2200
+   "name": "owl_boy",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, central panel - Detail Owl with boy.jpg",
+   "width": 1625
   }
  ]
 }
