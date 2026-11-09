@@ -2,317 +2,129 @@
  "commons_minutes": 25,
  "commons": [
   {
-   "name": "raft",
-   "title": "File:JEAN LOUIS THÉODORE GÉRICAULT - La Balsa de la Medusa (Museo del Louvre, 1818-19).jpg",
+   "name": "garden",
+   "title": "File:The Garden of Earthly Delights by Bosch High Resolution 2.jpg",
+   "width": 8000
+  },
+  {
+   "name": "hell",
+   "title": "File:Hell panel, Garden of Earthly Delights.jpg",
+   "width": 6329
+  },
+  {
+   "name": "centre",
+   "title": "File:Hieronymus Bosch - The Garden of Earthly Delights - Garden of Earthly Delights (Ecclesia's Paradise).jpg",
+   "width": 4016
+  },
+  {
+   "name": "closed",
+   "title": "File:El Bosco - Tríptico del Jardín de las delicias.jpg",
+   "width": 1806
+  },
+  {
+   "name": "closed_wga",
+   "title": "File:Hieronymus Bosch - Triptych of Garden of Earthly Delights (outer wings) - WGA2506.jpg",
+   "width": 936
+  },
+  {
+   "name": "bosch",
+   "title": "File:Jheronimus Bosch.jpg",
+   "width": 2492
+  },
+  {
+   "name": "lakenmarkt",
+   "title": "File:De lakenmarkt te ’s-Hertogenbosch circa 1530 - Noordbrabants Museum.jpg",
+   "width": 1876
+  },
+  {
+   "name": "haywain",
+   "title": "File:Bosch - Haywain Triptych.jpg",
    "width": 6000
   },
   {
-   "name": "gericault",
-   "title": "File:Portrait of Théodore Gericault MET DP879349.jpg",
-   "width": 3840
+   "name": "engelbert",
+   "title": "File:Portret van Engelbrecht II, graaf van Nassau Rijksmuseum SK-A-3140.jpeg",
+   "width": 1661
   },
   {
-   "name": "plan",
-   "title": "File:Plan du Radeau de la Méduse.jpg",
-   "width": 3840
+   "name": "henry",
+   "title": "File:Jan Gossaert - Henry III of Nassau-Breda - Google Art Project.jpg",
+   "width": 3590
   },
   {
-   "name": "heads",
-   "title": "File:Géricault - The Severed Heads, 1810s, NM 2113.png",
-   "width": 3840
+   "name": "coudenberg",
+   "title": "File:DH Palatium Bruxellense ducis Brabantiae Butkens Harrewijn 1726.jpg",
+   "width": 4032
   },
   {
-   "name": "mutiny",
-   "title": "File:Géricault - The Mutiny on the Raft of the Medusa, 1818.jpg",
-   "width": 3840
+   "name": "curia",
+   "title": "File:Curia Brabantiae.png",
+   "width": 1396
   },
   {
-   "name": "limbs",
-   "title": "File:Géricault - Morceaux anatomiques, 1818, 1819.jpg",
-   "width": 3840
+   "name": "william",
+   "title": "File:William I, Prince of Orange by Adriaen Thomasz. Key Rijksmuseum Amsterdam SK-A-3148.jpg",
+   "width": 3000
   },
   {
-   "name": "abandon",
-   "queries": [
-    "Morel-Fatio abandon du radeau de la Méduse",
-    "Abandon du radeau de la Méduse Morel-Fatio"
-   ],
-   "must": [
-    "radeau"
-   ],
-   "exclude": [
-    "géricault",
-    "gericault"
-   ],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "alba",
+   "title": "File:Fernando Álvarez de Toledo, III Duque de Alba, retratado por Antonio Moro.jpg",
+   "width": 3000
   },
   {
-   "name": "deathbed",
-   "queries": [
-    "Géricault on his deathbed",
-    "Géricault sur son lit de mort",
-    "Ary Scheffer mort de Géricault"
-   ],
-   "must": [
-    "ricault"
-   ],
-   "exclude": [
-    "radeau",
-    "raft"
-   ],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "philip",
+   "title": "File:Philip II portrait by Titian.jpg",
+   "width": 3000
   },
   {
-   "name": "argus_sketch",
-   "queries": [
-    "Géricault scène de naufrage esquisse Louvre",
-    "Géricault radeau de la Méduse esquisse",
-    "Géricault sketch Raft of the Medusa"
-   ],
-   "must": [
-    "ricault"
-   ],
-   "exclude": [
-    "balsa",
-    "detail",
-    "détail"
-   ],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "escorial",
+   "title": "File:Louis de Caullery - View of the Royal Monastery of San Lorenzo de El Escorial.jpg",
+   "width": 3999
   },
   {
-   "name": "book",
-   "queries": [
-    "Naufrage de la frégate la Méduse Corréard Savigny 1817",
-    "Naufrage de la frégate la Méduse 1818 titre",
-    "Narrative of a voyage to Senegal 1816 frontispiece"
-   ],
-   "must": [],
-   "exclude": [
-    "géricault",
-    "gericault",
-    "radeau de la méduse (louvre"
-   ],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 600
+   "name": "siguenza",
+   "title": "File:Retrato de fray José de Sigüenza, Bartolomé Carducho.jpg",
+   "width": 2159
   },
   {
-   "name": "louis18",
-   "queries": [
-    "Louis XVIII Gérard portrait",
-    "Portrait of Louis XVIII of France"
-   ],
-   "must": [
-    "louis"
-   ],
-   "exclude": [
-    "coin",
-    "medal",
-    "statue"
-   ],
-   "aspect": [
-    0.5,
-    1.0
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "owl_fountain",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, left panel - Detail Fountain Of Life with owl (center).jpg",
+   "width": 2974
   },
   {
-   "name": "delacroix",
-   "queries": [
-    "Delacroix self-portrait 1837 Louvre",
-    "Eugène Delacroix autoportrait"
-   ],
-   "must": [
-    "delacroix"
-   ],
-   "exclude": [
-    "liberty",
-    "liberté"
-   ],
-   "aspect": [
-    0.5,
-    1.0
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "strawberry",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, central panel - Detail Strawberry.jpg",
+   "width": 1500
   },
   {
-   "name": "dante",
-   "queries": [
-    "Delacroix The Barque of Dante 1822",
-    "La Barque de Dante Delacroix"
-   ],
-   "must": [
-    "dante"
-   ],
-   "exclude": [],
-   "aspect": [
-    1.0,
-    1.8
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "prince",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail Bird-headed monster or The Prince of Hell - close-up head (lower right).jpg",
+   "width": 2600
   },
   {
-   "name": "egyptian_hall",
-   "queries": [
-    "Egyptian Hall Piccadilly 1815",
-    "Egyptian Hall Piccadilly Bullock"
-   ],
-   "must": [
-    "egyptian"
-   ],
-   "exclude": [],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 800
+   "name": "instruments",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail musical instruments (left).jpg",
+   "width": 1944
   },
   {
-   "name": "monomaniac",
-   "queries": [
-    "Géricault monomaniac of envy Lyon",
-    "Géricault La Monomane de l'envie",
-    "Géricault Insane Woman"
-   ],
-   "must": [
-    "ricault"
-   ],
-   "exclude": [],
-   "aspect": [
-    0.6,
-    1.0
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "treeman",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail disk of tree man.jpg",
+   "width": 2400
   },
   {
-   "name": "frigate",
-   "queries": [
-    "frégate la Méduse 1816 gravure",
-    "Medusa frigate 1816 engraving",
-    "naufrage de la Méduse gravure"
-   ],
-   "must": [],
-   "exclude": [
-    "géricault",
-    "gericault",
-    "louvre"
-   ],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 800
+   "name": "knife",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail knife right (mid-right).jpg",
+   "width": 2623
   },
   {
-   "name": "rochefort",
-   "queries": [
-    "Rochefort arsenal 19th century engraving",
-    "Port de Rochefort Vernet"
-   ],
-   "must": [
-    "rochefort"
-   ],
-   "exclude": [],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 1200
+   "name": "key",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, right panel - Detail Key.jpg",
+   "width": 2400
   },
   {
-   "name": "raft_model",
-   "queries": [
-    "Medusa raft model Musée de la Marine",
-    "radeau de la Méduse maquette"
-   ],
-   "must": [],
-   "exclude": [
-    "géricault",
-    "gericault",
-    "louvre"
-   ],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 800
-  },
-  {
-   "name": "salon1819",
-   "queries": [
-    "Salon de 1819 Louvre",
-    "Salon 1819 exhibition Paris"
-   ],
-   "must": [
-    "1819"
-   ],
-   "exclude": [],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 800
-  },
-  {
-   "name": "savigny",
-   "queries": [
-    "Jean Baptiste Henri Savigny portrait",
-    "Henri Savigny chirurgien Méduse"
-   ],
-   "must": [
-    "savigny"
-   ],
-   "exclude": [],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 400
-  },
-  {
-   "name": "correard",
-   "queries": [
-    "Alexandre Corréard portrait",
-    "Corréard ingénieur Méduse"
-   ],
-   "must": [
-    "corr"
-   ],
-   "exclude": [],
-   "aspect": [
-    0,
-    99
-   ],
-   "width": 3840,
-   "min_w": 400
+   "name": "egg",
+   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, central panel - Detail Egg.jpg",
+   "width": 2200
   }
  ]
 }

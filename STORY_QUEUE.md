@@ -12,6 +12,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 | When | Painting (museum) | Angle | Type | Notes |
 |---|---|---|---|---|
+| 2026-11-14 (Sat) | Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside (a 500-year-old tune nobody played until a student transcribed it in 2014: say what is sure and what is a modern reading) | hidden | the long video about this painting goes up on Mon 16 Nov and the Short must be live first (it links to it). Partial nudity everywhere: frame the score, the instruments and the faces, never the bodies |
 | 2026-11-19 (Thu) | an *Odyssey* painting: Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne), or Turner, *Ulysses Deriding Polyphemus* (National Gallery, London), or another famous one | find the true twist (e.g. Waterhouse paints the sirens as birds with women's faces, as the Greeks did, not mermaids) | hidden | Nolan's *The Odyssey* reaches digital/VOD on 17 Nov: post on Thursday 19 Nov for the weekend viewers. Name the film only as context ("the story in Nolan's new film"), never use its images |
 
 ## Done
