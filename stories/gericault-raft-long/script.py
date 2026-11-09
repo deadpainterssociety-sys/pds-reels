@@ -69,7 +69,7 @@ L = [
  ("c5a", [["Théodore Géricault is twenty-six.", 0.35, 0.93], ["Rich,", 0.2, 0.95], ["gifted,", 0.2, 0.95], ["and in trouble.", 0.5, 0.92],
           ["He has just broken off a love affair", 0.15, 0.97], ["with his own aunt.", 0.7, 0.92]]),
  ("c5b", [["He wants to paint something enormous.", 0.35, 0.95], ["He chooses the Medusa.", 0.7, 0.92]]),
- ("c5c", [["He tracks down the survivors.", 0.3, 0.95], ["Savigny.", 0.25, 0.93], ["Corréard.", 0.3, 0.93],
+ ("c5c", [["He tracks down the survivors.", 0.3, 0.95], ["Savigny and Corréard.", 0.35, 0.93],
           ["Even the ship's carpenter,", 0.2, 0.97], ["who helps him build a scale model of the raft.", 0.7, 0.95]]),
  ("c5d", [["Then he shaves his head,", 0.3, 0.93], ["and stays inside.", 0.5, 0.93], ["For the next eight months,", 0.2, 0.97],
           ["he lives in his studio", 0.15, 0.97], ["almost like a monk.", 0.7, 0.93]]),
@@ -86,7 +86,7 @@ L = [
           ["He tries the rescue.", 0.4, 0.93], ["And in the end,", 0.2, 0.95], ["he paints none of them.", 2.2, 0.9]]),
  # VI. The Painting
  ("c6a", [["He paints the moment of hope.", 0.4, 0.92], ["The first sight of the Argus,", 0.2, 0.95], ["a speck on the horizon.", 0.8, 0.9]]),
- ("c6b", [["At the top,", 0.2, 0.95], ["a Black man stands on an empty barrel,", 0.2, 0.97], ["waving a cloth.", 0.5, 0.92],
+ ("c6b", [["At the top,", 0.2, 0.95], ["a Black man stands on an empty barrel,", 0.2, 0.97], ["waving a handkerchief.", 0.5, 0.92],
           ["On the real raft,", 0.2, 0.95], ["one of the fifteen was a soldier named Jean Charles.", 0.4, 0.95],
           ["He died within days of the rescue.", 0.6, 0.9], ["Géricault painted him from a model named Joseph,", 0.15, 0.97],
           ["a well-known model in Paris,", 0.2, 0.97], ["of Haitian descent.", 0.8, 0.93]]),
@@ -104,7 +104,7 @@ L = [
  ("c6i", [["So Géricault takes it to London.", 0.4, 0.95], ["In 1820,", 0.2, 0.95], ["about forty thousand people pay to see it", 0.15, 0.97],
           ["in a hall on Piccadilly.", 0.4, 0.95], ["It earns him nearly twenty thousand francs.", 2.2, 0.92]]),
  # VII. The Darkness
- ("c7a", [["Riding accidents and illness wear him down.", 0.4, 0.95], ["In January 1824,", 0.2, 0.95], ["Théodore Géricault dies in Paris.", 0.35, 0.93],
+ ("c7a", [["Horse-riding accidents and illness wear him down.", 0.4, 0.95], ["In January 1824,", 0.2, 0.95], ["Théodore Géricault dies in Paris.", 0.35, 0.93],
           ["He is thirty-two.", 0.9, 0.88]]),
  ("c7b", [["That same year,", 0.2, 0.97], ["the Louvre buys the Raft from his family.", 0.7, 0.95]]),
  ("c7c", [["But the painting has a problem.", 0.4, 0.93], ["For its deep shadows,", 0.15, 0.97], ["Géricault used bitumen,", 0.25, 0.93], ["a kind of tar.", 0.5, 0.93],

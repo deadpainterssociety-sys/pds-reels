@@ -1,0 +1,1608 @@
+{
+ "slug": "gericault-raft-long",
+ "format": "long",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "Théodore Géricault",
+  "born": 1791,
+  "died": 1824,
+  "painting": "The Raft of the Medusa",
+  "year": "1818–1819",
+  "museum": "Musée du Louvre",
+  "city": "Paris",
+  "image": "raft",
+  "image_credit": "Musée du Louvre, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1824,
+  "note": "All paintings and prints public domain; check each Commons file's licence in src/sources.json."
+ },
+ "say": {
+  "1816": "eighteen sixteen",
+  "1817": "eighteen seventeen",
+  "1819": "eighteen nineteen",
+  "1820": "eighteen twenty",
+  "1824": "eighteen twenty-four"
+ },
+ "ipa": {
+  "Géricault": "ʒˌeɪɹɪkˈoʊ",
+  "Géricault's": "ʒˌeɪɹɪkˈoʊz",
+  "Théodore": "tˈeɪoʊdɔːɹ",
+  "Méduse": "meɪdˈuːz",
+  "Chaumareys": "ʃˌoʊmɑːɹˈeɪ",
+  "Hugues": "ˈuːɡ",
+  "Duroy": "dʊɹwˈɑː",
+  "Savigny": "sˌævɪnjˈiː",
+  "Corréard": "kˌɔːɹeɪˈɑːɹ",
+  "Arguin": "ɑːɹɡwˈæn",
+  "Rochefort": "ɹˈɔʃfɔːɹ",
+  "Beaujon": "boʊʒˈɑːn",
+  "Hôpital": "ˌoʊpiːtˈɑːl",
+  "Montpellier": "mˌɑːnpɛljˈeɪ",
+  "Eugène": "uːʒˈɛn",
+  "Delacroix": "dˌɛləkɹwˈɑː",
+  "Scène": "sˈɛn",
+  "naufrage": "noʊfɹˈɑːʒ",
+  "Ugolino": "ˌuːɡoʊlˈiːnoʊ",
+  "Senegal": "sˌɛnɪɡˈɔːl",
+  "Mauritania": "mˌɔːɹɪtˈeɪniə",
+  "Argus": "ˈɑːɹɡəs",
+  "Louvre": "lˈuːvɹə",
+  "Charles": "ʃˈɑːɹl"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "Everything in this painting *really happened.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "Men on a raft,",
+     0.26,
+     0.95
+    ],
+    [
+     "waving at a ship you can barely see.",
+     0.65,
+     0.95
+    ],
+    [
+     "Around them,",
+     0.26,
+     0.95
+    ],
+    [
+     "the dead.",
+     1.17,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "Thirteen days before this moment,",
+     0.26,
+     0.97
+    ],
+    [
+     "nearly a hundred and fifty people were on this raft.",
+     0.65,
+     0.95
+    ],
+    [
+     "When rescue came,",
+     0.26,
+     0.95
+    ],
+    [
+     "fifteen were alive.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "To paint it,",
+     0.26,
+     0.95
+    ],
+    [
+     "a young man shaved his head,",
+     0.26,
+     0.97
+    ],
+    [
+     "shut himself in his studio,",
+     0.33,
+     0.97
+    ],
+    [
+     "and filled it with pieces of the dead.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "This is the story of the Raft of the Medusa.",
+     0.45,
+     0.95
+    ],
+    [
+     "The shipwreck France wanted to forget,",
+     0.26,
+     0.95
+    ],
+    [
+     "and the painting that wouldn't let it.",
+     2.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "June, 1816.",
+     0.52,
+     0.9
+    ],
+    [
+     "Napoleon is gone.",
+     0.39,
+     0.95
+    ],
+    [
+     "A king sits on the French throne again.",
+     0.39,
+     0.97
+    ],
+    [
+     "Louis the Eighteenth.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "Under the peace treaties,",
+     0.26,
+     0.97
+    ],
+    [
+     "France gets back its colony in Senegal,",
+     0.26,
+     0.97
+    ],
+    [
+     "in West Africa.",
+     0.52,
+     0.95
+    ],
+    [
+     "A small convoy sails from Rochefort to take it back.",
+     0.91,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "Leading it is a navy frigate,",
+     0.26,
+     0.97
+    ],
+    [
+     "the Méduse.",
+     0.39,
+     0.9
+    ],
+    [
+     "The Medusa.",
+     0.65,
+     0.9
+    ],
+    [
+     "On board: the new governor,",
+     0.26,
+     0.97
+    ],
+    [
+     "officials, soldiers, settlers.",
+     0.33,
+     0.97
+    ],
+    [
+     "Around four hundred people.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "The captain is Hugues Duroy de Chaumareys.",
+     0.45,
+     0.92
+    ],
+    [
+     "A nobleman who fled the Revolution",
+     0.2,
+     0.97
+    ],
+    [
+     "and fought for the crown.",
+     0.52,
+     0.95
+    ],
+    [
+     "He has hardly sailed in twenty years.",
+     0.65,
+     0.92
+    ],
+    [
+     "He gets the command anyway,",
+     0.26,
+     0.95
+    ],
+    [
+     "reportedly for his loyalty to the king.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "He races ahead of the other ships.",
+     0.39,
+     0.97
+    ],
+    [
+     "He lets a passenger with no naval training",
+     0.2,
+     0.97
+    ],
+    [
+     "help guide the ship.",
+     0.52,
+     0.95
+    ],
+    [
+     "The Medusa ends up about a hundred and sixty kilometres off course.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1f",
+   "perf": [
+    [
+     "On the second of July,",
+     0.26,
+     0.97
+    ],
+    [
+     "off the coast of what is now Mauritania,",
+     0.33,
+     0.97
+    ],
+    [
+     "the Medusa runs onto a sandbank.",
+     0.52,
+     0.92
+    ],
+    [
+     "The Arguin Bank.",
+     0.65,
+     0.9
+    ],
+    [
+     "And there,",
+     0.26,
+     0.95
+    ],
+    [
+     "she sticks fast.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "There are six boats.",
+     0.45,
+     0.93
+    ],
+    [
+     "Not nearly enough for four hundred people.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "So the crew builds a raft",
+     0.2,
+     0.97
+    ],
+    [
+     "out of the ship's masts and spars.",
+     0.52,
+     0.97
+    ],
+    [
+     "About twenty metres long.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "On the fifth of July,",
+     0.26,
+     0.97
+    ],
+    [
+     "a hundred and forty-six men and one woman",
+     0.2,
+     0.97
+    ],
+    [
+     "climb onto it.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2d",
+   "perf": [
+    [
+     "Their supplies:",
+     0.39,
+     0.93
+    ],
+    [
+     "one bag of ship's biscuit,",
+     0.26,
+     0.97
+    ],
+    [
+     "gone on the first day.",
+     0.45,
+     0.95
+    ],
+    [
+     "Two casks of water.",
+     0.33,
+     0.95
+    ],
+    [
+     "Six casks of wine.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "Seventeen men refuse to leave the ship at all.",
+     0.65,
+     0.95
+    ],
+    [
+     "The captain does not stay with them.",
+     0.39,
+     0.93
+    ],
+    [
+     "He takes his place in one of the boats.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2f",
+   "perf": [
+    [
+     "The plan is that the boats will tow the raft to the coast.",
+     0.45,
+     0.97
+    ],
+    [
+     "After only a few miles,",
+     0.39,
+     0.95
+    ],
+    [
+     "the raft is cut loose.",
+     0.91,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c2g",
+   "perf": [
+    [
+     "No rudder.",
+     0.39,
+     0.93
+    ],
+    [
+     "No way to steer.",
+     0.39,
+     0.93
+    ],
+    [
+     "The boats row away.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "The first night, the sea gets up.",
+     0.39,
+     0.95
+    ],
+    [
+     "Men tie themselves to the timbers.",
+     0.39,
+     0.95
+    ],
+    [
+     "One of them wrote later:",
+     0.33,
+     0.95
+    ],
+    [
+     "This whole night we contended against death.",
+     0.78,
+     0.88
+    ],
+    [
+     "By morning,",
+     0.26,
+     0.95
+    ],
+    [
+     "twenty men are gone.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "The next night,",
+     0.26,
+     0.95
+    ],
+    [
+     "soldiers break into the wine.",
+     0.39,
+     0.97
+    ],
+    [
+     "Drunk and desperate,",
+     0.26,
+     0.95
+    ],
+    [
+     "they turn on the officers.",
+     0.52,
+     0.95
+    ],
+    [
+     "Sabres.",
+     0.33,
+     0.9
+    ],
+    [
+     "Knives.",
+     0.33,
+     0.9
+    ],
+    [
+     "An axe.",
+     0.65,
+     0.9
+    ],
+    [
+     "By morning, dozens are dead.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "By the fourth day,",
+     0.26,
+     0.95
+    ],
+    [
+     "sixty-seven are left.",
+     0.52,
+     0.92
+    ],
+    [
+     "They catch a few flying fish.",
+     0.39,
+     0.95
+    ],
+    [
+     "It isn't nearly enough.",
+     0.65,
+     0.92
+    ],
+    [
+     "And the survivors do",
+     0.2,
+     0.95
+    ],
+    [
+     "what they swore they never would.",
+     0.91,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "The ship's surgeon,",
+     0.26,
+     0.95
+    ],
+    [
+     "Henri Savigny,",
+     0.33,
+     0.93
+    ],
+    [
+     "wrote it down himself.",
+     0.52,
+     0.95
+    ],
+    [
+     "Those whom death had spared",
+     0.26,
+     0.92
+    ],
+    [
+     "fell upon the dead bodies.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "On the eighth day,",
+     0.33,
+     0.95
+    ],
+    [
+     "the strongest make a decision.",
+     0.52,
+     0.93
+    ],
+    [
+     "The sick and the wounded",
+     0.2,
+     0.95
+    ],
+    [
+     "will not survive.",
+     0.45,
+     0.93
+    ],
+    [
+     "So they are thrown into the sea.",
+     0.78,
+     0.9
+    ],
+    [
+     "Fifteen men are left.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "Five more days.",
+     0.91,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3g",
+   "perf": [
+    [
+     "On the seventeenth of July,",
+     0.26,
+     0.97
+    ],
+    [
+     "someone sees a sail on the horizon.",
+     0.52,
+     0.95
+    ],
+    [
+     "A ship.",
+     0.39,
+     0.9
+    ],
+    [
+     "The Argus.",
+     0.65,
+     0.9
+    ],
+    [
+     "They wave.",
+     0.33,
+     0.92
+    ],
+    [
+     "They shout.",
+     0.45,
+     0.92
+    ],
+    [
+     "And the ship disappears.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3h",
+   "perf": [
+    [
+     "For two hours,",
+     0.26,
+     0.95
+    ],
+    [
+     "they think it's over.",
+     0.65,
+     0.92
+    ],
+    [
+     "Then the Argus comes back.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3i",
+   "perf": [
+    [
+     "Fifteen men are alive.",
+     0.45,
+     0.93
+    ],
+    [
+     "Five of them die soon after.",
+     0.52,
+     0.93
+    ],
+    [
+     "Of the seventeen who stayed on the wreck,",
+     0.2,
+     0.97
+    ],
+    [
+     "only three are found alive.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "News of the wreck reaches Paris in September.",
+     0.52,
+     0.95
+    ],
+    [
+     "Savigny has written a report for the navy.",
+     0.39,
+     0.97
+    ],
+    [
+     "It doesn't stay with the navy.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "It leaks to a Paris newspaper",
+     0.2,
+     0.97
+    ],
+    [
+     "hostile to the government.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "Paris reads about the captain who left his ship early,",
+     0.39,
+     0.97
+    ],
+    [
+     "the boats that cut the raft loose,",
+     0.39,
+     0.97
+    ],
+    [
+     "and the men who ate the dead to stay alive.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "For the new king's government,",
+     0.26,
+     0.97
+    ],
+    [
+     "it's a humiliation.",
+     0.78,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "Chaumareys faces a court-martial.",
+     0.39,
+     0.95
+    ],
+    [
+     "He's found guilty of incompetent navigation,",
+     0.26,
+     0.97
+    ],
+    [
+     "and of abandoning his ship",
+     0.2,
+     0.95
+    ],
+    [
+     "before all its passengers were off.",
+     0.52,
+     0.95
+    ],
+    [
+     "He could have been sentenced to death.",
+     0.45,
+     0.93
+    ],
+    [
+     "He gets three years in prison.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4f",
+   "perf": [
+    [
+     "In 1817,",
+     0.26,
+     0.95
+    ],
+    [
+     "Savigny and another survivor,",
+     0.2,
+     0.97
+    ],
+    [
+     "the engineer Alexandre Corréard,",
+     0.26,
+     0.95
+    ],
+    [
+     "publish their story as a book.",
+     0.52,
+     0.95
+    ],
+    [
+     "It becomes a bestseller,",
+     0.26,
+     0.97
+    ],
+    [
+     "translated across Europe.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4g",
+   "perf": [
+    [
+     "And in Paris,",
+     0.26,
+     0.95
+    ],
+    [
+     "a young painter reads it.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "Théodore Géricault is twenty-six.",
+     0.45,
+     0.93
+    ],
+    [
+     "Rich,",
+     0.26,
+     0.95
+    ],
+    [
+     "gifted,",
+     0.26,
+     0.95
+    ],
+    [
+     "and in trouble.",
+     0.65,
+     0.92
+    ],
+    [
+     "He has just broken off a love affair",
+     0.2,
+     0.97
+    ],
+    [
+     "with his own aunt.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "He wants to paint something enormous.",
+     0.45,
+     0.95
+    ],
+    [
+     "He chooses the Medusa.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "He tracks down the survivors.",
+     0.39,
+     0.95
+    ],
+    [
+     "Savigny and Corréard.",
+     0.45,
+     0.93
+    ],
+    [
+     "Even the ship's carpenter,",
+     0.26,
+     0.97
+    ],
+    [
+     "who helps him build a scale model of the raft.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "Then he shaves his head,",
+     0.39,
+     0.93
+    ],
+    [
+     "and stays inside.",
+     0.65,
+     0.93
+    ],
+    [
+     "For the next eight months,",
+     0.26,
+     0.97
+    ],
+    [
+     "he lives in his studio",
+     0.2,
+     0.97
+    ],
+    [
+     "almost like a monk.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "The studio is close to a hospital,",
+     0.2,
+     0.97
+    ],
+    [
+     "the Hôpital Beaujon.",
+     0.52,
+     0.93
+    ],
+    [
+     "He goes to its morgue,",
+     0.26,
+     0.95
+    ],
+    [
+     "and draws the dead.",
+     0.65,
+     0.92
+    ],
+    [
+     "He brings arms and legs back to his studio,",
+     0.26,
+     0.97
+    ],
+    [
+     "to watch how skin changes",
+     0.2,
+     0.95
+    ],
+    [
+     "as it decays.",
+     0.91,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "One account says he borrowed a severed head",
+     0.2,
+     0.97
+    ],
+    [
+     "from an asylum,",
+     0.33,
+     0.95
+    ],
+    [
+     "and kept it on his studio roof for two weeks.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5g",
+   "perf": [
+    [
+     "These are some of his studies.",
+     0.45,
+     0.95
+    ],
+    [
+     "Today they hang in museums,",
+     0.2,
+     0.97
+    ],
+    [
+     "in Stockholm,",
+     0.26,
+     0.95
+    ],
+    [
+     "and in Montpellier.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5h",
+   "perf": [
+    [
+     "Friends come to pose.",
+     0.45,
+     0.95
+    ],
+    [
+     "The young Eugène Delacroix",
+     0.2,
+     0.95
+    ],
+    [
+     "lies face down in the foreground.",
+     0.65,
+     0.95
+    ],
+    [
+     "Savigny and Corréard pose as themselves.",
+     0.52,
+     0.95
+    ],
+    [
+     "And one of his assistants",
+     0.2,
+     0.97
+    ],
+    [
+     "poses as the dead young man.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5i",
+   "perf": [
+    [
+     "He makes more than a hundred studies.",
+     0.45,
+     0.95
+    ],
+    [
+     "He tries the mutiny.",
+     0.39,
+     0.93
+    ],
+    [
+     "He tries the cannibalism.",
+     0.39,
+     0.93
+    ],
+    [
+     "He tries the rescue.",
+     0.52,
+     0.93
+    ],
+    [
+     "And in the end,",
+     0.26,
+     0.95
+    ],
+    [
+     "he paints none of them.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "He paints the moment of hope.",
+     0.52,
+     0.92
+    ],
+    [
+     "The first sight of the Argus,",
+     0.26,
+     0.95
+    ],
+    [
+     "a speck on the horizon.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "At the top,",
+     0.26,
+     0.95
+    ],
+    [
+     "a Black man stands on an empty barrel,",
+     0.26,
+     0.97
+    ],
+    [
+     "waving a handkerchief.",
+     0.65,
+     0.92
+    ],
+    [
+     "On the real raft,",
+     0.26,
+     0.95
+    ],
+    [
+     "one of the fifteen was a soldier named Jean Charles.",
+     0.52,
+     0.95
+    ],
+    [
+     "He died within days of the rescue.",
+     0.78,
+     0.9
+    ],
+    [
+     "Géricault painted him from a model named Joseph,",
+     0.2,
+     0.97
+    ],
+    [
+     "a well-known model in Paris,",
+     0.26,
+     0.97
+    ],
+    [
+     "of Haitian descent.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "Below him,",
+     0.26,
+     0.95
+    ],
+    [
+     "the bodies rise like a pyramid,",
+     0.26,
+     0.97
+    ],
+    [
+     "from the dead,",
+     0.33,
+     0.93
+    ],
+    [
+     "up to the living.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "In the corner,",
+     0.26,
+     0.95
+    ],
+    [
+     "an old man holds a young man's body across his knees.",
+     0.52,
+     0.95
+    ],
+    [
+     "He isn't waving.",
+     0.39,
+     0.92
+    ],
+    [
+     "He isn't even looking at the ship.",
+     0.78,
+     0.9
+    ],
+    [
+     "The pose comes from Dante.",
+     0.39,
+     0.95
+    ],
+    [
+     "Count Ugolino,",
+     0.26,
+     0.93
+    ],
+    [
+     "locked in a tower with his sons",
+     0.2,
+     0.97
+    ],
+    [
+     "while they starved.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "The canvas is almost five metres high,",
+     0.26,
+     0.97
+    ],
+    [
+     "and more than seven metres wide.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6f",
+   "perf": [
+    [
+     "In 1819,",
+     0.26,
+     0.95
+    ],
+    [
+     "it goes on show at the Paris Salon.",
+     0.45,
+     0.95
+    ],
+    [
+     "Its title gives nothing away.",
+     0.39,
+     0.95
+    ],
+    [
+     "Scène de naufrage.",
+     0.39,
+     0.9
+    ],
+    [
+     "Shipwreck Scene.",
+     0.65,
+     0.9
+    ],
+    [
+     "Everyone knows which shipwreck.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6g",
+   "perf": [
+    [
+     "Some critics are shaken.",
+     0.39,
+     0.95
+    ],
+    [
+     "Others call it a pile of corpses.",
+     0.65,
+     0.92
+    ],
+    [
+     "The king,",
+     0.26,
+     0.95
+    ],
+    [
+     "it's said,",
+     0.26,
+     0.95
+    ],
+    [
+     "told the painter that his shipwreck was certainly no disaster for him.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c6h",
+   "perf": [
+    [
+     "It wins a gold medal.",
+     0.39,
+     0.95
+    ],
+    [
+     "But the state doesn't buy it.",
+     0.78,
+     0.93
+    ],
+    [
+     "One young painter is struck hardest of all.",
+     0.39,
+     0.95
+    ],
+    [
+     "Delacroix,",
+     0.26,
+     0.93
+    ],
+    [
+     "the man lying face down in the corner.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6i",
+   "perf": [
+    [
+     "So Géricault takes it to London.",
+     0.52,
+     0.95
+    ],
+    [
+     "In 1820,",
+     0.26,
+     0.95
+    ],
+    [
+     "about forty thousand people pay to see it",
+     0.2,
+     0.97
+    ],
+    [
+     "in a hall on Piccadilly.",
+     0.52,
+     0.95
+    ],
+    [
+     "It earns him nearly twenty thousand francs.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "Horse-riding accidents and illness wear him down.",
+     0.52,
+     0.95
+    ],
+    [
+     "In January 1824,",
+     0.26,
+     0.95
+    ],
+    [
+     "Théodore Géricault dies in Paris.",
+     0.45,
+     0.93
+    ],
+    [
+     "He is thirty-two.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "That same year,",
+     0.26,
+     0.97
+    ],
+    [
+     "the Louvre buys the Raft from his family.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "But the painting has a problem.",
+     0.52,
+     0.93
+    ],
+    [
+     "For its deep shadows,",
+     0.2,
+     0.97
+    ],
+    [
+     "Géricault used bitumen,",
+     0.33,
+     0.93
+    ],
+    [
+     "a kind of tar.",
+     0.65,
+     0.93
+    ],
+    [
+     "Over the years it turned black,",
+     0.26,
+     0.95
+    ],
+    [
+     "and wrinkled the paint.",
+     0.52,
+     0.95
+    ],
+    [
+     "It can't be reversed.",
+     0.91,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "Whole areas of the picture are now hard to see.",
+     0.65,
+     0.93
+    ],
+    [
+     "The raft is sinking,",
+     0.39,
+     0.9
+    ],
+    [
+     "one more time,",
+     1.56,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "end1",
+   "perf": [
+    [
+     "Look at the horizon again.",
+     0.78,
+     0.92
+    ],
+    [
+     "That tiny ship is still there.",
+     0.65,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "end2",
+   "perf": [
+    [
+     "Two hundred years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "they're still waving at it.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "end3",
+   "perf": [
+    [
+     "It hangs in the Louvre,",
+     0.26,
+     0.92
+    ],
+    [
+     "in Paris.",
+     0.65,
+     0.9
+    ]
+   ]
+  }
+ ],
+ "images": {},
+ "shots": [],
+ "overlays": [],
+ "sfx": [],
+ "music": {},
+ "facts": []
+}

@@ -43,7 +43,17 @@ story = {
          "Delacroix": "dˌɛləkɹwˈɑː", "Scène": "sˈɛn", "naufrage": "noʊfɹˈɑːʒ", "Ugolino": "ˌuːɡoʊlˈiːnoʊ", "Senegal": "sˌɛnɪɡˈɔːl",
          "Mauritania": "mˌɔːɹɪtˈeɪniə", "Argus": "ˈɑːɹɡəs", "Louvre": "lˈuːvɹə", "Charles": "ʃˈɑːɹl"},
  "lines": [{"id": lid, "perf": [[x, round(min(p * 1.3, 2.6) if p < 2 else p, 2), v] for x, p, v in perf]} for lid, perf in L],
- "images": IM, "shots": S, "overlays": O, "sfx": SFX, "music": MUSIC, "facts": FACTS,
+ "images": IM, "shots": S, "overlays": O, "sfx": SFX, "music": MUSIC, "facts": FACTS, "next": False,
+ "maps": {"voyage": {"bbox": [[-24.0, 12.5], [6.0, 48.5]], "focus": ["0", "0"],
+                     "cities": {"rochefort": [-0.96, 45.94], "arguin": [-16.6, 19.9], "senegal": [-16.49, 16.02]}}},
+ "youtube": {"titles": ["The Shipwreck France Tried to Forget", "Everything in This Painting Really Happened"],
+             "description_lead": "In July 1816 the French frigate Méduse ran aground off West Africa. A hundred and forty-seven people were put on a raft and cut loose. Thirteen days later, fifteen were alive. Two years later, a 26-year-old painter shaved his head, locked himself in his studio with the dead, and turned the scandal into one of the most famous paintings in the Louvre. This is the true story of Théodore Géricault's Raft of the Medusa.",
+             "hashtags": ["#arthistory", "#gericault", "#louvre"],
+             "credits": ["Paintings, drawings and prints by Théodore Géricault, Eugène Delacroix, Charles-Émile Champmartin and Joseph Vernet: public domain (Musée du Louvre; Nationalmuseum, Stockholm; Musée Fabre, Montpellier; Musée des Beaux-Arts de Lyon; The Metropolitan Museum of Art, CC0), via Wikimedia Commons.",
+                         "Engravings of the wreck, the raft's construction and the revolt on the raft; plan of the raft (Corréard & Savigny, 1817); portrait of Louis XVIII: public domain (Bibliothèque nationale de France, via Wikimedia Commons).",
+                         "Bullock's Museum (the Egyptian Hall), Piccadilly: Wellcome Collection, CC BY 4.0 (creativecommons.org/licenses/by/4.0)."],
+             "thumbnail": {"image": "raft", "focus": [0.705, 0.17], "span": 0.3, "words": "IT REALLY HAPPENED"},
+             "intro_chapter": "Everything in this painting really happened", "outro_chapter": "The Horizon"},
 }
 json.dump(story, open(os.path.join(HERE, "story.json"), "w"), indent=1, ensure_ascii=False)
 print(f"story.json: {len(L)} lines, {sum(len(w) for w in WORDS.values())} words, {len(S)} shots, {len(O)} overlays")
