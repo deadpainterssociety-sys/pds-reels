@@ -158,6 +158,7 @@ def data_get(name):
 
 
 def data_put(name, data, ctype="application/json"):
+    if isinstance(data, str): data = data.encode()
     rel = data_release()
     for a in rel.get("assets", []):
         if a["name"] == name: gh("DELETE", f"/repos/{REPO}/releases/assets/{a['id']}")
