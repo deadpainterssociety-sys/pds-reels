@@ -1599,10 +1599,2086 @@
    ]
   }
  ],
- "images": {},
- "shots": [],
- "overlays": [],
- "sfx": [],
- "music": {},
- "facts": []
+ "images": {
+  "raft": {
+   "file": "src/raft.jpg",
+   "depth": true,
+   "long": 6000,
+   "points": {
+    "cloth": [
+     0.7,
+     0.11
+    ],
+    "waver": [
+     0.705,
+     0.2
+    ],
+    "argus": [
+     0.813,
+     0.397
+    ],
+    "old": [
+     0.29,
+     0.57
+    ],
+    "youth": [
+     0.4,
+     0.71
+    ],
+    "facedown": [
+     0.455,
+     0.8
+    ],
+    "mast": [
+     0.37,
+     0.25
+    ],
+    "pointer": [
+     0.52,
+     0.35
+    ],
+    "crowd": [
+     0.62,
+     0.45
+    ],
+    "left_dead": [
+     0.1,
+     0.7
+    ],
+    "right_dead": [
+     0.85,
+     0.88
+    ],
+    "waves": [
+     0.08,
+     0.32
+    ],
+    "sail": [
+     0.25,
+     0.25
+    ],
+    "sky": [
+     0.85,
+     0.15
+    ],
+    "planks": [
+     0.45,
+     0.9
+    ]
+   }
+  },
+  "argus_sketch": {
+   "file": "src/argus_sketch.jpg",
+   "depth": true,
+   "points": {
+    "waver": [
+     0.62,
+     0.28
+    ],
+    "raft": [
+     0.45,
+     0.6
+    ]
+   }
+  },
+  "salon1819": {
+   "file": "src/salon1819.jpg",
+   "depth": true,
+   "points": {
+    "waver": [
+     0.58,
+     0.3
+    ],
+    "raft": [
+     0.45,
+     0.6
+    ]
+   }
+  },
+  "mutiny": {
+   "file": "src/mutiny.jpg",
+   "points": {
+    "fight": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "book": {
+   "file": "src/book.jpg",
+   "crop": [
+    0.12,
+    0.12,
+    0.12,
+    0.36
+   ],
+   "points": {
+    "fight": [
+     0.5,
+     0.55
+    ],
+    "sail": [
+     0.6,
+     0.15
+    ]
+   }
+  },
+  "frigate": {
+   "file": "src/frigate.jpg",
+   "crop": [
+    0.08,
+    0.09,
+    0.08,
+    0.13
+   ],
+   "points": {
+    "ship": [
+     0.4,
+     0.35
+    ],
+    "raft": [
+     0.5,
+     0.72
+    ]
+   }
+  },
+  "heads": {
+   "file": "src/heads.png",
+   "crop": [
+    0.11,
+    0.11,
+    0.11,
+    0.12
+   ],
+   "depth": true,
+   "points": {
+    "young": [
+     0.25,
+     0.25
+    ],
+    "old": [
+     0.68,
+     0.3
+    ]
+   }
+  },
+  "limbs": {
+   "file": "src/limbs.jpg",
+   "points": {
+    "feet": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "deathbed": {
+   "file": "src/deathbed.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "delacroix": {
+   "file": "src/delacroix.jpg",
+   "crop": [
+    0.2,
+    0.18,
+    0.18,
+    0.18
+   ],
+   "depth": true,
+   "points": {
+    "face": [
+     0.52,
+     0.38
+    ]
+   }
+  },
+  "dante": {
+   "file": "src/dante.jpg",
+   "depth": true,
+   "points": {
+    "dante": [
+     0.45,
+     0.3
+    ],
+    "bodies": [
+     0.4,
+     0.75
+    ]
+   }
+  },
+  "egyptian_hall": {
+   "file": "src/egyptian_hall.jpg",
+   "depth": true,
+   "points": {
+    "front": [
+     0.55,
+     0.45
+    ]
+   }
+  },
+  "louis18": {
+   "file": "src/louis18.jpg",
+   "crop": [
+    0.08,
+    0.06,
+    0.08,
+    0.1
+   ],
+   "points": {
+    "face": [
+     0.7,
+     0.26
+    ]
+   }
+  },
+  "monomaniac": {
+   "file": "src/monomaniac.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.42,
+     0.42
+    ]
+   }
+  },
+  "plan": {
+   "file": "src/plan.jpg",
+   "points": {
+    "all": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "rochefort": {
+   "file": "src/rochefort.jpg",
+   "depth": true,
+   "points": {
+    "ships": [
+     0.3,
+     0.15
+    ],
+    "dock": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  "gericault": {
+   "file": "src/gericault.jpg",
+   "crop": [
+    0.2,
+    0.25,
+    0.2,
+    0.3
+   ],
+   "points": {
+    "face": [
+     0.55,
+     0.33
+    ]
+   }
+  },
+  "plaster": {
+   "file": "tex:plaster"
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "raft",
+   "from": "waver@2.2",
+   "to": "cloth@2.0"
+  },
+  {
+   "at": "cold1.4-0.10",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "hit": "big"
+  },
+  {
+   "at": "cold2",
+   "img": "raft",
+   "from": "crowd@1.6",
+   "to": "waver@1.8",
+   "fade": 0.5
+  },
+  {
+   "at": "cold2.4",
+   "img": "raft",
+   "from": "argus@3.2",
+   "to": "argus@3.6",
+   "fade": 0.5
+  },
+  {
+   "at": "cold2.12",
+   "img": "raft",
+   "from": "left_dead@1.6",
+   "to": "youth@1.7",
+   "fade": 0.5
+  },
+  {
+   "at": "cold3",
+   "img": "raft",
+   "from": "planks@1.4",
+   "to": "facedown@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3.15",
+   "img": "raft",
+   "from": "waver@1.5",
+   "to": "waver@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "cold4",
+   "img": "gericault",
+   "from": "face@1.2",
+   "to": "face@1.5",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "cold4.15",
+   "img": "heads",
+   "from": "old@1.4",
+   "to": "young@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "cold5",
+   "img": "raft",
+   "from": "full@0.33",
+   "to": "full@0.35",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "cold5.5",
+   "img": "raft",
+   "from": "old@1.5",
+   "to": "old@1.8",
+   "fade": 0.8
+  },
+  {
+   "at": "cold5.16",
+   "img": "raft",
+   "from": "full@0.31",
+   "to": "full@0.34",
+   "frame": true,
+   "fade": 1.0,
+   "dim": 0.15
+  },
+  {
+   "at": "c1a",
+   "img": "louis18",
+   "from": "full@0.62",
+   "to": "face@1.3",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c1b",
+   "img": "map-voyage",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "voyage",
+    "pins": [
+     {
+      "city": "rochefort",
+      "at": "c1b.19",
+      "label": "Rochefort"
+     },
+     {
+      "city": "senegal",
+      "at": "c1b.10",
+      "label": "Saint-Louis, Senegal"
+     }
+    ]
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c1c",
+   "img": "rochefort",
+   "from": "ships@1.3",
+   "to": "dock@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c1c.10",
+   "img": "rochefort",
+   "from": "dock@1.4",
+   "to": "dock@1.6",
+   "fade": 0.5
+  },
+  {
+   "at": "c1d",
+   "img": "rochefort",
+   "from": "ships@1.6",
+   "to": "ships@1.9",
+   "fade": 0.8,
+   "gray": 0.4
+  },
+  {
+   "at": "c1d.18",
+   "img": "raft",
+   "from": "sail@1.4",
+   "to": "mast@1.5",
+   "fade": 0.6,
+   "dim": 0.2
+  },
+  {
+   "at": "c1e",
+   "img": "map-voyage",
+   "from": "full",
+   "to": "full",
+   "kind": "map",
+   "map": {
+    "id": "voyage",
+    "pins": [
+     {
+      "city": "rochefort",
+      "at": "c1e",
+      "label": "Rochefort"
+     },
+     {
+      "city": "arguin",
+      "at": "c1f.20",
+      "label": "Arguin Bank"
+     }
+    ],
+    "route": {
+     "from": "rochefort",
+     "to": "arguin",
+     "at": "c1e+0.30",
+     "to_at": "c1f.18"
+    }
+   },
+   "fade": 0.8
+  },
+  {
+   "at": "c1f.22",
+   "img": "frigate",
+   "from": "ship@1.2",
+   "to": "ship@1.45",
+   "fade": 0.8,
+   "gray": 0.2
+  },
+  {
+   "at": "c2a",
+   "img": "frigate",
+   "from": "full@1.0",
+   "to": "raft@1.3",
+   "fade": 1.0
+  },
+  {
+   "at": "c2b",
+   "img": "plan",
+   "from": "full@0.62",
+   "to": "all@0.9",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c2c",
+   "img": "frigate",
+   "from": "raft@1.5",
+   "to": "raft@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c2d",
+   "img": "raft",
+   "from": "planks@1.5",
+   "to": "planks@1.7",
+   "fade": 0.8,
+   "dim": 0.1
+  },
+  {
+   "at": "c2e",
+   "img": "frigate",
+   "from": "ship@1.6",
+   "to": "ship@1.9",
+   "fade": 0.6,
+   "gray": 0.3
+  },
+  {
+   "at": "c2e.9",
+   "img": "raft",
+   "from": "sail@1.2",
+   "to": "waves@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c2f",
+   "img": "argus_sketch",
+   "from": "full@1.0",
+   "to": "raft@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c2f.18",
+   "img": "raft",
+   "from": "waves@1.6",
+   "to": "waves@1.9",
+   "fade": 0.4,
+   "hit": "small"
+  },
+  {
+   "at": "c2g",
+   "img": "raft",
+   "from": "full@0.32",
+   "to": "full@0.29",
+   "frame": true,
+   "fade": 0.8,
+   "dim": 0.3
+  },
+  {
+   "at": "c3a",
+   "img": "salon1819",
+   "from": "full@1.0",
+   "to": "raft@1.25",
+   "fade": 1.0,
+   "dim": 0.1
+  },
+  {
+   "at": "c3a.18",
+   "img": "raft",
+   "from": "left_dead@1.8",
+   "to": "left_dead@2.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c3a.25",
+   "img": "raft",
+   "from": "right_dead@1.5",
+   "to": "right_dead@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c3b",
+   "img": "book",
+   "from": "full@1.0",
+   "to": "fight@1.3",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c3b.16",
+   "img": "mutiny",
+   "from": "fight@1.0",
+   "to": "fight@1.4",
+   "frame": true,
+   "fade": 0.4
+  },
+  {
+   "at": "c3b.20",
+   "img": "raft",
+   "from": "facedown@1.6",
+   "to": "facedown@1.9",
+   "fade": 0.6,
+   "dim": 0.1
+  },
+  {
+   "at": "c3c",
+   "img": "raft",
+   "from": "crowd@1.3",
+   "to": "crowd@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c3c.17",
+   "img": "limbs",
+   "from": "full@0.62",
+   "to": "feet@1.0",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c3d",
+   "img": "raft",
+   "from": "youth@1.7",
+   "to": "old@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d.9",
+   "img": "raft",
+   "from": "old@2.2",
+   "to": "old@2.5",
+   "fade": 0.6,
+   "dim": 0.15
+  },
+  {
+   "at": "c3e",
+   "img": "raft",
+   "from": "crowd@1.6",
+   "to": "pointer@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c3e.17",
+   "img": "raft",
+   "from": "right_dead@1.4",
+   "to": "planks@1.5",
+   "fade": 0.6,
+   "dim": 0.1
+  },
+  {
+   "at": "c3e.24",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "crowd@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c3f",
+   "img": "raft",
+   "from": "sky@1.4",
+   "to": "waves@1.4",
+   "fade": 1.0,
+   "dim": 0.2
+  },
+  {
+   "at": "c3g",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "argus@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c3g.12",
+   "img": "raft",
+   "from": "argus@3.4",
+   "to": "argus@4.0",
+   "fade": 0.4
+  },
+  {
+   "at": "c3g.16",
+   "img": "raft",
+   "from": "waver@1.9",
+   "to": "cloth@2.2",
+   "fade": 0.4,
+   "hit": "small"
+  },
+  {
+   "at": "c3g.20",
+   "img": "raft",
+   "from": "argus@3.6",
+   "to": "argus@3.2",
+   "fade": 0.5,
+   "dim": 0.2
+  },
+  {
+   "at": "c3h",
+   "img": "raft",
+   "from": "old@1.7",
+   "to": "old@1.9",
+   "fade": 0.8,
+   "dim": 0.15
+  },
+  {
+   "at": "c3h.7",
+   "img": "raft",
+   "from": "waver@1.4",
+   "to": "waver@1.6",
+   "fade": 0.6,
+   "hit": "big"
+  },
+  {
+   "at": "c3i",
+   "img": "raft",
+   "from": "crowd@1.2",
+   "to": "full@1.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c3i.5",
+   "img": "frigate",
+   "from": "ship@1.3",
+   "to": "ship@1.55",
+   "fade": 0.8,
+   "gray": 0.4
+  },
+  {
+   "at": "c4a",
+   "img": "louis18",
+   "from": "full@0.62",
+   "to": "full@0.66",
+   "frame": true,
+   "fade": 1.0,
+   "gray": 0.2
+  },
+  {
+   "at": "c4a.8",
+   "img": "book",
+   "from": "sail@1.1",
+   "to": "fight@1.3",
+   "fade": 0.6,
+   "gray": 0.3
+  },
+  {
+   "at": "c4b",
+   "img": "book",
+   "from": "fight@1.5",
+   "to": "fight@1.7",
+   "fade": 0.6,
+   "gray": 0.5
+  },
+  {
+   "at": "c4c",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "full@1.06",
+   "fade": 0.8,
+   "dim": 0.1
+  },
+  {
+   "at": "c4c.10",
+   "img": "argus_sketch",
+   "from": "raft@1.3",
+   "to": "raft@1.5",
+   "fade": 0.5
+  },
+  {
+   "at": "c4c.17",
+   "img": "raft",
+   "from": "youth@1.8",
+   "to": "youth@2.0",
+   "fade": 0.5,
+   "dim": 0.15
+  },
+  {
+   "at": "c4d",
+   "img": "louis18",
+   "from": "face@1.6",
+   "to": "face@1.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c4e",
+   "img": "rochefort",
+   "from": "dock@1.2",
+   "to": "ships@1.3",
+   "fade": 0.8,
+   "gray": 0.3
+  },
+  {
+   "at": "c4e.28",
+   "img": "louis18",
+   "from": "face@1.3",
+   "to": "face@1.1",
+   "fade": 0.6,
+   "gray": 0.5
+  },
+  {
+   "at": "c4f",
+   "img": "book",
+   "from": "full@0.6",
+   "to": "full@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c4g",
+   "img": "gericault",
+   "from": "full@0.62",
+   "to": "face@1.1",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c5a",
+   "img": "gericault",
+   "from": "face@1.3",
+   "to": "face@1.6",
+   "fade": 1.0
+  },
+  {
+   "at": "c5a.9",
+   "img": "gericault",
+   "from": "face@1.7",
+   "to": "face@1.9",
+   "gray": 0.3
+  },
+  {
+   "at": "c5b",
+   "img": "raft",
+   "from": "full@0.32",
+   "to": "full@0.36",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c5c",
+   "img": "plan",
+   "from": "all@0.7",
+   "to": "all@0.85",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c5d",
+   "img": "gericault",
+   "from": "face@1.5",
+   "to": "face@1.8",
+   "fade": 0.6,
+   "gray": 0.5
+  },
+  {
+   "at": "c5d.8",
+   "img": "plaster",
+   "from": "full@1.0",
+   "to": "full@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c5e",
+   "img": "heads",
+   "from": "full@1.0",
+   "to": "old@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c5e.19",
+   "img": "limbs",
+   "from": "full@0.62",
+   "to": "feet@1.1",
+   "frame": true,
+   "fade": 0.6
+  },
+  {
+   "at": "c5f",
+   "img": "monomaniac",
+   "from": "full@0.62",
+   "to": "face@1.2",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c5g",
+   "img": "heads",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "limbs",
+   "labels": [
+    "NATIONALMUSEUM, STOCKHOLM",
+    "MUSÉE FABRE, MONTPELLIER"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c5h",
+   "img": "delacroix",
+   "from": "face@1.0",
+   "to": "face@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c5h.8",
+   "img": "raft",
+   "from": "facedown@1.6",
+   "to": "facedown@1.9",
+   "fade": 0.6
+  },
+  {
+   "at": "c5h.14",
+   "img": "raft",
+   "from": "pointer@1.6",
+   "to": "pointer@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c5h.20",
+   "img": "raft",
+   "from": "youth@1.6",
+   "to": "youth@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c5i",
+   "img": "argus_sketch",
+   "from": "full@1.0",
+   "to": "full@1.12",
+   "fade": 0.8
+  },
+  {
+   "at": "c5i.7",
+   "img": "mutiny",
+   "from": "full@0.62",
+   "to": "fight@1.0",
+   "frame": true,
+   "fade": 0.6
+  },
+  {
+   "at": "c5i.11",
+   "img": "book",
+   "from": "fight@1.2",
+   "to": "fight@1.4",
+   "fade": 0.5,
+   "gray": 0.3
+  },
+  {
+   "at": "c5i.15",
+   "img": "salon1819",
+   "from": "full@1.0",
+   "to": "waver@1.4",
+   "fade": 0.5
+  },
+  {
+   "at": "c5i.19",
+   "img": "raft",
+   "from": "full@0.32",
+   "to": "full@0.35",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6a",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "argus@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c6a.12",
+   "img": "raft",
+   "from": "argus@3.0",
+   "to": "argus@3.6",
+   "fade": 0.4
+  },
+  {
+   "at": "c6b",
+   "img": "raft",
+   "from": "waver@1.4",
+   "to": "cloth@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.7",
+   "img": "raft",
+   "from": "waver@2.0",
+   "to": "waver@2.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c6b.35",
+   "img": "raft",
+   "from": "waver@1.6",
+   "to": "crowd@1.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c6c",
+   "img": "raft",
+   "from": "planks@1.0",
+   "to": "cloth@1.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c6d",
+   "img": "raft",
+   "from": "old@1.4",
+   "to": "old@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c6d.17",
+   "img": "raft",
+   "from": "old@2.1",
+   "to": "old@2.4",
+   "fade": 0.5
+  },
+  {
+   "at": "c6d.24",
+   "img": "dante",
+   "from": "bodies@1.1",
+   "to": "dante@1.2",
+   "fade": 0.8,
+   "dim": 0.1
+  },
+  {
+   "at": "c6d.31",
+   "img": "raft",
+   "from": "old@1.6",
+   "to": "youth@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c6e",
+   "img": "raft",
+   "from": "full@0.3",
+   "to": "full@0.34",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6f",
+   "img": "salon1819",
+   "from": "full@0.62",
+   "to": "full@0.68",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6f.15",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "crowd@1.15",
+   "fade": 0.6
+  },
+  {
+   "at": "c6g",
+   "img": "raft",
+   "from": "left_dead@1.4",
+   "to": "youth@1.4",
+   "fade": 0.6,
+   "dim": 0.1
+  },
+  {
+   "at": "c6g.11",
+   "img": "louis18",
+   "from": "face@1.3",
+   "to": "face@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c6h",
+   "img": "raft",
+   "from": "full@0.32",
+   "to": "full@0.35",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6h.11",
+   "img": "delacroix",
+   "from": "face@1.2",
+   "to": "face@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c6h.20",
+   "img": "raft",
+   "from": "facedown@1.8",
+   "to": "facedown@2.1",
+   "fade": 0.5
+  },
+  {
+   "at": "c6i",
+   "img": "egyptian_hall",
+   "from": "full@1.0",
+   "to": "front@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c6i.21",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c7a",
+   "img": "gericault",
+   "from": "face@1.2",
+   "to": "face@1.4",
+   "fade": 1.0,
+   "gray": 0.4
+  },
+  {
+   "at": "c7a.10",
+   "img": "deathbed",
+   "from": "full@1.0",
+   "to": "face@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c7b",
+   "img": "raft",
+   "from": "full@0.3",
+   "to": "full@0.33",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c7c",
+   "img": "raft",
+   "from": "sail@1.6",
+   "to": "mast@1.8",
+   "fade": 0.8
+  },
+  {
+   "at": "c7c.17",
+   "img": "raft",
+   "from": "crowd@2.0",
+   "to": "crowd@2.3",
+   "fade": 0.6,
+   "contrast": 1.1
+  },
+  {
+   "at": "c7d",
+   "img": "raft",
+   "from": "facedown@1.5",
+   "to": "planks@1.4",
+   "fade": 0.8,
+   "dim": -0.2
+  },
+  {
+   "at": "c7d.10",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "full@0.96",
+   "fade": 0.8,
+   "dim": 0.3
+  },
+  {
+   "at": "end1",
+   "img": "raft",
+   "from": "full@1.0",
+   "to": "argus@1.8",
+   "fade": 1.0
+  },
+  {
+   "at": "end1.5",
+   "img": "raft",
+   "from": "argus@3.4",
+   "to": "argus@4.2",
+   "fade": 0.5
+  },
+  {
+   "at": "end2",
+   "img": "raft",
+   "from": "waver@1.6",
+   "to": "cloth@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "end3",
+   "img": "raft",
+   "from": "full@0.3",
+   "to": "full@0.28",
+   "frame": true,
+   "fade": 1.0
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold5.16",
+   "to": "cold5$+0.60",
+   "kicker": "THÉODORE GÉRICAULT · 1818–1819",
+   "text": "The Raft of the Medusa"
+  },
+  {
+   "type": "chapter",
+   "from": "c1f$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "The Raft"
+  },
+  {
+   "type": "chapter",
+   "from": "c2g$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "Thirteen Days"
+  },
+  {
+   "type": "chapter",
+   "from": "c3i$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "The Scandal"
+  },
+  {
+   "type": "chapter",
+   "from": "c4g$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "The Painter"
+  },
+  {
+   "type": "chapter",
+   "from": "c5i$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "The Painting"
+  },
+  {
+   "type": "chapter",
+   "from": "c6i$+0.35",
+   "to": "c7a+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "The Darkness"
+  },
+  {
+   "type": "chapter",
+   "from": "c1a-0.55",
+   "to": "c1a+2.00",
+   "kicker": "CHAPTER I",
+   "text": "The Captain"
+  },
+  {
+   "type": "label",
+   "from": "cold1+0.30",
+   "to": "cold2$",
+   "text": "THE RAFT OF THE MEDUSA · 1818–19 · LOUVRE"
+  },
+  {
+   "type": "label",
+   "from": "cold4",
+   "to": "cold4.15-0.10",
+   "text": "THÉODORE GÉRICAULT · LITHOGRAPH, c. 1820"
+  },
+  {
+   "type": "label",
+   "from": "cold4.15",
+   "to": "cold4$+0.50",
+   "text": "GÉRICAULT · STUDY OF SEVERED HEADS · c. 1818"
+  },
+  {
+   "type": "year",
+   "from": "c1a+2.10",
+   "to": "c1a.2-0.20",
+   "text": "1816"
+  },
+  {
+   "type": "label",
+   "from": "c1a.2",
+   "to": "c1a$+0.40",
+   "text": "LOUIS XVIII · ENGRAVING AFTER GÉRARD"
+  },
+  {
+   "type": "label",
+   "from": "c1c",
+   "to": "c1c$",
+   "text": "THE PORT OF ROCHEFORT · JOSEPH VERNET, 1762"
+  },
+  {
+   "type": "lower",
+   "from": "c1d-0.10",
+   "to": "c1d.18-0.20",
+   "text": "Hugues Duroy de Chaumareys",
+   "sub": "CAPTAIN OF THE MÉDUSE · NO PORTRAIT SURVIVES"
+  },
+  {
+   "type": "label",
+   "from": "c1f.22",
+   "to": "c1f$",
+   "text": "THE WRECK OF THE MÉDUSE · 19TH-CENTURY ENGRAVING"
+  },
+  {
+   "type": "label",
+   "from": "c2a",
+   "to": "c2a$",
+   "text": "BUILDING THE RAFT · 19TH-CENTURY ENGRAVING"
+  },
+  {
+   "type": "label",
+   "from": "c2b",
+   "to": "c2b$+0.30",
+   "text": "PLAN OF THE RAFT · FROM CORRÉARD & SAVIGNY, 1817"
+  },
+  {
+   "type": "stamp",
+   "from": "c2c.11+0.10",
+   "to": "c2c$+0.60",
+   "text": "147 ON BOARD"
+  },
+  {
+   "type": "label",
+   "from": "c2f",
+   "to": "c2f.8-0.10",
+   "text": "GÉRICAULT · OIL SKETCH FOR THE RAFT · LOUVRE"
+  },
+  {
+   "type": "label",
+   "from": "c3a",
+   "to": "c3a.18-0.10",
+   "text": "GÉRICAULT · OIL SKETCH FOR THE RAFT · LOUVRE"
+  },
+  {
+   "type": "quote",
+   "from": "c3a.18-0.10",
+   "to": "c3a.25-0.20",
+   "text": "This whole night we contended against death.",
+   "sub": "SAVIGNY & CORRÉARD · NARRATIVE OF A VOYAGE TO SENEGAL, 1818"
+  },
+  {
+   "type": "label",
+   "from": "c3b",
+   "to": "c3b.16-0.10",
+   "text": "REVOLT ON THE RAFT · PRINT AFTER CORRÉARD, 1818"
+  },
+  {
+   "type": "label",
+   "from": "c3b.16",
+   "to": "c3b.20-0.10",
+   "text": "GÉRICAULT · THE MUTINY ON THE RAFT · 1818"
+  },
+  {
+   "type": "stamp",
+   "from": "c3c.4+0.10",
+   "to": "c3c.7-0.20",
+   "text": "67 LEFT"
+  },
+  {
+   "type": "label",
+   "from": "c3c.17",
+   "to": "c3c$+0.50",
+   "text": "GÉRICAULT · ANATOMICAL PIECES · 1818–19"
+  },
+  {
+   "type": "lower",
+   "from": "c3d.3-0.10",
+   "to": "c3d.9-0.20",
+   "text": "Henri Savigny",
+   "sub": "SHIP'S SURGEON · SURVIVOR"
+  },
+  {
+   "type": "quote",
+   "from": "c3d.9-0.10",
+   "to": "c3d$+0.70",
+   "text": "Those whom death had spared… fell upon the dead bodies.",
+   "sub": "SAVIGNY & CORRÉARD · NARRATIVE OF A VOYAGE TO SENEGAL, 1818"
+  },
+  {
+   "type": "stamp",
+   "from": "c3e.24+0.10",
+   "to": "c3e$+0.60",
+   "text": "15 LEFT"
+  },
+  {
+   "type": "year",
+   "from": "c3g",
+   "to": "c3g.5-0.10",
+   "text": "17 JULY 1816"
+  },
+  {
+   "type": "ring",
+   "from": "c3g.12+0.10",
+   "to": "c3g.16-0.10",
+   "point": "argus",
+   "img": "raft",
+   "rx": 70,
+   "ry": 50,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c4a",
+   "to": "c4a.8-0.10",
+   "text": "LOUIS XVIII · ENGRAVING AFTER GÉRARD"
+  },
+  {
+   "type": "year",
+   "from": "c4a+1.80",
+   "to": "c4a.8-0.20",
+   "text": "SEPTEMBER 1816"
+  },
+  {
+   "type": "label",
+   "from": "c4a.8",
+   "to": "c4b$",
+   "text": "REVOLT ON THE RAFT · PRINT AFTER CORRÉARD, 1818"
+  },
+  {
+   "type": "year",
+   "from": "c4e.28-0.10",
+   "to": "c4e$+0.50",
+   "text": "1817"
+  },
+  {
+   "type": "lower",
+   "from": "c4f.8-0.10",
+   "to": "c4f.10+1.00",
+   "text": "Alexandre Corréard",
+   "sub": "ENGINEER · SURVIVOR"
+  },
+  {
+   "type": "lower",
+   "from": "c5a+0.20",
+   "to": "c5a.4-0.10",
+   "text": "Théodore Géricault",
+   "sub": "1791–1824"
+  },
+  {
+   "type": "year",
+   "from": "c5b",
+   "to": "c5b$+0.30",
+   "text": "1818"
+  },
+  {
+   "type": "label",
+   "from": "c5c",
+   "to": "c5c$",
+   "text": "PLAN OF THE RAFT · FROM CORRÉARD & SAVIGNY, 1817"
+  },
+  {
+   "type": "label",
+   "from": "c5e",
+   "to": "c5e.19-0.10",
+   "text": "GÉRICAULT · SEVERED HEADS · NATIONALMUSEUM, STOCKHOLM"
+  },
+  {
+   "type": "label",
+   "from": "c5e.19",
+   "to": "c5e$+0.50",
+   "text": "GÉRICAULT · ANATOMICAL PIECES · MUSÉE FABRE, MONTPELLIER"
+  },
+  {
+   "type": "label",
+   "from": "c5f",
+   "to": "c5f$",
+   "text": "GÉRICAULT · THE MADWOMAN · c. 1820 · LYON"
+  },
+  {
+   "type": "lower",
+   "from": "c5h.6-0.10",
+   "to": "c5h.8+1.00",
+   "text": "Eugène Delacroix",
+   "sub": "PAINTER · SELF-PORTRAIT, c. 1837"
+  },
+  {
+   "type": "ring",
+   "from": "c5h.8+0.30",
+   "to": "c5h.14-0.10",
+   "point": "facedown",
+   "img": "raft",
+   "rx": 260,
+   "ry": 120,
+   "rot": -8
+  },
+  {
+   "type": "label",
+   "from": "c5i",
+   "to": "c5i.7-0.10",
+   "text": "GÉRICAULT · OIL SKETCH · LOUVRE"
+  },
+  {
+   "type": "ring",
+   "from": "c6a.12+0.10",
+   "to": "c6a$+0.60",
+   "point": "argus",
+   "img": "raft",
+   "rx": 60,
+   "ry": 44,
+   "rot": 0
+  },
+  {
+   "type": "lower",
+   "from": "c6b.26-0.10",
+   "to": "c6b.28-0.10",
+   "text": "Jean Charles",
+   "sub": "SOLDIER · ONE OF THE FIFTEEN"
+  },
+  {
+   "type": "label",
+   "from": "c6d.24",
+   "to": "c6d.31-0.10",
+   "text": "DELACROIX · THE BARQUE OF DANTE · 1822 · LOUVRE"
+  },
+  {
+   "type": "year",
+   "from": "c6f",
+   "to": "c6f.2+0.60",
+   "text": "1819"
+  },
+  {
+   "type": "label",
+   "from": "c6f.2",
+   "to": "c6f.15-0.10",
+   "text": "GÉRICAULT · SKETCH FOR THE SALON OF 1819 · LOUVRE"
+  },
+  {
+   "type": "title",
+   "from": "c6f.15-0.10",
+   "to": "c6f.20-0.20",
+   "kicker": "SALON OF 1819",
+   "text": "Scène de naufrage"
+  },
+  {
+   "type": "label",
+   "from": "c6g.11",
+   "to": "c6g$+0.40",
+   "text": "LOUIS XVIII · ENGRAVING AFTER GÉRARD"
+  },
+  {
+   "type": "stamp",
+   "from": "c6h+0.20",
+   "to": "c6h.5-0.10",
+   "text": "GOLD MEDAL"
+  },
+  {
+   "type": "year",
+   "from": "c6i.6",
+   "to": "c6i.8-0.10",
+   "text": "1820"
+  },
+  {
+   "type": "label",
+   "from": "c6i.16",
+   "to": "c6i.21-0.10",
+   "text": "THE EGYPTIAN HALL · PICCADILLY, LONDON"
+  },
+  {
+   "type": "credit",
+   "from": "c6i.16",
+   "to": "c6i.21-0.10",
+   "text": "WELLCOME COLLECTION · CC BY 4.0"
+  },
+  {
+   "type": "year",
+   "from": "c7a.7",
+   "to": "c7a.10-0.10",
+   "text": "1824"
+  },
+  {
+   "type": "label",
+   "from": "c7a.10",
+   "to": "c7a$+0.50",
+   "text": "GÉRICAULT ON HIS DEATHBED · CHAMPMARTIN, 1824"
+  },
+  {
+   "type": "label",
+   "from": "c7b",
+   "to": "c7b$+0.40",
+   "text": "THE RAFT OF THE MEDUSA · LOUVRE, PARIS"
+  },
+  {
+   "type": "ring",
+   "from": "end1.5+0.20",
+   "to": "end1$+0.40",
+   "point": "argus",
+   "img": "raft",
+   "rx": 60,
+   "ry": 44,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "end3+0.10",
+   "to": "end3$+1.00",
+   "text": "MUSÉE DU LOUVRE · DENON WING · ROOM 700"
+  },
+  {
+   "type": "end",
+   "from": "end3$+1.00",
+   "to": "end3$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "cold1.4",
+   "fx": "impact",
+   "gain": 0.35
+  },
+  {
+   "at": "c2f.21",
+   "fx": "snip",
+   "gain": 0.6
+  },
+  {
+   "at": "c3g.15",
+   "fx": "riser",
+   "gain": 0.3
+  },
+  {
+   "at": "c3h.7",
+   "fx": "chime",
+   "gain": 0.25
+  },
+  {
+   "at": "c5d.2",
+   "fx": "tick",
+   "gain": 0.3
+  },
+  {
+   "at": "c1f$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c2g$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c3i$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c4g$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c5i$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c6i$+0.35",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "c1a-0.55",
+   "fx": "impact",
+   "gain": 0.3
+  }
+ ],
+ "music": {
+  "bar": 5.5,
+  "music_db": -13,
+  "transpose": -2,
+  "chords": [
+   [
+    28,
+    40,
+    47
+   ],
+   [
+    36,
+    43,
+    48
+   ],
+   [
+    31,
+    38,
+    47
+   ],
+   [
+    35,
+    42,
+    47
+   ]
+  ],
+  "segments": [
+   {
+    "at": "c1a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": -2
+   },
+   {
+    "at": "c2a",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": -1
+   },
+   {
+    "at": "c3a",
+    "chords": [
+     [
+      28,
+      40,
+      47
+     ],
+     [
+      36,
+      43,
+      48
+     ],
+     [
+      31,
+      38,
+      47
+     ],
+     [
+      35,
+      42,
+      47
+     ]
+    ],
+    "transpose": -3
+   },
+   {
+    "at": "c4a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": 0
+   },
+   {
+    "at": "c5a",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": 1
+   },
+   {
+    "at": "c6a",
+    "chords": [
+     [
+      28,
+      40,
+      47
+     ],
+     [
+      36,
+      43,
+      48
+     ],
+     [
+      31,
+      38,
+      47
+     ],
+     [
+      35,
+      42,
+      47
+     ]
+    ],
+    "transpose": 0
+   },
+   {
+    "at": "c7a",
+    "chords": [
+     [
+      38,
+      45,
+      50
+     ],
+     [
+      38,
+      45,
+      49
+     ],
+     [
+      34,
+      41,
+      50
+     ],
+     [
+      33,
+      40,
+      49
+     ]
+    ],
+    "transpose": -3
+   },
+   {
+    "at": "end1",
+    "chords": [
+     [
+      33,
+      40,
+      48
+     ],
+     [
+      29,
+      36,
+      45
+     ],
+     [
+      36,
+      43,
+      52
+     ],
+     [
+      28,
+      40,
+      44
+     ]
+    ],
+    "transpose": -1
+   }
+  ],
+  "sections": {
+   "cold": [
+    "cold1",
+    "cold2$"
+   ],
+   "choir": [
+    "c3h.7-0.30",
+    "c3i-0.50"
+   ],
+   "drop": [
+    "c3f",
+    "c3f$+0.30"
+   ]
+  },
+  "heartbeat": [
+   "c3g",
+   "c3h.7-0.20"
+  ]
+ },
+ "facts": [
+  {
+   "claim": "Bourbon Restoration; Senegal returned to France by the treaties; convoy from Rochefort in June 1816 led by the frigate Méduse; about 400 aboard incl. the new governor",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards ; https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810)"
+  },
+  {
+   "claim": "Captain Hugues Duroy de Chaumareys, royalist émigré, had hardly sailed in 20 years; appointed reportedly for nobility/royalism",
+   "source": "https://en.wikipedia.org/wiki/Hugues_Duroy_de_Chaumareys ; https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards (about 25 years)"
+  },
+  {
+   "claim": "He lost contact with the other ships and let a passenger with no qualifications (Richefort) help navigate; about 160 km off course",
+   "source": "https://en.wikipedia.org/wiki/Hugues_Duroy_de_Chaumareys ; https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Ran aground 2 July 1816 on the Arguin Bank off present-day Mauritania",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://en.wikipedia.org/wiki/Hugues_Duroy_de_Chaumareys"
+  },
+  {
+   "claim": "Six boats; raft built from masts and spars, about 20 m long; 5 July 1816: about 146 men and one woman",
+   "source": "https://smarthistory.org/?p=2996 ; https://www.boatnews.com/story/44465/raft-of-the-medusa-what-is-the-story-behind-the-shipwreck-that-inspired-gericaults-painting ; https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Supplies: a bag of biscuit eaten on day one, two casks of water lost, six casks of wine; 17 men stayed on the ship",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Captain left before all passengers were off (court-martial finding)",
+   "source": "https://en.wikipedia.org/wiki/Hugues_Duroy_de_Chaumareys ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "After only a few miles the raft was turned loose/the lines cut; rudderless",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://smarthistory.org/?p=2996 ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "First night ~20 men lost; quote 'This whole night we contended against death' (Savigny & Corréard, 1818 English translation)",
+   "source": "https://gutenberg.org/cache/epub/11772/pg11772-images.html ; https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810)"
+  },
+  {
+   "claim": "Drunken revolt against the officers with sabre and boarding-axe; many killed",
+   "source": "https://gutenberg.org/cache/epub/11772/pg11772-images.html ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards (Argus captain's report)"
+  },
+  {
+   "claim": "By the fourth day 67 alive; flying fish caught; cannibalism; quote 'Those whom death had spared in the disastrous night ... fell upon the dead bodies'",
+   "source": "https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810) ; https://gutenberg.org/cache/epub/11772/pg11772-images.html"
+  },
+  {
+   "claim": "Eighth day: the fittest threw the weak and wounded overboard, leaving 15",
+   "source": "https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810) (citing Savigny & Corréard 1818, p. 118)"
+  },
+  {
+   "claim": "17 July 1816: the Argus found the raft by chance after 13 days; it disappeared and reappeared about two hours later; 15 alive; 5 died soon after; 3 of the 17 on the wreck survived",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810) ; https://smarthistory.org/?p=2996"
+  },
+  {
+   "claim": "News reached Paris in September 1816; Savigny's report leaked to the anti-government Journal des débats (13 Sept 1816)",
+   "source": "https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards ; https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810)"
+  },
+  {
+   "claim": "Court-martial at Rochefort 1817: guilty of incompetent navigation and abandoning the ship before all passengers were off; could have faced death; 3 years in prison",
+   "source": "https://en.wikipedia.org/wiki/Hugues_Duroy_de_Chaumareys ; https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810) ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "Savigny & Corréard's book (1817) became a bestseller, translated into several languages",
+   "source": "https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards ; https://smarthistory.org/?p=2996"
+  },
+  {
+   "claim": "Géricault (b. 26 Sep 1791) had broken off an affair with his aunt; shaved his head; near-monastic life in his studio Nov 1818-July 1819 (Faubourg du Roule)",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Gericault"
+  },
+  {
+   "claim": "He met Savigny and Corréard; scale model of the raft with them and the carpenter Lavillette",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://smarthistory.org/?p=2996"
+  },
+  {
+   "claim": "Morgue of the Hôpital Beaujon; severed limbs in the studio; one account: a severed head from an asylum on his studio roof for a fortnight",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "Studies of severed heads (Nationalmuseum Stockholm) and anatomical pieces (Musée Fabre, Montpellier)",
+   "source": "https://collection.nationalmuseum.se/en/collection/item/19173/ ; https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Delacroix posed for the foreground (face-down) figure; Savigny and Corréard painted from life; assistant Louis-Alexis Jamar posed for the dead youth",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "More than 100 studies; he considered the mutiny, cannibalism and rescue before the sighting of the Argus",
+   "source": "https://smarthistory.org/?p=2996 ; https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "The moment: first sight of the Argus on the horizon; Jean Charles waving a handkerchief from an empty barrel; Jean Charles died soon after the rescue; model Joseph, of Haitian descent",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://en.wikipedia.org/wiki/French_frigate_M%C3%A9duse_(1810) ; https://smarthistory.org/?p=2996"
+  },
+  {
+   "claim": "Pyramidal composition; the old man with the dead youth recalls Dante's Ugolino",
+   "source": "https://smarthistory.org/?p=2996 ; https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Canvas 491 × 716 cm",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Salon of 1819 as 'Scène de naufrage'; critics divided ('pile of corpses'); Louis XVIII reportedly: 'your shipwreck is certainly no disaster'; gold medal, not bought by the state; Delacroix deeply affected",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://smarthistory.org/?p=2996 ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "London 1820, Bullock's Egyptian Hall, Piccadilly: about 40,000 visitors; nearly 20,000 francs (LRB: more than 17,000)",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "Géricault died in Paris 26 January 1824, aged 32, weakened by riding accidents and tubercular infection",
+   "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Gericault ; https://lrb.co.uk/the-paper/v29/n13/graham-robb/come-back-you-bastards"
+  },
+  {
+   "claim": "The Louvre (Comte de Forbin) bought the painting from his heirs in 1824",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  },
+  {
+   "claim": "Bitumen has darkened and wrinkled the surface irreversibly; large areas hard to see",
+   "source": "https://en.wikipedia.org/wiki/The_Raft_of_the_Medusa"
+  }
+ ],
+ "next": false,
+ "maps": {
+  "voyage": {
+   "bbox": [
+    [
+     -24.0,
+     12.5
+    ],
+    [
+     6.0,
+     48.5
+    ]
+   ],
+   "focus": [
+    "0",
+    "0"
+   ],
+   "cities": {
+    "rochefort": [
+     -0.96,
+     45.94
+    ],
+    "arguin": [
+     -16.6,
+     19.9
+    ],
+    "senegal": [
+     -16.49,
+     16.02
+    ]
+   }
+  }
+ },
+ "youtube": {
+  "titles": [
+   "The Shipwreck France Tried to Forget",
+   "Everything in This Painting Really Happened"
+  ],
+  "description_lead": "In July 1816 the French frigate Méduse ran aground off West Africa. A hundred and forty-seven people were put on a raft and cut loose. Thirteen days later, fifteen were alive. Two years later, a 26-year-old painter shaved his head, locked himself in his studio with the dead, and turned the scandal into one of the most famous paintings in the Louvre. This is the true story of Théodore Géricault's Raft of the Medusa.",
+  "hashtags": [
+   "#arthistory",
+   "#gericault",
+   "#louvre"
+  ],
+  "credits": [
+   "Paintings, drawings and prints by Théodore Géricault, Eugène Delacroix, Charles-Émile Champmartin and Joseph Vernet: public domain (Musée du Louvre; Nationalmuseum, Stockholm; Musée Fabre, Montpellier; Musée des Beaux-Arts de Lyon; The Metropolitan Museum of Art, CC0), via Wikimedia Commons.",
+   "Engravings of the wreck, the raft's construction and the revolt on the raft; plan of the raft (Corréard & Savigny, 1817); portrait of Louis XVIII: public domain (Bibliothèque nationale de France, via Wikimedia Commons).",
+   "Bullock's Museum (the Egyptian Hall), Piccadilly: Wellcome Collection, CC BY 4.0 (creativecommons.org/licenses/by/4.0)."
+  ],
+  "thumbnail": {
+   "image": "raft",
+   "focus": [
+    0.705,
+    0.17
+   ],
+   "span": 0.3,
+   "words": "IT REALLY HAPPENED"
+  },
+  "intro_chapter": "Everything in this painting really happened",
+  "outro_chapter": "The Horizon"
+ }
 }
