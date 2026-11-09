@@ -1,0 +1,819 @@
+{
+ "slug": "holbein-dead-christ",
+ "hook_type": "sacred-strange",
+ "teaser": "The dead Christ that shook Dostoevsky",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Hans Holbein the Younger",
+  "born": 1497,
+  "died": 1543,
+  "painting": "The Body of the Dead Christ in the Tomb",
+  "year": "1521–22",
+  "museum": "Kunstmuseum Basel",
+  "city": "Basel",
+  "image": "christ",
+  "image_credit": "Kunstmuseum Basel, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Can it <i>kill your faith?</i>",
+  "name": "HANS HOLBEIN",
+  "work": "The Dead Christ in the Tomb, 1521",
+  "focus": [
+   0.36,
+   0.45
+  ],
+  "span": 1.0,
+  "answered_by": "Dostoevsky, shaken in front of it in 1867, made a character say a man's faith might be ruined by looking at it",
+  "at": 0.66
+ },
+ "say": {
+  "1521": "fifteen twenty-one",
+  "1867": "eighteen sixty-seven"
+ },
+ "ipa": {
+  "Dostoevsky": "dˌɑstəjˈɛfski",
+  "Fyodor": "fjˈoʊdɚ",
+  "Kunstmuseum": "kˈʊnstmuːzˌeɪʊm",
+  "Basel": "bˈɑːzəl",
+  "Holbein": "hˈoʊlbaɪn"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This is Jesus.",
+     0.3,
+     0.92
+    ],
+    [
+     "And he's starting to *rot.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "Around 1521, in Basel,",
+     0.3,
+     0.95
+    ],
+    [
+     "Holbein painted Christ dead in his tomb:",
+     0.3,
+     0.94
+    ],
+    [
+     "two meters long,",
+     0.25,
+     0.93
+    ],
+    [
+     "and just one foot high.",
+     0.85,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "body",
+   "perf": [
+    [
+     "The eyes are still half open.",
+     0.3,
+     0.93
+    ],
+    [
+     "The mouth hangs open.",
+     0.3,
+     0.92
+    ],
+    [
+     "The face, the hand and the feet",
+     0.2,
+     0.93
+    ],
+    [
+     "show the first signs of *decay.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "legend",
+   "perf": [
+    [
+     "The legend says",
+     0.2,
+     0.93
+    ],
+    [
+     "his model was a body",
+     0.2,
+     0.94
+    ],
+    [
+     "pulled from the Rhine.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "visit",
+   "perf": [
+    [
+     "In 1867,",
+     0.3,
+     0.95
+    ],
+    [
+     "Fyodor Dostoevsky and his wife Anna",
+     0.25,
+     0.94
+    ],
+    [
+     "stopped in Basel for one day.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "anna",
+   "perf": [
+    [
+     "Anna wrote that he stood there",
+     0.2,
+     0.94
+    ],
+    [
+     "as if stunned,",
+     0.4,
+     0.9
+    ],
+    [
+     "his face showed the dread",
+     0.2,
+     0.93
+    ],
+    [
+     "she knew from his seizures.",
+     0.85,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "chair",
+   "perf": [
+    [
+     "She led him away.",
+     0.3,
+     0.93
+    ],
+    [
+     "He went back.",
+     0.3,
+     0.93
+    ],
+    [
+     "He even climbed on a chair.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "novel",
+   "perf": [
+    [
+     "In his novel, *The Idiot*,",
+     0.3,
+     0.94
+    ],
+    [
+     "a character cries:",
+     0.3,
+     0.93
+    ],
+    [
+     "Why, a man's faith might be ruined",
+     0.2,
+     0.9
+    ],
+    [
+     "by looking at that *picture!*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Holbein didn't paint a god.",
+     0.35,
+     0.9
+    ],
+    [
+     "He painted a *corpse.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Kunstmuseum, in Basel.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "christ": {
+   "file": "src/christ.jpg",
+   "commons": "File:The Body of the Dead Christ in the Tomb (detail, head) by Hans Holbein d. j.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.37,
+     0.42
+    ],
+    "eye": [
+     0.31,
+     0.47
+    ],
+    "mouth": [
+     0.45,
+     0.31
+    ],
+    "chest": [
+     0.8,
+     0.45
+    ]
+   }
+  },
+  "full": {
+   "file": "src/full.jpg",
+   "commons": "File:Holbein — Dead Christ.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.07,
+     0.4
+    ],
+    "feet": [
+     0.92,
+     0.4
+    ]
+   }
+  },
+  "feet": {
+   "file": "src/feet.jpg",
+   "commons": "File:The Body of the Dead Christ in the Tomb (detail, feet) by Hans Holbein d. J..jpg",
+   "points": {
+    "foot": [
+     0.8,
+     0.42
+    ],
+    "date": [
+     0.68,
+     0.2
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "holbein": {
+   "file": "src/holbein.jpg",
+   "commons": "File:Hans Holbein the Younger, self-portrait.jpg",
+   "points": {
+    "face": [
+     0.45,
+     0.46
+    ]
+   }
+  },
+  "dostoevsky": {
+   "file": "src/dostoevsky.jpg",
+   "commons": "File:Vasily Perov - Портрет Ф.М.Достоевского - Google Art Project.jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.3
+    ],
+    "hands": [
+     0.25,
+     0.84
+    ]
+   }
+  },
+  "anna": {
+   "file": "src/anna.jpg",
+   "commons": "File:Anna Dostoyevskaya in 1871.jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.38
+    ]
+   }
+  },
+  "basel": {
+   "file": "src/basel.jpg",
+   "commons": "File:Basel 1493.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.4
+    ],
+    "river": [
+     0.68,
+     0.66
+    ],
+    "title": [
+     0.29,
+     0.08
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "christ",
+   "from": "eye@1.6",
+   "to": "eye@1.75",
+   "sway": 0.005
+  },
+  {
+   "at": "hook.3-0.03",
+   "img": "christ",
+   "from": "mouth@1.8",
+   "to": "mouth@1.95",
+   "sway": 0.005
+  },
+  {
+   "at": "hook.7-0.03",
+   "img": "christ",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "sway": 0.006,
+   "hit": "small"
+  },
+  {
+   "at": "painted-0.08",
+   "img": "full",
+   "kind": "image",
+   "from": "center@0.09",
+   "to": "center@0.093",
+   "frame": true,
+   "hit": "big"
+  },
+  {
+   "at": "painted.2-0.05",
+   "img": "basel",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 1
+  },
+  {
+   "at": "painted.4-0.05",
+   "img": "holbein",
+   "kind": "image",
+   "from": "face@1.2",
+   "to": "face@1.32",
+   "gray": 0.35
+  },
+  {
+   "at": "painted.6-0.05",
+   "img": "christ",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.008
+  },
+  {
+   "at": "painted.11-0.05",
+   "img": "full",
+   "kind": "image",
+   "from": "center@0.09",
+   "to": "center@0.093",
+   "frame": true
+  },
+  {
+   "at": "body-0.08",
+   "img": "christ",
+   "from": "eye@2.0",
+   "to": "eye@2.15",
+   "sway": 0.005
+  },
+  {
+   "at": "body.6-0.05",
+   "img": "christ",
+   "from": "mouth@2.0",
+   "to": "mouth@2.15",
+   "sway": 0.005
+  },
+  {
+   "at": "body.10-0.05",
+   "img": "christ",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "sway": 0.005
+  },
+  {
+   "at": "body.15-0.05",
+   "img": "feet",
+   "kind": "image",
+   "from": "foot@1.3",
+   "to": "foot@1.42"
+  },
+  {
+   "at": "legend-0.08",
+   "img": "full",
+   "kind": "image",
+   "from": "center@0.09",
+   "to": "center@0.093",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "legend.8-0.05",
+   "img": "basel",
+   "kind": "image",
+   "from": "river@1.6",
+   "to": "river@1.72",
+   "gray": 1
+  },
+  {
+   "at": "visit-0.08",
+   "img": "dostoevsky",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 0.35
+  },
+  {
+   "at": "visit.7-0.05",
+   "img": "anna",
+   "kind": "image",
+   "from": "face@0.75",
+   "to": "face@0.78",
+   "frame": true
+  },
+  {
+   "at": "visit.8-0.05",
+   "img": "basel",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 1
+  },
+  {
+   "at": "anna-0.08",
+   "img": "anna",
+   "kind": "image",
+   "from": "face@0.75",
+   "to": "face@0.78",
+   "frame": true
+  },
+  {
+   "at": "anna.6-0.05",
+   "img": "christ",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "gray": 0.6,
+   "sway": 0.005
+  },
+  {
+   "at": "anna.9-0.05",
+   "img": "dostoevsky",
+   "kind": "image",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "gray": 0.5
+  },
+  {
+   "at": "chair-0.08",
+   "img": "feet",
+   "kind": "image",
+   "from": "foot@1.5",
+   "to": "foot@1.62",
+   "gray": 0.6
+  },
+  {
+   "at": "chair.4-0.05",
+   "img": "full",
+   "kind": "image",
+   "from": "center@0.09",
+   "to": "center@0.093",
+   "frame": true
+  },
+  {
+   "at": "chair.7-0.05",
+   "img": "christ",
+   "from": "chest@1.4",
+   "to": "chest@1.55",
+   "sway": 0.006
+  },
+  {
+   "at": "novel-0.08",
+   "img": "dostoevsky",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.62",
+   "gray": 0.35
+  },
+  {
+   "at": "novel.8-0.05",
+   "img": "christ",
+   "from": "eye@2.3",
+   "to": "eye@2.45",
+   "sway": 0.005
+  },
+  {
+   "at": "novel.15-0.05",
+   "img": "christ",
+   "from": "mouth@1.6",
+   "to": "mouth@1.75",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "feet",
+   "kind": "image",
+   "from": "date@1.5",
+   "to": "date@1.62"
+  },
+  {
+   "at": "payoff.5-0.05",
+   "img": "christ",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "christ",
+   "from": "face@1.8",
+   "to": "face@2.0",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.2-0.1",
+   "text": "1521–22 · OIL ON LIMEWOOD"
+  },
+  {
+   "type": "label",
+   "from": "painted.2",
+   "to": "painted.4-0.1",
+   "text": "BASEL · 1493 VIEW"
+  },
+  {
+   "type": "label",
+   "from": "painted.4",
+   "to": "painted.6-0.1",
+   "text": "HOLBEIN · SELF-PORTRAIT"
+  },
+  {
+   "type": "label",
+   "from": "painted.11",
+   "to": "body-0.1",
+   "text": "30.5 × 200 CM"
+  },
+  {
+   "type": "label",
+   "from": "legend",
+   "to": "legend.8-0.1",
+   "text": "THE LEGEND"
+  },
+  {
+   "type": "label",
+   "from": "legend.8",
+   "to": "visit-0.1",
+   "text": "THE RHINE AT BASEL"
+  },
+  {
+   "type": "label",
+   "from": "visit",
+   "to": "visit.7-0.1",
+   "text": "DOSTOEVSKY · BY PEROV, 1872"
+  },
+  {
+   "type": "label",
+   "from": "visit.7",
+   "to": "visit.8-0.1",
+   "text": "ANNA DOSTOEVSKAYA · 1871"
+  },
+  {
+   "type": "label",
+   "from": "visit.8",
+   "to": "anna-0.1",
+   "text": "BASEL · AUGUST 1867"
+  },
+  {
+   "type": "label",
+   "from": "anna",
+   "to": "anna.6-0.1",
+   "text": "FROM ANNA'S MEMOIRS"
+  },
+  {
+   "type": "label",
+   "from": "chair.7",
+   "to": "novel-0.1",
+   "text": "FROM ANNA'S DIARY · 1867"
+  },
+  {
+   "type": "label",
+   "from": "novel",
+   "to": "novel.8-0.1",
+   "text": "THE IDIOT · 1869"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "payoff.5-0.1",
+   "text": "SIGNED · M D XXI · H H"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "KUNSTMUSEUM BASEL"
+  }
+ ],
+ "rights": {
+  "creator_died": 1543,
+  "note": "Holbein d. 1543 (PD); main detail PD, full-panel scan CC0; Perov portrait 1872 PD; Anna Dostoevskaya photo 1871 PD."
+ },
+ "nocap": [],
+ "music": {
+  "transpose": 1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "legend-0.2",
+    "chair$+0.2"
+   ],
+   "choir": [
+    "payoff.5-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "painted-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "visit.7",
+   "fx": "shutter",
+   "gain": 0.45
+  },
+  {
+   "at": "chair.9",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "novel.19",
+   "fx": "chime",
+   "gain": 0.5
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Painted by Hans Holbein the Younger in Basel, 1521–22 (inscribed M D XXI with his initials; begun 1521, finished 1522), oil and tempera on limewood",
+   "source": "https://en.wikipedia.org/wiki/The_Body_of_the_Dead_Christ_in_the_Tomb ; https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  },
+  {
+   "claim": "The panel measures 30.5 × 200 cm (about one foot high, two metres long); Christ lies in a narrow tomb niche",
+   "source": "https://en.wikipedia.org/wiki/The_Body_of_the_Dead_Christ_in_the_Tomb ; https://www.gazette-drouot.com/en/article/dostoyevsky-and-holbein-at-the-kunstmuseum-in-basel/30188"
+  },
+  {
+   "claim": "Eyes and mouth left open; face, hands, feet and wounds shown as realistic dead flesh in the early stages of putrefaction; Anna Dostoevskaya: 'the eyes are half open'",
+   "source": "https://en.wikipedia.org/wiki/The_Body_of_the_Dead_Christ_in_the_Tomb ; https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  },
+  {
+   "claim": "According to legend, Holbein used a body retrieved from the Rhine as his model (a legend, hedged in narration)",
+   "source": "https://en.wikipedia.org/wiki/The_Body_of_the_Dead_Christ_in_the_Tomb"
+  },
+  {
+   "claim": "In 1867 Dostoevsky and his wife Anna stopped in Basel for one day on their way to Geneva and saw the painting",
+   "source": "https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts ; https://about.jstor.org/blog/dostoevsky-and-the-challenge-of-hans-holbeins-dead-christ"
+  },
+  {
+   "claim": "Anna's memoir: he stood 'as if stunned'; his face had a kind of dread she had noticed during the first moments of an epileptic seizure; she led him to a bench, he calmed down and insisted on going back to the painting",
+   "source": "https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  },
+  {
+   "claim": "Anna's diary (24 [12] August 1867): he climbed on a chair to look, and she feared he would have to pay a fine",
+   "source": "https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts ; https://about.jstor.org/blog/dostoevsky-and-the-challenge-of-hans-holbeins-dead-christ (Joseph Frank, pp. 549–550)"
+  },
+  {
+   "claim": "In The Idiot (1868–69) Prince Myshkin, seeing a copy of the Holbein at Rogozhin's, cries: 'Why, a man's faith might be ruined by looking at that picture!' (Eva Martin translation)",
+   "source": "https://www.gutenberg.org/files/2638/2638-0.txt ; https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  },
+  {
+   "claim": "The museum describes it as 'the realistic depiction of the body of an executed man'",
+   "source": "https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  },
+  {
+   "claim": "It is in the Kunstmuseum Basel",
+   "source": "https://en.wikipedia.org/wiki/The_Body_of_the_Dead_Christ_in_the_Tomb ; https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  },
+  {
+   "claim": "P.S. (caption only): infrared reflectography and X-rays show the date was first 1522; Holbein painted over the final 'I' to read 1521",
+   "source": "https://kunstmuseumbasel.ch/en/exhibitions/2021/holbein-and-dostojewski/texts"
+  }
+ ],
+ "caption": "This is Jesus. And he's starting to rot.\n\nAround 1521 in Basel, Hans Holbein the Younger painted Christ dead in his tomb, on a panel 2 metres long and just 30.5 cm high. The eyes are still half open, the mouth hangs open, and the face, hand and feet show the first signs of decay. The legend says his model was a body pulled from the Rhine.\n\nIn 1867 Fyodor Dostoevsky and his wife Anna stopped in Basel for one day to see it. Anna wrote that he stood in front of it as if stunned, with the look of dread she knew from the first moments of his epileptic seizures. She led him away; he went back. Her diary says he even climbed on a chair to look closer, and she was afraid he'd be fined.\n\nLater, in The Idiot, Prince Myshkin cries: \"Why, a man's faith might be ruined by looking at that picture!\"\n\nP.S. The date painted at Christ's feet says 1521, but infrared scans show Holbein first wrote 1522 and painted over the last digit.\n\n🖤 Could you stand in front of it for long?",
+ "caption_short": "This is Jesus. And he's starting to rot. The Holbein painting that shook Dostoevsky. 🖤",
+ "youtube_title": "Can this painting kill your faith? Holbein's Dead Christ",
+ "hashtags_instagram": [
+  "#holbein",
+  "#deadchrist",
+  "#arthistory",
+  "#basel",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#holbein",
+  "#deadchrist",
+  "#dostoevsky"
+ ],
+ "hashtags": [
+  "#holbein",
+  "#deadchrist",
+  "#kunstmuseumbasel",
+  "#basel",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#dostoevsky",
+  "#renaissance"
+ ]
+}
