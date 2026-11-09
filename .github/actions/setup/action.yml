@@ -1,7 +1,7 @@
 name: setup
 description: Python, Node, ffmpeg, models (cached) and the Remotion studio for the reel pipeline
 inputs:
-  voice: { description: "auto = Chatterbox + reference clip when config.json voice_clone is on · install = Chatterbox only", required: false, default: "auto" }
+  voice: { description: "auto = Chatterbox + reference clip when config.json voice_clone is on · install = Chatterbox only · none", required: false, default: "auto" }
 runs:
   using: composite
   steps:
@@ -22,6 +22,7 @@ runs:
       run: |
         on=$(python3 -c "import json; print('true' if (json.load(open('config.json')).get('voice_clone') or {}).get('enabled') else 'false')")
         [ "${{ inputs.voice }}" = "install" ] && on=true
+        [ "${{ inputs.voice }}" = "none" ] && on=false
         echo "on=$on" >> "$GITHUB_OUTPUT"
     - if: steps.vc.outputs.on == 'true'
       uses: actions/cache@v4

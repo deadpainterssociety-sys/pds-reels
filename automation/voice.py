@@ -1,18 +1,23 @@
 """The cloned voice (Chatterbox): recordings in, test versions out, Gigi's pick becomes the channel's voice.
 
-Recordings and reference clips live ONLY in the private data release (dps-data, a draft): the repo is public, and a clean
-recording of someone's voice is enough to clone it.
+Recordings, reference clips and phrase caches live ONLY in the private data release (dps-data, a draft): the repo is
+public, and a clean recording of someone's voice is enough to clone it.
 
-  bot  -> intake(chat, msg)                 a voice message / audio file sent to the bot: stored as voice-sample-<time>.<ext>,
-                                            starts the voice workflow (mode test)
-  python automation/voice.py send <dir> <run>      (CI) store the candidate clips, send the test versions with ✅ buttons
-  bot  -> choose(chat, run, n, message_id)  a ✅ tap: that clip -> voice-ref.wav, its settings -> config.json voice_clone
-  python automation/voice.py fetch-ref             (CI) voice-ref.wav -> models/voice/ref.wav (used by pipeline/tts_clone.py)
-  python automation/voice.py sample [name] <file>  (CI) a stored recording -> file (empty name = the latest)
-  python automation/voice.py park <slug>           (Claude, outside CI) a long video's story.json + phrase cache -> branch voice-in-<slug>
-  python automation/voice.py ci-in <slug> / ci-out <slug>    (CI) unpack it / push the voiced result to voice-out-<slug>
-  python automation/voice.py unpark <slug>         (Claude) fetch voice-out-<slug> into stories/<slug>/, delete both branches
-  bot  -> status_text()                     /voice
+  bot  -> intake(chat, msg)          a voice message / audio file sent to the bot -> voice-sample-<time>.<ext>; starts the
+                                     voice workflow (mode test)
+  bot  -> choose(chat, run, n, id)   a ✅ tap: that version's clip -> voice-ref.wav, its settings -> config.json voice_clone
+  bot  -> status_text() / switch()   /voice, /voice on|off
+  CI   sample [name] <file>          a stored recording (empty name = the latest)
+       prep <dir> <run>              after pipeline/voice_ref.py: store the candidate clips, tell Gigi, print the matrix
+       get-refs <run> <dir>          (one machine per version) the candidate clips
+       send-one <dir> <run> <n>      that version -> Telegram with its ✅ button        test-done <run>   the closing note
+       fetch-ref                     voice-ref.wav -> models/voice/ref.wav (setup action, when voice_clone is on)
+  long videos (rendered by Claude outside CI, where Chatterbox can't run; voiced on N machines at once):
+       park <slug>                   (Claude) story.json -> branch voice-in-<slug>, start the workflow (mode story)
+       ci-in <slug>                  (CI) story.json + the cached phrases of earlier runs
+       shard-put <slug> <run> <k>    (CI, machine k) its new phrases     shard-get <slug> <run>  (CI) all of them
+       ci-out <slug>                 (CI) voice-out-<slug>.tar + voice-cache-<slug>.tar, delete the branch
+       unpark <slug>                 (Claude) voice-out-<slug>.tar -> stories/<slug>/build/
 """
 import datetime, glob, hashlib, json, os, shutil, subprocess, sys, tempfile, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -70,10 +75,10 @@ def intake(chat, msg):
 
 def choose(chat, run, n, message_id=None):
     t, r = T(), R()
-    raw = r.data_get(f"voice-test-{run}.json")
+    raw = r.data_get(f"voice-test-{run}-{n}.json")
     if not raw: t.send(chat, "⚠️ I can't find that voice test any more. Send the recording again."); return
-    test = json.loads(raw); v = next((x for x in test["variants"] if str(x["n"]) == str(n)), None)
-    ref = r.data_get(f"voice-cand-{run}-{v['ref']}") if v else None
+    v = json.loads(raw)
+    ref = r.data_get(f"voice-cand-{run}-{v['ref']}")
     if not ref: t.send(chat, "⚠️ That version's clip is missing. Send the recording again."); return
     r.data_put("voice-ref.wav", ref, "audio/wav")
     cfg = jload("config.json", {})
@@ -116,28 +121,55 @@ def sample(name, dest):
     open(dest, "wb").write(data); print(f"{name}: {len(data) // 1024} KB")
 
 
-def send(out, run):
+def _noise(rep):
+    snr = rep.get("snr_db", 0)
+    return "very clean" if snr > 45 else "clean" if snr > 32 else "a little background noise" if snr > 22 else "noisy: re-record somewhere quieter"
+
+
+def prep(out, run):
+    """after voice_ref.py: keep the candidate clips in the private release, tell Gigi what's coming. Prints the versions
+    to make as a JSON list (the workflow's matrix)."""
     t, r = T(), R()
     from bot import chat_id
     chat = chat_id(); rep = json.load(open(os.path.join(out, "report.json")))
-    if rep.get("error") or not os.path.exists(os.path.join(out, "variants.json")):
-        t.send(chat, f"🎙 I couldn't use that recording: {t.esc(rep.get('error', 'the voice test failed'))}.\n\n" + TIPS); return
-    variants = json.load(open(os.path.join(out, "variants.json")))
-    for ref in sorted({v["ref"] for v in variants}):
-        r.data_put(f"voice-cand-{run}-{ref}", open(os.path.join(out, "refs", ref), "rb").read(), "audio/wav")
-    r.data_put(f"voice-test-{run}.json", json.dumps({"variants": variants, "report": rep, "sample": os.environ.get("SAMPLE", "")}))
-    snr = rep.get("snr_db", 0)
-    noise = "very clean" if snr > 45 else "clean" if snr > 32 else "a little background noise" if snr > 22 else "noisy: re-record somewhere quieter"
-    t.send(chat, f"🎙 <b>Voice test</b>: {rep['speech_s']:.0f} s of speech in your recording, {noise}. Here are the first lines of the "
-                 f"Medusa Short in four versions of your cloned voice (same words as the posted Short, so you can compare).")
-    for v in variants:
-        kb = [[{"text": f"✅ Use {v['label']}", "callback_data": f"vc:{run}:{v['n']}"}]]
-        cap = f"<b>{v['label']}</b>: {t.esc(v['note'])}"
-        t.call("sendAudio", {"chat_id": chat, "caption": cap, "parse_mode": "HTML", "title": f"Voice test {v['label']}",
-                             "performer": "Dead Painters Society", "reply_markup": {"inline_keyboard": kb}},
-               {"audio": os.path.join(out, v["file"])}, timeout=300)
-    t.send(chat, "Tap ✅ under the one you like and it becomes the voice of every reel and long video from then on. "
-                 "Not quite you? Send another recording (tips: /voice help).")
+    if rep.get("error") or not rep.get("clips"):
+        if os.environ.get("MODE") == "test":
+            t.send(chat, f"🎙 I couldn't use that recording: {t.esc(rep.get('error', 'no usable stretch of speech'))}.\n\n" + TIPS)
+        print("versions=[]"); return
+    refs = [c["file"] for c in rep["clips"]]
+    for ref in refs: r.data_put(f"voice-cand-{run}-{ref}", open(os.path.join(out, ref), "rb").read(), "audio/wav")
+    r.data_put(f"voice-test-{run}.json", json.dumps({"report": rep, "sample": os.environ.get("SAMPLE", "")}))
+    if os.environ.get("MODE") == "test":
+        t.send(chat, f"🎙 <b>Voice test</b>: {rep['speech_s']:.0f} s of speech in your recording, {_noise(rep)}. Four versions of your cloned "
+                     f"voice reading the start of the Medusa Short (the same words as the posted Short, so you can compare) arrive here "
+                     f"one by one in the next 10–20 min.")
+    print("versions=" + json.dumps([1, 2, 3, 4] if "ref2.wav" in refs else [1, 2, 3]))
+
+
+def get_refs(run, dest):
+    """(a test machine) the candidate clips from the private release"""
+    os.makedirs(dest, exist_ok=True); r = R()
+    for name in r.data_list(f"voice-cand-{run}-"):
+        open(os.path.join(dest, name[len(f"voice-cand-{run}-"):]), "wb").write(r.data_get(name))
+
+
+def send_one(out, run, n):
+    """(a test machine) one finished version -> Telegram with its ✅ button"""
+    t, r = T(), R()
+    from bot import chat_id
+    v = next((x for x in json.load(open(os.path.join(out, "variants.json"))) if str(x["n"]) == str(n)), None)
+    if not v: raise SystemExit(f"version {n} was not made")
+    r.data_put(f"voice-test-{run}-{n}.json", json.dumps(v))
+    kb = [[{"text": f"✅ Use {v['label']}", "callback_data": f"vc:{run}:{n}"}]]
+    t.call("sendAudio", {"chat_id": chat_id(), "caption": f"<b>{v['label']}</b>: {t.esc(v['note'])}", "parse_mode": "HTML",
+                         "title": f"Voice test {v['label']}", "performer": "Dead Painters Society", "reply_markup": {"inline_keyboard": kb}},
+           {"audio": os.path.join(out, v["file"])}, timeout=300)
+
+
+def test_done(run):
+    from bot import chat_id
+    T().send(chat_id(), "Tap ✅ under the version you like: it becomes the voice of every reel and long video from then on. "
+                        "None sounds like you? Send another recording (/voice help has tips).")
 
 
 TIPS = ("How to record (1–3 min is plenty: the model listens to about 10 s, the rest lets me pick the best stretch):\n"
@@ -177,50 +209,89 @@ def _pull(branch, dest):
     subprocess.run(f"git archive FETCH_HEAD | tar -x -C '{dest}'", shell=True, cwd=ROOT, check=True)
 
 
+def _tar_put(name, src_dir, files=None):
+    import io, tarfile
+    buf = io.BytesIO()
+    with tarfile.open(fileobj=buf, mode="w") as tf:
+        for f in (files if files is not None else sorted(os.listdir(src_dir))): tf.add(os.path.join(src_dir, f), arcname=f)
+    R().data_put(name, buf.getvalue(), "application/x-tar"); return len(files if files is not None else os.listdir(src_dir))
+
+
+def _tar_get(name, dest):
+    import io, tarfile
+    data = R().data_get(name)
+    if not data: return False
+    os.makedirs(dest, exist_ok=True)
+    with tarfile.open(fileobj=io.BytesIO(data)) as tf: tf.extractall(dest, filter="data")
+    return True
+
+
 def park(slug):
+    """(Claude) story.json -> branch voice-in-<slug> (story.json is public anyway), then start the voice workflow"""
     sd = os.path.join(ROOT, "stories", slug)
     with tempfile.TemporaryDirectory(dir=os.path.join(ROOT, "..")) as tmp:
         shutil.copy(os.path.join(sd, "story.json"), tmp)
-        cache = os.path.join(sd, "src", "voice")
-        if os.path.isdir(cache): shutil.copytree(cache, os.path.join(tmp, "voice"))
         _push_dir(tmp, f"voice-in-{slug}", f"voice {slug} (temporary)")
     r = dispatch(mode="story", slug=slug)
-    print(r.stdout or r.stderr or f"parked and dispatched: voice-in-{slug}")
+    print(r.stderr or f"parked story.json on voice-in-{slug} and started the voice workflow")
 
 
 def ci_in(slug):
-    sd = os.path.join(ROOT, "stories", slug); os.makedirs(os.path.join(sd, "src"), exist_ok=True)
+    """(CI) story.json from the branch + the phrases voiced in earlier runs (private release) -> stories/<slug>/"""
+    sd = os.path.join(ROOT, "stories", slug); os.makedirs(os.path.join(sd, "src", "voice"), exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
-        _pull(f"voice-in-{slug}", tmp)
-        shutil.copy(os.path.join(tmp, "story.json"), sd)
-        if os.path.isdir(os.path.join(tmp, "voice")): shutil.copytree(os.path.join(tmp, "voice"), os.path.join(sd, "src", "voice"), dirs_exist_ok=True)
-    subprocess.run(["git", "push", "-q", "origin", "--delete", f"voice-in-{slug}"], cwd=ROOT)
+        _pull(f"voice-in-{slug}", tmp); shutil.copy(os.path.join(tmp, "story.json"), sd)
+    print("cached phrases from earlier runs:", "yes" if _tar_get(f"voice-cache-{slug}.tar", os.path.join(sd, "src", "voice")) else "none")
+
+
+def shard_put(slug, run, k):
+    """(CI, one of N machines) the phrases this machine voiced -> private release"""
+    cache = os.path.join(ROOT, "stories", slug, "src", "voice")
+    new = [f for f in os.listdir(cache) if os.path.getmtime(os.path.join(cache, f)) > float(os.environ.get("SHARD_T0", 0))]
+    print(_tar_put(f"voice-shard-{slug}-{run}-{k}.tar", cache, new), "new phrases stored")
+
+
+def shard_get(slug, run):
+    """(CI, the assembling machine) every machine's phrases -> the cache; the shard files are deleted"""
+    r = R(); cache = os.path.join(ROOT, "stories", slug, "src", "voice")
+    for name in r.data_list(f"voice-shard-{slug}-{run}-"):
+        _tar_get(name, cache); r.data_delete(name)
+    print(len(os.listdir(cache)), "phrases in the cache")
 
 
 def ci_out(slug):
+    """(CI) voice.wav + timeline.json -> private release (voice-out-<slug>.tar), the whole phrase cache kept for re-runs"""
     sd = os.path.join(ROOT, "stories", slug)
-    with tempfile.TemporaryDirectory() as tmp:
-        for f in ("voice.wav", "timeline.json"): shutil.copy(os.path.join(sd, "build", f), tmp)
-        shutil.copytree(os.path.join(sd, "src", "voice"), os.path.join(tmp, "voice"))
-        _push_dir(tmp, f"voice-out-{slug}", f"voiced {slug} (temporary)")
+    _tar_put(f"voice-cache-{slug}.tar", os.path.join(sd, "src", "voice"))
+    _tar_put(f"voice-out-{slug}.tar", os.path.join(sd, "build"), ["voice.wav", "timeline.json"])
+    subprocess.run(["git", "push", "-q", "origin", "--delete", f"voice-in-{slug}"], cwd=ROOT)
+    print("voiced:", json.load(open(os.path.join(sd, "build", "timeline.json")))["duration"], "s")
 
 
 def unpark(slug):
-    sd = os.path.join(ROOT, "stories", slug)
+    """(Claude) voice-out-<slug>.tar from the private release -> stories/<slug>/build/ (then run pipeline/align.py)"""
+    sd = os.path.join(ROOT, "stories", slug); b = os.path.join(sd, "build")
+    rel = json.loads(subprocess.run(["gh", "api", "repos/{owner}/{repo}/releases?per_page=100"], cwd=ROOT, capture_output=True, text=True, check=True).stdout)
+    a = next((a for x in rel if x.get("tag_name") == "dps-data" for a in x.get("assets", []) if a["name"] == f"voice-out-{slug}.tar"), None)
+    if not a: raise SystemExit(f"voice-out-{slug}.tar isn't there yet (is the voice workflow still running?)")
     with tempfile.TemporaryDirectory(dir=os.path.join(ROOT, "..")) as tmp:
-        _pull(f"voice-out-{slug}", tmp)
-        os.makedirs(os.path.join(sd, "build"), exist_ok=True)
-        for f in ("voice.wav", "timeline.json"): shutil.move(os.path.join(tmp, f), os.path.join(sd, "build", f))
-        shutil.copytree(os.path.join(tmp, "voice"), os.path.join(sd, "src", "voice"), dirs_exist_ok=True)
-    subprocess.run(["git", "push", "-q", "origin", "--delete", f"voice-out-{slug}"], cwd=ROOT)
-    tl = json.load(open(os.path.join(sd, "build", "timeline.json")))
+        tp = os.path.join(tmp, "o.tar")
+        with open(tp, "wb") as fo:
+            subprocess.run(["gh", "api", "-H", "Accept: application/octet-stream", f"repos/{{owner}}/{{repo}}/releases/assets/{a['id']}"], cwd=ROOT, stdout=fo, check=True)
+        os.makedirs(b, exist_ok=True); subprocess.run(["tar", "-xf", tp, "-C", b], check=True)
+    tl = json.load(open(os.path.join(b, "timeline.json")))
     print(f"{slug}: {tl['voice']} {tl['duration']} s -> build/voice.wav + timeline.json (run pipeline/align.py next)")
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
     cmd = a[0]
-    if cmd == "send": send(a[1], a[2])
+    if cmd == "prep": prep(a[1], a[2])
+    elif cmd == "get-refs": get_refs(a[1], a[2])
+    elif cmd == "send-one": send_one(a[1], a[2], a[3])
+    elif cmd == "test-done": test_done(a[1])
+    elif cmd == "shard-put": shard_put(a[1], a[2], a[3])
+    elif cmd == "shard-get": shard_get(a[1], a[2])
     elif cmd == "fetch-ref": fetch_ref()
     elif cmd == "sample": sample(a[1] if len(a) > 2 else "", a[-1])
     elif cmd == "park": park(a[1])

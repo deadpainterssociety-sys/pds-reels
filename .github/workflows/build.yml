@@ -59,7 +59,7 @@ jobs:
           python3 automation/release.py download-src "$SLUG"
           ./make_reel.sh "$SLUG" 0 8
       - run: |
-          python3 automation/release.py upload "$SLUG"
+          python3 automation/release.py upload-src "$SLUG"      # keeps the voiced phrases (src/voice) for revisions
           python3 -c "import json, sys; sys.path.insert(0,'automation'); from common import set_state; set_state('$SLUG', status='built', duration_s=round(json.load(open('stories/$SLUG/build/timeline.json'))['duration'], 1))"
           python3 automation/bot.py review "$SLUG"
       - if: always()

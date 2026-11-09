@@ -4,6 +4,7 @@ config.json voice_clone.enabled is true and the reference clip models/voice/ref.
 (the repo is public): CI fetches it from the private data release.
 
 usage: <venv>/bin/python pipeline/tts_clone.py <story>        -> build/voice.wav + timeline.json (same format as tts.py)
+       <venv>/bin/python pipeline/tts_clone.py <story> --shard k/N   only fill the phrase cache (one of N machines)
 
 How it differs from Kokoro:
 - Pronunciation: Chatterbox reads plain text, no phonemes, so `ipa` is ignored. Use `respell` instead
@@ -99,17 +100,41 @@ def heard(a):
     return _asr.transcribe(a, SR)[0] if _asr else None
 
 
-def score(a, spoken, skip):
-    """1.0 = every word heard, nothing extra; names the recogniser can't know (respelled/ipa words) don't count"""
+def _chars(words): return "".join(norm(w) for w in words)
+
+
+_ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+_TENS = "_ _ twenty thirty forty fifty sixty seventy eighty ninety".split()
+
+
+def _num(n):
+    """15 -> fifteen, 150 -> one hundred and fifty (the recogniser writes numbers as digits, scripts often as words)"""
+    if n < 20: return _ONES[n]
+    if n < 100: return _TENS[n // 10] + ("" if n % 10 == 0 else " " + _ONES[n % 10])
+    if n < 1000: return _ONES[n // 100] + " hundred" + ("" if n % 100 == 0 else " and " + _num(n % 100))
+    if n < 1000000: return _num(n // 1000) + " thousand" + ("" if n % 1000 == 0 else " " + _num(n % 1000))
+    return str(n)
+
+
+def _spell_numbers(t): return re.sub(r"\d+", lambda m: _num(int(m.group())), t.replace(",", ""))
+
+
+def score(a, variants, skip):
+    """1.0 = every word heard, nothing extra. Compared letter by letter (so "onto" = "on to") against each way of writing
+    the phrase (digits or words: "1816" = "eighteen sixteen"); names the recogniser can't know (respelled/ipa) don't count"""
     text = heard(a)
     if text is None: return 1.0, ""
-    want = [norm(w) for w in spoken.split() if norm(w) and norm(w) not in skip]
-    got = [norm(w) for w in text.split() if norm(w)]
-    hit = sum(b.size for b in difflib.SequenceMatcher(a=want, b=got, autojunk=False).get_matching_blocks())
-    extra = max(0, len(got) - len(spoken.split()) - 1)       # rambling / a repeated phrase
-    n = len(spoken.split()); dur = len(a) / SR
-    slow = max(0.0, dur - (0.9 * n + 1.0))                     # far longer than the words need: babble or a long hum
-    return round(hit / max(1, len(want)) - 0.15 * extra - 0.1 * slow, 3), text
+    got = [w for w in text.split() if norm(w)]
+    best = 0.0
+    for G in {_chars(got), _chars(_spell_numbers(text).split())}:
+        for v in variants:
+            W = _chars(w for w in v.split() if norm(w) and norm(w) not in skip)
+            hit = sum(b.size for b in difflib.SequenceMatcher(a=W, b=G, autojunk=False).get_matching_blocks())
+            best = max(best, hit / max(1, len(W)))
+    n = max(len(v.split()) for v in variants)
+    extra = max(0, len(got) - n - 1)                         # rambling / a repeated phrase
+    slow = max(0.0, len(a) / SR - (0.9 * n + 1.0))            # far longer than the words need: babble or a long hum
+    return round(best - 0.15 * extra - 0.1 * slow, 3), text
 
 
 class Voice:
@@ -122,16 +147,21 @@ class Voice:
         os.makedirs(cache, exist_ok=True)
 
     def texts(self, text):
-        t = text.replace("*", "").replace("…", "...")
+        raw = t = text.replace("*", "").replace("…", "...")
         for k, v in self.say.items(): t = re.sub(rf"\b{re.escape(k)}\b", v, t)
-        spoken = t                                            # what a listener should hear (for the check)
+        heard_as = [t, raw]                                   # what a listener should hear (for the check)
         for k, v in self.respell.items(): t = re.sub(rf"\b{re.escape(k)}\b", v, t)
-        return spoken, t
+        return heard_as, t
+
+    def key(self, text):
+        cv = self.cv; t = self.texts(text)[1]
+        return hashlib.sha1(json.dumps([VERSION, cv["model"], self.refhash, cv["exaggeration"], cv["cfg"], cv["temperature"], t]).encode()).hexdigest()[:16]
+
+    def has(self, text): return os.path.exists(os.path.join(self.cache, self.key(text) + ".wav"))
 
     def phrase(self, text):
         spoken, t = self.texts(text)
-        cv = self.cv
-        key = hashlib.sha1(json.dumps([VERSION, cv["model"], self.refhash, cv["exaggeration"], cv["cfg"], cv["temperature"], t]).encode()).hexdigest()[:16]
+        cv = self.cv; key = self.key(text)
         path = os.path.join(self.cache, key + ".wav")
         if os.path.exists(path):
             self.cached += 1; return sf.read(path, dtype="float32")[0], None
@@ -140,7 +170,7 @@ class Voice:
             a = trim(generate(cv, self.ref, t, int(key[:8], 16) + k))
             s, h = score(a, spoken, self.skip)
             if best is None or s > best[0]: best = (s, a, h)
-            if s >= 0.95: break
+            if s >= 0.9: break
             print(f"   retry ({s:.2f}) {t!r} heard {h!r}", flush=True)
         self.made += 1; self.secs += time.time() - t0; self.audio_s += len(best[1]) / SR
         sf.write(path, best[1], SR)
@@ -168,7 +198,7 @@ def render(v, lines, say, cv, tail):
         words_all, l_s = [], t
         for text, pause, sp in ln["perf"]:
             a, info = v.phrase(text)
-            if info and info[0] < 0.95: weak.append((ln["id"], text, info[0], info[2]))
+            if info and info[0] < 0.9: weak.append((ln["id"], text, info[0], info[2]))
             a = stretch(a, max(0.8, min(1.1, float(sp) / 0.95)) * float(cv["tempo"]))
             f = int(0.008 * SR); a = a.copy(); a[:f] *= np.linspace(0, 1, f); a[-f:] *= np.linspace(1, 0, f)
             dur = len(a) / SR
@@ -188,7 +218,9 @@ def render(v, lines, say, cv, tail):
     return full / np.abs(full).max() * 0.89, tl, weak
 
 
-def story_voice(slug_or_dir):
+def story_voice(slug_or_dir, shard=None):
+    """shard "k/N": only voice (into the cache) the phrases i with i % N == k that aren't cached yet; no voice.wav.
+    The voice workflow runs N shards on N machines, then one plain run assembles everything from the cache."""
     from paths import story_dir
     sdir = story_dir(slug_or_dir)
     story = json.load(open(os.path.join(sdir, "story.json")))
@@ -196,6 +228,13 @@ def story_voice(slug_or_dir):
     cv = settings(); lang = story.get("lang", "en-us"); t0 = time.time()
     say, respell, skip = words_of(story)
     v = Voice(cv, REF, os.path.join(sdir, "src", "voice"), say, respell, skip)
+    if shard:
+        k, n = map(int, shard.split("/"))
+        todo = [p[0] for i, p in enumerate(x for ln in story["lines"] for x in ln["perf"]) if i % n == k]
+        for text in todo:
+            if not v.has(text): v.phrase(text)
+        print(f"shard {shard}: {v.made} phrases voiced ({v.audio_s:.0f} s of speech, {v.secs:.0f} s), {len(todo) - v.made} already cached")
+        return
     full, tl, weak = render(v, story["lines"], say, cv, story.get("tail", 2.2))
     sf.write(os.path.join(out, "voice.wav"), full, SR)
     json.dump({"voice": f"clone:{cv['model']}", "lang": lang, "duration": round(len(full) / SR, 3), "lines": tl},
@@ -208,4 +247,4 @@ def story_voice(slug_or_dir):
 
 
 if __name__ == "__main__":
-    story_voice(sys.argv[1])
+    story_voice(sys.argv[1], sys.argv[3] if len(sys.argv) > 3 and sys.argv[2] == "--shard" else None)

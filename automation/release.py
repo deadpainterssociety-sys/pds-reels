@@ -164,6 +164,11 @@ def data_put(name, data, ctype="application/json"):
     gh("POST", f"{rel['upload_url'].split('{')[0]}?name={name}", data, {"Content-Type": ctype})
 
 
+def data_delete(name):
+    for a in data_release().get("assets", []):
+        if a["name"] == name: gh("DELETE", f"/repos/{REPO}/releases/assets/{a['id']}")
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "download-publish": download(sys.argv[2], files=PUBLISH_FILES)
     elif sys.argv[1] == "upload-long": upload_long(sys.argv[2])

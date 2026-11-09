@@ -1,36 +1,42 @@
-# The cloned voice (Chatterbox, pipeline/tts_clone.py).
-#  test      a recording Gigi sent the bot (private data release) -> the 3 best 10-13 s clips -> four versions of the opening
-#            of the Medusa Short -> Telegram with ✅ buttons (her tap sets config.json voice_clone; automation/voice.py)
-#  story     voice a long video's narration (long videos are rendered outside CI, where Chatterbox can't run): story.json
-#            + phrase cache come in on branch voice-in-<slug>, voice.wav + timeline.json go back on voice-out-<slug>
+# The cloned voice (Chatterbox, pipeline/tts_clone.py). Chatterbox needs ~8-20 s of CPU per second of speech, so the work
+# is spread over several machines at once.
+#  test      a recording Gigi sent the bot -> the best 10-13 s clips -> four versions of the opening of the Medusa Short,
+#            one per machine, each sent to Telegram with its ✅ button as soon as it is ready (her tap sets
+#            config.json voice_clone; automation/voice.py)
+#  story     a long video's narration (Claude renders long videos outside CI, where Chatterbox can't run): story.json comes
+#            in on branch voice-in-<slug>; 8 machines voice an eighth of the phrases each; one assembles voice.wav +
+#            timeline.json into the private release (voice-out-<slug>.tar) for automation/voice.py unpark
 #  selftest  the test pipeline on a stand-in recording made with the old synthetic voice (no real person): checks the
 #            install and measures the speed. Sends nothing to Telegram.
-# Recordings and reference clips never touch git or the logs: this repo is public.
+# Recordings, clips and phrases live only in the private data release, never in git, artifacts or logs: this repo is public.
 name: voice
 on:
   workflow_dispatch:
     inputs:
       mode: { description: "test | story | selftest", required: true, default: "test" }
       sample: { description: "test: the recording's name in the data release (empty = the latest)", required: false, default: "" }
-      slug: { description: "story: the story to voice (its files wait on branch voice-in-<slug>)", required: false, default: "" }
+      slug: { description: "story: the story to voice (story.json waits on branch voice-in-<slug>)", required: false, default: "" }
 concurrency: { group: "voice-${{ inputs.mode }}-${{ inputs.slug }}", cancel-in-progress: false }
 permissions: { contents: write }
+env:
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  GITHUB_TOKEN: ${{ github.token }}
+  MODE: ${{ inputs.mode }}
+  SAMPLE: ${{ inputs.sample }}
+  SLUG: ${{ inputs.slug }}
+  RUN: ${{ github.run_id }}
 jobs:
-  run:
+  prep:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
-    env:
-      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      GITHUB_TOKEN: ${{ github.token }}
-      MODE: ${{ inputs.mode }}
-      SAMPLE: ${{ inputs.sample }}
-      SLUG: ${{ inputs.slug }}
+    timeout-minutes: 30
+    outputs: { list: "${{ steps.list.outputs.list }}" }
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup
-        with: { voice: "${{ inputs.mode == 'story' && 'auto' || 'install' }}" }
-      - name: The recording
+      - if: inputs.mode != 'story'
+        uses: ./.github/actions/setup
+        with: { voice: none }
+      - name: The recording -> the best reference clips
         if: inputs.mode != 'story'
         run: |
           mkdir -p "$RUNNER_TEMP/vt"
@@ -54,32 +60,57 @@ jobs:
           else
             python3 automation/voice.py sample "$SAMPLE" "$RUNNER_TEMP/vt/rec.bin"
           fi
-      - name: The best reference clips
-        if: inputs.mode != 'story'
-        run: |
           python3 pipeline/voice_ref.py "$RUNNER_TEMP"/vt/rec.* "$RUNNER_TEMP/vt/refs" 3 > /dev/null
           python3 -c "import json,sys; r=json.load(open(sys.argv[1])); print({k: v for k, v in r.items() if k != 'clips'}, len(r['clips']), 'clips')" "$RUNNER_TEMP/vt/refs/report.json"
-      - name: Four test versions
+      - id: list
+        run: |
+          if [ "$MODE" = "story" ]; then echo 'list=[0,1,2,3,4,5,6,7]' >> "$GITHUB_OUTPUT"
+          else python3 automation/voice.py prep "$RUNNER_TEMP/vt/refs" "$RUN" | sed 's/^versions=/list=/' | tail -1 >> "$GITHUB_OUTPUT"; fi
+
+  make:
+    needs: prep
+    if: needs.prep.outputs.list != '[]' && needs.prep.outputs.list != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix: { k: "${{ fromJSON(needs.prep.outputs.list) }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with: { voice: "${{ inputs.mode == 'story' && 'auto' || 'install' }}" }
+      - name: One test version
         if: inputs.mode != 'story'
         run: |
-          cp "$RUNNER_TEMP/vt/refs/report.json" "$RUNNER_TEMP/vt/report.json"
-          if python3 -c "import json,sys; sys.exit(1 if json.load(open(sys.argv[1])).get('error') else 0)" "$RUNNER_TEMP/vt/report.json"; then
-            .venv-cb/bin/python pipeline/voice_test.py "$RUNNER_TEMP/vt/refs" "$RUNNER_TEMP/vt" gericault-medusa 6 2>&1 | grep -v "heard\"" | grep -vi "warn\|deprecat\|sampling\|it/s\]" || true
-            python3 -c "import json,sys; [print(v['label'], v['model'], 'match', v['match'], 'cpu/s', v['cpu_per_s'], 'made in', v['make_s'], 's') for v in json.load(open(sys.argv[1]))]" "$RUNNER_TEMP/vt/variants.json"
-          fi
-      - name: Send them to Telegram
-        if: inputs.mode == 'test'
-        run: python3 automation/voice.py send "$RUNNER_TEMP/vt" "${{ github.run_id }}"
-      - name: Stand-in results (synthetic voice only)
-        if: inputs.mode == 'selftest'
-        uses: actions/upload-artifact@v4
-        with: { name: voice-selftest, path: "${{ runner.temp }}/vt/v*.mp3\n${{ runner.temp }}/vt/variants.json", retention-days: 2 }
-
-      - name: Voice the story
+          python3 automation/voice.py get-refs "$RUN" "$RUNNER_TEMP/refs"
+          .venv-cb/bin/python pipeline/voice_test.py "$RUNNER_TEMP/refs" "$RUNNER_TEMP/vt" gericault-medusa 6 ${{ matrix.k }} 2>&1 | grep --line-buffered -E "^==|loaded in|retry|\"label\"|Error|Traceback" | sed 's/"heard": "[^"]*", //' || true
+          test -f "$RUNNER_TEMP/vt/v${{ matrix.k }}.mp3"
+          if [ "$MODE" = "test" ]; then python3 automation/voice.py send-one "$RUNNER_TEMP/vt" "$RUN" ${{ matrix.k }}; fi
+      - name: An eighth of the narration
         if: inputs.mode == 'story'
         run: |
           python3 automation/voice.py ci-in "$SLUG"
-          .venv-cb/bin/python pipeline/tts_clone.py "$SLUG" 2>&1 | grep -vi "warn\|deprecat\|sampling\|it/s\]"
+          export SHARD_T0=$(date +%s)
+          .venv-cb/bin/python pipeline/tts_clone.py "$SLUG" --shard ${{ matrix.k }}/8 2>&1 | grep --line-buffered -E "loaded in|retry|shard|Error|Traceback"
+          python3 automation/voice.py shard-put "$SLUG" "$RUN" ${{ matrix.k }}
+
+  finish:
+    needs: [prep, make]
+    if: always() && needs.prep.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - if: inputs.mode == 'test' && needs.make.result != 'skipped'
+        run: python3 automation/voice.py test-done "$RUN"
+      - if: inputs.mode == 'story'
+        uses: ./.github/actions/setup
+      - name: Put the narration together
+        if: inputs.mode == 'story'
+        run: |
+          python3 automation/voice.py ci-in "$SLUG"
+          python3 automation/voice.py shard-get "$SLUG" "$RUN"
+          .venv-cb/bin/python pipeline/tts_clone.py "$SLUG" 2>&1 | grep -vE "^\s+\S+\s+[0-9.]+ s$|it/s\]|Warning|warn"
           python3 automation/voice.py ci-out "$SLUG"
-      - if: failure()
+      - if: (failure() || needs.make.result == 'failure') && inputs.mode != 'selftest'
         run: python3 automation/bot.py say "⚠️ The voice job ($MODE) failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

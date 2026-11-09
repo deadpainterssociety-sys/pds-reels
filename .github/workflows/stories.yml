@@ -34,6 +34,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           N: ${{ steps.need.outputs.n }}
           IDEA: ${{ inputs.idea }}
+          VOICE: kokoro       # Claude's voice checks use the fast voice; the cloned voice (if on) is made at the morning build
         run: |
           TASK="Produce $N new reel(s), following CLAUDE.md exactly (it is your complete brief: research, script, voice, visuals, cover, checks, scheduling)."
           if [ -n "$IDEA" ]; then TASK="$TASK Gigi suggested this idea - use it for the first reel if it passes the rules: $IDEA"; fi

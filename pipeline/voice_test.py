@@ -1,7 +1,8 @@
 """Voice test for Telegram: the opening of a Short Gigi already knows, in up to four versions of the cloned voice.
 Runs in Chatterbox's environment (automation/voice_env.sh) after pipeline/voice_ref.py has cut the reference clips.
 
-usage: <venv>/bin/python pipeline/voice_test.py <refs_dir> <out_dir> [story=gericault-medusa] [lines=6]
+usage: <venv>/bin/python pipeline/voice_test.py <refs_dir> <out_dir> [story=gericault-medusa] [lines=6] [only=n]
+       (the voice workflow runs one version per machine: only=1..4)
        -> out_dir/v1.mp3 … + variants.json [{n, label, note, model, ref, exaggeration, cfg, cpu_per_s, match, file}]
 """
 import json, os, subprocess, sys, time
@@ -13,19 +14,19 @@ from paths import story_dir
 VARIANTS = [   # label, model, reference clip, exaggeration, cfg, what to listen for
     ("A", "original", "ref1.wav", 0.5, 0.5, "balanced (Chatterbox's defaults)"),
     ("B", "original", "ref1.wav", 0.7, 0.3, "more expressive and a little slower"),
-    ("C", "turbo", "ref1.wav", 0.5, 0.5, "Turbo model: about 3× quicker to make, a bit plainer"),
+    ("C", "turbo", "ref1.wav", 0.5, 0.5, "Turbo model: about 2.5× quicker to make, a bit plainer"),
     ("D", "original", "ref2.wav", 0.5, 0.5, "same as A from another stretch of your recording"),
 ]
 
 
-def main(refs, out, slug="gericault-medusa", n=6):
+def main(refs, out, slug="gericault-medusa", n=6, only=None):
     os.makedirs(out, exist_ok=True)
     story = json.load(open(os.path.join(story_dir(slug), "story.json")))
     say, respell, skip = C.words_of(story)
     lines = story["lines"][:n]; res = []
     for k, (label, model, ref, ex, cfg, note) in enumerate(VARIANTS, 1):
         rp = os.path.join(refs, ref)
-        if not os.path.exists(rp): continue
+        if (only and k != only) or not os.path.exists(rp): continue
         cv = {**C.settings(), "model": model, "exaggeration": ex, "cfg": cfg}
         v = C.Voice(cv, rp, os.path.join(out, "cache"), say, respell, skip)
         t0 = time.time(); print(f"== {label}: {model} {ref} ex {ex} cfg {cfg}", flush=True)
@@ -47,4 +48,4 @@ def main(refs, out, slug="gericault-medusa", n=6):
 
 if __name__ == "__main__":
     a = sys.argv[1:]
-    main(a[0], a[1], a[2] if len(a) > 2 else "gericault-medusa", int(a[3]) if len(a) > 3 else 6)
+    main(a[0], a[1], a[2] if len(a) > 2 else "gericault-medusa", int(a[3]) if len(a) > 3 else 6, int(a[4]) if len(a) > 4 else None)
