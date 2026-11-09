@@ -119,7 +119,7 @@ def _num(n):
 def _spell_numbers(t): return re.sub(r"\d+", lambda m: _num(int(m.group())), t.replace(",", ""))
 
 
-def score(a, variants, skip):
+def score(a, variants, skip, said=""):
     """1.0 = every word heard, nothing extra. Compared letter by letter (so "onto" = "on to") against each way of writing
     the phrase (digits or words: "1816" = "eighteen sixteen"); names the recogniser can't know (respelled/ipa) don't count"""
     text = heard(a)
@@ -131,7 +131,7 @@ def score(a, variants, skip):
             W = _chars(w for w in v.split() if norm(w) and norm(w) not in skip)
             hit = sum(b.size for b in difflib.SequenceMatcher(a=W, b=G, autojunk=False).get_matching_blocks())
             best = max(best, hit / max(1, len(W)))
-    n = max(len(v.split()) for v in variants)
+    n = max(len(v.split()) for v in variants + [said.replace("-", " ")])   # a respelled name can be heard as several words
     extra = max(0, len(got) - n - 1)                         # rambling / a repeated phrase
     slow = max(0.0, len(a) / SR - (0.9 * n + 1.0))            # far longer than the words need: babble or a long hum
     return round(best - 0.15 * extra - 0.1 * slow, 3), text
@@ -168,7 +168,7 @@ class Voice:
         best = None; t0 = time.time()
         for k in range(int(cv["tries"])):
             a = trim(generate(cv, self.ref, t, int(key[:8], 16) + k))
-            s, h = score(a, spoken, self.skip)
+            s, h = score(a, spoken, self.skip, t)
             if best is None or s > best[0]: best = (s, a, h)
             if s >= 0.9: break
             print(f"   retry ({s:.2f}) {t!r} heard {h!r}", flush=True)
