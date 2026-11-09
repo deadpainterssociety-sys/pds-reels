@@ -1,0 +1,54 @@
+# Long videos: upload a finished long video to YouTube as PRIVATE, scheduled to go public at its slot (Monday/Thursday 18:00
+# Madrid). The video is rendered outside CI and parked in the private draft release long-<slug> (release.py upload-long).
+# Started by Claude with workflow_dispatch (slug + publish_at). Test & compare and the end screen stay manual in Studio.
+name: long
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "story folder, e.g. gericault-raft-long", required: true }
+      publish_at: { description: "when it goes public, with offset, e.g. 2026-11-12T18:00:00+01:00", required: true }
+concurrency: { group: long, cancel-in-progress: false }
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions: { contents: write }
+    env:
+      SLUG: ${{ inputs.slug }}
+      GITHUB_TOKEN: ${{ github.token }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the finished video and its texts
+        run: python3 automation/release.py download-long "$SLUG"
+      - name: Upload to YouTube (private, scheduled)
+        id: yt
+        run: |
+          python3 automation/youtube.py long "$SLUG" "${{ inputs.publish_at }}" | tee yt.json
+          python3 - <<'PY'
+          import json, os, sys
+          sys.path.insert(0, "automation")
+          from common import set_state
+          r = json.load(open("yt.json"))
+          set_state(os.environ["SLUG"], status="scheduled", youtube_id=r["id"], youtube_url=r["url"], publish_at=r["publish_at"])
+          PY
+      - run: ./automation/commit.sh "long $SLUG scheduled"
+      - name: Tell Gigi
+        run: |
+          python3 - <<'PY' > msg.html
+          import json, os, html
+          r = json.load(open("yt.json")); t = json.load(open(f"stories/{os.environ['SLUG']}/story.json")).get("youtube", {})
+          titles = t.get("titles", [])
+          print(f"🎬 <b>Long video scheduled</b>: {html.escape(titles[0] if titles else os.environ['SLUG'])}\n"
+                f"Goes public {html.escape(r['publish_at'])} (private until then).\n"
+                + "".join(f"• {html.escape(n)}\n" for n in r["notes"]) +
+                f"\nIn Studio before then: Test &amp; compare (title B: {html.escape(titles[1] if len(titles) > 1 else '-')}, thumbnail B) and the end screen.\n"
+                f"{r['studio']}")
+          PY
+          python3 automation/bot.py say "$(cat msg.html)"
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ The long video upload failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

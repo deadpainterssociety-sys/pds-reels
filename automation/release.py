@@ -2,6 +2,8 @@
 so the evening publish job can fetch the exact file you approved.
 
 usage: python automation/release.py upload <slug>        mp4 + preview + cover + caption + qa + frames (replaces old assets)
+       python automation/release.py upload-long <slug>   a long video's master + thumbnails + captions.srt + texts (draft long-<slug>)
+       python automation/release.py download-long <slug> -> stories/<slug>/out/ (what the YouTube upload needs)
        python automation/release.py download <slug>      -> stories/<slug>/out/
        python automation/release.py download-publish <slug>  only what publishing needs (video, cover, captions)
        python automation/release.py upload-src <slug>    the story's source images as src.tar (kept out of git to keep the repo small)
@@ -66,6 +68,23 @@ def download_src(slug):
     print("src restored")
 
 
+LONG_FILES = ["{s}.mp4", "thumb_a.jpg", "thumb_b.jpg", "captions.srt", "description.txt", "titles.txt"]
+
+
+def upload_long(slug):
+    """long videos are rendered outside CI: park the master (≤ 2 GB per asset) and its texts in a private draft release"""
+    tag = f"long-{slug}"
+    rel = next((r for page in range(1, 6) for r in gh("GET", f"/repos/{REPO}/releases?per_page=100&page={page}") if r.get("tag_name") == tag), None) \
+        or gh("POST", f"/repos/{REPO}/releases", {"tag_name": tag, "name": tag, "draft": True, "body": "long video (private draft)"})
+    have = {a["name"]: a["id"] for a in rel.get("assets", [])}; base = rel["upload_url"].split("{")[0]
+    for f in LONG_FILES:
+        name = f.format(s=slug); path = os.path.join(out_dir(slug), name)
+        if not os.path.exists(path): print("missing", name); continue
+        if name in have: gh("DELETE", f"/repos/{REPO}/releases/assets/{have[name]}")
+        ct = {"mp4": "video/mp4", "jpg": "image/jpeg", "txt": "text/plain", "srt": "application/x-subrip"}[name.rsplit(".", 1)[1]]
+        gh("POST", f"{base}?name={name}", open(path, "rb").read(), {"Content-Type": ct}); print("uploaded", name)
+
+
 PUBLISH_FILES = ["{s}.mp4", "cover.jpg", "caption.txt"]      # all that publishing needs (not src.tar, stills, …)
 
 
@@ -86,9 +105,10 @@ def _fetch(url, headers=None, total=420):
     raise SystemExit(f"could not download {url.split('?')[0]}")
 
 
-def download(slug, only=None, files=None):
-    rel = find(slug)
-    if not rel: raise SystemExit(f"no release reel-{slug}")
+def download(slug, only=None, files=None, tag=None):
+    rel = next((r for page in range(1, 6) for r in gh("GET", f"/repos/{REPO}/releases?per_page=100&page={page}") if r.get("tag_name") == tag), None) \
+        if tag else find(slug)
+    if not rel: raise SystemExit(f"no release {tag or 'reel-' + slug}")
     os.makedirs(out_dir(slug), exist_ok=True)
     want = {f.format(s=slug) for f in files} if files else None
     class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -103,7 +123,7 @@ def download(slug, only=None, files=None):
         except urllib.error.HTTPError as e:
             if e.code not in (301, 302, 303, 307, 308): raise
             loc = e.headers["Location"]
-        if loc: data = _fetch(loc)
+        if loc: data = _fetch(loc, total=1800 if a.get("size", 0) > 200e6 else 420)
         open(os.path.join(out_dir(slug), a["name"]), "wb").write(data); print("downloaded", a["name"], len(data) // 1024, "KB")
 
 
@@ -146,4 +166,6 @@ def data_put(name, data, ctype="application/json"):
 
 if __name__ == "__main__":
     if sys.argv[1] == "download-publish": download(sys.argv[2], files=PUBLISH_FILES)
+    elif sys.argv[1] == "upload-long": upload_long(sys.argv[2])
+    elif sys.argv[1] == "download-long": download(sys.argv[2], files=LONG_FILES, tag=f"long-{sys.argv[2]}")
     else: {"upload": upload, "download": download, "upload-src": upload_src, "download-src": download_src}[sys.argv[1]](sys.argv[2])

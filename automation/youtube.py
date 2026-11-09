@@ -7,7 +7,11 @@ GOTCHA: if the OAuth consent screen stays in 'Testing', refresh tokens die after
 A vertical video up to 3 minutes is published as a Short. videos.insert has its own quota bucket (100 uploads/day).
 status.containsSyntheticMedia = true discloses the AI voice.
 
-usage: python automation/youtube.py check | publish <slug>
+Long videos (16:9, from stories/<slug>/out/): `long <slug> <publish_at>` uploads the master as PRIVATE with publishAt set,
+so YouTube makes it public on its own at that time; then thumbnail A and the English subtitles. Test & compare (title B,
+thumbnail B) and the end screen can't be set through the API: Gigi adds them in Studio before the slot.
+
+usage: python automation/youtube.py check | publish <slug> | long <slug> <YYYY-MM-DDTHH:MM:SS+01:00>
 """
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -65,7 +69,50 @@ def publish(slug):
     return res
 
 
+def _resumable(tok, url, meta, path, ctype):
+    size = os.path.getsize(path)
+    _, h = http("POST", url, {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8",
+                              "X-Upload-Content-Type": ctype, "X-Upload-Content-Length": str(size)}, json.dumps(meta).encode(), want_headers=True)
+    loc = h.get("Location") or h.get("location")
+    if not loc: raise RuntimeError("YouTube did not return an upload URL")
+    return http("PUT", loc, {"Content-Type": ctype, "Content-Length": str(size)}, open(path, "rb").read())
+
+
+def publish_long(slug, publish_at):
+    import datetime
+    when = datetime.datetime.fromisoformat(publish_at)
+    if when.tzinfo is None: raise SystemExit("publish_at needs a UTC offset, e.g. 2026-11-12T18:00:00+01:00")
+    if when < datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(minutes=30): raise SystemExit(f"publish_at {publish_at} is too soon")
+    tok = token(); od = out_dir(slug); st = story(slug); yt = st.get("youtube", {})
+    title = (yt.get("titles") or [st.get("meta", {}).get("painting", slug)])[0][:100]
+    desc = open(os.path.join(od, "description.txt")).read()[:4900]
+    tags = [w.lstrip("#") for w in yt.get("hashtags", [])] + [st.get("meta", {}).get("painter", ""), st.get("meta", {}).get("painting", ""), "art history", "painting"]
+    meta = {"snippet": {"title": title, "description": desc, "tags": [t for t in tags if t][:15], "categoryId": "27",   # 27 = Education
+                        "defaultLanguage": "en", "defaultAudioLanguage": "en"},
+            "status": {"privacyStatus": "private", "publishAt": when.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+                       "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}
+    video = next(p for p in [os.path.join(od, f"{slug}.mp4"), os.path.join(od, f"{slug}_upload_1080p.mp4")] if os.path.exists(p))
+    r = _resumable(tok, f"{API}/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", meta, video, "video/mp4")
+    vid = r["id"]; res = {"id": vid, "url": f"https://youtu.be/{vid}", "studio": f"https://studio.youtube.com/video/{vid}/edit",
+                          "publish_at": publish_at, "privacy": r.get("status", {}).get("privacyStatus"), "notes": []}
+    thumb = os.path.join(od, "thumb_a.jpg")
+    if os.path.exists(thumb):
+        try:
+            http("POST", f"{API}/upload/youtube/v3/thumbnails/set?videoId={vid}", {"Authorization": f"Bearer {tok}", "Content-Type": "image/jpeg"}, open(thumb, "rb").read())
+            res["notes"].append("thumbnail A set")
+        except RuntimeError as e: res["notes"].append(f"thumbnail not set ({str(e)[:160]}): upload thumb_a.jpg in Studio")
+    srt = os.path.join(od, "captions.srt")
+    if os.path.exists(srt):
+        try:
+            _resumable(tok, f"{API}/upload/youtube/v3/captions?uploadType=resumable&part=snippet",
+                       {"snippet": {"videoId": vid, "language": "en", "name": "English", "isDraft": False}}, srt, "application/octet-stream")
+            res["notes"].append("English subtitles added")
+        except RuntimeError as e: res["notes"].append(f"subtitles not added ({str(e)[:160]}): upload captions.srt in Studio")
+    return res
+
+
 if __name__ == "__main__":
     c = sys.argv[1]
     if c == "check": check()
     elif c == "publish": print(publish(sys.argv[2]))
+    elif c == "long": print(json.dumps(publish_long(sys.argv[2], sys.argv[3])))
