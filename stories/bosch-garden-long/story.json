@@ -1861,8 +1861,8 @@
    ],
    "points": {
     "face": [
-     0.52,
-     0.3
+     0.5,
+     0.26
     ]
    }
   },
@@ -1923,12 +1923,12 @@
    "depth": true,
    "points": {
     "face": [
-     0.48,
-     0.13
+     0.52,
+     0.21
     ],
     "hand": [
-     0.3,
-     0.75
+     0.15,
+     0.78
     ]
    }
   },
@@ -1982,9 +1982,9 @@
  "shots": [
   {
    "at": "cold1",
-   "img": "centre",
-   "from": "owl_r@3.0",
-   "to": "owl_r@2.7"
+   "img": "owl_boy",
+   "from": "eyes@1.3",
+   "to": "eyes@1.12"
   },
   {
    "at": "cold1.7-0.10",
@@ -2233,22 +2233,30 @@
   {
    "at": "c2e",
    "img": "left",
-   "from": "god@1.15",
-   "to": "god@1.3",
+   "from": "top@1.1",
+   "to": "fountain@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c2e.4",
+   "img": "left",
+   "from": "full@0.42",
+   "to": "full@0.45",
+   "frame": true,
    "fade": 0.8
   },
   {
    "at": "c2e.9",
    "img": "left",
-   "from": "fountain@1.15",
-   "to": "fountain@1.3",
+   "from": "fountain@1.2",
+   "to": "fountain@1.35",
    "fade": 0.8
   },
   {
    "at": "c2e.23",
    "img": "left",
-   "from": "god@1.45",
-   "to": "god@1.6",
+   "from": "animals@1.3",
+   "to": "animals@1.45",
    "fade": 0.6
   },
   {
@@ -2479,8 +2487,8 @@
   {
    "at": "c3g",
    "img": "engelbert",
-   "from": "face@1.2",
-   "to": "face@1.4",
+   "from": "face@1.05",
+   "to": "face@1.2",
    "fade": 0.8
   },
   {
@@ -2518,8 +2526,8 @@
   {
    "at": "c4b.9",
    "img": "william",
-   "from": "face@1.6",
-   "to": "face@1.8",
+   "from": "face@1.35",
+   "to": "face@1.5",
    "fade": 0.6,
    "gray": 0.4
   },
@@ -2915,17 +2923,17 @@
   },
   {
    "at": "end2",
-   "img": "centre",
-   "from": "owl_r@2.4",
-   "to": "owl_r@2.9",
+   "img": "owl_boy",
+   "from": "eyes@1.0",
+   "to": "eyes@1.12",
    "fade": 0.8
   },
   {
    "at": "end2.15",
    "img": "owl_boy",
-   "from": "eyes@1.2",
-   "to": "eyes@1.35",
-   "fade": 0.6
+   "from": "eyes@1.45",
+   "to": "eyes@1.65",
+   "fade": 0.4
   },
   {
    "at": "end3",
@@ -3046,7 +3054,7 @@
    "type": "stamp",
    "from": "c1f.1+0.10",
    "to": "c1f$+0.30",
-   "text": "≈ 25 PAINTINGS"
+   "text": "25 PAINTINGS"
   },
   {
    "type": "label",
@@ -3301,16 +3309,6 @@
    "to": "c7g$+1.20",
    "text": "I think Bosch may have just been slapping notes up there to make it look like music.",
    "sub": "AMELIA HAMRICK · ASSOCIATED PRESS, 2014"
-  },
-  {
-   "type": "ring",
-   "from": "end2.7+0.30",
-   "to": "end2$",
-   "point": "owl_r",
-   "img": "centre",
-   "rx": 150,
-   "ry": 170,
-   "rot": 0
   },
   {
    "type": "pin",

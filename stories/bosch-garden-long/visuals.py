@@ -26,12 +26,12 @@ IM.update({
  "bosch": P(file="src/bosch.jpg", crop=[0.03, 0.03, 0.03, 0.2], points={"face": [0.47, 0.25]}),
  "lakenmarkt": P(file="src/lakenmarkt.jpg", depth=True, points={"street": [0.5, 0.25], "stalls": [0.5, 0.5], "people": [0.45, 0.85]}),
  "haywain": P(file="src/haywain.jpg", depth=True, points={"wagon": [0.5, 0.45], "hell": [0.88, 0.5]}),
- "engelbert": P(file="src/engelbert.jpg", crop=[0.07, 0.05, 0.07, 0.05], points={"face": [0.52, 0.3]}),
+ "engelbert": P(file="src/engelbert.jpg", crop=[0.07, 0.05, 0.07, 0.05], points={"face": [0.5, 0.26]}),
  "henry": P(file="src/henry.jpg", depth=True, points={"face": [0.6, 0.27], "hands": [0.6, 0.85]}),
  "curia": P(file="src/curia.png", depth=True, points={"palace": [0.5, 0.45], "square": [0.3, 0.6]}),
  "william": P(file="src/william.jpg", depth=True, points={"face": [0.56, 0.35]}),
  "alba": P(file="src/alba.jpg", depth=True, points={"face": [0.5, 0.17], "baton": [0.65, 0.75]}),
- "philip": P(file="src/philip.jpg", depth=True, points={"face": [0.48, 0.13], "hand": [0.3, 0.75]}),
+ "philip": P(file="src/philip.jpg", depth=True, points={"face": [0.52, 0.21], "hand": [0.15, 0.78]}),
  "escorial": P(file="src/escorial.jpg", depth=True, points={"church": [0.5, 0.3], "front": [0.5, 0.55], "people": [0.4, 0.85]}),
  "siguenza2": P(file="src/siguenza2.jpg", points={"face": [0.4, 0.38]}),
  "siguenza3": P(file="src/siguenza3.jpg", crop=[0.08, 0.04, 0.08, 0.04], points={"monk": [0.5, 0.32], "pen": [0.4, 0.38]}),
@@ -39,7 +39,7 @@ IM.update({
 
 J = lambda pins, **kw: {"id": "journey", "pins": pins, **kw}
 # ---------------------------------------------------------------- shots
-sh(A("cold1"), "centre", "owl_r@3.0", "owl_r@2.7")
+sh(A("cold1"), "owl_boy", "eyes@1.3", "eyes@1.12")
 sh(A("cold1", "means", off=-0.1), "garden", "full@1.0", "full@1.04", hit="big")
 sh(A("cold2"), "philip", "face@1.5", "face@1.7", fade=0.5, gray=0.4)
 sh(A("cold2", "Not", 2), "escorial", "church@1.4", "church@1.6", fade=0.5, gray=0.4)
@@ -74,9 +74,10 @@ sh(A("c2c", "Up"), "closed", "god@1.9", "god@2.0", fade=0.6)
 sh(A("c2c", "Across"), "closed", "words@1.8", "words@1.9", fade=0.6)
 sh(A("c2d"), "closed", "full@0.6", "full@0.62", frame=True, fade=0.5)
 sh(A("c2d", "open", off=-0.05), "garden", "full@1.0", "full@1.04", hit="big")
-sh(A("c2e"), "left", "god@1.15", "god@1.3", fade=0.8)
-sh(A("c2e", "The", 2), "left", "fountain@1.15", "fountain@1.3", fade=0.8)
-sh(A("c2e", "and"), "left", "god@1.45", "god@1.6", fade=0.6)
+sh(A("c2e"), "left", "top@1.1", "fountain@1.1", fade=0.8)
+sh(A("c2e", "God"), "left", "full@0.42", "full@0.45", frame=True, fade=0.8)
+sh(A("c2e", "The", 2), "left", "fountain@1.2", "fountain@1.35", fade=0.8)
+sh(A("c2e", "and"), "left", "animals@1.3", "animals@1.45", fade=0.6)
 sh(A("c2f"), "hell_pd", "fire@1.1", "fire@1.25", fade=0.8)
 sh(A("c2f", "torture"), "knife", "blade@1.1", "blade@1.25", fade=0.4)
 sh(A("c2f", "and"), "hell_pd", "instruments@1.6", "instruments@1.8", fade=0.5)
@@ -108,12 +109,12 @@ sh(A("c3e"), "centre", "fountain@1.6", "fountain@1.8", fade=0.8)
 sh(A("c3e", "Others"), "curia", "palace@1.5", "palace@1.7", fade=0.8, gray=0.3)
 sh(A("c3e", "as"), "hell_pd", "ears@1.6", "ears@1.8", fade=0.6)
 sh(A("c3f"), "egg", "egg@1.2", "egg@1.35", fade=0.5)
-sh(A("c3g"), "engelbert", "face@1.2", "face@1.4", fade=0.8)
+sh(A("c3g"), "engelbert", "face@1.05", "face@1.2", fade=0.8)
 sh(A("c3g", "and"), "henry", "face@1.4", "face@1.6", fade=0.8)
 # IV. The Duke
 sh(A("c4a"), "william", "face@1.2", "face@1.4", fade=0.8)
 sh(A("c4b"), "map-journey", kind="map", map=J([{"city": "brussels", "at": A("c4b"), "label": "Brussels"}]), fade=0.8)
-sh(A("c4b", "And"), "william", "face@1.6", "face@1.8", fade=0.6, gray=0.4)
+sh(A("c4b", "And"), "william", "face@1.35", "face@1.5", fade=0.6, gray=0.4)
 sh(A("c4c"), "alba", "face@1.3", "face@1.5", fade=0.8)
 sh(A("c4c", "seizes"), "alba", "baton@1.2", "face@1.1", fade=0.6, gray=0.3)
 sh(A("c4c", "The", 3), "garden", "full@0.9", "full@0.95", frame=True, fade=0.6, gray=0.5)
@@ -169,8 +170,8 @@ sh(A("c7g"), "instruments", "lute@1.3", "lute@1.4", fade=0.8, dim=0.35)
 # ending
 sh(A("end1"), "garden", "full@1.0", "full@1.03", fade=0.8)
 sh(A("end1", "Five"), "centre", "full@1.0", "full@1.06", fade=0.8)
-sh(A("end2"), "centre", "owl_r@2.4", "owl_r@2.9", fade=0.8)
-sh(A("end2", "At"), "owl_boy", "eyes@1.2", "eyes@1.35", fade=0.6)
+sh(A("end2"), "owl_boy", "eyes@1.0", "eyes@1.12", fade=0.8)
+sh(A("end2", "At"), "owl_boy", "eyes@1.45", "eyes@1.65", fade=0.4)
 sh(A("end3"), "garden", "full@0.86", "full@0.84", frame=True, fade=1.0)
 
 # ---------------------------------------------------------------- overlays
@@ -190,7 +191,7 @@ ov("lower", A("c1a", "His", off=0.1), A("c1a", end=True, off=0.6), text="Jheroni
 ov("label", A("c1b"), A("c1c", end=True), text="'S-HERTOGENBOSCH · THE CLOTH MARKET · c. 1530")
 ov("label", A("c1d"), A("c1d", end=True, off=0.4), text="BOSCH · THE HAYWAIN · PRADO")
 ov("label", A("c1e", "Just"), A("c1e", end=True, off=0.4), text="'S-HERTOGENBOSCH · c. 1530")
-ov("stamp", A("c1f", "twenty-five", off=0.1), A("c1f", end=True, off=0.3), text="≈ 25 PAINTINGS")
+ov("stamp", A("c1f", "twenty-five", off=0.1), A("c1f", end=True, off=0.3), text="25 PAINTINGS")
 ov("label", A("c2b"), A("c2c", end=True), text="THE OUTER PANELS · GRISAILLE")
 ov("ring", A("c2c", "Up", off=0.3), A("c2c", "Across", off=-0.2), point="god", img="closed", rx=90, ry=110, rot=0)
 ov("quote", A("c2c", "For", off=-0.1), A("c2c", end=True, off=0.6), text="For he spake, and it was done. For he commanded, and they were created.",
@@ -232,7 +233,6 @@ ov("ring", A("c7c", "there", off=0.1), A("c7c", end=True, off=0.6), point="butt"
 ov("label", A("c7f", "Bosch"), A("c7f", "It", off=-0.1), text="BOSCH · THE HAYWAIN · HELL (DETAIL)")
 ov("quote", A("c7g", "I", off=-0.1), A("c7g", end=True, off=1.2), text="I think Bosch may have just been slapping notes up there to make it look like music.",
    sub="AMELIA HAMRICK · ASSOCIATED PRESS, 2014")
-ov("ring", A("end2", "two", off=0.3), A("end2", end=True), point="owl_r", img="centre", rx=150, ry=170, rot=0)
 ov("pin", A("end3", off=0.1), A("end3", end=True, off=1.0), text="MUSEO DEL PRADO · MADRID · ROOM 56A")
 ov("end", A("end3", end=True, off=1.0), A("end3", end=True, off=21.0), kicker="NEXT", text="")
 

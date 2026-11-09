@@ -43,8 +43,8 @@ for (const [a, b] of patches) {
   await render(f, a, b, `patch ${a}-${b}`);
 }
 const list = path.join(cdir, "list.txt"); fs.writeFileSync(list, parts.map((p) => `file '${p}'`).join("\n") + "\n");
-const joined = path.join(cdir, "joined.mp4");
-execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", list, "-c", "copy", joined]);
+// The chunks are read straight through the concat demuxer: no joined copy on disk (it took ~2 GB for 10 minutes).
+fs.rmSync(path.join(cdir, "joined.mp4"), { force: true });   // left over by older versions of this script
 // YouTube plays every video at about -14 LUFS and only ever turns loud ones down. The reel mix sits near -11 LUFS with
 // inter-sample peaks above 0 dBTP, so trim it (never boost) to -14 LUFS / -1 dBTP: it sounds the same in the player and
 // YouTube's encoder never meets an over. A plain gain change, nothing else in the sound is touched.
@@ -58,7 +58,7 @@ console.log(`mix ${I} LUFS, true peak ${TP} dBTP -> gain ${gain.toFixed(1)} dB`)
 // BT.709, so convert once here (exact colour math, one x264 "medium" pass of ~20 min for 10 minutes; the Shorts are
 // brought to limited range by finalize.py's re-encode). Standard chunks without patches are copied untouched.
 const probe = JSON.parse(spawnSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=color_range,color_space",
-  "-of", "json", joined], { encoding: "utf8" }).stdout || "{}");
+  "-of", "json", parts[0]], { encoding: "utf8" }).stdout || "{}");
 const cs = (probe.streams || [])[0] || {}, full = cs.color_range === "pc";
 const graph = []; let cur = "0:v";
 // Each patch starts exactly on its frame; outside it the old picture passes through. overlay wants yuva420p for the
@@ -77,7 +77,7 @@ const video = graph.length
      ...(full ? ["-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv"] : [])]
   : ["-map", "0:v", "-c:v", "copy"];
 console.log(`video: ${patches.length} patch(es), ${full ? "full-range BT.601 -> limited BT.709" : "standard colour"}, ${graph.length ? "one x264 pass" : "copied"}`);
-execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", joined, "-i", mix, ...patches.flatMap(([a, b]) => ["-i", path.join(cdir, `patch-${a}-${b}.mp4`)]),
+execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", list, "-i", mix, ...patches.flatMap(([a, b]) => ["-i", path.join(cdir, `patch-${a}-${b}.mp4`)]),
   ...video, "-map", "1:a", ...(gain < -0.05 ? ["-af", `volume=${gain.toFixed(2)}dB`] : []), "-c:a", "aac", "-b:a", "320k", "-shortest", "-movflags", "+faststart", out]);
-fs.rmSync(joined, { force: true });   // the chunks stay (a fix re-renders only its frames); the silent join is not needed again
+// the chunks stay: a fix re-renders only its frames
 console.log(`${id}: ${parts.length} chunks${patches.length ? ` + ${patches.length} patch(es)` : ""} joined -> ${out}`);
