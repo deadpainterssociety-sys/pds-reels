@@ -1,5 +1,6 @@
 # Long videos: upload a finished long video to YouTube as PRIVATE, scheduled to go public at its slot (Monday/Thursday 18:00
-# Madrid). The video is rendered outside CI and parked in the private draft release long-<slug> (release.py upload-long).
+# Madrid). The video is rendered outside CI and parked on a temporary branch long-<slug> (automation/long_park.py park);
+# this job deletes the branch when it ends, whatever happens.
 # Started by Claude with workflow_dispatch (slug + publish_at). Test & compare and the end screen stay manual in Studio.
 name: long
 on:
@@ -24,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Fetch the finished video and its texts
-        run: python3 automation/release.py download-long "$SLUG"
+        run: python3 automation/long_park.py fetch "$SLUG"
       - name: Upload to YouTube (private, scheduled)
         id: yt
         run: |
@@ -50,5 +51,8 @@ jobs:
                 f"{r['studio']}")
           PY
           python3 automation/bot.py say "$(cat msg.html)"
+      - name: Delete the temporary branch
+        if: always()
+        run: python3 automation/long_park.py drop "$SLUG" || true
       - if: failure()
         run: python3 automation/bot.py say "⚠️ The long video upload failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
