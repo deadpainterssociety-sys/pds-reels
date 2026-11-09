@@ -106,3 +106,21 @@ jobs:
         run: ./automation/commit.sh "published $SLUG"
       - if: failure()
         run: python3 automation/bot.py say "⚠️ Publishing failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+  relay:
+    # GitHub's timer skips many of the 15-minute starts above (some days only one run an hour got going), which left
+    # stretches with nobody listening: a Publish tap then waited, silently, for the next run. So each listener now
+    # starts the next one itself while the day lasts (07:00-23:00 Madrid time); the timer stays as a backup.
+    # Only after a healthy poll, so a broken run can't loop. The concurrency group keeps it to one listener + one queued.
+    needs: [poll, publish]
+    if: always() && needs.poll.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: { actions: write }
+    steps:
+      - env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          h=$(TZ=Europe/Madrid date +%-H)          # config.json timezone
+          if [ "$h" -ge 7 ] && [ "$h" -lt 23 ]; then
+            gh api -X POST "repos/${{ github.repository }}/actions/workflows/inbox.yml/dispatches" -f ref="${{ github.ref_name }}" && echo "next listener started ($h h)"
+          else echo "night ($h h): the timer starts the first listener in the morning"; fi
