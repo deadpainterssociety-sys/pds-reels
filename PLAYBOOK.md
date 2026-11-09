@@ -31,6 +31,8 @@ marked "(1 Nov)" below come from that review and from the Inspiraggio competitor
   - 0.8–1.0 s after a beat lands.
   - Speed 0.9–0.97 for normal lines; 0.78–0.88 for the words that must hit ("this.", "him.").
 - Kokoro voice **af_heart**, phrase-by-phrase synthesis (`pipeline/tts.py`). Captions mark emphasis with `*word*`.
+  Once Gigi picks a cloned voice on Telegram (`config.json` → `voice_clone`), every reel and long video is voiced in it
+  (Chatterbox, `pipeline/tts_clone.py`); names then also need a `respell` entry (CLAUDE.md step 5).
 - Pronunciation:
   - Every proper name and year goes through `say` (spoken form) or `ipa`, in the story file or in the global `pipeline/pronounce.json` (under `en-us`).
   - The recogniser check must read every line back correctly. Fix anything it mishears: it is usually a name, or a lone word before "…".

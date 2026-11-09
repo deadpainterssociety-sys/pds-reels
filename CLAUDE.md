@@ -79,13 +79,13 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   word swallowed before "…" (give it its own phrase or rephrase), or a plural ghost ("hall" heard as "halls" → rephrase).
   Audition alternatives fast: `python pipeline/try_phrase.py af_heart en-us 0.88 "variant one" "variant two"`.
 - Duration 59–69 s including the 2.2 s tail, ≈ 130–140 wpm. Too fast → add pauses / lower speed (0.90–0.92 overall); too long → cut words.
-- **Cloned voice** (`config.json` → `voice_clone.enabled: true`, Gigi's pick): step 1 runs Chatterbox (`pipeline/tts_clone.py`)
-  instead of Kokoro. Then `ipa` does nothing and `try_phrase.py` doesn't apply: fix a misheard name with `respell` in
-  story.json (`"Sigüenza": "see-GWEN-tha"`, plain English spelling of the sound; reusable ones go to `pipeline/pronounce.json`
-  → `en-us` → `respell`). The global `speed` is ignored (the clone keeps Gigi's own pace); per-phrase speeds still shape
-  the delivery (0.84 on a hit word ≈ 12% slower). Each phrase is voiced once and cached in `src/voice/`, so a re-run only
-  re-voices the phrases you changed: change only what needs fixing. The printout flags phrases the recogniser didn't
-  hear well (`⚠`) after three tries; rephrase those.
+- **Cloned voice** (`config.json` → `voice_clone.enabled: true`, Gigi's own pick): your voice checks here still use the fast
+  Kokoro voice (the workflow sets `VOICE=kokoro`), and the final reel is voiced in the cloned voice (Chatterbox,
+  `pipeline/tts_clone.py`) at the morning build. Chatterbox reads plain text and ignores `ipa`, so for EVERY name that has
+  an `ipa` entry also add a `respell` entry in story.json: the sound in plain English spelling, stressed syllable in
+  capitals (`"Sigüenza": "see-GWEN-thah"`, `"Marat": "mah-RAH"`). `pipeline/pronounce.json` → `en-us` → `respell` already
+  covers common ones (Jean, Jacques, Louvre, Géricault…). The clone keeps Gigi's own pace (it ignores the global `speed`;
+  per-phrase speeds still apply), so its reel can run a few seconds longer or shorter than your Kokoro check.
 
 ### 6. Visual plan (`images.*.points`, `shots`, `overlays`)
 - Find coordinates by LOOKING: `python pipeline/grid.py stories/<slug>/src/<img>.jpg` → Read the printed jpg; zoom into

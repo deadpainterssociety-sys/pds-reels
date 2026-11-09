@@ -30,7 +30,31 @@
    "Jean": "ʒˈɑ̃",
    "Jacques": "ʒˈɑk",
    "Holbein": "hˈoʊlbaɪn"
-  }
+  },
+  "respell": {
+   "Jean": "Zhahn",
+   "Jacques": "Zhahk",
+   "Gentileschi": "jen-tee-LESS-kee",
+   "Uffizi": "oo-FEET-see",
+   "Artemisia": "ar-teh-MEE-zee-uh",
+   "Medici": "MED-ih-chee",
+   "Borghese": "bor-GAY-zay",
+   "Scipione": "shee-PYOH-nay",
+   "Caravaggio": "kah-rah-VAH-joh",
+   "Millais": "MILL-ay",
+   "Holbein": "HOLE-bine",
+   "Rijksmuseum": "RIKES-myoo-zay-um",
+   "Louvre": "LOOV-ruh",
+   "Géricault": "zhay-ree-KOH",
+   "Méduse": "may-DOOZ",
+   "Delacroix": "duh-lah-KRWAH",
+   "Velázquez": "veh-LAHS-kes",
+   "Vermeer": "ver-MEER",
+   "Kunstmuseum": "KOONST-moo-zay-um",
+   "Dostoevsky": "doss-tuh-YEF-skee",
+   "Fyodor": "FYOH-dor"
+  },
+  "_respell": "Cloned voice only (pipeline/tts_clone.py): Chatterbox reads plain text, so a name it says wrong is written the way it sounds. Kokoro uses `ipa` instead."
  },
  "es": {
   "say": {},
