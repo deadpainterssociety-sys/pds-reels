@@ -104,7 +104,8 @@ Sources
 """ + "\n".join(f"- {u}" for u in sources) + """
 
 Images (Wikimedia Commons)
-""" + ("\n".join(f"- {c}" for c in custom) if custom else "\n".join(f"- {c}" for c in credits_cc) + ("\n- Paintings and prints by Francisco de Goya and others: public domain (Museo del Prado, Minneapolis Institute of Art, The Met)." if credits_pd else "")) + f"""
+""" + "\n".join(f"- {c}" for c in (custom or credits_cc + ([f"Paintings, prints and photographs by {st.get('meta', {}).get('painter', 'the artist')} "
+                                                                  "and others: public domain."] if credits_pd else []))) + f"""
 
 Narration: synthetic voice. Music and sound: original, made for this channel.
 {' '.join(yt.get('hashtags', []))}
