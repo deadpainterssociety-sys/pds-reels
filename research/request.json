@@ -1,30 +1,9 @@
 {
- "commons_minutes": 15,
- "commons": [
-  {
-   "name": "hell_pd",
-   "title": "File:Hieronymus Bosch - The Garden of Earthly Delights - Hell.jpg",
-   "width": 1778
-  },
-  {
-   "name": "left",
-   "title": "File:Hieronymus Bosch - The Garden of Earthly Delights - The Earthly Paradise (Garden of Eden).jpg",
-   "width": 1769
-  },
-  {
-   "name": "siguenza2",
-   "title": "File:José de Sigüenza.jpg",
-   "width": 1594
-  },
-  {
-   "name": "siguenza3",
-   "title": "File:Manuel salvador carmona-fray jose de Sigüenza.JPG",
-   "width": 1200
-  },
-  {
-   "name": "owl_boy",
-   "title": "File:Bosch, Hieronymus - The Garden of Earthly Delights, central panel - Detail Owl with boy.jpg",
-   "width": 1625
-  }
+ "max_units": 1500,
+ "videos": [
+  "18794HfZBJo"
+ ],
+ "download": [
+  "18794HfZBJo"
  ]
 }

@@ -9,6 +9,8 @@ request.json keys (all optional):
   channel_searches: ["art history", ...]                               find channels by name/description
   max_units:  hard cap on API quota spent by this run (search = 100 units, everything else 1)
   commons:    [{"title": "File:....jpg", "name": "saturn", "width": 3840}]   downloaded into <out>/commons/
+  videos:     ["VIDEO_ID", ...]   case studies: full details, every thumbnail size, top comments -> <out>/cases/; each
+              video's channel is studied in depth too
 Quota matters: the channel's daily quota is 10,000 units and each upload costs 1,600, so the cap stays well below.
 """
 import datetime, json, os, re, statistics, sys, time, urllib.parse, urllib.request
@@ -224,12 +226,41 @@ def commons(items, d, deadline):
     json.dump(meta, open(os.path.join(d, "meta.json"), "w"), indent=1, ensure_ascii=False)
 
 
+def case(vid, d):
+    """one video in full: snippet (whole description, tags), stats, topics, status, the max-res thumbnail, ~300 comments"""
+    os.makedirs(d, exist_ok=True)
+    r = api("videos", part="snippet,statistics,contentDetails,topicDetails,status,localizations,player", id=vid).get("items", [])
+    if not r: return None
+    v = r[0]; json.dump(v, open(os.path.join(d, f"{vid}.json"), "w"), indent=1, ensure_ascii=False)
+    for name in ("maxresdefault", "sddefault", "hqdefault"):
+        try:
+            data = urllib.request.urlopen(urllib.request.Request(f"https://i.ytimg.com/vi/{vid}/{name}.jpg",
+                                                                 headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read()
+            open(os.path.join(d, f"{vid}_{name}.jpg"), "wb").write(data); break
+        except Exception as e: print("thumb", name, e)
+    com = []
+    for order, pages in (("relevance", 4), ("time", 2)):
+        tok = None
+        for _ in range(pages):
+            try: c = api("commentThreads", part="snippet", videoId=vid, maxResults=100, order=order, pageToken=tok, textFormat="plainText")
+            except RuntimeError as e: print("comments", e); break
+            for it in c.get("items", []):
+                t = it["snippet"]["topLevelComment"]["snippet"]
+                com.append({"order": order, "likes": t.get("likeCount", 0), "replies": it["snippet"].get("totalReplyCount", 0),
+                            "at": t.get("publishedAt"), "text": t.get("textDisplay", "")[:600]})
+            tok = c.get("nextPageToken")
+            if not tok: break
+    json.dump(com, open(os.path.join(d, f"{vid}_comments.json"), "w"), indent=1, ensure_ascii=False)
+    print(f"case {vid}: {v['snippet']['title'][:60]} · {len(com)} comments")
+    return v["snippet"]["channelId"]
+
+
 def run(req_path, out):
     import youtube as Y
     req = json.load(open(req_path)); os.makedirs(out, exist_ok=True)
     UNITS["cap"] = int(req.get("max_units", UNITS["cap"]))
     try:
-        if req.get("seeds") or req.get("searches") or req.get("channel_searches"): youtube_part(req, out)
+        if req.get("seeds") or req.get("searches") or req.get("channel_searches") or req.get("videos"): youtube_part(req, out)
     finally:
         if req.get("commons"): commons(req["commons"], os.path.join(out, "commons"), time.time() + 60 * req.get("commons_minutes", 18))
 
@@ -238,8 +269,15 @@ def youtube_part(req, out):
     import youtube as Y
     H["Authorization"] = f"Bearer {Y.token()}"
     log = {"started": NOW.isoformat(), "errors": []}
+    # 0) case-study videos (their channels join the seeds)
+    seeds = list(req.get("seeds", []))
+    for vid in req.get("videos", []):
+        try:
+            cid = case(vid, os.path.join(out, "cases"))
+            if cid and all(sd.get("id") != cid for sd in seeds): seeds.append({"id": cid, "group": "case"})
+        except Budget: break
+        except Exception as e: log["errors"].append(f"case {vid}: {str(e)[:200]}")
     # 1) seeds
-    seeds = req.get("seeds", [])
     chans = {}
     for sd in seeds:
         try:
