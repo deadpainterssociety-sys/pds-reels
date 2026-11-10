@@ -48,15 +48,28 @@ def check():
     print("youtube ok:", items[0]["snippet"]["title"] if items else "(token works; channel list needs youtube.readonly — fine)")
 
 
+def place(slug):
+    """recordingDetails: the museum where the painting hangs (automation/places.py); {} if unknown"""
+    try:
+        import places
+        p = places.get(slug)
+    except Exception as e: print("youtube: no location:", e); return {}
+    if not p: return {}
+    d = {"locationDescription": p["name"]}
+    if p.get("lat") is not None: d["location"] = {"latitude": p["lat"], "longitude": p["lon"]}
+    return {"recordingDetails": d}
+
+
 def publish(slug):
     tok = token(); c = captions(slug); st = story(slug)
     tags = [w.lstrip("#") for w in st.get("hashtags", []) if w.startswith("#")][:15]
     meta = {"snippet": {"title": c["youtube_title"][:100], "description": c["youtube_desc"][:4900], "tags": tags,
                         "categoryId": CONFIG.get("youtube_category", "27"), "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": {"privacyStatus": CONFIG.get("youtube_privacy", "public"), "selfDeclaredMadeForKids": False,
-                       "containsSyntheticMedia": True}}
+                       "containsSyntheticMedia": True}, **place(slug)}
     path = os.path.join(out_dir(slug), f"{slug}.mp4"); size = os.path.getsize(path)
-    _, h = http("POST", f"{API}/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+    parts = "snippet,status" + (",recordingDetails" if "recordingDetails" in meta else "")
+    _, h = http("POST", f"{API}/upload/youtube/v3/videos?uploadType=resumable&part={parts}",
                 {"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8",
                  "X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(size)}, json.dumps(meta).encode(), want_headers=True)
     loc = h.get("Location") or h.get("location")
@@ -90,9 +103,10 @@ def publish_long(slug, publish_at):
     meta = {"snippet": {"title": title, "description": desc, "tags": [t for t in tags if t][:15], "categoryId": "27",   # 27 = Education
                         "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": {"privacyStatus": "private", "publishAt": when.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-                       "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}}
+                       "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}, **place(slug)}
     video = next(p for p in [os.path.join(od, f"{slug}.mp4"), os.path.join(od, f"{slug}_upload_1080p.mp4")] if os.path.exists(p))
-    r = _resumable(tok, f"{API}/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", meta, video, "video/mp4")
+    parts = "snippet,status" + (",recordingDetails" if "recordingDetails" in meta else "")
+    r = _resumable(tok, f"{API}/upload/youtube/v3/videos?uploadType=resumable&part={parts}", meta, video, "video/mp4")
     vid = r["id"]; res = {"id": vid, "url": f"https://youtu.be/{vid}", "studio": f"https://studio.youtube.com/video/{vid}/edit",
                           "publish_at": publish_at, "privacy": r.get("status", {}).get("privacyStatus"), "notes": []}
     thumb = os.path.join(od, "thumb_a.jpg")

@@ -144,7 +144,16 @@ def publish(slug, video_url, cover_url=None, wait=600):
     uid_ = uid()
     params = {"media_type": "REELS", "video_url": video_url, "caption": captions(slug)["instagram"][:2200], "share_to_feed": "true"}
     if cover_url: params["cover_url"] = cover_url
-    cid = req("POST", f"{uid_}/media", **params)["id"]
+    try:                                             # tag the museum where the painting hangs (automation/places.py)
+        import places
+        loc = places.get(slug).get("ig_location_id")
+        if loc: params["location_id"] = loc
+    except Exception as e: print("instagram: no location tag:", e)
+    try: cid = req("POST", f"{uid_}/media", **params)["id"]
+    except RuntimeError as e:
+        if "location_id" not in params: raise
+        print("instagram: retrying without the location tag:", str(e)[:200]); params.pop("location_id")
+        cid = req("POST", f"{uid_}/media", **params)["id"]
     t0 = time.time()
     while True:
         time.sleep(float(os.environ.get("POLL_SECONDS", 15)))

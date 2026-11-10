@@ -163,3 +163,6 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (4 Nov 2026) Keep the reels' own audio style as it is; Gigi adds trending sounds herself in the TikTok/Instagram apps.
 - (6 Nov 2026) Names are pronounced as in their original language (French especially): an English accent is fine, English pronunciation is not — Jean-Paul Marat = "zhahn-pol mah-RAH", Jacques-Louis David = "zhahk lwee dah-VEED", Charlotte = "shar-LOT". Give every foreign name an `ipa` entry (story-level when the spelling is also an English name, like David or Louis; `pipeline/pronounce.json` when it is unambiguous, like Jean or Jacques) and check the phonemes before building.
 <!-- new rules go here -->
+
+**Location tag (10 Nov):** every post is tagged with the museum the ending names (`meta.museum`, `meta.city`): Instagram location + YouTube recording location are set automatically at publish (`automation/places.py`, cached in `places.json`); TikTok's API can't, so the manual-post message on Telegram says which place to add.
+

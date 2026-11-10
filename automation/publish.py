@@ -66,6 +66,12 @@ def run(slug, base):
     gh_output(done="1" if (done or gave_up) else "")
 
 
+def _where(slug):
+    from common import story
+    m = story(slug).get("meta", {})
+    return f"\n📍 Location: add <b>{m['museum']}, {m.get('city', '')}</b>" if m.get("museum") else ""
+
+
 def manual_package(slug, platforms):
     """platforms that are not connected yet: send Gigi a ready-to-post file (< 50 MB, the Telegram bot limit) + captions"""
     import subprocess, bot, telegram as T
@@ -79,7 +85,7 @@ def manual_package(slug, platforms):
     names = {"instagram": "Instagram", "youtube": "YouTube", "tiktok": "TikTok"}
     T.document(bot.chat_id(), share, "📲 <b>Post this one by hand on " + ", ".join(names[p] for p in platforms) +
                "</b> (not connected yet). Save the file, upload it, use the cover/first frame, and paste the caption below. "
-               "Turn on the AI-content label.")
+               "Turn on the AI-content label." + _where(slug))
     c = captions(slug)
     for p in platforms:
         txt = c["instagram"] if p == "instagram" else c["tiktok"] if p == "tiktok" else f"{c['youtube_title']}\n\n{c['youtube_desc']}"
