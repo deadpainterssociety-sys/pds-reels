@@ -140,6 +140,17 @@ def refresh():
     print(f"instagram token refreshed (valid {days} days){'' if saved else ' — NOT saved, add GH_PAT'}"); return saved
 
 
+def _note_bad_location(slug, why):
+    """a place id Instagram refused: drop it from places.json so the next post doesn't try it again (the note says why)"""
+    try:
+        import places
+        from common import jload, jsave, story
+        m = story(slug).get("meta", {}); key = f"{m.get('museum')}, {m.get('city')}"; p = jload(places.CACHE, {})
+        if key in p:
+            p[key]["ig_note"] = f"Instagram refused id {p[key].pop('ig_location_id', None)}: {str(why)[:160]}"; jsave(places.CACHE, p)
+    except Exception as e: print("instagram: couldn't note the refused location:", e)
+
+
 def publish(slug, video_url, cover_url=None, wait=600):
     uid_ = uid()
     params = {"media_type": "REELS", "video_url": video_url, "caption": captions(slug)["instagram"][:2200], "share_to_feed": "true"}
@@ -153,6 +164,7 @@ def publish(slug, video_url, cover_url=None, wait=600):
     except RuntimeError as e:
         if "location_id" not in params: raise
         print("instagram: retrying without the location tag:", str(e)[:200]); params.pop("location_id")
+        if "LOCATION" in str(e).upper(): _note_bad_location(slug, str(e)[:200])
         cid = req("POST", f"{uid_}/media", **params)["id"]
     t0 = time.time()
     while True:
@@ -160,6 +172,10 @@ def publish(slug, video_url, cover_url=None, wait=600):
         st = req("GET", cid, fields="status_code,status")
         code = st.get("status_code"); print("  instagram container:", code)
         if code == "FINISHED": break
+        if code == "ERROR" and "location_id" in params and "LOCATION" in str(st.get("status", "")).upper():
+            print("instagram: the location tag was refused, posting without it:", st.get("status")); params.pop("location_id")
+            _note_bad_location(slug, st.get("status"))
+            cid = req("POST", f"{uid_}/media", **params)["id"]; t0 = time.time(); continue
         if code in ("ERROR", "EXPIRED"): raise RuntimeError(f"Instagram processing failed: {st.get('status')}")
         if time.time() - t0 > wait: raise RuntimeError("Instagram container not ready after 10 min")
     mid = req("POST", f"{uid_}/media_publish", creation_id=cid)["id"]

@@ -1,10 +1,210 @@
 {
- "Detroit Institute of Arts, Detroit": {
-  "ig_location_id": null,
-  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"ALUCgFjzCme3SPR0i-JPzoy\"}}",
+ "Alte Nationalgalerie, Berlin": {
+  "lat": 52.52081,
+  "lon": 13.398353,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "129237310449725",
   "ig_location_id_checked": "2026-11-10",
-  "lat": 42.3595055,
-  "lon": -83.0645225,
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/AlteNationalgalerie"
+ },
+ "Belvedere, Vienna": {
+  "lat": 48.191389,
+  "lon": 16.380833,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "68213601503",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/belvederemuseum"
+ },
+ "Detroit Institute of Arts, Detroit": {
+  "ig_location_id": "13078310982",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/DetroitInstituteofArts",
+  "ig_location_id_checked": "2026-11-10",
+  "lat": 42.359444,
+  "lon": -83.064722,
   "lat_checked": "2026-11-10"
- }
+ },
+ "Fitzwilliam Museum, Cambridge": {
+  "lat": 52.200278,
+  "lon": 0.119444,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "29023962347",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/fitzwilliammuseum"
+ },
+ "Galleria Borghese, Rome": {
+  "lat": 41.91421,
+  "lon": 12.492144,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "104622823386032",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/galleriaborgheseufficiale"
+ },
+ "Gallerie degli Uffizi, Florence": {
+  "lat": 43.768333,
+  "lon": 11.255278,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "107172910903804",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/uffizigalleries"
+ },
+ "Gemäldegalerie Alte Meister, Dresden": {
+  "lat": 51.05338,
+  "lon": 13.73466,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "132201893499958",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/skd.museum (Staatliche Kunstsammlungen Dresden, which runs it)"
+ },
+ "Kunstmuseum Basel, Basel": {
+  "lat": 47.554167,
+  "lon": 7.594167,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "121031881405184",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/kunstmuseum.basel"
+ },
+ "Louvre, Paris": {
+  "lat": 48.861111,
+  "lon": 2.335833,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "23680604925",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/museedulouvre"
+ },
+ "Mauritshuis, The Hague": {
+  "lat": 52.080389,
+  "lon": 4.314306,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "208966549171837",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/mauritshuis"
+ },
+ "Metropolitan Museum of Art, New York": {
+  "lat": 40.779444,
+  "lon": -73.963333,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "6296252634",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/metmuseum"
+ },
+ "Museo Thyssen-Bornemisza, Madrid": {
+  "lat": 40.416041,
+  "lon": -3.694925,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "58168632832",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/museothyssen"
+ },
+ "Museo del Prado, Madrid": {
+  "lat": 40.413889,
+  "lon": -3.692222,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "139425773362",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/museonacionaldelprado"
+ },
+ "Musée d'Orsay, Paris": {
+  "lat": 48.859972,
+  "lon": 2.326527,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "170924542917905",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/museedorsay"
+ },
+ "Musée du Louvre, Paris": {
+  "lat": 48.861111,
+  "lon": 2.335833,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "23680604925",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/museedulouvre"
+ },
+ "National Gallery, London": {
+  "lat": 51.508889,
+  "lon": -0.128333,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "83395535556",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/thenationalgallery"
+ },
+ "National Museum, Oslo": {
+  "lat": 59.911667,
+  "lon": 10.729167,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "34790809429",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/nasjonalmuseet"
+ },
+ "Neue Galerie, New York": {
+  "lat": 40.781264,
+  "lon": -73.960327,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "15715400821",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/neuegalerieny"
+ },
+ "Rijksmuseum, Amsterdam": {
+  "lat": 52.36,
+  "lon": 4.885278,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "253769920176",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/rijksmuseum"
+ },
+ "Royal Museums of Fine Arts of Belgium, Brussels": {
+  "lat": 50.84168,
+  "lon": 4.358238,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "261740993907725",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/fineartsbelgium"
+ },
+ "St Bavo's Cathedral, Ghent": {
+  "lat": 51.052974,
+  "lon": 3.727059,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "555960931167588",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/pages/Sint-Baafskathedraal/555960931167588 (from visit.gent.be)"
+ },
+ "Tate Britain, London": {
+  "lat": 51.491111,
+  "lon": -0.1275,
+  "lat_checked": "2026-11-10",
+  "ig_note": "no own Facebook place page found (only the umbrella 'Tate' page): left untagged on purpose",
+  "ig_location_id_checked": "2026-11-10"
+ },
+ "The National Gallery, London": {
+  "lat": 51.508889,
+  "lon": -0.128333,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "83395535556",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/thenationalgallery"
+ },
+ "Uffizi Gallery, Florence": {
+  "lat": 43.768333,
+  "lon": 11.255278,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "107172910903804",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/uffizigalleries"
+ },
+ "Uffizi, Florence": {
+  "lat": 43.768333,
+  "lon": 11.255278,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "107172910903804",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/uffizigalleries"
+ },
+ "Van Gogh Museum, Amsterdam": {
+  "lat": 52.358333,
+  "lon": 4.881111,
+  "lat_checked": "2026-11-10",
+  "ig_location_id": "127104175596",
+  "ig_location_id_checked": "2026-11-10",
+  "ig_note": "set by hand 10 Nov 2026: facebook.com/VanGoghMuseum"
+ },
+ "_about": "Where each painting hangs, for the location tag of every post (automation/places.py). ig_location_id = the museum's Facebook Page id (what Instagram's location_id must be); lat/lon from Wikidata. Add a museum by hand: its Facebook page → About → Page transparency → Page ID."
 }
