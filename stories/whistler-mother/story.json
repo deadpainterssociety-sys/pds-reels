@@ -1,0 +1,726 @@
+{
+ "slug": "whistler-mother",
+ "hook_type": "hidden",
+ "teaser": "The famous mother who was only a stand-in",
+ "experiment": {
+  "id": "E1",
+  "arm": "B"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "James McNeill Whistler",
+  "born": 1834,
+  "died": 1903,
+  "painting": "Arrangement in Grey and Black No. 1 (Whistler's Mother)",
+  "year": "1871",
+  "museum": "Musée d'Orsay",
+  "city": "Paris",
+  "image": "mother",
+  "image_credit": "Musée d'Orsay, Paris, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Was she even <i>the model?</i>",
+  "name": "JAMES McNEILL WHISTLER",
+  "work": "Whistler's Mother, 1871",
+  "focus": [
+   0.74,
+   0.24
+  ],
+  "span": 0.45,
+  "answered_by": "No: a 15-year-old model failed to turn up for another painting, so Whistler asked his 67-year-old mother to stand in"
+ },
+ "rights": {
+  "creator_died": 1903,
+  "note": "Whistler d. 1903: public domain. Self-portrait c. 1872 PD; Annabel Lee PD; Greaves (d. 1930) 1869 painting PD; 1934 US stamp PD (US government work)."
+ },
+ "say": {
+  "1871": "eighteen seventy-one",
+  "1891": "eighteen ninety-one",
+  "1934": "nineteen thirty-four",
+  "67": "sixty-seven"
+ },
+ "ipa": {},
+ "respell": {
+  "Musée": "mew-ZAY",
+  "d'Orsay": "dor-SAY"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "She's only in this painting",
+     0.2,
+     0.95
+    ],
+    [
+     "because a model didn't *show up.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "studio",
+   "perf": [
+    [
+     "London, 1871.",
+     0.35,
+     0.95
+    ],
+    [
+     "Whistler was waiting for a girl of fifteen,",
+     0.3,
+     0.95
+    ],
+    [
+     "to pose for another painting.",
+     0.35,
+     0.95
+    ],
+    [
+     "She never came.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "mother",
+   "perf": [
+    [
+     "So he turned to his mother, Anna.",
+     0.35,
+     0.95
+    ],
+    [
+     "She was 67.",
+     0.4,
+     0.93
+    ],
+    [
+     "Her letter remembers his words:",
+     0.3,
+     0.95
+    ],
+    [
+     "Mother, I want you to *stand* for me!",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "sit",
+   "perf": [
+    [
+     "She tried.",
+     0.3,
+     0.92
+    ],
+    [
+     "But standing was too tiring,",
+     0.3,
+     0.95
+    ],
+    [
+     "so he painted her sitting down.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "title",
+   "perf": [
+    [
+     "He didn't even call it a portrait.",
+     0.35,
+     0.93
+    ],
+    [
+     "He called it",
+     0.2,
+     0.95
+    ],
+    [
+     "Arrangement in Grey and Black.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "quote",
+   "perf": [
+    [
+     "He wrote:",
+     0.3,
+     0.95
+    ],
+    [
+     "what can or ought the public to care",
+     0.15,
+     0.95
+    ],
+    [
+     "about the identity of the portrait?",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "pawn",
+   "perf": [
+    [
+     "He even pawned it.",
+     0.4,
+     0.92
+    ],
+    [
+     "In 1891, France bought it.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "stamp",
+   "perf": [
+    [
+     "Then, in 1934,",
+     0.3,
+     0.95
+    ],
+    [
+     "America put her on a Mother's Day stamp,",
+     0.35,
+     0.95
+    ],
+    [
+     "cropped, with a vase of flowers added.",
+     0.5,
+     0.95
+    ],
+    [
+     "The stand-in had become",
+     0.2,
+     0.92
+    ],
+    [
+     "America's *mother.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Musée d'Orsay, in Paris.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "mother": {
+   "file": "src/mother.jpg",
+   "commons": "File:Whistlers Mother high res.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.77,
+     0.19
+    ],
+    "hands": [
+     0.6,
+     0.47
+    ],
+    "curtain": [
+     0.13,
+     0.4
+    ],
+    "wallpic": [
+     0.43,
+     0.13
+    ],
+    "feet": [
+     0.3,
+     0.8
+    ],
+    "body": [
+     0.68,
+     0.5
+    ],
+    "full": [
+     0.5,
+     0.5
+    ],
+    "center": [
+     0.6,
+     0.45
+    ]
+   }
+  },
+  "whistler": {
+   "file": "src/whistler.jpg",
+   "commons": "File:Whistler Selbstporträt.jpg",
+   "long": 3000,
+   "points": {
+    "face": [
+     0.65,
+     0.3
+    ]
+   }
+  },
+  "lindsey": {
+   "file": "src/lindsey.jpg",
+   "commons": "File:James Abbott McNeill Whistler on the widow's walk at his house in Lindsey Row, Chelsea.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.2
+    ]
+   }
+  },
+  "annabel": {
+   "file": "src/annabel.jpg",
+   "commons": "File:Whistler - Annabel Lee, c.1869–1897, GLAHA 46377.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.58,
+     0.12
+    ]
+   }
+  },
+  "stamp": {
+   "file": "src/stamp.jpg",
+   "commons": "File:Whistler's Mother 1934 Issue-3c.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "vase": [
+     0.15,
+     0.72
+    ],
+    "words": [
+     0.3,
+     0.35
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "mother",
+   "from": "face@2.2",
+   "to": "face@2.4",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.4-0.05",
+   "img": "mother",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "sway": 0.01,
+   "dolly": [
+    0,
+    0.2
+   ],
+   "hit": "big"
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "mother",
+   "from": "full@0.52",
+   "to": "full@0.5",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "studio-0.08",
+   "img": "lindsey",
+   "from": "face@1.25",
+   "to": "face@1.4",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "studio.5-0.05",
+   "img": "annabel",
+   "from": "center@0.75",
+   "to": "center@0.78",
+   "kind": "image",
+   "frame": true,
+   "gray": 0.6
+  },
+  {
+   "at": "studio.15-0.05",
+   "img": "mother",
+   "from": "curtain@1.7",
+   "to": "curtain@1.8",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "mother-0.08",
+   "img": "mother",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "mother.10-0.05",
+   "img": "mother",
+   "from": "hands@1.8",
+   "to": "hands@1.95",
+   "sway": 0.005
+  },
+  {
+   "at": "mother.15-0.05",
+   "img": "mother",
+   "from": "face@2.6",
+   "to": "face@2.8",
+   "sway": 0.005
+  },
+  {
+   "at": "sit-0.08",
+   "img": "mother",
+   "from": "body@1.2",
+   "to": "body@1.3",
+   "sway": 0.006
+  },
+  {
+   "at": "sit.2-0.05",
+   "img": "mother",
+   "from": "feet@1.8",
+   "to": "feet@1.95",
+   "sway": 0.005
+  },
+  {
+   "at": "sit.7-0.05",
+   "img": "mother",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "sway": 0.008
+  },
+  {
+   "at": "title-0.08",
+   "img": "whistler",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "kind": "image",
+   "gray": 0.35
+  },
+  {
+   "at": "title.7-0.05",
+   "img": "mother",
+   "from": "full@0.5",
+   "to": "full@0.52",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "quote-0.08",
+   "img": "mother",
+   "from": "wallpic@2.0",
+   "to": "wallpic@2.15",
+   "kind": "image",
+   "gray": 0.5
+  },
+  {
+   "at": "quote.10-0.05",
+   "img": "mother",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "sway": 0.005
+  },
+  {
+   "at": "pawn-0.08",
+   "img": "mother",
+   "from": "hands@2.2",
+   "to": "hands@2.35",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "pawn.4-0.05",
+   "img": "mother",
+   "from": "full@0.5",
+   "to": "full@0.52",
+   "kind": "image",
+   "frame": true,
+   "gray": 0.5
+  },
+  {
+   "at": "stamp-0.08",
+   "img": "stamp",
+   "from": "center@0.4",
+   "to": "center@0.42",
+   "kind": "image",
+   "frame": true
+  },
+  {
+   "at": "stamp.18-0.05",
+   "img": "mother",
+   "from": "face@1.5",
+   "to": "face@1.65",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "mother",
+   "from": "face@2.0",
+   "to": "face@2.2",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "studio",
+   "to": "studio.5-0.1",
+   "text": "WHISTLER · BY W. GREAVES, 1869"
+  },
+  {
+   "type": "label",
+   "from": "studio.5",
+   "to": "studio.15-0.1",
+   "text": "ANNABEL LEE · c. 1869"
+  },
+  {
+   "type": "label",
+   "from": "studio.15",
+   "to": "mother-0.1",
+   "text": "LONDON · 1871"
+  },
+  {
+   "type": "title",
+   "from": "mother.5",
+   "to": "mother.10-0.1",
+   "kicker": "HIS MOTHER · AGE 67",
+   "text": "Anna <i>McNeill Whistler</i>"
+  },
+  {
+   "type": "label",
+   "from": "mother.10",
+   "to": "mother.15-0.1",
+   "text": "HER LETTER · NOVEMBER 1871"
+  },
+  {
+   "type": "label",
+   "from": "title",
+   "to": "title.7-0.1",
+   "text": "WHISTLER · SELF-PORTRAIT, c. 1872"
+  },
+  {
+   "type": "title",
+   "from": "title.10",
+   "to": "title$+0.35",
+   "kicker": "HIS TITLE",
+   "text": "Arrangement in <i>Grey and Black</i>"
+  },
+  {
+   "type": "label",
+   "from": "quote",
+   "to": "quote$",
+   "text": "THE GENTLE ART OF MAKING ENEMIES"
+  },
+  {
+   "type": "label",
+   "from": "pawn",
+   "to": "pawn.4-0.1",
+   "text": "PAWNED"
+  },
+  {
+   "type": "label",
+   "from": "pawn.4",
+   "to": "stamp-0.1",
+   "text": "BOUGHT BY FRANCE · 1891"
+  },
+  {
+   "type": "label",
+   "from": "stamp",
+   "to": "stamp.18-0.1",
+   "text": "U.S. POSTAGE · MAY 1934"
+  },
+  {
+   "type": "ring",
+   "at": "stamp.14",
+   "to": "stamp.18-0.1",
+   "img": "stamp",
+   "point": "vase",
+   "rx": 70,
+   "ry": 80,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSÉE D'ORSAY · PARIS"
+  }
+ ],
+ "nocap": [
+  [
+   "mother.5",
+   "mother.10-0.1"
+  ],
+  [
+   "title.10",
+   "title$+0.35"
+  ]
+ ],
+ "music": {
+  "transpose": -1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "studio-0.2",
+    "sit$+0.2"
+   ],
+   "drop": [
+    "studio.15-0.05",
+    "studio$+0.3"
+   ],
+   "choir": [
+    "stamp.18-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "mother.15",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "pawn.2",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "stamp.10",
+   "fx": "shutter",
+   "gain": 0.45
+  },
+  {
+   "at": "stamp.14",
+   "fx": "pop",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Painted in 1871; titled Arrangement in Grey and Black No. 1, best known as Whistler's Mother; in the Musée d'Orsay, Paris",
+   "source": "https://en.wikipedia.org/wiki/Whistler%27s_Mother ; https://whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y101"
+  },
+  {
+   "claim": "The portrait began when a model failed to arrive for a sitting for another painting, Annabel Lee; Anna Whistler's letter to Kate Palmer (3–4 Nov 1871) describes a 'girl of 15' who did not come; painted at 2 Lindsey Row, London, summer 1871",
+   "source": "https://whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y101 ; https://www.npr.org/2023/07/12/1186755113/when-whistlers-model-didnt-show-up-his-mom-stepped-in-and-made-art-history"
+  },
+  {
+   "claim": "Anna McNeill Whistler (1804–1881) was 67",
+   "source": "https://ctpublic.org/2023-07-12/when-whistlers-model-didnt-show-up-his-mom-stepped-in-and-made-art-history ; https://whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y101 (dates 1804–1881)"
+  },
+  {
+   "claim": "Her letter records his request: 'Mother I want you to stand for me!'",
+   "source": "https://whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y101"
+  },
+  {
+   "claim": "She first posed standing; it proved too tiring, so she was painted seated",
+   "source": "https://whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y101 ; https://en.wikipedia.org/wiki/Whistler%27s_Mother ; https://ctpublic.org/2023-07-12/when-whistlers-model-didnt-show-up-his-mom-stepped-in-and-made-art-history"
+  },
+  {
+   "claim": "Exhibited at the Royal Academy in 1872 as 'Arrangement in grey and black: portrait of the painter's mother'; for Whistler 'it's not a portrait' but an experiment in colour",
+   "source": "https://whistlerpaintings.gla.ac.uk/catalogue/display/?mid=y101 ; https://ctpublic.org/2023-07-12/when-whistlers-model-didnt-show-up-his-mom-stepped-in-and-made-art-history"
+  },
+  {
+   "claim": "Whistler, The Gentle Art of Making Enemies: 'To me it is interesting as a picture of my mother; but what can or ought the public to care about the identity of the portrait?'",
+   "source": "https://www.gutenberg.org/ebooks/24650 ; https://en.wikipedia.org/wiki/Whistler%27s_Mother"
+  },
+  {
+   "claim": "Whistler eventually pawned the painting; bought by the French state in 1891 (Musée du Luxembourg)",
+   "source": "https://en.wikipedia.org/wiki/Whistler%27s_Mother"
+  },
+  {
+   "claim": "1934: a 3-cent US Mother's Day stamp ('In memory and in honor of the mothers of America'), Roosevelt's idea; the image was cropped to a horizontal format and a vase of flowers added",
+   "source": "https://en.wikipedia.org/wiki/Whistler%27s_Mother ; https://www.history.com/articles/11-most-controversial-stamps-in-u-s-history ; https://commons.wikimedia.org/wiki/File:Whistler%27s_Mother_1934_Issue-3c.jpg"
+  }
+ ],
+ "caption": "Whistler's Mother only exists because a model didn't show up.\n\nLondon, 1871: James McNeill Whistler was waiting for a 15-year-old girl to pose for another painting, Annabel Lee. She never came. So he asked his mother, Anna, then 67. Her letter remembers his words: \"Mother I want you to stand for me!\" She tried, but standing was too tiring, so he painted her sitting down.\n\nHe didn't even want it seen as a portrait. He called it Arrangement in Grey and Black, and later wrote: \"what can or ought the public to care about the identity of the portrait?\" He even pawned it; the French state bought it in 1891.\n\nThen, in 1934, the US put her on a 3-cent Mother's Day stamp, cropped, with a vase of flowers added: \"In memory and in honor of the mothers of America.\" The stand-in had become America's mother.\n\n🖤 Would you have guessed she was a last-minute replacement?",
+ "caption_short": "She's only in this painting because a model didn't show up. Whistler's Mother was a stand-in. 🖤",
+ "youtube_title": "Was she even the model? Whistler's Mother",
+ "hashtags_instagram": [
+  "#whistler",
+  "#whistlersmother",
+  "#arthistory",
+  "#museedorsay",
+  "#mothers"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#whistler",
+  "#whistlersmother",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#whistler",
+  "#jamesmcneillwhistler",
+  "#whistlersmother",
+  "#museedorsay",
+  "#paris",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#mothersday"
+ ]
+}

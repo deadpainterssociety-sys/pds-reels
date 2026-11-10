@@ -12,7 +12,6 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 | When | Painting (museum) | Angle | Type | Notes |
 |---|---|---|---|---|
-| 2026-11-14 (Sat) | Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside (a 500-year-old tune nobody played until a student transcribed it in 2014: say what is sure and what is a modern reading) | hidden | the long video about this painting goes up on Mon 16 Nov and the Short must be live first (it links to it). Partial nudity everywhere: frame the score, the instruments and the faces, never the bodies |
 | 2026-11-19 (Thu) | an *Odyssey* painting: Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne), or Turner, *Ulysses Deriding Polyphemus* (National Gallery, London), or another famous one | find the true twist (e.g. Waterhouse paints the sirens as birds with women's faces, as the Greeks did, not mermaids) | hidden | Nolan's *The Odyssey* reaches digital/VOD on 17 Nov: post on Thursday 19 Nov for the weekend viewers. Name the film only as context ("the story in Nolan's new film"), never use its images |
 
 ## Done
@@ -42,13 +41,14 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 10 Nov 2026 | fuseli-nightmare | Fuseli, *The Nightmare* (Detroit Institute of Arts) | the 'mare' is a folklore spirit, not a horse; first drawing (March 1781) had no horse; the head is a visual pun; 20 guineas vs £500+ for the prints | hidden |
 | 11 Nov 2026 | velazquez-meninas-cross | Velázquez, *Las Meninas* (Prado) | the Santiago cross on his chest was added after 1659; ~150 questioned, papal dispensation, dead 9 months later; Palomino: "some say" the king painted it | hidden |
 | 11 Nov 2026 | holbein-dead-christ | Holbein, *The Body of the Dead Christ in the Tomb* (Kunstmuseum Basel) | a rotting Christ, 30.5 × 200 cm; Rhine-corpse legend (hedged); Dostoevsky stunned in 1867 (Anna's memoir/diary, the chair); 'a man's faith might be ruined' in The Idiot | sacred-strange |
+| 12 Nov 2026 | whistler-mother | Whistler, *Arrangement in Grey and Black No. 1 (Whistler's Mother)* (Musée d'Orsay) | a 15-year-old model didn't turn up, so his mother (67) stood in, then sat; he called it an 'arrangement'; pawned; bought by France 1891; 1934 Mother's Day stamp | hidden |
+| 14 Nov 2026 | bosch-butt-song | Bosch, *The Garden of Earthly Delights*, Hell panel (Prado) | the score on a sinner's backside; 2014 student went viral as the first to play it, but scholars wrote it out by 1961 and Atrium Musicae recorded it in 1978; no clef, so every version is a guess | hidden |
 
 ## Ideas (to verify)
 
 | Painting (museum) | Possible angle | Type | Notes |
 |---|---|---|---|
 | Goya, *The Naked Maja* (Prado) | the Inquisition demanded to know who ordered it | hidden | **nude: safe framing** (PLAYBOOK §1); sources: Prado, the 1815 Inquisition file |
-| Bosch, *The Garden of Earthly Delights* (Prado) | the music written on a sinner's backside | dark | don't play a melody you can't source; partial nudity: frame the score, not the bodies |
 | Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | dark-legend | **nude: safe framing**; the model claim is a legend: say so |
 | Titian, *Venus of Urbino* (Uffizi) | Mark Twain called it the "vilest" picture in the world | hidden | **nude: safe framing**; check the quote word for word |
 | Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
@@ -56,4 +56,3 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
 | Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | hidden | |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
-| Whistler, *Whistler's Mother* (Musée d'Orsay) | it was meant as an "arrangement in grey and black" | hidden | |

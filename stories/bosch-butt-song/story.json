@@ -1,0 +1,747 @@
+{
+ "slug": "bosch-butt-song",
+ "hook_type": "hidden",
+ "teaser": "The song painted on a sinner in Hell",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Hieronymus Bosch",
+  "born": 1450,
+  "died": 1516,
+  "painting": "The Garden of Earthly Delights (right panel, Hell)",
+  "year": "c. 1490–1500",
+  "museum": "Museo del Prado",
+  "city": "Madrid",
+  "image": "music",
+  "image_credit": "Museo del Prado, Madrid, via Wikimedia Commons (public domain)",
+  "nude": true
+ },
+ "cover": {
+  "question": "Who <i>first</i> played this?",
+  "name": "HIERONYMUS BOSCH",
+  "work": "The Garden of Earthly Delights, c. 1500",
+  "focus": [
+   0.37,
+   0.66
+  ],
+  "span": 0.45,
+  "answered_by": "Not the student who went viral in 2014: scholars had written it out by 1961, and Atrium Musicae, a band from Madrid, recorded it in 1978"
+ },
+ "rights": {
+  "creator_died": 1516,
+  "note": "Bosch d. 1516: public domain. Triptych scan and Hell panel PD; Le Boucq portrait c. 1550 PD; chant photo CC BY-SA 3.0 (Joan) -> credited."
+ },
+ "say": {
+  "1500": "fifteen hundred",
+  "2014": "twenty fourteen",
+  "1961": "nineteen sixty-one",
+  "1978": "nineteen seventy-eight",
+  "500-year-old": "five-hundred-year-old"
+ },
+ "ipa": {
+  "Bosch": "bˈɑːʃ"
+ },
+ "respell": {
+  "Bosch": "BOSH"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "There's sheet music painted",
+     0.25,
+     0.95
+    ],
+    [
+     "on this man's *backside.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "hell",
+   "perf": [
+    [
+     "Bosch painted this Hell around 1500.",
+     0.35,
+     0.95
+    ],
+    [
+     "Sinners are crucified on a harp and a lute,",
+     0.35,
+     0.95
+    ],
+    [
+     "and a choir sings from the notes on his skin.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "student",
+   "perf": [
+    [
+     "In 2014,",
+     0.3,
+     0.95
+    ],
+    [
+     "a twenty-year-old music student in Oklahoma",
+     0.3,
+     0.95
+    ],
+    [
+     "spotted it one night,",
+     0.3,
+     0.95
+    ],
+    [
+     "and played it.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "viral",
+   "perf": [
+    [
+     "She wrote it out,",
+     0.25,
+     0.95
+    ],
+    [
+     "recorded it,",
+     0.25,
+     0.95
+    ],
+    [
+     "and posted it online.",
+     0.5,
+     0.95
+    ],
+    [
+     "The headlines called it",
+     0.25,
+     0.95
+    ],
+    [
+     "the 500-year-old butt song from *Hell.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "first",
+   "perf": [
+    [
+     "Her university said she was the first to play it.",
+     0.4,
+     0.95
+    ],
+    [
+     "She wasn't.",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "before",
+   "perf": [
+    [
+     "Scholars had written it out by 1961.",
+     0.35,
+     0.95
+    ],
+    [
+     "And in 1978,",
+     0.3,
+     0.95
+    ],
+    [
+     "a band from Madrid",
+     0.25,
+     0.95
+    ],
+    [
+     "had already recorded it.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "clef",
+   "perf": [
+    [
+     "And no one can really play it.",
+     0.35,
+     0.93
+    ],
+    [
+     "The staff has no clef,",
+     0.3,
+     0.93
+    ],
+    [
+     "so every version is a *guess.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Even she had doubts.",
+     0.3,
+     0.93
+    ],
+    [
+     "She said Bosch may have just been slapping notes up there,",
+     0.25,
+     0.95
+    ],
+    [
+     "to make it look like *music.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Prado, in Madrid.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "music": {
+   "file": "src/music.jpg",
+   "commons": "File:The Garden of earthly delights.jpg",
+   "depth": true,
+   "long": 3840,
+   "_crop": "the musicians' Hell (x 0.768–0.872, y 0.585–0.79 of the 39137 px triptych scan), cut locally from the Commons original",
+   "points": {
+    "singer": [
+     0.43,
+     0.51
+    ],
+    "singer2": [
+     0.52,
+     0.44
+    ],
+    "notes": [
+     0.37,
+     0.7
+    ],
+    "score": [
+     0.33,
+     0.7
+    ],
+    "choir": [
+     0.5,
+     0.36
+    ],
+    "choir2": [
+     0.42,
+     0.55
+    ],
+    "book": [
+     0.17,
+     0.74
+    ],
+    "harp": [
+     0.43,
+     0.2
+    ],
+    "lute": [
+     0.17,
+     0.52
+    ],
+    "gurdy": [
+     0.8,
+     0.25
+    ],
+    "screamer": [
+     0.49,
+     0.27
+    ],
+    "mid": [
+     0.4,
+     0.6
+    ]
+   }
+  },
+  "hell": {
+   "file": "src/hell.jpg",
+   "commons": "File:Hieronymus Bosch - The Garden of Earthly Delights - Hell.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "top": [
+     0.5,
+     0.22
+    ],
+    "treeman": [
+     0.45,
+     0.36
+    ]
+   }
+  },
+  "bosch": {
+   "file": "src/bosch.jpg",
+   "commons": "File:Jheronimus Bosch.jpg",
+   "points": {
+    "face": [
+     0.45,
+     0.27
+    ]
+   }
+  },
+  "chant": {
+   "file": "src/chant.jpg",
+   "commons": "File:Notació gregoriana quadrada.jpg",
+   "credit": "Chant book photo: Joan, CC BY-SA 3.0, via Wikimedia Commons",
+   "points": {
+    "staff": [
+     0.22,
+     0.4
+    ],
+    "clef": [
+     0.075,
+     0.44
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "music",
+   "from": "singer@2.4",
+   "to": "singer@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "music",
+   "from": "notes@2.5",
+   "to": "notes@2.35",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "hell-0.08",
+   "img": "bosch",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "kind": "image",
+   "gray": 0.35
+  },
+  {
+   "at": "hell.3-0.05",
+   "img": "hell",
+   "from": "top@1.6",
+   "to": "top@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "hell.6-0.05",
+   "img": "music",
+   "from": "harp@1.8",
+   "to": "harp@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "hell.13-0.05",
+   "img": "music",
+   "from": "lute@2.0",
+   "to": "lute@2.1",
+   "sway": 0.006
+  },
+  {
+   "at": "hell.15-0.05",
+   "img": "music",
+   "from": "mid@1.6",
+   "to": "mid@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "student-0.08",
+   "img": "music",
+   "from": "notes@3.0",
+   "to": "notes@3.15",
+   "sway": 0.004
+  },
+  {
+   "at": "student.8-0.05",
+   "img": "music",
+   "from": "book@2.4",
+   "to": "book@2.55",
+   "sway": 0.004
+  },
+  {
+   "at": "viral-0.08",
+   "img": "music",
+   "from": "score@2.0",
+   "to": "score@2.15",
+   "sway": 0.005
+  },
+  {
+   "at": "viral.10-0.05",
+   "img": "music",
+   "from": "screamer@2.0",
+   "to": "screamer@2.15",
+   "sway": 0.005
+  },
+  {
+   "at": "first-0.08",
+   "img": "music",
+   "from": "singer2@2.2",
+   "to": "singer2@2.4",
+   "sway": 0.005
+  },
+  {
+   "at": "first.10-0.05",
+   "img": "music",
+   "from": "notes@2.8",
+   "to": "notes@2.6",
+   "sway": 0.004,
+   "hit": "small"
+  },
+  {
+   "at": "before-0.08",
+   "img": "music",
+   "from": "book@2.0",
+   "to": "book@2.15",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "before.7-0.05",
+   "img": "music",
+   "from": "gurdy@1.6",
+   "to": "gurdy@1.75",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "clef-0.08",
+   "img": "chant",
+   "from": "staff@1.2",
+   "to": "staff@1.3",
+   "kind": "image",
+   "gray": 0.4
+  },
+  {
+   "at": "clef.7-0.05",
+   "img": "chant",
+   "from": "clef@2.2",
+   "to": "clef@2.35",
+   "kind": "image",
+   "gray": 0.4
+  },
+  {
+   "at": "clef.12-0.05",
+   "img": "music",
+   "from": "notes@3.1",
+   "to": "notes@2.95",
+   "sway": 0.004
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "music",
+   "from": "choir@1.8",
+   "to": "choir@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "hell",
+   "from": "treeman@1.6",
+   "to": "treeman@1.68",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.15-0.05",
+   "img": "music",
+   "from": "score@1.7",
+   "to": "score@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "music",
+   "from": "singer@2.5",
+   "to": "singer@2.7",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hell.21",
+   "to": "student-0.1",
+   "img": "music",
+   "point": "notes",
+   "rx": 150,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "hell",
+   "to": "hell.3-0.1",
+   "text": "BOSCH · DRAWING, c. 1550"
+  },
+  {
+   "type": "label",
+   "from": "hell.3",
+   "to": "hell.6-0.1",
+   "text": "HELL · RIGHT PANEL, c. 1500"
+  },
+  {
+   "type": "label",
+   "from": "student",
+   "to": "student.8-0.1",
+   "text": "OKLAHOMA · FEBRUARY 2014"
+  },
+  {
+   "type": "title",
+   "from": "viral.14",
+   "to": "viral$+0.35",
+   "kicker": "THE HEADLINES · 2014",
+   "text": "The 500-year-old <i>butt song</i> from Hell"
+  },
+  {
+   "type": "stamp",
+   "from": "first.10",
+   "to": "first$+0.4",
+   "text": "NOT THE FIRST"
+  },
+  {
+   "type": "label",
+   "from": "before",
+   "to": "before.7-0.1",
+   "text": "1961 · WRITTEN OUT"
+  },
+  {
+   "type": "label",
+   "from": "before.7",
+   "to": "clef-0.1",
+   "text": "1978 · ATRIUM MUSICAE DE MADRID"
+  },
+  {
+   "type": "label",
+   "from": "clef",
+   "to": "clef.7-0.1",
+   "text": "A MEDIEVAL CHANT BOOK"
+  },
+  {
+   "type": "label",
+   "from": "clef.7",
+   "to": "clef.12-0.1",
+   "text": "THE CLEF SETS THE PITCH"
+  },
+  {
+   "type": "ring",
+   "at": "clef.11",
+   "to": "clef.12-0.1",
+   "img": "chant",
+   "point": "clef",
+   "rx": 70,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "credit",
+   "from": "clef",
+   "to": "clef.12-0.1",
+   "text": "PHOTO: JOAN · CC BY-SA 3.0"
+  },
+  {
+   "type": "label",
+   "from": "payoff.6",
+   "to": "payoff.15-0.1",
+   "text": "HELL · THE TREE-MAN"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSEO DEL PRADO · MADRID"
+  }
+ ],
+ "nocap": [
+  [
+   "viral.14",
+   "viral$+0.35"
+  ]
+ ],
+ "music": {
+  "transpose": 3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "before-0.2",
+    "clef$+0.2"
+   ],
+   "drop": [
+    "first.10-0.05",
+    "first$+0.3"
+   ],
+   "choir": [
+    "payoff.6-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "hell.21",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "viral.15",
+   "fx": "pop",
+   "gain": 0.45
+  },
+  {
+   "at": "before.6",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "before.9",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "clef.11",
+   "fx": "tick",
+   "gain": 0.5
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In the right (Hell) panel of Bosch's Garden of Earthly Delights, a choir sings from a score inscribed on a pair of buttocks; sinners are crucified by harp and lute ('Musicians' Hell')",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights ; https://earlymusicmuse.com/bosch1/"
+  },
+  {
+   "claim": "Painted c. 1490–1500 (Prado); Wikipedia: between 1490 and 1510 — narrated as 'around 1500'",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights ; Museo del Prado collection page (copy: https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/f/21472/files/2025/04/The-Garden-of-Earthly-Delights-Triptych-The-Collection-Museo-Nacional-del-Prado.html)"
+  },
+  {
+   "claim": "Amelia Hamrick, a 20-year-old music student at Oklahoma Christian University; she and another student were looking at the painting one night; she transcribed it to modern notation (Feb 2014), recorded it and posted it on Tumblr",
+   "source": "https://www.okgazette.com/?p=10507 ; https://www.medievalists.net/2014/02/500-year-old-song-found-butt-hell-sound-like/ ; https://earlymusicmuse.com/bosch1/"
+  },
+  {
+   "claim": "Headlines: 'Student Transcribes 500-Year-Old \"Butt Song From Hell\"' (Music Feeds, 19 Feb 2014); artnet: 'Listen to Hieronymus Bosch's \"500-Year-Old Butt Song From Hell\"'",
+   "source": "https://musicfeeds.com.au/news/student-transcribes-500-year-old-butt-song-from-hell/ ; https://news.artnet.com/in-brief/bosch-butt-song-from-hell-309732"
+  },
+  {
+   "claim": "A university news release said she was the first to transcribe and the first to play the tune",
+   "source": "https://www.okgazette.com/?p=10507"
+  },
+  {
+   "claim": "Earlier transcriptions: J. Lenneberg, Gazette des Beaux-Arts, 1961, and Laurinda Dixon, 1981; Dixon: the 'discovery' had been common knowledge among art historians for over 50 years",
+   "source": "https://earlymusicmuse.com/bosch1/"
+  },
+  {
+   "claim": "Atrium Musicae (de Madrid), an early-music ensemble from Madrid founded by Gregorio Paniagua, recorded organum over the notes in 1978 (LP Codex Gluteo track)",
+   "source": "https://earlymusicmuse.com/bosch1/ ; https://en.wikipedia.org/wiki/Atrium_Musicae_de_Madrid"
+  },
+  {
+   "claim": "The notation has no clef, so the pitch cannot be determined; Hamrick assumed the second line was C",
+   "source": "https://earlymusicmuse.com/bosch1/ ; https://www.medievalists.net/2014/02/500-year-old-song-found-butt-hell-sound-like/"
+  },
+  {
+   "claim": "Hamrick (AP): 'I think Bosch may have just been slapping notes up there to make it look like music.'",
+   "source": "https://m.washingtontimes.com/news/2014/feb/23/okla-college-student-uncovers-hidden-song/ (AP, 23 Feb 2014) ; https://www.news9.com/story/24730944/okla-christian-university-student-solves-centuries-old-mystery"
+  },
+  {
+   "claim": "The Garden of Earthly Delights hangs in the Museo del Prado, Madrid",
+   "source": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+  },
+  {
+   "claim": "(caption P.S.) The music book beneath the lute carries the same faux notation (strokes, notes placed randomly); Bosch also used it in The Haywain and The Last Judgement",
+   "source": "https://earlymusicmuse.com/bosch1/"
+  }
+ ],
+ "caption": "There's sheet music painted on a sinner's backside in Hieronymus Bosch's Hell, the right panel of The Garden of Earthly Delights (c. 1490–1500). Around him, sinners are crucified on a harp and a lute, and a choir sings from the notes on his skin.\n\nIn February 2014, Amelia Hamrick, a 20-year-old music student at Oklahoma Christian University, spotted it one night, wrote it out in modern notation, recorded it and posted it online. The headlines called it \"the 500-year-old butt song from Hell\", and her university said she was the first to play it.\n\nShe wasn't. Scholars had written the notes out by 1961, and in 1978 Atrium Musicae, an early-music group from Madrid, recorded them. And nobody can really play it: the staff has no clef, so the pitch is a guess. Even Hamrick told the AP: \"I think Bosch may have just been slapping notes up there to make it look like music.\"\n\nP.S. Bosch painted the same kind of make-believe notes in the open music book under the lute.\n\n🖤 Would you have noticed the notes?",
+ "caption_short": "There's sheet music painted on this man's backside. Bosch's 'butt song from Hell' wasn't first played in 2014. 🖤",
+ "youtube_title": "Who first played this? Bosch's Butt Song from Hell",
+ "hashtags_instagram": [
+  "#bosch",
+  "#gardenofearthlydelights",
+  "#arthistory",
+  "#prado",
+  "#arthistorymemes"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#bosch",
+  "#gardenofearthlydelights",
+  "#musictok"
+ ],
+ "hashtags": [
+  "#hieronymusbosch",
+  "#bosch",
+  "#gardenofearthlydelights",
+  "#prado",
+  "#madrid",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#medievalmusic"
+ ]
+}
