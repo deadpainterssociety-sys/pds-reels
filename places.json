@@ -1,0 +1,10 @@
+{
+ "Detroit Institute of Arts, Detroit": {
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"ALUCgFjzCme3SPR0i-JPzoy\"}}",
+  "ig_location_id_checked": "2026-11-10",
+  "lat": 42.3595055,
+  "lon": -83.0645225,
+  "lat_checked": "2026-11-10"
+ }
+}
