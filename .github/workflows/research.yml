@@ -24,12 +24,23 @@ jobs:
         run: |
           ids=$(python3 -c "import json;print(' '.join(json.load(open('research/request.json')).get('download',[])))")
           [ -n "$ids" ] || exit 0
-          pip install -q yt-dlp
+          pip install -q -U yt-dlp youtube-transcript-api
           mkdir -p research-out/media
           for id in $ids; do
-            yt-dlp -q --no-warnings --no-playlist -f "bv*[height<=360][ext=mp4]+ba[ext=m4a]/b[height<=360]/b" \
-              --write-auto-subs --write-subs --sub-langs "en.*" --sub-format vtt \
-              -o "research-out/media/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=$id" || echo "download failed for $id"
+            # YouTube often asks datacenter machines to sign in: try a few player clients, then the transcript alone
+            for pc in default tv web_safari mweb ios android_vr; do
+              yt-dlp -q --no-warnings --no-playlist --extractor-args "youtube:player_client=$pc" \
+                -f "bv*[height<=360][ext=mp4]+ba[ext=m4a]/b[height<=360]/b" --write-auto-subs --write-subs --sub-langs "en.*" \
+                --sub-format vtt -o "research-out/media/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=$id" && { echo "ok with $pc"; break; } \
+                || echo "failed with $pc"
+            done
+            ls research-out/media/$id.* >/dev/null 2>&1 || python3 - "$id" <<'PY2' || echo "transcript failed for $id"
+          import json, sys
+          from youtube_transcript_api import YouTubeTranscriptApi
+          t = YouTubeTranscriptApi().fetch(sys.argv[1], languages=["en"])
+          json.dump([{"t": s.start, "d": s.duration, "text": s.text} for s in t], open(f"research-out/media/{sys.argv[1]}.transcript.json", "w"))
+          print("transcript ok", len(t))
+          PY2
           done
           ls -la research-out/media
       - name: Encrypt and push to research-data
