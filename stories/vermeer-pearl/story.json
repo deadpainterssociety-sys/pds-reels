@@ -1,0 +1,674 @@
+{
+ "slug": "vermeer-pearl",
+ "images": {
+  "girl": {
+   "file": "src/girl.jpg",
+   "commons": "File:1665 Girl with a Pearl Earring.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "eyes": [
+     0.41,
+     0.39
+    ],
+    "eye": [
+     0.465,
+     0.395
+    ],
+    "face": [
+     0.42,
+     0.43
+    ],
+    "pearl": [
+     0.627,
+     0.545
+    ],
+    "dab": [
+     0.615,
+     0.535
+    ],
+    "glow": [
+     0.64,
+     0.556
+    ],
+    "ear": [
+     0.615,
+     0.51
+    ],
+    "turban": [
+     0.62,
+     0.3
+    ],
+    "curtain": [
+     0.86,
+     0.14
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "lips": [
+     0.39,
+     0.51
+    ]
+   }
+  },
+  "study": {
+   "file": "src/study.jpg",
+   "commons": "File:Study of a Young Woman MET DP353256.jpg",
+   "long": 2560,
+   "points": {
+    "face": [
+     0.47,
+     0.42
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "delft": {
+   "file": "src/delft.jpg",
+   "commons": "File:View of Delft, by Johannes Vermeer.jpg",
+   "long": 2560,
+   "points": {
+    "town": [
+     0.5,
+     0.62
+    ],
+    "center": [
+     0.5,
+     0.55
+    ]
+   }
+  }
+ },
+ "hook_type": "hidden",
+ "teaser": "The famous pearl that isn't there",
+ "experiment": {
+  "id": "E1",
+  "arm": "B"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Johannes Vermeer",
+  "born": 1632,
+  "died": 1675,
+  "painting": "Girl with a Pearl Earring",
+  "year": "c. 1665",
+  "museum": "Mauritshuis",
+  "city": "The Hague",
+  "image": "girl",
+  "image_credit": "Mauritshuis, The Hague, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1675,
+  "note": "Vermeer d. 1675: public domain. Study of a Young Woman (Met, CC0); View of Delft PD; The Procuress PD."
+ },
+ "say": {
+  "1665": "sixteen sixty-five",
+  "2018": "twenty eighteen",
+  "350": "three hundred and fifty"
+ },
+ "ipa": {
+  "Vermeer": "vɚmˈɪɹ",
+  "tronie": "tɹˈoʊni",
+  "Mauritshuis": "mˈaʊɹɪtshaʊs"
+ },
+ "respell": {
+  "tronie": "TROH-nee",
+  "Mauritshuis": "MOW-rits-house"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This famous pearl is only *two brush strokes.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "who",
+   "perf": [
+    [
+     "Vermeer painted her around 1665,",
+     0.3,
+     0.95
+    ],
+    [
+     "in Delft.",
+     0.4,
+     0.95
+    ],
+    [
+     "For 350 years,",
+     0.3,
+     0.95
+    ],
+    [
+     "people have asked who she was.",
+     0.4,
+     0.95
+    ],
+    [
+     "Nobody *knows.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "tronie",
+   "perf": [
+    [
+     "Because she isn't a portrait.",
+     0.35,
+     0.93
+    ],
+    [
+     "She's a *tronie:*",
+     0.3,
+     0.88
+    ],
+    [
+     "a Dutch study of a face,",
+     0.3,
+     0.95
+    ],
+    [
+     "an imaginary girl,",
+     0.3,
+     0.95
+    ],
+    [
+     "in exotic dress and a turban.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "big",
+   "perf": [
+    [
+     "And the pearl itself?",
+     0.4,
+     0.9
+    ],
+    [
+     "The museum says it's too large to be real.",
+     0.4,
+     0.94
+    ],
+    [
+     "Maybe glass.",
+     0.3,
+     0.94
+    ],
+    [
+     "One astrophysicist thinks polished tin.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "scan",
+   "perf": [
+    [
+     "In 2018,",
+     0.3,
+     0.95
+    ],
+    [
+     "scientists studied it with X-rays and microscopes.",
+     0.4,
+     0.95
+    ],
+    [
+     "They found tiny eyelashes,",
+     0.3,
+     0.95
+    ],
+    [
+     "a green curtain that faded away,",
+     0.4,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "nohook",
+   "perf": [
+    [
+     "but no *hook.*",
+     0.5,
+     0.86
+    ],
+    [
+     "Nothing holds the pearl to her ear.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Up close, the pearl is just two strokes of white:",
+     0.35,
+     0.93
+    ],
+    [
+     "a thick dab on top,",
+     0.3,
+     0.94
+    ],
+    [
+     "and the glow of her white collar below.",
+     0.4,
+     0.94
+    ],
+    [
+     "Your eye *builds* the pearl.",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Mauritshuis, in The Hague.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "cover": {
+  "question": "Is her pearl even <i>real?</i>",
+  "name": "JOHANNES VERMEER",
+  "work": "Girl with a Pearl Earring, c. 1665",
+  "focus": [
+   0.52,
+   0.47
+  ],
+  "span": 0.6,
+  "answered_by": "No: the museum says it is too large to be real (probably glass); it is just two strokes of white paint with no hook"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "girl",
+   "from": "eyes@2.4",
+   "to": "eyes@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "girl",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "who-0.08",
+   "img": "delft",
+   "kind": "image",
+   "from": "town@1.05",
+   "to": "town@1.15",
+   "gray": 1
+  },
+  {
+   "at": "who.7-0.05",
+   "img": "girl",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "who.16-0.05",
+   "img": "girl",
+   "from": "eyes@2.8",
+   "to": "eyes@3.0",
+   "sway": 0.004
+  },
+  {
+   "at": "tronie-0.08",
+   "img": "study",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "gray": 0.6
+  },
+  {
+   "at": "tronie.8-0.05",
+   "img": "study",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.6
+  },
+  {
+   "at": "tronie.14-0.05",
+   "img": "girl",
+   "from": "turban@1.6",
+   "to": "turban@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "big-0.08",
+   "img": "girl",
+   "from": "pearl@2.6",
+   "to": "pearl@2.8",
+   "sway": 0.004
+  },
+  {
+   "at": "big.13-0.05",
+   "img": "girl",
+   "kind": "image",
+   "from": "pearl@4.0",
+   "to": "pearl@4.2"
+  },
+  {
+   "at": "scan-0.08",
+   "img": "girl",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1
+  },
+  {
+   "at": "scan.9-0.05",
+   "img": "girl",
+   "kind": "image",
+   "from": "eye@4.0",
+   "to": "eye@4.2"
+  },
+  {
+   "at": "scan.13-0.05",
+   "img": "girl",
+   "kind": "image",
+   "from": "curtain@1.6",
+   "to": "curtain@1.75",
+   "dim": -0.3
+  },
+  {
+   "at": "nohook-0.08",
+   "img": "girl",
+   "kind": "image",
+   "from": "ear@3.6",
+   "to": "ear@3.8"
+  },
+  {
+   "at": "nohook.3-0.05",
+   "img": "girl",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "girl",
+   "kind": "image",
+   "from": "pearl@4.6",
+   "to": "pearl@4.8"
+  },
+  {
+   "at": "payoff.23-0.05",
+   "img": "girl",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "girl",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "who",
+   "to": "who.7-0.1",
+   "text": "DELFT · VERMEER'S HOME TOWN"
+  },
+  {
+   "type": "label",
+   "from": "tronie",
+   "to": "tronie.14-0.1",
+   "text": "ANOTHER VERMEER TRONIE · c. 1665"
+  },
+  {
+   "type": "ring",
+   "at": "big.2",
+   "to": "big.13-0.1",
+   "img": "girl",
+   "point": "pearl",
+   "rx": 60,
+   "ry": 60,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "big.4",
+   "to": "big.13-0.1",
+   "text": "MUSEUM: 'TOO LARGE TO BE REAL'"
+  },
+  {
+   "type": "label",
+   "from": "scan",
+   "to": "scan.9-0.1",
+   "text": "MAURITSHUIS LAB · 2018"
+  },
+  {
+   "type": "hotspot",
+   "at": "scan.11",
+   "to": "scan.13-0.1",
+   "img": "girl",
+   "point": "eye"
+  },
+  {
+   "type": "ring",
+   "at": "nohook.1",
+   "to": "nohook.3-0.1",
+   "img": "girl",
+   "point": "ear",
+   "rx": 70,
+   "ry": 70,
+   "rot": 0
+  },
+  {
+   "type": "hotspot",
+   "at": "payoff.11",
+   "to": "payoff.15-0.1",
+   "img": "girl",
+   "point": "dab"
+  },
+  {
+   "type": "hotspot",
+   "at": "payoff.17",
+   "to": "payoff.23-0.1",
+   "img": "girl",
+   "point": "glow"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MAURITSHUIS · THE HAGUE"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "scan-0.2",
+    "scan$+0.2"
+   ],
+   "drop": [
+    "nohook-0.05",
+    "nohook.3+0.2"
+   ],
+   "choir": [
+    "payoff.23-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "big.2",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "scan.1",
+   "fx": "shutter",
+   "gain": 0.4
+  },
+  {
+   "at": "nohook.2",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.12",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.17",
+   "fx": "tick",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Girl with a Pearl Earring, c. 1665, by Johannes Vermeer (Delft 1632 – 1675 Delft); 44.5 x 39 cm; Mauritshuis, The Hague",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring"
+  },
+  {
+   "claim": "The pearl: 'Vermeer painted it with only two strokes of white paint: one at the bottom to reflect the collar and a thick dab at the top. There is nothing more, not even a silver hook.'",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring ; https://mauritshuis.nl/en/press-releases/closer-to-vermeer-and-the-girl"
+  },
+  {
+   "claim": "Nobody knows who she was: 'the question of who exactly the Girl was still remains a mystery' (2020)",
+   "source": "https://mauritshuis.nl/en/press-releases/closer-to-vermeer-and-the-girl ; https://www.pbs.org/newshour/arts/hi-tech-scans-uncover-new-details-of-girl-with-a-pearl-earring-but-not-her-identity"
+  },
+  {
+   "claim": "'It is not a portrait, but a tronie – a painting of an imaginary figure… a girl in exotic dress, wearing an oriental turban and an improbably large pearl'",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring"
+  },
+  {
+   "claim": "'This pearl is too large to be real. It is probably an imitation pearl'; perhaps varnished glass",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring ; https://www.dutchnews.nl/features/2020/05/inburgering-with-dutchnews-nl-11-things-to-know-about-the-girl-with-a-pearl-earring/"
+  },
+  {
+   "claim": "Astrophysicist/astronomer Vincent Icke argues it looks more like polished tin (Nederlands Tijdschrift voor Natuurkunde, 2014)",
+   "source": "https://www.dutchnews.nl/features/2020/05/inburgering-with-dutchnews-nl-11-things-to-know-about-the-girl-with-a-pearl-earring/ ; https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"
+  },
+  {
+   "claim": "Research project 'The Girl in the Spotlight', February–March 2018 (macro-X-ray fluorescence scanning, microscopy); results announced 28 April 2020",
+   "source": "https://mauritshuis.nl/en/press-releases/closer-to-vermeer-and-the-girl"
+  },
+  {
+   "claim": "Findings: Vermeer painted tiny hairs (eyelashes) around both eyes; she was painted in front of a green curtain that has disappeared through changes in the translucent green paint",
+   "source": "https://mauritshuis.nl/en/press-releases/closer-to-vermeer-and-the-girl"
+  },
+  {
+   "claim": "'The pearl is an illusion – translucent and opaque touches of white paint – and the hook to hang the pearl from her ear is missing'",
+   "source": "https://mauritshuis.nl/en/press-releases/closer-to-vermeer-and-the-girl"
+  },
+  {
+   "claim": "It hangs in the Mauritshuis, The Hague (inv. 670)",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring"
+  },
+  {
+   "claim": "P.S.: bought at auction in The Hague in 1881 by Des Tombe for two guilders plus thirty cents mark-up",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring ; https://mauritshuis.nl/en/our-collection/restoration-and-research/closer-to-vermeer-and-the-girl/girl-with-a-blog/how-much-is-the-girl-with-a-pearl-earring-of-vermeer-worth"
+  }
+ ],
+ "caption": "The most famous pearl in art isn't really there.\n\nVermeer painted Girl with a Pearl Earring around 1665 in Delft, and nobody knows who she was. It isn't a portrait: the Mauritshuis calls it a tronie, a painting of an imaginary figure, a girl in exotic dress with a turban and an \"improbably large\" pearl.\n\nThe museum says the pearl is too large to be real, probably an imitation, perhaps varnished glass. Astrophysicist Vincent Icke thinks it looks more like polished tin.\n\nIn 2018 the museum's scientists examined the painting with X-ray scanning and microscopes. They found tiny eyelashes, a green curtain that has faded away behind her, and no hook: nothing holds the pearl to her ear. Up close it is just two strokes of white paint, a thick dab on top and the reflection of her white collar below. Your eye does the rest.\n\nP.S. In 1881 it sold at auction in The Hague for two guilders and thirty cents.\n\n🖤 Did you ever notice there's no hook?",
+ "caption_short": "The most famous pearl in art is two strokes of white paint. No hook. Nothing holds it to her ear. 🖤",
+ "youtube_title": "Is her pearl even real? Vermeer's Girl with a Pearl Earring",
+ "hashtags": [
+  "#vermeer",
+  "#girlwithapearlearring",
+  "#mauritshuis",
+  "#thehague",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#dutchgoldenage",
+  "#artmystery"
+ ],
+ "hashtags_instagram": [
+  "#vermeer",
+  "#girlwithapearlearring",
+  "#arthistory",
+  "#mauritshuis",
+  "#artmystery"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vermeer",
+  "#girlwithapearlearring",
+  "#mystery"
+ ]
+}

@@ -42,6 +42,9 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 11 Nov 2026 | velazquez-meninas-cross | Velázquez, *Las Meninas* (Prado) | the Santiago cross on his chest was added after 1659; ~150 questioned, papal dispensation, dead 9 months later; Palomino: "some say" the king painted it | hidden |
 | 11 Nov 2026 | holbein-dead-christ | Holbein, *The Body of the Dead Christ in the Tomb* (Kunstmuseum Basel) | a rotting Christ, 30.5 × 200 cm; Rhine-corpse legend (hedged); Dostoevsky stunned in 1867 (Anna's memoir/diary, the chair); 'a man's faith might be ruined' in The Idiot | sacred-strange |
 | 12 Nov 2026 | whistler-mother | Whistler, *Arrangement in Grey and Black No. 1 (Whistler's Mother)* (Musée d'Orsay) | a 15-year-old model didn't turn up, so his mother (67) stood in, then sat; he called it an 'arrangement'; pawned; bought by France 1891; 1934 Mother's Day stamp | hidden |
+| 12 Nov 2026 | repin-ivan | Repin, *Ivan the Terrible and His Son Ivan* (State Tretyakov Gallery, Moscow) | banned by Alexander III in 1885; slashed 3 times through the faces by icon painter Abram Balashov in 1913 (hedged 'Enough blood!'); keeper reportedly killed himself; Repin repainted the faces; 2018 metal-pole attack; back behind bulletproof glass in 2024 | damage |
+| 13 Nov 2026 | vermeer-pearl | Vermeer, *Girl with a Pearl Earring* (Mauritshuis, The Hague) | a tronie, not a portrait; the pearl 'too large to be real' (glass? Icke: tin); 2018 scans: eyelashes, faded green curtain, no hook; two strokes of white | hidden |
+| 13 Nov 2026 | goya-wellington | Goya, *The Duke of Wellington* (National Gallery, London) | stolen 21 Aug 1961 for pensioners' TV licences; returned via Birmingham New Street left luggage 1965; Kempton Bunton cleared of the painting, jailed for the frame; 2012 files: son John confessed in 1969 | damage |
 | 14 Nov 2026 | bosch-butt-song | Bosch, *The Garden of Earthly Delights*, Hell panel (Prado) | the score on a sinner's backside; 2014 student went viral as the first to play it, but scholars wrote it out by 1961 and Atrium Musicae recorded it in 1978; no clef, so every version is a guess | hidden |
 
 ## Ideas (to verify)
@@ -54,5 +57,4 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
-| Vermeer, *Girl with a Pearl Earring* (Mauritshuis) | not a portrait: a "tronie"; the pearl debate | hidden | |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |

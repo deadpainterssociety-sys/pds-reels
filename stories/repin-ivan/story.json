@@ -1,0 +1,739 @@
+{
+ "slug": "repin-ivan",
+ "images": {
+  "ivan": {
+   "file": "src/ivan.jpg",
+   "commons": "File:Répine Ivan le Terrible et son fils Ivan principale version 1883 - 1885.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "eyes": [
+     0.495,
+     0.29
+    ],
+    "faces": [
+     0.51,
+     0.34
+    ],
+    "son": [
+     0.525,
+     0.4
+    ],
+    "center": [
+     0.5,
+     0.52
+    ],
+    "staff": [
+     0.62,
+     0.9
+    ],
+    "hand": [
+     0.57,
+     0.71
+    ]
+   }
+  },
+  "slashed": {
+   "file": "src/slashed.jpg",
+   "commons": "File:Ivan the Terrible & son - destroyed.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "cuts": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "damage2018": {
+   "file": "src/damage2018.jpg",
+   "commons": "File:Ivan the Terrible killing his son 2018 vandalism damage.jpg",
+   "long": 2560,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "tear": [
+     0.58,
+     0.57
+    ],
+    "faces": [
+     0.45,
+     0.28
+    ]
+   }
+  },
+  "repin": {
+   "file": "src/repin.jpg",
+   "commons": "File:1915 Repin Selbstportrait Nationalgalerie Prag anagoria.jpg",
+   "long": 2560,
+   "points": {
+    "face": [
+     0.46,
+     0.25
+    ]
+   }
+  },
+  "tsar": {
+   "file": "src/tsar.jpg",
+   "commons": "File:Kramskoy Alexander III.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.27
+    ]
+   }
+  },
+  "sketch": {
+   "file": "src/sketch.jpg",
+   "commons": "File:Ivan the Terrible & son - sketch.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "hook_type": "damage",
+ "teaser": "The tsar painting attacked with a knife",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Ilya Repin",
+  "born": 1844,
+  "died": 1930,
+  "painting": "Ivan the Terrible and His Son Ivan on 16 November 1581",
+  "year": "1883–1885",
+  "museum": "State Tretyakov Gallery",
+  "city": "Moscow",
+  "image": "ivan",
+  "image_credit": "State Tretyakov Gallery, Moscow, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1930,
+  "note": "Repin d. 1930: public domain (painting 1885, US-free). 1913 damage photo PD; 2018 damage photo tagged PD on Commons; Repin self-portrait 1915 PD; Kramskoi (d. 1887) portrait of Alexander III PD."
+ },
+ "say": {
+  "1885": "eighteen eighty-five",
+  "1913": "nineteen thirteen",
+  "2018": "twenty eighteen",
+  "29": "twenty-nine",
+  "68": "sixty-eight"
+ },
+ "ipa": {
+  "Repin": "ɹˈɛpɪn",
+  "Ilya": "ɪljˈɑː",
+  "Tretyakov": "tɹˈɛtjəkˌɔf"
+ },
+ "respell": {
+  "Repin": "REP-in",
+  "Ilya": "il-YAH",
+  "Tretyakov": "TRET-yah-koff"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This painting has been attacked *twice.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "paint",
+   "perf": [
+    [
+     "Ilya Repin finished it in 1885.",
+     0.35,
+     0.95
+    ],
+    [
+     "Ivan the Terrible,",
+     0.3,
+     0.93
+    ],
+    [
+     "holding the son he has just struck,",
+     0.3,
+     0.94
+    ],
+    [
+     "in a rage.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ban",
+   "perf": [
+    [
+     "The tsar himself had it banned.",
+     0.35,
+     0.94
+    ],
+    [
+     "For months, no one could see it.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "knife",
+   "perf": [
+    [
+     "In 1913,",
+     0.3,
+     0.95
+    ],
+    [
+     "a 29-year-old icon painter",
+     0.3,
+     0.95
+    ],
+    [
+     "walked up with a knife.",
+     0.5,
+     0.9
+    ],
+    [
+     "Three cuts,",
+     0.3,
+     0.88
+    ],
+    [
+     "straight through the *faces.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "shout",
+   "perf": [
+    [
+     "Witnesses said he shouted:",
+     0.3,
+     0.94
+    ],
+    [
+     "*Enough blood!*",
+     0.6,
+     0.86
+    ],
+    [
+     "He was sent to an asylum.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "keeper",
+   "perf": [
+    [
+     "The gallery's keeper is said to have thrown himself under a train.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "repin",
+   "perf": [
+    [
+     "Repin, then 68,",
+     0.3,
+     0.94
+    ],
+    [
+     "came to Moscow to repaint the faces.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "again",
+   "perf": [
+    [
+     "In 2018,",
+     0.3,
+     0.95
+    ],
+    [
+     "a man smashed the glass with a metal pole,",
+     0.3,
+     0.94
+    ],
+    [
+     "and tore the canvas in three places.",
+     0.4,
+     0.94
+    ],
+    [
+     "He said Ivan never killed his son.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Six years later,",
+     0.3,
+     0.94
+    ],
+    [
+     "it's back on the wall,",
+     0.3,
+     0.94
+    ],
+    [
+     "inside a *bulletproof* case.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Tretyakov Gallery, in Moscow.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "cover": {
+  "question": "Who took a <i>knife</i> to it?",
+  "name": "ILYA REPIN",
+  "work": "Ivan the Terrible and His Son Ivan, 1885",
+  "focus": [
+   0.51,
+   0.34
+  ],
+  "span": 0.55,
+  "answered_by": "Abram Balashov, a 29-year-old icon painter, in January 1913 (three cuts through the faces)"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "ivan",
+   "from": "eyes@2.4",
+   "to": "eyes@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.4-0.05",
+   "img": "ivan",
+   "from": "faces@1.0",
+   "to": "faces@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "ivan",
+   "kind": "image",
+   "from": "center@0.55",
+   "to": "center@0.53",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "paint-0.08",
+   "img": "sketch",
+   "kind": "image",
+   "from": "center@0.55",
+   "to": "center@0.58",
+   "frame": true,
+   "gray": 1,
+   "dim": -0.35
+  },
+  {
+   "at": "paint.6-0.05",
+   "img": "ivan",
+   "from": "eyes@1.9",
+   "to": "eyes@2.05",
+   "sway": 0.006
+  },
+  {
+   "at": "paint.9-0.05",
+   "img": "ivan",
+   "from": "son@2.0",
+   "to": "son@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "paint.16-0.05",
+   "img": "ivan",
+   "from": "eyes@2.8",
+   "to": "eyes@3.0",
+   "sway": 0.004
+  },
+  {
+   "at": "ban-0.08",
+   "img": "tsar",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.6
+  },
+  {
+   "at": "ban.6-0.05",
+   "img": "ivan",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.3
+  },
+  {
+   "at": "knife-0.08",
+   "img": "ivan",
+   "kind": "image",
+   "from": "faces@1.5",
+   "to": "faces@1.65",
+   "gray": 1
+  },
+  {
+   "at": "knife.11-0.05",
+   "img": "slashed",
+   "kind": "image",
+   "from": "center@0.75",
+   "to": "center@0.78",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "shout.6-0.05",
+   "img": "slashed",
+   "kind": "image",
+   "from": "cuts@0.95",
+   "to": "cuts@1.0",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "keeper-0.08",
+   "img": "ivan",
+   "kind": "image",
+   "from": "staff@1.5",
+   "to": "staff@1.65",
+   "gray": 1,
+   "dim": -0.2
+  },
+  {
+   "at": "repin-0.08",
+   "img": "repin",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.4
+  },
+  {
+   "at": "repin.3-0.05",
+   "img": "ivan",
+   "from": "faces@2.2",
+   "to": "faces@2.35",
+   "sway": 0.005
+  },
+  {
+   "at": "again-0.08",
+   "img": "damage2018",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08"
+  },
+  {
+   "at": "again.11-0.05",
+   "img": "damage2018",
+   "kind": "image",
+   "from": "tear@1.6",
+   "to": "tear@1.75"
+  },
+  {
+   "at": "again.18-0.05",
+   "img": "ivan",
+   "from": "son@2.4",
+   "to": "son@2.55",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff.3-0.05",
+   "img": "ivan",
+   "from": "faces@1.0",
+   "to": "faces@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.8-0.05",
+   "img": "ivan",
+   "from": "eyes@1.7",
+   "to": "eyes@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "ivan",
+   "from": "faces@1.6",
+   "to": "faces@1.75",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "paint",
+   "to": "paint.6-0.1",
+   "text": "REPIN · FIRST SKETCH, 1883"
+  },
+  {
+   "type": "title",
+   "from": "ban.1",
+   "to": "ban.6-0.1",
+   "kicker": "TSAR · BANNED IT IN 1885",
+   "text": "Alexander <i>III</i>"
+  },
+  {
+   "type": "label",
+   "from": "ban.6",
+   "to": "knife-0.1",
+   "text": "HIDDEN FROM VIEW · 1885"
+  },
+  {
+   "type": "label",
+   "from": "knife",
+   "to": "knife.2-0.1",
+   "text": "TRETYAKOV GALLERY · 1913"
+  },
+  {
+   "type": "title",
+   "from": "knife.2",
+   "to": "knife.11-0.1",
+   "kicker": "ICON PAINTER · AGE 29",
+   "text": "Abram <i>Balashov</i>"
+  },
+  {
+   "type": "label",
+   "from": "knife.11",
+   "to": "keeper-0.1",
+   "text": "THE DAMAGE · JANUARY 1913"
+  },
+  {
+   "type": "label",
+   "from": "repin",
+   "to": "repin.3-0.1",
+   "text": "REPIN · SELF-PORTRAIT, 1915"
+  },
+  {
+   "type": "label",
+   "from": "again",
+   "to": "again.18-0.1",
+   "text": "TRETYAKOV GALLERY · MAY 2018"
+  },
+  {
+   "type": "ring",
+   "at": "again.12",
+   "to": "again.18-0.1",
+   "img": "damage2018",
+   "point": "tear",
+   "rx": 220,
+   "ry": 120,
+   "rot": -10
+  },
+  {
+   "type": "stamp",
+   "to": "payoff$+0.4",
+   "text": "BULLETPROOF",
+   "from": "payoff.10"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "TRETYAKOV GALLERY · MOSCOW"
+  }
+ ],
+ "nocap": [
+  [
+   "ban.1",
+   "ban.6-0.1"
+  ],
+  [
+   "knife.2",
+   "knife.11-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "knife-0.2",
+    "keeper$+0.2"
+   ],
+   "drop": [
+    "ban.6-0.05",
+    "ban$+0.3"
+   ],
+   "choir": [
+    "payoff.3-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "knife.11",
+   "fx": "snip",
+   "gain": 0.6
+  },
+  {
+   "at": "knife.12",
+   "fx": "snip",
+   "gain": 0.6
+  },
+  {
+   "at": "knife.16",
+   "fx": "snip",
+   "gain": 0.6
+  },
+  {
+   "at": "shout.4",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "again.4",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "payoff.10",
+   "fx": "pop",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Ilya Repin (1844–1930) painted 'Ivan the Terrible and His Son Ivan on 16 November 1581' in 1883–1885; it shows Ivan IV holding his dying son after striking him",
+   "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan ; https://www.tretyakovgallerymagazine.com/node/8318"
+  },
+  {
+   "claim": "Historians debate the death; most accounts (Possevino) say the tsar struck his son with his staff",
+   "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan ; https://www.rbth.com/arts/330317-ivan-terrible-and-his-son-painting"
+  },
+  {
+   "claim": "Alexander III banned its exhibition in April 1885; the ban was lifted in July 1885 (about three months)",
+   "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan ; https://www.kommersant.ru/doc/7381400 ; https://www.rbth.com/arts/330317-ivan-terrible-and-his-son-painting"
+  },
+  {
+   "claim": "16 January 1913 (Old Style): Abram Balashov, a 29-year-old icon painter, slashed it three times with a knife, across the faces of father and son",
+   "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan ; https://www.rbth.com/arts/330317-ivan-terrible-and-his-son-painting ; https://www.thecollector.com/repin-ivan-terrible-real-story-famous-work/"
+  },
+  {
+   "claim": "He was reported to shout 'Enough blood!' (variants: 'Enough deaths, enough blood!', 'Stop the bloodshed!'); declared mentally ill and sent to an asylum",
+   "source": "https://www.kommersant.ru/doc/7381400 ; https://www.tretyakovgallerymagazine.com/node/8318 ; https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan"
+  },
+  {
+   "claim": "The gallery's keeper (curator) Khruslov reportedly threw himself under a train after the attack",
+   "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan ; https://www.rbth.com/arts/330317-ivan-terrible-and-his-son-painting ; https://ru.wikipedia.org/wiki/Иван_Грозный_и_сын_его_Иван_16_ноября_1581_года"
+  },
+  {
+   "claim": "Repin, aged 68, came to Moscow and repainted the damaged faces (restoration led by Igor Grabar and Dmitry Bogoslovsky)",
+   "source": "https://www.rbth.com/arts/330317-ivan-terrible-and-his-son-painting ; https://www.kommersant.ru/doc/7381400 ; https://www.sobaka.ru/entertainment/art/96786"
+  },
+  {
+   "claim": "25 May 2018: Igor Podporin smashed the glass with a metal stanchion and ripped the canvas in three places; he was quoted saying 'Ivan the Terrible did not kill his son'",
+   "source": "https://themoscowtimes.com/news/attack-on-repin-painting-in-tretyakov-gallery-61591 ; https://www.rferl.org/a/russian-sentenced-to-2-1-2-years-for-vandalizing-iconic-painting-of-ivan-the-terrible/29912342.html"
+  },
+  {
+   "claim": "After restoration it returned to permanent display on 16 December 2024 in an anti-vandal, bulletproof capsule, State Tretyakov Gallery, Moscow",
+   "source": "https://www.themoscowtimes.com/2024/12/16/repin-painting-returns-to-moscows-tretyakov-gallery-nearly-7-years-after-vandal-attack-a87343 ; https://www.theartnewspaper.com/2022/05/27/russias-famous-ivan-the-terrible-painting-finally-restored-after-2018-attack"
+  }
+ ],
+ "caption": "This painting has been attacked twice.\n\nIlya Repin finished Ivan the Terrible and His Son Ivan in 1885: the tsar clutching the son he has just struck in a rage (most accounts say with his staff; historians still argue). Tsar Alexander III had it banned from exhibition for about three months.\n\nIn January 1913, Abram Balashov, a 29-year-old icon painter, slashed it three times with a knife, straight through the faces. Witnesses reported he shouted \"Enough blood!\". He was declared insane and sent to an asylum. The gallery's keeper reportedly threw himself under a train. Repin, then 68, came to Moscow to repaint the faces.\n\nIn May 2018 a man smashed the glass with a metal pole and tore the canvas in three places, saying Ivan never killed his son. After years of restoration it went back on display in December 2024, inside a bulletproof case.\n\n🖤 Can a painting be too violent to show?",
+ "caption_short": "Attacked with a knife in 1913, smashed with a metal pole in 2018. Repin's Ivan the Terrible now hangs behind bulletproof glass. 🖤",
+ "youtube_title": "Who took a knife to it? Repin's Ivan the Terrible and His Son",
+ "hashtags": [
+  "#repin",
+  "#ivantheterrible",
+  "#tretyakovgallery",
+  "#moscow",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#russianart",
+  "#darkhistory"
+ ],
+ "hashtags_instagram": [
+  "#repin",
+  "#ivantheterrible",
+  "#arthistory",
+  "#moscow",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#repin",
+  "#ivantheterrible",
+  "#darkhistory"
+ ]
+}

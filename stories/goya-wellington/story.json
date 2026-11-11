@@ -1,0 +1,679 @@
+{
+ "slug": "goya-wellington",
+ "images": {
+  "duke": {
+   "file": "src/duke.jpg",
+   "commons": "File:Goya - Duke of Wellington - NG6322.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "eyes": [
+     0.47,
+     0.31
+    ],
+    "face": [
+     0.5,
+     0.34
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "medals": [
+     0.52,
+     0.72
+    ],
+    "bust": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "goya": {
+   "file": "src/goya.jpg",
+   "commons": "File:Autorretrato Goya 1815.jpg",
+   "long": 2560,
+   "points": {
+    "face": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "gallery": {
+   "file": "src/gallery.jpg",
+   "commons": "File:The National Gallery south facade - geograph.org.uk - 3300034.jpg",
+   "long": 2560,
+   "points": {
+    "portico": [
+     0.45,
+     0.5
+    ]
+   },
+   "credit": "National Gallery, London: photo by Stuart Logan, CC BY-SA 2.0, via Wikimedia Commons (geograph)"
+  },
+  "station": {
+   "file": "src/station.jpg",
+   "commons": "File:Birmingham New Street Station, east end, with 'Britannia' Pacific geograph-2742656-by-Ben-Brooksbank.jpg",
+   "long": 2394,
+   "points": {
+    "center": [
+     0.6,
+     0.5
+    ]
+   },
+   "credit": "Birmingham New Street, 1955: photo by Ben Brooksbank, CC BY-SA 2.0, via Wikimedia Commons (geograph)"
+  }
+ },
+ "hook_type": "damage",
+ "teaser": "The Goya stolen to pay for TV licences",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Francisco Goya",
+  "born": 1746,
+  "died": 1828,
+  "painting": "The Duke of Wellington",
+  "year": "1812–14",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "duke",
+  "image_credit": "National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1828,
+  "note": "Goya d. 1828: public domain. Goya self-portrait 1815 PD. National Gallery facade photo and Birmingham New Street 1955 photo (Ben Brooksbank) CC BY-SA 2.0 via geograph -> credited."
+ },
+ "say": {
+  "1812": "eighteen twelve",
+  "1961": "nineteen sixty-one",
+  "1965": "nineteen sixty-five",
+  "1969": "nineteen sixty-nine",
+  "2012": "twenty twelve",
+  "140,000": "a hundred and forty thousand",
+  "61": "sixty-one"
+ },
+ "ipa": {},
+ "respell": {
+  "Goya": "GOY-ah"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This Goya was stolen to pay for *television licenses.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "bought",
+   "perf": [
+    [
+     "Goya painted the Duke of Wellington in 1812.",
+     0.35,
+     0.95
+    ],
+    [
+     "In 1961,",
+     0.3,
+     0.95
+    ],
+    [
+     "Britain paid 140,000 pounds",
+     0.3,
+     0.94
+    ],
+    [
+     "to keep it from going to America.",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "stolen",
+   "perf": [
+    [
+     "Less than three weeks after it went on show,",
+     0.3,
+     0.95
+    ],
+    [
+     "it *vanished* from the National Gallery.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "notes",
+   "perf": [
+    [
+     "Then came ransom notes.",
+     0.35,
+     0.93
+    ],
+    [
+     "The thief wanted the same sum,",
+     0.3,
+     0.94
+    ],
+    [
+     "to buy television licenses for poor pensioners.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "years",
+   "perf": [
+    [
+     "For almost four years,",
+     0.3,
+     0.94
+    ],
+    [
+     "nobody found it.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "back",
+   "perf": [
+    [
+     "In 1965,",
+     0.3,
+     0.95
+    ],
+    [
+     "it turned up in a left-luggage office",
+     0.3,
+     0.95
+    ],
+    [
+     "at Birmingham New Street station.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "bunton",
+   "perf": [
+    [
+     "Then Kempton Bunton,",
+     0.3,
+     0.93
+    ],
+    [
+     "a 61-year-old retired driver from Newcastle,",
+     0.3,
+     0.95
+    ],
+    [
+     "turned himself in.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "trial",
+   "perf": [
+    [
+     "The jury cleared him of stealing the painting.",
+     0.35,
+     0.94
+    ],
+    [
+     "He was jailed for the *frame.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "In 2012,",
+     0.3,
+     0.95
+    ],
+    [
+     "police files revealed that his son had confessed,",
+     0.3,
+     0.94
+    ],
+    [
+     "in 1969,",
+     0.3,
+     0.95
+    ],
+    [
+     "to being the *real* thief.",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "cover": {
+  "question": "Who <i>stole</i> the Duke?",
+  "name": "FRANCISCO GOYA",
+  "work": "The Duke of Wellington, 1812–14",
+  "focus": [
+   0.5,
+   0.36
+  ],
+  "span": 0.6,
+  "answered_by": "Kempton Bunton, a 61-year-old retired driver, turned himself in; police files released in 2012 showed his son John confessed in 1969 to being the thief"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "duke",
+   "from": "face@2.2",
+   "to": "face@2.4",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.3-0.05",
+   "img": "duke",
+   "from": "bust@1.0",
+   "to": "bust@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "duke",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.58",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "bought-0.08",
+   "img": "goya",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.5
+  },
+  {
+   "at": "bought.3-0.05",
+   "img": "duke",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "bought.8-0.05",
+   "img": "duke",
+   "from": "medals@1.6",
+   "to": "medals@1.75",
+   "sway": 0.005
+  },
+  {
+   "at": "stolen-0.08",
+   "img": "gallery",
+   "kind": "image",
+   "from": "portico@1.05",
+   "to": "portico@1.15",
+   "gray": 1,
+   "dim": 0.3
+  },
+  {
+   "at": "stolen.9-0.05",
+   "img": "duke",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "gray": 1
+  },
+  {
+   "at": "notes-0.08",
+   "img": "duke",
+   "kind": "image",
+   "from": "eyes@2.2",
+   "to": "eyes@2.4",
+   "gray": 1
+  },
+  {
+   "at": "notes.10-0.05",
+   "img": "duke",
+   "kind": "image",
+   "from": "medals@1.4",
+   "to": "medals@1.55",
+   "gray": 1
+  },
+  {
+   "at": "years-0.08",
+   "img": "duke",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.56",
+   "frame": true,
+   "gray": 1,
+   "dim": 0.35
+  },
+  {
+   "at": "back-0.08",
+   "img": "station",
+   "kind": "image",
+   "from": "center@1.05",
+   "to": "center@1.15",
+   "gray": 1,
+   "dim": 0.3
+  },
+  {
+   "at": "bunton-0.08",
+   "img": "duke",
+   "kind": "image",
+   "from": "face@1.25",
+   "to": "face@1.35",
+   "gray": 1,
+   "dim": 0.25
+  },
+  {
+   "at": "trial-0.08",
+   "img": "duke",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "trial.8-0.05",
+   "img": "duke",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "duke",
+   "from": "eyes@2.2",
+   "to": "eyes@2.4",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "duke",
+   "from": "bust@1.0",
+   "to": "bust@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "duke",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "bought",
+   "to": "bought.3-0.1",
+   "text": "GOYA · SELF-PORTRAIT, 1815"
+  },
+  {
+   "type": "label",
+   "from": "bought.8",
+   "to": "stolen-0.1",
+   "text": "BOUGHT FOR BRITAIN · 1961"
+  },
+  {
+   "type": "label",
+   "from": "stolen",
+   "to": "stolen.9-0.1",
+   "text": "NATIONAL GALLERY · LONDON"
+  },
+  {
+   "type": "credit",
+   "from": "stolen",
+   "to": "stolen.9-0.1",
+   "text": "PHOTO: STUART LOGAN · CC BY-SA 2.0"
+  },
+  {
+   "type": "stamp",
+   "from": "stolen.10",
+   "to": "stolen$+0.4",
+   "text": "STOLEN"
+  },
+  {
+   "type": "label",
+   "from": "stolen.9",
+   "to": "notes-0.1",
+   "text": "21 AUGUST 1961"
+  },
+  {
+   "type": "label",
+   "from": "notes",
+   "to": "years-0.1",
+   "text": "FIVE RANSOM NOTES"
+  },
+  {
+   "type": "label",
+   "from": "back",
+   "to": "bunton-0.1",
+   "text": "BIRMINGHAM NEW STREET"
+  },
+  {
+   "type": "credit",
+   "from": "back",
+   "to": "bunton-0.1",
+   "text": "PHOTO: BEN BROOKSBANK · CC BY-SA 2.0"
+  },
+  {
+   "type": "title",
+   "from": "bunton.1",
+   "to": "bunton.9-0.1",
+   "kicker": "RETIRED DRIVER · AGE 61",
+   "text": "Kempton <i>Bunton</i>"
+  },
+  {
+   "type": "label",
+   "from": "bunton.9",
+   "to": "trial-0.1",
+   "text": "JULY 1965"
+  },
+  {
+   "type": "label",
+   "from": "trial",
+   "to": "trial.8-0.1",
+   "text": "OLD BAILEY · NOVEMBER 1965"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "payoff.12-0.1",
+   "text": "POLICE FILES · RELEASED 2012"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "bunton.1",
+   "bunton.9-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "notes-0.2",
+    "back$+0.2"
+   ],
+   "drop": [
+    "trial.8-0.05",
+    "trial$+0.3"
+   ],
+   "choir": [
+    "payoff.12-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.3-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "stolen.10",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "notes.2",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "back.10",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "trial.13",
+   "fx": "pop",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Goya (1746–1828) painted The Duke of Wellington in Madrid, probably shortly after Wellington's arrival in August 1812; altered c. 1814",
+   "source": "https://www.nationalgallery.org.uk/paintings/francisco-de-goya-the-duke-of-wellington ; https://en.wikipedia.org/wiki/Portrait_of_the_Duke_of_Wellington_(Goya)"
+  },
+  {
+   "claim": "1961: bought at Sotheby's by American collector Charles Wrightsman for £140,000; the National Gallery acquired it for £140,000 with the Wolfson Foundation (£100,000) and a special Exchequer grant to keep it in Britain",
+   "source": "https://www.wolfson.org.uk/goya-wellington-stolen-portrait/ ; https://en.wikipedia.org/wiki/Portrait_of_the_Duke_of_Wellington_(Goya) ; https://www.nationalgallery.org.uk/paintings/francisco-de-goya-the-duke-of-wellington"
+  },
+  {
+   "claim": "Stolen from the National Gallery on 21 August 1961, less than three weeks after it went on display (2 or 3 August 1961)",
+   "source": "https://www.nationalgallery.org.uk/research/research-centre/archive/record/NGA26 ; https://www.wolfson.org.uk/goya-wellington-stolen-portrait/ ; https://artreview.com/national-gallery-goya-theft-kempton-bunton/"
+  },
+  {
+   "claim": "Ransom notes demanded £140,000 be given to charity to pay for TV licences for poor pensioners",
+   "source": "https://www.nationalgallery.org.uk/research/research-centre/archive/record/NGA26 ; https://www.wolfson.org.uk/goya-wellington-stolen-portrait/"
+  },
+  {
+   "claim": "Returned in May 1965 (almost four years later) via the left-luggage office at Birmingham New Street station, after a ticket was sent to the Daily Mirror",
+   "source": "https://www.wolfson.org.uk/goya-wellington-stolen-portrait/ ; https://en.wikipedia.org/wiki/Kempton_Bunton"
+  },
+  {
+   "claim": "Kempton Bunton (born 14 June 1904, Newcastle upon Tyne), a retired driver aged 61, surrendered on 19 July 1965",
+   "source": "https://www.nationalgallery.org.uk/research/research-centre/archive/record/NGA26 ; https://en.wikipedia.org/wiki/Kempton_Bunton ; https://artreview.com/national-gallery-goya-theft-kempton-bunton/"
+  },
+  {
+   "claim": "At the Old Bailey (November 1965) he was cleared of stealing the painting but convicted of stealing the frame, which was never returned; three months in prison",
+   "source": "https://www.nationalgallery.org.uk/research/research-centre/archive/record/NGA26 ; https://en.wikipedia.org/wiki/Kempton_Bunton"
+  },
+  {
+   "claim": "Files released in 2012 showed his son John Bunton confessed in 1969 to being the thief; no prosecution followed",
+   "source": "https://www.theguardian.com/artanddesign/2012/nov/30/1961-goya-crime-national-gallery ; https://en.wikipedia.org/wiki/Kempton_Bunton ; https://www.nationalgallery.org.uk/research/research-centre/archive/record/NGA26"
+  },
+  {
+   "claim": "P.S.: a copy of the portrait appears in Dr No's lair in the 1962 Bond film Dr. No",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_the_Duke_of_Wellington_(Goya) ; https://www.wolfson.org.uk/goya-wellington-stolen-portrait/"
+  },
+  {
+   "claim": "Hangs in the National Gallery, London (NG6322)",
+   "source": "https://www.nationalgallery.org.uk/paintings/francisco-de-goya-the-duke-of-wellington"
+  }
+ ],
+ "caption": "This Goya was stolen to pay for TV licences.\n\nGoya painted the Duke of Wellington in Madrid in 1812. In 1961 the National Gallery paid £140,000 to keep it from going to an American collector, and on 21 August 1961, less than three weeks after it went on show, it vanished.\n\nRansom notes followed: the thief wanted £140,000 given to charity to buy TV licences for poor pensioners. For almost four years nobody found it. In May 1965 it turned up in the left-luggage office at Birmingham New Street station. That July, Kempton Bunton, a 61-year-old retired driver from Newcastle, turned himself in.\n\nThe jury cleared him of stealing the painting. He got three months for the frame, which was never returned. Then in 2012, released files showed that his son John had confessed in 1969 to being the real thief.\n\nP.S. While it was missing, a copy turned up in Dr No's lair in the first James Bond film.\n\n🖤 Would you have convicted him?",
+ "caption_short": "Stolen in 1961 to pay pensioners' TV licences. The thief was jailed for the frame, not the Goya. Or was he even the thief? 🖤",
+ "youtube_title": "Who stole the Duke? Goya's Duke of Wellington heist",
+ "hashtags": [
+  "#goya",
+  "#dukeofwellington",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#artheist",
+  "#truecrime"
+ ],
+ "hashtags_instagram": [
+  "#goya",
+  "#dukeofwellington",
+  "#arthistory",
+  "#nationalgallery",
+  "#truecrime"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#goya",
+  "#dukeofwellington",
+  "#truecrime"
+ ]
+}
