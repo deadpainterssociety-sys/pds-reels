@@ -14,6 +14,8 @@ story.json "music": {
 Automatic SFX: whoosh on every cut ("whoosh": false on a shot to skip), "hit": "big" -> reverse sting + big impact
 (+ flash/shake in the video), "hit": "small" -> small impact, tick on every map pin.
 Extra cues: "sfx": [{"at": anchor, "fx": "chime|impact|impact_big|whoosh|tick|riser|sting|shutter|heartbeat|pop", "gain": 0.5}]
+Classical recordings: "tracks" (see the comment above the tracks code), with "music_db", "duck_db", "pad": false,
+"whooshes": false to match (long videos, from 11 Nov 2026).
 Loudness: the mono mix is normalised to -14 LUFS (≈ -11 LUFS once written as identical stereo channels).
 """
 import json, os, sys, shutil
@@ -65,11 +67,44 @@ music = S.reverb(music, 2.6, 0.3)
 if "drop" in sec: music *= 1 - 0.85 * mask(*sec["drop"], 0.25)
 music /= np.abs(music).max() + 1e-9
 
+
+# Classical recordings instead of (or over) the synthesized pad: "tracks" in story.json music (long videos, 11 Nov 2026).
+#   {"file": "src/music/x.ogg", "from": "c1a" | "c1a$" | 12.5 | "c1a+2", "to": ..., "start": seconds into the recording,
+#    "gain_db": 0, "fade_in": 2.5, "fade_out": 4, "credit": "Chopin, Prelude Op. 28 No. 4 · Ivan Ilić · CC BY 3.0"}
+# Each recording is levelled to the same loudness, faded at both ends, and ducked under the voice like the pad.
+def _at(x):
+    if isinstance(x, (int, float)): return float(x)
+    tl = json.load(open(os.path.join(sdir, "build", "timeline.json")))
+    m = __import__("re").match(r"^([\w-]+)(\$?)([+-][\d.]+)?$", str(x))
+    ln = next(l for l in tl["lines"] if l["id"] == m.group(1))
+    return (ln["e"] if m.group(2) else ln["s"]) + float(m.group(3) or 0)
+
+
+if M.get("tracks"):
+    import subprocess
+    if not M.get("pad"): music = np.zeros(len(t))
+    for tr in M["tracks"]:
+        raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", os.path.join(sdir, tr["file"]), "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"],
+                             capture_output=True, check=True).stdout
+        a = np.frombuffer(raw, np.float32).copy()
+        a = a[int(float(tr.get("start", 0)) * SR):]
+        lufs = pyln.Meter(SR).integrated_loudness(a[: SR * 120] if len(a) > SR * 120 else a)
+        a *= 10 ** ((-23.0 - lufs + float(tr.get("gain_db", 0))) / 20)          # every recording at the same loudness
+        t0 = _at(tr["from"]); t1 = min(D, _at(tr["to"]) if tr.get("to") is not None else D)
+        n = max(0, min(len(a), int((t1 - t0) * SR))); a = a[:n]
+        fi, fo = int(float(tr.get("fade_in", 2.5)) * SR), int(float(tr.get("fade_out", 4)) * SR)
+        if fi and n: a[:min(fi, n)] *= np.linspace(0, 1, min(fi, n))
+        if fo and n: a[-min(fo, n):] *= np.linspace(1, 0, min(fo, n))
+        i0 = int(t0 * SR); music[i0:i0 + n] += a[: len(music) - i0]
+        print(f"track {os.path.basename(tr['file'])}: {t0:.1f}-{t0 + n / SR:.1f} s")
+    music *= 10 ** (23.0 / 20) / 10                    # back to roughly the pad's scale (peak ~1 for a -23 LUFS piano)
+    music = np.clip(music, -1.5, 1.5)
+
 fx = np.zeros(len(t))
 for i, (ct, hit, wh) in enumerate(rs["cuts"]):
     if hit == "big": S.place(fx, S.sting_reverse(), ct - 0.95, 0.5); S.place(fx, S.impact(True), ct, 0.95)
     elif hit == "small": S.place(fx, S.impact(False), ct, 0.5)
-    elif wh and i > 0: S.place(fx, S.whoosh(0.45), ct - 0.3, 0.22)
+    elif wh and i > 0 and M.get("whooshes", True): S.place(fx, S.whoosh(0.45), ct - 0.3, 0.22)
 for sh in rs["shots"]:
     if sh.get("kind") == "map":
         for p in sh["map"]["pins"]: S.place(fx, S.tick() * 2, p["t"], 0.6)
@@ -81,7 +116,7 @@ for x in rs["sfx"]:
     S.place(fx, FX[x["fx"]](), x["t"] - lead, x["gain"])
 fx /= max(1.0, np.abs(fx).max())
 
-mix = v + music * 10 ** (M.get("music_db", -12) / 20) * S.duck_env(v) + fx * 10 ** (M.get("fx_db", -6.5) / 20)
+mix = v + music * 10 ** (M.get("music_db", -12) / 20) * S.duck_env(v, M.get("duck_db", -10)) + fx * 10 ** (M.get("fx_db", -6.5) / 20)
 fade = int(0.8 * SR); mix[-fade:] *= np.linspace(1, 0, fade)
 mix *= 10 ** ((-14.0 - pyln.Meter(SR).integrated_loudness(mix)) / 20)
 mix = np.where(np.abs(mix) > 0.7, np.sign(mix) * (0.7 + 0.28 * np.tanh((np.abs(mix) - 0.7) / 0.28)), mix)   # soft clip
