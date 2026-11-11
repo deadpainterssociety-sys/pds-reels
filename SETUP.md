@@ -65,7 +65,8 @@ morning two reels to review. Until steps 5–7 are done, the posting message giv
    **Client secret** → secret **`YT_CLIENT_SECRET`**.
 5. Open developers.google.com/oauthplayground → ⚙ (top right) → tick **Use your own OAuth credentials** → paste the
    Client ID and secret. On the left, in *Input your own scopes*, paste:
-   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly`
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly https://www.googleapis.com/auth/youtube.force-ssl`
+   (youtube.force-ssl, added 11 Nov 2026: subtitles and the question comment on long videos)
    → **Authorize APIs** → sign in with the Google account that owns the channel (pick the DPS channel if asked) →
    on "Google hasn't verified this app" click **Advanced → Go to DPS Publisher** → Allow.
 6. Click **Exchange authorization code for tokens** → copy the **Refresh token** → secret **`YT_REFRESH_TOKEN`**.

@@ -10,8 +10,12 @@ status.containsSyntheticMedia = true discloses the AI voice.
 Long videos (16:9, from stories/<slug>/out/): `long <slug> <publish_at>` uploads the master as PRIVATE with publishAt set,
 so YouTube makes it public on its own at that time; then thumbnail A and the English subtitles. Test & compare (title B,
 thumbnail B) and the end screen can't be set through the API: Gigi adds them in Studio before the slot.
+After the slot (`after`, run by long-after.yml at 18:10 Madrid on Mondays and Thursdays): the subtitles if they couldn't
+be added at upload, and the question comment (story.json youtube.pinned_comment) posted as the channel. The API can't
+pin a comment: Telegram sends Gigi a link straight to it, and she pins it in two taps.
+Subtitles and comments need the scope youtube.force-ssl on the refresh token (SETUP.md step 5); `check` lists the scopes.
 
-usage: python automation/youtube.py check | publish <slug> | long <slug> <YYYY-MM-DDTHH:MM:SS+01:00>
+usage: python automation/youtube.py check | publish <slug> | long <slug> <YYYY-MM-DDTHH:MM:SS+01:00> | after [<slug>]
 """
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -45,6 +49,8 @@ def check():
         if "403" in str(e): print("youtube ok: token works (upload-only scope)"); return
         raise
     items = r.get("items", [])
+    try: print("scopes:", " ".join(x.rsplit("/", 1)[-1] for x in http("GET", f"{OAUTH}/tokeninfo?access_token={tok}").get("scope", "").split()))
+    except RuntimeError: pass
     print("youtube ok:", items[0]["snippet"]["title"] if items else "(token works; channel list needs youtube.readonly — fine)")
 
 
@@ -120,9 +126,49 @@ def publish_long(slug, publish_at):
         try:
             _resumable(tok, f"{API}/upload/youtube/v3/captions?uploadType=resumable&part=snippet",
                        {"snippet": {"videoId": vid, "language": "en", "name": "English", "isDraft": False}}, srt, "application/octet-stream")
-            res["notes"].append("English subtitles added")
+            res["notes"].append("English subtitles added"); res["captions"] = True
         except RuntimeError as e: res["notes"].append(f"subtitles not added ({str(e)[:160]}): upload captions.srt in Studio")
     return res
+
+
+def _captions(tok, slug, vid):
+    srt = os.path.join(out_dir(slug), "captions.srt")
+    if not os.path.exists(srt): return None
+    _resumable(tok, f"{API}/upload/youtube/v3/captions?uploadType=resumable&part=snippet",
+               {"snippet": {"videoId": vid, "language": "en", "name": "English", "isDraft": False}}, srt, "application/octet-stream")
+    return True
+
+
+def _comment(tok, vid, text):
+    r = http("POST", f"{API}/youtube/v3/commentThreads?part=snippet", {"Authorization": f"Bearer {tok}", "Content-Type": "application/json"},
+             json.dumps({"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": text}}}}).encode())
+    return r["id"]
+
+
+def after(only=None):
+    """for every long video that has gone public: subtitles (if missing) + the question comment (once). Prints one JSON
+    line per thing done or failed: {"slug", "did", "link"?, "error"?}"""
+    import datetime, glob
+    from common import set_state, state
+    now_ = datetime.datetime.now(datetime.timezone.utc); tok = None
+    for path in sorted(glob.glob("stories/*/state.json")):
+        slug = path.split("/")[1]
+        if only and slug != only: continue
+        sta = state(slug); vid = sta.get("youtube_id"); pa = sta.get("publish_at")
+        if not vid or not pa or datetime.datetime.fromisoformat(pa) > now_: continue
+        if datetime.datetime.fromisoformat(pa) < now_ - datetime.timedelta(days=14) and not only: continue
+        tok = tok or token(); yt = story(slug).get("youtube", {})
+        if not sta.get("captions"):
+            try:
+                if _captions(tok, slug, vid): set_state(slug, captions=True); print(json.dumps({"slug": slug, "did": "subtitles"}))
+            except RuntimeError as e: print(json.dumps({"slug": slug, "did": "subtitles", "error": str(e)[:300]}))
+        text = (yt.get("pinned_comment") or "").strip()
+        if text and not sta.get("comment_id"):
+            try:
+                cid = _comment(tok, vid, text); set_state(slug, comment_id=cid)
+                print(json.dumps({"slug": slug, "did": "comment", "title": (yt.get("titles") or [slug])[0],
+                                  "link": f"https://www.youtube.com/watch?v={vid}&lc={cid}"}))
+            except RuntimeError as e: print(json.dumps({"slug": slug, "did": "comment", "error": str(e)[:300]}))
 
 
 if __name__ == "__main__":
@@ -130,3 +176,4 @@ if __name__ == "__main__":
     if c == "check": check()
     elif c == "publish": print(publish(sys.argv[2]))
     elif c == "long": print(json.dumps(publish_long(sys.argv[2], sys.argv[3])))
+    elif c == "after": after(sys.argv[2] if len(sys.argv) > 2 else None)

@@ -35,7 +35,7 @@ jobs:
           sys.path.insert(0, "automation")
           from common import set_state
           r = json.load(open("yt.json"))
-          set_state(os.environ["SLUG"], status="scheduled", youtube_id=r["id"], youtube_url=r["url"], publish_at=r["publish_at"])
+          set_state(os.environ["SLUG"], status="scheduled", youtube_id=r["id"], youtube_url=r["url"], publish_at=r["publish_at"], captions=bool(r.get("captions")))
           PY
       - run: ./automation/commit.sh "long $SLUG scheduled"
       - name: Tell Gigi

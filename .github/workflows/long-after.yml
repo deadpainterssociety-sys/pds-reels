@@ -1,0 +1,47 @@
+# After a long video goes public (Monday/Thursday 18:00 Madrid): its English subtitles, if they couldn't be added at
+# upload, and the question comment from story.json youtube.pinned_comment, posted as the channel. The API can't pin a
+# comment, so Telegram sends Gigi a link that opens the video on that comment: ⋮ → Pin.
+# Needs the refresh token with the scope youtube.force-ssl (SETUP.md step 5). Runs at 18:10 and again at 20:10 (winter
+# time; an hour later in summer) and by hand (optional slug: also older videos).
+name: long-after
+on:
+  schedule:
+    - cron: "10 17 * * 1,4"
+    - cron: "10 19 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      slug: { description: "one story (optional)", required: false, default: "" }
+concurrency: { group: data, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  after:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Subtitles + question comment
+        run: python3 automation/youtube.py after ${{ inputs.slug }} | tee after.jsonl
+      - run: ./automation/commit.sh "long videos - subtitles and comment" stories
+      - name: Tell Gigi
+        run: |
+          python3 - <<'PY' > msg.html
+          import json, html
+          lines = [json.loads(l) for l in open("after.jsonl") if l.strip()]
+          out = []
+          for r in lines:
+              if r.get("error"):
+                  hint = " (the YouTube connection needs the youtube.force-ssl permission: SETUP.md step 5)" if "403" in r["error"] else ""
+                  out.append(f"⚠️ {html.escape(r['slug'])}: {r['did']} failed{hint}")
+              elif r["did"] == "comment":
+                  out.append(f"💬 Question comment posted on <b>{html.escape(r['title'])}</b>. Pin it: open this link → ⋮ next to the comment → Pin\n{r['link']}")
+              else: out.append(f"📝 English subtitles added to {html.escape(r['slug'])}")
+          print("\n\n".join(out))
+          PY
+          if [ -s msg.html ]; then python3 automation/bot.py say "$(cat msg.html)"; fi
