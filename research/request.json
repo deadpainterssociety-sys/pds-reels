@@ -1,25 +1,6 @@
 {
- "max_units": 600,
- "searches": [
-  {
-   "q": "isle of the dead painting",
-   "duration": "medium",
-   "tag": "topic"
-  },
-  {
-   "q": "B\u00f6cklin isle of the dead",
-   "duration": "any",
-   "tag": "topic"
-  },
-  {
-   "q": "painting Hitler obsessed",
-   "duration": "medium",
-   "tag": "topic"
-  },
-  {
-   "q": "This Painting Is Pure Evil",
-   "duration": "medium",
-   "tag": "topic"
-  }
+ "max_units": 50,
+ "videos": [
+  "xQBTNrhRVsI"
  ]
 }
