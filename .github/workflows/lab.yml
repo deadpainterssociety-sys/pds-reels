@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: "17 9 * * 1,4"          # Mon + Thu 10:17 Madrid (winter)
   workflow_dispatch:
+    inputs:
+      waves: { description: "also scan topic waves now (normally every other Monday)", type: boolean, default: false }
 concurrency: { group: data, cancel-in-progress: false }
 permissions: { contents: write }
 jobs:
@@ -18,6 +20,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 automation/metrics.py pull lab
+      - name: Topic waves (every other Monday, automation/waves.py)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          WAVES: ${{ inputs.waves }}
+        run: |
+          if [ "$WAVES" = "true" ] || { [ "$(TZ=Europe/Madrid date +%u)" = 1 ] && [ $(( 10#$(date +%V) % 2 )) = 1 ]; }; then
+            python3 automation/waves.py collect lab/waves || echo "topic waves failed: the brief goes out without them"
+          else echo "not a waves Monday"; fi
       - name: Claude analyses (LAB.md)
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}

@@ -21,7 +21,8 @@ H = {}
 NOW = datetime.datetime.now(datetime.timezone.utc)
 ART = re.compile(r"(?i)paint|art\b|artist|arte\b|museum|museo|masterpiece|renaissance|baroque|gallery|sculpt|fresco|canvas|"
                  r"van gogh|da vinci|leonardo|caravaggio|goya|bosch|rembrandt|vermeer|monet|picasso|dal[ií]|klimt|michelangelo|"
-                 r"raphael|botticelli|bruegel|velázquez|velazquez|frida|munch|cuadro|pintor|pintura|louvre|prado|mona lisa")
+                 r"raphael|botticelli|bruegel|velázquez|velazquez|frida|munch|cuadro|pintor|pintura|louvre|prado|mona lisa|"
+                 r"картин|художник|tableau|peinture|peintre|gemälde|maler|dipinto|pittore|quadro|絵画|名画|画家")
 
 
 class Budget(Exception): pass

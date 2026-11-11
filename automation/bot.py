@@ -243,7 +243,7 @@ def send_brief(d):
     for p in b.get("proposals", []):
         dec = p.get("decision")
         txt = (f"<b>{T.esc(p['id'])} · {T.esc(p.get('title', ''))}</b>"
-               + (f"  <i>({'test' if p.get('kind') == 'experiment' else 'rule'}, confidence: {T.esc(p.get('confidence', '?'))})</i>")
+               + (f"  <i>({ {'experiment': 'test', 'story': 'story idea'}.get(p.get('kind'), 'rule')}, confidence: {T.esc(p.get('confidence', '?'))})</i>")
                + f"\n\n<b>Change:</b> {T.esc(p.get('change', ''))}\n<b>Why:</b> {T.esc(p.get('why', ''))}"
                + (f"\n<b>Data:</b> {T.esc(p['evidence'])}" if p.get("evidence") else "")
                + (f"\n\n{'✅ applied' if dec == 'yes' else '❌ dropped'}" if dec else ""))
@@ -262,6 +262,7 @@ def decide_proposal(chat, d, pid, yes, message_id=None):
     p["decision"] = "yes" if yes else "no"; p["decided_at"] = now().isoformat(timespec="seconds")
     if yes:
         if p.get("kind") == "experiment": start_experiment(d, p)
+        elif p.get("kind") == "story": queue_story(d, p)
         else:
             pb = os.path.join(ROOT, "PLAYBOOK.md"); txt = open(pb).read()
             line = f"- ({today()}, from data · brief {d} {pid}) {p['change']}"
@@ -271,8 +272,28 @@ def decide_proposal(chat, d, pid, yes, message_id=None):
     if message_id:
         try: T.buttons_only(chat, message_id, [[{"text": "✅ applied" if yes else "❌ dropped", "callback_data": "noop"}]])
         except Exception: pass
-    T.send(chat, ("🧪 Test started: tonight's stories alternate the two versions." if p.get("kind") == "experiment"
-                  else "📌 In the playbook: every new reel follows it from tonight.") if yes else f"❌ {pid} dropped.")
+    msg = {"experiment": "🧪 Test started: tonight's stories alternate the two versions.",
+           "story": "🗂 In STORY_QUEUE.md: " + ("the story writer picks it up in the next days." if (p.get("story") or {}).get("format") == "short"
+                                               else "in the long-video list; Claude plans it into the schedule.")}
+    T.send(chat, msg.get(p.get("kind"), "📌 In the playbook: every new reel follows it from tonight.") if yes else f"❌ {pid} dropped.")
+
+
+def queue_story(d, p):
+    """a topic-wave story idea Gigi approved: a Short -> STORY_QUEUE Pinned ('next days' or its date); a long video ->
+    the 'Long videos (to plan)' list at the end of STORY_QUEUE.md"""
+    st = p.get("story") or {}
+    path = os.path.join(ROOT, "STORY_QUEUE.md"); txt = open(path).read()
+    clean = lambda x: str(x or "").replace("|", "/").replace("\n", " ").strip()
+    note = f"topic wave (brief {d} {p['id']}): {clean(p.get('evidence'))}"
+    if st.get("format") == "short":
+        row = f"| {clean(st.get('when')) or 'next days'} | {clean(st.get('painting'))} ({clean(st.get('museum'))}) | {clean(st.get('angle'))} | {clean(st.get('hook_type'))} | {note} |"
+        txt = txt.replace("\n## Done", "\n" + row + "\n\n## Done", 1) if "\n\n## Done" not in txt else txt.replace("\n\n## Done", "\n" + row + "\n\n## Done", 1)
+    else:
+        if "## Long videos (to plan)" not in txt:
+            txt = txt.rstrip() + ("\n\n## Long videos (to plan)\n\nIdeas for the Monday/Thursday long videos. Claude moves a row into the schedule "
+                                  "(the yt-longform-study project doc) when planning the next weeks.\n\n| When | Painting (museum) | Angle | Notes |\n|---|---|---|---|\n")
+        txt = txt.rstrip() + f"\n| {clean(st.get('when')) or 'next free slot'} | {clean(st.get('painting'))} ({clean(st.get('museum'))}) | {clean(st.get('angle'))} | {note} |\n"
+    open(path, "w").write(txt)
 
 
 EXP = "EXPERIMENTS.md"

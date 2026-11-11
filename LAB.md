@@ -46,6 +46,28 @@ Shorts: compare them only with each other (views at 7 days, average % viewed, su
    plain ending "It hangs in the …, in …"; no Vincent branding; painter dead 70+ years; English; the cover style D; the
    reels' own audio stays as it is (Gigi adds trending sounds in the apps); Gigi's dated rules in PLAYBOOK §4.
 
+## Topic waves (every other Monday: only when `lab/waves/waves.json` exists)
+
+A painting that just broke out for some art channel keeps breaking out for others, in other languages, for months
+(Isle of the Dead + Hitler: Inspiraggio 295k in 2024, then Velum 733k, Secessio 1.13M, a Russian channel 974k in 2026).
+`waves.json` lists long videos (≥ 4 min) from the last ~60 days with ≥ 50k views that beat their own channel's median by
+4× or more (`ratio`; null = median unknown), with title, channel, views, date, language; `thumbs/` has their thumbnails.
+
+1. Read every title (translate the non-English ones) and name the painting and the angle behind each breakout. Group
+   the breakouts by painting: a wave = the same painting (or the same story) breaking out for 2+ channels or languages,
+   or once with a ratio ≥ 20.
+2. Drop what we can't make: painter dead < 70 years, no visitable museum, no public-domain image. Check
+   `python automation/plan.py posted` and STORY_QUEUE.md: say if we already did it (a Short we did is a reason FOR its
+   long version), and never propose a painting already in the queue's long-video list.
+3. Write up to 3 `story` proposals, the strongest waves first, each with the angle that would beat the existing videos
+   (a true detail they missed, a sharper famous name per PLAYBOOK §4 "Borrowed fame", the human loss behind it):
+   `{"id": "P4", "kind": "story", "title": "≤ 60 chars", "change": "one sentence: what we'd make", "why": "...",
+     "evidence": "channel · views · language · date for each breakout, short", "confidence": "low|medium|high",
+     "story": {"painting": "Painter, *Title*", "museum": "Museum, City", "angle": "...", "hook_type": "...",
+               "format": "long" (default; a Short only if it is a small, single-detail story), "when": "next free slot | YYYY-MM-DD | late Nov"}}`
+   ✅ puts it into STORY_QUEUE.md (Shorts: Pinned; long videos: "Long videos (to plan)").
+4. In the summary, one line on the waves: how many breakouts, the top 2 topics.
+
 ## Output (both files are required)
 
 `lab/brief.json`:
@@ -64,7 +86,8 @@ Shorts: compare them only with each other (views at 7 days, average % viewed, su
                    "b": "arm B, same", "metric": "the one main metric", "reels": 14}}
  ]}
 ```
-- 0 to 3 proposals; fewer, better ones. Each `change` must be something the story writer can follow literally.
+- 0 to 3 rule/experiment proposals (fewer, better ones), plus 0 to 3 `story` proposals on waves Mondays. Each
+  `change` must be something the story writer can follow literally.
 - Propose a new test only when none is running (or the running one is concluded in this brief): one variable, two arms
   that are otherwise identical, a main metric, 14 reels (7 per arm, one week at two reels a day).
 - Missing YouTube data (a permission, a broken token) goes into the summary in one line, with what Gigi needs to do.
