@@ -75,7 +75,7 @@ music /= np.abs(music).max() + 1e-9
 def _at(x):
     if isinstance(x, (int, float)): return float(x)
     tl = json.load(open(os.path.join(sdir, "build", "timeline.json")))
-    m = __import__("re").match(r"^([\w-]+)(\$?)([+-][\d.]+)?$", str(x))
+    m = __import__("re").match(r"^(.+?)(\$?)([+-][\d.]+)?$", str(x))
     ln = next(l for l in tl["lines"] if l["id"] == m.group(1))
     return (ln["e"] if m.group(2) else ln["s"]) + float(m.group(3) or 0)
 
@@ -98,6 +98,10 @@ if M.get("tracks"):
         i0 = int(t0 * SR); music[i0:i0 + n] += a[: len(music) - i0]
         print(f"track {os.path.basename(tr['file'])}: {t0:.1f}-{t0 + n / SR:.1f} s")
     music *= 10 ** (23.0 / 20) / 10                    # back to roughly the pad's scale (peak ~1 for a -23 LUFS piano)
+    if "drop" in sec and not M.get("pad"): music *= 1 - 0.95 * mask(*sec["drop"], 0.25)       # the silences stay silent
+    if M.get("heartbeat") and not M.get("pad"):                                                 # and the heartbeats stay
+        a, b = M["heartbeat"]; tt = a
+        while tt < b: S.place(music, S.heartbeat() * float(M.get("heartbeat_gain", 0.25)), tt, 0.9); tt += max(0.5, 0.86 - 0.08 * (tt - a))
     music = np.clip(music, -1.5, 1.5)
 
 fx = np.zeros(len(t))

@@ -102,7 +102,8 @@ for s in st["shots"]:
     if s.get("kind") == "map":
         m = s["map"]
         o["map"] = {"id": m["id"], "pins": [{"city": p["city"], "t": T(p["at"]), **({"label": p["label"]} if "label" in p else {})} for p in m["pins"]]}
-        if "route" in m: o["map"]["route"] = {"from": m["route"]["from"], "to": m["route"]["to"], "t0": T(m["route"]["at"]), "t1": T(m["route"]["to_at"])}
+        if "route" in m: o["map"]["route"] = {"from": m["route"]["from"], "to": m["route"]["to"], "t0": T(m["route"]["at"]), "t1": T(m["route"]["to_at"]),
+                                 **({"path": m["route"]["path"]} if m["route"].get("path") else {})}
     if s.get("kind") == "peel":
         o["peel"] = {"t0": T(s["peel"]["at"]), "t1": T(s["peel"]["to"]), "under": s["peel"]["under"]}
     if s.get("hit") == "big": flashes.append(o["t"]); shakes.append(o["t"])

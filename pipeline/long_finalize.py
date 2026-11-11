@@ -97,6 +97,10 @@ for f in st.get("facts", []):
         if u and u not in sources: sources.append(u)
 _cv = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.json"))).get("voice_clone") or {}
 narration = "AI voice cloned from a real recording (Chatterbox)" if _cv.get("enabled") else "synthetic voice"
+_tracks = (st.get("music") or {}).get("tracks") or []
+_mc = list(dict.fromkeys(t["credit"] for t in _tracks if t.get("credit")))
+music_block = (f"Narration: {narration}.\n\nMusic (Wikimedia Commons)\n" + "\n".join(f"- {c}" for c in _mc)) if _mc else \
+              f"Narration: {narration}. Music and sound: original, made for this channel."
 desc = f"""{yt.get('description_lead', '')}
 
 Chapters
@@ -109,7 +113,7 @@ Images (Wikimedia Commons)
 """ + "\n".join(f"- {c}" for c in (custom or credits_cc + ([f"Paintings, prints and photographs by {st.get('meta', {}).get('painter', 'the artist')} "
                                                                   "and others: public domain."] if credits_pd else []))) + f"""
 
-Narration: {narration}. Music and sound: original, made for this channel.
+{music_block}
 {' '.join(yt.get('hashtags', []))}
 """
 open(f"{out}/description.txt", "w").write(desc)

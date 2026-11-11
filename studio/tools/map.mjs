@@ -14,11 +14,14 @@ const [FW, FH] = spec.size ?? [1080, 1920];   // 16:9 long-form maps pass "size"
 const proj = geoMercator().fitExtent(spec.extent ?? (FW > FH ? [[260, 120], [1660, 960]] : [[90, 330], [990, 1330]]), corners).clipExtent([[0, 0], [FW, FH]]);
 const path = geoPath(proj);
 const focusIds = new Set(spec.focus.map(String));
-const out = { land: [], focus: [], cities: {} };
+const out = { land: [], focus: [], cities: {}, paths: {} };
 for (const f of countries) {
   const d = path(f); if (!d) continue;
   (focusIds.has(String(f.id)) ? out.focus : out.land).push(d);
 }
 for (const [k, ll] of Object.entries(spec.cities)) out.cities[k] = proj(ll).map((v) => Math.round(v * 10) / 10);
+// sea routes: lists of [lon, lat] waypoints, drawn as a smooth line through them (so a voyage hugs the coast instead of
+// cutting across land)
+for (const [k, pts] of Object.entries(spec.paths ?? {})) out.paths[k] = pts.map((ll) => proj(ll).map((v) => Math.round(v * 10) / 10));
 fs.writeFileSync(outPath, JSON.stringify(out));
 console.log("map", outPath, "land", out.land.length, "focus", out.focus.length, out.cities);

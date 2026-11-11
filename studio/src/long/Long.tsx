@@ -14,7 +14,7 @@ type Img = { src: string; w: number; h: number; depth?: string };
 type Shot = {
   t: number; img: string; kind?: string; from: V3; to: V3; gray?: number; dim?: number; contrast?: number; dolly?: [number, number]; sway?: number;
   frame?: boolean; fade?: number; img2?: string; labels?: [string, string];
-  map?: { id: string; pins: { city: string; t: number; label?: string }[]; route?: { from: string; to: string; t0: number; t1: number } };
+  map?: { id: string; pins: { city: string; t: number; label?: string }[]; route?: { from: string; to: string; t0: number; t1: number; path?: string } };
   room?: { back?: string[]; left?: string[]; right?: string[]; front?: string[]; move?: [number, number]; yaw?: [number, number]; door?: boolean; dim?: number };
   peel?: { t0: number; t1: number; under: string };
 };
@@ -200,9 +200,17 @@ const MapCut: React.FC<{ t: number; s: number; data: any; spec: NonNullable<Shot
   const d = easeOut(ramp(t, s, s + 1.0)); const r = spec.route; const rk = r ? easeOut(ramp(t, r.t0, r.t1)) : 0;
   let arc = "";
   if (r) {
-    const A = data.cities[r.from], B = data.cities[r.to];
-    const mx = (A[0] + B[0]) / 2 + (B[1] - A[1]) * 0.25, my = (A[1] + B[1]) / 2 - Math.abs(B[0] - A[0]) * 0.25;
-    arc = `M ${A[0]} ${A[1]} Q ${mx} ${my} ${B[0]} ${B[1]}`;
+    const A = data.cities[r.from], B = data.cities[r.to]; const via: number[][] | undefined = r.path ? data.paths?.[r.path] : undefined;
+    if (via && via.length) {   // a sea route: a smooth (Catmull-Rom) line through the waypoints, from A to B
+      const P = [A, ...via, B]; arc = `M ${A[0]} ${A[1]}`;
+      for (let i = 0; i < P.length - 1; i++) {
+        const p0 = P[Math.max(0, i - 1)], p1 = P[i], p2 = P[i + 1], p3 = P[Math.min(P.length - 1, i + 2)]; const k = 1 / 6;
+        arc += ` C ${p1[0] + (p2[0] - p0[0]) * k} ${p1[1] + (p2[1] - p0[1]) * k} ${p2[0] - (p3[0] - p1[0]) * k} ${p2[1] - (p3[1] - p1[1]) * k} ${p2[0]} ${p2[1]}`;
+      }
+    } else {
+      const mx = (A[0] + B[0]) / 2 + (B[1] - A[1]) * 0.25, my = (A[1] + B[1]) / 2 - Math.abs(B[0] - A[0]) * 0.25;
+      arc = `M ${A[0]} ${A[1]} Q ${mx} ${my} ${B[0]} ${B[1]}`;
+    }
   }
   return <AbsoluteFill style={{ background: "#0E0D0C" }}>
     <svg width={W} height={H} style={{ position: "absolute" }}>

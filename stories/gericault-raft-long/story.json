@@ -2061,7 +2061,8 @@
      "from": "rochefort",
      "to": "arguin",
      "at": "c1e+0.30",
-     "to_at": "c1f.18"
+     "to_at": "c1f.18",
+     "path": "sea"
     }
    },
    "fade": 0.8
@@ -3245,7 +3246,7 @@
  ],
  "music": {
   "bar": 5.5,
-  "music_db": -13,
+  "music_db": -7.5,
   "transpose": -2,
   "chords": [
    [
@@ -3496,6 +3497,122 @@
   "heartbeat": [
    "c3g",
    "c3h.7-0.20"
+  ],
+  "pad": false,
+  "whooshes": false,
+  "duck_db": -7,
+  "fx_db": -12,
+  "_tracks_note": "Classical cue sheet (11 Nov 2026, Gigi: 'the most precise music for each painting'): Chopin, Géricault's generation; Beethoven's Pathétique for the moment of hope.",
+  "tracks": [
+   {
+    "file": "src/music/m_prelude4.ogg",
+    "from": 0,
+    "to": "c1a+1",
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 1.0,
+    "fade_out": 3.0,
+    "credit": "Chopin, Prelude in E minor, Op. 28 No. 4 · Ivan Ilić, CC BY 3.0"
+   },
+   {
+    "file": "src/music/m_nocturne27.flac",
+    "from": "cold5$",
+    "to": "c2a+1.5",
+    "start": 0,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.5,
+    "credit": "Chopin, Nocturne in C-sharp minor, Op. 27 No. 1 · Luke Faulkner (Musopen), public domain"
+   },
+   {
+    "file": "src/music/m_prelude6.mp3",
+    "from": "c1f$",
+    "to": "c3a+1",
+    "start": 0,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Prelude in B minor, Op. 28 No. 6 · Musopen, CC0"
+   },
+   {
+    "file": "src/music/m_revolutionary.flac",
+    "from": "c2g$",
+    "to": "c3c",
+    "start": 0,
+    "gain_db": -3,
+    "fade_in": 1.0,
+    "fade_out": 2.5,
+    "credit": "Chopin, Étude in C minor, Op. 10 No. 12 'Revolutionary' · Edward Neeman (Musopen), public domain"
+   },
+   {
+    "file": "src/music/m_funeral.ogg",
+    "from": "c3c-1",
+    "to": "c3f",
+    "start": 0,
+    "gain_db": 5,
+    "fade_in": 2.0,
+    "fade_out": 1.5,
+    "credit": "Chopin, Piano Sonata No. 2, III. Marche funèbre · Andreas Xenopoulos (Musopen), CC0"
+   },
+   {
+    "file": "src/music/m_nocturne_b49.mp3",
+    "from": "c3h",
+    "to": "c4a+1",
+    "start": 0,
+    "gain_db": 7,
+    "fade_in": 3.0,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne in C-sharp minor, B. 49 · Musopen, CC0"
+   },
+   {
+    "file": "src/music/m_nocturne48.ogg",
+    "from": "c3i$",
+    "to": "c5a+1",
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne in C minor, Op. 48 No. 1 · Luke Faulkner (Musopen), CC0"
+   },
+   {
+    "file": "src/music/m_prelude2.ogg",
+    "from": "c4g$",
+    "to": "c6a+1",
+    "start": 0,
+    "gain_db": -1.5,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Prelude in A minor, Op. 28 No. 2 · Ivan Ilić, CC BY 3.0"
+   },
+   {
+    "file": "src/music/m_pathetique2.ogg",
+    "from": "c5i$",
+    "to": "c7a+1",
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Beethoven, Sonata 'Pathétique', II. Adagio cantabile · Daniel Veesey, CC0"
+   },
+   {
+    "file": "src/music/m_prelude20.ogg",
+    "from": "c6i$",
+    "to": "end1",
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 2.5,
+    "credit": "Chopin, Prelude in C minor, Op. 28 No. 20 · Ivan Ilić, CC BY 3.0"
+   },
+   {
+    "file": "src/music/m_prelude4.ogg",
+    "from": "c7d$",
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 5.0,
+    "credit": "Chopin, Prelude in E minor, Op. 28 No. 4 · Ivan Ilić, CC BY 3.0"
+   }
   ]
  },
  "facts": [
@@ -3643,12 +3760,80 @@
      45.94
     ],
     "arguin": [
-     -16.6,
+     -16.95,
      19.9
     ],
     "senegal": [
      -16.49,
      16.02
+    ]
+   },
+   "paths": {
+    "sea": [
+     [
+      -2.6,
+      45.75
+     ],
+     [
+      -5.5,
+      45.3
+     ],
+     [
+      -8.6,
+      44.45
+     ],
+     [
+      -10.2,
+      43.3
+     ],
+     [
+      -10.3,
+      41.0
+     ],
+     [
+      -10.2,
+      38.7
+     ],
+     [
+      -11.2,
+      36.4
+     ],
+     [
+      -14.6,
+      33.9
+     ],
+     [
+      -16.6,
+      32.4
+     ],
+     [
+      -16.6,
+      30.3
+     ],
+     [
+      -15.95,
+      28.75
+     ],
+     [
+      -16.0,
+      27.4
+     ],
+     [
+      -16.9,
+      25.0
+     ],
+     [
+      -17.6,
+      22.5
+     ],
+     [
+      -17.85,
+      21.0
+     ],
+     [
+      -17.5,
+      20.25
+     ]
     ]
    }
   }
