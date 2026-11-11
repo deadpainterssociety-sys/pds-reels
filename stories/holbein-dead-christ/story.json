@@ -18,7 +18,7 @@
   "image_credit": "Kunstmuseum Basel, via Wikimedia Commons (public domain)"
  },
  "cover": {
-  "question": "Can it <i>kill your faith?</i>",
+  "question": "Why did it <i>haunt Dostoevsky?</i>",
   "name": "HANS HOLBEIN",
   "work": "The Dead Christ in the Tomb, 1521",
   "focus": [
@@ -26,7 +26,7 @@
    0.45
   ],
   "span": 1.0,
-  "answered_by": "Dostoevsky, shaken in front of it in 1867, made a character say a man's faith might be ruined by looking at it",
+  "answered_by": "Dostoevsky stood stunned in front of it in 1867 with the dread of his seizures, went back, climbed a chair, and later made a character say a man's faith might be ruined by looking at it: Holbein painted God as a corpse",
   "at": 0.66
  },
  "say": {
@@ -790,8 +790,8 @@
   }
  ],
  "caption": "This is Jesus. And he's starting to rot.\n\nAround 1521 in Basel, Hans Holbein the Younger painted Christ dead in his tomb, on a panel 2 metres long and just 30.5 cm high. The eyes are still half open, the mouth hangs open, and the face, hand and feet show the first signs of decay. The legend says his model was a body pulled from the Rhine.\n\nIn 1867 Fyodor Dostoevsky and his wife Anna stopped in Basel for one day to see it. Anna wrote that he stood in front of it as if stunned, with the look of dread she knew from the first moments of his epileptic seizures. She led him away; he went back. Her diary says he even climbed on a chair to look closer, and she was afraid he'd be fined.\n\nLater, in The Idiot, Prince Myshkin cries: \"Why, a man's faith might be ruined by looking at that picture!\"\n\nP.S. The date painted at Christ's feet says 1521, but infrared scans show Holbein first wrote 1522 and painted over the last digit.\n\n🖤 Could you stand in front of it for long?",
- "caption_short": "This is Jesus. And he's starting to rot. The Holbein painting that shook Dostoevsky. 🖤",
- "youtube_title": "Can this painting kill your faith? Holbein's Dead Christ",
+ "caption_short": "The painting that haunted Dostoevsky: Holbein's Jesus, starting to rot. 🖤",
+ "youtube_title": "This painting haunted Dostoevsky. Holbein's Dead Christ",
  "hashtags_instagram": [
   "#holbein",
   "#deadchrist",
