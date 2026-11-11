@@ -1,6 +1,41 @@
 {
  "commons": [
   {
+   "title": "File:Chopin - 12 \u00c9tudes, Op. 10 - No. 12 in C minor 'Revolutionary' (Edward Neeman).flac",
+   "name": "m_revolutionary",
+   "width": 99999
+  },
+  {
+   "title": "File:Ivan Ili\u0107-Chopin - Prelude no. 2 in A minor.ogg",
+   "name": "m_prelude2",
+   "width": 99999
+  },
+  {
+   "title": "File:Prelude Op. 28 no. 6.mp3",
+   "name": "m_prelude6",
+   "width": 99999
+  },
+  {
+   "title": "File:Chopin - Preludes, Op. 28 - No. 20 'Funeral march'.ogg",
+   "name": "m_prelude20",
+   "width": 99999
+  },
+  {
+   "title": "File:Chopin Nocturne in C minor Op. 48 no. 1 Luke Faulkner.ogg",
+   "name": "m_nocturne48",
+   "width": 99999
+  },
+  {
+   "title": "File:Daniel Veesey - 02 - Sonata 8 Pathetique - II Adagio cantabile.ogg",
+   "name": "m_pathetique2",
+   "width": 99999
+  },
+  {
+   "title": "File:Chopin Prelude Op 28 N 15 Giorgi Latsabidze performs.ogg",
+   "name": "m_raindrop",
+   "width": 99999
+  },
+  {
    "title": "File:Gnossienne 4 (Satie).ogg",
    "name": "b_gnoss4",
    "width": 99999
@@ -21,5 +56,5 @@
    "width": 99999
   }
  ],
- "commons_minutes": 10
+ "commons_minutes": 12
 }
