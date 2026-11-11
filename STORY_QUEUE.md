@@ -58,3 +58,11 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
+
+## Long videos (to plan)
+
+Ideas for the Monday/Thursday long videos. Claude moves a row into the schedule (the yt-longform-study project doc) when planning the next weeks.
+
+| When | Painting (museum) | Angle | Notes |
+|---|---|---|---|
+| Thu 3 Dec 2026 (or Mon 30 Nov) | Böcklin, *Isle of the Dead* (Alte Nationalgalerie, Berlin: the 1883 version Hitler owned) | to find: an angle that beats the six existing videos, e.g. where each of the six versions ended up (Hitler's Berghof and Chancellery, one destroyed in the war, the Met, Leipzig, the Hermitage, Basel), the widow's grief, Dalí's tomb facing it; borrowed fame in the title only for names the video delivers | Gigi, 11 Nov: queue it, don't make it yet. Topic wave: Inspiraggio 295k (Jul 2024), Velum ES 733k (May 2026), The Last Layer 392k, Secessio 1.13M (Jul), Russian 979k (Oct). Our Short bocklin-isle (7 Nov, 1,044 views) links to it. Case study: project doc case-secessio-isle-of-the-dead. Music idea: Rachmaninoff wrote a symphonic poem after this painting (1909): only with a recording we may use |
