@@ -19,6 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 automation/yt_research.py run research/request.json research-out
+      - name: Topic waves (test run of the lab's scan)
+        if: hashFiles('research/request.json') != ''
+        run: |
+          if python3 -c "import json,sys; sys.exit(0 if json.load(open('research/request.json')).get('waves') else 1)"; then
+            python3 automation/waves.py collect research-out/waves
+          fi
       - name: Case-study media (audio, 360p video, subtitles), for analysis only; encrypted with the rest
         continue-on-error: true
         run: |
