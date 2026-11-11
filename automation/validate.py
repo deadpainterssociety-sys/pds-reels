@@ -71,7 +71,8 @@ def problems(slug):
     for k in ("question", "name", "work"):
         if not cv.get(k): p.append(f"cover.{k} missing")
     words = sum(len(re.sub(r"\*", "", ph[0]).split()) for l in st.get("lines", []) for ph in l.get("perf", []))
-    if not 110 <= words <= 165: p.append(f"{words} spoken words (want 125-150)")
+    two = st.get("format") == "two-minute"   # E2 arm B (EXPERIMENTS.md): a 2-minute single-painting reel
+    if not ((230 <= words <= 360) if two else (110 <= words <= 165)): p.append(f"{words} spoken words (want {'260-340' if two else '125-150'})")
     facts = st.get("facts", [])
     if len(facts) < 4: p.append(f"only {len(facts)} facts listed")
     if any("http" not in f.get("source", "") and "Wikipedia" not in f.get("source", "") for f in facts): p.append("a fact without a source URL")
@@ -85,7 +86,8 @@ def problems(slug):
     tl = os.path.join(sd, "build", "timeline.json")
     if os.path.exists(tl):
         t = json.load(open(tl))
-        if not 48 <= t.get("duration", 0) <= 80: p.append(f"duration {t.get('duration')} s (want 55-70)")
+        lo, hi = (95, 170) if two else (48, 80)
+        if not lo <= t.get("duration", 0) <= hi: p.append(f"duration {t.get('duration')} s (want {'110-150' if two else '55-70'})")
         bad = [f"{l['id']} ({l.get('match')})" for l in t["lines"] if l.get("match") is not None and l["match"] < 0.85]
         if bad: p.append("voice check failed on: " + ", ".join(bad))
     if not st.get("caption") or not st.get("hashtags"): p.append("caption/hashtags missing")

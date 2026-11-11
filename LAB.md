@@ -42,6 +42,8 @@ Shorts: compare them only with each other (views at 7 days, average % viewed, su
    museum, slot (14:00 vs 21:00), weekday, length. With small groups (< 4 reels) say "too early" instead of concluding.
 5. Running test (EXPERIMENTS.md): compare arm A vs arm B on its main metric. Conclude only when both arms have ≥ 5 reels
    with 72 h data on YouTube and the difference there is ≥ 20 %; otherwise report the interim numbers and keep it running.
+   When you conclude it and EXPERIMENTS.md "## Next" has a row, propose that row as the next experiment (same id, arms and
+   metric, word for word): Gigi approved it in advance, so her ✅ only starts it.
 6. The playbook's standing rules are fixed and are never proposals: true, sourced stories with one throughline; the
    plain ending "It hangs in the …, in …"; no Vincent branding; painter dead 70+ years; English; the cover style D; the
    reels' own audio stays as it is (Gigi adds trending sounds in the apps); Gigi's dated rules in PLAYBOOK §4.

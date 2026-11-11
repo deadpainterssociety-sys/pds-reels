@@ -58,6 +58,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
 | Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
+| Velázquez, *Portrait of Innocent X* (Galleria Doria Pamphilj, Rome) | Olimpia Maidalchini, the sister-in-law said to decide who could see the Pope (NOT the "troppo vero" angle: Brushstroke Secrets did it, 385k) | dark-legend | topic wave Oct-Nov 2026 (EN 385k, ES 44k/36k, PT 22k); the gossip about her is gossip: hedge it; a good first E2 arm-B story (one painting, a famous man, a concrete payoff) |
 
 ## Long videos (to plan)
 
