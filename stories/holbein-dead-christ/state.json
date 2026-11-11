@@ -1,11 +1,12 @@
 {
- "status": "sent",
- "updated": "2026-11-11T11:02:35+01:00",
+ "status": "approved",
+ "updated": "2026-11-11T11:47:48+01:00",
  "validated_at": "2026-11-09T03:40:56+01:00",
  "duration_s": 64.0,
  "review_message": 232,
  "sent_at": "2026-11-11T11:02:35+01:00",
  "feedback": [
   "Since we did the Successio case study showing how painting videos with big names perform better, I think it’s a loss to have such a generic name when half of the video says how Dostoevsky got basically traumatised by the painting. I just ask you to rethink the title knowing that Successio’s video called ‘This painting drove Hitler, Freud and Dali to obsession’ got 1,1 M views for a channel averaging 3k."
- ]
+ ],
+ "approved_at": "2026-11-11T11:47:48+01:00"
 }
