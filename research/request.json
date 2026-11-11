@@ -1,60 +1,11 @@
 {
- "commons": [
-  {
-   "title": "File:Chopin - 12 \u00c9tudes, Op. 10 - No. 12 in C minor 'Revolutionary' (Edward Neeman).flac",
-   "name": "m_revolutionary",
-   "width": 99999
-  },
-  {
-   "title": "File:Ivan Ili\u0107-Chopin - Prelude no. 2 in A minor.ogg",
-   "name": "m_prelude2",
-   "width": 99999
-  },
-  {
-   "title": "File:Prelude Op. 28 no. 6.mp3",
-   "name": "m_prelude6",
-   "width": 99999
-  },
-  {
-   "title": "File:Chopin - Preludes, Op. 28 - No. 20 'Funeral march'.ogg",
-   "name": "m_prelude20",
-   "width": 99999
-  },
-  {
-   "title": "File:Chopin Nocturne in C minor Op. 48 no. 1 Luke Faulkner.ogg",
-   "name": "m_nocturne48",
-   "width": 99999
-  },
-  {
-   "title": "File:Daniel Veesey - 02 - Sonata 8 Pathetique - II Adagio cantabile.ogg",
-   "name": "m_pathetique2",
-   "width": 99999
-  },
-  {
-   "title": "File:Chopin Prelude Op 28 N 15 Giorgi Latsabidze performs.ogg",
-   "name": "m_raindrop",
-   "width": 99999
-  },
-  {
-   "title": "File:Gnossienne 4 (Satie).ogg",
-   "name": "b_gnoss4",
-   "width": 99999
-  },
-  {
-   "title": "File:Gnossienne 5 (Satie).ogg",
-   "name": "b_gnoss5",
-   "width": 99999
-  },
-  {
-   "title": "File:Gnossienne 7 (Satie).ogg",
-   "name": "b_gnoss7",
-   "width": 99999
-  },
-  {
-   "title": "File:Satie Gymnopedie No 3 performed by Michael Laucke.flac",
-   "name": "o_gymno3",
-   "width": 99999
-  }
- ],
- "commons_minutes": 12
+ "max_units": 1500,
+ "max_discovered": 0,
+ "max_found": 0,
+ "videos": ["henX6pp_2_M"],
+ "seeds": [{"handle": "@BrushstrokeSecrets", "name": "Brushstroke Secrets", "group": "rival"},
+           {"handle": "@thedeadpainterssociety", "name": "Dead Painters Society", "group": "us"}],
+ "searches": [{"q": "Pope Innocent X Velazquez", "duration": "short", "after": "2025-05-01", "tag": "wave"},
+              {"q": "Velazquez Pope Innocent painting", "duration": "any", "after": "2024-01-01", "tag": "wave"},
+              {"q": "most terrifying portrait ever painted", "duration": "short", "after": "2025-11-01", "tag": "wave"}]
 }
