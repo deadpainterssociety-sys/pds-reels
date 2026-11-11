@@ -1,1 +1,65 @@
-{"waves": true}
+{
+ "commons": [
+  {
+   "title": "File:Prelude Op. 28 no. 24.mp3",
+   "name": "m_prelude24",
+   "width": 99999
+  },
+  {
+   "title": "File:Chopin - Nocturne No. 7 in C-sharp minor, Op. 27 No. 1 (Luke Faulkner).flac",
+   "name": "m_nocturne27",
+   "width": 99999
+  },
+  {
+   "title": "File:Frederic Chopin Piano Sonata No.2 in B flat minor Op35 - III Marche Funebre.ogg",
+   "name": "m_funeral",
+   "width": 99999
+  },
+  {
+   "title": "File:Ivan Ili\u0107-Chopin Prelude Opus 28 n.4.ogg",
+   "name": "m_prelude4",
+   "width": 99999
+  },
+  {
+   "title": "File:Satie - Gnossienne 1.ogg",
+   "name": "b_gnoss1",
+   "width": 99999
+  },
+  {
+   "title": "File:Gnossienne 3 (Satie).ogg",
+   "name": "b_gnoss3",
+   "width": 99999
+  },
+  {
+   "title": "File:Gnossienne 2 (Satie).ogg",
+   "name": "b_gnoss2",
+   "width": 99999
+  },
+  {
+   "title": "File:Mahler Symphony No. 5, IV. Adagietto.ogg",
+   "name": "k_adagietto",
+   "width": 99999
+  },
+  {
+   "title": "File:Intermezzo from Goyescas - U.S. Marine Band.ogg",
+   "name": "g_goyescas",
+   "width": 99999
+  },
+  {
+   "title": "File:Satie Gymnopedie No 1 performed by Michael Laucke.flac",
+   "name": "o_gymno1",
+   "width": 99999
+  },
+  {
+   "title": "File:Prelude Op. 28 no. 21.mp3",
+   "name": "m_prelude21",
+   "width": 99999
+  },
+  {
+   "title": "File:Nocturne B. 49 in C sharp minor 'Lento con gran espressione' (1).mp3",
+   "name": "m_nocturne_b49",
+   "width": 99999
+  }
+ ],
+ "commons_minutes": 15
+}

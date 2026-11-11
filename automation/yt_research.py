@@ -217,7 +217,8 @@ def commons(items, d, deadline):
                 try: data = C.fetch(u, tries=6); break
                 except Exception as e: print("  retry", it["name"], str(e)[:80]); time.sleep(5)
             if data:
-                ext = ".png" if data[:4] == b"\x89PNG" else ".jpg"
+                ext = (".png" if data[:4] == b"\x89PNG" else ".ogg" if data[:4] == b"OggS" else ".flac" if data[:4] == b"fLaC"
+                       else ".wav" if data[:4] == b"RIFF" else ".mp3" if data[:3] == b"ID3" or data[:2] in (b"\xff\xfb", b"\xff\xf3") else ".jpg")
                 open(os.path.join(d, it["name"] + ext), "wb").write(data)
                 meta[it["name"]] = {**inf, "requested": it.get("queries") or it.get("search") or it["title"], "alternatives": it.get("alternatives"), "bytes": len(data)}
                 print(f"commons {it['name']}: {inf['w']}x{inf['h']} {inf['license']} ({len(data) // 1024} KB)", flush=True)
