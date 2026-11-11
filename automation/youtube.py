@@ -10,8 +10,8 @@ status.containsSyntheticMedia = true discloses the AI voice.
 Long videos (16:9, from stories/<slug>/out/): `long <slug> <publish_at>` uploads the master as PRIVATE with publishAt set,
 so YouTube makes it public on its own at that time; then thumbnail A and the English subtitles. Test & compare (title B,
 thumbnail B) and the end screen can't be set through the API: Gigi adds them in Studio before the slot.
-After the slot (`after`, run by long-after.yml at 18:10 Madrid on Mondays and Thursdays): the subtitles if they couldn't
-be added at upload, and the question comment (story.json youtube.pinned_comment) posted as the channel. The API can't
+`after` (long-after.yml, 18:10 Madrid on Mondays and Thursdays): the subtitles if they couldn't be added at upload (also
+before the slot), and after the slot the question comment (story.json youtube.pinned_comment) posted as the channel. The API can't
 pin a comment: Telegram sends Gigi a link straight to it, and she pins it in two taps.
 Subtitles and comments need the scope youtube.force-ssl on the refresh token (SETUP.md step 5); `check` lists the scopes.
 
@@ -49,9 +49,9 @@ def check():
         if "403" in str(e): print("youtube ok: token works (upload-only scope)"); return
         raise
     items = r.get("items", [])
-    try: print("scopes:", " ".join(x.rsplit("/", 1)[-1] for x in http("GET", f"{OAUTH}/tokeninfo?access_token={tok}").get("scope", "").split()))
-    except RuntimeError: pass
-    print("youtube ok:", items[0]["snippet"]["title"] if items else "(token works; channel list needs youtube.readonly — fine)")
+    try: sc = " · scopes: " + " ".join(x.rsplit("/", 1)[-1] for x in http("GET", f"{OAUTH}/tokeninfo?access_token={tok}").get("scope", "").split())
+    except RuntimeError: sc = ""
+    print("youtube ok:", (items[0]["snippet"]["title"] if items else "(token works; channel list needs youtube.readonly — fine)") + sc)
 
 
 def place(slug):
@@ -155,15 +155,17 @@ def after(only=None):
         slug = path.split("/")[1]
         if only and slug != only: continue
         sta = state(slug); vid = sta.get("youtube_id"); pa = sta.get("publish_at")
-        if not vid or not pa or datetime.datetime.fromisoformat(pa) > now_: continue
+        if not vid or not pa: continue
+        live = datetime.datetime.fromisoformat(pa) <= now_   # subtitles can go on a scheduled (private) video; the comment can't
         if datetime.datetime.fromisoformat(pa) < now_ - datetime.timedelta(days=14) and not only: continue
+        if not live and sta.get("captions"): continue
         tok = tok or token(); yt = story(slug).get("youtube", {})
         if not sta.get("captions"):
             try:
                 if _captions(tok, slug, vid): set_state(slug, captions=True); print(json.dumps({"slug": slug, "did": "subtitles"}))
             except RuntimeError as e: print(json.dumps({"slug": slug, "did": "subtitles", "error": str(e)[:300]}))
         text = (yt.get("pinned_comment") or "").strip()
-        if text and not sta.get("comment_id"):
+        if live and text and not sta.get("comment_id"):
             try:
                 cid = _comment(tok, vid, text); set_state(slug, comment_id=cid)
                 print(json.dumps({"slug": slug, "did": "comment", "title": (yt.get("titles") or [slug])[0],
