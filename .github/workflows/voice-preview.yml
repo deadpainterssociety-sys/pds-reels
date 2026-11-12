@@ -1,0 +1,31 @@
+# A full render of one story in the configured voice, kept only in the private data release (preview-<slug>.mp4):
+# nothing is sent to Telegram, scheduled or committed. For trying a voice before it goes live.
+name: voice-preview
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "the story", required: true }
+permissions: { contents: write }
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+      SLUG: ${{ inputs.slug }}
+      CONCURRENCY: "4"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+      - name: Render
+        run: |
+          python3 automation/release.py download-src "$SLUG"
+          ./make_reel.sh "$SLUG" 0 8 2>&1 | grep -v -E "it/s\]|Warning|warn" | tail -40
+      - name: Keep it privately
+        run: |
+          python3 -c "
+          import sys, os; sys.path.insert(0, 'automation'); import release
+          s = os.environ['SLUG']
+          release.data_put(f'preview-{s}.mp4', open(f'stories/{s}/out/{s}.mp4', 'rb').read(), 'video/mp4')
+          print('kept preview-' + s + '.mp4')"

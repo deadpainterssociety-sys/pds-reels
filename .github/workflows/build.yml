@@ -48,6 +48,7 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       GITHUB_TOKEN: ${{ github.token }}
+      GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}   # the Chirp 3 HD narration (config.json voice_engine)
       SLUG: ${{ matrix.slug }}
     steps:
       - uses: actions/checkout@v4

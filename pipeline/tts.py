@@ -24,6 +24,18 @@ if _cv.get("enabled") and os.environ.get("VOICE", "") != "kokoro":
     if os.environ.get("CI") == "true": sys.exit(f"voice_clone is on but {_miss} is missing")
     print(f"WARNING: voice_clone is on but {_miss} is missing here: using Kokoro (long videos: voice them with the voice workflow)")
 
+# Google Chirp 3 HD voices (config.json voice_engine, Gigi's pick 12 Nov 2026): pipeline/tts_chirp.py does this job when the
+# story's language has one and the key is here. Claude's voice checks set VOICE=kokoro (no key in that step either).
+if os.environ.get("VOICE", "") != "kokoro":
+    _st = json.load(open(os.path.join(story_dir(sys.argv[1]), "story.json")))
+    _lang = _st.get("lang") or "en-us"
+    _e = (json.load(open(os.path.join(ROOT, "config.json"))).get("voice_engine") or {}).get("es" if _lang.startswith("es") else "en")
+    if _e and _e.get("engine") == "chirp":
+        if os.environ.get("GOOGLE_TTS_KEY"):
+            sys.path.insert(0, PIPE); import tts_chirp; tts_chirp.story_voice(sys.argv[1]); sys.exit(0)
+        if os.environ.get("CI") == "true": sys.exit("voice_engine is chirp but GOOGLE_TTS_KEY is missing in this job")
+        print("WARNING: voice_engine is chirp but there is no GOOGLE_TTS_KEY here: using Kokoro (voice long videos in CI)")
+
 import numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
 

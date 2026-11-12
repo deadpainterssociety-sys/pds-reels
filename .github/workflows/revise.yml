@@ -32,10 +32,10 @@ jobs:
       - id: check
         run: python3 automation/validate.py "$SLUG" --report-only
       - name: Render and send the new version
-        env: { CONCURRENCY: "4" }
+        env: { CONCURRENCY: "4", GOOGLE_TTS_KEY: "${{ secrets.GOOGLE_TTS_KEY }}" }
         run: |
-          # cloned voice on: re-voice (only the changed phrases) and rebuild from the voice step; else just render
-          FROM=$(python3 -c "import json; print(1 if (json.load(open('config.json')).get('voice_clone') or {}).get('enabled') else 7)")
+          # cloned or Chirp voice on: re-voice (only the changed phrases) and rebuild from the voice step; else just render
+          FROM=$(python3 -c "import json; c=json.load(open('config.json')); s=json.load(open('stories/$SLUG/story.json')); e=(c.get('voice_engine') or {}).get('es' if s.get('lang','en').startswith('es') else 'en') or {}; print(1 if (c.get('voice_clone') or {}).get('enabled') or e.get('engine')=='chirp' else 7)")
           ./make_reel.sh "$SLUG" "$FROM" 8
           python3 automation/release.py upload-src "$SLUG"
           python3 automation/release.py upload "$SLUG"
