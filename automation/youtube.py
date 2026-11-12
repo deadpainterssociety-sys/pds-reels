@@ -39,9 +39,10 @@ def http(method, url, headers=None, body=None, want_headers=False):
         raise RuntimeError(f"YouTube {url.split('?')[0]}: HTTP {e.code} {e.read().decode()[:600]}")
 
 
-def token():
+def token(es=False):
+    """an access token for our English channel, or (es=True) the Spanish one (secret YT_REFRESH_TOKEN_ES, same client)"""
     body = urllib.parse.urlencode({"client_id": env("YT_CLIENT_ID"), "client_secret": env("YT_CLIENT_SECRET"),
-                                   "refresh_token": env("YT_REFRESH_TOKEN"), "grant_type": "refresh_token"}).encode()
+                                   "refresh_token": env("YT_REFRESH_TOKEN_ES" if es else "YT_REFRESH_TOKEN"), "grant_type": "refresh_token"}).encode()
     return http("POST", f"{OAUTH}/token", {"Content-Type": "application/x-www-form-urlencoded"}, body)["access_token"]
 
 
@@ -71,10 +72,11 @@ def place(slug):
 
 
 def publish(slug):
-    tok = token(); c = captions(slug); st = story(slug)
+    st = story(slug); es = st.get("lang", "en").startswith("es"); lg = "es" if es else "en"
+    tok = token(es); c = captions(slug)
     tags = [w.lstrip("#") for w in st.get("hashtags", []) if w.startswith("#")][:15]
     meta = {"snippet": {"title": c["youtube_title"][:100], "description": c["youtube_desc"][:4900], "tags": tags,
-                        "categoryId": CONFIG.get("youtube_category", "27"), "defaultLanguage": "en", "defaultAudioLanguage": "en"},
+                        "categoryId": CONFIG.get("youtube_category", "27"), "defaultLanguage": lg, "defaultAudioLanguage": lg},
             "status": {"privacyStatus": CONFIG.get("youtube_privacy", "public"), "selfDeclaredMadeForKids": False,
                        "containsSyntheticMedia": bool(CONFIG.get("youtube_synthetic_label_shorts", False))}, **place(slug)}
     path = os.path.join(out_dir(slug), f"{slug}.mp4"); size = os.path.getsize(path)

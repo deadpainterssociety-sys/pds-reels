@@ -1,0 +1,911 @@
+{
+ "slug": "goya-saturn-es",
+ "hook_type": "dark",
+ "teaser": "El cuadro que Goya escondió en su comedor",
+ "voice": "chirp",
+ "tail": 1.0,
+ "meta": {
+  "painter": "Francisco de Goya",
+  "born": 1746,
+  "died": 1828,
+  "painting": "Saturn Devouring His Son",
+  "year": "c. 1820–1823",
+  "museum": "Museo del Prado",
+  "city": "Madrid",
+  "image": "saturn",
+  "image_credit": "Museo del Prado, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "¿Cenarías <i>al lado de esto?</i>",
+  "name": "FRANCISCO DE GOYA",
+  "work": "Saturno devorando a su hijo, h. 1820–23",
+  "answered_by": "en el comedor (los historiadores creen que esa sala era su comedor)",
+  "top_safe": 0.11
+ },
+ "_perf": "each phrase: [text, pause_after_s, speed_mult]. *word* = italic in captions only. Slower speed = weight.",
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "*Nadie* debía ver nunca *esto.*",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "reveal",
+   "perf": [
+    [
+     "Goya lo pintó...",
+     0.3,
+     0.95
+    ],
+    [
+     "en la *pared*...",
+     0.25,
+     0.92
+    ],
+    [
+     "de su propia casa.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "madrid",
+   "perf": [
+    [
+     "Madrid, 1819.",
+     0.45,
+     0.9
+    ],
+    [
+     "Goya tiene setenta y dos años,",
+     0.3,
+     0.95
+    ],
+    [
+     "y está completamente *sordo.*",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "house",
+   "perf": [
+    [
+     "Se compra una casa de campo,",
+     0.25,
+     0.96
+    ],
+    [
+     "que ya se llamaba...",
+     0.3,
+     0.95
+    ],
+    [
+     "la *Quinta del Sordo.*",
+     0.5,
+     0.88
+    ],
+    [
+     "Y no por *él.*",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ill",
+   "perf": [
+    [
+     "A finales de ese año,",
+     0.25,
+     0.95
+    ],
+    [
+     "casi se *muere.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "walls",
+   "perf": [
+    [
+     "Sobrevive.",
+     0.4,
+     0.93
+    ],
+    [
+     "Y empieza a pintar...",
+     0.3,
+     0.95
+    ],
+    [
+     "directamente sobre sus *paredes.*",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "fourteen",
+   "perf": [
+    [
+     "Catorce *pesadillas.*",
+     0.5,
+     0.88
+    ],
+    [
+     "Sin título.",
+     0.3,
+     0.93
+    ],
+    [
+     "Nunca enseñadas en *público.*",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "dining",
+   "perf": [
+    [
+     "Y abajo,",
+     0.3,
+     0.95
+    ],
+    [
+     "en lo que los historiadores creen que era su *comedor,*",
+     0.4,
+     0.97
+    ],
+    [
+     "pinta...",
+     0.4,
+     0.92
+    ],
+    [
+     "*esto.*",
+     0.9,
+     0.8
+    ]
+   ]
+  },
+  {
+   "id": "myth",
+   "perf": [
+    [
+     "*Saturno...*",
+     0.35,
+     0.88
+    ],
+    [
+     "El dios que se comía a sus propios *hijos,*",
+     0.25,
+     0.95
+    ],
+    [
+     "para que ninguno le quitara el *trono.*",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "banker",
+   "perf": [
+    [
+     "Goya se va de España,",
+     0.2,
+     0.95
+    ],
+    [
+     "y muere en *Francia.*",
+     0.5,
+     0.93
+    ],
+    [
+     "Décadas después,",
+     0.25,
+     0.95
+    ],
+    [
+     "un banquero manda *arrancarlas* de las paredes.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "paris",
+   "perf": [
+    [
+     "Se las lleva a París, para venderlas.",
+     0.35,
+     0.95
+    ],
+    [
+     "Casi a *nadie* le interesan.",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "prado",
+   "perf": [
+    [
+     "Así que las regala...",
+     0.3,
+     0.95
+    ],
+    [
+     "al *Prado.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cta",
+   "perf": [
+    [
+     "Está en el Prado, en Madrid.",
+     0.45,
+     0.95
+    ],
+    [
+     "Eso sí... mejor no después de *comer.*",
+     0.0,
+     0.9
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Goya bought the Quinta del Sordo in February 1819, aged 72",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings"
+  },
+  {
+   "claim": "Goya had been deaf since an illness in 1792–93",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "The house was already named after a previous owner who was deaf",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings"
+  },
+  {
+   "claim": "Acute, dangerous illness at the end of 1819; Dr Arrieta saved his life",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Dr_Arrieta (inscription on the 1820 painting)"
+  },
+  {
+   "claim": "14 murals, oil on plaster, c. 1820–1823; Goya never revealed titles; likely never intended for public exhibition",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://fundaciongoyaenaragon.es/eng/obra/saturno-devorando-a-un-hijo/660"
+  },
+  {
+   "claim": "Saturn was on the ground floor; historians (Glendinning) take that room to be the dining room",
+   "source": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son ; https://es.hispanopedia.com/wiki/Pinturas_negras"
+  },
+  {
+   "claim": "Myth: Saturn ate his children so none would overthrow him",
+   "source": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+  },
+  {
+   "claim": "Goya left for Bordeaux in 1824 and died there in 1828",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "Baron Émile d'Erlanger (banker) bought the house in 1873 and had the murals transferred to canvas from 1874 (Salvador Martínez Cubells)",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings"
+  },
+  {
+   "claim": "He wanted to sell them at the 1878 Paris World's Fair; they drew hardly any comment",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings ; https://es.hispanopedia.com/wiki/Pinturas_negras"
+  },
+  {
+   "claim": "Donated to the Spanish state (Prado) in 1881",
+   "source": "https://en.wikipedia.org/wiki/Black_Paintings"
+  },
+  {
+   "claim": "Head and part of the left arm already consumed; fingers dig into the back",
+   "source": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+  }
+ ],
+ "caption": "Nadie debía ver nunca esto.\n\nEn 1819 Goya, con 72 años y completamente sordo, se compró una casa de campo a las afueras de Madrid. Ya se llamaba la Quinta del Sordo, por un dueño anterior. Casi muere a finales de ese año. Sobrevivió, y durante los años siguientes cubrió sus paredes con 14 pesadillas: hoy las llamamos las Pinturas Negras. Nunca les puso título ni las enseñó en público.\n\nEn la planta baja, en lo que los historiadores creen que era su comedor, pintó a Saturno, el dios que se comía a sus hijos para que ninguno le quitara el trono.\n\nGoya se fue a Francia y murió allí en 1828. Décadas después, el banquero Émile d'Erlanger mandó arrancar las pinturas de las paredes y pasarlas a lienzo. Se las llevó a la Exposición Universal de París de 1878 para venderlas. Casi a nadie le interesaron, así que en 1881 las regaló al Estado español. Hoy están en el Prado.\n\n🖤 ¿Tú cenarías al lado de esto?",
+ "hashtags": [
+  "#historiadelarte",
+  "#goya",
+  "#pinturasnegras",
+  "#saturno",
+  "#museodelprado",
+  "#prado",
+  "#madrid",
+  "#arte",
+  "#pintura",
+  "#curiosidades"
+ ],
+ "images": {
+  "saturn": {
+   "file": "src/main/saturn.jpg",
+   "fallback_file": "src/saturn_960.jpg",
+   "depth": true,
+   "upscale": 1.3,
+   "long": 4000,
+   "crop": [
+    0.0,
+    0.0,
+    0.0,
+    0.012
+   ],
+   "points": {
+    "eyes": [
+     0.385,
+     0.19
+    ],
+    "face": [
+     0.37,
+     0.21
+    ],
+    "mouth": [
+     0.41,
+     0.25
+    ],
+    "stump": [
+     0.46,
+     0.28
+    ],
+    "hands": [
+     0.54,
+     0.4
+    ],
+    "body": [
+     0.52,
+     0.36
+    ],
+    "legs": [
+     0.52,
+     0.6
+    ],
+    "knee": [
+     0.22,
+     0.72
+    ],
+    "foot": [
+     0.8,
+     0.8
+    ]
+   }
+  },
+  "laurent": {
+   "file": "src/laurent_saturn.jpg",
+   "crop": [
+    0.03,
+    0.01,
+    0.03,
+    0.105
+   ],
+   "points": {
+    "face": [
+     0.4,
+     0.22
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   },
+   "credit": "Photo J. Laurent, 1874 (Fototeca IPCE, CC BY-SA 2.5 es)"
+  },
+  "quinta": {
+   "file": "src/quinta_1900.jpg",
+   "points": {
+    "door": [
+     0.42,
+     0.5
+    ],
+    "left": [
+     0.3,
+     0.5
+    ],
+    "right": [
+     0.62,
+     0.5
+    ]
+   }
+  },
+  "goya": {
+   "file": "src/goya_1815.jpg",
+   "crop": [
+    0.0,
+    0.0,
+    0.0,
+    0.05
+   ],
+   "points": {
+    "face": [
+     0.56,
+     0.4
+    ],
+    "eyes": [
+     0.58,
+     0.35
+    ]
+   }
+  },
+  "arrieta": {
+   "file": "src/arrieta.jpg",
+   "upscale": 1.15,
+   "points": {
+    "goya": [
+     0.63,
+     0.28
+    ],
+    "both": [
+     0.58,
+     0.3
+    ]
+   }
+  },
+  "cudgels": {
+   "file": "src/cudgels.jpg",
+   "points": {
+    "left": [
+     0.24,
+     0.45
+    ],
+    "right": [
+     0.42,
+     0.45
+    ],
+    "faces": [
+     0.33,
+     0.33
+    ]
+   }
+  },
+  "dog": {
+   "file": "src/dog.jpg",
+   "points": {
+    "dog": [
+     0.5,
+     0.78
+    ],
+    "sky": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "plaster": {
+   "file": "build/plaster.jpg",
+   "points": {}
+  }
+ },
+ "maps": {
+  "iberia": {
+   "bbox": [
+    [
+     -9.8,
+     35.8
+    ],
+    [
+     3.6,
+     45.4
+    ]
+   ],
+   "focus": [
+    "724"
+   ],
+   "cities": {
+    "madrid": [
+     -3.7,
+     40.42
+    ],
+    "bordeaux": [
+     -0.58,
+     44.84
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "saturn",
+   "from": "eyes@3.2",
+   "to": "eyes@3.6",
+   "dim": 0.2,
+   "sway": 0.01
+  },
+  {
+   "at": "hook.4-0.03",
+   "img": "saturn",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "reveal.3-0.05",
+   "img": "laurent",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 1,
+   "contrast": 1.35
+  },
+  {
+   "at": "madrid-0.08",
+   "kind": "map",
+   "img": "plaster",
+   "map": {
+    "id": "iberia",
+    "pins": [
+     {
+      "city": "madrid",
+      "at": "madrid.0",
+      "label": "Madrid"
+     }
+    ]
+   }
+  },
+  {
+   "at": "madrid.2-0.05",
+   "img": "goya",
+   "kind": "image",
+   "from": "face@1.15",
+   "to": "face@1.35",
+   "gray": 0.35
+  },
+  {
+   "at": "house-0.08",
+   "img": "quinta",
+   "kind": "image",
+   "from": "left@1.0",
+   "to": "right@1.05",
+   "gray": 1
+  },
+  {
+   "at": "house.14-0.05",
+   "img": "goya",
+   "kind": "image",
+   "from": "eyes@1.9",
+   "to": "eyes@2.15",
+   "gray": 0.35
+  },
+  {
+   "at": "ill-0.08",
+   "img": "arrieta",
+   "kind": "image",
+   "from": "both@1.0",
+   "to": "goya@1.35",
+   "gray": 0.3,
+   "dim": 0.05
+  },
+  {
+   "at": "walls.1-0.05",
+   "img": "cudgels",
+   "kind": "image",
+   "from": "left@1.0",
+   "to": "right@1.0"
+  },
+  {
+   "at": "fourteen-0.08",
+   "img": "dog",
+   "kind": "image",
+   "from": "sky@1.0",
+   "to": "dog@2.0"
+  },
+  {
+   "at": "fourteen.2-0.05",
+   "img": "cudgels",
+   "kind": "image",
+   "from": "faces@1.5",
+   "to": "faces@1.65",
+   "gray": 0.3
+  },
+  {
+   "at": "fourteen.4-0.05",
+   "img": "quinta",
+   "kind": "image",
+   "from": "door@1.2",
+   "to": "door@1.32",
+   "gray": 1,
+   "dim": 0.25
+  },
+  {
+   "at": "dining-0.08",
+   "img": "saturn",
+   "from": "legs@1.7",
+   "to": "stump@1.9",
+   "gray": 0.75,
+   "dim": 0.5,
+   "sway": 0.004
+  },
+  {
+   "at": "dining.13-0.03",
+   "img": "saturn",
+   "from": "full@1.0",
+   "to": "full@1.04",
+   "dolly": [
+    0,
+    0.24
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "myth-0.08",
+   "img": "saturn",
+   "from": "face@2.3",
+   "to": "face@2.6"
+  },
+  {
+   "at": "myth.1-0.05",
+   "img": "saturn",
+   "from": "stump@2.4",
+   "to": "stump@2.7"
+  },
+  {
+   "at": "myth.10-0.05",
+   "img": "saturn",
+   "from": "hands@2.1",
+   "to": "hands@2.45"
+  },
+  {
+   "at": "banker-0.08",
+   "kind": "map",
+   "img": "plaster",
+   "map": {
+    "id": "iberia",
+    "pins": [
+     {
+      "city": "madrid",
+      "at": "banker-0.05"
+     },
+     {
+      "city": "bordeaux",
+      "at": "banker.4",
+      "label": "Bordeaux"
+     }
+    ],
+    "route": {
+     "from": "madrid",
+     "to": "bordeaux",
+     "at": "banker.1",
+     "to_at": "banker.4"
+    }
+   }
+  },
+  {
+   "at": "banker.9-0.05",
+   "img": "laurent",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "gray": 1,
+   "contrast": 1.35
+  },
+  {
+   "at": "banker.11-0.05",
+   "img": "laurent",
+   "kind": "peel",
+   "from": "center@0.64",
+   "to": "center@0.62",
+   "gray": 1,
+   "peel": {
+    "at": "banker.12",
+    "to": "banker$",
+    "under": "plaster"
+   },
+   "contrast": 1.35
+  },
+  {
+   "at": "paris-0.08",
+   "img": "saturn",
+   "from": "full@0.6",
+   "to": "full@0.56",
+   "frame": true,
+   "sway": 0.004
+  },
+  {
+   "at": "paris.7-0.05",
+   "img": "saturn",
+   "from": "full@0.56",
+   "to": "full@0.53",
+   "frame": true,
+   "dim": 0.45,
+   "sway": 0.002,
+   "whoosh": false
+  },
+  {
+   "at": "prado-0.08",
+   "img": "saturn",
+   "from": "full@1.0",
+   "to": "full@1.05",
+   "dolly": [
+    0,
+    0.16
+   ],
+   "sway": 0.012
+  },
+  {
+   "at": "cta-0.06",
+   "img": "saturn",
+   "from": "full@1.08",
+   "to": "full@1.0",
+   "dolly": [
+    0.14,
+    0
+   ],
+   "sway": 0.01
+  },
+  {
+   "at": "cta.6-0.05",
+   "img": "saturn",
+   "from": "mouth@2.6",
+   "to": "mouth@3.0",
+   "hit": "small"
+  }
+ ],
+ "overlays": [
+  {
+   "type": "credit",
+   "from": "reveal.3",
+   "to": "madrid-0.1",
+   "text": "FOTO · J. LAURENT · 1874"
+  },
+  {
+   "type": "label",
+   "from": "madrid.2",
+   "to": "house-0.1",
+   "text": "GOYA · AUTORRETRATO · 1815"
+  },
+  {
+   "type": "label",
+   "from": "house",
+   "to": "house.10",
+   "text": "MADRID · h. 1900"
+  },
+  {
+   "type": "title",
+   "from": "house.10",
+   "to": "house.14-0.06",
+   "kicker": "SU NUEVA CASA",
+   "text": "La Quinta del <i>Sordo</i>"
+  },
+  {
+   "type": "label",
+   "from": "ill",
+   "to": "walls.1-0.1",
+   "text": "CON EL DR. ARRIETA · 1820"
+  },
+  {
+   "type": "label",
+   "from": "walls.1",
+   "to": "dining-0.1",
+   "text": "LAS PINTURAS NEGRAS · 1820–23"
+  },
+  {
+   "type": "stamp",
+   "from": "fourteen.5",
+   "to": "dining-0.1",
+   "text": "PRIVADO"
+  },
+  {
+   "type": "label",
+   "from": "dining.6",
+   "to": "dining.13-0.05",
+   "text": "PLANTA BAJA"
+  },
+  {
+   "type": "label",
+   "from": "myth",
+   "to": "banker-0.1",
+   "text": "SATURNO DEVORANDO A SU HIJO"
+  },
+  {
+   "type": "credit",
+   "from": "banker.9",
+   "to": "paris-0.1",
+   "text": "FOTO · J. LAURENT · 1874"
+  },
+  {
+   "type": "label",
+   "from": "banker.9",
+   "to": "paris-0.1",
+   "text": "1874"
+  },
+  {
+   "type": "label",
+   "from": "paris",
+   "to": "prado-0.1",
+   "text": "PARÍS · EXPOSICIÓN UNIVERSAL · 1878"
+  },
+  {
+   "type": "pin",
+   "from": "prado.5",
+   "to": "cta.6-0.05",
+   "text": "MUSEO DEL PRADO · MADRID"
+  }
+ ],
+ "nocap": [
+  [
+   "house.10",
+   "house.14-0.06"
+  ]
+ ],
+ "music": {
+  "transpose": -2,
+  "bar": 5.0,
+  "sections": {
+   "cold": [
+    "madrid-0.3",
+    "dining.13-0.1"
+   ],
+   "choir": [
+    "dining.13",
+    "banker-0.2"
+   ],
+   "drop": [
+    "paris.7-0.1",
+    "prado-0.2"
+   ]
+  },
+  "heartbeat": [
+   "dining",
+   "dining.13-0.2"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "house.14",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "fourteen.5",
+   "fx": "impact",
+   "gain": 0.55
+  },
+  {
+   "at": "banker.14",
+   "fx": "whoosh",
+   "gain": 0.35
+  },
+  {
+   "at": "paris.9",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "prado.5",
+   "fx": "chime",
+   "gain": 0.45
+  }
+ ],
+ "youtube_title": "¿Cenarías al lado de esto? 🍽️",
+ "caption_short": "Goya pintó esto en la pared de su casa. Y nadie debía verlo nunca. 🍽️",
+ "edition_of": "goya-saturn",
+ "lang": "es",
+ "next": false,
+ "meta_es": {
+  "painting": "Saturno devorando a su hijo",
+  "museum": "Museo del Prado",
+  "city": "Madrid"
+ },
+ "ai_voice_line": "🎙️ Narración con voz de IA"
+}

@@ -60,12 +60,18 @@ def upload_src(slug):
 
 
 def download_src(slug):
+    """the story's source images (+ voiced phrases) from its private release; a Spanish twin (story.json edition_of)
+    without its own release yet starts from the English story's"""
     import tarfile, glob
     sd = os.path.join(os.path.dirname(out_dir(slug)), "src")
     if glob.glob(os.path.join(sd, "*.jpg")) or glob.glob(os.path.join(sd, "*.png")): print("src already present"); return
-    download(slug, only="src.tar")
-    with tarfile.open(os.path.join(out_dir(slug), "src.tar")) as t: t.extractall(os.path.dirname(out_dir(slug)), filter="data")
-    print("src restored")
+    src_slug = slug
+    if not find(slug):
+        try: src_slug = json.load(open(os.path.join(os.path.dirname(out_dir(slug)), "story.json"))).get("edition_of") or slug
+        except OSError: pass
+    download(src_slug, only="src.tar")
+    with tarfile.open(os.path.join(out_dir(src_slug), "src.tar")) as t: t.extractall(os.path.dirname(out_dir(slug)), filter="data")
+    print("src restored" + (f" (from {src_slug})" if src_slug != slug else ""))
 
 
 LONG_FILES = ["{s}.mp4", "thumb_a.jpg", "thumb_b.jpg", "captions.srt", "description.txt", "titles.txt"]

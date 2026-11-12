@@ -1,0 +1,790 @@
+{
+ "slug": "velazquez-meninas-cross-es",
+ "hook_type": "hidden",
+ "teaser": "La cruz que Velázquez todavía no tenía",
+ "voice": "chirp",
+ "lang": "es",
+ "tail": 2.2,
+ "meta": {
+  "painter": "Diego Velázquez",
+  "born": 1599,
+  "died": 1660,
+  "painting": "Las Meninas",
+  "year": "1656",
+  "museum": "Museo del Prado",
+  "city": "Madrid",
+  "image": "meninas",
+  "image_credit": "Museo del Prado, Madrid, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "¿Quién pintó <i>su cruz?</i>",
+  "name": "DIEGO VELÁZQUEZ",
+  "work": "Las Meninas, 1656",
+  "focus": [
+   0.24,
+   0.555
+  ],
+  "span": 0.3,
+  "answered_by": "Nadie lo sabe: lo nombraron caballero en 1659; Palomino dice que el rey la mandó añadir tras su muerte; hay quien dice que la pintó el propio rey"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Esa cruz roja no estaba ahí cuando terminó *esto.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "En 1656,",
+     0.3,
+     0.95
+    ],
+    [
+     "Diego Velázquez pintó *Las Meninas*,",
+     0.3,
+     0.94
+    ],
+    [
+     "y se metió dentro del cuadro,",
+     0.25,
+     0.94
+    ],
+    [
+     "pincel en mano.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "cross",
+   "perf": [
+    [
+     "Es la cruz de la Orden de Santiago,",
+     0.3,
+     0.94
+    ],
+    [
+     "una orden de caballería solo para nobles.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "rules",
+   "perf": [
+    [
+     "Para entrar, sus cuatro abuelos tenían que ser nobles,",
+     0.25,
+     0.94
+    ],
+    [
+     "cristianos viejos,",
+     0.3,
+     0.94
+    ],
+    [
+     "y nada de oficios.",
+     0.3,
+     0.93
+    ],
+    [
+     "Y vender cuadros contaba.",
+     0.85,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "inquiry",
+   "perf": [
+    [
+     "Así que la Orden lo investigó.",
+     0.35,
+     0.93
+    ],
+    [
+     "Interrogaron a casi 150 personas.",
+     0.35,
+     0.94
+    ],
+    [
+     "Su expediente decía que nunca cobró por su arte.",
+     0.85,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "pope",
+   "perf": [
+    [
+     "Aun así, no pudo demostrar que era noble.",
+     0.35,
+     0.93
+    ],
+    [
+     "Así que el rey le pidió al papa una excepción.",
+     0.4,
+     0.94
+    ],
+    [
+     "En noviembre de 1659,",
+     0.3,
+     0.95
+    ],
+    [
+     "Velázquez se convirtió en *caballero.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "dead",
+   "perf": [
+    [
+     "Nueve meses después,",
+     0.25,
+     0.94
+    ],
+    [
+     "ya había muerto.",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Entonces, ¿quién pintó la cruz?",
+     0.4,
+     0.92
+    ],
+    [
+     "Un biógrafo de la época escribió",
+     0.2,
+     0.94
+    ],
+    [
+     "que el rey la mandó añadir tras su muerte,",
+     0.35,
+     0.93
+    ],
+    [
+     "y hay quien dice",
+     0.2,
+     0.93
+    ],
+    [
+     "que la pintó el propio *rey.*",
+     0.85,
+     0.86
+    ],
+    [
+     "Otros creen que fue Velázquez.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "Está en el Prado, en Madrid.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "meninas": {
+   "file": "src/meninas.jpg",
+   "commons": "File:Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.6
+    ],
+    "cross": [
+     0.232,
+     0.585
+    ],
+    "face": [
+     0.242,
+     0.528
+    ],
+    "hand": [
+     0.205,
+     0.607
+    ],
+    "palette": [
+     0.275,
+     0.662
+    ],
+    "mirror": [
+     0.42,
+     0.565
+    ],
+    "infanta": [
+     0.49,
+     0.665
+    ]
+   }
+  },
+  "self": {
+   "file": "src/self.jpg",
+   "commons": "File:Diego Velázquez - Las Meninas - Selfportrait.jpg",
+   "points": {
+    "face": [
+     0.53,
+     0.27
+    ],
+    "cross": [
+     0.49,
+     0.57
+    ],
+    "hand": [
+     0.3,
+     0.68
+    ]
+   }
+  },
+  "philip": {
+   "file": "src/philip.jpg",
+   "commons": "File:Philip IV of Spain.jpg",
+   "long": 3000,
+   "points": {
+    "face": [
+     0.5,
+     0.33
+    ]
+   }
+  },
+  "pope": {
+   "file": "src/pope.jpg",
+   "commons": "File:Portrait of Pope Alexander VII Chigi (by Giovanni Battista Gaulli - Baciccio).jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.25
+    ],
+    "letter": [
+     0.42,
+     0.88
+    ]
+   }
+  },
+  "alcazar": {
+   "file": "src/alcazar.jpg",
+   "commons": "File:13542 Vista del Alcázar Real y entorno del Puente de Segovia.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "palace": [
+     0.22,
+     0.12
+    ]
+   }
+  },
+  "palomino": {
+   "file": "src/palomino.jpg",
+   "commons": "File:Palomino - El museo pictorico y escala optica - Tomo I.png",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "title": [
+     0.5,
+     0.22
+    ],
+    "name": [
+     0.6,
+     0.81
+    ]
+   },
+   "frame": true
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "meninas",
+   "from": "cross@3.2",
+   "to": "cross@3.4",
+   "sway": 0.005,
+   "dim": -0.15
+  },
+  {
+   "at": "hook.5-0.03",
+   "img": "meninas",
+   "from": "face@3.0",
+   "to": "face@3.15",
+   "sway": 0.005,
+   "dim": -0.15
+  },
+  {
+   "at": "hook.8-0.03",
+   "img": "meninas",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big",
+   "dim": -0.15
+  },
+  {
+   "at": "painted-0.08",
+   "img": "meninas",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.44",
+   "frame": true,
+   "sway": 0.002,
+   "dim": -0.15
+  },
+  {
+   "at": "painted.2-0.05",
+   "img": "self",
+   "kind": "image",
+   "from": "face@1.25",
+   "to": "face@1.38",
+   "dim": -0.15
+  },
+  {
+   "at": "painted.7-0.05",
+   "img": "meninas",
+   "from": "hand@2.4",
+   "to": "hand@2.55",
+   "sway": 0.005,
+   "dim": -0.15
+  },
+  {
+   "at": "cross-0.08",
+   "img": "self",
+   "kind": "image",
+   "from": "cross@1.8",
+   "to": "cross@1.95",
+   "hit": "small",
+   "dim": -0.15
+  },
+  {
+   "at": "cross.8-0.05",
+   "img": "meninas",
+   "from": "mirror@3.0",
+   "to": "mirror@3.15",
+   "sway": 0.004,
+   "dim": -0.15
+  },
+  {
+   "at": "rules-0.08",
+   "img": "self",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 0.7,
+   "dim": -0.1
+  },
+  {
+   "at": "rules.16-0.05",
+   "img": "meninas",
+   "kind": "image",
+   "from": "palette@2.6",
+   "to": "palette@2.75",
+   "gray": 1,
+   "dim": -0.1
+  },
+  {
+   "at": "inquiry-0.08",
+   "img": "alcazar",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "inquiry.6-0.05",
+   "img": "alcazar",
+   "kind": "image",
+   "from": "palace@2.2",
+   "to": "palace@2.35",
+   "gray": 1
+  },
+  {
+   "at": "inquiry.11-0.05",
+   "img": "self",
+   "kind": "image",
+   "from": "hand@1.6",
+   "to": "hand@1.75",
+   "gray": 0.8,
+   "dim": -0.35
+  },
+  {
+   "at": "pope-0.08",
+   "img": "self",
+   "kind": "image",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "gray": 1,
+   "dim": -0.1
+  },
+  {
+   "at": "pope.8-0.05",
+   "img": "philip",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "gray": 0.35
+  },
+  {
+   "at": "pope.14-0.05",
+   "img": "pope",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 0.35
+  },
+  {
+   "at": "pope.18-0.05",
+   "img": "self",
+   "from": "cross@1.5",
+   "to": "cross@1.65",
+   "hit": "small",
+   "dim": -0.15,
+   "kind": "image"
+  },
+  {
+   "at": "dead-0.08",
+   "img": "self",
+   "kind": "image",
+   "from": "face@1.8",
+   "to": "face@1.9",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "meninas",
+   "from": "cross@2.8",
+   "to": "cross@2.95",
+   "sway": 0.005,
+   "dim": -0.15
+  },
+  {
+   "at": "payoff.5-0.05",
+   "img": "palomino",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "dim": 0.45
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "philip",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.62",
+   "gray": 0.35
+  },
+  {
+   "at": "payoff.20-0.05",
+   "img": "meninas",
+   "from": "mirror@3.2",
+   "to": "mirror@3.35",
+   "sway": 0.004,
+   "dim": -0.15
+  },
+  {
+   "at": "payoff.30-0.05",
+   "img": "meninas",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big",
+   "dim": -0.15
+  },
+  {
+   "at": "ending-0.08",
+   "img": "meninas",
+   "from": "face@2.2",
+   "to": "face@2.4",
+   "sway": 0.005,
+   "dim": -0.15
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.1",
+   "to": "hook.5-0.1",
+   "img": "meninas",
+   "point": "cross",
+   "rx": 110,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.2-0.1",
+   "text": "MADRID · 1656"
+  },
+  {
+   "type": "label",
+   "from": "painted.2",
+   "to": "painted.7-0.1",
+   "text": "VELÁZQUEZ · AUTORRETRATO"
+  },
+  {
+   "type": "ring",
+   "at": "cross.2",
+   "to": "cross.8-0.1",
+   "img": "self",
+   "point": "cross",
+   "rx": 130,
+   "ry": 200,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "cross.2",
+   "to": "cross.8-0.1",
+   "text": "LA ORDEN DE SANTIAGO"
+  },
+  {
+   "type": "label",
+   "from": "cross.8",
+   "to": "rules-0.1",
+   "text": "LOS REYES · EN EL ESPEJO"
+  },
+  {
+   "type": "label",
+   "from": "rules",
+   "to": "rules.16-0.1",
+   "text": "PARA ENTRAR: SANGRE NOBLE"
+  },
+  {
+   "type": "label",
+   "from": "rules.16",
+   "to": "inquiry-0.1",
+   "text": "NADA DE OFICIOS"
+  },
+  {
+   "type": "label",
+   "from": "inquiry",
+   "to": "inquiry.6-0.1",
+   "text": "LA INVESTIGACIÓN · 1658–1659"
+  },
+  {
+   "type": "label",
+   "from": "inquiry.6",
+   "to": "inquiry.11-0.1",
+   "text": "CASI 150 INTERROGADOS"
+  },
+  {
+   "type": "label",
+   "from": "pope.8",
+   "to": "pope.14-0.1",
+   "text": "FELIPE IV · POR VELÁZQUEZ"
+  },
+  {
+   "type": "label",
+   "from": "pope.14",
+   "to": "pope.18-0.1",
+   "text": "EL PAPA ALEJANDRO VII"
+  },
+  {
+   "type": "label",
+   "from": "pope.18",
+   "to": "dead-0.1",
+   "text": "CABALLERO · NOVIEMBRE 1659"
+  },
+  {
+   "type": "label",
+   "from": "dead",
+   "to": "payoff-0.1",
+   "text": "MUERE · AGOSTO 1660"
+  },
+  {
+   "type": "label",
+   "from": "payoff.5",
+   "to": "payoff.12-0.1",
+   "text": "PALOMINO · EL MUSEO PICTÓRICO"
+  },
+  {
+   "type": "label",
+   "from": "payoff.12",
+   "to": "payoff.20-0.1",
+   "text": "FELIPE IV · POR VELÁZQUEZ"
+  },
+  {
+   "type": "ring",
+   "at": "payoff.21",
+   "to": "payoff.30-0.1",
+   "img": "meninas",
+   "point": "mirror",
+   "rx": 120,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSEO DEL PRADO · MADRID"
+  }
+ ],
+ "rights": {
+  "creator_died": 1660,
+  "note": "Velázquez d. 1660; Baciccio d. 1709; anonymous c.1670 Alcázar view; Palomino 1715 title page (CC0 scan): all public domain."
+ },
+ "nocap": [],
+ "music": {
+  "transpose": -4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "rules-0.2",
+    "dead$+0.2"
+   ],
+   "choir": [
+    "payoff.30-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.8-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "inquiry.9",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "pope.26",
+   "fx": "chime",
+   "gain": 0.55
+  },
+  {
+   "at": "dead.5",
+   "fx": "impact",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Las Meninas was painted in 1656; Velázquez shows himself at work at a large canvas, brush and palette in hand",
+   "source": "https://en.wikipedia.org/wiki/Las_Meninas ; https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg"
+  },
+  {
+   "claim": "The red cross on his chest is the badge of the Order of Santiago; he was admitted by royal decree on 28 November 1659, three years after the painting was completed, so the cross was added later",
+   "source": "https://en.wikipedia.org/wiki/Las_Meninas (López-Rey 1999, II, p. 308) ; https://muyinteresante.okdiario.com/?p=184224"
+  },
+  {
+   "claim": "Admission required that all four grandparents be noble and Old Christians (limpieza de sangre); the Order excluded tradesmen / people in mechanical occupations, and selling pictures counted against him",
+   "source": "https://muyinteresante.okdiario.com/?p=184224 (María José Rubio, historian) ; https://en.wikipedia.org/wiki/Diego_Vel%C3%A1zquez ; https://en.wikipedia.org/wiki/Las_Meninas (Honour & Fleming 1982, p. 447)"
+  },
+  {
+   "claim": "The Order's inquiry (1658–1659) questioned almost 150 people ('casi 150 personas')",
+   "source": "https://muyinteresante.okdiario.com/?p=184224"
+  },
+  {
+   "claim": "His file argued he did not charge for his painting but painted to please the king ('ni cobraba por ello, sino que pintaba por dar gusto al rey'); Wikipedia: as painter to the king he was not involved in 'selling' pictures",
+   "source": "https://muyinteresante.okdiario.com/?p=184224 ; https://en.wikipedia.org/wiki/Diego_Vel%C3%A1zquez"
+  },
+  {
+   "claim": "Unable to prove nobility, he was admitted at Philip IV's direct request through a dispensation from Pope Alexander VII (apostolic brief of 9 July 1659); the king's decree of 28 November 1659 made him hidalgo and worthy of the habit",
+   "source": "https://revistascientificas.us.es/index.php/va-in-art/article/download/25153/21978/115632 (Juan Luque Carrillo) ; https://muyinteresante.okdiario.com/?p=184224"
+  },
+  {
+   "claim": "He died in Madrid in August 1660 (6 or 7 August), about nine months after the decree",
+   "source": "https://en.wikipedia.org/wiki/Diego_Vel%C3%A1zquez ; https://muyinteresante.okdiario.com/?p=184224"
+  },
+  {
+   "claim": "Palomino (El Museo Pictórico, 1715–24) wrote that Philip IV ordered the cross added after Velázquez's death, 'and some say that his Majesty himself painted it' ('algunos dicen, que Su Majestad mismo se lo pintó'); others argue Velázquez added it himself; who painted it is unresolved",
+   "source": "https://en.wikipedia.org/wiki/Las_Meninas (Kahr 1975, p. 225) ; https://www.nybooks.com/articles/2007/02/15/the-kings-cross/ (Leo Steinberg / Ingrid Rowland)"
+  },
+  {
+   "claim": "The mirror on the back wall reflects King Philip IV and Queen Mariana",
+   "source": "https://en.wikipedia.org/wiki/Las_Meninas"
+  },
+  {
+   "claim": "Las Meninas hangs in the Museo del Prado, Madrid",
+   "source": "https://en.wikipedia.org/wiki/Las_Meninas"
+  }
+ ],
+ "caption": "Esa cruz roja en el pecho de Velázquez no estaba ahí cuando terminó Las Meninas.\n\nLo pintó en 1656 y se metió dentro del cuadro, pincel en mano. La cruz es la de la Orden de Santiago, una orden de caballería solo para nobles: sus cuatro abuelos tenían que ser nobles y \"cristianos viejos\", y nada de oficios. Y vender cuadros era un oficio.\n\nLa Orden investigó su pasado e interrogó a casi 150 personas. Su expediente aseguraba que nunca había cobrado por su arte. Aun así no pudo demostrar su nobleza, y Felipe IV tuvo que pedirle al papa Alejandro VII una excepción. En noviembre de 1659 Velázquez por fin fue caballero. Murió nueve meses después.\n\n¿Y la cruz? Su biógrafo Palomino escribió que el rey la mandó añadir tras su muerte. Hay quien dice que la pintó el propio Felipe IV. Otros creen que fue el mismo Velázquez.\n\n🖤 ¿Tú quién crees que la pintó?",
+ "caption_short": "Esa cruz roja no estaba ahí cuando Velázquez terminó Las Meninas. ✝️",
+ "youtube_title": "¿Quién le pintó la cruz a Velázquez? ✝️",
+ "hashtags": [
+  "#historiadelarte",
+  "#velazquez",
+  "#lasmeninas",
+  "#museodelprado",
+  "#prado",
+  "#madrid",
+  "#arte",
+  "#pintura",
+  "#curiosidades",
+  "#cuadros"
+ ],
+ "edition_of": "velazquez-meninas-cross",
+ "next": false,
+ "meta_es": {
+  "painting": "Las Meninas",
+  "museum": "Museo del Prado",
+  "city": "Madrid"
+ },
+ "ai_voice_line": "🎙️ Narración con voz de IA"
+}

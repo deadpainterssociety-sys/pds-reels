@@ -63,7 +63,7 @@ def problems(slug):
     p, sd = [], os.path.join(ROOT, "stories", slug)
     st = story(slug)
     if not st: return ["story.json missing or invalid"]
-    m = st.get("meta", {})
+    m = {**st.get("meta", {}), **(st.get("meta_es") or {})}
     for k in ("painter", "painting", "year", "museum", "city", "image", "died"):
         if not m.get(k): p.append(f"meta.{k} missing")
     if m.get("died") and datetime.date.today().year - int(m["died"]) <= MIN_YEARS: p.append(f"painter died {m['died']}: NOT public domain")
