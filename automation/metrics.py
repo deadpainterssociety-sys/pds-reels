@@ -20,7 +20,7 @@ instagram_manage_insights). Missing permissions are noted in metrics.json["notes
 """
 import csv, datetime, io, json, os, re, statistics, sys, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import CONFIG, ROOT, now, schedule, slot_time, state, story
+from common import CONFIG, ROOT, jload, now, schedule, slot_time, state, story
 
 AGES = (24, 72, 168)                      # hours at which reels are compared
 ACTIVE_DAYS = 21                          # stop polling a reel after this
@@ -61,10 +61,11 @@ def features(slug):
 
 
 # ---------------------------------------------------------------- YouTube
-def youtube_numbers(ids, notes):
+def youtube_numbers(ids, notes, es=False):
+    """es=True: the Spanish channel (its own token: Analytics only sees the token's channel)"""
     import youtube as Y
-    if not ids or not os.environ.get("YT_REFRESH_TOKEN", "").strip(): return {}
-    tok = Y.token(); H = {"Authorization": f"Bearer {tok}"}; out = {i: {} for i in ids}
+    if not ids or not os.environ.get("YT_REFRESH_TOKEN_ES" if es else "YT_REFRESH_TOKEN", "").strip(): return {}
+    tok = Y.token(es); H = {"Authorization": f"Bearer {tok}"}; out = {i: {} for i in ids}
     global _H; _H = H
     for k in range(0, len(ids), 50):
         r = Y.http("GET", f"{Y.API}/youtube/v3/videos?part=statistics&id={','.join(ids[k:k + 50])}", H)
@@ -197,6 +198,56 @@ TRAFFIC = {"0": "direct", "1": "advertising", "3": "browse", "4": "channel", "5"
            "30": "remix", "31": "vertical_live", "32": "related_video"}   # Reporting API numeric traffic_source_type codes
 
 
+def spanish(m, t, notes):
+    """the Spanish edition test (12 Nov 2026): every posted Spanish twin (schedule_es.json + its state), 21 days, with the
+    Spanish channel's own token; once a day its traffic sources and the channel's audience -> m["es"], m["es_channel"]"""
+    global _H
+    if not os.environ.get("YT_REFRESH_TOKEN_ES", "").strip(): return
+    ids = {}
+    for e in jload(os.path.join(ROOT, "schedule_es.json"), []):
+        s_ = state(e["slug"])
+        if s_.get("youtube_id") and s_.get("posted_at") and t - _parse(s_["posted_at"]) < datetime.timedelta(days=21):
+            ids[s_["youtube_id"]] = (e["slug"], s_["posted_at"])
+    if not ids: return
+    keep = _H
+    try:
+        nums = youtube_numbers(list(ids), notes, es=True); H = _H
+        for vid, n in nums.items():
+            slug, pa = ids[vid]; st_ = story(slug)
+            R = m.setdefault("es", {}).setdefault(slug, {"youtube": {"id": vid}})
+            R["features"] = {"slug": slug, "edition_of": st_.get("edition_of"), "title": st_.get("youtube_title"), "posted_at": pa,
+                             "hook_type": st_.get("hook_type")}
+            R["youtube"].setdefault("snapshots", []).append({"at": _iso(t), "age_h": round((t - _parse(pa)).total_seconds() / 3600, 1), **n})
+        if m.get("es_daily_on") != t.date().isoformat():
+            for vid, (slug, _) in ids.items():
+                try: m["es"][slug]["youtube"]["traffic"] = traffic(H, vid)
+                except (RuntimeError, KeyError) as e: print("es traffic:", slug, str(e)[:120])
+            try: m["es_channel"] = {"audience": audience(H), "at": _iso(t)}
+            except RuntimeError as e: notes["youtube_es_channel"] = str(e)[:200]
+            m["es_daily_on"] = t.date().isoformat()
+        print(f"Spanish channel: {len(nums)} Shorts")
+    except RuntimeError as e: notes["youtube_es"] = str(e)[:200]; print("Spanish channel:", str(e)[:200])
+    finally: _H = keep
+
+
+def es_table(m, d):
+    """<d>/es.csv: the Spanish twins (views at 24 h / 72 h, engaged %, % viewed, subs) next to their English originals"""
+    rows = []
+    for slug, R in (m.get("es") or {}).items():
+        sn = R["youtube"].get("snapshots"); last = (sn or [{}])[-1]; f = R.get("features", {})
+        en = (m.get("reels") or {}).get(f.get("edition_of") or "", {}).get("youtube", {}).get("snapshots")
+        rows.append({"slug": slug, "title": f.get("title"), "posted_at": f.get("posted_at"), "age_h": last.get("age_h"),
+                     "views_24h": at_age(sn, "views", 24), "views_72h": at_age(sn, "views", 72), "views": last.get("views"),
+                     "engaged_pct": last.get("engaged_pct"), "avg_view_pct": last.get("avg_view_pct"), "subs": last.get("subs"),
+                     "likes": last.get("likes"), "english_views_72h": at_age(en, "views", 72) if en else None,
+                     **traffic_cols(R["youtube"].get("traffic"), "src")})
+    if not rows: return
+    keys = list(dict.fromkeys(k for r in rows for k in r))
+    with open(os.path.join(d, "es.csv"), "w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=keys); w.writeheader(); [w.writerow(r) for r in sorted(rows, key=lambda r: r.get("posted_at") or "")]
+    print(f"{d}/es.csv: {len(rows)} Spanish Shorts")
+
+
 def long_videos(days=60):
     """the long videos already public: slug -> (video id, publish time)"""
     import glob
@@ -286,6 +337,7 @@ def collect():
             except RuntimeError as e: notes["youtube_channel"] = str(e)[:200]; print("channel:", str(e)[:200])
             m["daily_on"] = t.date().isoformat()
         reach(m, _H, notes)   # every run: two cheap list calls; new daily reports are downloaded as soon as they appear
+    spanish(m, t, notes)
     for slug in slugs:   # Instagram numbers only when config.json "learning_platforms" lists it (6 Nov 2026: YouTube decides)
         r = m["reels"][slug]; mid = r.get("instagram", {}).get("id")
         if "instagram" not in CONFIG.get("learning_platforms", ["youtube"]): notes.pop("instagram_insights", None); break
@@ -424,7 +476,7 @@ def table(d="lab"):
         yid = r.get("youtube", {}).get("id")
         row.update(reach_cols(m, yid, "youtube")); row.update(traffic_cols(r.get("youtube", {}).get("traffic"), "youtube"))
         rows.append(row)
-    long_table(m, d)
+    long_table(m, d); es_table(m, d)
     keys = sorted({k for r in rows for k in r}, key=lambda k: (k not in ("slug", "posted_at", "slot", "hook_type"), k))
     out = os.path.join(d, "table.csv"); os.makedirs(d, exist_ok=True)
     with open(out, "w", newline="") as f:

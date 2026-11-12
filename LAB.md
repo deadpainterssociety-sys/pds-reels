@@ -88,6 +88,15 @@ A painting that just broke out for some art channel keeps breaking out for other
   when the audience shifts (our target is Gen-Z: share of 18-24 and 25-34). Reach data starts ~2 days after
   12 Nov 2026 (the reports are new): say "not yet" until then.
 
+## Spanish edition test (from 13 Nov 2026)
+
+`lab/es.csv` (same `table` command): every Short on the Spanish channel (Spanish twins of our English stories, voiced by
+es-ES Gacrux), with its views at 24 h / 72 h, engaged %, average % viewed, subscribers, traffic sources, and its English
+original's views at 72 h. metrics.json `es_channel.audience` is the Spanish channel's audience. The question: does the
+same story do better in Spanish? Compare the Spanish median at 72 h with our English median, and pair by pair. One line
+in the summary until 14 Spanish Shorts are 72 h old, then a verdict and a proposal (keep / stop / scale the Spanish
+channel).
+
 ## Output (both files are required)
 
 `lab/brief.json`:

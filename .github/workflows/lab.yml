@@ -25,6 +25,7 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN_ES: ${{ secrets.YT_REFRESH_TOKEN_ES }}
           WAVES: ${{ inputs.waves }}
         run: |
           if [ "$WAVES" = "true" ] || { [ "$(TZ=Europe/Madrid date +%u)" = 1 ] && [ $(( 10#$(date +%V) % 2 )) = 1 ]; }; then
