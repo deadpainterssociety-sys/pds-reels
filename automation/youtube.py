@@ -185,3 +185,6 @@ if __name__ == "__main__":
     elif c == "publish": print(publish(sys.argv[2]))
     elif c == "long": print(json.dumps(publish_long(sys.argv[2], sys.argv[3])))
     elif c == "after": after(sys.argv[2] if len(sys.argv) > 2 else None)
+    elif c == "check-es":   # which channel the Spanish token belongs to (never prints the token)
+        r = http("GET", f"{API}/youtube/v3/channels?part=snippet,statistics&mine=true", {"Authorization": f"Bearer {token(True)}"})
+        for it in r.get("items", []): print("Spanish channel:", it["snippet"]["title"], it["snippet"].get("customUrl", ""), it["statistics"].get("videoCount"), "videos")
