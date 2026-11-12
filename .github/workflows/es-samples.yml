@@ -1,0 +1,26 @@
+# One-off: Spanish voice samples for the Spanish-edition test (automation/es_samples.py). Synthetic voices only.
+name: es-samples
+on: { workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env: { GITHUB_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with: { voice: install }
+      - name: Kokoro
+        run: python3 automation/es_samples.py kokoro "$RUNNER_TEMP/es" 2>&1 | grep -v -i warn
+      - name: Piper
+        continue-on-error: true
+        run: |
+          pip install -q piper-tts 2>&1 | tail -2
+          python3 automation/es_samples.py piper "$RUNNER_TEMP/es"
+      - name: Chatterbox multilingual
+        continue-on-error: true
+        run: .venv-cb/bin/python automation/es_samples.py chatterbox "$RUNNER_TEMP/es" 2>&1 | grep -v -E "it/s\]|Warning|warn" | tail -30
+      - name: Upload to the data release
+        if: always()
+        run: python3 automation/es_samples.py upload "$RUNNER_TEMP/es"
