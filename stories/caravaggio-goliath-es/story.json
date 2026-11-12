@@ -1,0 +1,764 @@
+{
+ "slug": "caravaggio-goliath-es",
+ "hook_type": "dark-legend",
+ "teaser": "Caravaggio pintó su propia cabeza cortada",
+ "voice": "chirp",
+ "lang": "es",
+ "tail": 2.2,
+ "meta": {
+  "painter": "Michelangelo Merisi da Caravaggio",
+  "born": 1571,
+  "died": 1610,
+  "painting": "David with the Head of Goliath",
+  "year": "c. 1606–1610",
+  "museum": "Galleria Borghese",
+  "city": "Rome",
+  "image": "goliath",
+  "image_credit": "Galleria Borghese, Rome, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1610,
+  "note": "Caravaggio d. 1610, Ottavio Leoni d. 1630, Merian d. 1650: all public domain; files tagged public domain on Commons."
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "La cabeza cortada de este cuadro",
+     0.25,
+     0.95
+    ],
+    [
+     "es la cara del *propio* pintor.",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "crime",
+   "perf": [
+    [
+     "En 1606, en Roma,",
+     0.3,
+     0.97
+    ],
+    [
+     "Caravaggio mató a un hombre",
+     0.3,
+     0.95
+    ],
+    [
+     "en una *pelea.*",
+     0.7,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "sentence",
+   "perf": [
+    [
+     "Lo condenaron a muerte.",
+     0.4,
+     0.95
+    ],
+    [
+     "Y cualquiera que lo reconociera",
+     0.25,
+     0.97
+    ],
+    [
+     "podía ejecutar la *sentencia.*",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "flight",
+   "perf": [
+    [
+     "Así que huyó.",
+     0.35,
+     0.88
+    ],
+    [
+     "Nápoles, Malta, Sicilia.",
+     0.4,
+     0.95
+    ],
+    [
+     "Y sus cuadros se llenaron",
+     0.25,
+     0.97
+    ],
+    [
+     "de *cabezas cortadas.*",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "this",
+   "perf": [
+    [
+     "Entonces pintó esto.",
+     0.4,
+     0.95
+    ],
+    [
+     "El joven David,",
+     0.25,
+     0.97
+    ],
+    [
+     "sosteniendo la cabeza de Goliat.",
+     0.35,
+     0.97
+    ],
+    [
+     "Y la cara del gigante",
+     0.25,
+     0.97
+    ],
+    [
+     "es la *suya.*",
+     0.75,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "sword",
+   "perf": [
+    [
+     "En la espada,",
+     0.25,
+     0.97
+    ],
+    [
+     "unas pocas letras.",
+     0.35,
+     0.97
+    ],
+    [
+     "Los expertos las leen así:",
+     0.3,
+     0.97
+    ],
+    [
+     "la humildad mata al *orgullo.*",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "plea",
+   "perf": [
+    [
+     "Los historiadores creen que estaba pensado",
+     0.25,
+     0.97
+    ],
+    [
+     "para el cardenal Scipione Borghese,",
+     0.3,
+     0.95
+    ],
+    [
+     "el sobrino del papa,",
+     0.3,
+     0.97
+    ],
+    [
+     "el único que podía conseguirle",
+     0.25,
+     0.97
+    ],
+    [
+     "el *perdón.*",
+     0.6,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Su propia cabeza,",
+     0.25,
+     0.88
+    ],
+    [
+     "ofrecida,",
+     0.25,
+     0.88
+    ],
+    [
+     "para suplicar por su *vida.*",
+     0.7,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "death",
+   "perf": [
+    [
+     "En 1610,",
+     0.3,
+     0.97
+    ],
+    [
+     "zarpó rumbo a Roma,",
+     0.25,
+     0.97
+    ],
+    [
+     "con el perdón al alcance de la mano.",
+     0.4,
+     0.95
+    ],
+    [
+     "Murió por el camino.",
+     0.4,
+     0.88
+    ],
+    [
+     "Tenía 38 años.",
+     0.75,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "Está en la Galería Borghese, en Roma.",
+     0.0,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "goliath": {
+   "file": "src/goliath.jpg",
+   "commons": "File:David with the Head of Goliath-Caravaggio (1610).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "gface": [
+     0.8,
+     0.75
+    ],
+    "geyes": [
+     0.8,
+     0.73
+    ],
+    "dface": [
+     0.45,
+     0.3
+    ],
+    "hand": [
+     0.8,
+     0.47
+    ],
+    "letters": [
+     0.165,
+     0.855
+    ],
+    "sword": [
+     0.2,
+     0.88
+    ],
+    "both": [
+     0.6,
+     0.55
+    ]
+   }
+  },
+  "leoni": {
+   "file": "src/leoni.jpg",
+   "commons": "File:Ritratto di Caravaggio (Ottavio Leoni).jpg",
+   "long": 1920,
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "face": [
+     0.5,
+     0.36
+    ],
+    "eyes": [
+     0.5,
+     0.33
+    ]
+   }
+  },
+  "rome": {
+   "file": "src/rome.jpg",
+   "commons": "File:1652 Merian Panoramic View or Map of Rome, Italy - Geographicus - Roma-merian-1642.jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.45,
+     0.45
+    ],
+    "mid": [
+     0.4,
+     0.4
+    ]
+   }
+  },
+  "salome": {
+   "file": "src/salome.jpg",
+   "commons": "File:Salomé con la cabeza del Bautista (Caravaggio).jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.55,
+     0.5
+    ],
+    "head": [
+     0.66,
+     0.73
+    ],
+    "face": [
+     0.38,
+     0.32
+    ]
+   }
+  },
+  "scipione": {
+   "file": "src/scipione.jpg",
+   "commons": "File:Portrait of Cardinal Scipione Borghese (by Ottavio Leoni).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "face": [
+     0.56,
+     0.2
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "goliath",
+   "from": "geyes@2.5",
+   "to": "geyes@2.7",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.10-0.03",
+   "img": "goliath",
+   "from": "both@1.0",
+   "to": "both@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "crime-0.08",
+   "img": "leoni",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.35
+  },
+  {
+   "at": "crime.4-0.05",
+   "img": "rome",
+   "kind": "image",
+   "from": "mid@1.6",
+   "to": "mid@1.75",
+   "gray": 1
+  },
+  {
+   "at": "sentence-0.08",
+   "img": "leoni",
+   "kind": "image",
+   "from": "eyes@2.0",
+   "to": "eyes@2.15",
+   "gray": 1
+  },
+  {
+   "at": "sentence.4-0.05",
+   "img": "rome",
+   "kind": "image",
+   "from": "center@1.05",
+   "to": "center@1.15",
+   "gray": 1
+  },
+  {
+   "at": "flight-0.08",
+   "img": "salome",
+   "kind": "image",
+   "from": "center@0.45",
+   "to": "center@0.47",
+   "frame": true,
+   "gray": 0.6,
+   "dim": -0.3
+  },
+  {
+   "at": "flight.6-0.05",
+   "img": "salome",
+   "kind": "image",
+   "from": "head@1.5",
+   "to": "head@1.65",
+   "dim": -0.35,
+   "gray": 0.3
+  },
+  {
+   "at": "this-0.08",
+   "img": "goliath",
+   "kind": "image",
+   "from": "center@0.45",
+   "to": "center@0.47",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "this.3-0.05",
+   "img": "goliath",
+   "from": "dface@1.8",
+   "to": "dface@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "this.6-0.05",
+   "img": "goliath",
+   "from": "hand@1.7",
+   "to": "hand@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "this.11-0.05",
+   "img": "goliath",
+   "from": "gface@1.9",
+   "to": "gface@2.1",
+   "sway": 0.006
+  },
+  {
+   "at": "sword-0.08",
+   "img": "goliath",
+   "kind": "image",
+   "from": "letters@2.0",
+   "to": "letters@2.2",
+   "dim": -0.2
+  },
+  {
+   "at": "sword.6-0.05",
+   "img": "goliath",
+   "kind": "image",
+   "from": "letters@2.8",
+   "to": "letters@3.0",
+   "dim": -0.3
+  },
+  {
+   "at": "plea-0.08",
+   "img": "scipione",
+   "kind": "image",
+   "from": "center@0.45",
+   "to": "center@0.47",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "plea.11-0.05",
+   "img": "scipione",
+   "kind": "image",
+   "from": "face@0.95",
+   "to": "face@1.05",
+   "gray": 1
+  },
+  {
+   "at": "plea.15-0.05",
+   "img": "goliath",
+   "from": "gface@1.5",
+   "to": "gface@1.65",
+   "gray": 1,
+   "sway": 0.006
+  },
+  {
+   "at": "payoff-0.05",
+   "img": "goliath",
+   "from": "both@1.0",
+   "to": "both@1.06",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.4-0.05",
+   "img": "goliath",
+   "from": "gface@2.0",
+   "to": "gface@2.2",
+   "sway": 0.006
+  },
+  {
+   "at": "death-0.08",
+   "img": "rome",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.1",
+   "gray": 1
+  },
+  {
+   "at": "death.14-0.05",
+   "img": "goliath",
+   "from": "geyes@2.6",
+   "to": "geyes@2.8",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "ending-0.08",
+   "img": "goliath",
+   "from": "dface@1.6",
+   "to": "dface@1.8",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "crime",
+   "to": "crime.4-0.1",
+   "text": "CARAVAGGIO · POR OTTAVIO LEONI"
+  },
+  {
+   "type": "label",
+   "from": "crime.4",
+   "to": "sentence-0.1",
+   "text": "ROMA · MAYO 1606"
+  },
+  {
+   "type": "stamp",
+   "from": "sentence.2",
+   "to": "sentence.4-0.1",
+   "text": "CONDENA A MUERTE"
+  },
+  {
+   "type": "label",
+   "from": "sentence.4",
+   "to": "flight-0.1",
+   "text": "CUALQUIERA · EN CUALQUIER LUGAR"
+  },
+  {
+   "type": "label",
+   "from": "flight",
+   "to": "flight.6-0.1",
+   "text": "NÁPOLES · MALTA · SICILIA"
+  },
+  {
+   "type": "label",
+   "from": "flight.6",
+   "to": "this-0.1",
+   "text": "SALOMÉ, h. 1607 · CARAVAGGIO"
+  },
+  {
+   "type": "label",
+   "from": "this.3",
+   "to": "this.11-0.1",
+   "text": "DAVID Y GOLIAT"
+  },
+  {
+   "type": "ring",
+   "at": "sword.3",
+   "to": "sword$+0.3",
+   "img": "goliath",
+   "point": "letters",
+   "rx": 260,
+   "ry": 120,
+   "rot": 30
+  },
+  {
+   "type": "label",
+   "from": "sword.3",
+   "to": "sword$",
+   "text": "H-AS OS"
+  },
+  {
+   "type": "title",
+   "from": "plea.7",
+   "to": "plea.15-0.1",
+   "kicker": "EL SOBRINO DEL PAPA",
+   "text": "Cardenal <i>Scipione Borghese</i>"
+  },
+  {
+   "type": "label",
+   "from": "death",
+   "to": "death.14-0.1",
+   "text": "1610 · RUMBO A ROMA"
+  },
+  {
+   "type": "label",
+   "from": "death.14",
+   "to": "ending-0.1",
+   "text": "MUERE EL 18 DE JULIO DE 1610 · 38 AÑOS"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "GALERÍA BORGHESE · ROMA"
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The severed head of Goliath is traditionally identified as Caravaggio's self-portrait (recorded by Manilli and by Bellori, 1672); the museum calls it his self-portrait",
+   "source": "https://www.collezionegalleriaborghese.it/en/opere/david-with-the-head-of-goliath ; https://en.wikipedia.org/wiki/David_with_the_Head_of_Goliath_(Caravaggio,_Rome)"
+  },
+  {
+   "claim": "On 28 May 1606, in Rome, Caravaggio killed Ranuccio Tomassoni in a brawl/duel (sources vary: 28 or 29 May; circumstances disputed)",
+   "source": "https://en.wikipedia.org/wiki/Exile_of_Caravaggio ; https://en.wikipedia.org/wiki/Caravaggio"
+  },
+  {
+   "claim": "He was sentenced to death (bando capitale): a death sentence enforceable by anyone, anywhere; anyone who recognised him could carry out the sentence legally",
+   "source": "https://en.wikipedia.org/wiki/Exile_of_Caravaggio ; https://en.wikipedia.org/wiki/Caravaggio"
+  },
+  {
+   "claim": "He fled Rome to Naples, Malta and Sicily (1606–1610); in exile his paintings began to depict severed heads, often his own",
+   "source": "https://en.wikipedia.org/wiki/Caravaggio ; https://en.wikipedia.org/wiki/Exile_of_Caravaggio"
+  },
+  {
+   "claim": "The sword bears the letters 'H-AS OS', read by many critics as the Augustinian motto humilitas occidit superbiam, 'humility kills pride' (other readings: a signature, a maker's mark)",
+   "source": "https://www.collezionegalleriaborghese.it/en/opere/david-with-the-head-of-goliath ; https://en.wikipedia.org/wiki/David_with_the_Head_of_Goliath_(Caravaggio,_Rome)"
+  },
+  {
+   "claim": "Scholars (Calvesi) think it was a pledge/gift to Cardinal Scipione Borghese, the pope's nephew, who had the power to grant a pardon; it was in Borghese's collection by 1613 — a theory, hedged in the narration",
+   "source": "https://www.collezionegalleriaborghese.it/en/opere/david-with-the-head-of-goliath ; https://en.wikipedia.org/wiki/David_with_the_Head_of_Goliath_(Caravaggio,_Rome)"
+  },
+  {
+   "claim": "In summer 1610 he sailed north from Naples toward Rome to receive a pardon that seemed imminent, carrying paintings possibly meant for Scipione Borghese; he died on the way, at Porto Ercole, on 18 July 1610, aged 38",
+   "source": "https://en.wikipedia.org/wiki/Caravaggio ; https://en.wikipedia.org/wiki/Exile_of_Caravaggio"
+  },
+  {
+   "claim": "Dated 1606–07 or 1609–1610 (most critics: second Neapolitan stay); 125 x 101 cm; bought by the Italian state in 1902; hangs in the Galleria Borghese, Rome",
+   "source": "https://www.collezionegalleriaborghese.it/en/opere/david-with-the-head-of-goliath"
+  }
+ ],
+ "cover": {
+  "question": "¿De quién es <i>esta cabeza cortada?</i>",
+  "name": "CARAVAGGIO",
+  "work": "David con la cabeza de Goliat, h. 1610",
+  "focus": [
+   0.8,
+   0.76
+  ],
+  "span": 0.45,
+  "answered_by": "Del propio Caravaggio: condenado a muerte, se pintó como Goliat para pedir el perdón"
+ },
+ "nocap": [
+  [
+   "plea.7",
+   "plea.15-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "sentence-0.2",
+    "flight$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "payoff$+0.4"
+   ],
+   "drop": [
+    "death.14-0.1",
+    "death$+0.2"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.10-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "sentence.2",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "sword.3",
+   "fx": "chime",
+   "gain": 0.4
+  },
+  {
+   "at": "death.14",
+   "fx": "tick",
+   "gain": 0.4
+  }
+ ],
+ "caption": "La cabeza cortada de David con la cabeza de Goliat es la cara del propio Caravaggio.\n\nEn mayo de 1606, en Roma, Caravaggio mató a Ranuccio Tomassoni en una pelea. Lo condenaron a muerte, una sentencia que cualquiera que lo reconociera podía ejecutar. Huyó a Nápoles, Malta y Sicilia, y sus cuadros se llenaron de cabezas cortadas.\n\nEntonces pintó esto: el joven David sosteniendo la cabeza de Goliat, con los rasgos de Caravaggio en el gigante. En la espada se leen las letras H-AS OS, que muchos expertos interpretan como \"humilitas occidit superbiam\": la humildad mata al orgullo.\n\nLos historiadores creen que el cuadro estaba pensado para el cardenal Scipione Borghese, sobrino del papa y el hombre que podía conseguirle el perdón. En el verano de 1610 Caravaggio zarpó rumbo a Roma, con el perdón al parecer al alcance de la mano. Murió por el camino, en Porto Ercole, a los 38 años.\n\nP.D. El cuadro sigue en la colección Borghese; el Estado italiano compró la galería en 1902.\n\n🖤 ¿Tú le habrías perdonado?",
+ "caption_short": "La cabeza cortada de este cuadro es la cara del propio Caravaggio. 💀",
+ "youtube_title": "Caravaggio pintó su propia cabeza cortada 💀",
+ "hashtags": [
+  "#historiadelarte",
+  "#caravaggio",
+  "#galeriaborghese",
+  "#roma",
+  "#arte",
+  "#pintura",
+  "#barroco",
+  "#arteoscuro",
+  "#historia",
+  "#curiosidades"
+ ],
+ "edition_of": "caravaggio-goliath",
+ "next": false,
+ "meta_es": {
+  "painting": "David con la cabeza de Goliat",
+  "museum": "Galería Borghese",
+  "city": "Roma"
+ },
+ "ai_voice_line": "🎙️ Narración con voz de IA"
+}
