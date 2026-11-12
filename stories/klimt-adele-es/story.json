@@ -1,0 +1,824 @@
+{
+ "slug": "klimt-adele-es",
+ "hook_type": "damage",
+ "teaser": "El retrato al que los nazis borraron el nombre",
+ "voice": "chirp",
+ "lang": "es",
+ "tail": 2.2,
+ "images": {
+  "adele": {
+   "file": "src/adele.jpg",
+   "commons": "File:Gustav Klimt - Porträt der Adele Bloch-Bauer I (1907).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.605,
+     0.125
+    ],
+    "eyes": [
+     0.6,
+     0.11
+    ],
+    "hands": [
+     0.58,
+     0.27
+    ],
+    "choker": [
+     0.61,
+     0.2
+    ],
+    "bust": [
+     0.63,
+     0.2
+    ],
+    "spirals": [
+     0.78,
+     0.22
+    ],
+    "eyesdress": [
+     0.65,
+     0.6
+    ],
+    "sign": [
+     0.955,
+     0.915
+    ],
+    "figure": [
+     0.64,
+     0.45
+    ]
+   }
+  },
+  "klimt": {
+   "file": "src/klimt.jpg",
+   "commons": "File:Moriz Nähr Gustav Klimt mit Katze 1911.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.55,
+     0.24
+    ],
+    "cat": [
+     0.3,
+     0.55
+    ]
+   }
+  },
+  "adelephoto": {
+   "file": "src/adelephoto.jpg",
+   "commons": "File:Adele Bloch Bauer ca 1910.jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.14
+    ],
+    "figure": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "maria": {
+   "file": "src/maria.jpg",
+   "commons": "File:Maria Viktoria Bloch-Bauer nel 1935.jpg",
+   "points": {
+    "face": [
+     0.6,
+     0.5
+    ]
+   }
+  },
+  "court": {
+   "file": "src/court.jpg",
+   "commons": "File:MariaRandySupremeCourt.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "pair": [
+     0.45,
+     0.58
+    ]
+   }
+  },
+  "belvedere": {
+   "file": "src/belvedere.jpg",
+   "commons": "File:Upper Belvedere LCD-toneedit2 NR.jpg",
+   "long": 3840,
+   "credit": "Upper Belvedere, Vienna: photo by Murdockcrc, CC BY 3.0, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.4
+    ],
+    "palace": [
+     0.5,
+     0.38
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Los nazis robaron este retrato,",
+     0.25,
+     0.93
+    ],
+    [
+     "y *borraron* su nombre.",
+     0.6,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "gold",
+   "perf": [
+    [
+     "Viena, 1907.",
+     0.3,
+     0.95
+    ],
+    [
+     "Gustav Klimt termina un retrato",
+     0.2,
+     0.95
+    ],
+    [
+     "de Adele Bloch-Bauer,",
+     0.25,
+     0.95
+    ],
+    [
+     "en óleo, plata y *oro* de verdad.",
+     0.6,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "husband",
+   "perf": [
+    [
+     "Su marido, Ferdinand,",
+     0.2,
+     0.95
+    ],
+    [
+     "un magnate judío del azúcar,",
+     0.25,
+     0.95
+    ],
+    [
+     "lo pagó.",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "seize",
+   "perf": [
+    [
+     "En 1938,",
+     0.25,
+     0.95
+    ],
+    [
+     "los nazis se anexionan Austria.",
+     0.3,
+     0.95
+    ],
+    [
+     "Ferdinand huye,",
+     0.25,
+     0.93
+    ],
+    [
+     "y le confiscan sus cuadros.",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "rename",
+   "perf": [
+    [
+     "El retrato acaba en la galería estatal de Viena,",
+     0.25,
+     0.95
+    ],
+    [
+     "con un título nuevo:",
+     0.3,
+     0.95
+    ],
+    [
+     "*La dama de oro.*",
+     0.55,
+     0.88
+    ],
+    [
+     "Sin nombre.",
+     0.25,
+     0.9
+    ],
+    [
+     "Nada que dijera que era judía.",
+     0.6,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "maria",
+   "perf": [
+    [
+     "Su sobrina, Maria Altmann,",
+     0.25,
+     0.95
+    ],
+    [
+     "huyó a Estados Unidos.",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "sue",
+   "perf": [
+    [
+     "En 2000,",
+     0.25,
+     0.95
+    ],
+    [
+     "con ochenta y cuatro años,",
+     0.25,
+     0.93
+    ],
+    [
+     "demanda a Austria.",
+     0.35,
+     0.9
+    ],
+    [
+     "El caso llega",
+     0.2,
+     0.95
+    ],
+    [
+     "hasta el Tribunal Supremo de Estados Unidos.",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "win",
+   "perf": [
+    [
+     "En 2006,",
+     0.25,
+     0.95
+    ],
+    [
+     "Austria devuelve los cuadros.",
+     0.6,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "price",
+   "perf": [
+    [
+     "Ese verano se vende por 135 millones de dólares,",
+     0.25,
+     0.95
+    ],
+    [
+     "un récord en aquel momento.",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Y el retrato recupera su nombre:",
+     0.35,
+     0.93
+    ],
+    [
+     "*Adele Bloch-Bauer.*",
+     0.6,
+     0.87
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "Hoy está en la Neue Galerie,",
+     0.2,
+     0.95
+    ],
+    [
+     "en la Quinta Avenida de Nueva York.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "Gustav Klimt",
+  "born": 1862,
+  "died": 1918,
+  "painting": "Portrait of Adele Bloch-Bauer I",
+  "year": "1907",
+  "museum": "Neue Galerie",
+  "city": "New York",
+  "image": "adele",
+  "image_credit": "Neue Galerie New York, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1918,
+  "note": "Klimt d. 1918: public domain. Nähr photo of Klimt (1911) PD; Adele photo c. 1910 PD; Maria Bloch-Bauer 1935 photo PD; Supreme Court 2004 photo CC0; Belvedere photo CC BY 3.0 (Murdockcrc) -> credited."
+ },
+ "cover": {
+  "question": "¿Quién <i>borró</i> su nombre?",
+  "name": "GUSTAV KLIMT",
+  "work": "Adele Bloch-Bauer I, 1907",
+  "focus": [
+   0.605,
+   0.15
+  ],
+  "span": 0.32,
+  "answered_by": "Los nazis: tras confiscarlo, lo expusieron en Viena como «La dama de oro», sin su nombre"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "adele",
+   "from": "eyes@2.6",
+   "to": "eyes@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.6-0.03",
+   "img": "adele",
+   "from": "figure@1.0",
+   "to": "figure@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "gold-0.08",
+   "img": "adele",
+   "from": "center@0.55",
+   "to": "center@0.53",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "gold.2-0.05",
+   "img": "klimt",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "kind": "image",
+   "gray": 0.4
+  },
+  {
+   "at": "gold.8-0.05",
+   "img": "adelephoto",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "gold.11-0.05",
+   "img": "adele",
+   "from": "spirals@2.0",
+   "to": "spirals@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "husband-0.08",
+   "img": "adele",
+   "from": "hands@2.0",
+   "to": "hands@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "husband.8-0.05",
+   "img": "adele",
+   "from": "choker@2.4",
+   "to": "choker@2.55",
+   "sway": 0.006
+  },
+  {
+   "at": "seize-0.08",
+   "img": "adele",
+   "from": "eyesdress@1.6",
+   "to": "eyesdress@1.75",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "seize.7-0.05",
+   "img": "adele",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "seize.11-0.05",
+   "img": "adele",
+   "from": "center@0.55",
+   "to": "center@0.53",
+   "kind": "image",
+   "frame": true,
+   "gray": 1,
+   "hit": "small"
+  },
+  {
+   "at": "rename-0.08",
+   "img": "belvedere",
+   "from": "palace@1.0",
+   "to": "palace@1.08",
+   "kind": "image",
+   "gray": 0.6
+  },
+  {
+   "at": "rename.9-0.05",
+   "img": "adele",
+   "from": "bust@1.5",
+   "to": "bust@1.62",
+   "kind": "image",
+   "gray": 0.7
+  },
+  {
+   "at": "rename.17-0.05",
+   "img": "adele",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "rename.19-0.05",
+   "img": "adele",
+   "from": "eyes@3.0",
+   "to": "eyes@3.15",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "maria-0.08",
+   "img": "maria",
+   "from": "face@0.72",
+   "to": "face@0.75",
+   "kind": "image",
+   "gray": 0.5,
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "sue-0.08",
+   "img": "maria",
+   "from": "face@0.72",
+   "to": "face@0.75",
+   "kind": "image",
+   "gray": 0.5,
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "sue.10-0.05",
+   "img": "court",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "kind": "image",
+   "frame": true
+  },
+  {
+   "at": "win-0.08",
+   "img": "adele",
+   "from": "hands@1.8",
+   "to": "hands@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "win.2-0.05",
+   "img": "adele",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "price-0.08",
+   "img": "adele",
+   "from": "spirals@1.7",
+   "to": "spirals@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "price.5-0.05",
+   "img": "adele",
+   "from": "center@0.56",
+   "to": "center@0.54",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "adele",
+   "from": "bust@1.6",
+   "to": "bust@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "adele",
+   "from": "figure@1.0",
+   "to": "figure@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "adele",
+   "from": "eyesdress@1.7",
+   "to": "eyesdress@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "gold",
+   "to": "gold.2-0.1",
+   "text": "VIENA · 1907"
+  },
+  {
+   "type": "label",
+   "from": "gold.2",
+   "to": "gold.8-0.1",
+   "text": "GUSTAV KLIMT · 1911"
+  },
+  {
+   "type": "label",
+   "from": "gold.8",
+   "to": "gold.11-0.1",
+   "text": "ADELE BLOCH-BAUER · h. 1910"
+  },
+  {
+   "type": "label",
+   "from": "gold.11",
+   "to": "husband-0.1",
+   "text": "ÓLEO, PLATA Y ORO"
+  },
+  {
+   "type": "label",
+   "from": "seize",
+   "to": "seize.11-0.1",
+   "text": "AUSTRIA · 1938"
+  },
+  {
+   "type": "stamp",
+   "from": "seize.11",
+   "to": "rename-0.1",
+   "text": "CONFISCADO"
+  },
+  {
+   "type": "label",
+   "from": "rename",
+   "to": "rename.9-0.1",
+   "text": "GALERÍA ESTATAL · VIENA"
+  },
+  {
+   "type": "credit",
+   "from": "rename",
+   "to": "rename.9-0.1",
+   "text": "FOTO: MURDOCKCRC · CC BY 3.0"
+  },
+  {
+   "type": "title",
+   "from": "rename.13",
+   "to": "rename.17-0.1",
+   "kicker": "EL NUEVO TÍTULO",
+   "text": "<i>La dama de oro</i>"
+  },
+  {
+   "type": "title",
+   "from": "maria.2",
+   "to": "sue-0.1",
+   "kicker": "SOBRINA DE ADELE · 1935",
+   "text": "Maria <i>Altmann</i>"
+  },
+  {
+   "type": "label",
+   "from": "sue",
+   "to": "sue.10-0.1",
+   "text": "DEMANDA · 2000"
+  },
+  {
+   "type": "label",
+   "from": "sue.10",
+   "to": "win-0.1",
+   "text": "TRIBUNAL SUPREMO DE EE. UU. · 2004"
+  },
+  {
+   "type": "label",
+   "from": "win",
+   "to": "price-0.1",
+   "text": "DEVUELTO · 2006"
+  },
+  {
+   "type": "label",
+   "from": "price.5",
+   "to": "payoff-0.1",
+   "text": "135 MILLONES $ · JUNIO 2006"
+  },
+  {
+   "type": "label",
+   "from": "payoff.6",
+   "to": "ending-0.1",
+   "text": "ADELE BLOCH-BAUER I"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NEUE GALERIE · NUEVA YORK"
+  }
+ ],
+ "nocap": [
+  [
+   "rename.13",
+   "rename.17-0.1"
+  ],
+  [
+   "maria.2",
+   "sue-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": 1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "seize-0.2",
+    "sue$+0.2"
+   ],
+   "drop": [
+    "rename.17-0.05",
+    "rename.18+0.3"
+   ],
+   "choir": [
+    "payoff.6-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "seize.11",
+   "fx": "impact",
+   "gain": 0.5
+  },
+  {
+   "at": "rename.13",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "price.5",
+   "fx": "chime",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Klimt began the portrait in 1903 and it is dated 1907; medium oil, gold and silver on canvas",
+   "source": "https://neuegalerie.org/womaningold ; https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I"
+  },
+  {
+   "claim": "Commissioned by Adele's husband Ferdinand Bloch-Bauer, a Jewish sugar magnate",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I ; https://en.wikipedia.org/wiki/Ferdinand_Bloch-Bauer"
+  },
+  {
+   "claim": "After the Anschluss in 1938 Ferdinand fled Austria; the portrait was one of five Klimt paintings seized by the Nazis from the Bloch-Bauer home",
+   "source": "https://neuegalerie.org/womaningold ; https://en.wikipedia.org/wiki/Ferdinand_Bloch-Bauer"
+  },
+  {
+   "claim": "In 1941 it was transferred to the Austrian State Gallery (Österreichische Galerie Belvedere) in Vienna, which kept it until 2006",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I"
+  },
+  {
+   "claim": "It was retitled 'Dame in Gold' / 'Woman in Gold' (Lady in Gold) to conceal the sitter's identity / remove reference to its Jewish subject",
+   "source": "https://neuegalerie.org/womaningold ; https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I ; https://www.huffpost.com/entry/maria-altmann-woman-in-gold_n_7065102"
+  },
+  {
+   "claim": "Maria Altmann (born 18 Feb 1916), Adele's niece, fled after the 1938 Anschluss and settled in the US (Los Angeles)",
+   "source": "https://en.wikipedia.org/wiki/Maria_Altmann"
+  },
+  {
+   "claim": "She sued Austria in US federal court in 2000 (aged 84); the case reached the US Supreme Court (Republic of Austria v. Altmann, 2004)",
+   "source": "https://en.wikipedia.org/wiki/Maria_Altmann ; https://supreme.justia.com/cases/federal/us/541/677/"
+  },
+  {
+   "claim": "In January 2006 an Austrian arbitration panel ruled the paintings must be returned; Austria returned them in 2006",
+   "source": "https://en.wikipedia.org/wiki/Maria_Altmann ; https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I ; https://www.huffpost.com/entry/maria-altmann-woman-in-gold_n_7065102"
+  },
+  {
+   "claim": "In June 2006 Ronald S. Lauder bought it for the Neue Galerie for US$135 million, then a record price for a painting",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I ; https://neuegalerie.org/womaningold"
+  },
+  {
+   "claim": "It is on permanent view at the Neue Galerie, New York, titled Adele Bloch-Bauer I",
+   "source": "https://neuegalerie.org/womaningold"
+  },
+  {
+   "claim": "The Neue Galerie is at 1048 Fifth Avenue (at 86th Street), New York City",
+   "source": "https://www.neuegalerie.org/ ; https://en.wikipedia.org/wiki/Neue_Galerie_New_York"
+  }
+ ],
+ "caption": "Los nazis robaron este retrato y borraron su nombre.\n\nEn 1907 Gustav Klimt terminó un retrato de Adele Bloch-Bauer en óleo, plata y oro, pagado por su marido Ferdinand, un magnate judío del azúcar. En 1938 los nazis se anexionaron Austria. Ferdinand huyó y le confiscaron sus Klimt.\n\nEl retrato acabó en la galería estatal de Viena con un título nuevo: \"La dama de oro\" (Dame in Gold). Sin nombre, nada que dijera que la mujer del cuadro era judía.\n\nSu sobrina, Maria Altmann, había huido a Estados Unidos. En 2000, con 84 años, demandó a Austria; el caso llegó hasta el Tribunal Supremo de Estados Unidos. En 2006 un tribunal de arbitraje austriaco le dio la razón y los cuadros volvieron a la familia. Ese junio, Ronald Lauder compró el retrato por 135 millones de dólares, un récord en aquel momento, y recuperó su nombre: Adele Bloch-Bauer I. Hoy está en la Neue Galerie, en la Quinta Avenida de Nueva York.\n\n🖤 ¿Debería volver a casa cada cuadro robado?",
+ "caption_short": "Los nazis robaron este Klimt y le borraron el nombre. Su sobrina luchó años para recuperarlo. 🖼️",
+ "youtube_title": "Los nazis le borraron el nombre 🖼️",
+ "hashtags": [
+  "#historiadelarte",
+  "#klimt",
+  "#adeleblochbauer",
+  "#ladamadeoro",
+  "#neuegalerie",
+  "#nuevayork",
+  "#arte",
+  "#pintura",
+  "#historia",
+  "#curiosidades"
+ ],
+ "edition_of": "klimt-adele",
+ "next": false,
+ "meta_es": {
+  "painting": "Retrato de Adele Bloch-Bauer I",
+  "museum": "Neue Galerie",
+  "city": "Nueva York"
+ },
+ "ai_voice_line": "🎙️ Narración con voz de IA"
+}
