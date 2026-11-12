@@ -79,6 +79,10 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   word swallowed before "…" (give it its own phrase or rephrase), or a plural ghost ("hall" heard as "halls" → rephrase).
   Audition alternatives fast: `python pipeline/try_phrase.py af_heart en-us 0.88 "variant one" "variant two"`.
 - Duration 59–69 s including the 2.2 s tail, ≈ 130–140 wpm. Too fast → add pauses / lower speed (0.90–0.92 overall); too long → cut words.
+- **The final voice is Google's Chirp 3 HD "Enceladus" (British, male; Gigi's pick, 12 Nov 2026)**, made at the morning build
+  (`pipeline/tts_chirp.py`). Your checks here still use the fast Kokoro voice. Chirp reads plain text with its own pace:
+  keep the phrase structure, pauses and per-phrase speeds as usual (they become Chirp's speaking rate); `ipa` and `respell`
+  don't apply to it. A name Chirp may get wrong goes in story.json `"chirp_say": {"Gautreau": "Go-tro"}` (plain spelling).
 - **Cloned voice** (`config.json` → `voice_clone.enabled: true`, Gigi's own pick): your voice checks here still use the fast
   Kokoro voice (the workflow sets `VOICE=kokoro`), and the final reel is voiced in the cloned voice (Chatterbox,
   `pipeline/tts_clone.py`) at the morning build. Chatterbox reads plain text and ignores `ipa`, so for EVERY name that has
