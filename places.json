@@ -206,5 +206,13 @@
   "ig_location_id_checked": "2026-11-10",
   "ig_note": "set by hand 10 Nov 2026: facebook.com/VanGoghMuseum"
  },
- "_about": "Where each painting hangs, for the location tag of every post (automation/places.py). ig_location_id = the museum's Facebook Page id (what Instagram's location_id must be); lat/lon from Wikidata. Add a museum by hand: its Facebook page → About → Page transparency → Page ID."
+ "_about": "Where each painting hangs, for the location tag of every post (automation/places.py). ig_location_id = the museum's Facebook Page id (what Instagram's location_id must be); lat/lon from Wikidata. Add a museum by hand: its Facebook page → About → Page transparency → Page ID.",
+ "State Tretyakov Gallery, Moscow": {
+  "lat": 55.7413613,
+  "lon": 37.6202196,
+  "lat_checked": "2026-11-12",
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ag03UhL154204HVpefRO6lX\"}}",
+  "ig_location_id_checked": "2026-11-12"
+ }
 }
