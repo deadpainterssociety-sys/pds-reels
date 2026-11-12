@@ -1,0 +1,727 @@
+{
+ "slug": "caravaggio-virgin",
+ "hook_type": "sacred-strange",
+ "teaser": "The Virgin Mary the friars threw out",
+ "experiment": {
+  "id": "E1",
+  "arm": "B"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Michelangelo Merisi da Caravaggio",
+  "born": 1571,
+  "died": 1610,
+  "painting": "Death of the Virgin",
+  "year": "c. 1601–1606",
+  "museum": "Louvre",
+  "city": "Paris",
+  "image": "virgin",
+  "image_credit": "Musée du Louvre, Paris, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Why was this Mary <i>rejected?</i>",
+  "name": "CARAVAGGIO",
+  "work": "Death of the Virgin, c. 1606",
+  "focus": [
+   0.82,
+   0.615
+  ],
+  "span": 0.36,
+  "answered_by": "The Carmelite friars refused it: she looked like a real dead woman, swollen, with bare legs, and a writer of the time claimed the model was a prostitute"
+ },
+ "say": {
+  "1606": "sixteen oh six",
+  "1607": "sixteen oh seven"
+ },
+ "ipa": {},
+ "respell": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "The friars rejected this Virgin Mary.",
+     0.35,
+     0.93
+    ],
+    [
+     "She looked too *dead.*",
+     0.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "Around 1606, in Rome,",
+     0.3,
+     0.95
+    ],
+    [
+     "Caravaggio painted her death",
+     0.25,
+     0.94
+    ],
+    [
+     "for a chapel in a Carmelite church.",
+     0.85,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "body",
+   "perf": [
+    [
+     "No angels.",
+     0.3,
+     0.92
+    ],
+    [
+     "No clouds.",
+     0.35,
+     0.92
+    ],
+    [
+     "Just a woman on a bed,",
+     0.25,
+     0.94
+    ],
+    [
+     "her body swollen,",
+     0.25,
+     0.92
+    ],
+    [
+     "her hand hanging *limp.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "refused",
+   "perf": [
+    [
+     "The friars refused it.",
+     0.4,
+     0.9
+    ],
+    [
+     "A rival painter wrote",
+     0.2,
+     0.94
+    ],
+    [
+     "she was swollen, with bare legs.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "model",
+   "perf": [
+    [
+     "And a doctor of the time claimed",
+     0.25,
+     0.94
+    ],
+    [
+     "the model was a *prostitute.*",
+     0.95,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "rubens",
+   "perf": [
+    [
+     "Then a young painter saw it:",
+     0.3,
+     0.94
+    ],
+    [
+     "Peter Paul Rubens.",
+     0.4,
+     0.9
+    ],
+    [
+     "He told the Duke of Mantua",
+     0.2,
+     0.94
+    ],
+    [
+     "it was one of Caravaggio's best.",
+     0.85,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "week",
+   "perf": [
+    [
+     "The duke bought it.",
+     0.35,
+     0.92
+    ],
+    [
+     "In April 1607, before it left Rome,",
+     0.25,
+     0.94
+    ],
+    [
+     "it was shown for one week.",
+     0.35,
+     0.93
+    ],
+    [
+     "Copying was *forbidden.*",
+     0.9,
+     0.87
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Too human for a chapel,",
+     0.35,
+     0.9
+    ],
+    [
+     "the dead Mary went to the king of England,",
+     0.3,
+     0.93
+    ],
+    [
+     "then the king of *France.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Louvre, in Paris.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Commissioned by the papal lawyer Laerzio Cherubini for his chapel in the Carmelite church of Santa Maria della Scala in Trastevere, Rome; it could not have been finished before 1605–06 (dates given c. 1601–1606)",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) ; https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern/content-section-2.3.2"
+  },
+  {
+   "claim": "The painting shows the dead Virgin on a bed among mourners, without angels or heavenly glory; her body swollen, one hand hanging",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) ; https://collections.louvre.fr/en/recherche?q=caravage (INV 54)"
+  },
+  {
+   "claim": "The church/Carmelites rejected it as unfit (lack of decorum); replaced by a painting by Carlo Saraceni",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) ; https://erenow.org/biographies/caravaggio-a-passionate-life/17.php ; https://www.aboutartonline.com/some-clarifications-regarding-article-by-c-renzi-on-the-death-of-the-virgin-and-on-the-way-of-using-models-by-caravaggio-original-text-in-english-with-italian-version/"
+  },
+  {
+   "claim": "Giovanni Baglione, a painter and Caravaggio's rival (the 1603 libel suit), wrote in 1642 that Caravaggio made the Madonna 'swollen-up and with bare legs' (narration paraphrases, no quote marks)",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) (Baglione, Le Vite de' Pittori, 1642, p. 138) ; https://erenow.org/biographies/caravaggio-a-passionate-life/17.php ; https://en.wikipedia.org/wiki/Giovanni_Baglione"
+  },
+  {
+   "claim": "Giulio Mancini, a physician and contemporary writer on art, claimed the model was a prostitute ('some dirty whore from the Ortaccio'); narration says 'claimed' — modern scholars call the model stories largely rumour",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) ; https://erenow.org/biographies/caravaggio-a-passionate-life/17.php ; https://en.wikipedia.org/wiki/Giulio_Mancini ; https://www.aboutartonline.com/some-clarifications-regarding-article-by-c-renzi-on-the-death-of-the-virgin-and-on-the-way-of-using-models-by-caravaggio-original-text-in-english-with-italian-version/"
+  },
+  {
+   "claim": "Rubens (born 1577, then court painter to the Duke of Mantua) recommended it as one of Caravaggio's best works; Vincenzo Gonzaga, Duke of Mantua, bought it early in 1607",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) ; https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern/content-section-2.3.2 ; https://erenow.org/biographies/caravaggio-a-passionate-life/17.php"
+  },
+  {
+   "claim": "Before leaving Rome it was exhibited for a week (1–7 April 1607, at the Mantuan ambassador Giovanni Magni's house on the Via del Corso); copying was absolutely forbidden",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) (Graham-Dixon 2011; Vodret & Granata 2012) ; https://erenow.org/biographies/caravaggio-a-passionate-life/17.php"
+  },
+  {
+   "claim": "The Mantua collection was sold to Charles I of England in 1627; after his execution it was sold (1649), bought by Everhard Jabach, who sold it to Louis XIV in 1671",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) (Friedlaender 1955, pp. 195–197)"
+  },
+  {
+   "claim": "Hangs in the Louvre, Paris (INV 54, Grande Galerie, Denon wing)",
+   "source": "https://en.wikipedia.org/wiki/Death_of_the_Virgin_(Caravaggio) ; https://collections.louvre.fr/en/recherche?q=caravage"
+  }
+ ],
+ "images": {
+  "virgin": {
+   "file": "src/virgin.jpg",
+   "commons": "File:Death of the Virgin-Caravaggio (1606).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.82,
+     0.615
+    ],
+    "hand": [
+     0.915,
+     0.7
+    ],
+    "belly": [
+     0.66,
+     0.645
+    ],
+    "body": [
+     0.72,
+     0.66
+    ],
+    "magdalene": [
+     0.73,
+     0.76
+    ],
+    "weeper": [
+     0.66,
+     0.52
+    ],
+    "john": [
+     0.8,
+     0.45
+    ],
+    "apostles": [
+     0.33,
+     0.45
+    ],
+    "center": [
+     0.5,
+     0.55
+    ],
+    "curtain": [
+     0.55,
+     0.17
+    ]
+   }
+  },
+  "caravaggio": {
+   "file": "src/caravaggio.jpg",
+   "commons": "File:Ritratto di Caravaggio (Ottavio Leoni).jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.35
+    ]
+   }
+  },
+  "church": {
+   "file": "src/church.png",
+   "commons": "File:Chiesa di Santa Maria della Scala dei PP Carmelitani Scalzi nella regione di Trastevere by Giovanni Battista Falda (1667-1669).png",
+   "points": {
+    "center": [
+     0.55,
+     0.45
+    ]
+   }
+  },
+  "rubens": {
+   "file": "src/rubens.jpg",
+   "commons": "File:Rubens self portrait.jpg",
+   "points": {
+    "face": [
+     0.53,
+     0.36
+    ]
+   }
+  },
+  "duke": {
+   "file": "src/duke.jpg",
+   "commons": "File:Frans Pourbus (II) - Portrait of Vincenzo Gonzaga, Duke of Mantua.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.34
+    ]
+   }
+  },
+  "charles": {
+   "file": "src/charles.jpg",
+   "commons": "File:Sir Anthony Van Dyck - Charles I (1600-49) - Google Art Project.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.32
+    ]
+   }
+  },
+  "louis": {
+   "file": "src/louis.jpg",
+   "commons": "File:Rigaud Hyacinthe - Louis XIV, roi de France.jpg",
+   "points": {
+    "face": [
+     0.52,
+     0.17
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "virgin",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.005
+  },
+  {
+   "at": "hook.4-0.05",
+   "img": "virgin",
+   "from": "body@1.6",
+   "to": "body@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.9-0.05",
+   "img": "virgin",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "painted-0.08",
+   "img": "caravaggio",
+   "kind": "image",
+   "from": "face@1.0",
+   "to": "face@1.08",
+   "gray": 0.35
+  },
+  {
+   "at": "painted.8-0.05",
+   "img": "church",
+   "kind": "image",
+   "from": "center@0.68",
+   "to": "center@0.7",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "body-0.08",
+   "img": "virgin",
+   "from": "curtain@1.5",
+   "to": "curtain@1.62",
+   "sway": 0.005
+  },
+  {
+   "at": "body.4-0.05",
+   "img": "virgin",
+   "from": "body@1.5",
+   "to": "body@1.62",
+   "sway": 0.006
+  },
+  {
+   "at": "body.10-0.05",
+   "img": "virgin",
+   "from": "belly@2.0",
+   "to": "belly@2.15",
+   "sway": 0.005
+  },
+  {
+   "at": "body.13-0.05",
+   "img": "virgin",
+   "from": "hand@2.3",
+   "to": "hand@2.45",
+   "sway": 0.005
+  },
+  {
+   "at": "refused-0.08",
+   "img": "church",
+   "kind": "image",
+   "from": "center@0.68",
+   "to": "center@0.7",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "refused.4-0.05",
+   "img": "virgin",
+   "from": "face@1.9",
+   "to": "face@2.05",
+   "gray": 0.6,
+   "sway": 0.005
+  },
+  {
+   "at": "model-0.08",
+   "img": "virgin",
+   "from": "face@2.6",
+   "to": "face@2.75",
+   "gray": 0.3,
+   "sway": 0.004
+  },
+  {
+   "at": "rubens-0.08",
+   "img": "virgin",
+   "from": "apostles@1.6",
+   "to": "apostles@1.72",
+   "gray": 0.5,
+   "sway": 0.006
+  },
+  {
+   "at": "rubens.6-0.05",
+   "img": "rubens",
+   "kind": "image",
+   "from": "face@1.15",
+   "to": "face@1.25",
+   "gray": 0.35
+  },
+  {
+   "at": "rubens.12-0.05",
+   "img": "duke",
+   "kind": "image",
+   "from": "face@1.65",
+   "to": "face@1.78",
+   "gray": 0.35
+  },
+  {
+   "at": "week.4-0.05",
+   "img": "virgin",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.1
+  },
+  {
+   "at": "week.11-0.05",
+   "img": "virgin",
+   "from": "weeper@1.8",
+   "to": "weeper@1.95",
+   "gray": 0.8,
+   "sway": 0.005
+  },
+  {
+   "at": "week.17-0.05",
+   "img": "virgin",
+   "from": "curtain@1.4",
+   "to": "curtain@1.5",
+   "gray": 0.8,
+   "sway": 0.005
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "virgin",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.10-0.05",
+   "img": "charles",
+   "kind": "image",
+   "from": "face@1.0",
+   "to": "face@1.08",
+   "gray": 0.35
+  },
+  {
+   "at": "payoff.14-0.05",
+   "img": "louis",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.62",
+   "gray": 0.35
+  },
+  {
+   "at": "ending-0.08",
+   "img": "virgin",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.8-0.1",
+   "text": "CARAVAGGIO · BY OTTAVIO LEONI"
+  },
+  {
+   "type": "label",
+   "from": "painted.8",
+   "to": "body-0.1",
+   "text": "SANTA MARIA DELLA SCALA · ROME"
+  },
+  {
+   "type": "ring",
+   "at": "body.13",
+   "to": "refused-0.1",
+   "img": "virgin",
+   "point": "hand",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "refused",
+   "to": "refused.4-0.1",
+   "text": "THE CARMELITE FRIARS"
+  },
+  {
+   "type": "label",
+   "from": "refused.4",
+   "to": "model-0.1",
+   "text": "GIOVANNI BAGLIONE · 1642"
+  },
+  {
+   "type": "label",
+   "from": "model",
+   "to": "rubens-0.1",
+   "text": "GIULIO MANCINI · PHYSICIAN"
+  },
+  {
+   "type": "label",
+   "from": "rubens.6",
+   "to": "rubens.12-0.1",
+   "text": "PETER PAUL RUBENS"
+  },
+  {
+   "type": "label",
+   "from": "rubens.12",
+   "to": "week.4-0.1",
+   "text": "VINCENZO GONZAGA · MANTUA"
+  },
+  {
+   "type": "label",
+   "from": "week.4",
+   "to": "payoff-0.1",
+   "text": "ROME · 1–7 APRIL 1607"
+  },
+  {
+   "type": "stamp",
+   "at": "week.17",
+   "to": "payoff-0.1",
+   "text": "NO COPIES"
+  },
+  {
+   "type": "label",
+   "from": "payoff.10",
+   "to": "payoff.14-0.1",
+   "text": "CHARLES I · ENGLAND · 1627"
+  },
+  {
+   "type": "label",
+   "from": "payoff.14",
+   "to": "ending-0.1",
+   "text": "LOUIS XIV · FRANCE · 1671"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "LOUVRE · PARIS"
+  }
+ ],
+ "music": {
+  "transpose": -5,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "refused-0.2",
+    "model$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.9-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "week.17",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.11",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "payoff.16",
+   "fx": "tick",
+   "gain": 0.5
+  }
+ ],
+ "rights": {
+  "creator_died": 1610,
+  "note": "Caravaggio d. 1610: public domain. Leoni, Falda, Rubens, Pourbus, Van Dyck, Rigaud: all public domain."
+ },
+ "caption": "Caravaggio painted the death of the Virgin Mary for a chapel in a Carmelite church in Rome, around 1606. No angels, no clouds of glory: just a dead woman on a bed, her body swollen, one hand hanging limp, surrounded by grieving apostles.\n\nThe friars refused it. His rival Giovanni Baglione later wrote that he had painted the Madonna swollen, with bare legs. Giulio Mancini, a physician who wrote about painters of the time, claimed the model was a prostitute (historians treat the model stories as rumour).\n\nThen a young Peter Paul Rubens, court painter in Mantua, told the Duke Vincenzo Gonzaga it was one of Caravaggio's best works. The duke bought it, and before it left Rome it was shown for one week, 1–7 April 1607. Copying was forbidden.\n\nThe painting a chapel didn't want went on to King Charles I of England in 1627, and in 1671 to Louis XIV of France.\n\nP.S. The friars replaced it with a much tamer Death of the Virgin by Carlo Saraceni.\n\n🖤 Would you have hung it in your chapel?",
+ "caption_short": "The friars rejected this Virgin Mary. She looked too dead. Then Rubens saw it, and kings wanted it. 🖤",
+ "youtube_title": "Why was this Mary rejected? Caravaggio's Death of the Virgin",
+ "hashtags_instagram": [
+  "#caravaggio",
+  "#deathofthevirgin",
+  "#arthistory",
+  "#louvre",
+  "#baroque"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#caravaggio",
+  "#deathofthevirgin",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#caravaggio",
+  "#deathofthevirgin",
+  "#louvre",
+  "#paris",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#baroque",
+  "#rubens"
+ ]
+}

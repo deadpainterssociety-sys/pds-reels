@@ -46,6 +46,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 13 Nov 2026 | vermeer-pearl | Vermeer, *Girl with a Pearl Earring* (Mauritshuis, The Hague) | a tronie, not a portrait; the pearl 'too large to be real' (glass? Icke: tin); 2018 scans: eyelashes, faded green curtain, no hook; two strokes of white | hidden |
 | 13 Nov 2026 | goya-wellington | Goya, *The Duke of Wellington* (National Gallery, London) | stolen 21 Aug 1961 for pensioners' TV licences; returned via Birmingham New Street left luggage 1965; Kempton Bunton cleared of the painting, jailed for the frame; 2012 files: son John confessed in 1969 | damage |
 | 14 Nov 2026 | bosch-butt-song | Bosch, *The Garden of Earthly Delights*, Hell panel (Prado) | the score on a sinner's backside; 2014 student went viral as the first to play it, but scholars wrote it out by 1961 and Atrium Musicae recorded it in 1978; no clef, so every version is a guess | hidden |
+| 14 Nov 2026 | caravaggio-virgin | Caravaggio, *Death of the Virgin* (Louvre) | rejected by the Carmelite friars: a swollen dead woman (Baglione: "swollen, bare legs"); Mancini claimed a prostitute model (hedged); Rubens told the Duke of Mantua it was one of his best; shown one week in Rome, April 1607, no copies; then Charles I, then Louis XIV | sacred-strange |
 
 ## Ideas (to verify)
 
