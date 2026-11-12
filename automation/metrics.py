@@ -284,8 +284,8 @@ def collect():
                 except RuntimeError as e: print("traffic:", slug, str(e)[:160])
             try: m["channel"] = {"daily": channel_daily(_H, notes), "audience": audience(_H), "at": _iso(t)}
             except RuntimeError as e: notes["youtube_channel"] = str(e)[:200]; print("channel:", str(e)[:200])
-            reach(m, _H, notes)
             m["daily_on"] = t.date().isoformat()
+        reach(m, _H, notes)   # every run: two cheap list calls; new daily reports are downloaded as soon as they appear
     for slug in slugs:   # Instagram numbers only when config.json "learning_platforms" lists it (6 Nov 2026: YouTube decides)
         r = m["reels"][slug]; mid = r.get("instagram", {}).get("id")
         if "instagram" not in CONFIG.get("learning_platforms", ["youtube"]): notes.pop("instagram_insights", None); break
