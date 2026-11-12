@@ -1,11 +1,12 @@
 {
- "max_units": 1500,
- "max_discovered": 0,
+ "max_units": 2500,
+ "max_discovered": 15,
  "max_found": 0,
- "videos": ["henX6pp_2_M"],
- "seeds": [{"handle": "@BrushstrokeSecrets", "name": "Brushstroke Secrets", "group": "rival"},
+ "seeds": [{"handle": "@detrasdelienzo", "name": "Detrás del lienzo", "group": "rival"},
            {"handle": "@thedeadpainterssociety", "name": "Dead Painters Society", "group": "us"}],
- "searches": [{"q": "Pope Innocent X Velazquez", "duration": "short", "after": "2025-05-01", "tag": "wave"},
-              {"q": "Velazquez Pope Innocent painting", "duration": "any", "after": "2024-01-01", "tag": "wave"},
-              {"q": "most terrifying portrait ever painted", "duration": "short", "after": "2025-11-01", "tag": "wave"}]
+ "searches": [{"q": "historia del arte cuadro", "duration": "short", "after": "2026-09-15", "lang": "es", "tag": "es-shorts"},
+              {"q": "la historia detrás de este cuadro", "duration": "short", "after": "2026-09-15", "lang": "es", "tag": "es-shorts"},
+              {"q": "este cuadro esconde", "duration": "short", "after": "2026-09-15", "lang": "es", "tag": "es-shorts"},
+              {"q": "art history painting story", "duration": "short", "after": "2026-09-15", "lang": "en", "tag": "en-shorts"},
+              {"q": "the story behind this painting", "duration": "short", "after": "2026-09-15", "lang": "en", "tag": "en-shorts"}]
 }
