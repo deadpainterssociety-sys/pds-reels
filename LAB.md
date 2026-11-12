@@ -34,7 +34,8 @@ Shorts: compare them only with each other (views at 7 days, average % viewed, su
    newest reels). The baseline is our YouTube **median**. A reel is a hit at ≥ 2× the median on views or on two of the
    four levers, a miss at ≤ 0.5×.
 3. The four levers, on YouTube:
-   - hook: `avg_view_pct` (and swipe data if present)
+   - hook: `youtube_engaged_pct` (engaged views ÷ views: the API's closest number to Studio's "stayed to watch"; our
+     channel was 56 % in Studio on 10 Nov, the best Shorts 60-64 %) and `avg_view_pct`
    - retention: average watch time ÷ reel length
    - shares per 1,000 views
    - subscribers gained per 1,000 views
@@ -69,6 +70,23 @@ A painting that just broke out for some art channel keeps breaking out for other
                "format": "long" (default; a Short only if it is a small, single-detail story), "when": "next free slot | YYYY-MM-DD | late Nov"}}`
    ✅ puts it into STORY_QUEUE.md (Shorts: Pinned; long videos: "Long videos (to plan)").
 4. In the summary, one line on the waves: how many breakouts, the top 2 topics.
+
+## Long videos, traffic and audience (every brief)
+
+- `lab/long.csv` (written by the same `table` command): one row per public long video: views at 24 h / 72 h / 7 d / 28 d,
+  `yt_impressions` and `yt_ctr_pct` (impressions click-through rate, Studio's number; also for the first 2 days),
+  `still_watching_30s` and at 25/50/75 % of the video, `avg_view_pct`, `subs_per_1k`, and the share of views per
+  traffic source (`yt_src_*`: BROWSE / SUGGESTED / YT_SEARCH / SHORTS…). Judge each one on, in this order: CTR (YouTube:
+  half of all channels sit between 2 % and 10 %), still watching at 30 s, impressions still growing after day 2 (the
+  daily numbers are in metrics.json `reach`, per traffic source in `reach_src`), then average % viewed. Name the weakest
+  of the three (thumbnail + title / the opening / the middle) and where the retention curve (`long[slug].retention`:
+  [share of the video, share still watching, relative to similar videos]) drops hardest.
+- Shorts: `youtube_src_*_pct` says where each Short's views came from (SHORTS feed vs search vs browse), and
+  `youtube_impressions` / `youtube_ctr_pct` appear when the reach reports cover them.
+- metrics.json `channel`: daily views, watch minutes and net subscribers (split Shorts / long videos when YouTube
+  allows it), and `audience` (age and gender share of viewers, top countries, last 28 days). One line in the summary
+  when the audience shifts (our target is Gen-Z: share of 18-24 and 25-34). Reach data starts ~2 days after
+  12 Nov 2026 (the reports are new): say "not yet" until then.
 
 ## Output (both files are required)
 
