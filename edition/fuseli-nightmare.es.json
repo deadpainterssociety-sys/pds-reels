@@ -1,0 +1,277 @@
+{
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Ese caballo no es la pesadilla.",
+     0.4,
+     0.92
+    ],
+    [
+     "Lo que lleva encima, *sí.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "En 1781,",
+     0.3,
+     0.95
+    ],
+    [
+     "en Londres,",
+     0.25,
+     0.95
+    ],
+    [
+     "un pintor suizo, Henry Fuseli,",
+     0.25,
+     0.94
+    ],
+    [
+     "pintó a una mujer dormida,",
+     0.25,
+     0.94
+    ],
+    [
+     "tumbada hacia atrás sobre la cama.",
+     0.75,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "demon",
+   "perf": [
+    [
+     "Sobre su pecho se agazapa un demonio.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "mare",
+   "perf": [
+    [
+     "En el folclore del norte de Europa,",
+     0.3,
+     0.94
+    ],
+    [
+     "la mare era un espíritu",
+     0.25,
+     0.93
+    ],
+    [
+     "que se sentaba sobre el pecho de los que dormían,",
+     0.25,
+     0.93
+    ],
+    [
+     "para atormentarlos y asfixiarlos.",
+     0.8,
+     0.92
+    ],
+    [
+     "Por eso en inglés pesadilla se dice *nightmare.*",
+     0.35,
+     0.9
+    ],
+    [
+     "Y mare también es *yegua.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "drawing",
+   "perf": [
+    [
+     "El primer dibujo de Fuseli,",
+     0.25,
+     0.94
+    ],
+    [
+     "de marzo de 1781,",
+     0.3,
+     0.94
+    ],
+    [
+     "no tenía ningún caballo.",
+     0.8,
+     0.9
+    ],
+    [
+     "Añadió la cabeza después,",
+     0.3,
+     0.94
+    ],
+    [
+     "en el cuadro.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "show",
+   "perf": [
+    [
+     "En 1782,",
+     0.3,
+     0.95
+    ],
+    [
+     "se expuso en la Royal Academy.",
+     0.35,
+     0.94
+    ],
+    [
+     "Los críticos quedaron horrorizados,",
+     0.25,
+     0.92
+    ],
+    [
+     "y *fascinados.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "money",
+   "perf": [
+    [
+     "Fuseli lo vendió por veinte guineas.",
+     0.35,
+     0.94
+    ],
+    [
+     "Las copias impresas le dieron a su editor",
+     0.2,
+     0.94
+    ],
+    [
+     "más de quinientas *libras.*",
+     0.85,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Los expertos ven el caballo como un chiste visual.",
+     0.35,
+     0.93
+    ],
+    [
+     "Una broma con la palabra.",
+     0.8,
+     0.9
+    ],
+    [
+     "La verdadera pesadilla",
+     0.2,
+     0.92
+    ],
+    [
+     "es la que está sentada en su *pecho.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "Está en el Instituto de Arte de Detroit, en Detroit.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "anchors": {
+  "hook.5": "hook.6",
+  "hook.9": "hook.9",
+  "painted.4": "painted.4",
+  "painted.9": "painted.9",
+  "demon.5": "demon.6",
+  "mare.9": "mare.12",
+  "mare.19": "mare.26",
+  "mare.24": "mare.34",
+  "drawing.6": "drawing.9",
+  "drawing.7": "drawing.11",
+  "drawing.11": "drawing.13",
+  "show.9": "show.8",
+  "money.5": "money.5",
+  "money.6": "money.6",
+  "payoff.3": "payoff.4",
+  "payoff.7": "payoff.8",
+  "payoff.13": "payoff.14",
+  "payoff.19": "payoff.21",
+  "ending.1": "ending.1"
+ },
+ "cover": {
+  "question": "¿Qué hace <i>un caballo</i> en su cuarto?",
+  "work": "La pesadilla, 1781",
+  "answered_by": "Un juego de palabras visual: en inglés pesadilla es nightmare, y mare también significa yegua"
+ },
+ "overlays": {
+  "0": {
+   "text": "LONDRES · 1781"
+  },
+  "1": {
+   "text": "FUSELI · POR JAMES NORTHCOTE"
+  },
+  "2": {
+   "text": "LA MARE · FOLCLORE NÓRDICO"
+  },
+  "3": {
+   "text": "FUSELI · ESTUDIO A TIZA"
+  },
+  "5": {
+   "text": "LA ROYAL ACADEMY · VISTA DE 1787"
+  },
+  "6": {
+   "text": "VENDIDO POR 20 GUINEAS"
+  },
+  "7": {
+   "text": "GRABADOS · MÁS DE 500 £ PARA J. R. SMITH"
+  },
+  "9": {
+   "text": "INSTITUTO DE ARTE DE DETROIT"
+  }
+ },
+ "teaser": "El caballo que no es la pesadilla",
+ "youtube_title": "Este caballo no es la pesadilla 🐴",
+ "caption": "En 1781, en Londres, el pintor suizo Henry Fuseli pintó a una mujer dormida, tumbada hacia atrás sobre la cama, con un demonio agazapado sobre su pecho. Y una cabeza de caballo, con los ojos en blanco, asomando entre las cortinas.\n\nPero el caballo no es la pesadilla. En el antiguo folclore germánico y escandinavo, la mare era un espíritu que se sentaba sobre el pecho de los que dormían para atormentarlos y asfixiarlos. De ahí viene la palabra inglesa nightmare, pesadilla. Y en inglés, mare también significa yegua.\n\nEl primer dibujo de Fuseli, de marzo de 1781, no tenía ningún caballo: su amigo y biógrafo John Knowles escribió que la cabeza la añadió después, en el cuadro. Los expertos lo ven como un juego de palabras visual.\n\nExpuesto en la Royal Academy en 1782, causó sensación. Fuseli lo vendió por veinte guineas; el editor de los grabados dijo que él ganó más de quinientas libras.\n\n🖤 ¿Alguna vez has sentido algo sentado en tu pecho mientras dormías?",
+ "caption_short": "Ese caballo no es la pesadilla. Lo que lleva encima, sí. 🐴",
+ "hashtags": [
+  "#historiadelarte",
+  "#fuseli",
+  "#lapesadilla",
+  "#detroit",
+  "#arte",
+  "#pintura",
+  "#arteoscuro",
+  "#folclore",
+  "#curiosidades",
+  "#cuadros"
+ ],
+ "meta_es": {
+  "painting": "La pesadilla",
+  "museum": "Instituto de Arte de Detroit",
+  "city": "Detroit"
+ }
+}

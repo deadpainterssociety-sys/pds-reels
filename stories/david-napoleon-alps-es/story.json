@@ -1,0 +1,743 @@
+{
+ "slug": "david-napoleon-alps-es",
+ "hook_type": "hidden",
+ "teaser": "El caballo que Napoleón nunca montó",
+ "voice": "chirp",
+ "lang": "es",
+ "tail": 2.2,
+ "images": {
+  "napoleon": {
+   "file": "src/napoleon.jpg",
+   "commons": "File:Napoleon at the Great St. Bernard - Jacques-Louis David - Google Cultural Institute.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.61,
+     0.23
+    ],
+    "horsehead": [
+     0.36,
+     0.22
+    ],
+    "hand": [
+     0.47,
+     0.13
+    ],
+    "bonaparte": [
+     0.13,
+     0.88
+    ],
+    "annibal": [
+     0.1,
+     0.95
+    ],
+    "karolus": [
+     0.4,
+     0.95
+    ],
+    "soldiers": [
+     0.2,
+     0.68
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "rider": [
+     0.52,
+     0.3
+    ],
+    "carve": [
+     0.11,
+     0.893
+    ]
+   }
+  },
+  "delaroche": {
+   "file": "src/delaroche.jpg",
+   "commons": "File:Paul Delaroche - Napoleon Crossing the Alps - Google Art Project.jpg",
+   "points": {
+    "face": [
+     0.41,
+     0.17
+    ],
+    "guide": [
+     0.72,
+     0.4
+    ],
+    "mule": [
+     0.6,
+     0.58
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "rider": [
+     0.45,
+     0.3
+    ]
+   }
+  },
+  "davidself": {
+   "file": "src/davidself.jpg",
+   "commons": "File:Self-portrait (by Jacques-Louis David) – Louvre.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.52,
+     0.27
+    ]
+   }
+  },
+  "pass": {
+   "file": "src/pass.jpg",
+   "commons": "File:Grand St Bernard.jpg",
+   "long": 3840,
+   "credit": "Great St Bernard Pass: photo by Hans Hillewaert, CC BY-SA 3.0, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "hospice": [
+     0.5,
+     0.48
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Nunca cruzó los Alpes en este *caballo.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "pass",
+   "perf": [
+    [
+     "Mayo de 1800.",
+     0.35,
+     0.95
+    ],
+    [
+     "Napoleón lleva a su ejército",
+     0.2,
+     0.95
+    ],
+    [
+     "por el paso del Gran San Bernardo,",
+     0.25,
+     0.95
+    ],
+    [
+     "hacia Italia.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "mule",
+   "perf": [
+    [
+     "Pero no a lomos de un semental.",
+     0.35,
+     0.93
+    ],
+    [
+     "Va en una *mula,*",
+     0.4,
+     0.88
+    ],
+    [
+     "más segura en los caminos helados,",
+     0.25,
+     0.95
+    ],
+    [
+     "llevada por un guía de la zona.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "order",
+   "perf": [
+    [
+     "Entonces, el rey de España",
+     0.2,
+     0.95
+    ],
+    [
+     "encarga un retrato de la travesía",
+     0.2,
+     0.95
+    ],
+    [
+     "a Jacques-Louis David.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "pose",
+   "perf": [
+    [
+     "Napoleón se niega a posar.",
+     0.35,
+     0.93
+    ],
+    [
+     "Al parecer, pide que lo pinten",
+     0.2,
+     0.95
+    ],
+    [
+     "*sereno,* sobre un caballo fogoso.",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "rocks",
+   "perf": [
+    [
+     "David escribe *Bonaparte* en las rocas,",
+     0.25,
+     0.95
+    ],
+    [
+     "junto a Aníbal y Carlomagno,",
+     0.25,
+     0.95
+    ],
+    [
+     "que cruzaron los Alpes antes que él.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "copies",
+   "perf": [
+    [
+     "Al final,",
+     0.2,
+     0.95
+    ],
+    [
+     "el taller de David pinta cinco versiones.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Cincuenta años después,",
+     0.25,
+     0.95
+    ],
+    [
+     "Paul Delaroche lo vuelve a pintar,",
+     0.3,
+     0.93
+    ],
+    [
+     "tal como pasó de verdad:",
+     0.3,
+     0.93
+    ],
+    [
+     "un hombre con abrigo gris,",
+     0.25,
+     0.93
+    ],
+    [
+     "en una mula,",
+     0.3,
+     0.9
+    ],
+    [
+     "guiado entre la nieve.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "truth",
+   "perf": [
+    [
+     "¿Y el caballo encabritado?",
+     0.35,
+     0.93
+    ],
+    [
+     "Pura *propaganda.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "Está en el Belvedere, en Viena.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "Jacques-Louis David",
+  "born": 1748,
+  "died": 1825,
+  "painting": "Napoleon Crossing the Alps (Bonaparte at the Great St Bernard Pass)",
+  "year": "1801–1803 (Belvedere version, 1803)",
+  "museum": "Belvedere",
+  "city": "Vienna",
+  "image": "napoleon",
+  "image_credit": "Österreichische Galerie Belvedere, Vienna (on loan from the Kunsthistorisches Museum), via Wikimedia Commons / Google Art Project (public domain)"
+ },
+ "rights": {
+  "creator_died": 1825,
+  "note": "David d. 1825: public domain. Delaroche (d. 1856) PD; David self-portrait PD; Great St Bernard photo CC BY-SA 3.0 (Hans Hillewaert) -> credited."
+ },
+ "cover": {
+  "question": "¿De verdad montó <i>este caballo?</i>",
+  "name": "JACQUES-LOUIS DAVID",
+  "work": "Napoleón cruzando los Alpes, 1803",
+  "focus": [
+   0.6,
+   0.24
+  ],
+  "span": 0.45,
+  "answered_by": "No: cruzó en mula, guiado por un lugareño; el caballo encabritado es propaganda"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "napoleon",
+   "from": "face@2.6",
+   "to": "face@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.6-0.03",
+   "img": "napoleon",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "pass-0.08",
+   "img": "pass",
+   "kind": "image",
+   "from": "hospice@1.0",
+   "to": "hospice@1.08",
+   "gray": 0.6,
+   "dim": 0.15
+  },
+  {
+   "at": "pass.3-0.05",
+   "img": "napoleon",
+   "kind": "image",
+   "from": "soldiers@1.8",
+   "to": "soldiers@1.95",
+   "gray": 0.5
+  },
+  {
+   "at": "mule-0.08",
+   "img": "napoleon",
+   "from": "horsehead@2.0",
+   "to": "horsehead@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "mule.7-0.05",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "mule@1.3",
+   "to": "mule@1.42",
+   "gray": 0.4
+  },
+  {
+   "at": "mule.17-0.05",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "guide@1.8",
+   "to": "guide@1.95",
+   "gray": 0.4
+  },
+  {
+   "at": "order-0.08",
+   "img": "napoleon",
+   "kind": "image",
+   "from": "center@0.5",
+   "to": "center@0.48",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "order.11-0.05",
+   "img": "davidself",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 0.3
+  },
+  {
+   "at": "pose-0.08",
+   "img": "napoleon",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "pose.11-0.05",
+   "img": "napoleon",
+   "kind": "image",
+   "from": "face@3.0",
+   "to": "face@3.15"
+  },
+  {
+   "at": "pose.15-0.05",
+   "img": "napoleon",
+   "from": "horsehead@2.2",
+   "to": "horsehead@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "rocks-0.08",
+   "img": "napoleon",
+   "kind": "image",
+   "from": "bonaparte@1.9",
+   "to": "bonaparte@2.0",
+   "dim": -0.35
+  },
+  {
+   "at": "rocks.8-0.05",
+   "img": "napoleon",
+   "kind": "image",
+   "from": "annibal@1.9",
+   "to": "karolus@2.0",
+   "dim": -0.35
+  },
+  {
+   "at": "rocks.11-0.05",
+   "img": "napoleon",
+   "from": "rider@1.5",
+   "to": "rider@1.62",
+   "sway": 0.006
+  },
+  {
+   "at": "copies-0.08",
+   "img": "napoleon",
+   "kind": "image",
+   "from": "center@0.48",
+   "to": "center@0.5",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "center@0.5",
+   "to": "center@0.52",
+   "frame": true
+  },
+  {
+   "at": "payoff.3-0.05",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "rider@1.3",
+   "to": "rider@1.42"
+  },
+  {
+   "at": "payoff.14-0.05",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "face@2.0",
+   "to": "face@2.15"
+  },
+  {
+   "at": "payoff.19-0.05",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "mule@1.4",
+   "to": "mule@1.5"
+  },
+  {
+   "at": "payoff.22-0.05",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "guide@1.6",
+   "to": "guide@1.72"
+  },
+  {
+   "at": "truth-0.08",
+   "img": "napoleon",
+   "from": "horsehead@1.7",
+   "to": "horsehead@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "truth.4-0.03",
+   "img": "napoleon",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "napoleon",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "pass",
+   "to": "pass.3-0.1",
+   "text": "PASO DEL GRAN SAN BERNARDO · HOY"
+  },
+  {
+   "type": "credit",
+   "from": "pass",
+   "to": "pass.3-0.1",
+   "text": "FOTO: HANS HILLEWAERT · CC BY-SA 3.0"
+  },
+  {
+   "type": "label",
+   "from": "pass.3",
+   "to": "mule-0.1",
+   "text": "MAYO 1800 · HACIA ITALIA"
+  },
+  {
+   "type": "label",
+   "from": "mule.7",
+   "to": "order-0.1",
+   "text": "DELAROCHE · 1850"
+  },
+  {
+   "type": "label",
+   "from": "order",
+   "to": "order.11-0.1",
+   "text": "DAVID · VERSIÓN DEL BELVEDERE, 1803"
+  },
+  {
+   "type": "title",
+   "from": "order.11",
+   "to": "pose-0.1",
+   "kicker": "EL PINTOR · AUTORRETRATO",
+   "text": "Jacques-Louis <i>David</i>"
+  },
+  {
+   "type": "label",
+   "from": "rocks",
+   "to": "rocks.8-0.1",
+   "text": "\"BONAPARTE\""
+  },
+  {
+   "type": "label",
+   "from": "rocks.8",
+   "to": "rocks.11-0.1",
+   "text": "\"ANNIBAL\" · \"KAROLUS MAGNUS\""
+  },
+  {
+   "type": "label",
+   "from": "copies",
+   "to": "payoff-0.1",
+   "text": "CINCO VERSIONES · 1801–1805"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "truth-0.1",
+   "text": "PAUL DELAROCHE · 1850"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "BELVEDERE · VIENA"
+  },
+  {
+   "type": "ring",
+   "at": "rocks.2",
+   "to": "rocks.8-0.1",
+   "img": "napoleon",
+   "point": "carve",
+   "rx": 230,
+   "ry": 80,
+   "rot": -22
+  }
+ ],
+ "nocap": [
+  [
+   "order.11",
+   "pose-0.1"
+  ],
+  [
+   "rocks",
+   "rocks.11-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "pass-0.2",
+    "mule$+0.2"
+   ],
+   "drop": [
+    "truth-0.05",
+    "truth.3+0.3"
+   ],
+   "choir": [
+    "truth.4-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "mule.10",
+   "fx": "pop",
+   "gain": 0.45
+  },
+  {
+   "at": "rocks.2",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "rocks.8",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "rocks.10",
+   "fx": "tick",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "In May 1800 Napoleon (First Consul) led the Army of the Reserve over the Great St Bernard Pass into Italy (crossing dated 15–20 May 1800)",
+   "source": "https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps ; https://en.wikipedia.org/wiki/Pierre_Nicholas_Dorsaz"
+  },
+  {
+   "claim": "He crossed on a mule, considered more sure-footed on Alpine paths, led by a local guide (Pierre-Nicolas Dorsaz of Bourg-Saint-Pierre)",
+   "source": "https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps ; https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard ; https://en.wikipedia.org/wiki/Bonaparte_Crossing_the_Alps ; https://en.wikipedia.org/wiki/Pierre_Nicholas_Dorsaz"
+  },
+  {
+   "claim": "The first version was commissioned by King Charles IV of Spain from Jacques-Louis David (painted October 1800 – January 1801)",
+   "source": "https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps ; https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard"
+  },
+  {
+   "claim": "Napoleon refused to sit for the portrait ('Poser ? à quoi bon ?')",
+   "source": "https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps ; https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard"
+  },
+  {
+   "claim": "He reportedly asked to be painted 'calme sur un cheval fougueux' (calm on a fiery horse) — attributed by early biographers, hence 'reportedly'",
+   "source": "https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard"
+  },
+  {
+   "claim": "The rocks are inscribed BONAPARTE, ANNIBAL (Hannibal) and KAROLVS MAGNVS IMP. (Charlemagne), earlier leaders who crossed the Alps",
+   "source": "https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps ; https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard"
+  },
+  {
+   "claim": "David and his studio produced five versions between 1801 and 1805 (Malmaison, Charlottenburg, Versailles x2, Belvedere)",
+   "source": "https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps ; https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard"
+  },
+  {
+   "claim": "In 1848–1850 Paul Delaroche painted Bonaparte Crossing the Alps for the Earl of Onslow, who wanted a realistic version: Napoleon in a grey coat on a mule, led by a guide through snow (Walker Art Gallery, Liverpool; Louvre)",
+   "source": "https://en.wikipedia.org/wiki/Bonaparte_Crossing_the_Alps ; https://en.wikipedia.org/wiki/Napoleon_Crossing_the_Alps"
+  },
+  {
+   "claim": "The Belvedere version (1803) was made for the Cisalpine Republic's palace in Milan; seized by Austria, in Vienna since 1834; hangs in the Upper Belvedere, Vienna (on loan from the Kunsthistorisches Museum)",
+   "source": "https://fr.wikipedia.org/wiki/Bonaparte_franchissant_le_Grand-Saint-Bernard ; https://commons.wikimedia.org/wiki/File:Napoleon_at_the_Great_St._Bernard_-_Jacques-Louis_David_-_Google_Cultural_Institute.jpg"
+  }
+ ],
+ "caption": "Nunca cruzó los Alpes en este caballo.\n\nEn mayo de 1800 Napoleón llevó a su ejército por el paso del Gran San Bernardo hacia Italia. Pero no a lomos de un semental: iba en una mula, más segura en los caminos helados, llevada por un guía de la zona, Pierre-Nicolas Dorsaz.\n\nEntonces el rey de España le encargó a Jacques-Louis David un retrato de la travesía. Napoleón se negó a posar; al parecer pidió que lo pintaran \"sereno sobre un caballo fogoso\". David escribió BONAPARTE en las rocas, junto a Aníbal y Carlomagno, que habían cruzado los Alpes antes que él. Al final, el taller de David pintó cinco versiones.\n\nCincuenta años después, Paul Delaroche pintó la travesía tal como pasó de verdad: un hombre con abrigo gris, en una mula, guiado entre la nieve (Walker Art Gallery, Liverpool).\n\n¿Y el caballo encabritado? Pura propaganda. Esta versión, hecha para Milán en 1803, está en el Belvedere de Viena.\n\n🖤 ¿Cuál colgarías tú en tu pared?",
+ "caption_short": "Napoleón nunca cruzó los Alpes en este caballo. Iba en mula. 🐴",
+ "youtube_title": "Napoleón nunca montó este caballo 🐴",
+ "hashtags": [
+  "#historiadelarte",
+  "#napoleon",
+  "#jacqueslouisdavid",
+  "#belvedere",
+  "#viena",
+  "#arte",
+  "#pintura",
+  "#historia",
+  "#propaganda",
+  "#curiosidades"
+ ],
+ "edition_of": "david-napoleon-alps",
+ "next": false,
+ "meta_es": {
+  "painting": "Napoleón cruzando los Alpes",
+  "museum": "Belvedere",
+  "city": "Viena"
+ },
+ "ai_voice_line": "🎙️ Narración con voz de IA"
+}
