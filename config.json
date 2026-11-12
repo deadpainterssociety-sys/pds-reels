@@ -1,24 +1,34 @@
 {
- "_doc": "Settings for the automatic pipeline. Edit freely; every workflow reads this file at run time.",
- "channel": "Dead Painters Society",
- "handle": "@thedeadpainterssociety",
- "timezone": "Europe/Madrid",
- "buffer_days": 3,
- "stories_per_run": 3,
- "slots": ["14:00", "21:00"],
- "_slots": "Posting times (Madrid). One reel per slot: two a day. A reel approved after its slot goes out as soon as it is approved, until publish_until.",
- "publish_until": "23:00",
- "platforms": {"instagram": true, "youtube": true, "tiktok": true},
- "tiktok_mode": "inbox",
- "youtube_privacy": "public",
- "youtube_category": "27",
- "instagram_api_version": "v23.0",
- "claude_model": "opus",
- "cover_style": "D",
- "_cover_style": "Cover finish (pipeline/cover.py STYLES): A veil · B long veil · C frosted veil · D long veil, tight close-up · E warm frosted, tight close-up.",
- "nude_safe_framing": true,
- "_nude_safe_framing": "true = nudes are shown only in close-ups (YouTube may age-restrict them). Set false once Gigi confirms the Rokeby Venus Short was not restricted.",
- "paused": false,
- "learning_platforms": ["youtube"],
- "_learning_platforms": "Platforms whose numbers the learning loop reads and judges. YouTube only since 6 Nov 2026 (Gigi: what works on YouTube is the key; the other apps are noise)."
+  "_doc": "Settings for the automatic pipeline. Edit freely; every workflow reads this file at run time.",
+  "channel": "Dead Painters Society",
+  "handle": "@thedeadpainterssociety",
+  "timezone": "Europe/Madrid",
+  "buffer_days": 3,
+  "stories_per_run": 3,
+  "slots": [
+    "14:00",
+    "21:00"
+  ],
+  "_slots": "Posting times (Madrid). One reel per slot: two a day. A reel approved after its slot goes out as soon as it is approved, until publish_until.",
+  "publish_until": "23:00",
+  "platforms": {
+    "instagram": true,
+    "youtube": true,
+    "tiktok": true
+  },
+  "tiktok_mode": "inbox",
+  "youtube_privacy": "public",
+  "youtube_category": "27",
+  "instagram_api_version": "v23.0",
+  "claude_model": "opus",
+  "cover_style": "D",
+  "_cover_style": "Cover finish (pipeline/cover.py STYLES): A veil · B long veil · C frosted veil · D long veil, tight close-up · E warm frosted, tight close-up.",
+  "nude_safe_framing": true,
+  "_nude_safe_framing": "true = nudes are shown only in close-ups (YouTube may age-restrict them). Set false once Gigi confirms the Rokeby Venus Short was not restricted.",
+  "paused": false,
+  "learning_platforms": [
+    "youtube"
+  ],
+  "_learning_platforms": "Platforms whose numbers the learning loop reads and judges. YouTube only since 6 Nov 2026 (Gigi: what works on YouTube is the key; the other apps are noise).",
+  "youtube_synthetic_label_shorts": false
 }

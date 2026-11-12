@@ -5,7 +5,11 @@ token for your channel with the scope youtube.upload (get it in the browser with
 GOTCHA: if the OAuth consent screen stays in 'Testing', refresh tokens die after 7 days -> set it to 'In production'
 (for your own channel just click through the 'unverified app' warning once).
 A vertical video up to 3 minutes is published as a Short. videos.insert has its own quota bucket (100 uploads/day).
-status.containsSyntheticMedia = true discloses the AI voice.
+AI disclosure: every Short's description says "🎙️ AI voice narration" (pipeline/finalize.py). The "altered or synthetic
+content" flag (status.containsSyntheticMedia) is off for Shorts since 13 Nov 2026 (Gigi): since 27 May 2026 YouTube
+shows it as an overlay on the Short in the feed, and YouTube requires it only for realistic content a viewer could
+mistake for real (a real person saying what they didn't, altered real footage, a realistic invented scene), which an
+anonymous narrator over real paintings is not. config.json youtube_synthetic_label_shorts turns it back on.
 
 Long videos (16:9, from stories/<slug>/out/): `long <slug> <publish_at>` uploads the master as PRIVATE with publishAt set,
 so YouTube makes it public on its own at that time; then thumbnail A and the English subtitles. Test & compare (title B,
@@ -72,7 +76,7 @@ def publish(slug):
     meta = {"snippet": {"title": c["youtube_title"][:100], "description": c["youtube_desc"][:4900], "tags": tags,
                         "categoryId": CONFIG.get("youtube_category", "27"), "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": {"privacyStatus": CONFIG.get("youtube_privacy", "public"), "selfDeclaredMadeForKids": False,
-                       "containsSyntheticMedia": True}, **place(slug)}
+                       "containsSyntheticMedia": bool(CONFIG.get("youtube_synthetic_label_shorts", False))}, **place(slug)}
     path = os.path.join(out_dir(slug), f"{slug}.mp4"); size = os.path.getsize(path)
     parts = "snippet,status" + (",recordingDetails" if "recordingDetails" in meta else "")
     _, h = http("POST", f"{API}/upload/youtube/v3/videos?uploadType=resumable&part={parts}",
