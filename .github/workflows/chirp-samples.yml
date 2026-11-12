@@ -1,0 +1,19 @@
+# Google "Chirp 3: HD" voice auditions (automation/chirp_samples.py). Needs the secret GOOGLE_TTS_KEY.
+name: chirp-samples
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: "reels | full", required: true, default: "reels" }
+      voices: { description: "full: voice names separated by spaces (e.g. es-US-Chirp3-HD-Charon)", required: false, default: "" }
+permissions: { contents: write }
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get -qq install -y ffmpeg > /dev/null
+      - run: python3 automation/chirp_samples.py ${{ inputs.mode }} "$RUNNER_TEMP/chirp" ${{ inputs.voices }}
