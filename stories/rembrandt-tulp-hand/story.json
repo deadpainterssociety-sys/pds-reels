@@ -1,0 +1,733 @@
+{
+ "slug": "rembrandt-tulp-hand",
+ "hook_type": "dark",
+ "teaser": "The corpse Rembrandt gave a new hand",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Rembrandt van Rijn",
+  "born": 1606,
+  "died": 1669,
+  "painting": "The Anatomy Lesson of Dr Nicolaes Tulp",
+  "year": "1632",
+  "museum": "Mauritshuis",
+  "city": "The Hague",
+  "image": "tulp",
+  "image_credit": "Mauritshuis, The Hague, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Who gave him a <i>new hand?</i>",
+  "name": "REMBRANDT",
+  "work": "The Anatomy Lesson of Dr Tulp, 1632",
+  "focus": [
+   0.44,
+   0.79
+  ],
+  "span": 0.42,
+  "answered_by": "Rembrandt: X-rays show he first painted the hanged thief's right arm as a stump, then (the museum thinks at Tulp's or his own choice) painted a hand on top"
+ },
+ "say": {
+  "1632": "sixteen thirty-two",
+  "25": "twenty-five"
+ },
+ "ipa": {
+  "Mauritshuis": "mˈaʊɹɪtshaʊs",
+  "Kindt": "kˈɪnt",
+  "Nicolaes": "nˈiːkoʊlɑːs",
+  "Tulp": "tˈʌlp",
+  "Leiden": "lˈaɪdən",
+  "Rembrandt": "ɹˈɛmbɹænt",
+  "Aris": "ˈɑːɹɪs"
+ },
+ "respell": {
+  "Mauritshuis": "MOW-rits-house",
+  "Kindt": "KINT",
+  "Nicolaes": "NEE-ko-lahs",
+  "Tulp": "TULP",
+  "Leiden": "LY-den",
+  "Aris": "AH-ris"
+ },
+ "chirp_say": {
+  "Mauritshuis": "Mow-rits-house",
+  "Kindt": "Kint",
+  "Nicolaes": "Nee-ko-lahs"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This dead man had no right hand.",
+     0.35,
+     0.93
+    ],
+    [
+     "Rembrandt painted him *one.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "lesson",
+   "perf": [
+    [
+     "In January 1632,",
+     0.3,
+     0.95
+    ],
+    [
+     "in Amsterdam,",
+     0.3,
+     0.95
+    ],
+    [
+     "Dr Nicolaes Tulp cut open a body",
+     0.3,
+     0.94
+    ],
+    [
+     "in front of a *crowd.*",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "thief",
+   "perf": [
+    [
+     "It was a thief's body.",
+     0.3,
+     0.94
+    ],
+    [
+     "Aris Kindt,",
+     0.3,
+     0.92
+    ],
+    [
+     "hanged that same day",
+     0.3,
+     0.94
+    ],
+    [
+     "for stealing a winter *coat.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "painter",
+   "perf": [
+    [
+     "The surgeons hired a newcomer from Leiden",
+     0.3,
+     0.95
+    ],
+    [
+     "to paint the scene:",
+     0.3,
+     0.95
+    ],
+    [
+     "Rembrandt, just 25.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "arm",
+   "perf": [
+    [
+     "Tulp had himself shown",
+     0.25,
+     0.95
+    ],
+    [
+     "opening the *arm* first,",
+     0.3,
+     0.93
+    ],
+    [
+     "perhaps to copy the great Vesalius.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "xray",
+   "perf": [
+    [
+     "But X-rays show",
+     0.3,
+     0.94
+    ],
+    [
+     "Rembrandt first painted the other arm",
+     0.25,
+     0.95
+    ],
+    [
+     "ending in a *stump.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "why",
+   "perf": [
+    [
+     "Kindt had probably lost that hand",
+     0.3,
+     0.94
+    ],
+    [
+     "as punishment for an earlier crime.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "added",
+   "perf": [
+    [
+     "The museum thinks Tulp or Rembrandt",
+     0.25,
+     0.95
+    ],
+    [
+     "found the stump too distracting.",
+     0.4,
+     0.94
+    ],
+    [
+     "So a hand was painted on *top.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "That hand is still a slightly different colour",
+     0.3,
+     0.95
+    ],
+    [
+     "from the arm.",
+     0.5,
+     0.93
+    ],
+    [
+     "And the stump proves",
+     0.3,
+     0.92
+    ],
+    [
+     "Rembrandt was *in the room.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Mauritshuis, in The Hague.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "tulp": {
+   "file": "src/tulp.jpg",
+   "commons": "File:Rembrandt van Rijn - The Anatomy Lesson of Dr Nicolaes Tulp - 146 - Mauritshuis.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "hand": [
+     0.455,
+     0.815
+    ],
+    "wrist": [
+     0.42,
+     0.8
+    ],
+    "corpse": [
+     0.3,
+     0.67
+    ],
+    "tulpface": [
+     0.63,
+     0.36
+    ],
+    "arm": [
+     0.58,
+     0.68
+    ],
+    "sign": [
+     0.38,
+     0.1
+    ],
+    "group": [
+     0.38,
+     0.42
+    ],
+    "body": [
+     0.5,
+     0.72
+    ],
+    "handc": [
+     0.45,
+     0.79
+    ]
+   }
+  },
+  "rembrandt": {
+   "file": "src/rembrandt.jpg",
+   "commons": "File:Self-portrait in a Cap, Laughing by Rembrandt RP-P-OB-687.jpg",
+   "long": 2000,
+   "points": {
+    "face": [
+     0.55,
+     0.45
+    ]
+   }
+  },
+  "theatre": {
+   "file": "src/theatre.jpg",
+   "commons": "File:Theatrum anatomicum van Leidse Academie, 1609 Amphitheatrum Anatomicum Luduno Batavorum (titel op object), RP-P-1887-A-12041.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ],
+    "table": [
+     0.5,
+     0.76
+    ]
+   }
+  },
+  "vesalius": {
+   "file": "src/vesalius.jpg",
+   "commons": "File:Portrait of Andreas Vesalius, half-length in profile standing in front of a table dissecting the arm of a body; frontispiece to Andreas Vesalius 'De humani corporis fabrica libri septem' MET DP853465.jpg",
+   "long": 2600,
+   "points": {
+    "face": [
+     0.38,
+     0.32
+    ],
+    "arm": [
+     0.6,
+     0.62
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "tulpprint": {
+   "file": "src/tulpprint.jpg",
+   "commons": "File:Portret van Nicolaes Tulp, RP-P-1894-A-18547.jpg",
+   "long": 2600,
+   "points": {
+    "face": [
+     0.56,
+     0.32
+    ]
+   }
+  }
+ },
+ "rights": {
+  "creator_died": 1669,
+  "note": "Rembrandt d. 1669: public domain. Rembrandt etching 1630 PD; Leiden theatre print 1609/1610 (Rijksmuseum, CC0); Calcar/Vesalius woodcut 1543 (Met, CC0); 18th-c. Tulp print (Rijksmuseum, CC0)."
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "tulp",
+   "from": "handc@2.5",
+   "to": "handc@2.7",
+   "kind": "image"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "tulp",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "lesson-0.08",
+   "img": "theatre",
+   "kind": "image",
+   "from": "center@0.45",
+   "to": "center@0.48",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "lesson.5-0.05",
+   "img": "tulpprint",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 1
+  },
+  {
+   "at": "lesson.12-0.05",
+   "img": "theatre",
+   "kind": "image",
+   "from": "table@1.3",
+   "to": "table@1.45",
+   "gray": 1
+  },
+  {
+   "at": "thief-0.08",
+   "img": "tulp",
+   "from": "corpse@2.3",
+   "to": "corpse@2.45",
+   "sway": 0.005
+  },
+  {
+   "at": "thief.11-0.05",
+   "img": "tulp",
+   "from": "body@1.5",
+   "to": "body@1.62",
+   "sway": 0.006
+  },
+  {
+   "at": "painter-0.08",
+   "img": "rembrandt",
+   "kind": "image",
+   "from": "face@1.15",
+   "to": "face@1.3",
+   "gray": 0.35
+  },
+  {
+   "at": "painter.11-0.05",
+   "img": "tulp",
+   "from": "sign@2.0",
+   "to": "sign@2.15",
+   "sway": 0.004,
+   "dim": -0.3
+  },
+  {
+   "at": "arm-0.08",
+   "img": "tulp",
+   "from": "tulpface@2.0",
+   "to": "tulpface@2.15",
+   "sway": 0.005
+  },
+  {
+   "at": "arm.4-0.05",
+   "img": "tulp",
+   "from": "arm@2.3",
+   "to": "arm@2.45",
+   "sway": 0.005
+  },
+  {
+   "at": "arm.8-0.05",
+   "img": "vesalius",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "arm@1.15",
+   "gray": 1
+  },
+  {
+   "at": "xray-0.08",
+   "img": "tulp",
+   "from": "wrist@1.8",
+   "to": "wrist@1.95",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "xray.9-0.05",
+   "img": "tulp",
+   "kind": "image",
+   "from": "handc@2.6",
+   "to": "handc@2.8",
+   "gray": 1,
+   "dim": 0.1
+  },
+  {
+   "at": "why-0.08",
+   "img": "tulp",
+   "from": "corpse@2.6",
+   "to": "corpse@2.75",
+   "sway": 0.004
+  },
+  {
+   "at": "added-0.08",
+   "img": "tulp",
+   "from": "group@1.6",
+   "to": "group@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "added.11-0.05",
+   "img": "tulp",
+   "from": "handc@2.2",
+   "to": "handc@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "tulp",
+   "kind": "image",
+   "from": "wrist@2.6",
+   "to": "wrist@2.75"
+  },
+  {
+   "at": "payoff.11-0.05",
+   "img": "tulp",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "tulp",
+   "from": "corpse@1.7",
+   "to": "corpse@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "lesson",
+   "to": "lesson.5-0.1",
+   "text": "A PUBLIC DISSECTION · 1610"
+  },
+  {
+   "type": "label",
+   "from": "lesson.5",
+   "to": "lesson.12-0.1",
+   "text": "DR NICOLAES TULP · LATER PRINT"
+  },
+  {
+   "type": "label",
+   "from": "lesson.12",
+   "to": "thief-0.1",
+   "text": "LEIDEN ANATOMY THEATRE"
+  },
+  {
+   "type": "label",
+   "from": "thief",
+   "to": "thief.11-0.1",
+   "text": "ARIS KINDT · 31 JAN 1632"
+  },
+  {
+   "type": "label",
+   "from": "painter",
+   "to": "painter.11-0.1",
+   "text": "REMBRANDT · SELF-PORTRAIT, 1630"
+  },
+  {
+   "type": "label",
+   "from": "painter.11",
+   "to": "arm-0.1",
+   "text": "SIGNED · 1632"
+  },
+  {
+   "type": "label",
+   "from": "arm.8",
+   "to": "xray-0.1",
+   "text": "VESALIUS · FABRICA, 1543"
+  },
+  {
+   "type": "label",
+   "from": "xray",
+   "to": "why-0.1",
+   "text": "X-RAY FINDING · MAURITSHUIS"
+  },
+  {
+   "type": "ring",
+   "at": "xray.12",
+   "to": "why-0.1",
+   "img": "tulp",
+   "point": "hand",
+   "rx": 170,
+   "ry": 130,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "payoff.5",
+   "to": "payoff.11-0.1",
+   "img": "tulp",
+   "point": "hand",
+   "rx": 150,
+   "ry": 120,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MAURITSHUIS · THE HAGUE"
+  }
+ ],
+ "music": {
+  "transpose": 4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "thief-0.2",
+    "why$+0.2"
+   ],
+   "choir": [
+    "payoff.11-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.7-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "painter.11",
+   "fx": "shutter",
+   "gain": 0.4
+  },
+  {
+   "at": "xray.12",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "added.13",
+   "fx": "tick",
+   "gain": 0.5
+  }
+ ],
+ "nocap": [],
+ "facts": [
+  {
+   "claim": "The corpse's right hand: X-radiographs show Rembrandt originally painted only a stump instead of a hand; the hand was added later and is now a slightly different colour from the arm",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4746154 ('the right arm was originally an amputated stump')"
+  },
+  {
+   "claim": "The painting records Dr Nicolaes Tulp's public anatomy lesson in Amsterdam in January 1632 (dated 31 January 1632); public dissections were open to paying visitors",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp ; https://en.wikipedia.org/wiki/The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4746154"
+  },
+  {
+   "claim": "The body was that of Adriaen Adriaensz, alias Aris Kindt, a thief arrested for stealing a winter coat, sentenced to death and hanged on 31 January 1632, the same day as the lesson",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp ; https://en.wikipedia.org/wiki/The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4746154"
+  },
+  {
+   "claim": "Commissioned by the surgeons (guild members contributed towards the fee); Rembrandt was 'only twenty-five', shortly after moving from Leiden to Amsterdam",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp ; https://www.universiteitleiden.nl/en/dossiers/rembrandt-and-leiden-university/seven-canvases/the-anatomy-lesson-of-dr-nicolaes-tulp"
+  },
+  {
+   "claim": "Tulp chose to be shown starting the dissection with an arm and a hand, departing from customary practice; the museum conjectures he wanted to emulate Vesalius, whose Fabrica (1543) frontispiece shows him with a dissected arm",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp"
+  },
+  {
+   "claim": "Kindt, an inveterate thief, 'undoubtedly lost this hand as a result of a previous conviction' (narrated hedged as 'probably')",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp"
+  },
+  {
+   "claim": "'One can easily imagine that either Tulp or Rembrandt, feeling that a stump in this prominent place would attract too much attention, decided to add the hand' (narrated as 'the museum thinks')",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp"
+  },
+  {
+   "claim": "'Rembrandt's initial inclusion of the stump shows that he had attended the anatomy demonstration'",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp"
+  },
+  {
+   "claim": "Bought by the Dutch State in 1828 (32,000 guilders) after King William I blocked its sale; hangs in the Mauritshuis, The Hague (Room 9)",
+   "source": "https://www.mauritshuis.nl/en/our-collection/artworks/146-the-anatomy-lesson-of-dr-nicolaes-tulp ; https://en.wikipedia.org/wiki/The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp"
+  }
+ ],
+ "caption": "Look at the dead man's right hand. It's a slightly different colour from his arm, and there's a reason.\n\nOn 31 January 1632, in Amsterdam, Dr Nicolaes Tulp gave his public anatomy lesson on the body of Aris Kindt (Adriaen Adriaensz), a thief hanged that same day for stealing a winter coat. The surgeons hired a 25-year-old newcomer from Leiden to paint it: Rembrandt.\n\nTulp had himself shown opening the arm first, against the usual order, perhaps to echo the great anatomist Vesalius. But X-rays show that Rembrandt first painted Kindt's other arm ending in a stump. The Mauritshuis thinks he had lost the hand as punishment for an earlier crime, and that Tulp or Rembrandt found the stump too distracting, so a hand was painted on top. As the upper paint grew more transparent, the added hand began to show.\n\nThe museum's conclusion: the stump proves Rembrandt was in the room.\n\nP.S. In 1828 the painting was about to be auctioned. King William I stopped the sale, and the Dutch state bought it for 32,000 guilders.\n\n🖤 Would you have noticed the hand?",
+ "caption_short": "This dead man had no right hand. X-rays show Rembrandt painted a stump, then gave the hanged thief a new hand. 🖤",
+ "youtube_title": "Who gave him a new hand? Rembrandt's Anatomy Lesson of Dr Tulp",
+ "hashtags_instagram": [
+  "#rembrandt",
+  "#anatomylesson",
+  "#arthistory",
+  "#mauritshuis",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#rembrandt",
+  "#anatomylesson",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#rembrandt",
+  "#anatomylesson",
+  "#drtulp",
+  "#mauritshuis",
+  "#thehague",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#dutchgoldenage",
+  "#darkhistory"
+ ]
+}

@@ -1,0 +1,722 @@
+{
+ "slug": "leonardo-ermine-nazi",
+ "hook_type": "damage",
+ "teaser": "The Leonardo on a Nazi's office wall",
+ "experiment": {
+  "id": "E1",
+  "arm": "B"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Leonardo da Vinci",
+  "born": 1452,
+  "died": 1519,
+  "painting": "Lady with an Ermine",
+  "year": "c. 1489–1491",
+  "museum": "Czartoryski Museum",
+  "city": "Kraków",
+  "image": "ermine",
+  "image_credit": "Czartoryski Museum / National Museum in Kraków, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Where did the <i>Nazis</i> take her?",
+  "name": "LEONARDO DA VINCI",
+  "work": "Lady with an Ermine, c. 1490",
+  "focus": [
+   0.6,
+   0.3
+  ],
+  "span": 0.75,
+  "answered_by": "To Berlin, then to Hans Frank's office in Wawel Castle, Kraków, then to his house in Bavaria, where she was found in 1945"
+ },
+ "say": {
+  "1490": "fourteen ninety",
+  "1798": "seventeen ninety-eight",
+  "1830": "eighteen thirty",
+  "1939": "nineteen thirty-nine",
+  "1945": "nineteen forty-five",
+  "1946": "nineteen forty-six",
+  "84": "eighty-four"
+ },
+ "ipa": {
+  "Gallerani": "ɡˌæləɹˈɑːni",
+  "Kraków": "kɹˈɑːkaʊ",
+  "Czartoryski": "ʧˌɑːɹtɔɹˈɪski",
+  "lawyer": "lˈɔːjəɹ",
+  "Cecilia": "ʧɛʧˈiːliə",
+  "Krakow": "kɹˈɑːkaʊ"
+ },
+ "respell": {
+  "Gallerani": "gah-leh-RAH-nee",
+  "Kraków": "KRAH-koof",
+  "Czartoryski": "char-toh-RIS-kee",
+  "Cecilia": "cheh-CHEE-lyah"
+ },
+ "chirp_say": {
+  "Gallerani": "Gah-leh-rah-nee",
+  "Kraków": "Krah-koof",
+  "Czartoryski": "Char-toh-ris-kee",
+  "Cecilia": "Cheh-chee-lyah"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Hitler's lawyer kept this Leonardo",
+     0.25,
+     0.95
+    ],
+    [
+     "on his office *wall.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "Leonardo painted her around 1490:",
+     0.25,
+     0.97
+    ],
+    [
+     "Cecilia Gallerani,",
+     0.25,
+     0.95
+    ],
+    [
+     "about sixteen,",
+     0.25,
+     0.96
+    ],
+    [
+     "the lover of Milan's ruler.",
+     0.8,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "prince",
+   "perf": [
+    [
+     "In 1798,",
+     0.25,
+     0.97
+    ],
+    [
+     "a Polish prince bought her in Italy.",
+     0.8,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "hid",
+   "perf": [
+    [
+     "In 1830,",
+     0.25,
+     0.97
+    ],
+    [
+     "as Russia invaded,",
+     0.25,
+     0.97
+    ],
+    [
+     "his mother, aged 84, *hid* her away.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "walled",
+   "perf": [
+    [
+     "In 1939,",
+     0.25,
+     0.97
+    ],
+    [
+     "the family walled her up in a country palace.",
+     0.4,
+     0.96
+    ],
+    [
+     "The Nazis found her *anyway.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "frank",
+   "perf": [
+    [
+     "She went to Berlin.",
+     0.25,
+     0.97
+    ],
+    [
+     "Then Hans Frank,",
+     0.25,
+     0.96
+    ],
+    [
+     "Hitler's lawyer, ruling occupied Poland,",
+     0.25,
+     0.97
+    ],
+    [
+     "had her brought back to Kraków,",
+     0.25,
+     0.97
+    ],
+    [
+     "for his office in the royal *castle.*",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "terror",
+   "perf": [
+    [
+     "Frank ran a reign of terror,",
+     0.25,
+     0.96
+    ],
+    [
+     "and took part in the mass murder of Jews.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "found",
+   "perf": [
+    [
+     "In May 1945,",
+     0.25,
+     0.97
+    ],
+    [
+     "American troops arrested Frank in Bavaria.",
+     0.25,
+     0.97
+    ],
+    [
+     "The Lady was found in his *house.*",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "In 1946,",
+     0.25,
+     0.97
+    ],
+    [
+     "she came home to Kraków.",
+     0.4,
+     0.96
+    ],
+    [
+     "That October,",
+     0.25,
+     0.97
+    ],
+    [
+     "Frank was *hanged* at Nuremberg.",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Czartoryski Museum, in Krakow.",
+     0.0,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "ermine": {
+   "file": "src/ermine.jpg",
+   "commons": "File:Leonardo da Vinci (1452-1519) - Lady with an Ermine – Portrait of Cecilia Gallerani (ca. 1473–1536) - MNK XII-209 - National Museum Kraków.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.6,
+     0.28
+    ],
+    "eyes": [
+     0.6,
+     0.25
+    ],
+    "animal": [
+     0.56,
+     0.6
+    ],
+    "hand": [
+     0.45,
+     0.68
+    ],
+    "bust": [
+     0.55,
+     0.45
+    ]
+   }
+  },
+  "leonardo": {
+   "file": "src/leonardo.jpg",
+   "commons": "File:Leonardo da Vinci - presumed self-portrait - WGA12798.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.6,
+     0.4
+    ]
+   }
+  },
+  "izabela": {
+   "file": "src/izabela.jpg",
+   "commons": "File:Alexander Roslin - Princess Izabela Czartoryska nee von Flemming (1746–1835), Wife of Adam Kazimierz - MNK XII-A-616 (416973).jpg",
+   "long": 3000,
+   "points": {
+    "face": [
+     0.5,
+     0.37
+    ]
+   }
+  },
+  "wawel40": {
+   "file": "src/wawel40.jpg",
+   "commons": "File:Wehrmacht soldiers with Teutonic banners, Wawel Castle 1940.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "flags": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "frank": {
+   "file": "src/frank.jpg",
+   "commons": "File:01943 3 2 0 - 6048 56179 Hans Frank wita się z robotnikami pracującymi przy przebudowie Wawelu.jpg",
+   "long": 3000,
+   "points": {
+    "face": [
+     0.25,
+     0.22
+    ],
+    "center": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  "return46": {
+   "file": "src/return46.jpg",
+   "commons": "File:Return of Lady with an Ermine.jpg",
+   "long": 1273,
+   "points": {
+    "center": [
+     0.5,
+     0.47
+    ],
+    "painting": [
+     0.51,
+     0.32
+    ]
+   }
+  }
+ },
+ "rights": {
+  "creator_died": 1519,
+  "note": "Leonardo d. 1519: public domain. Roslin portrait PD; Wawel 1940 and Frank 1943 photos PD/CC0 (NAC); 1946 return photo PD."
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "ermine",
+   "from": "face@2.4",
+   "to": "face@2.6",
+   "sway": 0.005
+  },
+  {
+   "at": "hook.4-0.05",
+   "img": "ermine",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "painted-0.08",
+   "img": "leonardo",
+   "kind": "image",
+   "from": "face@1.1",
+   "to": "face@1.25",
+   "gray": 0.35
+  },
+  {
+   "at": "painted.5-0.05",
+   "img": "ermine",
+   "from": "face@1.8",
+   "to": "face@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "painted.9-0.05",
+   "img": "ermine",
+   "from": "animal@2.0",
+   "to": "animal@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "prince-0.08",
+   "img": "ermine",
+   "from": "hand@2.0",
+   "to": "hand@2.15",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "hid-0.08",
+   "img": "izabela",
+   "kind": "image",
+   "from": "face@1.2",
+   "to": "face@1.35",
+   "gray": 0.35
+  },
+  {
+   "at": "walled-0.08",
+   "img": "ermine",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "walled.11-0.05",
+   "img": "ermine",
+   "from": "animal@2.4",
+   "to": "animal@2.6",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "frank-0.08",
+   "img": "ermine",
+   "from": "bust@1.4",
+   "to": "bust@1.5",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "frank.4-0.05",
+   "img": "frank",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 1
+  },
+  {
+   "at": "frank.12-0.05",
+   "img": "frank",
+   "kind": "image",
+   "from": "center@1.05",
+   "to": "center@1.15",
+   "gray": 1
+  },
+  {
+   "at": "frank.18-0.05",
+   "img": "wawel40",
+   "kind": "image",
+   "from": "flags@1.0",
+   "to": "flags@1.1",
+   "gray": 1
+  },
+  {
+   "at": "terror-0.08",
+   "img": "ermine",
+   "from": "eyes@2.6",
+   "to": "eyes@2.8",
+   "gray": 0.6,
+   "sway": 0.004
+  },
+  {
+   "at": "found-0.08",
+   "img": "ermine",
+   "from": "bust@1.3",
+   "to": "bust@1.42",
+   "gray": 1,
+   "sway": 0.004
+  },
+  {
+   "at": "found.9-0.05",
+   "img": "ermine",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "return46",
+   "kind": "image",
+   "from": "center@0.55",
+   "to": "center@0.58",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "payoff.7-0.05",
+   "img": "ermine",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "ermine",
+   "from": "face@1.7",
+   "to": "face@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.5-0.1",
+   "text": "LEONARDO · SELF-PORTRAIT (?)"
+  },
+  {
+   "type": "label",
+   "from": "painted.5",
+   "to": "prince-0.1",
+   "text": "MILAN · ABOUT 1490"
+  },
+  {
+   "type": "label",
+   "from": "prince",
+   "to": "hid-0.1",
+   "text": "BOUGHT IN ITALY · 1798"
+  },
+  {
+   "type": "label",
+   "from": "hid",
+   "to": "walled-0.1",
+   "text": "PRINCESS IZABELA CZARTORYSKA"
+  },
+  {
+   "type": "label",
+   "from": "walled",
+   "to": "frank-0.1",
+   "text": "SIENIAWA · 1939"
+  },
+  {
+   "type": "label",
+   "from": "frank",
+   "to": "frank.4-0.1",
+   "text": "BERLIN · 1939–40"
+  },
+  {
+   "type": "label",
+   "from": "frank.4",
+   "to": "frank.18-0.1",
+   "text": "HANS FRANK · WAWEL, 1943"
+  },
+  {
+   "type": "label",
+   "from": "frank.18",
+   "to": "terror-0.1",
+   "text": "WAWEL CASTLE · KRAKÓW, 1940"
+  },
+  {
+   "type": "label",
+   "from": "found",
+   "to": "payoff-0.1",
+   "text": "BAVARIA · MAY 1945"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "payoff.7-0.1",
+   "text": "BACK IN KRAKÓW · APRIL 1946"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "CZARTORYSKI MUSEUM · KRAKÓW"
+  }
+ ],
+ "music": {
+  "transpose": -4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "walled-0.2",
+    "found$+0.2"
+   ],
+   "choir": [
+    "payoff.7-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "walled.13",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff",
+   "fx": "shutter",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.11",
+   "fx": "tick",
+   "gain": 0.5
+  }
+ ],
+ "nocap": [],
+ "facts": [
+  {
+   "claim": "Hans Frank, Hitler's personal lawyer and Governor-General of occupied Poland, had the Lady with an Ermine hung in his office at Wawel Castle, Kraków",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine ; https://www.theartnewspaper.com/2017/02/01/behind-the-scenes-of-polands-euro100m-art-deal ; https://daily.jstor.org/lady-with-an-ermine-meets-nazi-art-thief-hans-frank ; https://en.wikipedia.org/wiki/Hans_Frank"
+  },
+  {
+   "claim": "Painted by Leonardo c. 1489–1491; the sitter is Cecilia Gallerani, about sixteen, mistress of Ludovico Sforza, ruler of Milan",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine"
+  },
+  {
+   "claim": "Prince Adam Jerzy Czartoryski acquired it in Italy in 1798; it reached the family seat at Puławy in 1800",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine ; https://czartoryski.org/files/timeline.html"
+  },
+  {
+   "claim": "In 1830, during the November Uprising, as the Russian army invaded, the 84-year-old Princess Izabela Czartoryska (his mother, born 1746) hid it and sent it to Sieniawa",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine ; https://czartoryski.org/files/timeline.html"
+  },
+  {
+   "claim": "In 1939 it was taken to the family's palace at Sieniawa, where the objects were walled up in August; the Nazis found and seized it and sent it to the Kaiser Friedrich Museum, Berlin",
+   "source": "https://czartoryski.org/files/timeline.html ; https://en.wikipedia.org/wiki/Lady_with_an_Ermine ; https://daily.jstor.org/lady-with-an-ermine-meets-nazi-art-thief-hans-frank"
+  },
+  {
+   "claim": "In 1940 Frank saw it in Berlin and had it returned to Kraków, where it hung in his offices at Wawel Castle",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine"
+  },
+  {
+   "claim": "Frank 'instituted a reign of terror against the civilian population and became directly involved in the mass murder of Jews'",
+   "source": "https://en.wikipedia.org/wiki/Hans_Frank"
+  },
+  {
+   "claim": "Frank was captured by American troops on 4 May 1945 in Bavaria; the painting was found at his country home at Schliersee, Bavaria",
+   "source": "https://en.wikipedia.org/wiki/Hans_Frank ; https://czartoryski.org/files/timeline.html ; https://en.wikipedia.org/wiki/Lady_with_an_Ermine"
+  },
+  {
+   "claim": "Returned to Poland (Kraków) in April 1946; Frank was hanged at Nuremberg on 16 October 1946",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine ; https://daily.jstor.org/lady-with-an-ermine-meets-nazi-art-thief-hans-frank ; https://en.wikipedia.org/wiki/Hans_Frank"
+  },
+  {
+   "claim": "On permanent display at the Czartoryski Museum in Kraków (National Museum in Kraków), reopened 19 December 2019",
+   "source": "https://en.wikipedia.org/wiki/Lady_with_an_Ermine"
+  }
+ ],
+ "caption": "For about a year, Leonardo's Lady with an Ermine hung in the office of Hans Frank, Hitler's lawyer and the Nazi governor of occupied Poland.\n\nLeonardo painted Cecilia Gallerani around 1490, when she was about sixteen and the lover of Milan's ruler, Ludovico Sforza. In 1798 Prince Adam Czartoryski bought the painting in Italy. In 1830, as the Russian army invaded, his 84-year-old mother, Princess Izabela, hid it.\n\nIn 1939 the family walled it up at their palace in Sieniawa. The Nazis found it anyway and sent it to Berlin. Frank had it brought back to Kraków for his office in Wawel Castle, the royal castle from which he ran a reign of terror and took part in the mass murder of Jews.\n\nIn May 1945 American troops arrested Frank in Bavaria, and the painting was found at his country house. It came home to Kraków in April 1946. That October, Frank was hanged at Nuremberg.\n\n🖤 Where would you have hidden her?",
+ "caption_short": "Hitler's lawyer kept this Leonardo on his office wall. Where the Nazis took the Lady with an Ermine, and how she came home. 🖤",
+ "youtube_title": "Where did the Nazis take her? Leonardo's Lady with an Ermine",
+ "hashtags_instagram": [
+  "#leonardodavinci",
+  "#ladywithanermine",
+  "#arthistory",
+  "#krakow",
+  "#ww2history"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#leonardodavinci",
+  "#ladywithanermine",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#leonardodavinci",
+  "#ladywithanermine",
+  "#czartoryskimuseum",
+  "#krakow",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#ww2history",
+  "#nazilootedart"
+ ]
+}
