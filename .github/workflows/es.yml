@@ -34,17 +34,28 @@ jobs:
       - if: steps.pick.outputs.slug != ''
         uses: ./.github/actions/setup
       - name: Render
+        id: render
         if: steps.pick.outputs.slug != ''
-        env: { SLUG: "${{ steps.pick.outputs.slug }}" }
         run: |
-          python3 automation/release.py download-src "$SLUG" || echo "no saved images: fetching them from Wikimedia"
-          ./make_reel.sh "$SLUG" 0 8 2>&1 | grep -v -E "it/s\]|Warning|warn" | tail -30
-          python3 automation/validate.py "$SLUG" --report-only | tail -8 || true
-          python3 automation/release.py upload-src "$SLUG" || true
+          # if a story can't be rendered (missing images...), skip it and render the next one, so the slot isn't lost
+          SLUG="${{ steps.pick.outputs.slug }}"
+          for attempt in 1 2 3; do
+            [ -z "$SLUG" ] && break
+            echo "== $SLUG (attempt $attempt)"
+            python3 automation/release.py download-src "$SLUG" || echo "no saved images: fetching them from Wikimedia"
+            ./make_reel.sh "$SLUG" 0 8 2>&1 | grep -v -E "it/s\]|Warning|warn" | tail -30 || true
+            if [ -f "stories/$SLUG/out/$SLUG.mp4" ] && [ -f "stories/$SLUG/out/caption.txt" ]; then
+              python3 automation/release.py upload-src "$SLUG" || true
+              echo "slug=$SLUG" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            python3 automation/es.py skip "$SLUG" "render failed (images or pipeline): run ${{ github.run_id }}"
+            SLUG=$(ES_PRINT=1 python3 automation/es.py pick 2>&1 >/dev/null | sed -n 's/^SLUG=//p')
+          done
+          echo "nothing could be rendered"; exit 1
       - name: Publish
-        if: steps.pick.outputs.slug != ''
-        run: python3 automation/es.py publish "${{ steps.pick.outputs.slug }}"
-      - if: steps.pick.outputs.slug != ''
-        run: ./automation/commit.sh "es - ${{ steps.pick.outputs.slug }}" stories schedule_es.json
+        if: steps.render.outputs.slug != ''
+        run: python3 automation/es.py publish "${{ steps.render.outputs.slug }}"
+      - if: always() && steps.pick.outputs.slug != ''
+        run: ./automation/commit.sh "es - ${{ steps.render.outputs.slug || steps.pick.outputs.slug }}" stories schedule_es.json
       - if: failure()
         run: python3 automation/bot.py say "⚠️ The Spanish channel job failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

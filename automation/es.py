@@ -23,6 +23,13 @@ def pick(slug=None):
                 print("still waiting for the Spanish channel:", e["slug"]); gh_output(slug=""); return
             slug = e["slug"]; break
     print("next Spanish story:", slug or "none"); gh_output(slug=slug or "")
+    if os.environ.get("ES_PRINT"): print(f"SLUG={slug or ''}", file=sys.stderr)
+
+
+def skip(slug, reason):
+    """a twin that can't be rendered (e.g. an early story whose images were never saved) is skipped for good"""
+    set_state(slug, status="skipped", skipped_reason=reason, updated=now().isoformat(timespec="seconds"))
+    print(f"skipped {slug}: {reason}")
 
 
 def say(msg):
@@ -46,4 +53,5 @@ def publish(slug):
 if __name__ == "__main__":
     if sys.argv[1] == "pick": pick(sys.argv[2] if len(sys.argv) > 2 else None)
     elif sys.argv[1] == "publish": publish(sys.argv[2])
+    elif sys.argv[1] == "skip": skip(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "render failed")
     else: sys.exit(__doc__)
