@@ -26,11 +26,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: bot      # stays on the line ~55 min; GitHub queues the next run, so someone is (almost) always listening
+        continue-on-error: true   # even if the listener breaks, the due reel below still gets published
         run: python3 automation/bot.py listen ${{ inputs.now && '0' || '55' }}
       - id: pick
+        if: always()
         env: { NOW: "${{ inputs.now || steps.bot.outputs.post_now }}" }
         run: python3 automation/publish.py decide $([ "$NOW" = "true" ] || [ "$NOW" = "1" ] && echo --now)
-      - run: ./automation/commit.sh "inbox $(date -u +%FT%H:%M)"
+      - if: always()
+        run: ./automation/commit.sh "inbox $(date -u +%FT%H:%M)"
       - name: Start revisions you asked for
         if: steps.bot.outputs.revise != '' && steps.bot.outputs.revise != '[]'
         env: { REVISE: "${{ steps.bot.outputs.revise }}" }

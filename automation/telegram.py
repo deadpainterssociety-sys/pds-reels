@@ -27,11 +27,19 @@ def call(method, fields=None, files=None, timeout=120):
         req = urllib.request.Request(_url(method), data=body, headers={"Content-Type": f"multipart/form-data; boundary={b}"})
     else:
         req = urllib.request.Request(_url(method), data=urllib.parse.urlencode(fields).encode())
-    try:
-        r = json.load(urllib.request.urlopen(req, timeout=timeout))
-    except urllib.error.HTTPError as e:
-        try: r = json.load(e)
-        except Exception: raise TelegramError(f"{method}: HTTP {e.code}")
+    # Telegram's connection drops now and then ("connection reset by peer", timeouts, 5xx). Retry those a few times;
+    # one dropped connection used to crash the listener and with it the publish step (4 missed slots, Nov 2026).
+    import socket, time
+    for attempt in range(5):
+        try:
+            r = json.load(urllib.request.urlopen(req, timeout=timeout)); break
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and attempt < 4: time.sleep(3 * (attempt + 1)); continue
+            try: r = json.load(e); break
+            except Exception: raise TelegramError(f"{method}: HTTP {e.code}")
+        except (urllib.error.URLError, ConnectionError, socket.timeout, TimeoutError, OSError) as e:
+            if attempt < 4: time.sleep(3 * (attempt + 1)); continue
+            raise TelegramError(f"{method}: network error after 5 tries: {e}")
     if not r.get("ok"): raise TelegramError(f"{method}: {r.get('description', r)}")
     return r["result"]
 

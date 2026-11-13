@@ -348,9 +348,14 @@ def listen(minutes):
         if publish.due() or post_now: break
         left = end - time.time()
         if left <= 0: break
-        if not T.updates(bstate().get("offset", 0), wait=min(25, max(1, left))): continue
+        try:   # a network hiccup must never end the listener (the publish step depends on it finishing)
+            if not T.updates(bstate().get("offset", 0), wait=min(25, max(1, left))): continue
+        except Exception as e:
+            print("listen: Telegram unreachable for now:", str(e)[:200]); time.sleep(10); continue
         sync(); last_sync = time.time()
-        r = poll(emit=False)
+        try: r = poll(emit=False)
+        except Exception as e:
+            print("listen: reading the answers failed, trying again:", str(e)[:200]); time.sleep(10); continue
         post_now = post_now or r.get("post_now", False)
         for x in r.get("revise", []):
             subprocess.run(["gh", "workflow", "run", "revise.yml", "-f", f"slug={x['slug']}", "-f", f"feedback={x['feedback']}"], check=False)
