@@ -1,0 +1,783 @@
+{
+ "slug": "waterhouse-sirens",
+ "hook_type": "hidden",
+ "teaser": "The Odyssey's sirens, as Homer's Greeks saw them",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "John William Waterhouse",
+  "born": 1849,
+  "died": 1917,
+  "painting": "Ulysses and the Sirens",
+  "year": "1891",
+  "museum": "National Gallery of Victoria",
+  "city": "Melbourne",
+  "image": "sirens",
+  "image_credit": "National Gallery of Victoria, Melbourne (purchased 1891), via Wikimedia Commons / Google Art Project (public domain)"
+ },
+ "cover": {
+  "question": "Who did Waterhouse <i>copy?</i>",
+  "name": "JOHN WILLIAM WATERHOUSE",
+  "work": "Ulysses and the Sirens, 1891",
+  "focus": [
+   0.145,
+   0.45
+  ],
+  "span": 0.55,
+  "answered_by": "An unknown Greek vase painter of c. 480–470 BC, called the Siren Painter, whose vase (British Museum E440) shows the sirens as birds with women's heads"
+ },
+ "rights": {
+  "creator_died": 1917,
+  "note": "Waterhouse d. 1917: public domain. Greek vase c. 480 BC, photo PD (Jastrow); Mendelssohn photo c. 1886 PD; Harley MS 4751 bestiary CC0 (British Library)."
+ },
+ "say": {
+  "1891": "eighteen ninety-one",
+  "2,500": "twenty-five hundred"
+ },
+ "ipa": {},
+ "chirp_say": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "These sirens aren't mermaids.",
+     0.35,
+     0.95
+    ],
+    [
+     "They are *birds.*",
+     0.8,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "intro",
+   "perf": [
+    [
+     "In 1891,",
+     0.3,
+     0.97
+    ],
+    [
+     "Waterhouse painted Homer's *Odyssey*,",
+     0.3,
+     0.96
+    ],
+    [
+     "the story in Christopher Nolan's new film.",
+     0.7,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "song",
+   "perf": [
+    [
+     "The sirens sing so sweetly",
+     0.25,
+     0.96
+    ],
+    [
+     "that any sailor who hears them",
+     0.25,
+     0.97
+    ],
+    [
+     "never gets home.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "mast",
+   "perf": [
+    [
+     "Ulysses has his crew plug their ears with wax,",
+     0.3,
+     0.97
+    ],
+    [
+     "and tie him to the mast,",
+     0.3,
+     0.97
+    ],
+    [
+     "so he alone can *listen.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "shock",
+   "perf": [
+    [
+     "London expected lovely, mermaid-like women.",
+     0.35,
+     0.96
+    ],
+    [
+     "Instead, Waterhouse gave them *claws.*",
+     0.5,
+     0.92
+    ],
+    [
+     "The Times called parts of it grotesque.",
+     0.8,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "homer",
+   "perf": [
+    [
+     "But Homer never describes the sirens.",
+     0.7,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "greeks",
+   "perf": [
+    [
+     "The ancient Greeks painted them as birds",
+     0.25,
+     0.97
+    ],
+    [
+     "with women's *heads.*",
+     0.7,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "vase",
+   "perf": [
+    [
+     "Waterhouse took his from a Greek vase",
+     0.25,
+     0.97
+    ],
+    [
+     "in the British Museum,",
+     0.25,
+     0.97
+    ],
+    [
+     "painted about 2,500 years ago.",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "tails",
+   "perf": [
+    [
+     "The mermaid version came later,",
+     0.25,
+     0.97
+    ],
+    [
+     "in medieval books.",
+     0.7,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "The vase's painter left no name.",
+     0.3,
+     0.95
+    ],
+    [
+     "We call him the *Siren Painter.*",
+     0.4,
+     0.88
+    ],
+    [
+     "His monsters are the sirens the Greeks *knew.*",
+     0.8,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery of Victoria, in Melbourne.",
+     0.0,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "sirens": {
+   "file": "src/sirens.jpg",
+   "commons": "File:John William Waterhouse - Ulysses and the Sirens - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "front": [
+     0.145,
+     0.43
+    ],
+    "s2": [
+     0.35,
+     0.31
+    ],
+    "s3": [
+     0.455,
+     0.34
+    ],
+    "mast": [
+     0.645,
+     0.19
+    ],
+    "ulysses": [
+     0.615,
+     0.35
+    ],
+    "hands": [
+     0.66,
+     0.49
+    ],
+    "right": [
+     0.845,
+     0.33
+    ],
+    "claws": [
+     0.87,
+     0.46
+    ],
+    "ears": [
+     0.215,
+     0.61
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "fronthi": [
+     0.15,
+     0.47
+    ]
+   }
+  },
+  "vase": {
+   "file": "src/vase.jpg",
+   "commons": "File:Odysseus Sirens BM E440 n2.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "odysseus": [
+     0.465,
+     0.5
+    ],
+    "diver": [
+     0.64,
+     0.45
+    ],
+    "diverface": [
+     0.645,
+     0.53
+    ],
+    "left": [
+     0.24,
+     0.14
+    ],
+    "right": [
+     0.84,
+     0.14
+    ],
+    "rightlo": [
+     0.84,
+     0.3
+    ]
+   },
+   "long": 2500,
+   "credit": "Siren Painter, stamnos c. 480–470 BC, British Museum E440 (photo public domain), via Wikimedia Commons"
+  },
+  "waterhouse": {
+   "file": "src/waterhouse.jpg",
+   "commons": "File:John William Waterhouse 02.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "harley": {
+   "file": "src/harley.jpg",
+   "commons": "File:Siren enchants sailors - Bestiary (1230-1240), f.47v - BL Harley MS 4751.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "tail": [
+     0.55,
+     0.33
+    ],
+    "face": [
+     0.45,
+     0.1
+    ]
+   },
+   "credit": "Bestiary, England c. 1230–40, British Library Harley MS 4751 (CC0), via Wikimedia Commons"
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "sirens",
+   "from": "fronthi@2.6",
+   "to": "fronthi@2.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "sirens",
+   "from": "s3@1.0",
+   "to": "s3@1.06",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "intro-0.08",
+   "img": "sirens",
+   "kind": "image",
+   "from": "center@0.28",
+   "to": "center@0.27",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "intro.2-0.05",
+   "img": "waterhouse",
+   "kind": "image",
+   "from": "face@0.75",
+   "to": "face@0.8",
+   "frame": true
+  },
+  {
+   "at": "intro.6-0.05",
+   "img": "sirens",
+   "from": "ulysses@1.6",
+   "to": "ulysses@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "song-0.08",
+   "img": "sirens",
+   "from": "s3@1.8",
+   "to": "s3@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "song.11-0.05",
+   "img": "sirens",
+   "from": "s2@1.7",
+   "to": "s2@1.85",
+   "sway": 0.006
+  },
+  {
+   "at": "mast-0.08",
+   "img": "sirens",
+   "from": "ears@1.8",
+   "to": "ears@1.95",
+   "sway": 0.005
+  },
+  {
+   "at": "mast.9-0.05",
+   "img": "sirens",
+   "from": "hands@1.8",
+   "to": "hands@1.95",
+   "sway": 0.005
+  },
+  {
+   "at": "mast.15-0.05",
+   "img": "sirens",
+   "from": "ulysses@2.2",
+   "to": "ulysses@2.35",
+   "sway": 0.005
+  },
+  {
+   "at": "shock-0.08",
+   "img": "sirens",
+   "from": "mast@1.8",
+   "to": "mast@1.9",
+   "sway": 0.006
+  },
+  {
+   "at": "shock.5-0.05",
+   "img": "sirens",
+   "from": "claws@2.2",
+   "to": "claws@2.35",
+   "sway": 0.005
+  },
+  {
+   "at": "shock.10-0.05",
+   "img": "sirens",
+   "from": "front@1.6",
+   "to": "front@1.7",
+   "gray": 0.6,
+   "sway": 0.005
+  },
+  {
+   "at": "homer-0.08",
+   "img": "sirens",
+   "kind": "image",
+   "from": "right@1.4",
+   "to": "right@1.5",
+   "gray": 1
+  },
+  {
+   "at": "greeks-0.08",
+   "img": "vase",
+   "kind": "image",
+   "from": "center@0.4",
+   "to": "center@0.42",
+   "frame": true,
+   "gray": 0.3
+  },
+  {
+   "at": "greeks.6-0.05",
+   "img": "vase",
+   "kind": "image",
+   "from": "left@1.3",
+   "to": "left@1.45",
+   "gray": 0.3
+  },
+  {
+   "at": "vase-0.08",
+   "img": "vase",
+   "kind": "image",
+   "from": "diver@1.1",
+   "to": "diver@1.2",
+   "gray": 0.3
+  },
+  {
+   "at": "vase.7-0.05",
+   "img": "vase",
+   "kind": "image",
+   "from": "center@0.9",
+   "to": "center@0.95",
+   "gray": 0.3
+  },
+  {
+   "at": "vase.11-0.05",
+   "img": "vase",
+   "kind": "image",
+   "from": "odysseus@1.4",
+   "to": "odysseus@1.55",
+   "gray": 0.3
+  },
+  {
+   "at": "tails-0.08",
+   "img": "harley",
+   "kind": "image",
+   "from": "center@0.72",
+   "to": "center@0.75",
+   "frame": true
+  },
+  {
+   "at": "tails.5-0.05",
+   "img": "harley",
+   "kind": "image",
+   "from": "tail@1.0",
+   "to": "tail@1.1"
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "vase",
+   "kind": "image",
+   "from": "diverface@1.5",
+   "to": "diverface@1.65",
+   "gray": 0.3
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "vase",
+   "kind": "image",
+   "from": "rightlo@1.2",
+   "to": "rightlo@1.3",
+   "gray": 0.3
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "sirens",
+   "from": "s2@1.0",
+   "to": "s2@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "sirens",
+   "from": "fronthi@1.7",
+   "to": "fronthi@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "intro",
+   "to": "intro.2-0.1",
+   "text": "ULYSSES AND THE SIRENS · 1891"
+  },
+  {
+   "type": "label",
+   "from": "intro.2",
+   "to": "intro.6-0.1",
+   "text": "J. W. WATERHOUSE · c. 1886"
+  },
+  {
+   "type": "label",
+   "from": "intro.6",
+   "to": "song-0.1",
+   "text": "HOMER · ODYSSEY, BOOK 12"
+  },
+  {
+   "type": "ring",
+   "at": "mast.4",
+   "to": "mast.9-0.1",
+   "img": "sirens",
+   "point": "ears",
+   "rx": 120,
+   "ry": 120,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "shock",
+   "to": "shock.10-0.1",
+   "text": "ROYAL ACADEMY · LONDON · 1891"
+  },
+  {
+   "type": "ring",
+   "at": "shock.9",
+   "to": "shock.10-0.1",
+   "img": "sirens",
+   "point": "claws",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "shock.10",
+   "to": "homer-0.1",
+   "text": "THE TIMES · 1891"
+  },
+  {
+   "type": "label",
+   "from": "greeks",
+   "to": "vase.7-0.1",
+   "text": "ATHENS · c. 480 BC"
+  },
+  {
+   "type": "label",
+   "from": "vase.7",
+   "to": "tails-0.1",
+   "text": "BRITISH MUSEUM · E440"
+  },
+  {
+   "type": "label",
+   "from": "tails",
+   "to": "payoff-0.1",
+   "text": "ENGLISH BESTIARY · c. 1235"
+  },
+  {
+   "type": "title",
+   "from": "payoff.6",
+   "to": "payoff.12-0.1",
+   "kicker": "NAME UNKNOWN · c. 480 BC",
+   "text": "The <i>Siren Painter</i>"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL GALLERY OF VICTORIA · MELBOURNE"
+  }
+ ],
+ "nocap": [
+  [
+   "payoff.6",
+   "payoff.12-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "homer-0.2",
+    "tails$+0.2"
+   ],
+   "choir": [
+    "payoff.12-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "shock.9",
+   "fx": "impact",
+   "gain": 0.35
+  },
+  {
+   "at": "vase.13",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "payoff.10",
+   "fx": "chime",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Waterhouse painted Ulysses and the Sirens in 1891 (oil on canvas, 100.6 × 202.0 cm); shown at the Royal Academy, London, in 1891 and bought for the National Gallery of Victoria that year (by Hubert von Herkomer, June 1891, £1200)",
+   "source": "https://www.ngv.vic.gov.au/explore/collection/work/4457/ ; https://www.ngv.vic.gov.au/essay/j-w-waterhouses-ulysses-and-the-sirens-breaking-tradition-and-revealing-fears-2/ ; https://en.wikipedia.org/wiki/Ulysses_and_the_Sirens_(Waterhouse)"
+  },
+  {
+   "claim": "Homer's Odyssey is the story of Christopher Nolan's film The Odyssey (cinemas 17 July 2026; digital and disc 17 November 2026)",
+   "source": "https://cosmicbook.news/the-odyssey-digital-4k-release-date-november-17 ; https://gizmodo.com/the-odyssey-comes-home-in-november-2000801811"
+  },
+  {
+   "claim": "Odyssey Book 12: whoever hears the Sirens' singing never gets home to wife and children; Ulysses has his men's ears stopped with wax and has himself bound to the mast so that he alone can listen",
+   "source": "http://classics.mit.edu/Homer/odyssey.12.xii.html ; https://www.ngv.vic.gov.au/explore/collection/work/4457/"
+  },
+  {
+   "claim": "Many in the original audience expected mermaid-like nymphs and were surprised by bird-bodied sirens with women's heads; Spielmann (Magazine of Art) found it hard to 'give up our idea of womanly sirens'",
+   "source": "https://en.wikipedia.org/wiki/Ulysses_and_the_Sirens_(Waterhouse) ; https://www.ngv.vic.gov.au/essay/j-w-waterhouses-ulysses-and-the-sirens-breaking-tradition-and-revealing-fears-2/"
+  },
+  {
+   "claim": "Waterhouse's sirens have bird bodies with talons (visible in the painting); a Melbourne critic wrote that their 'claws are about to unclose'",
+   "source": "https://www.ngv.vic.gov.au/essay/j-w-waterhouses-ulysses-and-the-sirens-breaking-tradition-and-revealing-fears-2/ ; https://www.ngv.vic.gov.au/explore/collection/work/4457/"
+  },
+  {
+   "claim": "The Times called some of the depictions 'grotesque' and 'even ridiculous'",
+   "source": "https://www.ngv.vic.gov.au/essay/j-w-waterhouses-ulysses-and-the-sirens-breaking-tradition-and-revealing-fears-2/"
+  },
+  {
+   "claim": "Homer gives no physical description of the Sirens: their appearance was left to the reader's imagination",
+   "source": "https://en.wikipedia.org/wiki/Siren_(mythology) ; http://classics.mit.edu/Homer/odyssey.12.xii.html"
+  },
+  {
+   "claim": "From the 7th century BC Greek art regularly showed sirens as human-headed birds (large birds with women's heads)",
+   "source": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+  },
+  {
+   "claim": "Waterhouse borrowed the motif from an ancient Greek vase in the British Museum: a fifth-century-BC stamnos from Vulci by the Siren Painter (BM E440 / 1843,1103.31), c. 480–470 BC (≈2,500 years ago)",
+   "source": "https://www.ngv.vic.gov.au/explore/collection/work/4457/ ; https://www.ngv.vic.gov.au/essay/j-w-waterhouses-ulysses-and-the-sirens-breaking-tradition-and-revealing-fears-2/ ; https://en.wikipedia.org/wiki/Siren_Painter ; https://www.theoi.com/Gallery/O21.3.html"
+  },
+  {
+   "claim": "The fish-tailed 'mermaid' siren appears in the Middle Ages (Liber Monstrorum, early 8th c.; bestiaries; e.g. British Library Harley MS 4751, c. 1230–40)",
+   "source": "https://en.wikipedia.org/wiki/Siren_(mythology) ; https://commons.wikimedia.org/wiki/File:Siren_enchants_sailors_-_Bestiary_(1230-1240),_f.47v_-_BL_Harley_MS_4751.jpg"
+  },
+  {
+   "claim": "The vase painter's name is unknown; scholars call him the Siren Painter after this vase, his name vase",
+   "source": "https://en.wikipedia.org/wiki/Siren_Painter ; https://www.theoi.com/Gallery/O21.3.html"
+  },
+  {
+   "claim": "It hangs in the National Gallery of Victoria (NGV International, 19th Century European Paintings Gallery), Melbourne",
+   "source": "https://www.ngv.vic.gov.au/explore/collection/work/4457/"
+  }
+ ],
+ "caption": "These sirens aren't mermaids. They're birds with women's heads, and in 1891 that shocked London.\n\nIn Homer's Odyssey (the story in Christopher Nolan's new film), the sirens sing so sweetly that no sailor who hears them gets home. Ulysses has his crew plug their ears with wax and tie him to the mast so he alone can listen.\n\nWhen John William Waterhouse showed this at the Royal Academy, viewers expected lovely, mermaid-like women. He gave them feathers and talons. The Times called some of it \"grotesque\" and \"even ridiculous\".\n\nBut Homer never describes the sirens. Greek artists painted them as birds with women's heads, and Waterhouse borrowed his from a Greek vase in the British Museum, painted around 480–470 BC. One siren on it dives into the sea. The fish tails only came in the Middle Ages.\n\nThe vase painter's name is lost. Scholars call him the Siren Painter.\n\nP.S. Melbourne's gallery bought the painting in 1891, the year it was shown, for £1,200.\n\n🖤 Did you picture the sirens as mermaids?",
+ "caption_short": "These sirens aren't mermaids. Waterhouse copied them from a Greek vase painted 2,500 years ago. 🖤",
+ "youtube_title": "Who did Waterhouse copy? Ulysses and the Sirens, The Odyssey",
+ "hashtags_instagram": [
+  "#waterhouse",
+  "#ulyssesandthesirens",
+  "#arthistory",
+  "#melbourne",
+  "#mythology"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#waterhouse",
+  "#theodyssey",
+  "#mythology"
+ ],
+ "hashtags": [
+  "#waterhouse",
+  "#ulyssesandthesirens",
+  "#theodyssey",
+  "#ngv",
+  "#melbourne",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#greekmythology",
+  "#sirens"
+ ]
+}

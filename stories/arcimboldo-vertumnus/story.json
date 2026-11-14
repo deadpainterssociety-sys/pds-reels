@@ -1,0 +1,781 @@
+{
+ "slug": "arcimboldo-vertumnus",
+ "hook_type": "sacred-strange",
+ "teaser": "The emperor painted as a pile of fruit",
+ "experiment": {
+  "id": "E1",
+  "arm": "B"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Giuseppe Arcimboldo",
+  "born": 1526,
+  "died": 1593,
+  "painting": "Vertumnus (Emperor Rudolf II)",
+  "year": "c. 1591",
+  "museum": "Skokloster Castle",
+  "city": "Skokloster, Sweden",
+  "image": "vertumnus",
+  "image_credit": "Skokloster Castle, Sweden (photo: Skokloster Castle / SHM, public domain), via Wikimedia Commons"
+ },
+ "cover": {
+  "question": "Why is this emperor <i>fruit?</i>",
+  "name": "GIUSEPPE ARCIMBOLDO",
+  "work": "Vertumnus, c. 1591",
+  "focus": [
+   0.47,
+   0.31
+  ],
+  "span": 0.62,
+  "answered_by": "He is Vertumnus, Roman god of the seasons: fruit of every season ripe at once; the poem sent with it said he ruled the seasons as he ruled the world"
+ },
+ "rights": {
+  "creator_died": 1593,
+  "note": "Arcimboldo d. 1593: public domain. Hans von Aachen workshop portrait c. 1600 PD; Arcimboldo self-portrait drawing PD; Hollar's Prague view (1649) PD; Auguste Mayer's Skokloster print (19th c.) PD."
+ },
+ "say": {
+  "1591": "fifteen ninety-one",
+  "1648": "sixteen forty-eight",
+  "351": "three hundred and fifty-one",
+  "Rudolf II": "Rudolf the Second"
+ },
+ "ipa": {
+  "Arcimboldo": "ˌɑːɹtʃɪmbˈoʊldoʊ",
+  "Giuseppe": "dʒuːzˈɛpeɪ",
+  "Vertumnus": "vɜːɹtˈʌmnəs",
+  "Skokloster": "skˈuːklɔstəɹ"
+ },
+ "chirp_say": {
+  "Arcimboldo": "Archim-boldo",
+  "Giuseppe": "Joo-zeppay",
+  "Skokloster": "Skoo-kloster"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This is a Holy Roman Emperor.",
+     0.35,
+     0.95
+    ],
+    [
+     "Made of *fruit.*",
+     0.7,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "rudolf",
+   "perf": [
+    [
+     "Rudolf II ruled from Prague,",
+     0.3,
+     0.97
+    ],
+    [
+     "and collected art and wonders.",
+     0.7,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "gift",
+   "perf": [
+    [
+     "Around 1591,",
+     0.3,
+     0.97
+    ],
+    [
+     "his old court painter, Giuseppe Arcimboldo,",
+     0.25,
+     0.96
+    ],
+    [
+     "now back in Milan,",
+     0.25,
+     0.97
+    ],
+    [
+     "sent him this *portrait.*",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "face",
+   "perf": [
+    [
+     "A pear for a nose.",
+     0.3,
+     0.96
+    ],
+    [
+     "Apples for cheeks.",
+     0.3,
+     0.96
+    ],
+    [
+     "Cherries for *lips.*",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "god",
+   "perf": [
+    [
+     "He's dressed as Vertumnus,",
+     0.3,
+     0.96
+    ],
+    [
+     "the Roman god of the *seasons.*",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "reward",
+   "perf": [
+    [
+     "The emperor wasn't offended.",
+     0.3,
+     0.96
+    ],
+    [
+     "He's said to have rewarded Arcimboldo",
+     0.25,
+     0.97
+    ],
+    [
+     "with a noble *title.*",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "loot",
+   "perf": [
+    [
+     "In 1648,",
+     0.3,
+     0.97
+    ],
+    [
+     "Swedish troops stormed Prague Castle",
+     0.3,
+     0.97
+    ],
+    [
+     "and carted its treasures to Stockholm.",
+     0.4,
+     0.97
+    ],
+    [
+     "Item 351 on the list:",
+     0.3,
+     0.95
+    ],
+    [
+     "*a face of fruit.*",
+     0.7,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "forgot",
+   "perf": [
+    [
+     "For centuries it hung in Swedish castles.",
+     0.3,
+     0.97
+    ],
+    [
+     "One art historian called it *inferior.*",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "But look again.",
+     0.3,
+     0.94
+    ],
+    [
+     "Every season's harvest, ripe at once.",
+     0.4,
+     0.95
+    ],
+    [
+     "The poem sent with it said",
+     0.25,
+     0.97
+    ],
+    [
+     "he ruled the seasons as he ruled the *world.*",
+     0.7,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in Skokloster Castle, in Sweden.",
+     0.0,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "vertumnus": {
+   "file": "src/vertumnus.jpg",
+   "commons": "File:Vertumnus årstidernas gud målad av Giuseppe Arcimboldo 1591 - Skoklosters slott - 91503.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "nose": [
+     0.455,
+     0.34
+    ],
+    "eyes": [
+     0.47,
+     0.27
+    ],
+    "cheek": [
+     0.37,
+     0.33
+    ],
+    "lips": [
+     0.455,
+     0.42
+    ],
+    "beard": [
+     0.46,
+     0.47
+    ],
+    "brows": [
+     0.52,
+     0.25
+    ],
+    "hair": [
+     0.45,
+     0.08
+    ],
+    "grapes": [
+     0.67,
+     0.13
+    ],
+    "corn": [
+     0.72,
+     0.33
+    ],
+    "face": [
+     0.47,
+     0.33
+    ],
+    "chest": [
+     0.33,
+     0.68
+    ],
+    "rose": [
+     0.38,
+     0.83
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "rudolf": {
+   "file": "src/rudolf.jpg",
+   "commons": "File:Hans von Aachen, his studio - Rudolf II of Habsburg (1552-1612) - Google Art Project.jpg",
+   "points": {
+    "face": [
+     0.55,
+     0.43
+    ]
+   }
+  },
+  "arcimboldo": {
+   "file": "src/arcimboldo.jpg",
+   "commons": "File:Giuseppe Arcimboldo - Self Portrait - Google Art Project.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.38
+    ]
+   }
+  },
+  "prague": {
+   "file": "src/prague.jpg",
+   "commons": "File:Wenceslaus Hollar - Praga (cropped).jpg",
+   "points": {
+    "castle": [
+     0.58,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "skokloster": {
+   "file": "src/skokloster.jpg",
+   "commons": "File:Skokloster - Auguste Mayer.jpg",
+   "points": {
+    "castle": [
+     0.42,
+     0.52
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "vertumnus",
+   "from": "eyes@2.4",
+   "to": "eyes@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "vertumnus",
+   "from": "face@1.0",
+   "to": "face@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "rudolf-0.08",
+   "img": "rudolf",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.45",
+   "gray": 0.4
+  },
+  {
+   "at": "rudolf.5-0.05",
+   "img": "prague",
+   "kind": "image",
+   "from": "castle@1.1",
+   "to": "castle@1.2",
+   "gray": 1
+  },
+  {
+   "at": "gift-0.08",
+   "img": "arcimboldo",
+   "kind": "image",
+   "from": "face@1.2",
+   "to": "face@1.35",
+   "gray": 0.3
+  },
+  {
+   "at": "gift.12-0.05",
+   "img": "vertumnus",
+   "from": "center@0.95",
+   "to": "center@1.0",
+   "sway": 0.008
+  },
+  {
+   "at": "face-0.08",
+   "img": "vertumnus",
+   "from": "nose@2.4",
+   "to": "nose@2.6",
+   "sway": 0.005
+  },
+  {
+   "at": "face.5-0.05",
+   "img": "vertumnus",
+   "from": "cheek@2.4",
+   "to": "cheek@2.6",
+   "sway": 0.005
+  },
+  {
+   "at": "face.8-0.05",
+   "img": "vertumnus",
+   "from": "lips@2.6",
+   "to": "lips@2.8",
+   "sway": 0.005
+  },
+  {
+   "at": "god-0.08",
+   "img": "vertumnus",
+   "from": "hair@1.8",
+   "to": "hair@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "god.4-0.05",
+   "img": "vertumnus",
+   "from": "corn@2.0",
+   "to": "corn@2.2",
+   "sway": 0.005
+  },
+  {
+   "at": "reward-0.08",
+   "img": "rudolf",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.65",
+   "gray": 0.4
+  },
+  {
+   "at": "reward.9-0.05",
+   "img": "arcimboldo",
+   "kind": "image",
+   "from": "face@1.4",
+   "to": "face@1.55",
+   "gray": 0.3
+  },
+  {
+   "at": "loot-0.08",
+   "img": "prague",
+   "kind": "image",
+   "from": "center@0.95",
+   "to": "center@1.05",
+   "gray": 1
+  },
+  {
+   "at": "loot.13-0.05",
+   "img": "vertumnus",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "forgot-0.08",
+   "img": "skokloster",
+   "kind": "image",
+   "from": "castle@0.5",
+   "to": "castle@0.53",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "forgot.7-0.05",
+   "img": "vertumnus",
+   "from": "beard@1.8",
+   "to": "beard@1.95",
+   "kind": "image",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "payoff.1-0.05",
+   "img": "vertumnus",
+   "from": "face@1.0",
+   "to": "face@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.3-0.05",
+   "img": "vertumnus",
+   "from": "chest@1.6",
+   "to": "chest@1.75",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff.5-0.05",
+   "img": "vertumnus",
+   "from": "grapes@1.8",
+   "to": "grapes@1.95",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff.9-0.05",
+   "img": "vertumnus",
+   "from": "rose@1.7",
+   "to": "rose@1.85",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff.15-0.05",
+   "img": "vertumnus",
+   "from": "face@1.2",
+   "to": "face@1.3",
+   "sway": 0.008
+  },
+  {
+   "at": "ending-0.08",
+   "img": "vertumnus",
+   "from": "eyes@1.7",
+   "to": "eyes@1.85",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "rudolf",
+   "to": "rudolf.5-0.1",
+   "text": "RUDOLF II · c. 1600"
+  },
+  {
+   "type": "label",
+   "from": "rudolf.5",
+   "to": "gift-0.1",
+   "text": "PRAGUE CASTLE · HOLLAR, 1649"
+  },
+  {
+   "type": "title",
+   "from": "gift.6",
+   "to": "gift.12-0.1",
+   "kicker": "SELF-PORTRAIT",
+   "text": "Giuseppe <i>Arcimboldo</i>"
+  },
+  {
+   "type": "label",
+   "from": "gift.12",
+   "to": "face-0.1",
+   "text": "VERTUMNUS · c. 1591"
+  },
+  {
+   "type": "title",
+   "from": "god.3",
+   "to": "god.4-0.1",
+   "kicker": "ROMAN GOD OF THE SEASONS",
+   "text": "<i>Vertumnus</i>"
+  },
+  {
+   "type": "ring",
+   "at": "face.1",
+   "to": "face.5-0.1",
+   "img": "vertumnus",
+   "point": "nose",
+   "rx": 170,
+   "ry": 230,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "god.6",
+   "to": "reward-0.1",
+   "img": "vertumnus",
+   "point": "corn",
+   "rx": 150,
+   "ry": 260,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "reward.9",
+   "to": "loot-0.1",
+   "text": "COUNT PALATINE · 1592"
+  },
+  {
+   "type": "label",
+   "from": "loot",
+   "to": "loot.13-0.1",
+   "text": "PRAGUE · 1648"
+  },
+  {
+   "type": "stamp",
+   "from": "loot.14",
+   "to": "loot$+0.3",
+   "text": "ITEM 351"
+  },
+  {
+   "type": "label",
+   "from": "forgot",
+   "to": "forgot.7-0.1",
+   "text": "SKOKLOSTER CASTLE · SWEDEN"
+  },
+  {
+   "type": "label",
+   "from": "forgot.7",
+   "to": "payoff.1-0.1",
+   "text": "OLOF GRANBERG · LATE 1800s"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "SKOKLOSTER CASTLE · SWEDEN"
+  }
+ ],
+ "nocap": [
+  [
+   "gift.6",
+   "gift.12-0.1"
+  ],
+  [
+   "god.3",
+   "god.4-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "drop": [
+    "face-0.05",
+    "face$+0.2"
+   ],
+   "cold": [
+    "loot-0.2",
+    "forgot$+0.2"
+   ],
+   "choir": [
+    "payoff.1-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.8-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "face.1",
+   "fx": "pop",
+   "gain": 0.45
+  },
+  {
+   "at": "face.5",
+   "fx": "pop",
+   "gain": 0.45
+  },
+  {
+   "at": "face.8",
+   "fx": "pop",
+   "gain": 0.45
+  },
+  {
+   "at": "loot.14",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The painting shows Holy Roman Emperor Rudolf II, made of fruit, vegetables and flowers",
+   "source": "https://en.wikipedia.org/wiki/Vertumnus_(painting) ; https://www.smithsonianmag.com/arts-culture/arcimboldos-feast-for-the-eyes-74732989/"
+  },
+  {
+   "claim": "Rudolf II held court in Prague; his Kunstkammer collection was famous (later looted)",
+   "source": "https://www.smithsonianmag.com/arts-culture/arcimboldos-feast-for-the-eyes-74732989/ ; https://www.habsburger.net/en/chapter/depicting-imperial-might-pictures-fruit"
+  },
+  {
+   "claim": "Arcimboldo, Rudolf's former court painter, retired to Milan in 1587 and painted Vertumnus (c. 1590–91) as a gift to his former employer; presented in 1591",
+   "source": "https://skoklostersslott.se/en/the-history-of-skokloster-castle/skokloster-castles-collections/vertumnus-en/ ; https://en.wikipedia.org/wiki/Giuseppe_Arcimboldo ; https://en.wikipedia.org/wiki/Vertumnus_(painting)"
+  },
+  {
+   "claim": "The face: a pear nose, apple cheeks, cherry lips (plants listed include pears, apples, cherries, grapes, wheat, corn, gourds, onions)",
+   "source": "https://en.wikipedia.org/wiki/Vertumnus_(painting) (and the painting itself)"
+  },
+  {
+   "claim": "He is shown as Vertumnus, the Roman god of the seasons (and of gardens and plant growth)",
+   "source": "https://en.wikipedia.org/wiki/Vertumnus_(painting) ; https://www.smithsonianmag.com/arts-culture/arcimboldos-feast-for-the-eyes-74732989/ ; https://www.habsburger.net/en/chapter/depicting-imperial-might-pictures-fruit"
+  },
+  {
+   "claim": "Rudolf is said to have rewarded Arcimboldo for the painting with the title of count palatine (1592) — hedged: no contemporary account of his reaction",
+   "source": "https://www.habsburger.net/en/chapter/depicting-imperial-might-pictures-fruit ; https://www.theartstory.org/artist/arcimboldo-giuseppe/life-and-legacy/"
+  },
+  {
+   "claim": "In 1648 Swedish troops under Königsmarck took Prague (the castle and Lesser Town) and its art; the spoils went to Stockholm by cart caravan; item 351 on the transport list was 'a face of fruit'",
+   "source": "https://skoklostersslott.se/en/the-history-of-skokloster-castle/skokloster-castles-collections/vertumnus-en/ ; https://www.smithsonianmag.com/arts-culture/arcimboldos-feast-for-the-eyes-74732989/"
+  },
+  {
+   "claim": "It passed through Swedish collections (Per Brahe's Bogesund Castle) and was moved to Skokloster between 1828 and 1845; late-19th-century art historian Olof Granberg called the two Arcimboldos 'of inferior quality'",
+   "source": "https://skoklostersslott.se/en/the-history-of-skokloster-castle/skokloster-castles-collections/vertumnus-en/"
+  },
+  {
+   "claim": "Plants from all seasons appear together; the poems sent with it said the emperor 'holds sway over the seasons as he does over the countries of the world' (Comanini's poem accompanied the painting)",
+   "source": "https://www.habsburger.net/en/chapter/depicting-imperial-might-pictures-fruit ; https://skoklostersslott.se/en/the-history-of-skokloster-castle/skokloster-castles-collections/vertumnus-en/ ; https://en.wikipedia.org/wiki/Vertumnus_(painting)"
+  },
+  {
+   "claim": "It hangs in Skokloster Castle, Sweden",
+   "source": "https://skoklostersslott.se/en/the-history-of-skokloster-castle/skokloster-castles-collections/vertumnus-en/"
+  }
+ ],
+ "caption": "This is Rudolf II, Holy Roman Emperor. Made of fruit.\n\nAround 1591, his former court painter Giuseppe Arcimboldo, retired to Milan, sent him this portrait: a pear for a nose, apples for cheeks, cherries for lips, wheat and grapes for hair. He is dressed as Vertumnus, the Roman god of the seasons.\n\nThe emperor wasn't offended. He is said to have rewarded Arcimboldo with the title of count palatine.\n\nIn 1648, at the end of the Thirty Years' War, Swedish troops stormed Prague Castle and carted the treasures to Stockholm. On the transport list, item 351: \"a face of fruit\". It ended up in Swedish castles, and in the late 1800s an art historian dismissed it as of \"inferior quality\".\n\nBut look again: fruit, grain and flowers from every season, all ripe at once. The poem sent with it said the emperor ruled the seasons as he ruled the countries of the world.\n\n🖤 Would you hang this portrait of yourself?",
+ "caption_short": "This is a Holy Roman Emperor. Made of fruit. And he is said to have rewarded the painter for it. 🖤",
+ "youtube_title": "Why is this emperor fruit? Arcimboldo's Vertumnus (Rudolf II)",
+ "hashtags_instagram": [
+  "#arcimboldo",
+  "#vertumnus",
+  "#arthistory",
+  "#sweden",
+  "#weirdart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#arcimboldo",
+  "#vertumnus",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#arcimboldo",
+  "#vertumnus",
+  "#rudolfii",
+  "#skoklostercastle",
+  "#sweden",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#renaissance",
+  "#weirdart"
+ ]
+}

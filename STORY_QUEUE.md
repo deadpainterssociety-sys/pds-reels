@@ -12,7 +12,6 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 | When | Painting (museum) | Angle | Type | Notes |
 |---|---|---|---|---|
-| 2026-11-19 (Thu) | an *Odyssey* painting: Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne), or Turner, *Ulysses Deriding Polyphemus* (National Gallery, London), or another famous one | find the true twist (e.g. Waterhouse paints the sirens as birds with women's faces, as the Greeks did, not mermaids) | hidden | Nolan's *The Odyssey* reaches digital/VOD on 17 Nov: post on Thursday 19 Nov for the weekend viewers. Name the film only as context ("the story in Nolan's new film"), never use its images |
 
 ## Done
 
@@ -49,6 +48,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 14 Nov 2026 | caravaggio-virgin | Caravaggio, *Death of the Virgin* (Louvre) | rejected by the Carmelite friars: a swollen dead woman (Baglione: "swollen, bare legs"); Mancini claimed a prostitute model (hedged); Rubens told the Duke of Mantua it was one of his best; shown one week in Rome, April 1607, no copies; then Charles I, then Louis XIV | sacred-strange |
 | 15 Nov 2026 | rembrandt-tulp-hand | Rembrandt, *The Anatomy Lesson of Dr Nicolaes Tulp* (Mauritshuis, The Hague) | the corpse, thief Aris Kindt hanged 31 Jan 1632 for a winter coat; X-rays show Rembrandt first painted his right arm as a stump (hand lost to an earlier punishment, per the museum), then a hand on top; the stump proves Rembrandt was there | dark |
 | 15 Nov 2026 | leonardo-ermine-nazi | Leonardo, *Lady with an Ermine* (Czartoryski Museum, Kraków) | bought 1798; hidden by Princess Izabela (84) in 1830; walled up at Sieniawa 1939, seized, sent to Berlin; Hans Frank (Hitler's lawyer) hung it in his Wawel office; found at his Bavarian home May 1945; home April 1946; Frank hanged Oct 1946 | damage |
+| 16 Nov 2026 | arcimboldo-vertumnus | Arcimboldo, *Vertumnus* (Skokloster Castle, Sweden) | Rudolf II as the god of the seasons, made of fruit; said to be rewarded with count palatine title; 1648 Swedish loot, item 351 'a face of fruit'; dismissed as 'inferior'; every season ripe at once = he rules the seasons as the world | sacred-strange |
+| 19 Nov 2026 | waterhouse-sirens | Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne) | pinned for Nolan's *The Odyssey* on digital: sirens as birds with women's heads, not mermaids; The Times 'grotesque'; Homer never describes them; copied from the Siren Painter's vase (BM E440, c. 480–470 BC); mermaid tails are medieval | hidden |
 
 ## Ideas (to verify)
 
