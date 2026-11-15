@@ -33,8 +33,9 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   `hidden`). Never the same type three reels in a row. If you can't say the promise in one of these, the angle is weak:
   pick another. About one story in four may be a lesser-known painting with a dark or uncanny story.
 - Nudity in the painting → `meta.nude: true` and plan safe framing from the start (PLAYBOOK §1 "Nudes").
-- **Formula (`FORMULAS.md`, Gigi 15 Nov 2026).** Once E1 has its 14 reels written, stories rotate F1 → F3 → F4 → F2: take
-  the formula after the last written story's, never the same formula for the two reels of one day, and follow that
+- **Formula (`FORMULAS.md`, Gigi 15 Nov 2026).** Every new story follows the formula rotation F1 → F3 → F4 → F2: take
+  the formula after the one in the BOTTOM row of `STORY_QUEUE.md` **Done** (the last story written; an empty Formula
+  cell = F1), write your row there with its formula when you schedule it (step 9), never the same formula for the two reels of one day, and follow that
   formula's section (format, length, structure, style). Record `"formula": "F…"` in story.json. The word counts and
   durations in steps 4-5 are F1's; F2-F4 have their own in FORMULAS.md (`validate.py` checks them by `format`).
 - **A test running in `EXPERIMENTS.md`?** Give each new story the arm that keeps the two arms balanced (count the
@@ -153,8 +154,9 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   `meta` and every image with `"credit"`).
 
 ### 9. Schedule and log
-- `python automation/plan.py add <slug>` (first free slot; two a day) — or `add <slug> <YYYY-MM-DD>` for a pinned date. Move the idea to **Done** in `STORY_QUEUE.md` with that date,
-  or add a new row there if it wasn't on the list.
+- `python automation/plan.py add <slug>` (first free slot; two a day) — or `add <slug> <YYYY-MM-DD>` for a pinned date. Move the idea to **Done** in `STORY_QUEUE.md` with that date
+  and its formula (append at the BOTTOM of the table: the next story's formula follows it), or add a new row there if it
+  wasn't on the list.
 
 ### 10. Self-check before moving on
 - [ ] Every narrated claim has a source in `facts`; hedges where sources hedge.

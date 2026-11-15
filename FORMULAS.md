@@ -11,9 +11,10 @@ broke out for other channels and proposes changes here; Gigi's ✅ on Telegram w
 
 ## Rotation (the story writer, CLAUDE.md step 1)
 
-- **Starts once E1 has its 14 reels written** (EXPERIMENTS.md); until then every story is F1, so E1 stays clean.
-- Order: **F1 → F3 → F4 → F2**, then again. Each new story takes the formula after the most recently written story's
-  (`"formula"` in story.json; missing = F1). The two reels of one day are never the same formula.
+- **The season started on 15 Nov 2026** (Gigi stopped E1 to start it): every story written from that night on follows
+  the rotation. The reels already written before it (to 17 Nov, and 19 Nov 14:00) stay F1.
+- Order: **F1 → F3 → F4 → F2**, then again. Each new story takes the formula after the one in the bottom row of
+  STORY_QUEUE.md **Done** (an empty Formula cell = F1) and appends its own row there with its formula. The two reels of one day are never the same formula.
 - Pick the story to fit the formula (some stories only work as F1): if no good story fits the formula today, take the next
   formula and say so in the run notes. Never force a weak story into a formula.
 - Every formula keeps the standing rules: a true, sourced story with one throughline; painter dead 70+ years, a visitable

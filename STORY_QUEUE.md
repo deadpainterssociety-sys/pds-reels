@@ -15,8 +15,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 ## Done
 
-| Date | Slug | Painting (museum) | Angle | Type |
-|---|---|---|---|---|
+| Date | Slug | Painting (museum) | Angle | Type | Formula |
+|---|---|---|---|---|---|
 | 26 Oct 2026 | (pilot) | Artemisia Gentileschi, *Judith Beheading Holofernes* (Uffizi) | torture at the trial, the bracelet | dark-legend |
 | 27 Oct 2026 | goya-saturn | Goya, *Saturn Devouring His Son* (Prado) | painted on his own wall, never meant to be seen | dark |
 | 28 Oct 2026 | rokeby-venus | Velázquez, *Rokeby Venus* (National Gallery) | a suffragette attacked it with a meat cleaver in 1914 | damage |
