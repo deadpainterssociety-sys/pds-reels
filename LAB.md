@@ -12,6 +12,20 @@ reel, every test and every proposal on YouTube numbers only. Instagram and TikTo
 one line of context and never count as evidence. Long videos (`features.format == "long"`) are judged apart from the
 Shorts: compare them only with each other (views at 7 days, average % viewed, subscribers per 1,000 views).
 
+## The three numbers we polish (Gigi, 15 Nov 2026)
+
+Every brief's `summary` OPENS with these three, for our YouTube Shorts: the median of the Shorts posted in the last 7 days
+(72 h data; 24 h for the newest) next to the 7 days before, and per formula (FORMULAS.md, `formula` column) once a formula
+has ≥ 3 Shorts with data:
+- **VVSA** — viewed vs swiped away: `youtube_engaged_pct` (engaged views ÷ views, the API's match for Studio's "stayed to
+  watch"; Studio showed the channel at 56 % on 10 Nov). Driven by the first 1-2 seconds: the opening frame and words.
+- **AVD** — average view duration: `youtube_avg_view_s`, with `youtube_avg_view_pct` beside it (seconds can rise while %
+  falls when a formula is longer: say which one moved).
+- **Subs per 1,000 views** — `youtube_follows_per_1k`.
+Format: `VVSA 58.7 % (↑ from 53.8) · AVD 36 s / 56 % (= ) · subs 1.3/1k (↑ from 0.6)`. Then one sentence: which of the
+three is our weakest right now, and what in the reels most likely holds it back (name the Shorts that prove it).
+Every proposal says which of the three it is meant to move.
+
 ## Inputs (already downloaded into `lab/`)
 
 - `lab/metrics.json`: every posted reel — `features` (what it was: painting, museum, hook_type, hook wording, cover
@@ -23,7 +37,7 @@ Shorts: compare them only with each other (views at 7 days, average % viewed, su
   Only numbers you can actually read; `at` = when the screenshot was taken if visible, else now.
 - `lab/history/brief-*.json`: your previous briefs and Gigi's decisions on each proposal (`decision`). Don't repeat a
   proposal she rejected unless new data clearly changes the picture, and say so if you do.
-- `PLAYBOOK.md` (the current formula), `EXPERIMENTS.md` (running and finished tests), `STORY_QUEUE.md`, `stories/*/story.json`.
+- `PLAYBOOK.md` (the current rules), `FORMULAS.md` (the formulas we rotate; each story's `formula`), `EXPERIMENTS.md` (running and finished tests), `STORY_QUEUE.md`, `stories/*/story.json`.
 
 ## Method
 
@@ -70,6 +84,26 @@ A painting that just broke out for some art channel keeps breaking out for other
                "format": "long" (default; a Short only if it is a small, single-detail story), "when": "next free slot | YYYY-MM-DD | late Nov"}}`
    ✅ puts it into STORY_QUEUE.md (Shorts: Pinned; long videos: "Long videos (to plan)").
 4. In the summary, one line on the waves: how many breakouts, the top 2 topics.
+
+## Breakout safari (Thursdays: only when `lab/safari/safari.json` exists)
+
+Gigi, 15 Nov 2026: we keep polishing our formulas (FORMULAS.md) by studying Shorts that broke out for other art-history
+channels. `lab/safari/safari.json` lists Shorts from the last ~60 days in our niche that beat their own channel's median
+Short by 5× or more (`ratio`, `views`, `dur_s`, title, channel); `lab/safari/dossiers/<id>/` holds what the runner could
+get: `meta.json` (+ cuts per minute, words per minute, opening words), `sheet.jpg` (a frame every 1-3 s), `opening.jpg`
+(the first 3 s), `transcript.txt`. YouTube often refuses downloads to GitHub's machines: a dossier may hold numbers
+only — then say so; Claude studies those Shorts by eye in an interactive session. `lab/safari/notes.md` is the running
+notebook (a copy of SAFARI.md: start from it; it is saved back to SAFARI.md with the brief).
+
+1. Skip what isn't art-history storytelling (tutorials, crafts, ads). For each new breakout: the premise in one line;
+   frame 1 (image + words); length; narration or captions; cuts per minute; the escalation; the payoff; the ending
+   (loop? question to the viewer?); and which of VVSA / AVD / sharing it most likely wins, and why.
+2. Update `lab/safari/notes.md`: the patterns with counts across all breakouts studied so far (length, voice vs
+   captions, frame-1 premise vs question, themes, endings), and how our formulas compare. Keep it short and factual.
+3. At most ONE proposal of `"kind": "formula"` per brief: a change to a formula in FORMULAS.md, a new formula (with
+   its evidence: channel · views · ratio · length for each breakout), or moving a candidate into the rotation. `change` is
+   the exact text to add to FORMULAS.md. Gigi's ✅ writes it there.
+4. One line in the summary: how many breakouts, the strongest pattern.
 
 ## Long videos, traffic and audience (every brief)
 

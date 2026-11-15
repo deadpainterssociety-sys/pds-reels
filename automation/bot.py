@@ -243,7 +243,7 @@ def send_brief(d):
     for p in b.get("proposals", []):
         dec = p.get("decision")
         txt = (f"<b>{T.esc(p['id'])} · {T.esc(p.get('title', ''))}</b>"
-               + (f"  <i>({ {'experiment': 'test', 'story': 'story idea'}.get(p.get('kind'), 'rule')}, confidence: {T.esc(p.get('confidence', '?'))})</i>")
+               + (f"  <i>({ {'experiment': 'test', 'story': 'story idea', 'formula': 'formula'}.get(p.get('kind'), 'rule')}, confidence: {T.esc(p.get('confidence', '?'))})</i>")
                + f"\n\n<b>Change:</b> {T.esc(p.get('change', ''))}\n<b>Why:</b> {T.esc(p.get('why', ''))}"
                + (f"\n<b>Data:</b> {T.esc(p['evidence'])}" if p.get("evidence") else "")
                + (f"\n\n{'✅ applied' if dec == 'yes' else '❌ dropped'}" if dec else ""))
@@ -263,6 +263,10 @@ def decide_proposal(chat, d, pid, yes, message_id=None):
     if yes:
         if p.get("kind") == "experiment": start_experiment(d, p)
         elif p.get("kind") == "story": queue_story(d, p)
+        elif p.get("kind") == "formula":   # breakout safari: a new formula or a change to one -> FORMULAS.md
+            fm = os.path.join(ROOT, "FORMULAS.md"); txt = open(fm).read()
+            line = f"- ({today()}, safari · brief {d} {pid}) **{p.get('title', '')}** — {p['change']}"
+            txt = txt.replace("<!-- approved formula changes go here -->", line + "\n<!-- approved formula changes go here -->"); open(fm, "w").write(txt)
         else:
             pb = os.path.join(ROOT, "PLAYBOOK.md"); txt = open(pb).read()
             line = f"- ({today()}, from data · brief {d} {pid}) {p['change']}"
@@ -273,6 +277,7 @@ def decide_proposal(chat, d, pid, yes, message_id=None):
         try: T.buttons_only(chat, message_id, [[{"text": "✅ applied" if yes else "❌ dropped", "callback_data": "noop"}]])
         except Exception: pass
     msg = {"experiment": "🧪 Test started: tonight's stories alternate the two versions.",
+           "formula": "🧬 In FORMULAS.md: the story writer follows it from tonight.",
            "story": "🗂 In STORY_QUEUE.md: " + ("the story writer picks it up in the next days." if (p.get("story") or {}).get("format") == "short"
                                                else "in the long-video list; Claude plans it into the schedule.")}
     T.send(chat, msg.get(p.get("kind"), "📌 In the playbook: every new reel follows it from tonight.") if yes else f"❌ {pid} dropped.")

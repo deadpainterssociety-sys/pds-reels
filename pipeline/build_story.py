@@ -161,7 +161,8 @@ if "segments" in music: music["segments"] = [{**g, "t": T(g["at"])} for g in mus
 
 resolved = {"slug": slug, "format": st.get("format", "reel"), "duration": tl["duration"], "audio": f"stories/{slug}/audio.wav", "images": images, "shots": shots,
             "overlays": overlays, "flashes": sorted(flashes), "shakes": sorted(shakes), "words": words, "nocap": nocap, "maps": maps,
-            "style": st.get("style", {}), "cuts": cuts, "sfx": sfx, "music": music}
+            "style": st.get("style", {}), "cuts": cuts, "sfx": sfx, "music": music,
+            "silent": bool(st.get("silent"))}   # FORMULAS.md F3: captions only, the narration is muted in the mix
 json.dump(resolved, open(os.path.join(sdir, "build", "resolved.json"), "w"), ensure_ascii=False)
 
 # ---------- publish every built story to the studio (one composition per story: reel-<slug>) ----------

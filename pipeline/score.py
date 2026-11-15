@@ -120,7 +120,10 @@ for x in rs["sfx"]:
     S.place(fx, FX[x["fx"]](), x["t"] - lead, x["gain"])
 fx /= max(1.0, np.abs(fx).max())
 
-mix = v + music * 10 ** (M.get("music_db", -12) / 20) * S.duck_env(v, M.get("duck_db", -10)) + fx * 10 ** (M.get("fx_db", -6.5) / 20)
+if rs.get("silent"):   # FORMULAS.md F3 (caption Short): the voice only times the captions; music and effects carry the sound
+    mix = music * 10 ** (M.get("music_db", -12) / 20) + fx * 10 ** (M.get("fx_db", -6.5) / 20)
+else:
+    mix = v + music * 10 ** (M.get("music_db", -12) / 20) * S.duck_env(v, M.get("duck_db", -10)) + fx * 10 ** (M.get("fx_db", -6.5) / 20)
 fade = int(0.8 * SR); mix[-fade:] *= np.linspace(1, 0, fade)
 mix *= 10 ** ((-14.0 - pyln.Meter(SR).integrated_loudness(mix)) / 20)
 mix = np.where(np.abs(mix) > 0.7, np.sign(mix) * (0.7 + 0.28 * np.tanh((np.abs(mix) - 0.7) / 0.28)), mix)   # soft clip

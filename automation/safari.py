@@ -13,7 +13,7 @@ A dossier (<out>/dossiers/<id>/): meta.json (numbers, title, channel median, rat
 first spoken words and when), sheet.jpg (one frame every 1-3 s, timestamped), opening.jpg (the first 3 s at 4 frames per
 second: the moment a viewer decides to stay or swipe), transcript.txt (auto-captions with times).
 Media are downloaded at 360p for analysis only and deleted once the frames and transcript exist; nothing of another
-creator's video is ever reused. Dossiers live only in the private data release, never in this public repo.
+creator's video is ever reused. Dossiers live only in the private data release, never in this public repo; the notebook of patterns is SAFARI.md.
 """
 import datetime, glob, json, math, os, re, shutil, statistics, subprocess, sys, tarfile, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +24,16 @@ QUERIES = [  # Shorts (< 4 min) about paintings; YouTube search ordered by views
     ("the story behind this painting", "en"), ("este cuadro", "es"), ("pintura historia", "es"),
 ]
 MIN_VIEWS, MIN_RATIO = 100_000, 5.0
+NOTES = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "SAFARI.md")
+# art HISTORY storytelling, not painting tutorials, crafts, spray-paint shows or paint ads (the first run, 15 Nov 2026,
+# found 261 "painting" breakouts and only ~30 were stories about art or history)
+HIST = re.compile(r"(?i)histor|museum|museo|painter|masterpiece|famous painting|this painting|behind|secret|hidden|mystery|story|"
+                  r"cuadro|pintor|historia|van gogh|da vinci|leonardo|caravaggio|goya|bosch|rembrandt|vermeer|monet|picasso|"
+                  r"dal[ií]|klimt|michelangelo|raphael|botticelli|bruegel|vel[aá]zquez|munch|frida|mona lisa|louvre|prado|"
+                  r"renaissance|baroque|medieval|victorian|queen|king|portrait of|cursed|banned|stolen|experiment")
+NOT_HIST = re.compile(r"(?i)how to draw|drawing tutorial|step by step|diy|craft|spray|calligraph|satisfying|asian paints|truck|"
+                      r"nail|for kids|easy art|one stroke|chalk|rangoli|hack|clay|challenge|navratri|diwali|durga|kaaba|allah|"
+                      r"muhammad|cricket|speed paint|timelapse|art supplies|tutorial|beginner")
 
 
 def _ffprobe_dur(p):
@@ -67,7 +77,8 @@ def find(out, days=60):
     for h in hits:
         c = chans.get(h["channel"])
         if not c or h.get("published", "") < cutoff or h["views"] < MIN_VIEWS: continue
-        if not R.ART.search(h.get("title", "") + " " + " ".join(h.get("tags", [])) + " " + c["title"]): continue
+        text = h.get("title", "") + " " + " ".join(h.get("tags", [])) + " " + c["title"]
+        if not R.ART.search(text) or not HIST.search(text) or NOT_HIST.search(text): continue
         ratio = round(h["views"] / c["median_short_views"], 1) if c["median_short_views"] else None
         if (ratio is not None and ratio < MIN_RATIO) or (ratio is None and h["views"] < 1_000_000): continue
         found[h["id"]] = {"id": h["id"], "url": f"https://www.youtube.com/shorts/{h['id']}", "title": h["title"],
@@ -179,6 +190,8 @@ def collect(out, n=8, days=60):
     import release
     try: seen = set(json.loads(release.data_get("safari-seen.json") or "[]"))
     except Exception: seen = set()
+    os.makedirs(out, exist_ok=True)   # the running notebook (SAFARI.md, LAB.md "Breakout safari"), carried week to week
+    if os.path.exists(NOTES): shutil.copy(NOTES, os.path.join(out, "notes.md"))
     ranked = find(out, days)
     picks = [b for b in ranked if b["id"] not in seen][:n]
     for b in picks:
@@ -194,8 +207,8 @@ def save(out):
     release.data_put(f"safari-{day}.tar", open(tarp, "rb").read(), "application/x-tar")
     if os.path.exists(os.path.join(out, "seen.json")):
         release.data_put("safari-seen.json", open(os.path.join(out, "seen.json"), "rb").read())
-    if os.path.exists(os.path.join(out, "notes.md")):   # Claude's running notebook of what makes Shorts break out
-        release.data_put("safari-notes.md", open(os.path.join(out, "notes.md"), "rb").read(), "text/markdown")
+    if os.path.exists(os.path.join(out, "notes.md")):   # Claude's running notebook -> SAFARI.md (lab.yml commits it)
+        shutil.copy(os.path.join(out, "notes.md"), NOTES)
     print("saved", f"safari-{day}.tar")
 
 

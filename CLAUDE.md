@@ -33,6 +33,10 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   `hidden`). Never the same type three reels in a row. If you can't say the promise in one of these, the angle is weak:
   pick another. About one story in four may be a lesser-known painting with a dark or uncanny story.
 - Nudity in the painting → `meta.nude: true` and plan safe framing from the start (PLAYBOOK §1 "Nudes").
+- **Formula (`FORMULAS.md`, Gigi 15 Nov 2026).** Once E1 has its 14 reels written, stories rotate F1 → F3 → F4 → F2: take
+  the formula after the last written story's, never the same formula for the two reels of one day, and follow that
+  formula's section (format, length, structure, style). Record `"formula": "F…"` in story.json. The word counts and
+  durations in steps 4-5 are F1's; F2-F4 have their own in FORMULAS.md (`validate.py` checks them by `format`).
 - **A test running in `EXPERIMENTS.md`?** Give each new story the arm that keeps the two arms balanced (count the
   stories that already have `"experiment": {"id": …}` for it; on a tie take A), follow that arm's instruction, and
   record `"experiment": {"id": "E1", "arm": "A"}` in story.json. Everything else stays as the playbook says.

@@ -31,12 +31,25 @@ jobs:
           if [ "$WAVES" = "true" ] || { [ "$(TZ=Europe/Madrid date +%u)" = 1 ] && [ $(( 10#$(date +%V) % 2 )) = 1 ]; }; then
             python3 automation/waves.py collect lab/waves || echo "topic waves failed: the brief goes out without them"
           else echo "not a waves Monday"; fi
+      - name: Breakout safari (Thursdays, automation/safari.py)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ "$(TZ=Europe/Madrid date +%u)" = 4 ] || [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            which ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+            pip install -q -U yt-dlp youtube-transcript-api pillow
+            python3 automation/safari.py collect lab/safari --max 8 || echo "safari failed: the brief goes out without it"
+          else echo "not a safari Thursday"; fi
       - name: Claude analyses (LAB.md)
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: ./automation/run_claude.sh "Write today's analysis brief, following LAB.md exactly (it is your complete brief). Today is $(TZ=Europe/Madrid date +%F)."
       - run: python3 automation/lab.py publish lab
+      - name: Keep the safari notebook (SAFARI.md)
+        run: ./automation/commit.sh "safari notebook $(date -u +%F)" SAFARI.md
       - if: failure()
         run: |
           if [ -f "$RUNNER_TEMP/claude_limit" ]; then python3 automation/bot.py say "⏳ The analysis brief hit the Claude usage limit; it will run again on the next Monday/Thursday (or Actions → lab → Run workflow)."

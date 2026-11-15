@@ -55,7 +55,7 @@ def features(slug):
             "museum": m.get("museum"), "city": m.get("city"), "hook_type": st.get("hook_type"), "hook": hook,
             "hook_words": len(hook.split()), "cover_question": re.sub(r"</?i>", "", st.get("cover", {}).get("question", "")),
             "youtube_title": st.get("youtube_title"), "nude": bool(m.get("nude")), "words": words,
-            "duration_s": s.get("duration_s"), "experiment": st.get("experiment"),
+            "duration_s": s.get("duration_s"), "experiment": st.get("experiment"), "formula": st.get("formula", "F1"),
             "slot": slot_time(slug), "posted_at": posted, "weekday": pt.strftime("%a") if pt else None,
             "posted_hour": pt.hour if pt else None, "manual": bool(s.get("manual")), "format": st.get("format", "reel")}
 

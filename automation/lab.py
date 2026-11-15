@@ -7,7 +7,7 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import today
 
-KINDS = ("rule", "experiment", "story")
+KINDS = ("rule", "experiment", "story", "formula")   # formula: a change to FORMULAS.md (breakout safari)
 
 
 def check(b):
@@ -16,7 +16,7 @@ def check(b):
     for i, x in enumerate(b.get("proposals", [])):
         for k in ("id", "kind", "title", "change", "why"):
             if not str(x.get(k, "")).strip(): p.append(f"proposal {i + 1}: {k} missing")
-        if x.get("kind") not in KINDS: p.append(f"proposal {i + 1}: kind must be rule, experiment or story")
+        if x.get("kind") not in KINDS: p.append(f"proposal {i + 1}: kind must be rule, experiment, story or formula")
         if x.get("kind") == "story":
             st = x.get("story") or {}
             for k in ("painting", "museum", "angle", "format"):
@@ -44,6 +44,8 @@ def publish(d="lab"):
     if os.path.exists(os.path.join(d, "brief.md")):
         release.data_put(f"brief-{b['date']}.md", open(os.path.join(d, "brief.md"), "rb").read(), "text/markdown")
     metrics.push(d)
+    if os.path.exists(os.path.join(d, "safari", "safari.json")):   # dossiers + Claude's updated notebook (LAB.md "Breakout safari")
+        import safari; safari.save(os.path.join(d, "safari"))
     bot.send_brief(b["date"])
     print(f"brief {b['date']}: {len(b['proposals'])} proposal(s) sent")
 
