@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 QUERIES = [  # Shorts (< 4 min) about paintings, ordered by views within the window. Each search costs 100 of the 10,000
              # daily API units that our uploads also need (1,600 each): keep this list short (~750 units a run)
     ("this painting", "en"), ("the story behind this painting", "en"), ("painting history", "en"),
-    ("famous painting", "en"), ("dark history art", "en"), ("este cuadro", "es"),
+    ("famous painting", "en"), ("dark history art", "en"),   # Spanish search dropped with the Spanish channel (15 Nov)
 ]
 MIN_VIEWS, MIN_RATIO = 100_000, 5.0
 NOTES = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "SAFARI.md")
