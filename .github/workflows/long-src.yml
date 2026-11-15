@@ -1,0 +1,28 @@
+# Original images and music from Wikimedia Commons for a long video (automation/long_src.py). Claude renders long videos
+# outside CI, where Wikimedia refuses most original downloads; a runner fetches them patiently and keeps them in the
+# story's private release (reel-<slug> src.tar), merged with what was already there. Nothing is published or sent.
+name: long-src
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "the long story", required: true }
+      files: { description: "name=File:Title|music/m_x=File:Piece.ogg|…", required: true }
+      minutes: { description: "patience per run", required: false, default: "45" }
+concurrency: { group: "long-src-${{ inputs.slug }}", cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  src:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      SLUG: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: What the release already has
+        run: python3 automation/release.py download-src "$SLUG" || echo "no src.tar yet"
+      - name: Fetch the originals
+        env: { FILES: "${{ inputs.files }}", MINUTES: "${{ inputs.minutes }}" }
+        run: python3 automation/long_src.py "$SLUG" "$FILES" --minutes "$MINUTES"
+      - name: Keep them in the private release
+        run: python3 automation/release.py upload-src "$SLUG"
