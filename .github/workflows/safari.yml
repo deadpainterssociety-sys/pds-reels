@@ -1,0 +1,35 @@
+# Breakout safari on demand (automation/safari.py): art-history Shorts that broke out for other channels lately, with a
+# dossier for each one (frames, the first 3 seconds, transcript, cut rhythm) in the private release as safari-<date>.tar.
+# The Thursday lab brief runs the same scan by itself (lab.yml). Read-only: nothing is posted or changed on YouTube.
+name: safari
+on:
+  workflow_dispatch:
+    inputs:
+      max: { description: "how many new dossiers", default: "8" }
+      days: { description: "window in days", default: "60" }
+      ids: { description: "optional: only these Short ids (space-separated), no search", default: "" }
+concurrency: { group: safari, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  safari:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tools
+        run: |
+          which ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg; }
+          pip install -q -U yt-dlp youtube-transcript-api pillow
+      - name: Find breakouts and build dossiers
+        env: { MAX: "${{ inputs.max }}", DAYS: "${{ inputs.days }}", IDS: "${{ inputs.ids }}" }
+        run: |
+          if [ -n "$IDS" ]; then python3 automation/safari.py dossier safari $IDS
+          else python3 automation/safari.py collect safari --max "$MAX" --days "$DAYS"; fi
+      - name: Keep them in the private release
+        if: always()
+        run: '[ -d safari ] && python3 automation/safari.py save safari || true'
