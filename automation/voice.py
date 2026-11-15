@@ -18,6 +18,10 @@ public, and a clean recording of someone's voice is enough to clone it.
        shard-put <slug> <run> <k>    (CI, machine k) its new phrases     shard-get <slug> <run>  (CI) all of them
        ci-out <slug>                 (CI) voice-out-<slug>.tar + voice-cache-<slug>.tar, delete the branch
        unpark <slug>                 (Claude) voice-out-<slug>.tar -> stories/<slug>/build/
+  long videos in the Chirp 3 HD voice (config.json voice_engine; the key is only in CI) — workflow long-voice.yml:
+       park-chirp <slug>             (Claude) story.json -> branch voice-in-<slug>, start long-voice
+       chirp-in <slug>               (CI) story.json + voice-chirp-cache-<slug>.tar -> src/voice-chirp/
+       chirp-out <slug>              (CI) voice-out-<slug>.tar + the phrase cache; then `unpark` as above
 """
 import datetime, glob, hashlib, json, os, shutil, subprocess, sys, tempfile, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -268,6 +272,33 @@ def ci_out(slug):
     print("voiced:", json.load(open(os.path.join(sd, "build", "timeline.json")))["duration"], "s")
 
 
+def park_chirp(slug):
+    """(Claude) story.json -> branch voice-in-<slug>, then start long-voice.yml (Chirp 3 HD, one machine)"""
+    sd = os.path.join(ROOT, "stories", slug)
+    with tempfile.TemporaryDirectory(dir=os.path.join(ROOT, "..")) as tmp:
+        shutil.copy(os.path.join(sd, "story.json"), tmp)
+        _push_dir(tmp, f"voice-in-{slug}", f"voice {slug} (temporary)")
+    r = subprocess.run(["gh", "api", "-X", "POST", "repos/{owner}/{repo}/actions/workflows/long-voice.yml/dispatches",
+                        "-f", "ref=main", "-f", f"inputs[slug]={slug}"], cwd=ROOT, capture_output=True, text=True)
+    print(r.stderr or f"parked story.json on voice-in-{slug} and started long-voice")
+
+
+def chirp_in(slug):
+    """(CI) story.json from the branch + the Chirp phrases voiced in earlier runs -> stories/<slug>/"""
+    sd = os.path.join(ROOT, "stories", slug); cache = os.path.join(sd, "src", "voice-chirp"); os.makedirs(cache, exist_ok=True)
+    with tempfile.TemporaryDirectory() as tmp:
+        _pull(f"voice-in-{slug}", tmp); shutil.copy(os.path.join(tmp, "story.json"), sd)
+    print("cached phrases from earlier runs:", "yes" if _tar_get(f"voice-chirp-cache-{slug}.tar", cache) else "none")
+
+
+def chirp_out(slug):
+    """(CI) voice.wav + timeline.json -> voice-out-<slug>.tar, the Chirp phrase cache kept for re-runs"""
+    sd = os.path.join(ROOT, "stories", slug)
+    _tar_put(f"voice-chirp-cache-{slug}.tar", os.path.join(sd, "src", "voice-chirp"))
+    _tar_put(f"voice-out-{slug}.tar", os.path.join(sd, "build"), ["voice.wav", "timeline.json"])
+    print("voiced:", json.load(open(os.path.join(sd, "build", "timeline.json")))["duration"], "s")
+
+
 def unpark(slug):
     """(Claude) voice-out-<slug>.tar from the private release -> stories/<slug>/build/ (then run pipeline/align.py)"""
     sd = os.path.join(ROOT, "stories", slug); b = os.path.join(sd, "build")
@@ -298,4 +329,7 @@ if __name__ == "__main__":
     elif cmd == "ci-in": ci_in(a[1])
     elif cmd == "ci-out": ci_out(a[1])
     elif cmd == "unpark": unpark(a[1])
+    elif cmd == "park-chirp": park_chirp(a[1])
+    elif cmd == "chirp-in": chirp_in(a[1])
+    elif cmd == "chirp-out": chirp_out(a[1])
     else: raise SystemExit(__doc__)

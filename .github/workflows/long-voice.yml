@@ -1,0 +1,34 @@
+# A long video's narration in the Chirp 3 HD voice (config.json voice_engine, Gigi's pick 12 Nov 2026). Long videos are
+# rendered by Claude outside CI, where the Text-to-Speech key isn't: `python automation/voice.py park-chirp <slug>` puts
+# story.json on branch voice-in-<slug> and starts this job. It voices every phrase with pipeline/tts_chirp.py (the
+# phrases are cached in the private release as voice-chirp-cache-<slug>.tar, so a re-run only pays for changed phrases),
+# stores voice.wav + timeline.json as voice-out-<slug>.tar (private release) and deletes the branch.
+# Then Claude runs `python automation/voice.py unpark <slug>` and pipeline/align.py. Nothing is published or sent.
+name: long-voice
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "the long story (story.json waits on branch voice-in-<slug>)", required: true }
+concurrency: { group: "long-voice-${{ inputs.slug }}", cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+      SLUG: ${{ inputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup
+        with: { voice: none }
+      - name: story.json + the phrases voiced before
+        run: python3 automation/voice.py chirp-in "$SLUG"
+      - name: Voice (Chirp 3 HD)
+        run: python3 pipeline/tts_chirp.py "$SLUG"
+      - name: voice.wav + timeline.json -> private release
+        run: python3 automation/voice.py chirp-out "$SLUG"
+      - name: Delete the temporary branch
+        if: always()
+        run: git push -q origin --delete "voice-in-$SLUG" || true

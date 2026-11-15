@@ -44,6 +44,10 @@ story = {
          "Beatis": "beɪˈɑːtɪs", "Nassau": "nˈæsɔː", "Engelbert": "ˈɛŋɡəlbɜːɹt", "Alba": "ˈælbə", "Escorial": "ˌɛskɔːɹiˈɑːl",
          "Fray": "fɹˈaɪ", "José": "hoʊsˈeɪ", "Sigüenza": "sɪɡwˈɛnθə", "Fraenger": "fɹˈɛŋɚ", "Adamites": "ˈædəmˌaɪts",
          "Hamrick": "hˈæmɹɪk", "Prado": "pɹˈɑːdoʊ", "triptych": "tɹˈɪptɪk", "spake": "spˈeɪk"},
+ # Chirp 3 HD (Enceladus, 15 Nov 2026 re-voice): plain respellings for the names it may anglicise ("s-Hertogenbosch"
+ # without the apostrophe, so the word boundary matches; the "'" left in front is silent).
+ "chirp_say": {"s-Hertogenbosch": "Sair-toh-hen-boss", "Jheronimus": "Yeh-roh-nee-mus", "Aken": "Ah-ken",
+               "Beatis": "Bay-ah-tis", "Fraenger": "Freng-er", "Sigüenza": "See-gwen-tha"},
  "lines": [{"id": lid, "perf": [[x, round(min(p * 1.3, 2.6) if p < 2 else p, 2), v] for x, p, v in perf]} for lid, perf in L],
  "images": IM, "shots": S, "overlays": O, "sfx": SFX, "music": MUSIC, "facts": FACTS, "next": False,
  "maps": {"journey": {"bbox": [[-9.5, 39.0], [9.0, 53.5]], "focus": ["0", "0"],

@@ -57,6 +57,14 @@
   "triptych": "tɹˈɪptɪk",
   "spake": "spˈeɪk"
  },
+ "chirp_say": {
+  "s-Hertogenbosch": "Sair-toh-hen-boss",
+  "Jheronimus": "Yeh-roh-nee-mus",
+  "Aken": "Ah-ken",
+  "Beatis": "Bay-ah-tis",
+  "Fraenger": "Freng-er",
+  "Sigüenza": "See-gwen-tha"
+ },
  "lines": [
   {
    "id": "cold1",
