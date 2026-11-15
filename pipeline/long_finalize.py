@@ -97,6 +97,10 @@ for f in st.get("facts", []):
         if u and u not in sources: sources.append(u)
 _cv = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.json"))).get("voice_clone") or {}
 narration = "AI voice cloned from a real recording (Chatterbox)" if _cv.get("enabled") else "synthetic voice"
+try:   # the Chirp 3 HD voice (long-voice workflow, from 15 Nov 2026): say which, like the Shorts' descriptions
+    if json.load(open(os.path.join(sdir, "build", "timeline.json"))).get("voice", "").startswith("chirp:"):
+        narration = "AI voice (Google Cloud Text-to-Speech, Chirp 3 HD)"
+except (OSError, ValueError): pass
 _tracks = (st.get("music") or {}).get("tracks") or []
 _mc = list(dict.fromkeys(t["credit"] for t in _tracks if t.get("credit")))
 music_block = (f"Narration: {narration}.\n\nMusic (Wikimedia Commons)\n" + "\n".join(f"- {c}" for c in _mc)) if _mc else \

@@ -55,9 +55,15 @@ story = {
  "youtube": {"titles": ["Nobody Knows What This Painting Means", "500 Years of Arguing About One Painting"],
              "description_lead": "Hieronymus Bosch left no letters, no diary and no title. For five hundred years, the people who owned and studied The Garden of Earthly Delights have read it as a party, a wedding gift, a sermon against lust, a secret heresy and, in 2014, a song written on a sinner's backside. This is the true story of the painting and of everyone who tried to read it: the Nassau counts in Brussels, the Duke of Alba, Philip II and the monks of El Escorial, Wilhelm Fraenger, and the student who turned the 'butt music' into a viral tune.",
              "hashtags": ["#arthistory", "#bosch", "#prado"],
-             "credits": [],
-             "thumbnail": {"image": "owl_boy", "focus": [0.42, 0.40], "span": 0.62, "words": "NOBODY KNOWS"},
-             "intro_chapter": "Nobody knows what this painting means", "outro_chapter": "The Owls"},
+             "credits": ["The Garden of Earthly Delights and The Haywain by Hieronymus Bosch (Museo del Prado), with their details: public domain, via Wikimedia Commons.",
+                         "Portrait drawing of Bosch attributed to Jacques Le Boucq (Bibliothèque municipale d'Arras); The Cloth Market in 's-Hertogenbosch, c. 1530 (Noordbrabants Museum); "
+                         "Engelbert II of Nassau, Master of the Portraits of Princes (Rijksmuseum); Henry III of Nassau-Breda by Jan Gossaert; William of Orange by Adriaen Thomasz. Key "
+                         "(Museo Thyssen-Bornemisza); the Duke of Alba by Antonis Mor (Hispanic Society); Philip II, workshop of Titian (Museo del Prado); El Escorial by Louis de Caullery; "
+                         "the Coudenberg palace, Brussels, engraving by Jan Jansz van de Velde, 1649; Fray José de Sigüenza, engraving by Manuel Salvador Carmona: public domain, via Wikimedia Commons."],
+             "thumbnail": {"image": "owl_boy", "focus": [0.38, 0.40], "span": 0.62, "words": "NOBODY KNOWS"},
+             "intro_chapter": "Nobody knows what this painting means", "outro_chapter": "The Owls",
+             "pinned_comment": "In 1605, a monk of El Escorial wrote that other painters show people as they look on the outside, "
+                               "and Bosch dares to paint them as they are inside.\n\nLook at the middle panel: is it a paradise, or a warning? 🖤"},
 }
 json.dump(story, open(os.path.join(HERE, "story.json"), "w"), indent=1, ensure_ascii=False)
 print(f"story.json: {len(L)} lines, {sum(len(w) for w in WORDS.values())} words, {len(S)} shots, {len(O)} overlays")
