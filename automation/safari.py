@@ -5,7 +5,7 @@ channel rotates at least 3 formulas so it never looks like one template. Every T
 on demand (safari.yml), this finds Shorts in our niche that beat their own channel's median by a wide margin and builds a
 dossier for each one; Claude studies the dossiers (LAB.md, "Breakout safari") and proposes formula changes or new formulas.
 
-usage: python automation/safari.py collect <out_dir> [--max 8] [--days 60]   breakouts (Data API, ~1,300 units) + dossiers
+usage: python automation/safari.py collect <out_dir> [--max 8] [--days 60]   breakouts (Data API, ~750 units) + dossiers
        python automation/safari.py dossier <out_dir> <video_id> [...]         dossiers for given Shorts only
        python automation/safari.py save <out_dir>                             -> private release: safari-<date>.tar + seen list
 
@@ -18,10 +18,10 @@ creator's video is ever reused. Dossiers live only in the private data release, 
 import datetime, glob, json, math, os, re, shutil, statistics, subprocess, sys, tarfile, tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-QUERIES = [  # Shorts (< 4 min) about paintings; YouTube search ordered by views within the window
-    ("painting", "en"), ("this painting", "en"), ("art history", "en"), ("famous painting", "en"),
-    ("painting hidden detail", "en"), ("dark history painting", "en"), ("painting story museum", "en"),
-    ("the story behind this painting", "en"), ("este cuadro", "es"), ("pintura historia", "es"),
+QUERIES = [  # Shorts (< 4 min) about paintings, ordered by views within the window. Each search costs 100 of the 10,000
+             # daily API units that our uploads also need (1,600 each): keep this list short (~750 units a run)
+    ("this painting", "en"), ("the story behind this painting", "en"), ("painting history", "en"),
+    ("famous painting", "en"), ("dark history art", "en"), ("este cuadro", "es"),
 ]
 MIN_VIEWS, MIN_RATIO = 100_000, 5.0
 NOTES = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "SAFARI.md")
@@ -51,7 +51,7 @@ def channel_shorts(cid):
 
 def find(out, days=60):
     import youtube as Y, yt_research as R
-    R.H["Authorization"] = f"Bearer {Y.token()}"; R.UNITS["cap"] = 2500
+    R.H["Authorization"] = f"Bearer {Y.token()}"; R.UNITS["cap"] = 1100
     after = (datetime.date.today() - datetime.timedelta(days=days)).isoformat()
     hits = R.discover([{"q": q, "lang": lang, "after": after, "duration": "short", "tag": "discover"} for q, lang in QUERIES])
     hits = [h for h in hits if h.get("views") and h.get("dur", 999) <= 180]
@@ -60,7 +60,7 @@ def find(out, days=60):
         if R.ART.search(h.get("title", "") + " " + " ".join(h.get("tags", [])) + " " + (h.get("ctitle") or "")):
             score[h["channel"]] = score.get(h["channel"], 0) + h["views"]
     chans = {}
-    for cid in [c for c, _ in sorted(score.items(), key=lambda x: -x[1])][:45]:
+    for cid in [c for c, _ in sorted(score.items(), key=lambda x: -x[1])][:40]:
         try:
             info = R.channel_info(R.api("channels", part="snippet,statistics,contentDetails,brandingSettings,topicDetails", id=cid).get("items", []))
             if not info: continue
