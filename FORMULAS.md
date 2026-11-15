@@ -79,6 +79,10 @@ the change.
 - Open in the middle of it: the main image = the most striking work of the series (the end of the change), close-up at
   0 s; the hook names the change ("Watch his self-portraits as the drugs wear off.", ≤ 12 words); then back to the first
   work and forward through the years; the payoff is the human cause or cost; the plain ending (where the main one hangs).
+- **Reference: `stories/rembrandt-self-portraits/story.json`** (first F4, 19 Nov 2026): 5 works (c. 1628, 1640, 1652,
+  1658, 1669), 85 words, 44.9 s; each year spoken as its own short phrase and shown in a `label` ("1658 · FRICK, NEW
+  YORK"); a `tick` on every year; the change carries the reel, a museum fact (the painted-out brush) is the payoff. Kokoro
+  runs slow on lists of years: keep pauses at 0.15–0.5 s and speeds 0.95–0.98, or the reel passes 45 s.
 - Ideas to verify (FACTS FIRST — the famous versions of some of these are myths): Monet's Japanese footbridge before and
   after his cataracts (1899 → 1918–24); Rembrandt's self-portraits, 1629 → 1669; Van Gogh's self-portraits, 1886 → 1889;
   Munch's six versions of The Sick Child (1885–1925); Goya, from tapestry cartoons to the Black Paintings. Louis Wain's

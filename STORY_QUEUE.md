@@ -54,6 +54,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 17 Nov 2026 | bruegel-death-lovers | Bruegel, *The Triumph of Death* (Prado) | death takes everyone except two lovers in the corner, a skeleton playing along behind them; Sylvia Plath, 'Two Views of a Cadaver Room' (The Nation, 30 Jan 1960): 'blind to the carrion army', 'These Flemish lovers flourish; not for long.' | dark |
 | 17 Nov 2026 | delacroix-liberty-hidden | Delacroix, *Liberty Leading the People* (Louvre) | bought by Louis-Philippe's government in 1831, taken down within months as inflammatory, handed back after June 1832; Champfleury: 'hidden in an attic for being too revolutionary'; Louvre only in 1874 | hidden |
 | 18 Nov 2026 | monet-camille-deathbed | Monet, *Camille Monet on Her Deathbed* (Musée d'Orsay, Paris) | painted just after she died; he later confessed he couldn't stop studying the colours on her face (first Caption Short) | dark | F3 |
+| 19 Nov 2026 | rembrandt-self-portraits | Rembrandt, *Self Portrait at the Age of 63* (National Gallery, London) + 1628, 1640, 1652, 1658 | watch his face as he loses everything; in the last one he painted out his brush (first Series Short) | dark-legend | F4 |
 
 ## Ideas (to verify)
 

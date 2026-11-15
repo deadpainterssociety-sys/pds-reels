@@ -1,0 +1,638 @@
+{
+ "slug": "rembrandt-self-portraits",
+ "formula": "F4",
+ "format": "series",
+ "hook_type": "dark-legend",
+ "teaser": "Forty years of Rembrandt's face",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Rembrandt van Rijn",
+  "born": 1606,
+  "died": 1669,
+  "painting": "Self Portrait at the Age of 63",
+  "year": "1669",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "r63",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1669,
+  "note": "Rembrandt d. 1669: public domain. All five self-portraits PD (Commons: NG London x2, Rijksmuseum, KHM Vienna, Frick via Google Art Project)."
+ },
+ "say": {
+  "1628": "sixteen twenty-eight",
+  "1640": "sixteen forty",
+  "1652": "sixteen fifty-two",
+  "1658": "sixteen fifty-eight",
+  "1669": "sixteen sixty-nine",
+  "22": "twenty-two"
+ },
+ "ipa": {
+  "Rembrandt": "ɹˈɛmbɹænt",
+  "Rembrandt's": "ɹˈɛmbɹænts",
+  "Saskia": "sˈæskiə"
+ },
+ "respell": {
+  "Saskia": "SAS-kee-uh"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Watch Rembrandt's face",
+     0.1,
+     0.95
+    ],
+    [
+     "as he loses *everything.*",
+     0.6,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "y1628",
+   "perf": [
+    [
+     "1628.",
+     0.18,
+     0.96
+    ],
+    [
+     "About 22,",
+     0.12,
+     0.98
+    ],
+    [
+     "most of his face in shadow.",
+     0.45,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "y1640",
+   "perf": [
+    [
+     "1640.",
+     0.18,
+     0.96
+    ],
+    [
+     "Rich, famous,",
+     0.12,
+     0.97
+    ],
+    [
+     "dressed like a Renaissance gentleman.",
+     0.45,
+     0.98
+    ]
+   ]
+  },
+  {
+   "id": "saskia",
+   "perf": [
+    [
+     "Two years later,",
+     0.1,
+     0.97
+    ],
+    [
+     "his wife Saskia *dies.*",
+     0.55,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1652",
+   "perf": [
+    [
+     "1652.",
+     0.18,
+     0.96
+    ],
+    [
+     "His debts are piling up.",
+     0.45,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "y1658",
+   "perf": [
+    [
+     "1658.",
+     0.18,
+     0.96
+    ],
+    [
+     "Bankrupt, he loses his house",
+     0.08,
+     0.97
+    ],
+    [
+     "and his art collection.",
+     0.5,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "king",
+   "perf": [
+    [
+     "Still,",
+     0.1,
+     0.95
+    ],
+    [
+     "he paints himself like a *king.*",
+     0.55,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1669",
+   "perf": [
+    [
+     "1669.",
+     0.18,
+     0.95
+    ],
+    [
+     "His son Titus is dead.",
+     0.5,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "brush",
+   "perf": [
+    [
+     "He first painted himself holding a brush.",
+     0.35,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "out",
+   "perf": [
+    [
+     "Then he painted it *out.*",
+     0.6,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "dead",
+   "perf": [
+    [
+     "Months later,",
+     0.1,
+     0.96
+    ],
+    [
+     "Rembrandt was dead.",
+     0.6,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.3,
+     0.96
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "r63": {
+   "file": "src/r63.jpg",
+   "commons": "File:Rembrandt, Self Portrait at the Age of 63.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.47,
+     0.3
+    ],
+    "faceup": [
+     0.47,
+     0.37
+    ],
+    "eyes": [
+     0.47,
+     0.265
+    ],
+    "hands": [
+     0.8,
+     0.81
+    ]
+   }
+  },
+  "r1628": {
+   "file": "src/r1628.jpg",
+   "commons": "File:Rembrandt Harmensz. van Rijn - Zelfportret op jeugdige leeftijd - Google Art Project.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.52
+    ],
+    "faceup": [
+     0.5,
+     0.58
+    ]
+   }
+  },
+  "r1640": {
+   "file": "src/r1640.jpg",
+   "commons": "File:Rembrandt, Self Portrait at the Age of 34.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.45,
+     0.357
+    ],
+    "faceup": [
+     0.45,
+     0.43
+    ]
+   }
+  },
+  "r1652": {
+   "file": "src/r1652.jpg",
+   "commons": "File:Rembrandt Harmenszoon van Rijn - Large Self-Portrait - Google Art Project.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.45,
+     0.256
+    ],
+    "faceup": [
+     0.45,
+     0.33
+    ]
+   }
+  },
+  "r1658": {
+   "file": "src/r1658.jpg",
+   "commons": "File:Rembrandt - Zelfportret - Google Art Project.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.45,
+     0.25
+    ],
+    "faceup": [
+     0.45,
+     0.32
+    ],
+    "body": [
+     0.47,
+     0.52
+    ],
+    "cane": [
+     0.8,
+     0.72
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "r63",
+   "kind": "image",
+   "from": "faceup@2.25",
+   "to": "faceup@2.1"
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "r63",
+   "from": "faceup@1.05",
+   "to": "faceup@1.1",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "y1628-0.1",
+   "img": "r1628",
+   "kind": "image",
+   "from": "faceup@1.2",
+   "to": "faceup@1.3"
+  },
+  {
+   "at": "y1640-0.1",
+   "img": "r1640",
+   "kind": "image",
+   "from": "faceup@1.15",
+   "to": "faceup@1.25"
+  },
+  {
+   "at": "saskia-0.1",
+   "img": "r1640",
+   "kind": "image",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "gray": 1
+  },
+  {
+   "at": "y1652-0.1",
+   "img": "r1652",
+   "kind": "image",
+   "from": "faceup@1.2",
+   "to": "faceup@1.3"
+  },
+  {
+   "at": "y1658-0.1",
+   "img": "r1658",
+   "kind": "image",
+   "from": "body@1.0",
+   "to": "body@1.06"
+  },
+  {
+   "at": "king-0.1",
+   "img": "r1658",
+   "kind": "image",
+   "from": "faceup@1.7",
+   "to": "faceup@1.85"
+  },
+  {
+   "at": "y1669-0.1",
+   "img": "r63",
+   "from": "faceup@1.4",
+   "to": "faceup@1.5",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "brush-0.1",
+   "img": "r63",
+   "kind": "image",
+   "from": "hands@2.4",
+   "to": "hands@2.55",
+   "dim": -0.4
+  },
+  {
+   "at": "dead-0.1",
+   "img": "r63",
+   "kind": "image",
+   "from": "faceup@2.15",
+   "to": "faceup@2.3"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "r63",
+   "from": "faceup@1.5",
+   "to": "faceup@1.6",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "y1628",
+   "to": "y1640-0.1",
+   "text": "C. 1628 · RIJKSMUSEUM"
+  },
+  {
+   "type": "label",
+   "from": "y1640",
+   "to": "saskia-0.1",
+   "text": "1640 · NATIONAL GALLERY"
+  },
+  {
+   "type": "label",
+   "from": "saskia",
+   "to": "y1652-0.1",
+   "text": "SASKIA DIES · 1642"
+  },
+  {
+   "type": "label",
+   "from": "y1652",
+   "to": "y1658-0.1",
+   "text": "1652 · KHM, VIENNA"
+  },
+  {
+   "type": "label",
+   "from": "y1658",
+   "to": "y1669-0.1",
+   "text": "1658 · FRICK, NEW YORK"
+  },
+  {
+   "type": "label",
+   "from": "y1669",
+   "to": "dead-0.1",
+   "text": "1669 · NATIONAL GALLERY"
+  },
+  {
+   "type": "ring",
+   "at": "brush.4",
+   "to": "dead-0.1",
+   "img": "r63",
+   "point": "hands",
+   "rx": 260,
+   "ry": 190,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "music": {
+  "transpose": 4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "y1652-0.2",
+    "king$+0.2"
+   ],
+   "choir": [
+    "brush-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "y1628",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1640",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1652",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1658",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1669",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "out.4",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "nocap": [],
+ "cover": {
+  "question": "What did he <i>paint out?</i>",
+  "name": "REMBRANDT",
+  "work": "Self Portrait at the Age of 63, 1669",
+  "focus": [
+   0.47,
+   0.3
+  ],
+  "span": 0.55,
+  "answered_by": "The brush: his clasped hands first held a paintbrush, then he painted it out (National Gallery)"
+ },
+ "facts": [
+  {
+   "claim": "About 80 self-portraits survive from Rembrandt's 40-year career; Self Portrait at the Age of 63 (1669, National Gallery, London) is one of three he made just before his death",
+   "source": "https://www.nationalgallery.org.uk/paintings/rembrandt-self-portrait-at-the-age-of-63 ; https://en.wikipedia.org/wiki/Self-Portrait_at_the_Age_of_63"
+  },
+  {
+   "claim": "Self-portrait, c. 1628 (Rijksmuseum): light along his right cheek, the rest of his face veiled in shadow; born July 1606, so about 22",
+   "source": "https://www.rijksmuseum.nl/en/collection/SK-A-4691 ; https://en.wikipedia.org/wiki/Self-portraits_by_Rembrandt"
+  },
+  {
+   "claim": "Self Portrait at the Age of 34 (1640, National Gallery): at the height of his fame, in the clothes of a gentleman of the 1520s, his pose based on Titian and Raphael",
+   "source": "https://www.nationalgallery.org.uk/paintings/rembrandt-self-portrait-at-the-age-of-34 ; https://colourlex.com/project/rembrandt-self-portrait-at-the-age-of-34"
+  },
+  {
+   "claim": "His wife Saskia died in 1642",
+   "source": "https://www.nga.gov/collection/artist-info.1822.html ; https://www.theleidencollection.com/artists/rembrandt-van-rijn"
+  },
+  {
+   "claim": "Debts piling up by 1652 (Large Self-Portrait, Kunsthistorisches Museum, Vienna): he stopped paying the mortgage on his house from 1649",
+   "source": "https://assets.cambridge.org/052185/8259/excerpt/0521858259_excerpt.htm ; https://www.britannica.com/biography/Rembrandt-van-Rijn/Rembrandts-late-style"
+  },
+  {
+   "claim": "Insolvent in 1656 (cessio bonorum); his art collection was auctioned in 1657 and 1658 and his house sold at a foreclosure auction by February 1658",
+   "source": "https://www.nga.gov/collection/artist-info.1822.html ; https://en.wikipedia.org/wiki/Titus_van_Rijn"
+  },
+  {
+   "claim": "Self-Portrait, 1658 (Frick Collection), painted at the time of his bankruptcy, in rich, historical costume, seated 'like an aged prince on a throne' (Holmes)",
+   "source": "https://frick.org/sites/default/files/archivedsite/exhibitions/rembrandt/self_1658.htm ; https://transcribe.frick.org/wiki/.NTU3Mw.MzYxMg"
+  },
+  {
+   "claim": "His son Titus died on 4 September 1668",
+   "source": "https://en.wikipedia.org/wiki/Titus_van_Rijn ; https://www.nga.gov/collection/artist-info.1822.html"
+  },
+  {
+   "claim": "In Self Portrait at the Age of 63 his clasped hands were originally open and held a paintbrush",
+   "source": "https://www.nationalgallery.org.uk/stories/rembrandt-in-detail"
+  },
+  {
+   "claim": "Rembrandt died on 4 October 1669",
+   "source": "https://www.nationalgallery.org.uk/learning/teachers-and-schools/teachers-notes/rembrandt-the-late-works-a-resource-for-art-teachers ; https://www.theleidencollection.com/artists/rembrandt-van-rijn"
+  }
+ ],
+ "caption": "Rembrandt painted his own face about 80 times in 40 years. Put them in order and you watch a life fall apart.\n\nAround 1628 he is about 22, experimenting, most of his face in shadow. In 1640 he is rich and famous, dressed like a gentleman of the 1520s and posing like a Titian. Two years later his wife Saskia dies. By the early 1650s he has stopped paying for his big house in Amsterdam. In 1656 he declares himself insolvent; his art collection is auctioned and in 1658 the house goes too. That same year he paints himself enthroned, like a king (Frick Collection, New York).\n\nIn September 1668 his son Titus dies. In 1669 Rembrandt paints one of his last self-portraits, now in the National Gallery, London. The museum's experts found that his clasped hands first held a paintbrush. He painted it out. He died on 4 October 1669.\n\n🖤 Which face hits you hardest?",
+ "caption_short": "Watch Rembrandt's face as he loses everything. 40 years of self-portraits, and one brush he painted out. 🖤",
+ "youtube_title": "What did he paint out? Rembrandt's self-portraits, 1628–1669",
+ "hashtags_instagram": [
+  "#rembrandt",
+  "#selfportrait",
+  "#arthistory",
+  "#nationalgallery",
+  "#darkhistory"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#rembrandt",
+  "#selfportrait",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#rembrandt",
+  "#selfportrait",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#dutchgoldenage",
+  "#oldmasters"
+ ]
+}
