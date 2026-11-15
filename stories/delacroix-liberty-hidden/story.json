@@ -1,0 +1,698 @@
+{
+ "slug": "delacroix-liberty-hidden",
+ "hook_type": "hidden",
+ "teaser": "The painting a French king had to hide",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Eugène Delacroix",
+  "born": 1798,
+  "died": 1863,
+  "painting": "Liberty Leading the People",
+  "year": "1830",
+  "museum": "Louvre",
+  "city": "Paris",
+  "image": "liberty",
+  "image_credit": "Musée du Louvre, Paris (after the 2024 restoration), via Wikimedia Commons (public domain)",
+  "nude": true
+ },
+ "images": {
+  "liberty": {
+   "file": "src/liberty.jpg",
+   "commons": "File:La Liberté guidant le peuple - Eugène Delacroix - Musée du Louvre Peintures RF 129 - après restauration 2024.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "lface": [
+     0.6,
+     0.12
+    ],
+    "flag": [
+     0.46,
+     0.1
+    ],
+    "boy": [
+     0.76,
+     0.36
+    ],
+    "tophat": [
+     0.26,
+     0.33
+    ],
+    "sabre": [
+     0.1,
+     0.33
+    ],
+    "kneel": [
+     0.42,
+     0.52
+    ],
+    "notre": [
+     0.9,
+     0.42
+    ],
+    "date": [
+     0.86,
+     0.64
+    ],
+    "deadright": [
+     0.85,
+     0.85
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "louisphilippe": {
+   "file": "src/louisphilippe.jpg",
+   "commons": "File:Louis-Philippe I King of the French (by Franz Xaver Winterhalter).jpg",
+   "long": 3840,
+   "points": {
+    "face": [
+     0.5,
+     0.27
+    ],
+    "center": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "delacroix": {
+   "file": "src/delacroix.jpg",
+   "commons": "File:Félix Nadar 1820-1910 portraits Eugène Delacroix.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.27
+    ],
+    "center": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "rohan": {
+   "file": "src/rohan.jpg",
+   "commons": "File:Révolution de 1830 - Combat de la rue de Rohan - 29.07.1830.jpg",
+   "points": {
+    "hero": [
+     0.4,
+     0.55
+    ],
+    "crowd": [
+     0.7,
+     0.65
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "rights": {
+  "creator_died": 1863,
+  "note": "Delacroix d. 1863; Winterhalter d. 1873; Nadar photo 1858; 1830 print: all public domain."
+ },
+ "cover": {
+  "question": "Who <i>hid</i> Liberty?",
+  "name": "DELACROIX",
+  "work": "Liberty Leading the People, 1830",
+  "focus": [
+   0.75,
+   0.36
+  ],
+  "span": 0.4,
+  "answered_by": "King Louis-Philippe's government: it bought the painting in 1831, took it down within months as too inflammatory, and after the June 1832 uprising handed it back to Delacroix; it reached the Louvre only in 1874"
+ },
+ "say": {
+  "1830": "eighteen thirty",
+  "1831": "eighteen thirty-one",
+  "1832": "eighteen thirty-two",
+  "1874": "eighteen seventy-four"
+ },
+ "ipa": {
+  "Eugène": "uːʒˈɛn",
+  "Delacroix": "dˌɛləkɹwˈɑː",
+  "Louis-Philippe": "lwˈiː fiːlˈiːp",
+  "Luxembourg": "lˈʊksɑːmbʊɹ"
+ },
+ "respell": {
+  "Eugène": "oo-ZHEN",
+  "Louis-Philippe": "lwee fee-LEEP",
+  "Luxembourg": "look-sahm-BOOR"
+ },
+ "chirp_say": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "The French state bought this painting.",
+     0.35,
+     0.95
+    ],
+    [
+     "Then it *hid* it.",
+     0.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "july",
+   "perf": [
+    [
+     "In July 1830,",
+     0.25,
+     0.95
+    ],
+    [
+     "Paris rose up.",
+     0.35,
+     0.93
+    ],
+    [
+     "Three days of street fighting",
+     0.25,
+     0.95
+    ],
+    [
+     "drove out the king.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "painter",
+   "perf": [
+    [
+     "Eugène Delacroix didn't fight.",
+     0.35,
+     0.93
+    ],
+    [
+     "But he wrote to his brother:",
+     0.25,
+     0.95
+    ],
+    [
+     "if I haven't fought for my country,",
+     0.25,
+     0.93
+    ],
+    [
+     "at least I'll paint for her.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "liberty",
+   "perf": [
+    [
+     "He painted Liberty herself,",
+     0.25,
+     0.95
+    ],
+    [
+     "leading the people over the dead.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "king",
+   "perf": [
+    [
+     "The revolution crowned a new king,",
+     0.3,
+     0.95
+    ],
+    [
+     "Louis-Philippe.",
+     0.5,
+     0.9
+    ],
+    [
+     "In 1831, his government bought the painting,",
+     0.3,
+     0.95
+    ],
+    [
+     "and showed it at the Luxembourg Palace.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "fear",
+   "perf": [
+    [
+     "Within months, it came down:",
+     0.3,
+     0.93
+    ],
+    [
+     "its message was too inflammatory.",
+     0.4,
+     0.93
+    ],
+    [
+     "After Paris rose again in June 1832,",
+     0.3,
+     0.95
+    ],
+    [
+     "it was handed back to Delacroix.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "attic",
+   "perf": [
+    [
+     "A critic later wrote it had been",
+     0.25,
+     0.95
+    ],
+    [
+     "hidden in an attic,",
+     0.25,
+     0.93
+    ],
+    [
+     "for being too *revolutionary.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "A king crowned by a revolution",
+     0.3,
+     0.93
+    ],
+    [
+     "couldn't risk a painting of one.",
+     0.9,
+     0.86
+    ],
+    [
+     "It reached the Louvre only in 1874.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Louvre, in Paris.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "img": "liberty",
+   "from": "lface@5.0",
+   "to": "lface@5.2",
+   "sway": 0.004
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "liberty",
+   "from": "flag@3.0",
+   "to": "flag@3.1",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "july-0.08",
+   "img": "rohan",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "gray": 1
+  },
+  {
+   "at": "july.6-0.05",
+   "img": "rohan",
+   "kind": "image",
+   "from": "hero@1.6",
+   "to": "hero@1.72",
+   "gray": 1
+  },
+  {
+   "at": "painter-0.08",
+   "img": "delacroix",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "gray": 1
+  },
+  {
+   "at": "painter.10-0.05",
+   "img": "liberty",
+   "from": "tophat@2.2",
+   "to": "tophat@2.32",
+   "sway": 0.006
+  },
+  {
+   "at": "painter.17-0.05",
+   "img": "liberty",
+   "from": "kneel@2.4",
+   "to": "kneel@2.52",
+   "sway": 0.006
+  },
+  {
+   "at": "liberty-0.08",
+   "img": "liberty",
+   "from": "lface@4.8",
+   "to": "lface@5.0",
+   "sway": 0.004
+  },
+  {
+   "at": "liberty.4-0.05",
+   "img": "liberty",
+   "from": "deadright@2.2",
+   "to": "deadright@2.32",
+   "sway": 0.006
+  },
+  {
+   "at": "king-0.08",
+   "img": "louisphilippe",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.62",
+   "gray": 0.6
+  },
+  {
+   "at": "king.7-0.05",
+   "img": "liberty",
+   "from": "boy@2.4",
+   "to": "boy@2.52",
+   "sway": 0.006
+  },
+  {
+   "at": "king.14-0.05",
+   "img": "liberty",
+   "from": "notre@2.4",
+   "to": "notre@2.52",
+   "sway": 0.006
+  },
+  {
+   "at": "fear-0.08",
+   "img": "liberty",
+   "from": "flag@3.2",
+   "to": "flag@3.32",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "fear.10-0.05",
+   "img": "liberty",
+   "from": "sabre@2.4",
+   "to": "sabre@2.52",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "fear.17-0.05",
+   "img": "delacroix",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.62",
+   "gray": 1
+  },
+  {
+   "at": "attic-0.08",
+   "img": "liberty",
+   "from": "tophat@2.6",
+   "to": "tophat@2.72",
+   "gray": 1,
+   "dim": 0.35
+  },
+  {
+   "at": "attic.7-0.05",
+   "img": "liberty",
+   "from": "kneel@2.8",
+   "to": "kneel@2.92",
+   "gray": 1,
+   "dim": 0.35
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "liberty",
+   "from": "flag@2.8",
+   "to": "flag@2.9",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.12-0.05",
+   "img": "liberty",
+   "from": "lface@4.8",
+   "to": "lface@5.0",
+   "sway": 0.004
+  },
+  {
+   "at": "ending-0.08",
+   "img": "liberty",
+   "from": "boy@2.2",
+   "to": "boy@2.35",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "july",
+   "to": "painter-0.1",
+   "text": "PARIS · 29 JULY 1830"
+  },
+  {
+   "type": "label",
+   "from": "painter",
+   "to": "painter.10-0.1",
+   "text": "DELACROIX · NADAR, 1858"
+  },
+  {
+   "type": "label",
+   "from": "painter.10",
+   "to": "liberty-0.1",
+   "text": "LETTER TO HIS BROTHER · 1830"
+  },
+  {
+   "type": "title",
+   "from": "king.6",
+   "to": "king.7-0.1",
+   "kicker": "KING OF THE FRENCH",
+   "text": "Louis-<i>Philippe</i>"
+  },
+  {
+   "type": "label",
+   "from": "king.7",
+   "to": "king.14-0.1",
+   "text": "BOUGHT BY THE STATE · 1831"
+  },
+  {
+   "type": "label",
+   "from": "king.14",
+   "to": "fear-0.1",
+   "text": "MUSÉE DU LUXEMBOURG · 1831"
+  },
+  {
+   "type": "stamp",
+   "from": "fear.3",
+   "to": "fear.10-0.1",
+   "text": "TAKEN DOWN"
+  },
+  {
+   "type": "label",
+   "from": "fear.10",
+   "to": "attic-0.1",
+   "text": "JUNE 1832"
+  },
+  {
+   "type": "label",
+   "from": "attic",
+   "to": "payoff-0.1",
+   "text": "CHAMPFLEURY · 1848"
+  },
+  {
+   "type": "label",
+   "from": "payoff.12",
+   "to": "ending-0.1",
+   "text": "LOUVRE · 1874"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSÉE DU LOUVRE · PARIS"
+  }
+ ],
+ "nocap": [
+  [
+   "king.6",
+   "king.7-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "attic-0.2",
+    "attic$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.8-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "fear.3",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "king.11",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "payoff.18",
+   "fx": "chime",
+   "gain": 0.35
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Liberty Leading the People was painted in autumn 1830 (Oct–Dec 1830) to commemorate the July Revolution",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People ; https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg"
+  },
+  {
+   "claim": "The July Revolution: three days of fighting in Paris (27–29 July 1830, the 'Trois Glorieuses') overthrew King Charles X; Louis-Philippe became King of the French",
+   "source": "https://en.wikipedia.org/wiki/July_Revolution ; https://www.britannica.com/event/July-Revolution"
+  },
+  {
+   "claim": "Delacroix did not fight; he wrote to his brother (letter of 21 October 1830, in the translation Wikipedia prints): 'I've embarked on a modern subject—a barricade. And if I haven't fought for my country at least I'll paint for her.'",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People"
+  },
+  {
+   "claim": "Liberty personified leads the people forward over the bodies of the fallen, holding the tricolour flag",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People"
+  },
+  {
+   "claim": "Shown at the Salon of 1831; bought by the government (Louis-Philippe's Ministry of the Interior) in 1831 and exhibited at the Musée du Luxembourg (Luxembourg Palace)",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People ; https://musee-delacroix.fr/en/museum-studio/eugene-delacroix/biography"
+  },
+  {
+   "claim": "It hung for a few months before being removed because of its inflammatory political message; after the June Rebellion of 1832 it was returned to the artist (Boime: never again openly displayed after June 1832 'for fear of setting a bad example')",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People (citing Albert Boime) ; https://musee-delacroix.fr/en/museum-studio/eugene-delacroix/biography ('It was in fact returned to the artist')"
+  },
+  {
+   "claim": "Champfleury wrote in 1848 that it had been 'hidden in an attic for being too revolutionary'",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People"
+  },
+  {
+   "claim": "It entered the Louvre in 1874, under the Third Republic",
+   "source": "https://musee-delacroix.fr/en/museum-studio/eugene-delacroix/biography ; https://www.smithsonianmag.com/smart-news/liberty-leading-the-people-returns-to-louvre-after-breathtaking-restoration-180984302/"
+  },
+  {
+   "claim": "Hangs in the Louvre, Paris (RF 129)",
+   "source": "https://en.wikipedia.org/wiki/Liberty_Leading_the_People"
+  }
+ ],
+ "caption": "In July 1830, Paris rose up. Three days of street fighting drove out King Charles X. Eugène Delacroix didn't fight, but he wrote to his brother: \"if I haven't fought for my country at least I'll paint for her.\" He painted Liberty herself, leading the people over the dead.\n\nThe revolution crowned a new king, Louis-Philippe. In 1831 his government bought the painting and showed it at the Luxembourg Palace. Within months it came down: its message was too inflammatory. After Paris rose again in June 1832, it was handed back to Delacroix. In 1848 the critic Champfleury wrote that it had been \"hidden in an attic for being too revolutionary.\"\n\nA king crowned by a revolution couldn't risk a painting of one. It reached the Louvre only in 1874, under the Third Republic.\n\nP.S. The 2023–24 restoration removed eight layers of varnish and revealed that Liberty's dress was once grey, not yellow.\n\n🖤 Would you have hidden it?",
+ "caption_short": "The French state bought this painting. Then it hid it. Louis-Philippe's Paris couldn't risk Liberty. 🖤",
+ "youtube_title": "Who hid Liberty? Delacroix's Liberty Leading the People",
+ "hashtags_instagram": [
+  "#delacroix",
+  "#libertyleadingthepeople",
+  "#arthistory",
+  "#louvre",
+  "#frenchrevolution"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#delacroix",
+  "#libertyleadingthepeople",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#delacroix",
+  "#libertyleadingthepeople",
+  "#louvre",
+  "#paris",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#julyrevolution",
+  "#romanticism"
+ ]
+}

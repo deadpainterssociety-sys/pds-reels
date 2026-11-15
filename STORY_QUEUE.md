@@ -50,6 +50,9 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 15 Nov 2026 | leonardo-ermine-nazi | Leonardo, *Lady with an Ermine* (Czartoryski Museum, Kraków) | bought 1798; hidden by Princess Izabela (84) in 1830; walled up at Sieniawa 1939, seized, sent to Berlin; Hans Frank (Hitler's lawyer) hung it in his Wawel office; found at his Bavarian home May 1945; home April 1946; Frank hanged Oct 1946 | damage |
 | 16 Nov 2026 | arcimboldo-vertumnus | Arcimboldo, *Vertumnus* (Skokloster Castle, Sweden) | Rudolf II as the god of the seasons, made of fruit; said to be rewarded with count palatine title; 1648 Swedish loot, item 351 'a face of fruit'; dismissed as 'inferior'; every season ripe at once = he rules the seasons as the world | sacred-strange |
 | 19 Nov 2026 | waterhouse-sirens | Waterhouse, *Ulysses and the Sirens* (National Gallery of Victoria, Melbourne) | pinned for Nolan's *The Odyssey* on digital: sirens as birds with women's heads, not mermaids; The Times 'grotesque'; Homer never describes them; copied from the Siren Painter's vase (BM E440, c. 480–470 BC); mermaid tails are medieval | hidden |
+| 16 Nov 2026 | velazquez-innocent-olimpia | Velázquez, *Portrait of Innocent X* (Galleria Doria Pamphilj, Rome) | his brother's widow Olimpia Maidalchini, 'the papessa' (ambassadors: great influence); Velázquez's lost portrait of her resurfaced 2019; the abandoned-corpse legend (Leti) contradicted by the papal ceremony diaries | hidden |
+| 17 Nov 2026 | bruegel-death-lovers | Bruegel, *The Triumph of Death* (Prado) | death takes everyone except two lovers in the corner, a skeleton playing along behind them; Sylvia Plath, 'Two Views of a Cadaver Room' (The Nation, 30 Jan 1960): 'blind to the carrion army', 'These Flemish lovers flourish; not for long.' | dark |
+| 17 Nov 2026 | delacroix-liberty-hidden | Delacroix, *Liberty Leading the People* (Louvre) | bought by Louis-Philippe's government in 1831, taken down within months as inflammatory, handed back after June 1832; Champfleury: 'hidden in an attic for being too revolutionary'; Louvre only in 1874 | hidden |
 
 ## Ideas (to verify)
 
@@ -58,11 +61,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | Goya, *The Naked Maja* (Prado) | the Inquisition demanded to know who ordered it | hidden | **nude: safe framing** (PLAYBOOK §1); sources: Prado, the 1815 Inquisition file |
 | Botticelli, *The Birth of Venus* (Uffizi) | Simonetta Vespucci, and the painter buried near her | dark-legend | **nude: safe framing**; the model claim is a legend: say so |
 | Titian, *Venus of Urbino* (Uffizi) | Mark Twain called it the "vilest" picture in the world | hidden | **nude: safe framing**; check the quote word for word |
-| Bruegel, *The Triumph of Death* (Prado) | find the human hook | dark | |
 | Manet, *Olympia* (Musée d'Orsay) | the 1865 scandal: guards had to protect it | damage | **nude: safe framing** (face, the black cat, the flowers) |
 | Leonardo, *The Last Supper* (Santa Maria delle Grazie, Milan) | a door was cut through Jesus's feet in 1652 | damage | another "cut" story: space it out from the Night Watch. It's a wall painting: the ending "It hangs in…" would be wrong, so decide the last line first (checked 5 Nov: the door is c. 1652, Wikipedia citing Brambilla Barcilon) |
-| Delacroix, *Liberty Leading the People* (Louvre) | the state bought it, then hid it for years | hidden | partial nudity: frame Liberty's face and the flag |
-| Velázquez, *Portrait of Innocent X* (Galleria Doria Pamphilj, Rome) | Olimpia Maidalchini, the sister-in-law said to decide who could see the Pope (NOT the "troppo vero" angle: Brushstroke Secrets did it, 385k) | dark-legend | topic wave Oct-Nov 2026 (EN 385k, ES 44k/36k, PT 22k); the gossip about her is gossip: hedge it; a good first E2 arm-B story (one painting, a famous man, a concrete payoff) |
 
 ## Long videos (to plan)
 

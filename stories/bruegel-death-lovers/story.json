@@ -1,0 +1,700 @@
+{
+ "slug": "bruegel-death-lovers",
+ "hook_type": "dark",
+ "teaser": "Two lovers who never noticed Death",
+ "experiment": {
+  "id": "E1",
+  "arm": "B"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Pieter Bruegel the Elder",
+  "born": 1525,
+  "died": 1569,
+  "painting": "The Triumph of Death",
+  "year": "c. 1562",
+  "museum": "Museo del Prado",
+  "city": "Madrid",
+  "image": "triumph",
+  "image_credit": "Museo del Prado, Madrid, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Why can't <i>they</i> see Death?",
+  "name": "BRUEGEL",
+  "work": "The Triumph of Death, c. 1562",
+  "focus": [
+   0.955,
+   0.85
+  ],
+  "span": 0.45,
+  "answered_by": "They only see each other: Plath wrote they are 'blind to the carrion army', and a skeleton is already playing along behind them"
+ },
+ "say": {
+  "1562": "fifteen sixty-two",
+  "1960": "nineteen sixty"
+ },
+ "ipa": {
+  "Bruegel": "bɹˈɔɪɡəl",
+  "Pieter": "pˈiːtəɹ",
+  "Plath": "plˈæθ",
+  "Flemish": "flˈɛmɪʃ"
+ },
+ "respell": {
+  "Bruegel": "BROY-gul",
+  "Pieter": "PEE-ter"
+ },
+ "chirp_say": {
+  "Bruegel": "Broygel"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Death is killing everyone in this painting.",
+     0.35,
+     0.95
+    ],
+    [
+     "Except two *lovers.*",
+     0.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "when",
+   "perf": [
+    [
+     "Pieter Bruegel painted *The Triumph of Death*",
+     0.25,
+     0.95
+    ],
+    [
+     "around 1562.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "army",
+   "perf": [
+    [
+     "An army of skeletons sweeps the land.",
+     0.35,
+     0.95
+    ],
+    [
+     "They ring the bell for the end of the world.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "nobody",
+   "perf": [
+    [
+     "Nobody is spared.",
+     0.35,
+     0.92
+    ],
+    [
+     "A king's gold is looted.",
+     0.3,
+     0.95
+    ],
+    [
+     "A cardinal is led away.",
+     0.3,
+     0.95
+    ],
+    [
+     "A starving dog nibbles at a dead child.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "corner",
+   "perf": [
+    [
+     "But down in the right-hand corner,",
+     0.3,
+     0.95
+    ],
+    [
+     "a young man plays the lute,",
+     0.25,
+     0.95
+    ],
+    [
+     "and a woman sings along.",
+     0.35,
+     0.95
+    ],
+    [
+     "They see only each *other.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "behind",
+   "perf": [
+    [
+     "Behind them,",
+     0.3,
+     0.95
+    ],
+    [
+     "a skeleton is playing *along.*",
+     0.5,
+     0.86
+    ],
+    [
+     "They haven't noticed.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "plath",
+   "perf": [
+    [
+     "In 1960, the poet Sylvia Plath published a poem",
+     0.3,
+     0.95
+    ],
+    [
+     "that moves from a dissecting room",
+     0.3,
+     0.95
+    ],
+    [
+     "to this very corner.",
+     0.5,
+     0.93
+    ],
+    [
+     "Two people only, she wrote,",
+     0.3,
+     0.93
+    ],
+    [
+     "are blind to the carrion army.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Then she gave them their sentence.",
+     0.5,
+     0.92
+    ],
+    [
+     "These Flemish lovers flourish;",
+     0.35,
+     0.9
+    ],
+    [
+     "not for *long.*",
+     1.0,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Prado, in Madrid.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Triumph of Death, oil on panel, c. 1562, by Pieter Bruegel the Elder; in the Museo del Prado, Madrid, since 1827",
+   "source": "https://en.wikipedia.org/wiki/The_Triumph_of_Death ; https://www.museodelprado.es/en/the-collection/art-work/the-triumph-of-death/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+  },
+  {
+   "claim": "An army of skeletons attacks the living across a desolate landscape; skeletons ring the bell that signifies the death knell of the world (upper left)",
+   "source": "https://en.wikipedia.org/wiki/The_Triumph_of_Death (citing Snyder 1985)"
+  },
+  {
+   "claim": "No rank is spared: a dying king's gold and silver coins are looted by a skeleton; a cardinal is helped to his fate by a skeleton wearing a red hat; a starving dog nibbles at a dead child in its dead mother's arms",
+   "source": "https://en.wikipedia.org/wiki/The_Triumph_of_Death"
+  },
+  {
+   "claim": "In the bottom right corner a musician plays a lute while his lady sings; a skeleton plays along behind them, unseen",
+   "source": "https://en.wikipedia.org/wiki/The_Triumph_of_Death ; https://www.thenation.com/article/archive/two-views-cadaver-room/ (Plath: 'deaf to the fiddle in the hands / Of the death's-head shadowing their song')"
+  },
+  {
+   "claim": "Sylvia Plath's poem 'Two Views of a Cadaver Room' was printed in The Nation on 30 January 1960 (also in The Colossus, 1960); its first half describes a visit to a dissecting room, its second half Bruegel's Triumph of Death",
+   "source": "https://www.thenation.com/article/archive/two-views-cadaver-room/ ; https://medhum.med.nyu.edu/view/1171"
+  },
+  {
+   "claim": "Plath's words, checked word for word: 'Two people only are blind to the carrion army:' and 'These Flemish lovers flourish; not for long.'",
+   "source": "https://www.thenation.com/article/archive/two-views-cadaver-room/ ; https://biblioklept.org/2010/03/31/two-views-of-a-cadaver-room-sylvia-plath/"
+  },
+  {
+   "claim": "The 1953 photo of Plath used on screen is an Associated Press newspaper photo (Boston Globe, 26 Aug 1953), public domain per Commons; only her face is shown",
+   "source": "https://commons.wikimedia.org/wiki/File:Sylvia_Plath_-_The_Boston_Globe_(1953).png"
+  },
+  {
+   "claim": "Hangs in the Museo del Prado, Madrid",
+   "source": "https://en.wikipedia.org/wiki/The_Triumph_of_Death"
+  }
+ ],
+ "images": {
+  "triumph": {
+   "file": "src/triumph.jpg",
+   "commons": "File:The Triumph of Death by Pieter Bruegel the Elder.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "rider": [
+     0.2,
+     0.67
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "army": [
+     0.62,
+     0.55
+    ],
+    "bell": [
+     0.05,
+     0.1
+    ],
+    "king": [
+     0.06,
+     0.84
+    ],
+    "coins": [
+     0.165,
+     0.85
+    ],
+    "cardinal": [
+     0.29,
+     0.79
+    ],
+    "dog": [
+     0.35,
+     0.88
+    ],
+    "table": [
+     0.86,
+     0.78
+    ],
+    "lovers": [
+     0.955,
+     0.86
+    ],
+    "woman": [
+     0.965,
+     0.845
+    ],
+    "fiddler": [
+     0.954,
+     0.81
+    ]
+   }
+  },
+  "plath": {
+   "file": "src/plath.jpg",
+   "commons": "File:Sylvia Plath - The Boston Globe (1953).png",
+   "points": {
+    "face": [
+     0.5,
+     0.27
+    ],
+    "center": [
+     0.5,
+     0.52
+    ]
+   }
+  },
+  "bruegel": {
+   "file": "src/bruegel.jpg",
+   "commons": "File:Wierix, Johannes (attributed to) - Portrait of Pieter Bruegel (I) - 1571 - WGA12414.jpg",
+   "points": {
+    "face": [
+     0.45,
+     0.22
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "triumph",
+   "from": "rider@2.7",
+   "to": "rider@2.82",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.3-0.05",
+   "img": "triumph",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "triumph",
+   "from": "lovers@2.6",
+   "to": "lovers@2.72",
+   "sway": 0.006
+  },
+  {
+   "at": "when-0.08",
+   "img": "bruegel",
+   "kind": "image",
+   "from": "center@0.7",
+   "to": "center@0.73",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "when.3-0.05",
+   "img": "triumph",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.45",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "army-0.08",
+   "img": "triumph",
+   "from": "army@1.8",
+   "to": "army@1.92",
+   "sway": 0.006
+  },
+  {
+   "at": "army.7-0.05",
+   "img": "triumph",
+   "from": "bell@2.2",
+   "to": "bell@2.32",
+   "sway": 0.006
+  },
+  {
+   "at": "nobody-0.08",
+   "img": "triumph",
+   "from": "center@1.1",
+   "to": "center@1.18",
+   "sway": 0.008
+  },
+  {
+   "at": "nobody.3-0.05",
+   "img": "triumph",
+   "from": "king@2.6",
+   "to": "coins@2.82",
+   "sway": 0.006
+  },
+  {
+   "at": "nobody.8-0.05",
+   "img": "triumph",
+   "from": "cardinal@2.7",
+   "to": "cardinal@2.82",
+   "sway": 0.006
+  },
+  {
+   "at": "nobody.13-0.05",
+   "img": "triumph",
+   "from": "dog@2.8",
+   "to": "dog@2.92",
+   "sway": 0.006,
+   "dim": 0.1
+  },
+  {
+   "at": "corner-0.08",
+   "img": "triumph",
+   "from": "table@1.9",
+   "to": "table@2.02",
+   "sway": 0.006
+  },
+  {
+   "at": "corner.6-0.05",
+   "img": "triumph",
+   "from": "lovers@2.6",
+   "to": "lovers@2.72",
+   "sway": 0.006
+  },
+  {
+   "at": "corner.17-0.05",
+   "img": "triumph",
+   "from": "woman@3.0",
+   "to": "woman@3.12",
+   "sway": 0.005
+  },
+  {
+   "at": "behind-0.08",
+   "img": "triumph",
+   "from": "fiddler@2.8",
+   "to": "fiddler@2.92",
+   "sway": 0.005
+  },
+  {
+   "at": "behind.7-0.05",
+   "img": "triumph",
+   "from": "lovers@2.6",
+   "to": "lovers@2.72",
+   "sway": 0.006
+  },
+  {
+   "at": "plath-0.08",
+   "img": "plath",
+   "kind": "image",
+   "from": "center@1.4",
+   "to": "center@1.5",
+   "gray": 1
+  },
+  {
+   "at": "plath.9-0.05",
+   "img": "triumph",
+   "from": "table@1.9",
+   "to": "table@2.02",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "plath.15-0.05",
+   "img": "triumph",
+   "from": "lovers@2.6",
+   "to": "lovers@2.72",
+   "gray": 0.6
+  },
+  {
+   "at": "plath.19-0.05",
+   "img": "triumph",
+   "from": "woman@3.0",
+   "to": "woman@3.12",
+   "sway": 0.005
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "triumph",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "triumph",
+   "from": "lovers@2.6",
+   "to": "lovers@2.72",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "triumph",
+   "from": "fiddler@2.8",
+   "to": "lovers@2.72",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.8",
+   "to": "when-0.1",
+   "img": "triumph",
+   "point": "lovers",
+   "rx": 170,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "when",
+   "to": "when.3-0.1",
+   "text": "PIETER BRUEGEL THE ELDER"
+  },
+  {
+   "type": "label",
+   "from": "when.3",
+   "to": "army-0.1",
+   "text": "OIL ON PANEL · C. 1562"
+  },
+  {
+   "type": "label",
+   "from": "nobody.3",
+   "to": "nobody.8-0.1",
+   "text": "THE KING"
+  },
+  {
+   "type": "label",
+   "from": "nobody.8",
+   "to": "nobody.13-0.1",
+   "text": "THE CARDINAL"
+  },
+  {
+   "type": "label",
+   "from": "corner",
+   "to": "corner.6-0.1",
+   "text": "BOTTOM RIGHT CORNER"
+  },
+  {
+   "type": "hotspot",
+   "at": "behind.3",
+   "to": "behind.7-0.1",
+   "img": "triumph",
+   "point": "fiddler"
+  },
+  {
+   "type": "title",
+   "from": "plath.4",
+   "to": "plath.9-0.1",
+   "kicker": "POET · PHOTO, 1953",
+   "text": "Sylvia <i>Plath</i>"
+  },
+  {
+   "type": "label",
+   "from": "plath.9",
+   "to": "payoff-0.1",
+   "text": "THE NATION · 30 JAN 1960"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "ending-0.1",
+   "text": "TWO VIEWS OF A CADAVER ROOM"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSEO DEL PRADO · MADRID"
+  }
+ ],
+ "rights": {
+  "creator_died": 1569,
+  "note": "Bruegel d. 1569; Wierix print 1571; 1953 AP photo of Plath published without notice (PD per Commons). Plath's poem (1960) quoted only in two short phrases, read in narration."
+ },
+ "nocap": [
+  [
+   "plath.4",
+   "plath.9-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": 3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "plath-0.2",
+    "plath$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.3-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "army.10",
+   "fx": "chime",
+   "gain": 0.35
+  },
+  {
+   "at": "behind.3",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "payoff.12",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "caption": "Death is killing everyone in Pieter Bruegel's The Triumph of Death (c. 1562). An army of skeletons sweeps the land and rings the bell for the end of the world. A king's gold is looted, a cardinal is led away, a starving dog nibbles at a dead child.\n\nExcept in the bottom right corner. A young man plays the lute, a woman sings from a sheet of music, and they see only each other. Behind them, a skeleton is already playing along.\n\nIn 1960 Sylvia Plath published \"Two Views of a Cadaver Room\" (The Nation, 30 January 1960). It moves from a dissecting room to this very corner: \"Two people only are blind to the carrion army\". And then their sentence: \"These Flemish lovers flourish; not for long.\"\n\nP.S. The painting has been in the Prado since 1827.\n\n🖤 Would you have noticed the skeleton behind them?",
+ "caption_short": "Death is killing everyone in this Bruegel. Except two lovers. Sylvia Plath gave them their sentence. 🖤",
+ "youtube_title": "Why can't they see Death? Sylvia Plath and Bruegel's Triumph of Death",
+ "hashtags_instagram": [
+  "#bruegel",
+  "#triumphofdeath",
+  "#arthistory",
+  "#prado",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#bruegel",
+  "#triumphofdeath",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#bruegel",
+  "#triumphofdeath",
+  "#sylviaplath",
+  "#prado",
+  "#madrid",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#danceofdeath"
+ ]
+}

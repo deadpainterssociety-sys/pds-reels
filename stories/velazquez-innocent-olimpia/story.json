@@ -1,0 +1,741 @@
+{
+ "slug": "velazquez-innocent-olimpia",
+ "hook_type": "hidden",
+ "teaser": "The woman Rome said ruled the Pope",
+ "experiment": {
+  "id": "E1",
+  "arm": "A"
+ },
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Diego Velázquez",
+  "born": 1599,
+  "died": 1660,
+  "painting": "Portrait of Innocent X",
+  "year": "1650",
+  "museum": "Galleria Doria Pamphilj",
+  "city": "Rome",
+  "image": "innocent",
+  "image_credit": "Galleria Doria Pamphilj, Rome, via Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Who <i>ruled</i> this Pope?",
+  "name": "VELÁZQUEZ",
+  "work": "Portrait of Innocent X, 1650",
+  "focus": [
+   0.44,
+   0.28
+  ],
+  "span": 0.45,
+  "answered_by": "His brother's widow, Olimpia Maidalchini, 'the papessa': her influence was real, though the cruellest story about her (his abandoned corpse) is contradicted by the Vatican's ceremony diaries"
+ },
+ "say": {
+  "1650": "sixteen fifty",
+  "1655": "sixteen fifty-five",
+  "2019": "twenty nineteen",
+  "300": "three hundred"
+ },
+ "ipa": {
+  "Velázquez": "vɛlˈɑːskɛz",
+  "Olimpia": "oʊlˈiːmpiə",
+  "Maidalchini": "mˌaɪdɑːlkˈiːni",
+  "papessa": "pɑːpˈɛsə",
+  "Doria": "dˈɔːɹiə",
+  "Pamphilj": "pˈɑːmfiːli",
+  "Gregorio": "ɡɹɛɡˈɔːɹioʊ",
+  "Leti": "lˈɛti"
+ },
+ "respell": {
+  "Olimpia": "oh-LEEM-pyah",
+  "Maidalchini": "my-dahl-KEE-nee",
+  "papessa": "pah-PESS-ah",
+  "Pamphilj": "PAHM-fee-lee",
+  "Doria": "DOH-ree-ah",
+  "Leti": "LEH-tee"
+ },
+ "chirp_say": {
+  "Maidalchini": "Maidalkeeni",
+  "Pamphilj": "Pamphili"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This Pope ruled the Church.",
+     0.35,
+     0.95
+    ],
+    [
+     "Rome said a woman ruled *him.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "painted",
+   "perf": [
+    [
+     "Velázquez painted him in Rome,",
+     0.3,
+     0.95
+    ],
+    [
+     "in 1650.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "widow",
+   "perf": [
+    [
+     "Behind him, for decades,",
+     0.25,
+     0.95
+    ],
+    [
+     "stood his late brother's widow,",
+     0.3,
+     0.95
+    ],
+    [
+     "a woman named Olimpia Maidalchini.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "power",
+   "perf": [
+    [
+     "A Venetian ambassador wrote",
+     0.25,
+     0.95
+    ],
+    [
+     "that she had great *influence* with him.",
+     0.35,
+     0.95
+    ],
+    [
+     "Another wrote: when posts fell vacant,",
+     0.25,
+     0.95
+    ],
+    [
+     "nothing was decided without her.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "papessa",
+   "perf": [
+    [
+     "Romans mocked her",
+     0.25,
+     0.95
+    ],
+    [
+     "as the *papessa:*",
+     0.3,
+     0.9
+    ],
+    [
+     "the lady pope.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "lost",
+   "perf": [
+    [
+     "Velázquez painted her too.",
+     0.3,
+     0.95
+    ],
+    [
+     "That portrait vanished for almost 300 years,",
+     0.3,
+     0.95
+    ],
+    [
+     "and resurfaced in 2019.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "legend",
+   "perf": [
+    [
+     "Then he died, in 1655.",
+     0.35,
+     0.93
+    ],
+    [
+     "She supposedly refused to pay for his coffin,",
+     0.3,
+     0.95
+    ],
+    [
+     "and his body lay *abandoned* for three days.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "truth",
+   "perf": [
+    [
+     "But the Vatican's own ceremony diaries",
+     0.25,
+     0.95
+    ],
+    [
+     "record his body lying in state,",
+     0.3,
+     0.95
+    ],
+    [
+     "and a coffin sealed before the *cardinals.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Her power was real.",
+     0.4,
+     0.92
+    ],
+    [
+     "Her cruelest *legend*",
+     0.25,
+     0.88
+    ],
+    [
+     "probably wasn't.",
+     0.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Galleria Doria Pamphilj, in Rome.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Velázquez painted the Portrait of Innocent X c. 1650 in Rome, during his second trip to Italy (1649–1651); the Pamphilj family kept it and it hangs in the Galleria Doria Pamphilj, Rome",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Innocent_X ; https://www.doriapamphilj.it/en/"
+  },
+  {
+   "claim": "Olimpia Maidalchini was the widow of Pamphilio Pamphili, elder brother of Giambattista Pamphili (Innocent X, pope 1644–1655)",
+   "source": "https://en.wikipedia.org/wiki/Olimpia_Maidalchini ; https://en.wikipedia.org/wiki/Pope_Innocent_X"
+  },
+  {
+   "claim": "A Venetian ambassador wrote in 1645 that she 'has great influence with him'; a 1652 account (Giustiniani) said that when court offices fell vacant 'nothing was decided without her good pleasure' (narrated as a paraphrase, no quote marks)",
+   "source": "https://en.wikipedia.org/wiki/Olimpia_Maidalchini (citing von Ranke, History of the Popes, and Williams 2004, p. 110) ; https://www.encyclopedia.com/religion/encyclopedias-almanacs-transcripts-and-maps/innocent-x-pope ('had great influence with the aged Pontiff')"
+  },
+  {
+   "claim": "She was nicknamed the 'papessa' (lady pope)",
+   "source": "https://en.wikipedia.org/wiki/Olimpia_Maidalchini (citing León, Uppity Women of the Renaissance) ; https://www.sothebys.com/en/articles/mistress-of-the-vatican-donna-olimpia-maidalchini-pamphilj"
+  },
+  {
+   "claim": "Velázquez also painted Olimpia (c. 1650); the portrait was last documented in 1724 and resurfaced in 2019, sold at Sotheby's London on 3 July 2019 for £2.5 million ('almost three hundred years' = 1724 to 2019)",
+   "source": "https://www.antiquestradegazette.com/news/2019/rediscovered-velázquez-portrait-of-one-of-the-17th-century-s-most-powerful-women-comes-to-auction-at-sotheby-s/ ; https://news.artnet.com/art-world/velazquez-sothebys-old-masters-sale-2019-1592767"
+  },
+  {
+   "claim": "Legend (narrated as 'supposedly'): when Innocent X died (night of 6–7 January 1655) she refused to pay for his coffin/funeral, pleading she was a poor widow, and his body was abandoned for three days",
+   "source": "https://en.wikipedia.org/wiki/Olimpia_Maidalchini (Leti; Ranke via Williams; Pastor) ; https://www.csun.edu/~hcfll004/SV1655.html (quotes the claim 'the body of the pope was completely abandoned for three days', derived in part from Gregorio Leti)"
+  },
+  {
+   "claim": "The papal ceremony diaries (Servantio) record the body dressed in vestments, taken to the Vatican and laid on a catafalque with the Office for the Dead; on 8 January it was moved to St Peter's, where cardinals witnessed the sealing of the coffin; the historian J. P. Adams calls the abandonment story 'ridiculous'",
+   "source": "https://www.csun.edu/~hcfll004/SV1655.html ; https://en.wikipedia.org/wiki/Pope_Innocent_X"
+  },
+  {
+   "claim": "Her influence was real (contemporary ambassadors' reports); the abandonment story is probably false (narrated with 'probably')",
+   "source": "https://en.wikipedia.org/wiki/Olimpia_Maidalchini ; https://www.csun.edu/~hcfll004/SV1655.html"
+  },
+  {
+   "claim": "Hangs in the Galleria Doria Pamphilj, Rome",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Innocent_X ; https://www.doriapamphilj.it/en/"
+  }
+ ],
+ "images": {
+  "innocent": {
+   "file": "src/innocent.jpg",
+   "commons": "File:Diego Velázquez, Portrait du pape Innocent X, 1650, huile sur toile, 140 × 120 cm, Rome, Galleria Doria Pamphilj (inv. 237).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "eyes": [
+     0.44,
+     0.25
+    ],
+    "face": [
+     0.44,
+     0.28
+    ],
+    "ring": [
+     0.39,
+     0.66
+    ],
+    "letter": [
+     0.88,
+     0.63
+    ],
+    "bust": [
+     0.45,
+     0.35
+    ],
+    "center": [
+     0.5,
+     0.48
+    ]
+   }
+  },
+  "olimpia": {
+   "file": "src/olimpia.jpg",
+   "commons": "File:Olimpia maidalchini-sothebys.jpg",
+   "points": {
+    "face": [
+     0.43,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "desanctis": {
+   "file": "src/desanctis.jpg",
+   "commons": "File:La Principessa Olimpia Maidalchini a Colloquio con il Pontefice Innocenzo X.jpg",
+   "long": 3840,
+   "points": {
+    "olimpia": [
+     0.62,
+     0.36
+    ],
+    "pope": [
+     0.2,
+     0.4
+    ],
+    "cardinal": [
+     0.8,
+     0.3
+    ],
+    "desk": [
+     0.42,
+     0.48
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "stpeters": {
+   "file": "src/stpeters.jpg",
+   "commons": "File:St-peter's-viviano-codazzi-prado-1630.jpg",
+   "long": 3840,
+   "points": {
+    "facade": [
+     0.42,
+     0.55
+    ],
+    "dome": [
+     0.35,
+     0.38
+    ],
+    "crowd": [
+     0.5,
+     0.85
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "innocent",
+   "from": "eyes@2.4",
+   "to": "eyes@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "innocent",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "painted-0.08",
+   "img": "innocent",
+   "from": "face@1.6",
+   "to": "face@1.75",
+   "sway": 0.006
+  },
+  {
+   "at": "painted.5-0.05",
+   "img": "innocent",
+   "from": "ring@1.8",
+   "to": "ring@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "widow-0.08",
+   "img": "desanctis",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "olimpia@1.15",
+   "gray": 0.6,
+   "dim": -0.2
+  },
+  {
+   "at": "widow.12-0.05",
+   "img": "desanctis",
+   "kind": "image",
+   "from": "olimpia@1.9",
+   "to": "olimpia@2.05",
+   "gray": 0.6,
+   "dim": -0.25
+  },
+  {
+   "at": "power-0.08",
+   "img": "stpeters",
+   "kind": "image",
+   "from": "facade@1.0",
+   "to": "facade@1.1",
+   "gray": 1
+  },
+  {
+   "at": "power.11-0.05",
+   "img": "desanctis",
+   "kind": "image",
+   "from": "cardinal@1.4",
+   "to": "cardinal@1.5",
+   "gray": 1,
+   "dim": -0.25
+  },
+  {
+   "at": "power.17-0.05",
+   "img": "desanctis",
+   "kind": "image",
+   "from": "desk@1.6",
+   "to": "desk@1.75",
+   "gray": 1,
+   "dim": -0.3
+  },
+  {
+   "at": "papessa-0.08",
+   "img": "desanctis",
+   "kind": "image",
+   "from": "desk@1.25",
+   "to": "desk@1.35",
+   "gray": 0.3,
+   "dim": -0.3
+  },
+  {
+   "at": "lost-0.08",
+   "img": "olimpia",
+   "kind": "image",
+   "from": "center@0.72",
+   "to": "center@0.75",
+   "frame": true,
+   "dim": -0.3,
+   "sway": 0.002
+  },
+  {
+   "at": "lost.4-0.05",
+   "img": "olimpia",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "dim": -0.3
+  },
+  {
+   "at": "lost.12-0.05",
+   "img": "olimpia",
+   "kind": "image",
+   "from": "center@0.75",
+   "to": "center@0.72",
+   "frame": true,
+   "dim": -0.3,
+   "sway": 0.002
+  },
+  {
+   "at": "legend-0.08",
+   "img": "innocent",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "legend.5-0.05",
+   "img": "stpeters",
+   "kind": "image",
+   "from": "facade@1.2",
+   "to": "facade@1.32",
+   "gray": 1,
+   "dim": 0.2
+  },
+  {
+   "at": "legend.13-0.05",
+   "img": "innocent",
+   "from": "ring@1.9",
+   "to": "ring@2.05",
+   "gray": 1,
+   "dim": 0.25
+  },
+  {
+   "at": "truth-0.08",
+   "img": "stpeters",
+   "kind": "image",
+   "from": "crowd@1.6",
+   "to": "crowd@1.72",
+   "gray": 0.5
+  },
+  {
+   "at": "truth.12-0.05",
+   "img": "stpeters",
+   "kind": "image",
+   "from": "dome@1.3",
+   "to": "dome@1.42",
+   "gray": 0.5
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "innocent",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.22
+   ],
+   "sway": 0.012,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.4-0.05",
+   "img": "innocent",
+   "from": "eyes@1.8",
+   "to": "eyes@1.95",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "innocent",
+   "from": "bust@1.5",
+   "to": "bust@1.65",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "painted",
+   "to": "painted.5-0.1",
+   "text": "POPE INNOCENT X · ROME"
+  },
+  {
+   "type": "label",
+   "from": "painted.5",
+   "to": "widow-0.1",
+   "text": "VELÁZQUEZ · 1650"
+  },
+  {
+   "type": "label",
+   "from": "widow",
+   "to": "widow.12-0.1",
+   "text": "19TH-CENTURY IMAGINING"
+  },
+  {
+   "type": "title",
+   "from": "widow.12",
+   "to": "power-0.1",
+   "kicker": "HIS BROTHER'S WIDOW",
+   "text": "Olimpia <i>Maidalchini</i>"
+  },
+  {
+   "type": "label",
+   "from": "power",
+   "to": "power.11-0.1",
+   "text": "ST PETER'S · C. 1630"
+  },
+  {
+   "type": "label",
+   "from": "power.11",
+   "to": "papessa-0.1",
+   "text": "19TH-CENTURY IMAGINING"
+  },
+  {
+   "type": "stamp",
+   "from": "papessa.5",
+   "to": "papessa$+0.3",
+   "text": "PAPESSA"
+  },
+  {
+   "type": "label",
+   "from": "lost",
+   "to": "lost.12-0.1",
+   "text": "VELÁZQUEZ · OLIMPIA, C. 1650"
+  },
+  {
+   "type": "label",
+   "from": "lost.12",
+   "to": "legend-0.1",
+   "text": "SOTHEBY'S LONDON · 2019"
+  },
+  {
+   "type": "label",
+   "from": "legend",
+   "to": "truth-0.1",
+   "text": "THE LEGEND · JANUARY 1655"
+  },
+  {
+   "type": "label",
+   "from": "truth",
+   "to": "payoff-0.1",
+   "text": "PAPAL CEREMONY DIARIES"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "GALLERIA DORIA PAMPHILJ · ROME"
+  }
+ ],
+ "rights": {
+  "creator_died": 1660,
+  "note": "Velázquez d. 1660; de Sanctis d. 1911; Codazzi d. 1670: all public domain."
+ },
+ "nocap": [
+  [
+   "widow.12",
+   "power-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": 1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "legend-0.2",
+    "legend$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "papessa.5",
+   "fx": "impact",
+   "gain": 0.4
+  },
+  {
+   "at": "lost.12",
+   "fx": "tick",
+   "gain": 0.5
+  },
+  {
+   "at": "truth.5",
+   "fx": "shutter",
+   "gain": 0.35
+  }
+ ],
+ "caption": "Velázquez painted Pope Innocent X in Rome in 1650. But Rome said the man in the red chair answered to a woman: his brother's widow, Olimpia Maidalchini.\n\nA Venetian ambassador wrote in 1645 that she had \"great influence with him\". Another account (1652) said that when posts fell vacant, nothing was decided without her. Romans called her the papessa, the lady pope. Velázquez painted her too; that portrait vanished after 1724 and resurfaced at Sotheby's in 2019.\n\nThen the darkest story: when the Pope died in January 1655, she supposedly refused to pay for his coffin, and his body lay abandoned for three days. But the Vatican's ceremony diaries record his body lying in state and his coffin sealed before the cardinals. Historians trace the tale partly to the scandal writer Gregorio Leti.\n\nHer power was real. Her cruelest legend probably wasn't.\n\n🖤 Which story would you have believed?",
+ "caption_short": "This Pope ruled the Church. Rome said his brother's widow ruled him: Olimpia, 'the papessa'. 🖤",
+ "youtube_title": "Who ruled this Pope? Velázquez's Portrait of Innocent X",
+ "hashtags_instagram": [
+  "#velazquez",
+  "#innocentx",
+  "#arthistory",
+  "#rome",
+  "#darkhistory"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#velazquez",
+  "#innocentx",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#velazquez",
+  "#innocentx",
+  "#popeinnocentx",
+  "#doriapamphilj",
+  "#rome",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#papalhistory"
+ ]
+}
