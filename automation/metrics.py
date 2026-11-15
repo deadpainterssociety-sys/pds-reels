@@ -202,6 +202,7 @@ def spanish(m, t, notes):
     """the Spanish edition test (12 Nov 2026): every posted Spanish twin (schedule_es.json + its state), 21 days, with the
     Spanish channel's own token; once a day its traffic sources and the channel's audience -> m["es"], m["es_channel"]"""
     global _H
+    if not CONFIG.get("spanish_channel", True): return   # stopped by Gigi on 15 Nov 2026 (config.json)
     if not os.environ.get("YT_REFRESH_TOKEN_ES", "").strip(): return
     ids = {}
     for e in jload(os.path.join(ROOT, "schedule_es.json"), []):
@@ -476,7 +477,8 @@ def table(d="lab"):
         yid = r.get("youtube", {}).get("id")
         row.update(reach_cols(m, yid, "youtube")); row.update(traffic_cols(r.get("youtube", {}).get("traffic"), "youtube"))
         rows.append(row)
-    long_table(m, d); es_table(m, d)
+    long_table(m, d)
+    if CONFIG.get("spanish_channel", True): es_table(m, d)   # stopped 15 Nov 2026
     keys = sorted({k for r in rows for k in r}, key=lambda k: (k not in ("slug", "posted_at", "slot", "hook_type"), k))
     out = os.path.join(d, "table.csv"); os.makedirs(d, exist_ok=True)
     with open(out, "w", newline="") as f:

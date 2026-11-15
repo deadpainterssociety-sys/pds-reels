@@ -122,7 +122,11 @@ notebook (a copy of SAFARI.md: start from it; it is saved back to SAFARI.md with
   when the audience shifts (our target is Gen-Z: share of 18-24 and 25-34). Reach data starts ~2 days after
   12 Nov 2026 (the reports are new): say "not yet" until then.
 
-## Spanish edition test (from 13 Nov 2026)
+## Spanish edition test (from 13 Nov 2026) — STOPPED 15 Nov 2026
+
+Gigi stopped the Spanish channel (6 Shorts, 27 views in total, 0 subscribers) and is deleting it: no more Spanish twins,
+no Spanish pulls, nothing about it in the brief. The notes below are kept for the record.
+
 
 `lab/es.csv` (same `table` command): every Short on the Spanish channel (Spanish twins of our English stories, voiced by
 es-ES Gacrux), with its views at 24 h / 72 h, engaged %, average % viewed, subscribers, traffic sources, and its English
