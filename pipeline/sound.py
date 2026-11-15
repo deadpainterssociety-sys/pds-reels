@@ -92,6 +92,18 @@ def impact(big=True):
     return reverb(x, 2.5 if big else 1.0, 0.35)
 
 
+# Softer cut sounds (Gigi, 15 Nov 2026: the cut whooshes and reveal booms felt jumpy and inelegant). Darker, quieter:
+# a breath of air on a cut, a low cushioned thud on a reveal — felt more than heard under the narration.
+def whoosh_soft(d=0.6):
+    return lp(whoosh(d), 1900) * 0.8
+
+
+def impact_soft(big=True):
+    d = 2.2 if big else 1.0; t = t_(d)
+    x = kick(d, 85, 34) * (0.75 if big else 0.5) + lp(rng.standard_normal(len(t)), 700) * np.exp(-t * 14) * 0.18
+    return lp(reverb(x, 2.0 if big else 0.9, 0.3), 1400)
+
+
 def riser(d=2.5):
     t = t_(d); n = rng.standard_normal(len(t)); out = np.zeros_like(n)
     for i in range(0, len(n), 1024):

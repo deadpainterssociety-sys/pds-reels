@@ -36,6 +36,8 @@ const lerpPose = (a: V3, b: V3, p: number): Pose => ({ x: lerp(a[0], b[0], p), y
 
 /* ---------- captions: short chunks, emphasised words (*word* in the script) in italics ---------- */
 type Chunk = { words: Word[]; s: number; e: number };
+const DOLLY_CAP = 0.07, DOLLY_RAMP = 2.6, SWAY_CAP = 0.007;
+const easeOutSine = (x: number) => Math.sin((x * Math.PI) / 2);
 // card = FORMULAS.md F3 (silent caption Short): one whole sentence per card, broken only at . ! ? …, held until the next card
 function chunks(lines: Story["words"], maxWords: number, maxChars: number, card = false): Chunk[] {
   const out: Chunk[] = [];
@@ -75,9 +77,12 @@ export const Reel: React.FC<{ slug: string }> = ({ slug }) => {
   const e = ease(p) * 0.5 + p * 0.5;                                                   // half eased, half linear: never static
   let pose = lerpPose(sh.from, sh.to, e);
   pose = { ...pose, z: pose.z * (1 + 0.035 * Math.exp(-(t - sh.t) * 6)) };              // micro push-in that settles after every cut
-  const sway = sh.sway ?? 0.007;
+  // 2.5D depth: only a hint of relief (Gigi, 15 Nov 2026: faces must never bulge or "jump out"). The dolly rises gently
+  // over at most DOLLY_RAMP s to a capped amount and then holds, however long the shot; the drift is capped too.
+  const sway = Math.min(sh.sway ?? 0.006, SWAY_CAP);
   const shift: [number, number] = [Math.sin(t * 0.9) * sway, Math.cos(t * 0.7) * sway * 0.6];   // slow 2.5D drift
-  const dolly = sh.dolly ? lerp(sh.dolly[0], sh.dolly[1], e) : 0;
+  const dur = Math.max(0.2, (nx ? nx.t : S.duration) - sh.t);
+  const dolly = sh.dolly ? lerp(Math.min(sh.dolly[0], DOLLY_CAP), Math.min(sh.dolly[1], DOLLY_CAP), easeOutSine(clamp((t - sh.t) / Math.min(DOLLY_RAMP, dur)))) : 0;
   const img = S.images[sh.img];
   const flash = Math.max(0, ...S.flashes.map((c) => pulse(t, c, 0.02, 0.4)));
   const shake = Math.max(0, ...S.shakes.map((c) => pulse(t, c, 0.01, 0.28))) * 14;
@@ -106,12 +111,13 @@ export const Reel: React.FC<{ slug: string }> = ({ slug }) => {
 
       {c && !hideCap && (
         <div style={{ position: "absolute", left: 70, right: 70, top: st.captionTop, textAlign: "center", fontFamily: st.captionFont, fontWeight: st.captionWeight,
-          fontSize: st.captionSize, lineHeight: 1.08, letterSpacing: -1.2, textTransform: st.captionUpper ? "uppercase" : "none" }}>
+          fontSize: st.captionSize, lineHeight: 1.08, letterSpacing: -1.2, textTransform: st.captionUpper ? "uppercase" : "none",
+          ...(card ? { textWrap: "balance" } : {}) } as React.CSSProperties}>
           {c.words.map((wd, i) => {
             if (card) {   // the whole sentence at once: a quick rise, no word-by-word lighting (there is no voice to follow)
               const k = backOut(ramp(t, c.s, c.s + 0.18), 1.6);
               return <span key={i} style={{ display: "inline-block", marginRight: 16, color: st.ink, fontStyle: wd.em ? "italic" : "normal", opacity: Math.min(1, k * 1.4),
-                transform: `translateY(${(1 - k) * 18}px)`, textShadow: "0 3px 26px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.6)" }}>{clean(wd.w)}</span>;
+                transform: `translateY(${(1 - k) * 18}px)`, textShadow: "0 2px 18px rgba(0,0,0,0.95), 0 0 44px rgba(0,0,0,0.8), 0 0 3px rgba(0,0,0,0.9)" }}>{clean(wd.w)}</span>;
             }
             const on = t >= wd.s - 0.03; const k = backOut(ramp(t, wd.s - 0.04, wd.s + 0.12), 2);
             return <span key={i} style={{ display: "inline-block", marginRight: 22, color: on ? st.ink : "rgba(244,240,232,0.28)", fontStyle: wd.em ? "italic" : "normal",

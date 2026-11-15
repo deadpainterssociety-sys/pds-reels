@@ -106,14 +106,15 @@ if M.get("tracks"):
 
 fx = np.zeros(len(t))
 for i, (ct, hit, wh) in enumerate(rs["cuts"]):
-    if hit == "big": S.place(fx, S.sting_reverse(), ct - 0.95, 0.5); S.place(fx, S.impact(True), ct, 0.95)
-    elif hit == "small": S.place(fx, S.impact(False), ct, 0.5)
-    elif wh and i > 0 and M.get("whooshes", True): S.place(fx, S.whoosh(0.45), ct - 0.3, 0.22)
+    # soft by design (Gigi, 15 Nov 2026): reveals get a cushioned low thud, plain cuts only a faint dark breath
+    if hit == "big": S.place(fx, S.sting_reverse(), ct - 0.95, 0.16); S.place(fx, S.impact_soft(True), ct, 0.6)
+    elif hit == "small": S.place(fx, S.impact_soft(False), ct, 0.28)
+    elif wh and i > 0 and M.get("whooshes", True): S.place(fx, S.whoosh_soft(0.6), ct - 0.38, 0.14)
 for sh in rs["shots"]:
     if sh.get("kind") == "map":
         for p in sh["map"]["pins"]: S.place(fx, S.tick() * 2, p["t"], 0.6)
-FX = {"chime": S.chime, "impact": lambda: S.impact(False), "impact_big": lambda: S.impact(True), "whoosh": lambda: S.whoosh(0.6),
-      "tick": lambda: S.tick() * 2, "riser": lambda: S.riser(1.6), "sting": S.sting_reverse, "shutter": S.camera_shutter,
+FX = {"chime": S.chime, "impact": lambda: S.impact_soft(False), "impact_big": lambda: S.impact_soft(True), "whoosh": lambda: S.whoosh_soft(0.6),
+      "tick": lambda: S.lp(S.tick(), 5000) * 1.2, "riser": lambda: S.riser(1.6), "sting": S.sting_reverse, "shutter": S.camera_shutter,
       "heartbeat": S.heartbeat, "pop": S.pop, "snip": S.snip}
 for x in rs["sfx"]:
     lead = 1.6 if x["fx"] == "riser" else 0.95 if x["fx"] == "sting" else 0   # risers/stings END on the anchor

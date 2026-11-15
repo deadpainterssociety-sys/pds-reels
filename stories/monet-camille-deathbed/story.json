@@ -12,10 +12,7 @@
  "style": {
   "captionWords": 14,
   "captionChars": 72,
-  "captionTop": 1180,
-  "captionSize": 64,
-  "captionFont": "Inter",
-  "captionWeight": 800,
+  "captionTop": 1170,
   "captionMode": "card"
  },
  "meta": {
@@ -266,7 +263,8 @@
    "img": "parasol",
    "kind": "image",
    "from": "figure@1.0",
-   "to": "figure@1.08"
+   "to": "figure@1.08",
+   "dim": 0.12
   },
   {
    "at": "sick-0.12",
@@ -274,7 +272,8 @@
    "kind": "image",
    "from": "walker@1.05",
    "to": "walker@1.15",
-   "gray": 1
+   "gray": 1,
+   "dim": 0.32
   },
   {
    "at": "death-0.12",

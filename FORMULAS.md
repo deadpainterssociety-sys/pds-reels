@@ -55,12 +55,12 @@ self-portraits Short (11.9M, 20 s, 120×) also carries its whole story in captio
 - Cards 2–5 escalate: each image and fact stronger than the last (the eye follows a progression). Then the payoff card
   (the twist, the cost, the dark fact). Optionally one reflective question to the viewer before the ending card ("If
   nobody was watching, would you still care?" — art decoded's ending). Last card: the plain ending line.
-- Style in story.json: `"style": {"captionWords": 14, "captionChars": 72, "captionTop": 1180, "captionSize": 64,
-  "captionFont": "Inter", "captionWeight": 800, "captionMode": "card"}` — one full sentence per card (only . ! ? … end a
+- Style in story.json: `"style": {"captionWords": 14, "captionChars": 72, "captionTop": 1170, "captionMode": "card"}` —
+  the channel's own caption font and size (Newsreader 86: never another font, Gigi 15 Nov 2026), one full sentence per card (only . ! ? … end a
   card, so commas may stay inside it), shown whole and held until the next card, centred in the lower middle. Keep faces
   ABOVE the caption zone: centre close-ups on a point a little below the face (the reference uses `faceup`).
 - Write one line per card in `lines` (ids like `hook`, `parasol`, `death`…); numbers as digits with their `say` form.
-- **Reference: `stories/monet-camille-deathbed/story.json`** (Gigi's first F3, 18 Nov 2026): 8 cards, 61 words, 29.7 s,
+- **Reference: `stories/monet-camille-deathbed/story.json`** (Gigi's first F3, 18 Nov 2026): 8 cards, 61 words, 29.7 s, channel font,
   Satie's Gymnopédie No. 1 as the only sound (`music.tracks`, `"pad": false`, `music_db` -4), whose credit goes into the
   caption automatically. A recognisable piece of public-domain music suits the format: the breakouts all ran on music. A `heartbeat` before the reveal
   if it helps; no `cold` section needed.
