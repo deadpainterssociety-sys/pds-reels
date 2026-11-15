@@ -23,19 +23,21 @@ export type MapData = { land: string[]; focus: string[]; cities: Record<string, 
 export type Word = { w: string; s: number; e: number; em?: number };
 export type Style = {
   bg?: string; ink?: string; accent?: string; captionFont?: string; captionWeight?: number; captionSize?: number; captionTop?: number;
-  captionWords?: number; captionChars?: number; captionUpper?: boolean; titleFont?: string; uiFont?: string; labelFont?: string;
+  captionWords?: number; captionChars?: number; captionUpper?: boolean; captionMode?: "karaoke" | "card"; titleFont?: string; uiFont?: string; labelFont?: string;
   grain?: number; fonts?: FontSpec[];
 };
 export type Story = {
   slug: string; duration: number; audio: string; images: Record<string, Img>; shots: Shot[]; overlays: Overlay[];
   flashes: number[]; shakes: number[]; words: { line: string; words: Word[] }[]; nocap: [number, number][]; maps: Record<string, MapData>; style?: Style;
+  silent?: boolean;
 };
 
 const lerpPose = (a: V3, b: V3, p: number): Pose => ({ x: lerp(a[0], b[0], p), y: lerp(a[1], b[1], p), z: Math.exp(lerp(Math.log(a[2]), Math.log(b[2]), p)) });
 
 /* ---------- captions: short chunks, emphasised words (*word* in the script) in italics ---------- */
 type Chunk = { words: Word[]; s: number; e: number };
-function chunks(lines: Story["words"], maxWords: number, maxChars: number): Chunk[] {
+// card = FORMULAS.md F3 (silent caption Short): one whole sentence per card, broken only at . ! ? …, held until the next card
+function chunks(lines: Story["words"], maxWords: number, maxChars: number, card = false): Chunk[] {
   const out: Chunk[] = [];
   for (const l of lines) {
     let cur: Word[] = [];
@@ -44,11 +46,15 @@ function chunks(lines: Story["words"], maxWords: number, maxChars: number): Chun
       const len = cur.map((x) => x.w).join(" ").length + w.w.length;
       if (cur.length >= maxWords || (cur.length && len > maxChars)) flush();
       cur.push(w);
-      if (/[.,:;!?…]$/.test(w.w) || /\.\.\.$/.test(w.w)) flush();   // punctuation ends a chunk: captions follow the phrasing
+      if ((card ? /[.!?…]["”’)]?$/ : /[.,:;!?…]$/).test(w.w) || /\.\.\.$/.test(w.w)) flush();   // punctuation ends a chunk: captions follow the phrasing
     }
     flush();
   }
-  for (let i = 0; i < out.length; i++) { const nx = out[i + 1]; out[i].e = nx ? Math.min(nx.s, out[i].e + 0.9) : out[i].e + 0.6; }
+  for (let i = 0; i < out.length; i++) {
+    const nx = out[i + 1];
+    out[i].e = card ? (nx ? nx.s - 0.12 : out[i].e + 1.6) : nx ? Math.min(nx.s, out[i].e + 0.9) : out[i].e + 0.6;
+    if (card) out[i].s = Math.max(i ? out[i - 1].e : 0, out[i].s - 0.25);   // a silent card appears a beat before its words
+  }
   return out;
 }
 const clean = (w: string) => w.replace(/\.\.\.$/, "…");
@@ -76,7 +82,8 @@ export const Reel: React.FC<{ slug: string }> = ({ slug }) => {
   const flash = Math.max(0, ...S.flashes.map((c) => pulse(t, c, 0.02, 0.4)));
   const shake = Math.max(0, ...S.shakes.map((c) => pulse(t, c, 0.01, 0.28))) * 14;
   const sx = (random(`x${Math.floor(t * 30)}`) - 0.5) * shake, sy = (random(`y${Math.floor(t * 30)}`) - 0.5) * shake;
-  const cs = React.useMemo(() => chunks(S.words, st.captionWords, st.captionChars), [slug]);
+  const card = st.captionMode === "card" || (S.silent && (S.style?.captionMode ?? "card") === "card");
+  const cs = React.useMemo(() => chunks(S.words, st.captionWords, st.captionChars, card), [slug]);
   const c = cs.find((k) => t >= k.s - 0.03 && t < k.e) ?? null;
   const hideCap = S.nocap.some(([a, b]) => t >= a && t < b);
   const gray = sh.gray ?? 0;
@@ -101,6 +108,11 @@ export const Reel: React.FC<{ slug: string }> = ({ slug }) => {
         <div style={{ position: "absolute", left: 70, right: 70, top: st.captionTop, textAlign: "center", fontFamily: st.captionFont, fontWeight: st.captionWeight,
           fontSize: st.captionSize, lineHeight: 1.08, letterSpacing: -1.2, textTransform: st.captionUpper ? "uppercase" : "none" }}>
           {c.words.map((wd, i) => {
+            if (card) {   // the whole sentence at once: a quick rise, no word-by-word lighting (there is no voice to follow)
+              const k = backOut(ramp(t, c.s, c.s + 0.18), 1.6);
+              return <span key={i} style={{ display: "inline-block", marginRight: 16, color: st.ink, fontStyle: wd.em ? "italic" : "normal", opacity: Math.min(1, k * 1.4),
+                transform: `translateY(${(1 - k) * 18}px)`, textShadow: "0 3px 26px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.6)" }}>{clean(wd.w)}</span>;
+            }
             const on = t >= wd.s - 0.03; const k = backOut(ramp(t, wd.s - 0.04, wd.s + 0.12), 2);
             return <span key={i} style={{ display: "inline-block", marginRight: 22, color: on ? st.ink : "rgba(244,240,232,0.28)", fontStyle: wd.em ? "italic" : "normal",
               transform: `scale(${on ? 0.92 + 0.08 * k : 0.92})`, textShadow: "0 3px 30px rgba(0,0,0,0.75)" }}>{clean(wd.w)}</span>;

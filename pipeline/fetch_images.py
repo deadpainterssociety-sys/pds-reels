@@ -2,6 +2,7 @@
 
 usage: python pipeline/fetch_images.py <story> [--minutes 25]
 story.json images: {"name": {"file": "src/name.jpg", "commons": "File:Exact title.jpg"}}  or  {"url": "https://..."}
+and music.tracks: {"file": "src/music/x.ogg", "commons": "File:Recording.ogg", ...} (originals only: audio has no thumbnails)
 Writes src/<file> and src/sources.json (licence + author for every file, needed for the caption credits).
 
 Why patient: Wikimedia rate-limits busy shared IPs (cloud machines, CI runners) with HTTP 429 on originals.
@@ -23,6 +24,11 @@ for name, im in st["images"].items():
     path = os.path.join(sdir, im["file"])
     if os.path.exists(path) and os.path.getsize(path) > 1000: continue
     jobs[name] = (im, path)
+for tr in (st.get("music") or {}).get("tracks", []):   # classical recordings with a "commons" title (F3 caption Shorts, 15 Nov)
+    if not tr.get("commons"): continue
+    path = os.path.join(sdir, tr["file"]); name = "track:" + os.path.basename(tr["file"])
+    if not (os.path.exists(path) and os.path.getsize(path) > 1000): jobs[name] = ({"commons": tr["commons"], "audio": True}, path)
+    if name not in sources: sources[name] = C.info(tr["commons"]); time.sleep(1)
 for name, im in st["images"].items():   # licence/author for every Commons image, downloaded or not (caption credits)
     if im.get("commons") and name not in sources:
         sources[name] = C.info(im["commons"]); time.sleep(1)
@@ -35,12 +41,12 @@ while jobs and time.time() - t0 < limit:
             data = C.fetch(url, tries=1)
         except Exception:
             data = None
-        if data is None and im.get("commons") and time.time() - t0 > 360:
+        if data is None and im.get("commons") and not im.get("audio") and time.time() - t0 > 360:
             for w in C.STD_WIDTHS:
                 if w >= sources[name]["w"]: continue
                 try: data = C.fetch(C.thumb_url(sources[name]["url"], w), tries=1); how = f"thumb {w}px"; break
                 except Exception: time.sleep(3)
-        if data and data[:2] in (b"\xff\xd8", b"\x89P"):
+        if data and (data[:2] in (b"\xff\xd8", b"\x89P") or (im.get("audio") and data[:4] in (b"OggS", b"fLaC", b"RIFF", b"ID3\x03", b"ID3\x04"))):
             os.makedirs(os.path.dirname(path), exist_ok=True); open(path, "wb").write(data); del jobs[name]
             s = sources.get(name, {}); print(f"{name}: {how}, {len(data) // 1024} KB ({s.get('license', 'direct url')})", flush=True)
         time.sleep(8)

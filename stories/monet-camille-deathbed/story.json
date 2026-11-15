@@ -1,0 +1,468 @@
+{
+ "slug": "monet-camille-deathbed",
+ "formula": "F3",
+ "format": "caption",
+ "silent": true,
+ "hook_type": "dark",
+ "teaser": "Monet's wife, painted just after she died",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1180,
+  "captionSize": 64,
+  "captionFont": "Inter",
+  "captionWeight": 800,
+  "captionMode": "card"
+ },
+ "meta": {
+  "painter": "Claude Monet",
+  "born": 1840,
+  "died": 1926,
+  "painting": "Camille Monet on Her Deathbed",
+  "year": "1879",
+  "museum": "Musée d'Orsay",
+  "city": "Paris",
+  "image": "camille",
+  "image_credit": "Musée d'Orsay, Paris, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1926,
+  "note": "Monet d. 1926: public domain (EU 70 years, and pre-1930 works in the US). Woman with a Parasol, NGA open access (CC0); Vétheuil snow 1879 PD; Nadar photo 1899 PD."
+ },
+ "say": {
+  "1879": "eighteen seventy-nine",
+  "32": "thirty-two"
+ },
+ "ipa": {},
+ "respell": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Monet painted his wife",
+     0.12,
+     0.95
+    ],
+    [
+     "just after she *died.*",
+     0.75,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "parasol",
+   "perf": [
+    [
+     "Camille was the woman with the parasol.",
+     0.7,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "sick",
+   "perf": [
+    [
+     "After their second son was born,",
+     0.1,
+     0.96
+    ],
+    [
+     "she grew weaker and weaker.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "death",
+   "perf": [
+    [
+     "She died in 1879,",
+     0.1,
+     0.95
+    ],
+    [
+     "at only 32.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "confess",
+   "perf": [
+    [
+     "Later he confessed he couldn't stop studying",
+     0.05,
+     0.95
+    ],
+    [
+     "the colours on her face.",
+     0.75,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "colours",
+   "perf": [
+    [
+     "Blue, yellow, grey.",
+     0.95,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "ask",
+   "perf": [
+    [
+     "Would you have painted her?",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Musée d'Orsay, in Paris.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "camille": {
+   "file": "src/camille.jpg",
+   "commons": "File:Claude Monet - Camille Monet sur son lit de mort.JPG",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.42,
+     0.22
+    ],
+    "eyes": [
+     0.42,
+     0.18
+    ],
+    "mouth": [
+     0.41,
+     0.27
+    ],
+    "veil": [
+     0.31,
+     0.19
+    ],
+    "bust": [
+     0.43,
+     0.34
+    ],
+    "flowers": [
+     0.38,
+     0.52
+    ],
+    "sign": [
+     0.9,
+     0.96
+    ],
+    "faceup": [
+     0.42,
+     0.275
+    ]
+   }
+  },
+  "parasol": {
+   "file": "src/parasol.jpg",
+   "commons": "File:Claude Monet, Woman with a Parasol - Madame Monet and Her Son, 1875, NGA 61379.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.585,
+     0.215
+    ],
+    "figure": [
+     0.6,
+     0.4
+    ],
+    "child": [
+     0.27,
+     0.6
+    ]
+   }
+  },
+  "snow": {
+   "file": "src/snow.jpg",
+   "commons": "File:Claude monet la route de vetheuil effet de neige.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "walker": [
+     0.62,
+     0.55
+    ],
+    "church": [
+     0.45,
+     0.4
+    ]
+   }
+  },
+  "monet": {
+   "file": "src/monet.jpg",
+   "commons": "File:Claude Monet 1899 Nadar crop.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.55,
+     0.36
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "camille",
+   "kind": "image",
+   "from": "faceup@2.25",
+   "to": "faceup@2.1"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "camille",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "parasol-0.12",
+   "img": "parasol",
+   "kind": "image",
+   "from": "figure@1.0",
+   "to": "figure@1.08"
+  },
+  {
+   "at": "sick-0.12",
+   "img": "snow",
+   "kind": "image",
+   "from": "walker@1.05",
+   "to": "walker@1.15",
+   "gray": 1
+  },
+  {
+   "at": "death-0.12",
+   "img": "camille",
+   "from": "bust@1.3",
+   "to": "bust@1.42",
+   "sway": 0.008
+  },
+  {
+   "at": "confess-0.12",
+   "img": "monet",
+   "kind": "image",
+   "from": "face@1.25",
+   "to": "face@1.35",
+   "gray": 1
+  },
+  {
+   "at": "confess.6-0.05",
+   "img": "camille",
+   "kind": "image",
+   "from": "faceup@1.9",
+   "to": "faceup@2.05",
+   "hit": "big"
+  },
+  {
+   "at": "colours-0.12",
+   "img": "camille",
+   "kind": "image",
+   "from": "veil@2.7",
+   "to": "veil@2.55"
+  },
+  {
+   "at": "ask-0.12",
+   "img": "camille",
+   "kind": "image",
+   "from": "faceup@2.35",
+   "to": "faceup@2.5"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "camille",
+   "from": "faceup@1.45",
+   "to": "faceup@1.55",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "parasol",
+   "to": "sick-0.12",
+   "text": "WOMAN WITH A PARASOL · 1875"
+  },
+  {
+   "type": "label",
+   "from": "sick",
+   "to": "death-0.12",
+   "text": "VÉTHEUIL, BY MONET · 1879"
+  },
+  {
+   "type": "label",
+   "from": "death",
+   "to": "confess-0.12",
+   "text": "CAMILLE MONET · 1847–1879"
+  },
+  {
+   "type": "label",
+   "from": "confess",
+   "to": "confess.6-0.1",
+   "text": "CLAUDE MONET · 1899"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSÉE D'ORSAY · PARIS"
+  }
+ ],
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 2,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_gymno1.ogg",
+    "from": 0,
+    "start": 1.6,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "credit": "Satie, Gymnopédie No. 1 · Robin Alciatore (Musopen), public domain",
+    "commons": "File:Erik Satie - gymnopedies - la 1 ere. lent et douloureux.ogg"
+   }
+  ],
+  "heartbeat": [
+   0.2,
+   "hook.7-0.15"
+  ],
+  "heartbeat_gain": 0.2
+ },
+ "sfx": [
+  {
+   "at": "colours",
+   "fx": "chime",
+   "gain": 0.25
+  }
+ ],
+ "nocap": [],
+ "cover": {
+  "question": "Why did he paint her <i>dead?</i>",
+  "name": "CLAUDE MONET",
+  "work": "Camille on Her Deathbed, 1879",
+  "focus": [
+   0.42,
+   0.23
+  ],
+  "span": 0.5,
+  "answered_by": "He couldn't stop studying the colours death put on her face (Monet's own account to Clemenceau): blue, yellow, grey"
+ },
+ "facts": [
+  {
+   "claim": "Monet painted his wife Camille on her deathbed: Camille sur son lit de mort, 1879, oil on canvas, Musée d'Orsay (RF 1963 3)",
+   "source": "https://www.musee-orsay.fr/fr/oeuvres/1291 ; https://en.wikipedia.org/wiki/Camille_Doncieux"
+  },
+  {
+   "claim": "'Just after she died': in Monet's own account the colours were those death 'had just imposed' on her motionless face",
+   "source": "https://lithub.com/painting-emotion-how-claude-monet-turned-his-inner-life-into-art ; https://trauma.blog.yorku.ca/2022/08/camille-on-her-deathbed"
+  },
+  {
+   "claim": "Camille is the woman in Woman with a Parasol – Madame Monet and Her Son (1875, National Gallery of Art, Washington), with their son Jean",
+   "source": "https://en.wikipedia.org/wiki/Woman_with_a_Parasol_%E2%80%93_Madame_Monet_and_Her_Son ; https://www.nga.gov/collection/art-object-page.61379.html"
+  },
+  {
+   "claim": "Their second son Michel was born on 17 March 1878 and Camille's poor health worsened; much of Monet's money went on her medical care",
+   "source": "https://en.wikipedia.org/wiki/Camille_Doncieux ; https://en.wikipedia.org/wiki/Michel_Monet"
+  },
+  {
+   "claim": "Camille died on 5 September 1879 in Vétheuil, aged 32 (born 15 January 1847); the cause is uncertain, so the reel doesn't name one",
+   "source": "https://en.wikipedia.org/wiki/Camille_Doncieux ; https://www.thehistoryofart.org/claude-monet/portraits/camille-monet-on-her-deathbed/"
+  },
+  {
+   "claim": "Monet later told his friend Georges Clemenceau that at her bedside he caught himself mechanically studying the colours death had put on her face: blue, yellow, grey (published in Clemenceau's Claude Monet: Les Nymphéas, 1928)",
+   "source": "https://lithub.com/painting-emotion-how-claude-monet-turned-his-inner-life-into-art ; https://trauma.blog.yorku.ca/2022/08/camille-on-her-deathbed ; https://gutenberg.org/ebooks/75353 ; https://hekint.org/2026/04/13/a-canvas-of-grief-claude-monets-first-wife/ (Gedo, JAMA 2002)"
+  },
+  {
+   "claim": "He described it as a reflex, in spite of himself ('couldn't stop studying')",
+   "source": "https://trauma.blog.yorku.ca/2022/08/camille-on-her-deathbed ; https://canvas.saatchiart.com/?p=66674"
+  },
+  {
+   "claim": "Monet kept the painting; it stayed with his son Michel, went to the Louvre in 1963 (gift of Katia Granoff) and to the Musée d'Orsay in 1986",
+   "source": "https://www.musee-orsay.fr/fr/oeuvres/1291 ; https://hekint.org/2026/04/13/a-canvas-of-grief-claude-monets-first-wife/"
+  },
+  {
+   "claim": "Supporting images: Monet's Road to Vétheuil in snow (1879) and Nadar's photograph of Monet (1899)",
+   "source": "https://commons.wikimedia.org/wiki/File:Claude_monet_la_route_de_vetheuil_effet_de_neige.jpg ; https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg"
+  }
+ ],
+ "caption": "Monet painted his wife Camille just after she died.\n\nCamille Doncieux had been his model since the 1860s. She is the woman in the green dress (1866) and the woman with the parasol (1875), walking on a windy hill with their son Jean. After their second son, Michel, was born in March 1878, her health got worse, and much of what Monet earned went on her care. She died in Vétheuil, on the Seine, on 5 September 1879. She was 32.\n\nMonet sat by her bed and painted her face under the veil in quick strokes of violet, blue and white. Years later he confessed it to his friend Georges Clemenceau: at her bedside he caught himself, almost mechanically, noting the colours death had just put on her face. Blue, yellow, grey. His painter's eye wouldn't switch off, even then.\n\nHe kept the painting. It stayed in the family, came to the Louvre in 1963 and has hung in the Musée d'Orsay since 1986.\n\n🖤 Would you have painted her?",
+ "caption_short": "Monet painted his wife just after she died. Years later he confessed what he was really looking at. 🖤",
+ "youtube_title": "Why did he paint her dead? Monet's Camille on Her Deathbed",
+ "hashtags_instagram": [
+  "#monet",
+  "#camillemonet",
+  "#arthistory",
+  "#museedorsay",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#monet",
+  "#camillemonet",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#monet",
+  "#claudemonet",
+  "#camillemonet",
+  "#museedorsay",
+  "#paris",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#impressionism",
+  "#grief"
+ ]
+}

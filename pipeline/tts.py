@@ -30,7 +30,7 @@ if os.environ.get("VOICE", "") != "kokoro":
     _st = json.load(open(os.path.join(story_dir(sys.argv[1]), "story.json")))
     _lang = _st.get("lang") or "en-us"
     _e = (json.load(open(os.path.join(ROOT, "config.json"))).get("voice_engine") or {}).get("es" if _lang.startswith("es") else "en")
-    if _e and _e.get("engine") == "chirp":
+    if _e and _e.get("engine") == "chirp" and not _st.get("silent"):   # F3 silent Shorts keep Kokoro: muted, it only paces the cards
         if os.environ.get("GOOGLE_TTS_KEY"):
             sys.path.insert(0, PIPE); import tts_chirp; tts_chirp.story_voice(sys.argv[1]); sys.exit(0)
         if os.environ.get("CI") == "true": sys.exit("voice_engine is chirp but GOOGLE_TTS_KEY is missing in this job")

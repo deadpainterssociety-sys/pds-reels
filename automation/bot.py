@@ -70,7 +70,8 @@ def review(slug, revised=False):
     cap = (f"{head}\n\n<b>{T.esc(m.get('painter', ''))}</b>, <i>{T.esc(m.get('painting', ''))}</i> ({T.esc(m.get('year', ''))})\n"
            f"📍 {T.esc(m.get('museum', ''))}, {T.esc(m.get('city', ''))}\n“{T.esc(q)}”\n"
            f"🎣 {T.esc(st.get('hook_type', '?'))} · ⏭ NEXT card: {T.esc(nxt) if nxt else 'none'}\n\n"
-           f"⏱ {dur.group(1) if dur else '?'} s · 🗣 voice check {heard.group(1) if heard else '?'} · 📚 {len(st.get('facts', []))} sourced facts")
+           f"⏱ {dur.group(1) if dur else '?'} s · " + (f"🔇 caption Short ({st.get('formula', 'F3')})" if st.get("silent") else
+           f"🗣 voice check {heard.group(1) if heard else '?'}") + f" · 🧬 {st.get('formula', 'F1')} · 📚 {len(st.get('facts', []))} sourced facts")
     T.photo(chat, os.path.join(out, "cover.jpg"), cap)
     kb = [[{"text": "✅ Publish", "callback_data": f"ok:{slug}"}, {"text": "❌ Skip", "callback_data": f"no:{slug}"}],
           [{"text": "✏️ Changes", "callback_data": f"ch:{slug}"}]]

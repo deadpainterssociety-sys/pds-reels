@@ -40,7 +40,9 @@ else:
     credits = [x for x in [f"📍 {m['place']}" if m.get("place") else "", m.get("credit_line", "")] if x]
 for k, im in st["images"].items():
     if im.get("credit"): credits.append("📷 " + im["credit"])
-if st.get("ai_voice", True): credits.append(st.get("ai_voice_line") or "🎙️ AI voice narration")
+for tr in (st.get("music") or {}).get("tracks", []):   # classical recordings (long videos; F3 caption Shorts)
+    if tr.get("credit") and "🎵 " + tr["credit"] not in credits: credits.append("🎵 " + tr["credit"])
+if st.get("ai_voice", not st.get("silent")): credits.append(st.get("ai_voice_line") or "🎙️ AI voice narration")   # F3 is silent: no voice
 tags = " ".join(st.get("hashtags", []))   # YouTube: the full list
 # Instagram and TikTok accept 5 hashtags at most (2 Nov 2026): each gets its own best five
 tags_ig = " ".join((st.get("hashtags_instagram") or st.get("hashtags", []))[:5])
@@ -66,7 +68,7 @@ lufs = pyln.Meter(msr).integrated_loudness(mix)
 tl = json.load(open(os.path.join(sdir, "build", "timeline.json")))
 norm = lambda s: re.sub(r"[^\w ]", "", s.lower().replace("-", " "))
 lines, scores = [], []
-for l in tl["lines"]:   # +0.1 s: the cover frame shifts everything
+for l in ([] if st.get("silent") else tl["lines"]):   # +0.1 s: the cover frame shifts everything (F3 silent: nothing to hear)
     heard, _ = transcribe(a[int((l["s"] + 0.05) * sr): int((l["e"] + 0.2) * sr)], sr)
     r = difflib.SequenceMatcher(a=norm(l["text"]).split(), b=norm(heard).split()).ratio(); scores.append(r)
     lines.append(f"{l['id']:10s} {r:4.2f}  {heard}")
@@ -78,7 +80,8 @@ if "creator_died" in rights:
 else:
     rights_line = f"rights: {rights.get('note', 'NOT DOCUMENTED — fill story.rights before posting')}"
 qa = [f"{slug}: {dur:.1f} s · {os.path.getsize(final) / 1e6:.0f} MB · loudness {lufs:.1f} LUFS (stereo; mono-normalised -14)",
-      rights_line, f"recogniser match on the final file: {np.mean(scores):.2f} (min {min(scores):.2f}; digits vs words score lower)",
+      rights_line, (f"recogniser match on the final file: {np.mean(scores):.2f} (min {min(scores):.2f}; digits vs words score lower)" if scores
+                    else "voice muted on purpose (F3 caption Short): the captions carry the story, music only"),
       *lines, "", "facts:", *[f"- {f['claim']}  [{f['source']}]" for f in st.get("facts", [])]]
 open(os.path.join(out, "qa.txt"), "w").write("\n".join(qa) + "\n"); print("\n".join(qa[:3 + len(lines)]))
 
