@@ -31,6 +31,7 @@
   ],
   "_learning_platforms": "Platforms whose numbers the learning loop reads and judges. YouTube only since 6 Nov 2026 (Gigi: what works on YouTube is the key; the other apps are noise).",
   "youtube_synthetic_label_shorts": false,
+  "youtube_synthetic_label_long": false,
   "voice_engine": {
     "en": {
       "engine": "chirp",

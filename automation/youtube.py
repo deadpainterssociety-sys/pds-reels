@@ -10,6 +10,8 @@ content" flag (status.containsSyntheticMedia) is off for Shorts since 13 Nov 202
 shows it as an overlay on the Short in the feed, and YouTube requires it only for realistic content a viewer could
 mistake for real (a real person saying what they didn't, altered real footage, a realistic invented scene), which an
 anonymous narrator over real paintings is not. config.json youtube_synthetic_label_shorts turns it back on.
+Long videos too since 15 Nov 2026 (Gigi: "it's not our case"): config.json youtube_synthetic_label_long (false); their
+descriptions still name the AI voice (pipeline/long_finalize.py).
 
 Long videos (16:9, from stories/<slug>/out/): `long <slug> <publish_at>` uploads the master as PRIVATE with publishAt set,
 so YouTube makes it public on its own at that time; then thumbnail A and the English subtitles. Test & compare (title B,
@@ -115,7 +117,8 @@ def publish_long(slug, publish_at):
     meta = {"snippet": {"title": title, "description": desc, "tags": [t for t in tags if t][:15], "categoryId": "27",   # 27 = Education
                         "defaultLanguage": "en", "defaultAudioLanguage": "en"},
             "status": {"privacyStatus": "private", "publishAt": when.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-                       "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}, **place(slug)}
+                       "selfDeclaredMadeForKids": False,
+                       "containsSyntheticMedia": bool(CONFIG.get("youtube_synthetic_label_long", False))}, **place(slug)}
     video = next(p for p in [os.path.join(od, f"{slug}.mp4"), os.path.join(od, f"{slug}_upload_1080p.mp4")] if os.path.exists(p))
     parts = "snippet,status" + (",recordingDetails" if "recordingDetails" in meta else "")
     r = _resumable(tok, f"{API}/upload/youtube/v3/videos?uploadType=resumable&part={parts}", meta, video, "video/mp4")
