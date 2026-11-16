@@ -12,6 +12,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 | When | Painting (museum) | Angle | Type | Notes |
 |---|---|---|---|---|
+| next free slot | Pieter Bruegel the Elder, *The Suicide of Saul* (Kunsthistorisches Museum, Vienna) | people swear there are dinosaurs in a 1562 painting; they're most likely camels by a man who never saw one, and the real subject, King Saul killing himself, is a tiny figure in the corner | hidden | topic wave (brief 2026-11-16 P1): Decoded Art · 1.27M · en · 15 Oct 2026 · 243.7x; Arte secreto · 148k · es · 19 Oct 2026 · 6.8x. Viral 'dinosaurs in a 1562 painting' posts also covered by IFLScience, Focus.it, Canaltech. |
 
 ## Done
 
