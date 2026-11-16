@@ -1,0 +1,1108 @@
+{
+ "slug": "bruegel-blue-cloak",
+ "format": "two-minute",
+ "formula": "F2",
+ "hook_type": "hidden",
+ "teaser": "The painting's secret name, hidden in a crowd",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Pieter Bruegel the Elder",
+  "born": 1525,
+  "died": 1569,
+  "painting": "Netherlandish Proverbs",
+  "year": "1559",
+  "museum": "Gemäldegalerie",
+  "city": "Berlin",
+  "image": "proverbs",
+  "image_credit": "Gemäldegalerie, Staatliche Museen zu Berlin, via Google Art Project / Wikimedia Commons (public domain)"
+ },
+ "cover": {
+  "question": "Where is its <i>secret name?</i>",
+  "name": "BRUEGEL",
+  "work": "Netherlandish Proverbs, 1559",
+  "focus": [
+   0.45,
+   0.67
+  ],
+  "span": 0.38,
+  "answered_by": "Right in the middle: the wife pulling a blue cloak over her husband (she cheats on him). The painting was once called The Blue Cloak, or The Folly of the World."
+ },
+ "rights": {
+  "creator_died": 1569,
+  "note": "Bruegel died 1569; public-domain photograph of a 2D work (Google Art Project)."
+ },
+ "say": {
+  "1559": "fifteen fifty-nine",
+  "16": "sixteen"
+ },
+ "ipa": {
+  "Bruegel": "bɹˈɔɪɡəl",
+  "Pieter": "pˈiːtəɹ",
+  "Flemish": "flˈɛmɪʃ",
+  "Gemäldegalerie": "ɡəmˈɛldəɡˌæləɹˌi"
+ },
+ "respell": {
+  "Bruegel": "BROY-gul",
+  "Gemäldegalerie": "geh-MEL-deh-gah-leh-REE"
+ },
+ "chirp_say": {
+  "Bruegel": "Broygel",
+  "Gemäldegalerie": "Gemelde-galerie"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This painting has a secret *name.*",
+     0.4,
+     0.9
+    ],
+    [
+     "It's hidden in the crowd.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "village",
+   "perf": [
+    [
+     "Pieter Bruegel painted it in 1559.",
+     0.4,
+     0.95
+    ],
+    [
+     "A Flemish village,",
+     0.3,
+     0.95
+    ],
+    [
+     "packed with people doing very strange things.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "sayings",
+   "perf": [
+    [
+     "Every one of them is acting out a saying.",
+     0.4,
+     0.95
+    ],
+    [
+     "By most counts,",
+     0.25,
+     0.95
+    ],
+    [
+     "more than a *hundred* of them.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "wall",
+   "perf": [
+    [
+     "Look at this man in armour.",
+     0.4,
+     0.95
+    ],
+    [
+     "He's banging his head against a brick *wall.*",
+     0.4,
+     0.92
+    ],
+    [
+     "Wasting his time on the impossible.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "devil",
+   "perf": [
+    [
+     "Next to him,",
+     0.25,
+     0.95
+    ],
+    [
+     "a woman ties the *devil* to a pillow.",
+     0.4,
+     0.92
+    ],
+    [
+     "Be stubborn enough,",
+     0.25,
+     0.95
+    ],
+    [
+     "and you can beat anything.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "shear",
+   "perf": [
+    [
+     "Now look at these two.",
+     0.35,
+     0.95
+    ],
+    [
+     "One shears a sheep.",
+     0.3,
+     0.95
+    ],
+    [
+     "The other shears a *pig.*",
+     0.4,
+     0.9
+    ],
+    [
+     "One gets all the wool,",
+     0.25,
+     0.95
+    ],
+    [
+     "the other gets nothing.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "roses",
+   "perf": [
+    [
+     "Here, a man throws roses to the pigs.",
+     0.4,
+     0.95
+    ],
+    [
+     "Good things, wasted on those who can't value them.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "roof",
+   "perf": [
+    [
+     "Look up at the roof.",
+     0.35,
+     0.95
+    ],
+    [
+     "It's tiled with *tarts.*",
+     0.4,
+     0.9
+    ],
+    [
+     "A land of plenty,",
+     0.3,
+     0.95
+    ],
+    [
+     "or a fool's paradise.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "globe",
+   "perf": [
+    [
+     "And look at the globe on the wall.",
+     0.4,
+     0.95
+    ],
+    [
+     "Its cross points down.",
+     0.4,
+     0.92
+    ],
+    [
+     "The whole world is turned *upside down.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "beard",
+   "perf": [
+    [
+     "Even the Lord isn't safe.",
+     0.4,
+     0.93
+    ],
+    [
+     "A monk ties a fake beard on his face.",
+     0.4,
+     0.95
+    ],
+    [
+     "Lies, dressed up as faith.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "turn",
+   "perf": [
+    [
+     "So where is the secret name?",
+     0.5,
+     0.92
+    ],
+    [
+     "Right in the middle.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cloak",
+   "perf": [
+    [
+     "Look at the woman in red.",
+     0.4,
+     0.92
+    ],
+    [
+     "She's pulling a blue cloak over her husband.",
+     0.4,
+     0.94
+    ],
+    [
+     "He can't see a thing.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "That's the name.",
+     0.4,
+     0.9
+    ],
+    [
+     "This painting was once called",
+     0.3,
+     0.94
+    ],
+    [
+     "*The Blue Cloak.*",
+     0.5,
+     0.82
+    ],
+    [
+     "Or:",
+     0.3,
+     0.88
+    ],
+    [
+     "*The Folly of the World.*",
+     1.0,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "meaning",
+   "perf": [
+    [
+     "Because in Bruegel's day,",
+     0.25,
+     0.95
+    ],
+    [
+     "a blue cloak meant one thing.",
+     0.4,
+     0.95
+    ],
+    [
+     "She was cheating on him.",
+     1.0,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "coda",
+   "perf": [
+    [
+     "His son went on to paint",
+     0.25,
+     0.95
+    ],
+    [
+     "at least 16 copies of it.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "reflect",
+   "perf": [
+    [
+     "And nearly five hundred years later,",
+     0.3,
+     0.95
+    ],
+    [
+     "we're still banging our heads",
+     0.25,
+     0.95
+    ],
+    [
+     "against brick walls.",
+     1.0,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Gemäldegalerie, in Berlin.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "facts": [
+  {
+   "claim": "Netherlandish Proverbs (also The Dutch Proverbs), oil on oak panel, 1559, by Pieter Bruegel the Elder; Gemäldegalerie, Staatliche Museen zu Berlin (acquired 1914 from an English collection)",
+   "source": "https://en.wikipedia.org/wiki/Netherlandish_Proverbs ; https://artsandculture.google.com/asset/proverbs-pieter-bruegel-the-elder/CwGkTFwDGMmq9w ; https://projects.mcah.columbia.edu/bruegel2/htm/main"
+  },
+  {
+   "claim": "Villagers literally act out proverbs and sayings; counts differ: 'more than 120' (Kemperdick, Gemäldegalerie), about 126 (Wikipedia), 'more than 100' (Google Arts & Culture), 'perhaps more than 90' (Columbia) — narrated as 'by most counts, more than a hundred'",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs ; https://projects.mcah.columbia.edu/bruegel2/htm/main"
+  },
+  {
+   "claim": "A man 'hitting his head against a wall' = wasting time on an impossible task",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 004)"
+  },
+  {
+   "claim": "A woman ties the devil to a pillow = 'to be able to tie even the devil to a pillow': obstinacy overcomes everything",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 001)"
+  },
+  {
+   "claim": "'One shears sheep, the other pigs': one has all the advantages, the other none (Kemperdick: some live in luxury, others are in need)",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 010)"
+  },
+  {
+   "claim": "Casting roses before swine = wasting effort on the unworthy",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 106)"
+  },
+  {
+   "claim": "The roof tiled with tarts: a land of plenty or a fool's paradise (Kemperdick); 'to be very wealthy' (Wikipedia)",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 035)"
+  },
+  {
+   "claim": "The inverted globe with its cross pointing down: the world turned upside down",
+   "source": "https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 024) ; https://artsandculture.google.com/asset/proverbs-pieter-bruegel-the-elder/CwGkTFwDGMmq9w"
+  },
+  {
+   "claim": "A monk ties a flaxen (false) beard on the enthroned figure of God/Christ = hiding deceit under piety",
+   "source": "https://artsandculture.google.com/story/hAWBUsSHOXLXIQ ; https://en.wikipedia.org/wiki/Netherlandish_Proverbs (no. 104)"
+  },
+  {
+   "claim": "At the centre a wife puts a blue cloak on her husband, meaning she is cuckolding (deceiving) him; the blue cloak was a familiar symbol of deceit",
+   "source": "https://en.wikipedia.org/wiki/Netherlandish_Proverbs ; https://en.wikipedia.org/wiki/The_Blue_Cloak ; https://artsandculture.google.com/asset/proverbs-pieter-bruegel-the-elder/CwGkTFwDGMmq9w"
+  },
+  {
+   "claim": "The painting's early/original title: 'The Blue Cloak or The Folly of the World' (Wikipedia: 'original title'; Columbia: 'sometimes called the Blue Cloak') — narrated as 'once called'",
+   "source": "https://en.wikipedia.org/wiki/Netherlandish_Proverbs ; https://projects.mcah.columbia.edu/bruegel2/htm/main ; https://artsandculture.google.com/asset/proverbs-pieter-bruegel-the-elder/CwGkTFwDGMmq9w"
+  },
+  {
+   "claim": "His son Pieter Brueghel the Younger painted at least 16 copies",
+   "source": "https://en.wikipedia.org/wiki/Netherlandish_Proverbs ; https://en.wikipedia.org/wiki/Pieter_Brueghel_the_Younger"
+  }
+ ],
+ "images": {
+  "proverbs": {
+   "file": "src/proverbs.jpg",
+   "commons": "File:Pieter Brueghel the Elder - The Dutch Proverbs - Google Art Project.jpg",
+   "depth": true,
+   "long": 4800,
+   "points": {
+    "wife": [
+     0.445,
+     0.665
+    ],
+    "couple": [
+     0.46,
+     0.72
+    ],
+    "husband": [
+     0.475,
+     0.7
+    ],
+    "cloak": [
+     0.46,
+     0.73
+    ],
+    "wall": [
+     0.195,
+     0.772
+    ],
+    "armour": [
+     0.17,
+     0.8
+    ],
+    "devil": [
+     0.045,
+     0.91
+    ],
+    "devilwoman": [
+     0.08,
+     0.88
+    ],
+    "sheep": [
+     0.31,
+     0.88
+    ],
+    "pig": [
+     0.36,
+     0.83
+    ],
+    "shearers": [
+     0.33,
+     0.84
+    ],
+    "roses": [
+     0.6,
+     0.76
+    ],
+    "roseman": [
+     0.6,
+     0.7
+    ],
+    "tarts": [
+     0.17,
+     0.1
+    ],
+    "roof": [
+     0.15,
+     0.12
+    ],
+    "fool": [
+     0.11,
+     0.31
+    ],
+    "globe": [
+     0.055,
+     0.42
+    ],
+    "cross": [
+     0.055,
+     0.46
+    ],
+    "god": [
+     0.745,
+     0.63
+    ],
+    "monk": [
+     0.71,
+     0.66
+    ],
+    "beard": [
+     0.745,
+     0.64
+    ],
+    "center": [
+     0.5,
+     0.55
+    ],
+    "middle": [
+     0.47,
+     0.68
+    ],
+    "vl": [
+     0.32,
+     0.5
+    ],
+    "vr": [
+     0.5,
+     0.5
+    ],
+    "crowdr": [
+     0.78,
+     0.42
+    ],
+    "midleft": [
+     0.3,
+     0.62
+    ],
+    "upper": [
+     0.62,
+     0.25
+    ],
+    "monkbeard": [
+     0.725,
+     0.65
+    ],
+    "godface": [
+     0.745,
+     0.625
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "proverbs",
+   "from": "wife@3.5",
+   "to": "wife@3.65",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "proverbs",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.012,
+   "hit": "big",
+   "dolly": [
+    0,
+    0.2
+   ]
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "proverbs",
+   "from": "middle@1.6",
+   "to": "middle@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "village-0.08",
+   "img": "proverbs",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.45",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "village.6-0.05",
+   "img": "proverbs",
+   "from": "vl@1.15",
+   "to": "vr@1.15",
+   "sway": 0.006
+  },
+  {
+   "at": "village.9-0.05",
+   "img": "proverbs",
+   "from": "crowdr@1.7",
+   "to": "crowdr@1.82",
+   "sway": 0.006
+  },
+  {
+   "at": "sayings-0.08",
+   "img": "proverbs",
+   "from": "midleft@1.8",
+   "to": "midleft@1.92",
+   "sway": 0.006
+  },
+  {
+   "at": "sayings.9-0.05",
+   "img": "proverbs",
+   "from": "upper@1.7",
+   "to": "upper@1.82",
+   "sway": 0.006
+  },
+  {
+   "at": "sayings.12-0.05",
+   "img": "proverbs",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "sway": 0.006,
+   "hit": "small"
+  },
+  {
+   "at": "wall-0.08",
+   "img": "proverbs",
+   "from": "armour@2.8",
+   "to": "armour@2.95",
+   "sway": 0.006
+  },
+  {
+   "at": "wall.6-0.05",
+   "img": "proverbs",
+   "from": "wall@3.5",
+   "to": "wall@3.65",
+   "sway": 0.006
+  },
+  {
+   "at": "wall.14-0.05",
+   "img": "proverbs",
+   "from": "armour@2.5",
+   "to": "armour@2.62",
+   "sway": 0.006
+  },
+  {
+   "at": "devil-0.08",
+   "img": "proverbs",
+   "from": "devilwoman@2.8",
+   "to": "devilwoman@2.95",
+   "sway": 0.006
+  },
+  {
+   "at": "devil.7-0.05",
+   "img": "proverbs",
+   "from": "devil@3.6",
+   "to": "devil@3.75",
+   "sway": 0.006
+  },
+  {
+   "at": "devil.11-0.05",
+   "img": "proverbs",
+   "from": "devilwoman@2.5",
+   "to": "devilwoman@2.62",
+   "sway": 0.006
+  },
+  {
+   "at": "shear-0.08",
+   "img": "proverbs",
+   "from": "shearers@2.5",
+   "to": "shearers@2.62",
+   "sway": 0.006
+  },
+  {
+   "at": "shear.5-0.05",
+   "img": "proverbs",
+   "from": "sheep@3.3",
+   "to": "sheep@3.45",
+   "sway": 0.006
+  },
+  {
+   "at": "shear.9-0.05",
+   "img": "proverbs",
+   "from": "pig@3.3",
+   "to": "pig@3.45",
+   "sway": 0.006
+  },
+  {
+   "at": "shear.14-0.05",
+   "img": "proverbs",
+   "from": "shearers@2.7",
+   "to": "shearers@2.82",
+   "sway": 0.006
+  },
+  {
+   "at": "roses-0.08",
+   "img": "proverbs",
+   "from": "roseman@3.0",
+   "to": "roseman@3.15",
+   "sway": 0.006
+  },
+  {
+   "at": "roses.8-0.05",
+   "img": "proverbs",
+   "from": "roses@3.2",
+   "to": "roses@3.35",
+   "sway": 0.006
+  },
+  {
+   "at": "roof-0.08",
+   "img": "proverbs",
+   "from": "roof@1.9",
+   "to": "roof@2.05",
+   "sway": 0.006
+  },
+  {
+   "at": "roof.5-0.05",
+   "img": "proverbs",
+   "from": "tarts@2.9",
+   "to": "tarts@3.05",
+   "sway": 0.006
+  },
+  {
+   "at": "roof.13-0.05",
+   "img": "proverbs",
+   "from": "fool@3.2",
+   "to": "fool@3.35",
+   "sway": 0.006
+  },
+  {
+   "at": "globe-0.08",
+   "img": "proverbs",
+   "from": "globe@3.2",
+   "to": "globe@3.35",
+   "sway": 0.006
+  },
+  {
+   "at": "globe.8-0.05",
+   "img": "proverbs",
+   "from": "cross@3.6",
+   "to": "cross@3.75",
+   "sway": 0.006
+  },
+  {
+   "at": "globe.12-0.05",
+   "img": "proverbs",
+   "from": "globe@2.3",
+   "to": "globe@2.42",
+   "sway": 0.006
+  },
+  {
+   "at": "beard-0.08",
+   "img": "proverbs",
+   "from": "godface@3.0",
+   "to": "godface@3.15",
+   "sway": 0.006
+  },
+  {
+   "at": "beard.5-0.05",
+   "img": "proverbs",
+   "from": "monkbeard@3.3",
+   "to": "monkbeard@3.45",
+   "sway": 0.006
+  },
+  {
+   "at": "beard.14-0.05",
+   "img": "proverbs",
+   "from": "godface@3.7",
+   "to": "godface@3.8",
+   "sway": 0.006
+  },
+  {
+   "at": "turn-0.08",
+   "img": "proverbs",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.45",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "turn.6-0.05",
+   "img": "proverbs",
+   "from": "middle@1.45",
+   "to": "middle@1.62",
+   "sway": 0.006
+  },
+  {
+   "at": "cloak-0.08",
+   "img": "proverbs",
+   "from": "wife@3.4",
+   "to": "wife@3.55",
+   "sway": 0.006
+  },
+  {
+   "at": "cloak.6-0.05",
+   "img": "proverbs",
+   "from": "couple@2.6",
+   "to": "couple@2.75",
+   "sway": 0.006
+  },
+  {
+   "at": "cloak.14-0.05",
+   "img": "proverbs",
+   "from": "husband@3.7",
+   "to": "husband@3.8",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "proverbs",
+   "from": "couple@2.2",
+   "to": "couple@2.32",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.8-0.05",
+   "img": "proverbs",
+   "from": "cloak@2.9",
+   "to": "cloak@3.05",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.11-0.05",
+   "img": "proverbs",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "sway": 0.006
+  },
+  {
+   "at": "meaning-0.08",
+   "img": "proverbs",
+   "from": "wife@3.7",
+   "to": "wife@3.8",
+   "sway": 0.006
+  },
+  {
+   "at": "meaning.10-0.05",
+   "img": "proverbs",
+   "from": "husband@3.6",
+   "to": "husband@3.7",
+   "sway": 0.006
+  },
+  {
+   "at": "coda-0.08",
+   "img": "proverbs",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.45",
+   "frame": true,
+   "sway": 0.002,
+   "gray": 0.7
+  },
+  {
+   "at": "reflect-0.08",
+   "img": "proverbs",
+   "from": "armour@2.6",
+   "to": "armour@2.75",
+   "sway": 0.006
+  },
+  {
+   "at": "reflect.6-0.05",
+   "img": "proverbs",
+   "from": "wall@3.3",
+   "to": "wall@3.45",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "proverbs",
+   "from": "couple@2.2",
+   "to": "couple@2.35",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "village",
+   "to": "village.6-0.1",
+   "text": "PIETER BRUEGEL THE ELDER"
+  },
+  {
+   "type": "label",
+   "from": "village.6",
+   "to": "sayings-0.1",
+   "text": "OIL ON OAK · 1559"
+  },
+  {
+   "type": "label",
+   "from": "wall.6",
+   "to": "devil-0.1",
+   "text": "HEAD AGAINST A BRICK WALL"
+  },
+  {
+   "type": "ring",
+   "at": "wall.9",
+   "to": "wall.14-0.1",
+   "img": "proverbs",
+   "point": "wall",
+   "rx": 120,
+   "ry": 120,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "devil.3",
+   "to": "shear-0.1",
+   "text": "THE DEVIL TIED TO A PILLOW"
+  },
+  {
+   "type": "label",
+   "from": "shear.5",
+   "to": "roses-0.1",
+   "text": "ONE SHEARS SHEEP, ONE PIGS"
+  },
+  {
+   "type": "label",
+   "from": "roses",
+   "to": "roof-0.1",
+   "text": "ROSES BEFORE SWINE"
+  },
+  {
+   "type": "label",
+   "from": "roof.5",
+   "to": "globe-0.1",
+   "text": "A ROOF TILED WITH TARTS"
+  },
+  {
+   "type": "ring",
+   "at": "globe.8",
+   "to": "globe.12-0.1",
+   "img": "proverbs",
+   "point": "cross",
+   "rx": 90,
+   "ry": 120,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "globe.12",
+   "to": "beard-0.1",
+   "text": "THE WORLD UPSIDE DOWN"
+  },
+  {
+   "type": "label",
+   "from": "beard.5",
+   "to": "turn-0.1",
+   "text": "A FAKE BEARD ON THE LORD"
+  },
+  {
+   "type": "hotspot",
+   "at": "beard.10",
+   "to": "beard.14-0.1",
+   "img": "proverbs",
+   "point": "beard"
+  },
+  {
+   "type": "label",
+   "from": "cloak",
+   "to": "payoff-0.1",
+   "text": "THE CENTRE OF THE PAINTING"
+  },
+  {
+   "type": "title",
+   "from": "payoff.8",
+   "to": "payoff.11-0.1",
+   "kicker": "ITS OLD NAME",
+   "text": "The Blue <i>Cloak</i>"
+  },
+  {
+   "type": "title",
+   "from": "payoff.12",
+   "to": "payoff$+0.3",
+   "kicker": "OR",
+   "text": "The Folly of the <i>World</i>"
+  },
+  {
+   "type": "label",
+   "from": "coda",
+   "to": "reflect-0.1",
+   "text": "AT LEAST 16 COPIES BY HIS SON"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "GEMÄLDEGALERIE · BERLIN"
+  }
+ ],
+ "nocap": [
+  [
+   "payoff.8",
+   "payoff.11-0.1"
+  ],
+  [
+   "payoff.12",
+   "payoff$+0.3"
+  ],
+  [
+   "devil.7",
+   "devil.11-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -5,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "choir": [
+    "payoff.8-0.1",
+    "meaning$+0.5"
+   ]
+  },
+  "heartbeat": [
+   "turn-0.1",
+   "payoff.8-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "globe.8",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.8",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "caption": "Pieter Bruegel painted this Flemish village in 1559, and every person in it is acting out a saying. By most counts there are more than a hundred.\n\nA man in armour bangs his head against a brick wall. A woman ties the devil to a pillow. One man shears a sheep, the other a pig. Roses are thrown to the swine, the roof is tiled with tarts, the globe hangs upside down, and a monk ties a fake beard on the Lord.\n\nAnd right in the middle, a woman in red pulls a blue cloak over her husband so he can't see a thing. In Bruegel's day a blue cloak meant deceit: she is cheating on him. That is the painting's old name: The Blue Cloak, or The Folly of the World.\n\nP.S. His son, Pieter Brueghel the Younger, painted at least 16 copies of it.\n\n🖤 Which proverb did you spot first?",
+ "caption_short": "This painting has a secret name, hidden in the crowd. Bruegel's Netherlandish Proverbs, 1559. 🖤",
+ "youtube_title": "This painting has a secret name | Bruegel, Netherlandish Proverbs",
+ "hashtags_instagram": [
+  "#bruegel",
+  "#netherlandishproverbs",
+  "#arthistory",
+  "#berlin",
+  "#hiddendetails"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#bruegel",
+  "#netherlandishproverbs",
+  "#mystery"
+ ],
+ "hashtags": [
+  "#bruegel",
+  "#netherlandishproverbs",
+  "#gemaldegalerie",
+  "#berlin",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#proverbs",
+  "#hiddendetails"
+ ]
+}

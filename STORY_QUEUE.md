@@ -55,6 +55,7 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 17 Nov 2026 | delacroix-liberty-hidden | Delacroix, *Liberty Leading the People* (Louvre) | bought by Louis-Philippe's government in 1831, taken down within months as inflammatory, handed back after June 1832; Champfleury: 'hidden in an attic for being too revolutionary'; Louvre only in 1874 | hidden |
 | 18 Nov 2026 | monet-camille-deathbed | Monet, *Camille Monet on Her Deathbed* (Musée d'Orsay, Paris) | painted just after she died; he later confessed he couldn't stop studying the colours on her face (first Caption Short) | dark | F3 |
 | 19 Nov 2026 | rembrandt-self-portraits | Rembrandt, *Self Portrait at the Age of 63* (National Gallery, London) + 1628, 1640, 1652, 1658 | watch his face as he loses everything; in the last one he painted out his brush (first Series Short) | dark-legend | F4 |
+| 18 Nov 2026 | bruegel-blue-cloak | Bruegel, *Netherlandish Proverbs* (Gemäldegalerie, Berlin) | 100+ proverbs acted out ("Look at…" tour: wall, devil on a pillow, sheep/pig, roses to swine, tarts, upside-down globe, beard on the Lord); the secret name in the middle: a wife pulls a blue cloak over her husband (she cheats), the painting was once called *The Blue Cloak* or *The Folly of the World*; son made 16+ copies (first One Painting, Two Minutes) | hidden | F2 |
 
 ## Ideas (to verify)
 
