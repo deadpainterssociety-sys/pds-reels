@@ -230,5 +230,13 @@
   "ig_location_id": null,
   "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"Abt2CkgSv_nZxBZKkWkv4B_\"}}",
   "ig_location_id_checked": "2026-11-16"
+ },
+ "Galleria Doria Pamphilj, Rome": {
+  "lat": null,
+  "lon": null,
+  "lat_checked": "2026-11-16",
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"AxYM_W8KCNi85L5K6qGeyZL\"}}",
+  "ig_location_id_checked": "2026-11-16"
  }
 }
