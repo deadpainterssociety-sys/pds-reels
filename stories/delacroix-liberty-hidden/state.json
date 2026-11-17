@@ -1,11 +1,12 @@
 {
- "status": "sent",
- "updated": "2026-11-17T09:59:17+01:00",
+ "status": "approved",
+ "updated": "2026-11-17T10:29:29+01:00",
  "validated_at": "2026-11-15T03:46:18+01:00",
  "duration_s": 60.4,
  "review_message": 394,
  "sent_at": "2026-11-17T09:59:17+01:00",
  "feedback": [
   "Love the video, but there is no single frame where we show the whole painting, or at least most of it. It’s ONLY extreme close-ups, give it at least one frame to show the whole thing (naturally though, where it fits best)"
- ]
+ ],
+ "approved_at": "2026-11-17T10:29:29+01:00"
 }
