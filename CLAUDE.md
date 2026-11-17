@@ -24,7 +24,7 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 - `python automation/plan.py posted` lists every story already made: never repeat a painting.
 - Read `STORY_QUEUE.md` **Pinned** first: a dated row within 5 days of today, or a *next days* row, is your first story
   (a dated one is scheduled ON its date: `python automation/plan.py add <slug> <date>`). Then the Ideas, and the last
-  3–5 stories' moods/museums/`hook_type`s; alternate mood and museum (PLAYBOOK §3). Two reels go out each day (14:00
+  3–5 stories' moods/museums/`hook_type`s; alternate mood and museum (PLAYBOOK §3). Two reels go out each day (17:00
   and 21:00), so the two reels of a day should differ in mood and museum too.
 - Hard filters: painter died before 1956 (EU 70-year rule; for works after 1930 also mind the US rule), the painting hangs
   in a visitable museum, and Wikimedia Commons has a public-domain image of it ≥ 2000 px. If an idea fails, take another.

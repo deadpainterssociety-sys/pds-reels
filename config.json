@@ -6,10 +6,10 @@
   "buffer_days": 3,
   "stories_per_run": 3,
   "slots": [
-    "14:00",
+    "17:00",
     "21:00"
   ],
-  "_slots": "Posting times (Madrid). One reel per slot: two a day. A reel approved after its slot goes out as soon as it is approved, until publish_until.",
+  "_slots": "Posting times (Madrid). One reel per slot: two a day (17:00 and 21:00 since 18 Nov 2026, Gigi: just before and in the middle of the 18:00-24:00 audience peak; long videos at 19:00 in between). A reel approved after its slot goes out as soon as it is approved, until publish_until.",
   "publish_until": "23:00",
   "platforms": {
     "instagram": true,

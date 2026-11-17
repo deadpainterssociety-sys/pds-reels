@@ -116,7 +116,7 @@ From the YouTube market study (6 Nov 2026): the winners tell one dark or astonis
 every week, with a text-free close-up thumbnail and a short statement title; the decliners got longer and rarer.
 YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
 
-- **Cadence and length.** Two long videos a week, Monday and Thursday at 18:00 Madrid (Gigi, 9 Nov 2026), 10–12 minutes,
+- **Cadence and length.** Two long videos a week, Monday and Thursday at 19:00 Madrid (Gigi, 9 Nov 2026; 19:00 since 17 Nov, between the 17:00 and 21:00 Shorts), 10–12 minutes,
   never under 8:00 (mid-roll ads). 16:9. Each one is the long version of a Short we posted, so the Short can link to it.
 - **Same show as the Shorts.** Same narrator voice and speed family, same procedural music, living 2.5D paintings,
   grain, serif type, red accent. `story.json` → `"format": "long"`; build with `plan → tts → align → build_story →
@@ -168,4 +168,5 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (15 Nov 2026) Cut and reveal sounds stay soft and elegant: a faint dark breath on a cut, a cushioned low thud on a reveal (score.py's soft set); never bright whooshes or booms, at most a few soft `tick`s in a reel.
 - (15 Nov 2026) The 2.5D depth effect is only a hint of relief, never a face that bulges or "jumps out": Reel.tsx caps the dolly (0.07, reached within 2.6 s, then held) and the drift, however long the shot. Don't fight the caps.
 - (17 Nov 2026) Never only extreme close-ups: every reel shows the whole painting (or most of it) at least once, where it fits naturally in the story (e.g. the line that describes the scene). For nudes a single small framed view of the whole painting (`z < 1`, `"frame": true`) is fine; the close-up rules still hold for every other shot and the cover.
+- (17 Nov 2026) Posting times: Shorts at 17:00 and 21:00 Madrid, long videos at 19:00 (2 h apart). The audience peak is 18:00-24:00 Madrid (US 40 %, UK 6 %); mornings are dead.
 <!-- new rules go here -->

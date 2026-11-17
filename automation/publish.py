@@ -25,7 +25,7 @@ def due(force=False):
     if not force:
         if hm > publish_until(): return ""
         opened = sum(1 for t in slots() if hm >= t)          # slots already reached today
-        if posted_today() >= opened: return ""               # 14:00 → first reel, 21:00 → second reel
+        if posted_today() >= opened: return ""               # 17:00 → first reel, 21:00 → second reel
     for e in schedule():
         if e["date"] <= today() and state(e["slug"])["status"] == "approved": return e["slug"]
     return ""

@@ -12,6 +12,12 @@ reel, every test and every proposal on YouTube numbers only. Instagram and TikTo
 one line of context and never count as evidence. Long videos (`features.format == "long"`) are judged apart from the
 Shorts: compare them only with each other (views at 7 days, average % viewed, subscribers per 1,000 views).
 
+## Posting-time test (from 18 Nov 2026)
+
+The first Short moved from 14:00 to 17:00 (the 21:00 one stays; long videos 19:00). Until ~2 Dec, one line in the
+summary: median views at 24 h and VVSA of the 17:00 Shorts vs the 14:00 ones before (14:00 baseline to 14 Nov: 419
+views at 24 h, 976 at 72 h, 53.7 % engaged; 21:00: 633, 997, 56.5 %). `posted_hour` in the table.
+
 ## The three numbers we polish (Gigi, 15 Nov 2026)
 
 Every brief's `summary` OPENS with these three, for our YouTube Shorts: the median of the Shorts posted in the last 7 days

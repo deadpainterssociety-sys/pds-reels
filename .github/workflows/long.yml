@@ -1,4 +1,4 @@
-# Long videos: upload a finished long video to YouTube as PRIVATE, scheduled to go public at its slot (Monday/Thursday 18:00
+# Long videos: upload a finished long video to YouTube as PRIVATE, scheduled to go public at its slot (Monday/Thursday 19:00
 # Madrid). The video is rendered outside CI and parked on a temporary branch long-<slug> (automation/long_park.py park);
 # this job deletes the branch when it ends, whatever happens.
 # Started by Claude with workflow_dispatch (slug + publish_at). Test & compare and the end screen stay manual in Studio.
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       slug: { description: "story folder, e.g. gericault-raft-long", required: true }
-      publish_at: { description: "when it goes public, with offset, e.g. 2026-11-12T18:00:00+01:00", required: true }
+      publish_at: { description: "when it goes public, with offset, e.g. 2026-11-19T19:00:00+01:00", required: true }
 concurrency: { group: long, cancel-in-progress: false }
 jobs:
   upload:
