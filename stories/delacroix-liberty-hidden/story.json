@@ -117,6 +117,17 @@
      0.5
     ]
    }
+  },
+  "whole": {
+   "file": "src/liberty.jpg",
+   "commons": "File:La Liberté guidant le peuple - Eugène Delacroix - Musée du Louvre Peintures RF 129 - après restauration 2024.jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
   }
  },
  "rights": {
@@ -401,10 +412,12 @@
   },
   {
    "at": "liberty.4-0.05",
-   "img": "liberty",
-   "from": "deadright@2.2",
-   "to": "deadright@2.32",
-   "sway": 0.006
+   "img": "whole",
+   "kind": "image",
+   "from": "center@0.43",
+   "to": "center@0.41",
+   "frame": true,
+   "sway": 0.002
   },
   {
    "at": "king-0.08",
