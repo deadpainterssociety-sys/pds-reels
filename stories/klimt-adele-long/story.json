@@ -1,0 +1,3390 @@
+{
+ "slug": "klimt-adele-long",
+ "format": "long",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "Gustav Klimt",
+  "born": 1862,
+  "died": 1918,
+  "painting": "Portrait of Adele Bloch-Bauer I",
+  "year": "1903–1907",
+  "museum": "Neue Galerie",
+  "city": "New York",
+  "image": "adele",
+  "image_credit": "Neue Galerie New York, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1918,
+  "note": "Klimt d. 1918: public domain. Period photographs public domain (Nähr 1911, Adele c. 1910, Hoffmann 1938, Highsmith). CC photos (Belvedere, Neue Galerie, Theodora mosaic) credited on screen and in the description. Music: Mahler recordings CC0 / public domain."
+ },
+ "say": {
+  "1899": "eighteen ninety-nine",
+  "1903": "nineteen oh three",
+  "1907": "nineteen oh seven",
+  "1912": "nineteen twelve",
+  "1918": "nineteen eighteen",
+  "1923": "nineteen twenty-three",
+  "1925": "nineteen twenty-five",
+  "1937": "nineteen thirty-seven",
+  "1941": "nineteen forty-one",
+  "1945": "nineteen forty-five",
+  "1948": "nineteen forty-eight",
+  "1998": "nineteen ninety-eight",
+  "1999": "nineteen ninety-nine",
+  "2004": "two thousand and four",
+  "2006": "two thousand and six",
+  "2011": "twenty eleven",
+  "82-year-old": "eighty-two-year-old",
+  "55": "fifty-five",
+  "43": "forty-three",
+  "82": "eighty-two",
+  "94": "ninety-four",
+  "135": "a hundred and thirty-five",
+  "300": "three hundred"
+ },
+ "ipa": {
+  "Adele": "ɑːdˈeɪlə",
+  "Adele's": "ɑːdˈeɪləz",
+  "Bloch-Bauer": "blˈɔːx bˈaʊɚ",
+  "Bloch": "blˈɔːx",
+  "Bauer": "bˈaʊɚ",
+  "Klimt": "klˈɪmt",
+  "Klimt's": "klˈɪmts",
+  "Klimts": "klˈɪmts",
+  "Ucicky": "ˈuːtʃɪtski",
+  "Czernin": "tʃˈɛɹniːn",
+  "Führer": "fjˈʊɹɚ",
+  "Belvedere": "bˈɛlvədɪɹ",
+  "Neue": "nˈɔɪə",
+  "Galerie": "ɡˌæləɹˈiː",
+  "Altmann": "ˈɑːltmən",
+  "Mehr": "mˈɛɹ",
+  "Blech": "blˈɛx"
+ },
+ "chirp_say": {
+  "Adele's": "Ah-day-leh's",
+  "Adele": "Ah-day-leh",
+  "Ucicky": "Oo-chits-kee",
+  "Czernin": "Chair-neen",
+  "Führer": "Fyoo-rer",
+  "Neue": "Noy-eh",
+  "Mehr": "Mair",
+  "Blech": "Blekh",
+  "Bloch": "Blokh"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "Austria called her its *Mona Lisa.*",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "For more than sixty years,",
+     0.26,
+     0.95
+    ],
+    [
+     "she hung in a palace museum in Vienna,",
+     0.26,
+     0.95
+    ],
+    [
+     "one of the most famous faces in the country.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "What the museum didn't say",
+     0.2,
+     0.95
+    ],
+    [
+     "was how she got there.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "In 1941,",
+     0.26,
+     0.95
+    ],
+    [
+     "a Nazi lawyer delivered her,",
+     0.26,
+     0.94
+    ],
+    [
+     "with a letter signed",
+     0.2,
+     0.94
+    ],
+    [
+     "*Heil Hitler.*",
+     1.3,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "And in 1998,",
+     0.26,
+     0.95
+    ],
+    [
+     "an 82-year-old woman in Los Angeles",
+     0.2,
+     0.95
+    ],
+    [
+     "asked for her back.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold6",
+   "perf": [
+    [
+     "This is the story of Adele Bloch-Bauer,",
+     0.26,
+     0.94
+    ],
+    [
+     "the woman Gustav Klimt painted in gold,",
+     0.26,
+     0.95
+    ],
+    [
+     "and of the fight to give her back her name.",
+     2.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "Vienna, 1899.",
+     0.52,
+     0.92
+    ],
+    [
+     "Adele Bauer is eighteen",
+     0.2,
+     0.95
+    ],
+    [
+     "when she marries Ferdinand Bloch,",
+     0.2,
+     0.95
+    ],
+    [
+     "a sugar industrialist,",
+     0.26,
+     0.95
+    ],
+    [
+     "much older than her.",
+     0.91,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "They come from two of the most prominent Jewish families in the city.",
+     0.39,
+     0.96
+    ],
+    [
+     "Her sister has already married his brother.",
+     0.39,
+     0.95
+    ],
+    [
+     "Later, to keep both names alive,",
+     0.2,
+     0.96
+    ],
+    [
+     "they join them:",
+     0.26,
+     0.95
+    ],
+    [
+     "*Bloch-Bauer.*",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "Adele runs a salon.",
+     0.39,
+     0.94
+    ],
+    [
+     "Writers, politicians and artists",
+     0.2,
+     0.96
+    ],
+    [
+     "come to her house to talk.",
+     0.52,
+     0.95
+    ],
+    [
+     "One of the artists she knows",
+     0.2,
+     0.96
+    ],
+    [
+     "is the most talked-about painter in Vienna.",
+     0.39,
+     0.95
+    ],
+    [
+     "Gustav Klimt.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "In the summer of 1903,",
+     0.26,
+     0.95
+    ],
+    [
+     "Ferdinand has an idea for a present.",
+     0.39,
+     0.95
+    ],
+    [
+     "Adele's parents have a wedding anniversary in October.",
+     0.39,
+     0.96
+    ],
+    [
+     "He'll give them a portrait of their daughter,",
+     0.2,
+     0.96
+    ],
+    [
+     "by Klimt.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "October came.",
+     0.52,
+     0.92
+    ],
+    [
+     "The portrait didn't.",
+     0.78,
+     0.9
+    ],
+    [
+     "Klimt was famously slow.",
+     0.52,
+     0.93
+    ],
+    [
+     "This one would take him four years.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "He started with drawings.",
+     0.52,
+     0.94
+    ],
+    [
+     "Adele seated,",
+     0.33,
+     0.94
+    ],
+    [
+     "Adele standing,",
+     0.33,
+     0.94
+    ],
+    [
+     "Adele turning away.",
+     0.52,
+     0.94
+    ],
+    [
+     "More than a hundred of these studies survive.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "Then, in December 1903,",
+     0.26,
+     0.95
+    ],
+    [
+     "Klimt travelled to Ravenna, in Italy,",
+     0.26,
+     0.95
+    ],
+    [
+     "to see the mosaics in the church of San Vitale.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "Saints and an empress,",
+     0.26,
+     0.94
+    ],
+    [
+     "Theodora,",
+     0.26,
+     0.93
+    ],
+    [
+     "glittering on walls of gold,",
+     0.26,
+     0.94
+    ],
+    [
+     "more than thirteen centuries old.",
+     0.65,
+     0.92
+    ],
+    [
+     "He called them mosaics of unprecedented splendour.",
+     1.3,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2d",
+   "perf": [
+    [
+     "Back in Vienna,",
+     0.26,
+     0.95
+    ],
+    [
+     "he painted Adele's face, shoulders and hands",
+     0.2,
+     0.95
+    ],
+    [
+     "like a portrait.",
+     0.52,
+     0.94
+    ],
+    [
+     "Everything else,",
+     0.26,
+     0.94
+    ],
+    [
+     "he built out of gold and silver leaf,",
+     0.2,
+     0.95
+    ],
+    [
+     "with patterns raised from the surface.",
+     0.91,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "Her dress is covered in eyes and spirals.",
+     0.52,
+     0.95
+    ],
+    [
+     "Her chair dissolves into the wall.",
+     0.52,
+     0.95
+    ],
+    [
+     "The museum that owns her today says",
+     0.2,
+     0.96
+    ],
+    [
+     "you can't even tell if she's standing or sitting.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c2f",
+   "perf": [
+    [
+     "And look at her hands.",
+     0.52,
+     0.92
+    ],
+    [
+     "They're twisted together,",
+     0.26,
+     0.94
+    ],
+    [
+     "almost awkwardly.",
+     0.65,
+     0.92
+    ],
+    [
+     "Adele had a damaged finger from a childhood accident.",
+     0.39,
+     0.95
+    ],
+    [
+     "Some writers think she's hiding it.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2g",
+   "perf": [
+    [
+     "The portrait was finished in 1907.",
+     0.52,
+     0.94
+    ],
+    [
+     "Critics were divided.",
+     0.52,
+     0.93
+    ],
+    [
+     "One Vienna paper called it",
+     0.2,
+     0.95
+    ],
+    [
+     "*Mehr Blech als Bloch.*",
+     0.52,
+     0.88
+    ],
+    [
+     "More brass than Bloch.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "Ferdinand and Adele were clearly pleased.",
+     0.39,
+     0.94
+    ],
+    [
+     "They gave Klimt an unprecedented second commission:",
+     0.26,
+     0.95
+    ],
+    [
+     "another portrait of Adele,",
+     0.26,
+     0.95
+    ],
+    [
+     "finished in 1912.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "Six years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "in February 1918,",
+     0.26,
+     0.95
+    ],
+    [
+     "Klimt died of a stroke.",
+     0.39,
+     0.92
+    ],
+    [
+     "He was 55.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "In 1923,",
+     0.26,
+     0.95
+    ],
+    [
+     "Adele wrote her will.",
+     0.52,
+     0.93
+    ],
+    [
+     "In it, there's one sentence",
+     0.2,
+     0.95
+    ],
+    [
+     "that would matter more than anything else she ever wrote.",
+     0.78,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "I ask my husband after his death",
+     0.2,
+     0.92
+    ],
+    [
+     "to leave my two portraits",
+     0.2,
+     0.92
+    ],
+    [
+     "and the four landscapes by Gustav Klimt",
+     0.2,
+     0.92
+    ],
+    [
+     "to the Austrian State Gallery in Vienna.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "Two years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "in January 1925,",
+     0.26,
+     0.95
+    ],
+    [
+     "Adele died of meningitis.",
+     0.39,
+     0.92
+    ],
+    [
+     "She was 43.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "Ferdinand kept her room as a memorial,",
+     0.26,
+     0.95
+    ],
+    [
+     "with her Klimts on the walls.",
+     0.52,
+     0.94
+    ],
+    [
+     "He told the court he meant to honour her wish.",
+     0.78,
+     0.94
+    ],
+    [
+     "He never got the chance.",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "In December 1937,",
+     0.26,
+     0.95
+    ],
+    [
+     "Adele's niece Maria,",
+     0.2,
+     0.95
+    ],
+    [
+     "twenty-one,",
+     0.26,
+     0.95
+    ],
+    [
+     "married a young man called Fritz Altmann.",
+     0.39,
+     0.95
+    ],
+    [
+     "Ferdinand gave her a wedding present:",
+     0.26,
+     0.95
+    ],
+    [
+     "Adele's diamond necklace.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "Three months later,",
+     0.26,
+     0.95
+    ],
+    [
+     "German troops crossed the border.",
+     0.39,
+     0.94
+    ],
+    [
+     "Austria became part of Hitler's Reich.",
+     0.78,
+     0.93
+    ],
+    [
+     "The music you're hearing",
+     0.2,
+     0.95
+    ],
+    [
+     "was recorded in Vienna that January,",
+     0.2,
+     0.95
+    ],
+    [
+     "weeks before.",
+     0.39,
+     0.93
+    ],
+    [
+     "Its conductor, Bruno Walter, would soon have to flee.",
+     1.17,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "The Gestapo took the necklace.",
+     0.52,
+     0.92
+    ],
+    [
+     "They arrested Maria's husband",
+     0.2,
+     0.95
+    ],
+    [
+     "and sent him to Dachau,",
+     0.26,
+     0.93
+    ],
+    [
+     "to force his brother to hand over the family's textile business.",
+     0.78,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "When he was released,",
+     0.26,
+     0.95
+    ],
+    [
+     "Maria and Fritz ran.",
+     0.52,
+     0.92
+    ],
+    [
+     "A farmer led them across a stream",
+     0.2,
+     0.95
+    ],
+    [
+     "and under barbed wire,",
+     0.26,
+     0.94
+    ],
+    [
+     "into the Netherlands.",
+     0.52,
+     0.93
+    ],
+    [
+     "From there,",
+     0.2,
+     0.95
+    ],
+    [
+     "England,",
+     0.26,
+     0.94
+    ],
+    [
+     "then America.",
+     0.52,
+     0.93
+    ],
+    [
+     "Maria ended up in Los Angeles,",
+     0.2,
+     0.95
+    ],
+    [
+     "selling clothes from her home.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "Ferdinand fled too,",
+     0.26,
+     0.95
+    ],
+    [
+     "first to Czechoslovakia,",
+     0.26,
+     0.95
+    ],
+    [
+     "then to Switzerland.",
+     0.52,
+     0.94
+    ],
+    [
+     "The Nazis accused him of tax evasion",
+     0.2,
+     0.95
+    ],
+    [
+     "and seized everything he had left behind:",
+     0.26,
+     0.95
+    ],
+    [
+     "his sugar factory,",
+     0.26,
+     0.95
+    ],
+    [
+     "his homes,",
+     0.26,
+     0.95
+    ],
+    [
+     "his art.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4f",
+   "perf": [
+    [
+     "A Nazi lawyer,",
+     0.2,
+     0.95
+    ],
+    [
+     "Erich Führer,",
+     0.26,
+     0.93
+    ],
+    [
+     "was put in charge of selling it off.",
+     0.65,
+     0.95
+    ],
+    [
+     "In 1941,",
+     0.26,
+     0.95
+    ],
+    [
+     "he traded the golden portrait to Austria's national gallery,",
+     0.2,
+     0.96
+    ],
+    [
+     "the Belvedere,",
+     0.26,
+     0.94
+    ],
+    [
+     "for a Klimt landscape the museum owned,",
+     0.26,
+     0.95
+    ],
+    [
+     "which went to a film director called Gustav Ucicky.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c4g",
+   "perf": [
+    [
+     "Ucicky made films for the Nazis.",
+     0.52,
+     0.93
+    ],
+    [
+     "And by most accounts,",
+     0.26,
+     0.95
+    ],
+    [
+     "he was Klimt's own son.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c4h",
+   "perf": [
+    [
+     "The portrait arrived with a note:",
+     0.26,
+     0.94
+    ],
+    [
+     "it was being handed over",
+     0.2,
+     0.95
+    ],
+    [
+     "according to the wishes of Adele Bloch-Bauer.",
+     0.39,
+     0.94
+    ],
+    [
+     "Signed,",
+     0.39,
+     0.92
+    ],
+    [
+     "*Heil Hitler.*",
+     1.3,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "c4i",
+   "perf": [
+    [
+     "A Jewish woman's name",
+     0.2,
+     0.94
+    ],
+    [
+     "couldn't hang in a museum of the Reich.",
+     0.52,
+     0.93
+    ],
+    [
+     "So the gallery gave her a new one.",
+     0.52,
+     0.93
+    ],
+    [
+     "*The Lady in Gold.*",
+     1.56,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "c4j",
+   "perf": [
+    [
+     "Ferdinand never saw her again.",
+     0.52,
+     0.92
+    ],
+    [
+     "He died in Switzerland in November 1945,",
+     0.26,
+     0.95
+    ],
+    [
+     "almost penniless.",
+     0.52,
+     0.92
+    ],
+    [
+     "In his last will,",
+     0.2,
+     0.95
+    ],
+    [
+     "he left everything he had",
+     0.2,
+     0.95
+    ],
+    [
+     "to his nephew and two nieces.",
+     0.52,
+     0.94
+    ],
+    [
+     "One of them was Maria.",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "After the war,",
+     0.26,
+     0.95
+    ],
+    [
+     "Austria passed a law",
+     0.2,
+     0.95
+    ],
+    [
+     "cancelling the sales forced on Jewish owners.",
+     0.65,
+     0.95
+    ],
+    [
+     "But when the family asked for the Klimts,",
+     0.2,
+     0.95
+    ],
+    [
+     "they were told",
+     0.2,
+     0.95
+    ],
+    [
+     "Adele's will had already given them away.",
+     0.91,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "And Jewish families who wanted to take their other property out of Austria",
+     0.2,
+     0.97
+    ],
+    [
+     "needed export permits,",
+     0.26,
+     0.95
+    ],
+    [
+     "which often came at a price:",
+     0.26,
+     0.95
+    ],
+    [
+     "art, left behind for Austria's museums.",
+     0.78,
+     0.94
+    ],
+    [
+     "In 1948,",
+     0.26,
+     0.95
+    ],
+    [
+     "the family's lawyer signed the Klimts over.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "The Lady in Gold became the star of the Belvedere.",
+     0.52,
+     0.94
+    ],
+    [
+     "Austria's Mona Lisa.",
+     0.78,
+     0.9
+    ],
+    [
+     "And at some point,",
+     0.2,
+     0.95
+    ],
+    [
+     "the gallery's own records were rewritten,",
+     0.26,
+     0.95
+    ],
+    [
+     "to suggest the portraits had arrived before the Nazis did.",
+     1.3,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "Then, in 1998,",
+     0.26,
+     0.95
+    ],
+    [
+     "Austria passed a new law on looted art,",
+     0.2,
+     0.95
+    ],
+    [
+     "and opened its archives.",
+     0.52,
+     0.94
+    ],
+    [
+     "A journalist, Hubertus Czernin,",
+     0.2,
+     0.95
+    ],
+    [
+     "started reading.",
+     0.78,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "He found the Nazi lawyer's letter.",
+     0.52,
+     0.93
+    ],
+    [
+     "And papers showing",
+     0.2,
+     0.95
+    ],
+    [
+     "that Ferdinand had never given the paintings away.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "They had never even been Adele's to give.",
+     0.52,
+     0.92
+    ],
+    [
+     "Ferdinand had paid for them.",
+     0.39,
+     0.93
+    ],
+    [
+     "They were his.",
+     0.65,
+     0.9
+    ],
+    [
+     "Her famous sentence was a wish,",
+     0.2,
+     0.95
+    ],
+    [
+     "not a gift.",
+     0.52,
+     0.92
+    ],
+    [
+     "And Ferdinand's own will",
+     0.2,
+     0.95
+    ],
+    [
+     "left everything to his family.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "Maria Altmann was now 82.",
+     0.52,
+     0.93
+    ],
+    [
+     "She called a young lawyer",
+     0.2,
+     0.95
+    ],
+    [
+     "whose grandmother had been her best friend:",
+     0.26,
+     0.95
+    ],
+    [
+     "Randol Schoenberg,",
+     0.26,
+     0.93
+    ],
+    [
+     "grandson of the composer Arnold Schoenberg,",
+     0.2,
+     0.95
+    ],
+    [
+     "another Viennese who had fled the Nazis.",
+     0.91,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "In 1999,",
+     0.26,
+     0.95
+    ],
+    [
+     "Austria's restitution committee turned her down.",
+     0.39,
+     0.95
+    ],
+    [
+     "Adele's will,",
+     0.26,
+     0.92
+    ],
+    [
+     "it said.",
+     0.91,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "She could sue in Austria.",
+     0.39,
+     0.94
+    ],
+    [
+     "But Austrian court fees were a share of what was at stake.",
+     0.39,
+     0.96
+    ],
+    [
+     "For these paintings,",
+     0.2,
+     0.95
+    ],
+    [
+     "about one and a half million dollars,",
+     0.2,
+     0.94
+    ],
+    [
+     "up front.",
+     0.78,
+     0.9
+    ],
+    [
+     "So she sued Austria in Los Angeles.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "Austria said a foreign country can't be sued in an American court.",
+     0.52,
+     0.96
+    ],
+    [
+     "The fight went all the way to the United States Supreme Court.",
+     0.65,
+     0.95
+    ],
+    [
+     "In June 2004,",
+     0.26,
+     0.95
+    ],
+    [
+     "it ruled six to three.",
+     0.52,
+     0.92
+    ],
+    [
+     "She could sue.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "Then both sides agreed",
+     0.2,
+     0.95
+    ],
+    [
+     "to let three Austrian arbitrators decide.",
+     0.78,
+     0.95
+    ],
+    [
+     "In January 2006,",
+     0.26,
+     0.95
+    ],
+    [
+     "they ruled.",
+     0.78,
+     0.9
+    ],
+    [
+     "Five paintings had to go back to the family,",
+     0.2,
+     0.95
+    ],
+    [
+     "including both portraits of Adele.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6f",
+   "perf": [
+    [
+     "Austria could have bought them.",
+     0.52,
+     0.92
+    ],
+    [
+     "Maria had even said",
+     0.2,
+     0.95
+    ],
+    [
+     "she'd like the portraits to stay.",
+     0.65,
+     0.94
+    ],
+    [
+     "The government said it couldn't afford the price:",
+     0.26,
+     0.95
+    ],
+    [
+     "around 300 million dollars.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6g",
+   "perf": [
+    [
+     "Before she left,",
+     0.26,
+     0.95
+    ],
+    [
+     "posters went up across Vienna.",
+     0.52,
+     0.94
+    ],
+    [
+     "*Ciao Adele.*",
+     2.2,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "In March 2006,",
+     0.26,
+     0.95
+    ],
+    [
+     "the paintings left Austria for Los Angeles,",
+     0.26,
+     0.95
+    ],
+    [
+     "where they went on show.",
+     0.65,
+     0.94
+    ],
+    [
+     "That June,",
+     0.26,
+     0.95
+    ],
+    [
+     "Ronald Lauder,",
+     0.2,
+     0.94
+    ],
+    [
+     "heir to a cosmetics fortune,",
+     0.2,
+     0.95
+    ],
+    [
+     "bought the golden portrait for his museum in New York,",
+     0.2,
+     0.96
+    ],
+    [
+     "the Neue Galerie,",
+     0.39,
+     0.93
+    ],
+    [
+     "for 135 million dollars,",
+     0.26,
+     0.94
+    ],
+    [
+     "then the highest price ever paid for a painting.",
+     0.78,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "He called her",
+     0.2,
+     0.94
+    ],
+    [
+     "*our Mona Lisa.*",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "Maria Altmann died in 2011,",
+     0.26,
+     0.95
+    ],
+    [
+     "at home in Los Angeles.",
+     0.39,
+     0.94
+    ],
+    [
+     "She was 94.",
+     0.78,
+     0.9
+    ],
+    [
+     "Four years later,",
+     0.2,
+     0.95
+    ],
+    [
+     "Hollywood told her story,",
+     0.2,
+     0.95
+    ],
+    [
+     "with Helen Mirren as Maria.",
+     0.39,
+     0.94
+    ],
+    [
+     "*Woman in Gold.*",
+     1.56,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "Adele asked for her portraits to end up in a museum.",
+     0.65,
+     0.92
+    ],
+    [
+     "In the end,",
+     0.26,
+     0.93
+    ],
+    [
+     "the golden one did.",
+     0.78,
+     0.9
+    ],
+    [
+     "A museum anyone can walk into,",
+     0.26,
+     0.94
+    ],
+    [
+     "where the label says who she was.",
+     0.52,
+     0.92
+    ],
+    [
+     "*Adele Bloch-Bauer.*",
+     1.82,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Neue Galerie,",
+     0.26,
+     0.93
+    ],
+    [
+     "in New York.",
+     1.3,
+     0.9
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "adele": {
+   "file": "src/adele.jpg",
+   "commons": "File:Gustav Klimt - Porträt der Adele Bloch-Bauer I (1907).jpg",
+   "depth": true,
+   "points": {
+    "eyes": [
+     0.6,
+     0.115
+    ],
+    "face": [
+     0.6,
+     0.135
+    ],
+    "lips": [
+     0.6,
+     0.155
+    ],
+    "choker": [
+     0.61,
+     0.198
+    ],
+    "hands": [
+     0.556,
+     0.282
+    ],
+    "bust": [
+     0.6,
+     0.22
+    ],
+    "spirals": [
+     0.77,
+     0.14
+    ],
+    "squares": [
+     0.44,
+     0.14
+    ],
+    "bracelets": [
+     0.64,
+     0.355
+    ],
+    "dress_eyes": [
+     0.62,
+     0.56
+    ],
+    "chair": [
+     0.4,
+     0.62
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "upper": [
+     0.58,
+     0.3
+    ],
+    "sign": [
+     0.95,
+     0.91
+    ]
+   }
+  },
+  "adele2": {
+   "file": "src/adele2.jpg",
+   "commons": "File:Klimt - ABBII Portrait.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.5,
+     0.17
+    ],
+    "body": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "study": {
+   "file": "src/study.jpg",
+   "commons": "File:Gustav Klimt - Study for Portrait of Adele Bloch-Bauer I - Google Art Project.jpg",
+   "points": {
+    "body": [
+     0.38,
+     0.42
+    ],
+    "top": [
+     0.36,
+     0.2
+    ]
+   }
+  },
+  "seated": {
+   "file": "src/seated.jpeg",
+   "commons": "File:Gustav Klimt Adele Bloch-Bauer sitzend von vorn 1903.jpeg",
+   "points": {
+    "body": [
+     0.5,
+     0.45
+    ],
+    "top": [
+     0.5,
+     0.2
+    ]
+   }
+  },
+  "adele_photo": {
+   "file": "src/adele_photo.jpg",
+   "commons": "File:Adele Bloch Bauer ca 1910.jpg",
+   "points": {
+    "face": [
+     0.42,
+     0.13
+    ],
+    "body": [
+     0.55,
+     0.4
+    ],
+    "hand": [
+     0.73,
+     0.47
+    ]
+   }
+  },
+  "klimt": {
+   "file": "src/klimt.jpg",
+   "commons": "File:Moriz Nähr Gustav Klimt mit Katze 1911.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.28
+    ],
+    "cat": [
+     0.33,
+     0.56
+    ],
+    "body": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "theodora": {
+   "file": "src/theodora.jpg",
+   "commons": "File:Mosaic of Theodora - Basilica San Vitale (Ravenna).jpg",
+   "depth": true,
+   "credit": "Mosaic of Theodora, San Vitale, Ravenna: photo Petar Milošević, CC BY-SA 4.0",
+   "points": {
+    "theodora": [
+     0.45,
+     0.29
+    ],
+    "court": [
+     0.6,
+     0.45
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "vienna": {
+   "file": "src/vienna.jpg",
+   "commons": "File:Wien Opernhaus um 1900.jpg",
+   "depth": true,
+   "points": {
+    "opera": [
+     0.5,
+     0.35
+    ],
+    "street": [
+     0.45,
+     0.8
+    ]
+   }
+  },
+  "ferdinand": {
+   "file": "src/ferdinand.jpg",
+   "commons": "File:Ferdinand Bloch Baur nel 1935.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "factory": {
+   "file": "src/factory.jpg",
+   "commons": "File:Zuccherificio dei Bloch-Bauer - Bruck an der Leitha (Wien).jpg",
+   "points": {
+    "factory": [
+     0.62,
+     0.45
+    ]
+   }
+  },
+  "heldenplatz": {
+   "file": "src/heldenplatz.jpg",
+   "commons": "File:Anschluss Heldenplatz1.jpg",
+   "points": {
+    "crowd": [
+     0.4,
+     0.55
+    ],
+    "banner": [
+     0.72,
+     0.3
+    ],
+    "square": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  "walter": {
+   "file": "src/walter.jpg",
+   "commons": "File:Dr. Bruno Walter, 1937.jpg",
+   "points": {
+    "face": [
+     0.7,
+     0.48
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "kammer": {
+   "file": "src/kammer.jpg",
+   "commons": "File:Gustav Klimt - Schloss Kammer am Attersee III - 4318 - Österreichische Galerie Belvedere.jpg",
+   "depth": true,
+   "points": {
+    "castle": [
+     0.5,
+     0.35
+    ],
+    "lake": [
+     0.5,
+     0.78
+    ]
+   }
+  },
+  "birch": {
+   "file": "src/birch.jpg",
+   "commons": "File:Gustav Klimt, Birch Forest, 1903 - Paul G. Allen Collection.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "unterach": {
+   "file": "src/unterach.jpg",
+   "commons": "File:Houses at Unterach am Attensee.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "apple": {
+   "file": "src/apple.jpg",
+   "commons": "File:Klimt-Apfelbaum I.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "belvedere": {
+   "file": "src/belvedere.jpg",
+   "commons": "File:Upper Belvedere LCD-toneedit2 NR.jpg",
+   "depth": true,
+   "credit": "Upper Belvedere, Vienna: photo Murdockcrc, CC BY 3.0 (Wikimedia Commons)",
+   "points": {
+    "palace": [
+     0.5,
+     0.42
+    ],
+    "door": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "supreme": {
+   "file": "src/supreme.jpg",
+   "commons": "File:U.S. Supreme Court building-m.jpg",
+   "depth": true,
+   "points": {
+    "front": [
+     0.48,
+     0.45
+    ],
+    "pediment": [
+     0.48,
+     0.22
+    ]
+   }
+  },
+  "neue": {
+   "file": "src/neue.jpg",
+   "commons": "File:The Neue Galerie, New York.jpg",
+   "credit": "The Neue Galerie, New York: photo Francesca.hyanna19, CC BY-SA 4.0 (Wikimedia Commons)",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "entrance": [
+     0.6,
+     0.8
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "adele",
+   "from": "eyes@2.6",
+   "to": "eyes@2.4"
+  },
+  {
+   "at": "cold2",
+   "img": "belvedere",
+   "from": "palace@1.0",
+   "to": "palace@1.08",
+   "fade": 1.0,
+   "dolly": [
+    0,
+    0.04
+   ]
+  },
+  {
+   "at": "cold2.13-0.10",
+   "img": "adele",
+   "from": "face@1.9",
+   "to": "face@2.05",
+   "fade": 0.8
+  },
+  {
+   "at": "cold3",
+   "img": "adele",
+   "from": "hands@2.2",
+   "to": "hands@2.05",
+   "fade": 0.8
+  },
+  {
+   "at": "cold4",
+   "img": "adele",
+   "from": "eyes@2.3",
+   "to": "eyes@2.45",
+   "gray": 0.85,
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "cold5",
+   "img": "adele",
+   "from": "bust@1.5",
+   "to": "bust@1.62",
+   "fade": 1.0
+  },
+  {
+   "at": "cold6",
+   "img": "adele",
+   "from": "full@0.5625",
+   "to": "full@0.575",
+   "frame": true,
+   "fade": 1.2
+  },
+  {
+   "at": "c1a",
+   "img": "vienna",
+   "from": "opera@1.0",
+   "to": "opera@1.1",
+   "gray": 0.35,
+   "fade": 1.0,
+   "dolly": [
+    0,
+    0.04
+   ]
+  },
+  {
+   "at": "c1a.9-0.10",
+   "img": "ferdinand",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c1b",
+   "img": "factory",
+   "from": "factory@1.0",
+   "to": "factory@1.08",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c1b.20-0.10",
+   "img": "adele_photo",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c1c",
+   "img": "adele_photo",
+   "from": "face@1.5",
+   "to": "face@1.62",
+   "fade": 0.8
+  },
+  {
+   "at": "c1c.27-0.15",
+   "img": "klimt",
+   "from": "face@1.25",
+   "to": "face@1.35",
+   "fade": 0.6
+  },
+  {
+   "at": "c1d",
+   "img": "adele",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "fade": 1.0
+  },
+  {
+   "at": "c1e",
+   "img": "adele",
+   "from": "upper@1.15",
+   "to": "upper@1.05",
+   "gray": 0.4,
+   "fade": 0.8
+  },
+  {
+   "at": "c2a",
+   "img": "seated",
+   "from": "top@1.0",
+   "to": "body@1.0",
+   "fade": 1.0
+  },
+  {
+   "at": "c2a.7-0.10",
+   "img": "study",
+   "from": "top@1.0",
+   "to": "body@1.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c2a.11-0.10",
+   "img": "study",
+   "from": "full",
+   "to": "full",
+   "kind": "grid",
+   "imgs": [
+    "seated",
+    "study"
+   ],
+   "fade": 0.6
+  },
+  {
+   "at": "c2b",
+   "img": "theodora",
+   "from": "center@1.0",
+   "to": "court@1.12",
+   "fade": 1.0,
+   "dolly": [
+    0,
+    0.04
+   ]
+  },
+  {
+   "at": "c2c.4-0.10",
+   "img": "theodora",
+   "from": "theodora@1.9",
+   "to": "theodora@2.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c2c.15-0.10",
+   "img": "theodora",
+   "from": "center@1.05",
+   "to": "center@1.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c2d",
+   "img": "adele",
+   "from": "face@2.2",
+   "to": "face@2.1",
+   "fade": 1.0
+  },
+  {
+   "at": "c2d.13-0.10",
+   "img": "adele",
+   "from": "spirals@2.2",
+   "to": "spirals@2.05",
+   "fade": 0.6
+  },
+  {
+   "at": "c2d.24-0.10",
+   "img": "adele",
+   "from": "squares@2.3",
+   "to": "squares@2.15",
+   "fade": 0.6
+  },
+  {
+   "at": "c2e",
+   "img": "adele",
+   "from": "dress_eyes@2.0",
+   "to": "dress_eyes@1.88",
+   "fade": 0.8
+  },
+  {
+   "at": "c2e.9-0.10",
+   "img": "adele",
+   "from": "chair@1.7",
+   "to": "chair@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c2e.15-0.10",
+   "img": "adele",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "fade": 0.8
+  },
+  {
+   "at": "c2f",
+   "img": "adele",
+   "from": "hands@2.7",
+   "to": "hands@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c2g",
+   "img": "adele",
+   "from": "full@0.5625",
+   "to": "full@0.575",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2g.9-0.10",
+   "img": "adele",
+   "from": "face@1.7",
+   "to": "face@1.8",
+   "fade": 0.8
+  },
+  {
+   "at": "c3a",
+   "img": "adele2",
+   "from": "face@1.35",
+   "to": "face@1.45",
+   "fade": 1.2
+  },
+  {
+   "at": "c3a.13-0.10",
+   "img": "adele2",
+   "from": "full@0.5625",
+   "to": "full@0.575",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c3b",
+   "img": "klimt",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "gray": 1,
+   "fade": 1.0
+  },
+  {
+   "at": "c3c",
+   "img": "adele_photo",
+   "from": "face@1.7",
+   "to": "face@1.8",
+   "gray": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c3d",
+   "img": "adele",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "dim": 0.45,
+   "gray": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c3e",
+   "img": "adele",
+   "from": "eyes@2.7",
+   "to": "eyes@2.85",
+   "fade": 1.0
+  },
+  {
+   "at": "c3f",
+   "img": "birch",
+   "from": "full",
+   "to": "full",
+   "kind": "grid",
+   "imgs": [
+    "birch",
+    "apple",
+    "unterach",
+    "kammer"
+   ],
+   "fade": 1.0
+  },
+  {
+   "at": "c3f.13-0.10",
+   "img": "ferdinand",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c3f.17-0.10",
+   "img": "adele",
+   "from": "eyes@2.3",
+   "to": "eyes@2.4",
+   "gray": 0.7,
+   "fade": 0.8
+  },
+  {
+   "at": "c4a",
+   "img": "vienna",
+   "from": "street@1.4",
+   "to": "street@1.5",
+   "gray": 0.6,
+   "fade": 1.2
+  },
+  {
+   "at": "c4b",
+   "img": "heldenplatz",
+   "from": "square@1.0",
+   "to": "square@1.06",
+   "gray": 1,
+   "fade": 1.0
+  },
+  {
+   "at": "c4b.15-0.10",
+   "img": "walter",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c4c",
+   "img": "heldenplatz",
+   "from": "banner@1.6",
+   "to": "banner@1.7",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c4d",
+   "img": "adele",
+   "from": "eyes@2.4",
+   "to": "eyes@2.55",
+   "gray": 0.9,
+   "dim": 0.2,
+   "fade": 1.0
+  },
+  {
+   "at": "c4d.27-0.10",
+   "img": "adele",
+   "from": "bust@1.6",
+   "to": "bust@1.7",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c4e",
+   "img": "ferdinand",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 1.0
+  },
+  {
+   "at": "c4e.17-0.10",
+   "img": "factory",
+   "from": "factory@1.25",
+   "to": "factory@1.35",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c4f",
+   "img": "belvedere",
+   "from": "door@1.5",
+   "to": "door@1.62",
+   "gray": 1,
+   "dim": 0.15,
+   "fade": 1.0
+  },
+  {
+   "at": "c4f.16-0.10",
+   "img": "adele",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "kammer",
+   "labels": [
+    "ADELE BLOCH-BAUER I",
+    "KAMMER CASTLE III"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c4f.33-0.10",
+   "img": "kammer",
+   "from": "castle@1.15",
+   "to": "castle@1.25",
+   "fade": 0.8
+  },
+  {
+   "at": "c4g.10-0.10",
+   "img": "klimt",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c4h",
+   "img": "adele",
+   "from": "face@1.7",
+   "to": "face@1.82",
+   "gray": 0.8,
+   "dim": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c4i",
+   "img": "adele",
+   "from": "full@0.5625",
+   "to": "full@0.575",
+   "frame": true,
+   "gray": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c4j",
+   "img": "ferdinand",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 1.0
+  },
+  {
+   "at": "c4j.29-0.10",
+   "img": "adele",
+   "from": "eyes@2.4",
+   "to": "eyes@2.55",
+   "fade": 1.0
+  },
+  {
+   "at": "c5a",
+   "img": "belvedere",
+   "from": "palace@1.0",
+   "to": "palace@1.08",
+   "fade": 1.2,
+   "dolly": [
+    0,
+    0.04
+   ]
+  },
+  {
+   "at": "c5b",
+   "img": "belvedere",
+   "from": "door@1.6",
+   "to": "door@1.7",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c5b.28-0.10",
+   "img": "birch",
+   "from": "full",
+   "to": "full",
+   "kind": "grid",
+   "imgs": [
+    "birch",
+    "apple",
+    "unterach",
+    "kammer"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c5c",
+   "img": "adele",
+   "from": "full@0.5625",
+   "to": "full@0.575",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c5c.13-0.10",
+   "img": "adele",
+   "from": "face@1.85",
+   "to": "face@1.95",
+   "gray": 0.6,
+   "fade": 0.8
+  },
+  {
+   "at": "c5d",
+   "img": "belvedere",
+   "from": "palace@1.25",
+   "to": "palace@1.35",
+   "fade": 1.0
+  },
+  {
+   "at": "c5e",
+   "img": "adele",
+   "from": "hands@2.4",
+   "to": "hands@2.3",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c5f",
+   "img": "ferdinand",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 1.0
+  },
+  {
+   "at": "c5f.16-0.10",
+   "img": "adele",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c6a",
+   "img": "adele",
+   "from": "bust@1.4",
+   "to": "bust@1.5",
+   "fade": 1.2
+  },
+  {
+   "at": "c6a.17-0.10",
+   "img": "adele",
+   "from": "spirals@1.8",
+   "to": "spirals@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "c6b",
+   "img": "belvedere",
+   "from": "door@1.4",
+   "to": "door@1.5",
+   "gray": 0.4,
+   "fade": 1.0
+  },
+  {
+   "at": "c6c",
+   "img": "adele",
+   "from": "squares@2.0",
+   "to": "squares@2.1",
+   "fade": 1.0
+  },
+  {
+   "at": "c6c.29-0.10",
+   "img": "adele",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c6d",
+   "img": "supreme",
+   "from": "front@1.0",
+   "to": "front@1.1",
+   "fade": 1.0,
+   "dolly": [
+    0,
+    0.04
+   ]
+  },
+  {
+   "at": "c6d.8-0.10",
+   "img": "supreme",
+   "from": "pediment@1.45",
+   "to": "pediment@1.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c6e",
+   "img": "adele",
+   "from": "bust@1.3",
+   "to": "bust@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c6e.15-0.10",
+   "img": "adele",
+   "from": "full",
+   "to": "full",
+   "kind": "grid",
+   "imgs": [
+    "adele",
+    "adele2",
+    "birch",
+    "apple",
+    "unterach"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c6f",
+   "img": "adele",
+   "from": "face@1.8",
+   "to": "face@1.9",
+   "fade": 1.0
+  },
+  {
+   "at": "c6g",
+   "img": "adele",
+   "from": "full@0.5625",
+   "to": "full@0.575",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c7a",
+   "img": "adele2",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "fade": 1.2
+  },
+  {
+   "at": "c7a.15-0.10",
+   "img": "neue",
+   "from": "entrance@1.28",
+   "to": "entrance@1.38",
+   "kind": "image",
+   "fade": 0.8
+  },
+  {
+   "at": "c7a.37-0.10",
+   "img": "adele",
+   "from": "bust@1.25",
+   "to": "bust@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c7b",
+   "img": "adele",
+   "from": "face@1.7",
+   "to": "face@1.8",
+   "fade": 0.8
+  },
+  {
+   "at": "c7c",
+   "img": "adele",
+   "from": "eyes@2.2",
+   "to": "eyes@2.3",
+   "gray": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c7c.13-0.10",
+   "img": "adele",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d",
+   "img": "adele",
+   "from": "face@1.3",
+   "to": "face@1.2",
+   "fade": 1.2
+  },
+  {
+   "at": "c7d.18-0.10",
+   "img": "adele",
+   "from": "full@0.5625",
+   "to": "full@0.58",
+   "frame": true,
+   "fade": 1.2
+  },
+  {
+   "at": "ending",
+   "img": "adele",
+   "from": "eyes@1.9",
+   "to": "eyes@2.0",
+   "fade": 1.2
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold6.2",
+   "to": "cold6$+0.60",
+   "kicker": "GUSTAV KLIMT · 1903–1907",
+   "text": "Adele Bloch-Bauer I"
+  },
+  {
+   "type": "chapter",
+   "from": "cold6$+0.35",
+   "to": "c1a+1.60",
+   "kicker": "CHAPTER I",
+   "text": "A Present That Came Late"
+  },
+  {
+   "type": "chapter",
+   "from": "c1e$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "Gold"
+  },
+  {
+   "type": "chapter",
+   "from": "c2g$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "Adele's Wish"
+  },
+  {
+   "type": "chapter",
+   "from": "c3f$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "1938"
+  },
+  {
+   "type": "chapter",
+   "from": "c4j$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "Austria's Mona Lisa"
+  },
+  {
+   "type": "chapter",
+   "from": "c5f$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "Maria v. Austria"
+  },
+  {
+   "type": "chapter",
+   "from": "c6g$+0.35",
+   "to": "c7a+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "Home"
+  },
+  {
+   "type": "label",
+   "from": "cold1+0.30",
+   "to": "cold1$+0.60",
+   "text": "ADELE BLOCH-BAUER I · GUSTAV KLIMT · 1907"
+  },
+  {
+   "type": "label",
+   "from": "cold2",
+   "to": "cold2.13-0.15",
+   "text": "THE BELVEDERE · VIENNA"
+  },
+  {
+   "type": "credit",
+   "from": "cold2",
+   "to": "cold2.13-0.15",
+   "text": "Photo: Murdockcrc, CC BY 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "quote",
+   "from": "cold4.7-0.10",
+   "to": "cold4$+0.90",
+   "text": "Heil Hitler.",
+   "sub": "COVER NOTE DELIVERING THE PORTRAIT · 1941"
+  },
+  {
+   "type": "year",
+   "from": "c1a",
+   "to": "c1a.2-0.10",
+   "text": "1899"
+  },
+  {
+   "type": "label",
+   "from": "c1a",
+   "to": "c1a.9-0.15",
+   "text": "VIENNA · THE OPERA · c. 1900"
+  },
+  {
+   "type": "lower",
+   "from": "c1a.9+0.10",
+   "to": "c1a$+0.60",
+   "text": "Ferdinand Bloch",
+   "sub": "1864–1945 · PHOTOGRAPH, 1935"
+  },
+  {
+   "type": "label",
+   "from": "c1b",
+   "to": "c1b.20-0.15",
+   "text": "THE BLOCH-BAUER SUGAR FACTORY"
+  },
+  {
+   "type": "lower",
+   "from": "c1b.29+0.10",
+   "to": "c1c.4-0.10",
+   "text": "Adele Bloch-Bauer",
+   "sub": "1881–1925 · PHOTOGRAPH, c. 1910"
+  },
+  {
+   "type": "lower",
+   "from": "c1c.27+0.10",
+   "to": "c1c$+0.60",
+   "text": "Gustav Klimt",
+   "sub": "1862–1918 · MORIZ NÄHR, 1911"
+  },
+  {
+   "type": "year",
+   "from": "c1d",
+   "to": "c1d.5-0.10",
+   "text": "1903"
+  },
+  {
+   "type": "label",
+   "from": "c2a",
+   "to": "c2a.11-0.15",
+   "text": "STUDIES FOR THE PORTRAIT · 1903–1904"
+  },
+  {
+   "type": "year",
+   "from": "c2b",
+   "to": "c2b.4-0.10",
+   "text": "DECEMBER 1903"
+  },
+  {
+   "type": "label",
+   "from": "c2b.4",
+   "to": "c2c.15-0.15",
+   "text": "SAN VITALE · RAVENNA · 6TH CENTURY"
+  },
+  {
+   "type": "credit",
+   "from": "c2b",
+   "to": "c2c$+0.50",
+   "text": "Photo: Petar Milošević, CC BY-SA 4.0"
+  },
+  {
+   "type": "quote",
+   "from": "c2c.15-0.10",
+   "to": "c2c$+0.90",
+   "text": "Mosaics of unprecedented splendor.",
+   "sub": "KLIMT ON RAVENNA · NEUE GALERIE"
+  },
+  {
+   "type": "ring",
+   "from": "c2f.1+0.10",
+   "to": "c2f$+0.60",
+   "point": "hands",
+   "img": "adele",
+   "rx": 150,
+   "ry": 120,
+   "rot": -12
+  },
+  {
+   "type": "year",
+   "from": "c2g",
+   "to": "c2g.6-0.10",
+   "text": "1907"
+  },
+  {
+   "type": "quote",
+   "from": "c2g.14-0.15",
+   "to": "c2g$+1.20",
+   "text": "Mehr Blech als Bloch.",
+   "sub": "«MORE BRASS THAN BLOCH» · NEUES WIENER TAGBLATT"
+  },
+  {
+   "type": "lower",
+   "from": "c3a.13+0.10",
+   "to": "c3a$+0.80",
+   "text": "Adele Bloch-Bauer II",
+   "sub": "GUSTAV KLIMT · 1912"
+  },
+  {
+   "type": "year",
+   "from": "c3b.3",
+   "to": "c3b.6-0.10",
+   "text": "FEBRUARY 1918"
+  },
+  {
+   "type": "year",
+   "from": "c3c",
+   "to": "c3c.2-0.10",
+   "text": "1923"
+  },
+  {
+   "type": "quote",
+   "from": "c3d-0.10",
+   "to": "c3d$+1.00",
+   "text": "I ask my husband after his death to leave my two portraits and the four landscapes by Gustav Klimt to the Austrian State Gallery in Vienna.",
+   "sub": "ADELE BLOCH-BAUER · WILL, 1923"
+  },
+  {
+   "type": "year",
+   "from": "c3e.3",
+   "to": "c3e.6-0.10",
+   "text": "JANUARY 1925"
+  },
+  {
+   "type": "label",
+   "from": "c3f",
+   "to": "c3f.13-0.15",
+   "text": "ADELE'S FOUR KLIMT LANDSCAPES"
+  },
+  {
+   "type": "year",
+   "from": "c4a",
+   "to": "c4a.3-0.10",
+   "text": "DECEMBER 1937"
+  },
+  {
+   "type": "year",
+   "from": "c4b",
+   "to": "c4b.3-0.10",
+   "text": "MARCH 1938"
+  },
+  {
+   "type": "label",
+   "from": "c4b.3",
+   "to": "c4b.15-0.15",
+   "text": "HELDENPLATZ · VIENNA · 15 MARCH 1938"
+  },
+  {
+   "type": "lower",
+   "from": "c4b.15+0.10",
+   "to": "c4b$+0.60",
+   "text": "Bruno Walter",
+   "sub": "MAHLER, SYMPHONY NO. 9 · VIENNA, 16 JANUARY 1938"
+  },
+  {
+   "type": "label",
+   "from": "c4e",
+   "to": "c4e.17-0.15",
+   "text": "FERDINAND BLOCH-BAUER · 1935"
+  },
+  {
+   "type": "lower",
+   "from": "c4f.3",
+   "to": "c4f.7-0.10",
+   "text": "Erich Führer",
+   "sub": "NAZI LAWYER · ADMINISTRATOR OF THE ESTATE"
+  },
+  {
+   "type": "year",
+   "from": "c4f.7",
+   "to": "c4f.15-0.10",
+   "text": "1941"
+  },
+  {
+   "type": "lower",
+   "from": "c4f.40",
+   "to": "c4g.10-0.40",
+   "text": "Gustav Ucicky",
+   "sub": "1899–1961 · FILM DIRECTOR"
+  },
+  {
+   "type": "quote",
+   "from": "c4h.18-0.10",
+   "to": "c4h$+1.00",
+   "text": "Heil Hitler.",
+   "sub": "ERICH FÜHRER · 1941"
+  },
+  {
+   "type": "title",
+   "from": "c4i.20-0.20",
+   "to": "c4i$+1.00",
+   "kicker": "NEW TITLE · 1941",
+   "text": "Dame in Gold"
+  },
+  {
+   "type": "year",
+   "from": "c4j.5",
+   "to": "c4j.12-0.10",
+   "text": "NOVEMBER 1945"
+  },
+  {
+   "type": "label",
+   "from": "c5a",
+   "to": "c5b.28-0.15",
+   "text": "THE BELVEDERE · VIENNA"
+  },
+  {
+   "type": "year",
+   "from": "c5b.28",
+   "to": "c5b.30-0.10",
+   "text": "1948"
+  },
+  {
+   "type": "label",
+   "from": "c5c",
+   "to": "c5c.13-0.15",
+   "text": "«AUSTRIA'S MONA LISA»"
+  },
+  {
+   "type": "year",
+   "from": "c5d",
+   "to": "c5d.3-0.10",
+   "text": "1998"
+  },
+  {
+   "type": "lower",
+   "from": "c5d.17",
+   "to": "c5d$+0.60",
+   "text": "Hubertus Czernin",
+   "sub": "JOURNALIST · 1956–2006"
+  },
+  {
+   "type": "lower",
+   "from": "c6a",
+   "to": "c6a.17-0.10",
+   "text": "Maria Altmann",
+   "sub": "1916–2011 · ADELE'S NIECE"
+  },
+  {
+   "type": "lower",
+   "from": "c6a.17",
+   "to": "c6a$+0.60",
+   "text": "E. Randol Schoenberg",
+   "sub": "LAWYER · LOS ANGELES"
+  },
+  {
+   "type": "year",
+   "from": "c6b",
+   "to": "c6b.2-0.10",
+   "text": "1999"
+  },
+  {
+   "type": "stamp",
+   "from": "c6c.20+0.10",
+   "to": "c6c.27+0.80",
+   "text": "$1.5 MILLION"
+  },
+  {
+   "type": "year",
+   "from": "c6d.8",
+   "to": "c6d.27-0.10",
+   "text": "JUNE 2004"
+  },
+  {
+   "type": "title",
+   "from": "c6d.27",
+   "to": "c6d$+1.00",
+   "kicker": "REPUBLIC OF AUSTRIA v. ALTMANN",
+   "text": "Six to three"
+  },
+  {
+   "type": "year",
+   "from": "c6e.10",
+   "to": "c6e.13-0.10",
+   "text": "JANUARY 2006"
+  },
+  {
+   "type": "label",
+   "from": "c6e.15",
+   "to": "c6e$+0.80",
+   "text": "THE FIVE PAINTINGS RETURNED"
+  },
+  {
+   "type": "title",
+   "from": "c6g.8-0.10",
+   "to": "c6g$+1.60",
+   "kicker": "POSTERS ACROSS VIENNA · 2006",
+   "text": "Ciao Adele"
+  },
+  {
+   "type": "year",
+   "from": "c7a",
+   "to": "c7a.3-0.10",
+   "text": "MARCH 2006"
+  },
+  {
+   "type": "credit",
+   "from": "c7a.15",
+   "to": "c7a.37-0.15",
+   "text": "Photo: Francesca.hyanna19, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c7a.15",
+   "to": "c7a.37-0.15",
+   "text": "NEUE GALERIE · NEW YORK"
+  },
+  {
+   "type": "quote",
+   "from": "c7b",
+   "to": "c7b$+1.00",
+   "text": "Our Mona Lisa.",
+   "sub": "RONALD LAUDER · 2006"
+  },
+  {
+   "type": "year",
+   "from": "c7c",
+   "to": "c7c.5-0.10",
+   "text": "2011"
+  },
+  {
+   "type": "title",
+   "from": "c7c.25-0.20",
+   "to": "c7c$+1.20",
+   "kicker": "2015 · HELEN MIRREN AS MARIA ALTMANN",
+   "text": "Woman in Gold"
+  },
+  {
+   "type": "lower",
+   "from": "c7d.31-0.10",
+   "to": "c7d$+1.20",
+   "text": "Adele Bloch-Bauer I",
+   "sub": "GUSTAV KLIMT · 1907 · NEUE GALERIE NEW YORK"
+  },
+  {
+   "type": "pin",
+   "from": "ending+0.10",
+   "to": "ending$+1.00",
+   "text": "NEUE GALERIE · NEW YORK · 1048 FIFTH AVENUE"
+  },
+  {
+   "type": "end",
+   "from": "ending$+1.00",
+   "to": "ending$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "cold6$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c1e$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c2g$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c3f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c4j$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c5f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c6g$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "cold4.11-0.05",
+   "fx": "impact",
+   "gain": 0.25
+  },
+  {
+   "at": "c4h.19-0.05",
+   "fx": "impact",
+   "gain": 0.25
+  },
+  {
+   "at": "c6g.8",
+   "fx": "chime",
+   "gain": 0.16
+  }
+ ],
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -7.5,
+  "duck_db": -7,
+  "fx_db": -12,
+  "transpose": 0,
+  "bar": 5.5,
+  "_tracks_note": "Vienna-1900 cue sheet (17 Nov 2026): the Adagietto (1901-02) for Adele, Mahler's Fourth for Klimt's Vienna, Bruno Walter's live Vienna recording of the Ninth (16 Jan 1938, weeks before the Anschluss) for 1938.",
+  "tracks": [
+   {
+    "file": "src/music/m_adagietto.ogg",
+    "from": 0,
+    "to": "c1a+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 0.6,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 5: Adagietto · Peabody Symphony Orchestra, CC0"
+   },
+   {
+    "file": "src/music/m_m4first.ogg",
+    "from": "cold6$-0.50",
+    "to": "c2a+1.50",
+    "start": 0.0,
+    "gain_db": -2,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 4 · European Archive, public domain"
+   },
+   {
+    "file": "src/music/m_m4ruhe.ogg",
+    "from": "c1e$-0.50",
+    "to": "c3a+1.50",
+    "start": 0.5,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 4 · European Archive, public domain"
+   },
+   {
+    "file": "src/music/m_adagietto.ogg",
+    "from": "c2g$-0.50",
+    "to": "c4a+1.50",
+    "start": 152.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 5: Adagietto · Peabody Symphony Orchestra, CC0"
+   },
+   {
+    "file": "src/music/m_m9walter.ogg",
+    "from": "c3f$-0.50",
+    "to": "c5a+1.50",
+    "start": 0.5,
+    "gain_db": 1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 9: Adagio · Vienna Philharmonic, Bruno Walter, 16 January 1938, public domain"
+   },
+   {
+    "file": "src/music/m_m4ruhe.ogg",
+    "from": "c4j$-0.50",
+    "to": "c6a+1.50",
+    "start": 200.0,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 4 · European Archive, public domain"
+   },
+   {
+    "file": "src/music/m_m4first.ogg",
+    "from": "c5f$-0.50",
+    "to": "c7a+1.50",
+    "start": 300.0,
+    "gain_db": -2,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 4 · European Archive, public domain"
+   },
+   {
+    "file": "src/music/m_adagietto.ogg",
+    "from": "c6g$-0.50",
+    "start": 518.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 8.0,
+    "credit": "Mahler, Symphony No. 5: Adagietto · Peabody Symphony Orchestra, CC0"
+   }
+  ],
+  "heartbeat": [
+   "cold4-0.60",
+   "cold4.11-0.20"
+  ],
+  "heartbeat_gain": 0.22
+ },
+ "facts": [
+  {
+   "claim": "Called 'Austria's Mona Lisa'; displayed at the Belvedere, Vienna, from 1941 to 2006",
+   "source": "https://paw.princeton.edu/node/84271 ; https://www.npr.org/transcripts/148542712 ; https://www.dailyartmagazine.com/portrait-of-adele-bloch-bauer/"
+  },
+  {
+   "claim": "In 1941 the Nazi lawyer Erich Führer delivered it to the gallery with a note saying it was given according to Adele's wishes, signed 'Heil Hitler'",
+   "source": "https://www.theartnewspaper.com/archive/morally-this-is-a-gain-for-austria-not-a-loss-says-maria-altmann ; https://www.npr.org/transcripts/148542712 ; https://www.neuegalerie.org/content/adele-bloch-bauer-i (provenance)"
+  },
+  {
+   "claim": "Maria Altmann (born 18 Feb 1916) filed a claim in 1998, aged 82, with lawyer Randol Schoenberg",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.wikiwand.com/en/articles/Maria_Altmann"
+  },
+  {
+   "claim": "Adele Bauer (b. 9 Aug 1881) married Ferdinand Bloch (b. 1864) on 19 Dec 1899; her sister had married his brother; two prominent Jewish families; names combined to Bloch-Bauer",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://artsandculture.google.com/asset/study-for-portrait-of-adele-bloch-bauer-i/ggE65qzvhJqf1A"
+  },
+  {
+   "claim": "Adele hosted a renowned Viennese salon; she knew Klimt from the late 1890s",
+   "source": "https://jwa.org/comment/4763 ; https://www.singulart.com/blog/en/?p=23339"
+  },
+  {
+   "claim": "Summer 1903: Ferdinand commissioned the portrait as an anniversary present for Adele's parents in October; Klimt was slow and it was finished in 1907",
+   "source": "https://jwa.org/comment/4763 ; https://neuegalerie.org/sites/default/files/inline-files/PORTRAIT%20OF%20ADELE%20BLOCH-BAUER%20I_Didactic.pdf ; https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I"
+  },
+  {
+   "claim": "More than one hundred preparatory drawings survive",
+   "source": "https://artsandculture.google.com/asset/adele-bloch-bauer-i-gustav-klimt/8AGgCo0-kGh2aw (Neue Galerie text) ; https://artsandculture.google.com/asset/study-for-portrait-of-adele-bloch-bauer-i/ggE65qzvhJqf1A"
+  },
+  {
+   "claim": "December 1903: Klimt visited San Vitale, Ravenna, and admired its sixth-century Byzantine mosaics, especially Empress Theodora before a gold background: 'mosaics of unprecedented splendor'",
+   "source": "https://artsandculture.google.com/asset/adele-bloch-bauer-i-gustav-klimt/8AGgCo0-kGh2aw (Neue Galerie text) ; https://neuegalerie.org/sites/default/files/inline-files/PORTRAIT%20OF%20ADELE%20BLOCH-BAUER%20I_Didactic.pdf"
+  },
+  {
+   "claim": "Oil, silver and gold on canvas, with raised (gesso) relief patterns; oil only for face and hands",
+   "source": "https://www.neuegalerie.org/content/adele-bloch-bauer-i ; https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I ; https://www.singulart.com/blog/en/?p=23339"
+  },
+  {
+   "claim": "The Neue Galerie says it is unclear whether she is standing or seated",
+   "source": "https://neuegalerie.org/sites/default/files/inline-files/PORTRAIT%20OF%20ADELE%20BLOCH-BAUER%20I_Didactic.pdf ; https://artsandculture.google.com/story/fQWRgy-UV1Ge2g"
+  },
+  {
+   "claim": "Adele had a disfigured finger from a childhood accident; Frank Whitford reads the hand position as hiding it (disputed)",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_Adele_Bloch-Bauer_I"
+  },
+  {
+   "claim": "Critics divided; the Neues Wiener Tagblatt: 'Mehr Blech als Bloch' (more brass than Bloch)",
+   "source": "https://artsandculture.google.com/asset/adele-bloch-bauer-i-gustav-klimt/8AGgCo0-kGh2aw (Neue Galerie text) ; https://www.theartnewspaper.com/2008/03/01/two-new-catalogues-and-an-exhibition-on-klimt"
+  },
+  {
+   "claim": "An unprecedented second commission, completed in 1912 (Adele Bloch-Bauer II)",
+   "source": "https://artsandculture.google.com/asset/adele-bloch-bauer-i-gustav-klimt/8AGgCo0-kGh2aw (Neue Galerie text) ; https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide)"
+  },
+  {
+   "claim": "Klimt died of a stroke in early February 1918, aged 55",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide)"
+  },
+  {
+   "claim": "Adele's 1923 will: 'I ask my husband after his death to leave my two portraits and the four landscapes by Gustav Klimt to the Austrian State Gallery in Vienna'",
+   "source": "https://plone.unige.ch/art-adr/cases-affaires/6-klimt-paintings-2013-maria-altmann-and-austria/arbitral-award-5-klimt-paintings-maria-v-altmann-and-others-v-republic-of-austria-15-january-2004 ; https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide)"
+  },
+  {
+   "claim": "Adele died of meningitis on 24 January 1925, aged 43; her room with the Klimts was kept as a memorial; Ferdinand assured the probate court he would honour her wish",
+   "source": "https://jwa.org/comment/4763 ; https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.law.cornell.edu/supct/html/03-13.ZC1.html"
+  },
+  {
+   "claim": "9 Dec 1937 Maria married Fritz Altmann; Ferdinand gave her Adele's diamond necklace; the Gestapo confiscated it in June 1938",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide)"
+  },
+  {
+   "claim": "Bruno Walter's live Vienna Philharmonic recording of Mahler's Ninth, 16 January 1938, weeks before the Anschluss; Walter had to flee",
+   "source": "https://www.musicweb-international.com/classrev/2019/Jan/Mahler_sy9_OPK2121.htm ; https://www.audaud.com/?p=32567 ; https://www.pristineclassical.com/products/pasc389"
+  },
+  {
+   "claim": "Fritz Altmann was sent to Dachau to force his brother to hand over the family textile business; the couple fled on foot into the Netherlands, guided by a farmer across a brook and under barbed wire; via Liverpool to the US; Maria sold clothes from her home in Los Angeles",
+   "source": "https://www.cbsnews.com/news/maria-altmann-who-won-return-of-looted-art-dies ; https://www.inquirer.com/philly/obituaries/20110210_Maria_Altmann___Recovered_stolen_art__94.html ; https://www.biography.com/authors-writers/a73412915/maria-altmann-woman-in-gold-biography ; https://www.nysun.com/article/national-refugee-91-recalls-battle-to-regain-klimts ; https://www.jewishjournal.com/judaism/obituaries/88984/"
+  },
+  {
+   "claim": "Ferdinand fled to Czechoslovakia, then Switzerland; the Nazis seized his estate (sugar factory, castle, Klimt paintings) on false tax-evasion charges",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.wikiwand.com/en/articles/Lady_in_Gold"
+  },
+  {
+   "claim": "1941: Führer traded the portrait (and Apple Tree I) to the Belvedere for Kammer Castle on the Attersee III, sold to Gustav Ucicky",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.wikiwand.com/en/articles/Lady_in_Gold"
+  },
+  {
+   "claim": "Ucicky directed Nazi propaganda films (Heimkehr, 1941) and is believed to be Klimt's son",
+   "source": "https://www.thelocal.com/20141120/nazi-era-director-given-retrospective-in-vienna ; https://klimt-database.com/en/network-vienna-1900/family-and-environment/the-ucicka-family"
+  },
+  {
+   "claim": "Renamed 'Dame in Gold' (Lady in Gold) to remove its Jewish subject",
+   "source": "https://www.wikiwand.com/en/articles/Lady_in_Gold ; https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide)"
+  },
+  {
+   "claim": "Ferdinand died in Switzerland on 13 Nov 1945, nearly destitute; his last will left his estate to his nephew and two nieces, including Maria",
+   "source": "https://collections.ushmm.org/search/catalog/pa1182548 ; https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.wikiwand.com/en/articles/Maria_Altmann"
+  },
+  {
+   "claim": "1946 Annulment Act; in 1948 the heirs were told the will gave the Belvedere title and gave up the Klimt claims; export permits were conditioned on leaving art to museums",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.wikiwand.com/en/articles/Lady_in_Gold ; https://www.theartnewspaper.com/2001/09/01/austria-can-be-sued-in-the-us-in-claim-that-it-forced-jew-to-give-klimts-after-world-war-ii"
+  },
+  {
+   "claim": "Provenance records were later falsified to suggest the portraits were acquired before the Nazi invasion",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide)"
+  },
+  {
+   "claim": "1998 Art Restitution Law opened the archives; Hubertus Czernin found documents showing Ferdinand had not donated the paintings, and the 'Heil Hitler' letter",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.theartnewspaper.com/archive/morally-this-is-a-gain-for-austria-not-a-loss-says-maria-altmann"
+  },
+  {
+   "claim": "Ferdinand owned the paintings; Adele's will was a non-binding request (arbitral award)",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://art-crime.blogspot.it/search/label/Klimt ; https://plone.unige.ch/art-adr/cases-affaires/6-klimt-paintings-2013-maria-altmann-and-austria/r-welser-c-rabl-avisory-opinion-provided-by-the-claimants"
+  },
+  {
+   "claim": "Schoenberg: grandson of Arnold Schoenberg; his grandmother was Maria's best friend",
+   "source": "https://paw.princeton.edu/node/84271 ; https://jpost.com/israel-news/culture/how-e-randol-schoenberg-fought-for-the-woman-in-gold-408162"
+  },
+  {
+   "claim": "1999: committee rejected the claim citing the will; Austrian court fees proportional to value, over US$1.5 million; she sued in Los Angeles",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://en.wikipedia.org/wiki/Republic_of_Austria_v._Altmann ; https://plone.unige.ch/art-adr/cases-affaires/6-klimt-paintings-2013-maria-altmann-and-austria"
+  },
+  {
+   "claim": "Republic of Austria v. Altmann, 541 U.S. 677, decided 7 June 2004, 6-3 (Stevens): FSIA applies, she could sue",
+   "source": "https://chanrobles.com/usa/us_supremecourt/541/03-13/case.php ; https://blog.primelegal.in/?p=58457"
+  },
+  {
+   "claim": "Binding arbitration in Austria (three arbitrators); January 2006 award: five paintings to the heirs, including both portraits",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://www.wikiwand.com/en/articles/Lady_in_Gold"
+  },
+  {
+   "claim": "Maria said she'd like the portraits to stay in Austria; the government said it could not afford about $300 million",
+   "source": "https://nzherald.co.nz/world/owner-wants-nazi-seized-klimts-to-stay-in-austria/PFQXRKPYLZE2IYWQNW6FXGH63Q ; https://www.cbsnews.com/news/austria-gives-up-on-looted-nazi-art"
+  },
+  {
+   "claim": "'Ciao Adele' posters across Vienna",
+   "source": "https://www.irishtimes.com/culture/figures-of-expression-1.1022560 ; https://www.wikiwand.com/en/articles/Lady_in_Gold"
+  },
+  {
+   "claim": "Left Austria March 2006; shown at LACMA April-June 2006; June 2006 Ronald Lauder bought it for the Neue Galerie for $135 million, a record; Lauder called it 'our Mona Lisa'",
+   "source": "https://www.wikiwand.com/en/articles/Lady_in_Gold ; https://www.washingtonexaminer.com/magazine/326667/gold-standard/ ; https://www.neuegalerie.org/content/adele-bloch-bauer-i"
+  },
+  {
+   "claim": "Maria Altmann died at home in Los Angeles on 7 Feb 2011, aged 94; the 2015 film Woman in Gold starred Helen Mirren",
+   "source": "https://app.cuseum.com/art/timeline-what-happened-next (Neue Galerie guide) ; https://image2.findagrave.com/memorial/65388782/ (AP obituary)"
+  }
+ ],
+ "next": false,
+ "youtube": {
+  "titles": [
+   "The True Story Behind Woman in Gold",
+   "The Nazis Renamed Her. Her Niece Took Her Back."
+  ],
+  "description_lead": "In 1903 a Viennese sugar industrialist asked Gustav Klimt to paint his wife, Adele Bloch-Bauer. Four years and more than a hundred drawings later, Klimt delivered the golden portrait that became his masterpiece. In 1941 a Nazi lawyer handed it to Austria's national gallery with a letter signed 'Heil Hitler', and the gallery renamed it 'The Lady in Gold'. For sixty years it was Austria's Mona Lisa, until Adele's niece Maria Altmann, a refugee in Los Angeles, took the Republic of Austria all the way to the United States Supreme Court. This is the true story behind the film Woman in Gold.",
+  "hashtags": [
+   "#arthistory",
+   "#klimt",
+   "#womaningold"
+  ],
+  "credits": [
+   "Paintings and drawings by Gustav Klimt (Neue Galerie New York; Belvedere, Vienna; private collections): public domain, via Wikimedia Commons.",
+   "Gustav Klimt with a cat, Moriz Nähr, 1911; Adele Bloch-Bauer, c. 1910; Ferdinand Bloch-Bauer, 1935; Vienna, c. 1900; Heldenplatz, Vienna, 15 March 1938 (Heinrich Hoffmann); Bruno Walter, 1937; U.S. Supreme Court, Carol M. Highsmith; Bloch-Bauer sugar factory, Bruck an der Leitha: public domain, via Wikimedia Commons.",
+   "Mosaic of Theodora, San Vitale, Ravenna: photo Petar Milošević, CC BY-SA 4.0, via Wikimedia Commons.",
+   "Upper Belvedere, Vienna: photo Murdockcrc, CC BY 3.0, via Wikimedia Commons.",
+   "The Neue Galerie, New York: photo Francesca.hyanna19, CC BY-SA 4.0, via Wikimedia Commons."
+  ],
+  "thumbnail": {
+   "image": "adele",
+   "focus": [
+    0.6,
+    0.17
+   ],
+   "span": 0.42,
+   "words": "RENAMED by Nazis"
+  },
+  "intro_chapter": "The Lady in Gold",
+  "outro_chapter": "Home",
+  "pinned_comment": "Adele asked, in her will, for her portraits to go to a museum. The Nazis used that sentence to take one; today it hangs in a museum under her own name.\n\nShould it have stayed in Vienna? 🖤"
+ }
+}

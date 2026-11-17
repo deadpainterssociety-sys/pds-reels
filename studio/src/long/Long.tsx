@@ -72,9 +72,12 @@ const ShotView: React.FC<{ S: any; sh: Shot; t: number; te: number; st: any }> =
   const img = S.images[sh.img] as Img;
   const pose = shotPose(sh, t, te);
   const p = clamp((t - sh.t) / Math.max(0.2, te - sh.t)); const e = ease(p) * 0.5 + p * 0.5;
-  const sway = sh.sway ?? 0.006;
+  // 2.5D depth: only a hint of relief (Gigi, 15 Nov 2026; same caps as Reel.tsx): the dolly rises over at most 2.6 s to
+  // 0.07 and holds, the drift is capped, so faces never bulge however long the shot.
+  const sway = Math.min(sh.sway ?? 0.006, 0.007);
   const shift: [number, number] = [Math.sin(t * 0.8) * sway, Math.cos(t * 0.6) * sway * 0.6];
-  const dolly = sh.dolly ? lerp(sh.dolly[0], sh.dolly[1], e) : 0;
+  const ramp = Math.min(1, Math.max(0, (t - sh.t) / 2.6));
+  const dolly = sh.dolly ? lerp(Math.min(sh.dolly[0], 0.07), Math.min(sh.dolly[1], 0.07), Math.sin((ramp * Math.PI) / 2)) : 0;
   const gray = sh.gray ?? 0;
   if (sh.kind === "pair") return <Pair S={S} sh={sh} t={t} te={te} st={st} />;
   if (sh.kind === "grid") return <Grid S={S} sh={sh} t={t} te={te} />;

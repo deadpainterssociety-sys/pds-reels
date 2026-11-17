@@ -34,7 +34,8 @@ def render(crop_path, words, out_jpg):
     text = ""
     if words:
         w = words.split(); first, rest = w[0], " ".join(w[1:])
-        text = f'<div class="t">{first} <i>{rest.lower()}</i></div>'
+        rest = rest if rest != rest.upper() else rest.lower()       # "RENAMED by Nazis": proper nouns keep their capital
+        text = f'<div class="t">{first} <i>{rest}</i></div>'
     veil = ("linear-gradient(to right, rgba(11,10,9,.82) 0%, rgba(11,10,9,.70) 28%, rgba(11,10,9,.30) 50%, rgba(11,10,9,0) 64%)" if words else "none")
     html = f"""<!doctype html><html><head><meta charset="utf-8"><style>{FF}
 *{{margin:0;padding:0;box-sizing:border-box}} body{{width:{W}px;height:{H}px;overflow:hidden;position:relative;background:#0b0a09}}
