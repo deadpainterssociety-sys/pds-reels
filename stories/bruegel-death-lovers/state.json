@@ -1,5 +1,8 @@
 {
- "status": "draft",
- "updated": "2026-11-15T03:46:18+01:00",
- "validated_at": "2026-11-15T03:46:18+01:00"
+ "status": "sent",
+ "updated": "2026-11-17T09:07:17+01:00",
+ "validated_at": "2026-11-15T03:46:18+01:00",
+ "duration_s": 58.8,
+ "review_message": 384,
+ "sent_at": "2026-11-17T09:07:17+01:00"
 }
