@@ -95,6 +95,7 @@ sources = []
 for f in st.get("facts", []):
     for u in re.split(r"\s*;\s*", f["source"]):
         if u and u not in sources: sources.append(u)
+if yt.get("sources"): sources = list(yt["sources"])   # a curated public list (facts.json keeps every source)
 _cv = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "config.json"))).get("voice_clone") or {}
 narration = "AI voice cloned from a real recording (Chatterbox)" if _cv.get("enabled") else "synthetic voice"
 try:   # the Chirp 3 HD voice (long-voice workflow, from 15 Nov 2026): say which, like the Shorts' descriptions
@@ -105,7 +106,8 @@ _tracks = (st.get("music") or {}).get("tracks") or []
 _mc = list(dict.fromkeys(t["credit"] for t in _tracks if t.get("credit")))
 music_block = (f"Narration: {narration}.\n\nMusic (Wikimedia Commons)\n" + "\n".join(f"- {c}" for c in _mc)) if _mc else \
               f"Narration: {narration}. Music and sound: original, made for this channel."
-desc = f"""{yt.get('description_lead', '')}
+def _desc(sources):
+    return f"""{yt.get('description_lead', '')}
 
 Chapters
 {chapters}
@@ -120,6 +122,9 @@ Images (Wikimedia Commons)
 {music_block}
 {' '.join(yt.get('hashtags', []))}
 """
+desc = _desc(sources)
+while len(desc) > 4850 and len(sources) > 5:   # YouTube keeps 5,000 characters (youtube.py cuts at 4,900): drop sources
+    sources = sources[:-1]; desc = _desc(sources)   # from the end, never the credits, the music or the AI-voice line
 open(f"{out}/description.txt", "w").write(desc)
 open(f"{out}/titles.txt", "w").write("\n".join(yt.get("titles", [])) + "\n")
 
