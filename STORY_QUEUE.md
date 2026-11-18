@@ -12,7 +12,6 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 
 | When | Painting (museum) | Angle | Type | Notes |
 |---|---|---|---|---|
-| next free slot | Pieter Bruegel the Elder, *The Suicide of Saul* (Kunsthistorisches Museum, Vienna) | people swear there are dinosaurs in a 1562 painting; they're most likely camels by a man who never saw one, and the real subject, King Saul killing himself, is a tiny figure in the corner | hidden | topic wave (brief 2026-11-16 P1): Decoded Art · 1.27M · en · 15 Oct 2026 · 243.7x; Arte secreto · 148k · es · 19 Oct 2026 · 6.8x. Viral 'dinosaurs in a 1562 painting' posts also covered by IFLScience, Focus.it, Canaltech. |
 
 ## Done
 
@@ -57,6 +56,8 @@ schedule it normally (`plan.py add <slug>`). Move the row to **Done** once it is
 | 18 Nov 2026 | monet-camille-deathbed | Monet, *Camille Monet on Her Deathbed* (Musée d'Orsay, Paris) | painted just after she died; he later confessed he couldn't stop studying the colours on her face (first Caption Short) | dark | F3 |
 | 19 Nov 2026 | rembrandt-self-portraits | Rembrandt, *Self Portrait at the Age of 63* (National Gallery, London) + 1628, 1640, 1652, 1658 | watch his face as he loses everything; in the last one he painted out his brush (first Series Short) | dark-legend | F4 |
 | 18 Nov 2026 | bruegel-blue-cloak | Bruegel, *Netherlandish Proverbs* (Gemäldegalerie, Berlin) | 100+ proverbs acted out ("Look at…" tour: wall, devil on a pillow, sheep/pig, roses to swine, tarts, upside-down globe, beard on the Lord); the secret name in the middle: a wife pulls a blue cloak over her husband (she cheats), the painting was once called *The Blue Cloak* or *The Folly of the World*; son made 16+ copies (first One Painting, Two Minutes) | hidden | F2 |
+| 20 Nov 2026 | bruegel-saul-dinosaurs | Bruegel, *The Suicide of Saul* (Kunsthistorisches Museum, Vienna) | viral 'dinosaurs in a 1562 painting' are most likely camels; the real subject is tiny King Saul on the left ledge, fallen on his sword, his armour-bearer too; 'SAVL XXXI CAPIT' on a stone; the museum: the landscape is the main subject | hidden | F1 |
+| 20 Nov 2026 | courbet-wounded-man | Courbet, *The Wounded Man* (Musée d'Orsay, Paris) | painted 1844 with a woman (probably Virginie Binet, mother of his son) on his shoulder; after she left him he painted her out c. 1854 and put a sword and a bloodstain in her place; kept it until he died (Caption Short, Chopin Prelude No. 4) | hidden | F3 |
 
 ## Ideas (to verify)
 
