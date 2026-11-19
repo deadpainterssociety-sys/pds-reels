@@ -246,5 +246,13 @@
   "ig_location_id": null,
   "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"A-l7rLcpEklNviN5IkAMb-d\"}}",
   "ig_location_id_checked": "2026-11-18"
+ },
+ "National Gallery of Victoria, Melbourne": {
+  "lat": -37.8229117,
+  "lon": 144.9686548,
+  "lat_checked": "2026-11-19",
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"AQSJEpcfPTRjdA8K7e1xspR\"}}",
+  "ig_location_id_checked": "2026-11-19"
  }
 }
