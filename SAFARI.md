@@ -109,3 +109,34 @@ colour, then the plain ending. 28–52 s; the video answers the question itself 
 Evidence: Stories Behind Art · "Rédemption" (J. L. Stewart) · 6.0M · 1047× · 52 s; Stories Behind Art · "St Agnes in
 Prison" (F. C. Cowper) · 1.7M · 296× · 28 s; it also matches F2's "Look at …" beats, at a third of the length.
 Test: the next 2 F3 stories that fit, compared with Monet–Camille (F3, archive images) on VVSA and AVD %.
+
+## 2026-11-19 — Thursday lab (numbers only)
+
+The runner's search (Data API, last 60 days, 625 units) returned the same 67 breakouts from 40 channels as on 18 Nov.
+All 8 dossiers are numbers only: YouTube refused every download (yt-dlp asked for cookies), so no frame sheets, no
+openings, no transcripts. Nothing new was watched. Below, read from titles and descriptions only; these still need
+watching by eye:
+| Short | channel | views | × median | length | what the title/description says |
+|---|---|---|---|---|---|
+| "L'urlo di Munch: cosa sta facendo davvero?" | Alberto Repetti Artist (63.6k, 9.1k) | 145k | 16.0× | 170 s | one painting: the figure isn't screaming, he presses his hands to his ears |
+| "Vermeer ti fa credere che lei si volti" | Alberto Repetti Artist | 132k | 14.6× | 166 s | one painting: the Pearl as an optical illusion, "not a romantic portrait" |
+| "Always Focus on Saraswati, Lakshmi Will Follow You" | Indian Painting Explained (30.7k, 78.5k) | 6.6M | 83.6× | 58 s | one painting's "hidden meaning" (why one goddess sits, the other stands); devotional |
+| "And When Did You Last See Your Father?" (Yeames, 1878) | Nabasen Vault | 388k | 9.3× | 31 s | the story inside one narrative painting |
+| "The Strange Eyes of Trees" | Mr Historian (7.8k, 12.6k) | 2.3M | 183.6× | 26 s | unknown: still to check whether it is art history |
+| "What If You Were Painted Centuries Ago?" | Alive Past (2.3k, 37.8k) | 4.5M | 119.2× | 16 s | lookalike faces in old portraits: not storytelling |
+| Peter the Great's height / pink and blue / Henry VIII codpiece ×2 / Moretta mask | Past Cover | 3.0M / 2.6M / 1.7M, 1.5M / 0.6M | 5–28× | 13–17 s | one body or fashion fact per Short, paintings as the evidence ("Then vs now" candidate) |
+| 3 more 6-s text loops (Chora mosaic, Padre Pio, Stone of Anointing) | The Art Behind | 1.4M / 1.1M / 0.65M | 8–17× | 6 s | a paragraph of text over phone footage: not for us |
+
+Counts across all 67 (by `dur_s`, about 26 of them art or history storytelling by title): storytelling median 17 s;
+6–37 s for 21 of 26; three over 2 minutes (Jesse Speaks 160 s, Repetti 166 s and 170 s). NEW: the two Repetti Shorts are
+the first breakouts in our niche that look like F2 (one painting, ~2:50, "what is it really doing?"), in Italian, at a
+small channel's 15–16×. Weak evidence (titles only, 132–145k views), but it is the first sign that F2's length can break
+out at all.
+
+Our own first non-F1 Shorts (YouTube, views only, no analytics yet): F3 Monet–Camille 1,014 views at 12 h, F2 Bruegel
+Blue Cloak ~1,000 at 12 h, vs a 12-h median of 337 (n=25 Shorts): both about 3×, among our top 8 at that age.
+
+Proposed to Gigi in the 19 Nov brief: the F3 "Look closer" variant (18 Nov notes above).
+
+To watch next (by eye, interactive): both Repetti Shorts (opening, pace, how a 170-s Short keeps people); Mr Historian
+"The Strange Eyes of Trees"; Indian Painting Explained's Saraswati (58 s, one painting, symbol by symbol).
