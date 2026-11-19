@@ -101,4 +101,5 @@ The lab writes the latest numbers here in its brief (VVSA, AVD in s and %, subs 
 
 ## Approved changes (Gigi's ✅ on a safari proposal)
 
+- (2026-11-19, safari · brief 2026-11-19 P2) **F3 'Look closer': one painting, detail by detail** — **F3 · Look closer (19 Nov 2026).** For stories whose payoff is inside the painting (`hidden`, `sacred-strange`), an F3 may stay on the main image for the whole reel; record `"variant": "look-closer"` in story.json. Card 1: a dare or claim about the figure on screen (≤ 12 words, e.g. "This woman at the dinner party isn't a woman."). Then 3–5 "Look at …" cards, each a tighter close-up than the last (a hand → the background → an object), with a `ring` or `hotspot` on the detail. Then a reveal card of one or two words, then the plain ending card. F3's length limits stay (35–75 words, 15–32 s). The video answers its own question: never "meaning in the comments". The next 2 F3 stories that fit use it; the lab compares them with Monet–Camille (F3 with archive images) on VVSA and AVD %.
 <!-- approved formula changes go here -->
