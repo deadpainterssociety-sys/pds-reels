@@ -169,4 +169,5 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (15 Nov 2026) The 2.5D depth effect is only a hint of relief, never a face that bulges or "jumps out": Reel.tsx caps the dolly (0.07, reached within 2.6 s, then held) and the drift, however long the shot. Don't fight the caps.
 - (17 Nov 2026) Never only extreme close-ups: every reel shows the whole painting (or most of it) at least once, where it fits naturally in the story (e.g. the line that describes the scene). For nudes a single small framed view of the whole painting (`z < 1`, `"frame": true`) is fine; the close-up rules still hold for every other shot and the cover.
 - (17 Nov 2026) Posting times: Shorts at 17:00 and 21:00 Madrid, long videos at 19:00 (2 h apart). The audience peak is 18:00-24:00 Madrid (US 40 %, UK 6 %); mornings are dead.
+- (2026-11-19, from data · brief 2026-11-19 P1) F1 length (19 Nov 2026): aim for 59–62 s including the 2.2 s tail (about 130–138 spoken words). If the voice check runs past 62 s, cut a beat or a clause; never speed the voice up to fit.
 <!-- new rules go here -->
