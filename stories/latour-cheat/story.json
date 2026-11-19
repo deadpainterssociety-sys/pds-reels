@@ -1,0 +1,1004 @@
+{
+ "slug": "latour-cheat",
+ "formula": "F2",
+ "format": "two-minute",
+ "hook_type": "hidden",
+ "teaser": "Three cheats and one very rich boy",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.9,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Georges de La Tour",
+  "born": 1593,
+  "died": 1652,
+  "painting": "The Cheat with the Ace of Diamonds",
+  "year": "c. 1635",
+  "museum": "Louvre",
+  "city": "Paris",
+  "image": "cheat",
+  "image_credit": "Musée du Louvre, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1652,
+  "note": "La Tour d. 1652: public domain. Commons file tagged public domain (Louvre RF 1972-8)."
+ },
+ "say": {
+  "1630s": "sixteen thirties",
+  "7": "seven",
+  "6": "six",
+  "55": "fifty-five"
+ },
+ "ipa": {
+  "Georges": "ʒˈɔɹʒ",
+  "Tour": "tˈʊɹ"
+ },
+ "respell": {
+  "Georges": "ZHORZH",
+  "Tour": "TOOR"
+ },
+ "chirp_say": {
+  "Georges de La Tour": "Zhorzh duh La Toor"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Three people at this table",
+     0.1,
+     0.95
+    ],
+    [
+     "are robbing the *fourth.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "intro",
+   "perf": [
+    [
+     "Georges de La Tour painted it in the 1630s.",
+     0.35,
+     0.95
+    ],
+    [
+     "A game of cards,",
+     0.2,
+     0.95
+    ],
+    [
+     "and nobody says a word.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "boy",
+   "perf": [
+    [
+     "Look at the boy on the right.",
+     0.3,
+     0.95
+    ],
+    [
+     "Silk, and a feathered hat.",
+     0.3,
+     0.92
+    ],
+    [
+     "Rich,",
+     0.15,
+     0.95
+    ],
+    [
+     "and very young.",
+     0.6,
+     0.93
+    ],
+    [
+     "He holds his cards up with *both* hands.",
+     0.3,
+     0.94
+    ],
+    [
+     "A card expert calls him",
+     0.1,
+     0.95
+    ],
+    [
+     "completely exposed.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "woman",
+   "perf": [
+    [
+     "Now look at the woman in the middle.",
+     0.3,
+     0.95
+    ],
+    [
+     "Pearls, and a red feathered cap.",
+     0.4,
+     0.93
+    ],
+    [
+     "Her eyes slide *sideways,*",
+     0.2,
+     0.88
+    ],
+    [
+     "toward her partners.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "hand",
+   "perf": [
+    [
+     "Look at her right hand.",
+     0.3,
+     0.95
+    ],
+    [
+     "Maybe she's reaching for the wine.",
+     0.3,
+     0.95
+    ],
+    [
+     "A historian reads it as an order.",
+     0.3,
+     0.95
+    ],
+    [
+     "*Your move.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "servant",
+   "perf": [
+    [
+     "The servant arrives right on cue.",
+     0.3,
+     0.95
+    ],
+    [
+     "Look at the feather in her turban,",
+     0.15,
+     0.95
+    ],
+    [
+     "her low neckline.",
+     0.3,
+     0.95
+    ],
+    [
+     "Not quite a servant's outfit.",
+     0.5,
+     0.93
+    ],
+    [
+     "Her job is to pull every eye",
+     0.1,
+     0.95
+    ],
+    [
+     "away from the man on the left.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "cheat",
+   "perf": [
+    [
+     "Because look at him.",
+     0.3,
+     0.92
+    ],
+    [
+     "His face half in shadow,",
+     0.2,
+     0.95
+    ],
+    [
+     "his eyes on *us.*",
+     0.5,
+     0.88
+    ],
+    [
+     "And behind his back,",
+     0.3,
+     0.93
+    ],
+    [
+     "he slips out an *ace of diamonds.*",
+     1.0,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "game",
+   "perf": [
+    [
+     "The game, from Italy, is called prime.",
+     0.3,
+     0.95
+    ],
+    [
+     "A 7, a 6 and an ace",
+     0.2,
+     0.95
+    ],
+    [
+     "make a hand called *55.*",
+     0.4,
+     0.9
+    ],
+    [
+     "A historian thinks",
+     0.1,
+     0.95
+    ],
+    [
+     "that's the hand he's about to make.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "coins",
+   "perf": [
+    [
+     "Now look under his elbow.",
+     0.3,
+     0.95
+    ],
+    [
+     "One gold coin,",
+     0.15,
+     0.95
+    ],
+    [
+     "one silver.",
+     0.4,
+     0.93
+    ],
+    [
+     "Cheats like him played small,",
+     0.2,
+     0.95
+    ],
+    [
+     "and let the victim win,",
+     0.2,
+     0.95
+    ],
+    [
+     "until the stakes were *high.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "turn",
+   "perf": [
+    [
+     "And right there, under the cheat's elbow,",
+     0.3,
+     0.92
+    ],
+    [
+     "the painter signed his *name.*",
+     1.0,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "baker",
+   "perf": [
+    [
+     "Georges de La Tour was a baker's son",
+     0.2,
+     0.95
+    ],
+    [
+     "who climbed so high, his son became a noble.",
+     0.5,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "archives",
+   "perf": [
+    [
+     "Complaints against him survive in the archives.",
+     0.3,
+     0.95
+    ],
+    [
+     "He went hunting and ruined peasants' fields.",
+     0.3,
+     0.95
+    ],
+    [
+     "Once, he beat a peasant himself.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "curator",
+   "perf": [
+    [
+     "The Louvre's curator",
+     0.1,
+     0.95
+    ],
+    [
+     "puts him on the side of the cheat.",
+     1.0,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "reflect",
+   "perf": [
+    [
+     "So which one are *you?*",
+     1.0,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Louvre, in Paris.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "cheat": {
+   "file": "src/cheat.jpg",
+   "commons": "File:Le Tricheur à l'as de carreau - Georges de La Tour - Musée du Louvre Peintures RF 1972 8.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "table": [
+     0.5,
+     0.72
+    ],
+    "boyface": [
+     0.84,
+     0.36
+    ],
+    "boyhat": [
+     0.88,
+     0.2
+    ],
+    "boyhands": [
+     0.77,
+     0.55
+    ],
+    "boycoins": [
+     0.76,
+     0.83
+    ],
+    "womanface": [
+     0.56,
+     0.34
+    ],
+    "womaneyes": [
+     0.56,
+     0.31
+    ],
+    "pearls": [
+     0.58,
+     0.43
+    ],
+    "womanhand": [
+     0.44,
+     0.63
+    ],
+    "wine": [
+     0.45,
+     0.47
+    ],
+    "servantface": [
+     0.41,
+     0.26
+    ],
+    "turban": [
+     0.4,
+     0.14
+    ],
+    "servant": [
+     0.42,
+     0.33
+    ],
+    "cheatface": [
+     0.22,
+     0.36
+    ],
+    "cheateyes": [
+     0.235,
+     0.32
+    ],
+    "cheatback": [
+     0.1,
+     0.62
+    ],
+    "ace": [
+     0.07,
+     0.73
+    ],
+    "cheatcards": [
+     0.35,
+     0.47
+    ],
+    "elbow": [
+     0.26,
+     0.79
+    ],
+    "coins": [
+     0.265,
+     0.833
+    ],
+    "sig": [
+     0.32,
+     0.87
+    ],
+    "group": [
+     0.33,
+     0.4
+    ],
+    "cheatbody": [
+     0.2,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "cheat",
+   "from": "womaneyes@2.3",
+   "to": "womaneyes@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "cheat",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "intro-0.08",
+   "img": "cheat",
+   "from": "center@0.42",
+   "to": "center@0.44",
+   "frame": true,
+   "kind": "image"
+  },
+  {
+   "at": "intro.9-0.05",
+   "img": "cheat",
+   "from": "table@1.4",
+   "to": "table@1.5",
+   "sway": 0.006
+  },
+  {
+   "at": "boy-0.08",
+   "img": "cheat",
+   "from": "boyface@1.6",
+   "to": "boyface@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "boy.7-0.05",
+   "img": "cheat",
+   "from": "boyhat@1.9",
+   "to": "boyhat@2.0",
+   "kind": "image"
+  },
+  {
+   "at": "boy.12-0.05",
+   "img": "cheat",
+   "from": "boyface@2.3",
+   "to": "boyface@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "boy.16-0.05",
+   "img": "cheat",
+   "from": "boyhands@2.0",
+   "to": "boyhands@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "boy.24-0.05",
+   "img": "cheat",
+   "from": "boyface@1.3",
+   "to": "boyface@1.38",
+   "sway": 0.006
+  },
+  {
+   "at": "woman-0.08",
+   "img": "cheat",
+   "from": "womanface@1.6",
+   "to": "womanface@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "woman.8-0.05",
+   "img": "cheat",
+   "from": "pearls@2.1",
+   "to": "pearls@2.25",
+   "kind": "image"
+  },
+  {
+   "at": "woman.14-0.05",
+   "img": "cheat",
+   "from": "womaneyes@3.0",
+   "to": "womaneyes@3.15",
+   "hit": "small",
+   "kind": "image"
+  },
+  {
+   "at": "woman.18-0.05",
+   "img": "cheat",
+   "from": "group@1.3",
+   "to": "group@1.38",
+   "sway": 0.006
+  },
+  {
+   "at": "hand-0.08",
+   "img": "cheat",
+   "from": "womanhand@2.4",
+   "to": "womanhand@2.55",
+   "kind": "image"
+  },
+  {
+   "at": "hand.5-0.05",
+   "img": "cheat",
+   "from": "wine@2.2",
+   "to": "wine@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "hand.11-0.05",
+   "img": "cheat",
+   "from": "womanhand@1.6",
+   "to": "womanhand@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "hand.18-0.05",
+   "img": "cheat",
+   "from": "cheatface@2.2",
+   "to": "cheatface@2.35",
+   "hit": "small",
+   "kind": "image"
+  },
+  {
+   "at": "servant-0.08",
+   "img": "cheat",
+   "from": "servantface@1.8",
+   "to": "servantface@1.9",
+   "sway": 0.006
+  },
+  {
+   "at": "servant.6-0.05",
+   "img": "cheat",
+   "from": "turban@2.2",
+   "to": "turban@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "servant.13-0.05",
+   "img": "cheat",
+   "from": "servant@1.7",
+   "to": "servant@1.8",
+   "kind": "image"
+  },
+  {
+   "at": "servant.21-0.05",
+   "img": "cheat",
+   "from": "group@1.15",
+   "to": "group@1.22",
+   "sway": 0.006
+  },
+  {
+   "at": "cheat-0.08",
+   "img": "cheat",
+   "from": "cheatface@1.7",
+   "to": "cheatface@1.8",
+   "sway": 0.006
+  },
+  {
+   "at": "cheat.9-0.05",
+   "img": "cheat",
+   "from": "cheateyes@3.0",
+   "to": "cheateyes@3.15",
+   "kind": "image"
+  },
+  {
+   "at": "cheat.13-0.05",
+   "img": "cheat",
+   "from": "cheatback@1.6",
+   "to": "cheatback@1.7",
+   "kind": "image"
+  },
+  {
+   "at": "cheat.17-0.05",
+   "img": "cheat",
+   "from": "ace@3.0",
+   "to": "ace@3.15",
+   "hit": "big",
+   "kind": "image"
+  },
+  {
+   "at": "game-0.08",
+   "img": "cheat",
+   "from": "cheatcards@2.3",
+   "to": "cheatcards@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "game.19-0.05",
+   "img": "cheat",
+   "from": "cheatface@1.4",
+   "to": "cheatface@1.48",
+   "sway": 0.006
+  },
+  {
+   "at": "coins-0.08",
+   "img": "cheat",
+   "from": "elbow@2.0",
+   "to": "elbow@2.12",
+   "kind": "image"
+  },
+  {
+   "at": "coins.5-0.05",
+   "img": "cheat",
+   "from": "coins@4.0",
+   "to": "coins@4.2",
+   "dim": -0.2,
+   "kind": "image"
+  },
+  {
+   "at": "coins.10-0.05",
+   "img": "cheat",
+   "from": "boycoins@2.6",
+   "to": "boycoins@2.75",
+   "kind": "image"
+  },
+  {
+   "at": "turn-0.08",
+   "img": "cheat",
+   "from": "elbow@1.6",
+   "to": "elbow@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "turn.7-0.05",
+   "img": "cheat",
+   "from": "sig@3.0",
+   "to": "sig@3.15",
+   "dim": -0.75,
+   "hit": "big",
+   "kind": "image"
+  },
+  {
+   "at": "baker-0.08",
+   "img": "cheat",
+   "from": "cheatface@1.5",
+   "to": "cheatface@1.6",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "archives-0.08",
+   "img": "cheat",
+   "from": "cheatbody@1.3",
+   "to": "cheatbody@1.38",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "archives.14-0.05",
+   "img": "cheat",
+   "from": "cheateyes@2.4",
+   "to": "cheateyes@2.55",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "curator-0.08",
+   "img": "cheat",
+   "from": "cheateyes@2.0",
+   "to": "cheateyes@2.12",
+   "hit": "big",
+   "sway": 0.006
+  },
+  {
+   "at": "reflect-0.08",
+   "img": "cheat",
+   "from": "center@0.42",
+   "to": "center@0.44",
+   "frame": true,
+   "kind": "image"
+  },
+  {
+   "at": "ending-0.08",
+   "img": "cheat",
+   "from": "womaneyes@1.8",
+   "to": "womaneyes@1.9",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "intro",
+   "to": "intro.9-0.1",
+   "text": "GEORGES DE LA TOUR · 1630s"
+  },
+  {
+   "type": "label",
+   "from": "intro.9",
+   "to": "boy-0.1",
+   "text": "MUSÉE DU LOUVRE · PARIS"
+  },
+  {
+   "type": "label",
+   "from": "boy",
+   "to": "boy.7-0.1",
+   "text": "THE VICTIM"
+  },
+  {
+   "type": "label",
+   "from": "woman",
+   "to": "woman.8-0.1",
+   "text": "THE COURTESAN"
+  },
+  {
+   "type": "label",
+   "from": "servant",
+   "to": "servant.6-0.1",
+   "text": "THE SERVANT"
+  },
+  {
+   "type": "label",
+   "from": "cheat",
+   "to": "cheat.9-0.1",
+   "text": "THE CHEAT"
+  },
+  {
+   "type": "ring",
+   "at": "cheat.21",
+   "to": "game-0.1",
+   "img": "cheat",
+   "point": "ace",
+   "rx": 170,
+   "ry": 120,
+   "rot": -10
+  },
+  {
+   "type": "label",
+   "from": "game.7",
+   "to": "game.19-0.1",
+   "text": "PRIME · 7 + 6 + ACE = 55"
+  },
+  {
+   "type": "ring",
+   "at": "coins.6",
+   "to": "coins.10-0.1",
+   "img": "cheat",
+   "point": "coins",
+   "rx": 230,
+   "ry": 130,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "turn.9",
+   "to": "baker-0.1",
+   "img": "cheat",
+   "point": "sig",
+   "rx": 360,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "turn.9",
+   "to": "baker-0.1",
+   "text": "GEORGIUS DE LA TOUR FECIT"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSÉE DU LOUVRE · PARIS"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": -2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "drop": [
+    "hand.18-0.1",
+    "hand$+0.2"
+   ],
+   "cold": [
+    "baker-0.2",
+    "archives$+0.2"
+   ],
+   "choir": [
+    "turn.7-0.1",
+    "turn$+0.6"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "cheat.21",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "coins.6",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "turn.9",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Who here is <i>in on it?</i>",
+  "name": "GEORGES DE LA TOUR",
+  "work": "The Cheat with the Ace of Diamonds, c. 1635",
+  "focus": [
+   0.5,
+   0.36
+  ],
+  "span": 0.6,
+  "answered_by": "The courtesan, the servant and the cheat (ace of diamonds behind his back) are fleecing the rich boy; and the painter signed his name under the cheat's elbow, the curator places him on the cheat's side."
+ },
+ "facts": [
+  {
+   "claim": "Georges de La Tour painted The Cheat with the Ace of Diamonds in the 1630s (Louvre: c. 1635; Wikipedia: c. 1636–1638); the rich young man on the right is being fleeced by the other players; Louvre RF 1972-8",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf ; https://en.wikipedia.org/wiki/The_Card_Sharp_with_the_Ace_of_Diamonds"
+  },
+  {
+   "claim": "Card expert Olivier Cave (Louvre podcast): the young man holds his cards with both hands, high, close to his face, 'très à découvert' (completely exposed)",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf"
+  },
+  {
+   "claim": "The courtesan's sideways look; historian Élisabeth Belmas: her hand gesture may be to take the wine but rather points to the cheat, giving the order: his turn to play",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf"
+  },
+  {
+   "claim": "The servant's feather on her turban and low neckline are 'not quite the usual outfit of a servant' (Belmas); her role is to divert attention from the cheat (Cave)",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf"
+  },
+  {
+   "claim": "The cheat is retrieving the ace of diamonds from behind his back; his look of complicity with the viewer",
+   "source": "https://en.wikipedia.org/wiki/The_Card_Sharp_with_the_Ace_of_Diamonds ; https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf"
+  },
+  {
+   "claim": "The game is prime (primero), from 16th-century Italy; a 7 (21 points), a 6 (18) and an ace (16) make the hand '55', which the cheat is about to make (Belmas)",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf ; https://en.wikipedia.org/wiki/Primero"
+  },
+  {
+   "claim": "Under the cheat's elbow, a gold coin and a silver coin; cheats played small sums and let the young gentleman win until the stakes could be raised (Cave)",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf"
+  },
+  {
+   "claim": "Signed 'Georgius De La Tour fecit' under the card sharp's elbow, in the shadow of the tablecloth",
+   "source": "https://en.wikipedia.org/wiki/The_Card_Sharp_with_the_Ace_of_Diamonds ; https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf"
+  },
+  {
+   "claim": "La Tour was a baker's son; his son was ennobled; archive complaints: he ravaged peasants' fields while hunting and once beat a peasant himself; curator Nicolas Milovanovic would associate him with the cheat rather than the dupe",
+   "source": "https://api-www.louvre.fr/sites/default/files/2022-06/TRANSCRIPTION-podcast-les-enquetes-du-louvre-le-tricheur-a-l-as-de-carreau.pdf ; https://en.wikipedia.org/wiki/Georges_de_La_Tour"
+  },
+  {
+   "claim": "The painting is in the Louvre, which bought it in 1972",
+   "source": "https://en.wikipedia.org/wiki/The_Card_Sharp_with_the_Ace_of_Diamonds"
+  }
+ ],
+ "caption": "Three people at this table are robbing the fourth.\n\nGeorges de La Tour painted The Cheat with the Ace of Diamonds in the 1630s. The victim is the rich, very young man on the right, holding his cards up with both hands: a card expert interviewed by the Louvre calls him completely exposed. The courtesan in the middle glances sideways at her partners, and her hand, a historian says, gives the order: your move. The servant, in a feathered turban and a low neckline that is hardly a servant's outfit, pulls every eye away from the man on the left. He looks straight at us, and behind his back he slips out an ace of diamonds. In prime, the Italian game they are playing, a 7, a 6 and an ace make the hand called 55.\n\nUnder his elbow: one gold coin, one silver, and the painter's signature, 'Georgius De La Tour fecit'. La Tour, a baker's son whose own son became a noble, left complaints in the archives: ruined fields, a beaten peasant. The Louvre's curator puts him on the cheat's side.\n\n🃏 Which one are you?",
+ "caption_short": "Three people at this table are robbing the fourth. And the painter signed his name next to the cheat. 🃏",
+ "youtube_title": "Who here is in on it? La Tour's The Cheat with the Ace of Diamonds",
+ "hashtags_instagram": [
+  "#georgesdelatour",
+  "#thecheat",
+  "#arthistory",
+  "#louvre",
+  "#truecrime"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#georgesdelatour",
+  "#thecheat",
+  "#truecrime"
+ ],
+ "hashtags": [
+  "#georgesdelatour",
+  "#thecheat",
+  "#aceofdiamonds",
+  "#louvre",
+  "#paris",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#baroque",
+  "#cardgames"
+ ]
+}

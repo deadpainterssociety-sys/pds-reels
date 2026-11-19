@@ -1,0 +1,628 @@
+{
+ "slug": "monet-bridge-cataracts",
+ "formula": "F4",
+ "format": "series",
+ "hook_type": "dark-legend",
+ "teaser": "Monet's bridge, as his eyes gave out",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Claude Monet",
+  "born": 1840,
+  "died": 1926,
+  "painting": "The Japanese Footbridge, Giverny",
+  "year": "c. 1922",
+  "museum": "Museum of Fine Arts, Houston",
+  "city": "Houston",
+  "image": "houston",
+  "image_credit": "The Museum of Fine Arts, Houston, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1926,
+  "note": "Monet d. 1926: public domain (EU 70 years; all works painted and exhibited before 1931 for the US). Commons files: MFA Houston (PD), NGA Washington (CC0), National Gallery London (PD), MoMA (PD), Marmottan (PD)."
+ },
+ "say": {
+  "1899": "eighteen ninety-nine",
+  "1913": "nineteen thirteen",
+  "1918": "nineteen eighteen",
+  "1922": "nineteen twenty-two",
+  "1923": "nineteen twenty-three"
+ },
+ "ipa": {
+  "Monet": "mˈoʊnˈeɪ",
+  "Monet's": "mˈoʊnˈeɪz",
+  "Giverny": "ʒivˈɛɹni"
+ },
+ "respell": {
+  "Monet": "moh-NAY",
+  "Monet's": "moh-NAYZ",
+  "Giverny": "zhee-vair-NEE"
+ },
+ "chirp_say": {
+  "Giverny": "Zhee-vair-nee"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Watch Monet's bridge",
+     0.08,
+     0.96
+    ],
+    [
+     "as his eyes *fail.*",
+     0.4,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "y1899",
+   "perf": [
+    [
+     "1899.",
+     0.15,
+     0.97
+    ],
+    [
+     "His water garden at Giverny.",
+     0.1,
+     0.96
+    ],
+    [
+     "Cool greens, every leaf sharp.",
+     0.35,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "y1913",
+   "perf": [
+    [
+     "1913.",
+     0.15,
+     0.97
+    ],
+    [
+     "Cataracts are clouding his eyes.",
+     0.1,
+     0.98
+    ],
+    [
+     "A doctor in London urges surgery.",
+     0.1,
+     0.98
+    ],
+    [
+     "Monet *refuses.*",
+     0.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1918",
+   "perf": [
+    [
+     "1918.",
+     0.15,
+     0.97
+    ],
+    [
+     "Colours are losing their strength.",
+     0.1,
+     0.98
+    ],
+    [
+     "Reds look *muddy.*",
+     0.35,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "labels",
+   "perf": [
+    [
+     "He begins to label his paint tubes.",
+     0.3,
+     0.98
+    ]
+   ]
+  },
+  {
+   "id": "y1922",
+   "perf": [
+    [
+     "1922.",
+     0.15,
+     0.97
+    ],
+    [
+     "His right eye sees only light.",
+     0.2,
+     0.96
+    ],
+    [
+     "He keeps *painting.*",
+     0.45,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1923",
+   "perf": [
+    [
+     "1923.",
+     0.15,
+     0.97
+    ],
+    [
+     "Surgeons operate on his right eye.",
+     0.35,
+     0.98
+    ]
+   ]
+  },
+  {
+   "id": "sees",
+   "perf": [
+    [
+     "Now he sees the colours he had painted.",
+     0.25,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "destroy",
+   "perf": [
+    [
+     "And he starts *destroying* those canvases.",
+     0.45,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "survived",
+   "perf": [
+    [
+     "This one survived.",
+     0.4,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Museum of Fine Arts, in Houston.",
+     0.3,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "houston": {
+   "file": "src/houston.jpg",
+   "commons": "File:Claude Monet - The Japanese Footbridge (Museum of Fine Arts, Houston).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "glow": [
+     0.63,
+     0.43
+    ],
+    "bridge": [
+     0.55,
+     0.56
+    ],
+    "left": [
+     0.25,
+     0.72
+    ],
+    "water": [
+     0.5,
+     0.8
+    ]
+   }
+  },
+  "nga1899": {
+   "file": "src/nga1899.jpg",
+   "commons": "File:Claude Monet, The Japanese Footbridge, 1899, NGA 74796.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "bridge": [
+     0.5,
+     0.22
+    ],
+    "lilies": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  "ng1899": {
+   "file": "src/ng1899.jpg",
+   "commons": "File:Claude Monet, The Water-Lily Pond (National Gallery, London).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "bridge": [
+     0.55,
+     0.35
+    ],
+    "lilies": [
+     0.5,
+     0.65
+    ]
+   }
+  },
+  "marm1918": {
+   "file": "src/marm1918.jpg",
+   "commons": "File:Claude Monet - Le Pont japonais W1913 - Musée Marmottan-Monet.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "moma": {
+   "file": "src/moma.jpg",
+   "commons": "File:Claude Monet - The Japanese Footbridge.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "red": [
+     0.72,
+     0.35
+    ],
+    "bridge": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "houston",
+   "kind": "image",
+   "from": "glow@2.0",
+   "to": "glow@1.9"
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "houston",
+   "from": "bridge@1.05",
+   "to": "bridge@1.1",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "y1899-0.1",
+   "img": "nga1899",
+   "kind": "image",
+   "from": "bridge@1.2",
+   "to": "bridge@1.3"
+  },
+  {
+   "at": "y1899.6-0.05",
+   "img": "ng1899",
+   "kind": "image",
+   "from": "lilies@1.3",
+   "to": "lilies@1.4"
+  },
+  {
+   "at": "y1913-0.1",
+   "img": "ng1899",
+   "kind": "image",
+   "from": "bridge@1.6",
+   "to": "bridge@1.75",
+   "gray": 0.6
+  },
+  {
+   "at": "y1913.12-0.05",
+   "img": "nga1899",
+   "kind": "image",
+   "from": "lilies@1.7",
+   "to": "lilies@1.85",
+   "gray": 0.6
+  },
+  {
+   "at": "y1918-0.1",
+   "img": "marm1918",
+   "kind": "image",
+   "from": "center@0.8",
+   "to": "center@0.86",
+   "frame": true
+  },
+  {
+   "at": "labels-0.1",
+   "img": "moma",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.08"
+  },
+  {
+   "at": "y1922-0.1",
+   "img": "moma",
+   "kind": "image",
+   "from": "red@1.7",
+   "to": "red@1.85"
+  },
+  {
+   "at": "y1922.7-0.05",
+   "img": "houston",
+   "kind": "image",
+   "from": "center@0.55",
+   "to": "center@0.58",
+   "frame": true,
+   "hit": "big"
+  },
+  {
+   "at": "y1923-0.1",
+   "img": "houston",
+   "from": "glow@1.5",
+   "to": "glow@1.6",
+   "gray": 1
+  },
+  {
+   "at": "sees-0.1",
+   "img": "houston",
+   "from": "bridge@1.35",
+   "to": "bridge@1.45",
+   "sway": 0.008
+  },
+  {
+   "at": "destroy-0.1",
+   "img": "houston",
+   "kind": "image",
+   "from": "left@1.8",
+   "to": "left@1.95"
+  },
+  {
+   "at": "survived-0.1",
+   "img": "houston",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "houston",
+   "from": "glow@1.4",
+   "to": "glow@1.5",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "y1899",
+   "to": "y1899.6-0.1",
+   "text": "1899 · NGA, WASHINGTON"
+  },
+  {
+   "type": "label",
+   "from": "y1899.6",
+   "to": "y1913-0.1",
+   "text": "1899 · NATIONAL GALLERY, LONDON"
+  },
+  {
+   "type": "label",
+   "from": "y1913",
+   "to": "y1918-0.1",
+   "text": "1913 · CATARACTS"
+  },
+  {
+   "type": "label",
+   "from": "y1918",
+   "to": "labels-0.1",
+   "text": "1918 · MARMOTTAN, PARIS"
+  },
+  {
+   "type": "label",
+   "from": "labels",
+   "to": "y1922.7-0.1",
+   "text": "C. 1920–22 · MOMA, NEW YORK"
+  },
+  {
+   "type": "label",
+   "from": "y1922.7",
+   "to": "y1923-0.1",
+   "text": "C. 1922 · MFA HOUSTON"
+  },
+  {
+   "type": "label",
+   "from": "y1923",
+   "to": "sees-0.1",
+   "text": "1923 · SURGERY"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "MUSEUM OF FINE ARTS · HOUSTON"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "y1913-0.2",
+    "y1922$+0.2"
+   ],
+   "choir": [
+    "sees-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "y1899",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1913",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1918",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1922",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "y1923",
+   "fx": "tick",
+   "gain": 0.45
+  },
+  {
+   "at": "destroy.3",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Why did Monet <i>destroy</i> them?",
+  "name": "CLAUDE MONET",
+  "work": "The Japanese Footbridge, c. 1922",
+  "focus": [
+   0.6,
+   0.47
+  ],
+  "span": 0.6,
+  "answered_by": "After his 1923 cataract surgery he saw the real colours of what he had painted almost blind, and began to destroy canvases from those years (this one survived)."
+ },
+ "facts": [
+  {
+   "claim": "Monet's Japanese footbridge over the water-lily pond in his garden at Giverny, painted in 1899 (The Japanese Footbridge, National Gallery of Art, Washington; The Water-Lily Pond, National Gallery, London)",
+   "source": "https://www.nga.gov/artworks/74796-japanese-footbridge.html ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/"
+  },
+  {
+   "claim": "In his 60s Monet developed bilateral age-related cataracts; in 1913 he consulted the ophthalmologist Richard Liebreich in London, who recommended surgery on the right eye, and Monet refused",
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/ ; https://en.wikipedia.org/wiki/Claude_Monet"
+  },
+  {
+   "claim": "By 1918 he recognised that he no longer perceived colours with the same intensity; Monet: 'colours no longer had the same intensity for me', 'reds had begun to look muddy'",
+   "source": "https://eclecticlight.co/2026/11/06/painting-with-impaired-vision-claude-monet/ ; https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/ ; https://theophthalmologist.com/issues/2024/articles/jun/the-cataracts-of-claude-monet"
+  },
+  {
+   "claim": "To avoid choosing the wrong colours he began to label his tubes of paint",
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/ ; https://en.wikipedia.org/wiki/Claude_Monet"
+  },
+  {
+   "claim": "Le Pont japonais, 1918 (Musée Marmottan Monet, Paris, W 1913) and The Japanese Footbridge, c. 1920–22 (MoMA, New York), among his last paintings of the subject",
+   "source": "https://www.moma.org/collection/works/79254 ; https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Pont_japonais_W1913_-_Mus%C3%A9e_Marmottan-Monet.jpg"
+  },
+  {
+   "claim": "In 1922 the ophthalmologist Charles Coutela recorded light perception only in Monet's right eye",
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/"
+  },
+  {
+   "claim": "The Japanese Footbridge, Giverny, c. 1922, Museum of Fine Arts, Houston (John A. and Audrey Jones Beck Collection, 76.198)",
+   "source": "https://emuseum.mfah.org/objects/3511/the-japanese-footbridge-giverny ; https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Japanese_Footbridge_(Museum_of_Fine_Arts,_Houston).jpg"
+  },
+  {
+   "claim": "Surgery on his right eye was carried out in early 1923 (January 1923, a two-stage operation)",
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/ ; https://eclecticlight.co/2026/11/06/painting-with-impaired-vision-claude-monet/"
+  },
+  {
+   "claim": "After surgery, now able to see the 'real' colours of his works, he began to destroy canvases from his pre-operative period",
+   "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4408507/ ; https://en.wikipedia.org/wiki/Claude_Monet ; https://theophthalmologist.com/issues/2024/articles/jun/the-cataracts-of-claude-monet"
+  },
+  {
+   "claim": "Monet died in December 1926",
+   "source": "https://en.wikipedia.org/wiki/Claude_Monet"
+  }
+ ],
+ "caption": "Put Monet's paintings of his Japanese footbridge in order and you can watch his eyesight fail.\n\n1899: his water garden at Giverny, cool greens, every leaf sharp (National Gallery of Art, Washington; National Gallery, London). In 1913 cataracts are clouding both his eyes; a London eye doctor, Richard Liebreich, urges surgery. Monet refuses. By 1918 colours no longer have the same intensity for him, and reds look muddy. He starts labelling his tubes of paint so he won't pick the wrong colour. In 1922 his right eye perceives only light. He keeps painting: this burning, almost abstract bridge dates from about then.\n\nIn early 1923 surgeons operate on his right eye. Now he can see the real colours of what he painted half-blind, and he begins to destroy canvases from those years. This one survived.\n\n🖤 Would you have destroyed it?",
+ "caption_short": "Watch Monet's bridge as his eyes fail. After surgery he saw what he'd painted, and destroyed canvases. 🖤",
+ "youtube_title": "Why did Monet destroy them? Monet's Japanese Footbridge, 1899–1922",
+ "hashtags_instagram": [
+  "#monet",
+  "#japanesefootbridge",
+  "#arthistory",
+  "#houston",
+  "#darkhistory"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#monet",
+  "#japanesefootbridge",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#monet",
+  "#claudemonet",
+  "#japanesefootbridge",
+  "#giverny",
+  "#mfah",
+  "#houston",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#impressionism"
+ ]
+}
