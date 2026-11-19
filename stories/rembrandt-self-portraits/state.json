@@ -1,9 +1,22 @@
 {
  "status": "approved",
- "updated": "2026-11-19T10:21:52+01:00",
+ "updated": "2026-11-19T21:01:39+01:00",
  "validated_at": "2026-11-15T20:18:03+01:00",
  "duration_s": 42.5,
  "review_message": 436,
  "sent_at": "2026-11-19T09:13:43+01:00",
- "approved_at": "2026-11-19T10:21:52+01:00"
+ "approved_at": "2026-11-19T10:21:52+01:00",
+ "instagram": {
+  "error": "no public URL for the video",
+  "attempts": 1
+ },
+ "youtube": {
+  "id": "OvgBKp9-brA",
+  "url": "https://youtube.com/shorts/OvgBKp9-brA"
+ },
+ "tiktok": {
+  "skipped": "not set up yet (TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN)",
+  "manual": true
+ },
+ "manual_sent": true
 }
