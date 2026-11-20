@@ -1,0 +1,456 @@
+{
+ "slug": "parmigianino-long-neck",
+ "formula": "F3",
+ "variant": "look-closer",
+ "format": "caption",
+ "silent": true,
+ "hook_type": "sacred-strange",
+ "teaser": "The Madonna her painter never finished",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "meta": {
+  "painter": "Parmigianino",
+  "born": 1503,
+  "died": 1540,
+  "painting": "Madonna with the Long Neck",
+  "year": "1534–1540",
+  "museum": "Uffizi",
+  "city": "Florence",
+  "image": "madonna",
+  "image_credit": "Uffizi Galleries, Florence, via Google Arts & Culture / Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1540,
+  "note": "Parmigianino d. 1540: public domain (Google Art Project scan, PD). Music: Palestrina, Sicut lilium inter spinas, The Tudor Consort, CC BY 3.0 -> credited. St Jerome detail photo CC BY 4.0 (Gennadii Saus i Segura) -> credited."
+ },
+ "say": {},
+ "ipa": {
+  "Parmigianino": "pˌɑːɹmɪdʒənˈiːnoʊ",
+  "Uffizi": "uːfˈiːtsi"
+ },
+ "respell": {
+  "Parmigianino": "par-mee-jah-NEE-no",
+  "Uffizi": "oo-FEET-see"
+ },
+ "chirp_say": {
+  "Parmigianino": "Par-mee-jah-nee-no"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Her neck is the least strange thing in this painting.",
+     0.75,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "baby",
+   "perf": [
+    [
+     "Look at the baby:",
+     0.1,
+     0.95
+    ],
+    [
+     "far too big, and slipping off her lap.",
+     0.7,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "saint",
+   "perf": [
+    [
+     "Look at the tiny saint with a scroll,",
+     0.1,
+     0.95
+    ],
+    [
+     "barely knee-high.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "foot",
+   "perf": [
+    [
+     "Now look beside him:",
+     0.1,
+     0.95
+    ],
+    [
+     "one foot, and no saint.",
+     0.75,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "step",
+   "perf": [
+    [
+     "Then read the step:",
+     0.1,
+     0.95
+    ],
+    [
+     "he died before he could finish.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "reveal",
+   "perf": [
+    [
+     "*Unfinished.*",
+     0.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Uffizi, in Florence.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "madonna": {
+   "file": "src/madonna.jpg",
+   "commons": "File:Parmigianino - Madonna dal collo lungo - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.5,
+     0.15
+    ],
+    "faceup": [
+     0.5,
+     0.22
+    ],
+    "neck": [
+     0.49,
+     0.23
+    ],
+    "baby": [
+     0.5,
+     0.5
+    ],
+    "babyhead": [
+     0.62,
+     0.45
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "saint": [
+     0.89,
+     0.8
+    ],
+    "scroll": [
+     0.82,
+     0.76
+    ],
+    "foot": [
+     0.965,
+     0.94
+    ],
+    "footzone": [
+     0.92,
+     0.88
+    ],
+    "step": [
+     0.77,
+     0.865
+    ],
+    "stepzone": [
+     0.76,
+     0.86
+    ]
+   }
+  },
+  "jerome": {
+   "file": "src/jerome.jpg",
+   "commons": "File:Parmigianino, Madonna dal collo lungo (1534-1540), detalle del San Jerónimo. Galleria degli Uffizi, Florencia.jpg",
+   "long": 2914,
+   "credit": "St Jerome detail: photo by Gennadii Saus i Segura, CC BY 4.0, via Wikimedia Commons",
+   "points": {
+    "body": [
+     0.6,
+     0.42
+    ],
+    "face": [
+     0.72,
+     0.2
+    ],
+    "foot": [
+     0.93,
+     0.905
+    ],
+    "footzone": [
+     0.8,
+     0.8
+    ]
+   }
+  }
+ },
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_palestrina_lilium.ogg",
+    "from": 0,
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "credit": "Palestrina, Sicut lilium inter spinas · The Tudor Consort, CC BY 3.0",
+    "commons": "File:The Tudor Consort - 01 - Palestrina - Sicut lilium inter spinas.ogg"
+   }
+  ],
+  "heartbeat": [
+   0.2,
+   "hook.8-0.15"
+  ],
+  "heartbeat_gain": 0.2
+ },
+ "sfx": [],
+ "nocap": [],
+ "cover": {
+  "question": "What did he <i>never finish?</i>",
+  "name": "PARMIGIANINO",
+  "work": "Madonna with the Long Neck, 1534–1540",
+  "focus": [
+   0.5,
+   0.17
+  ],
+  "span": 0.6,
+  "answered_by": "The whole altarpiece: he died in 1540 with it unfinished; St Francis beside St Jerome is only one painted foot, and the step's inscription says fate prevented him from completing it"
+ },
+ "facts": [
+  {
+   "claim": "Madonna with the Long Neck, Parmigianino (1503–1540), 1534–1540; commissioned 1534 by Elena Baiardi Tagliaferri for Santa Maria dei Servi, Parma",
+   "source": "https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck ; https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck"
+  },
+  {
+   "claim": "The Child is 'extremely large for a baby' and 'lies precariously on Mary's lap as if about to fall at any moment'",
+   "source": "https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck ; https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck (the Child sleeps on her lap)"
+  },
+  {
+   "claim": "The small figure with a scroll at lower right is St Jerome; Gombrich: so reduced in size that he 'hardly reaches the Madonna's knee'",
+   "source": "https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck ; https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck (Gombrich, The Story of Art, 1950)"
+  },
+  {
+   "claim": "Beside St Jerome, St Francis was left unfinished: only one foot is painted",
+   "source": "https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck"
+  },
+  {
+   "claim": "Parmigianino died in 1540 leaving it unfinished; installed on the altar two years later with the inscription FATO PRAEVENTUS F. MAZZOLI PARMENSIS ABSOLVERE NEQUIVIT ('Adverse destiny prevented Francesco Mazzola from Parma from completing this work')",
+   "source": "https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck ; https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck"
+  },
+  {
+   "claim": "The neck: the Madonna has 'a neck like that of a swan' (Gombrich); the column beside her may allude to the hymn line 'Collum tuum ut columna' (Your neck is like a column)",
+   "source": "https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck ; https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck"
+  },
+  {
+   "claim": "Bought by Grand Prince Ferdinando de' Medici in 1698; in the Uffizi since 1948",
+   "source": "https://en.wikipedia.org/wiki/Madonna_with_the_Long_Neck"
+  }
+ ],
+ "caption": "Her neck is the least strange thing in this painting.\n\nLook at the baby: far too big for a baby, and lying on Mary's lap as if about to slide off. Look at the tiny saint with a scroll at lower right, St Jerome: as Gombrich put it, he hardly reaches the Madonna's knee. Now look beside him: one foot, and no saint. St Francis was supposed to stand there.\n\nParmigianino started this altarpiece in 1534 for a chapel in Parma. He died in 1540 with it still in his studio. When it went up on the altar two years later, an inscription was added on the step: \"FATO PRAEVENTUS F. MAZZOLI PARMENSIS ABSOLVERE NEQUIVIT\" — fate prevented Francesco Mazzola of Parma from completing it.\n\nP.S. The column beside her may echo an old hymn to Mary: \"Your neck is like a column.\"\n\n🖤 Which detail did you spot first?",
+ "caption_short": "Her neck is the least strange thing in this painting. Look for the saint who is only a foot. 🖤",
+ "youtube_title": "What did he never finish? Parmigianino's Madonna with the Long Neck",
+ "hashtags_instagram": [
+  "#parmigianino",
+  "#madonnawiththelongneck",
+  "#arthistory",
+  "#uffizi",
+  "#mannerism"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#parmigianino",
+  "#madonnawiththelongneck",
+  "#mystery"
+ ],
+ "hashtags": [
+  "#parmigianino",
+  "#madonnawiththelongneck",
+  "#uffizi",
+  "#florence",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#mannerism",
+  "#renaissanceart"
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "img": "madonna",
+   "from": "faceup@2.1",
+   "to": "faceup@2.0",
+   "kind": "image"
+  },
+  {
+   "at": "hook.9-0.05",
+   "img": "madonna",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "baby-0.12",
+   "img": "madonna",
+   "from": "baby@1.75",
+   "to": "baby@1.9",
+   "kind": "image"
+  },
+  {
+   "at": "saint-0.12",
+   "img": "jerome",
+   "from": "body@1.05",
+   "to": "body@1.15",
+   "kind": "image"
+  },
+  {
+   "at": "foot-0.12",
+   "img": "jerome",
+   "from": "footzone@1.6",
+   "to": "footzone@1.7",
+   "kind": "image"
+  },
+  {
+   "at": "step-0.12",
+   "img": "madonna",
+   "from": "stepzone@3.3",
+   "to": "stepzone@3.4",
+   "kind": "image",
+   "dim": -0.3
+  },
+  {
+   "at": "reveal-0.12",
+   "img": "madonna",
+   "from": "center@0.86",
+   "to": "center@0.84",
+   "kind": "image",
+   "frame": true,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "madonna",
+   "from": "faceup@1.5",
+   "to": "faceup@1.6",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "hook.1",
+   "to": "hook.9-0.1",
+   "img": "madonna",
+   "point": "neck",
+   "rx": 90,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "baby.4",
+   "to": "saint-0.15",
+   "img": "madonna",
+   "point": "babyhead",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "saint.3",
+   "to": "foot-0.15",
+   "img": "jerome",
+   "point": "face",
+   "rx": 110,
+   "ry": 130,
+   "rot": 0
+  },
+  {
+   "type": "credit",
+   "from": "saint",
+   "to": "step-0.1",
+   "text": "DETAIL PHOTO: G. SAUS I SEGURA · CC BY 4.0"
+  },
+  {
+   "type": "ring",
+   "at": "foot.4",
+   "to": "step-0.15",
+   "img": "jerome",
+   "point": "foot",
+   "rx": 70,
+   "ry": 80,
+   "rot": 0
+  },
+  {
+   "type": "hotspot",
+   "at": "step.3",
+   "to": "reveal-0.15",
+   "img": "madonna",
+   "point": "step"
+  },
+  {
+   "type": "label",
+   "from": "step",
+   "to": "reveal-0.1",
+   "text": "FATO PRAEVENTUS · 1540"
+  },
+  {
+   "type": "label",
+   "from": "reveal",
+   "to": "ending-0.1",
+   "text": "PARMA · 1534–1540"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "UFFIZI · FLORENCE"
+  }
+ ]
+}

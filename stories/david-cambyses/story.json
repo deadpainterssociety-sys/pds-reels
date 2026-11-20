@@ -1,0 +1,828 @@
+{
+ "slug": "david-cambyses",
+ "images": {
+  "flay": {
+   "file": "src/flay.jpg",
+   "commons": "File:Gerard David - The Judgment of Cambyses, panel 2 - The shedding of the corrupt judge Sisamnes.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "face": [
+     0.25,
+     0.45
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "body": [
+     0.45,
+     0.56
+    ],
+    "king": [
+     0.43,
+     0.31
+    ],
+    "crowd": [
+     0.3,
+     0.3
+    ],
+    "crowd2": [
+     0.5,
+     0.3
+    ],
+    "leg": [
+     0.76,
+     0.56
+    ],
+    "son": [
+     0.845,
+     0.19
+    ],
+    "skin": [
+     0.83,
+     0.15
+    ],
+    "m1": [
+     0.35,
+     0.47
+    ],
+    "m2": [
+     0.6,
+     0.46
+    ],
+    "m3": [
+     0.33,
+     0.63
+    ],
+    "m4": [
+     0.87,
+     0.42
+    ],
+    "facelow": [
+     0.26,
+     0.5
+    ],
+    "sonscene": [
+     0.83,
+     0.2
+    ],
+    "four": [
+     0.585,
+     0.5
+    ]
+   }
+  },
+  "arrest": {
+   "file": "src/arrest.jpg",
+   "commons": "File:Gerard David - The Judgment of Cambyses, panel 1 - The capture of the corrupt judge Sisamnes.jpg",
+   "long": 3840,
+   "points": {
+    "date": [
+     0.74,
+     0.12
+    ],
+    "judge": [
+     0.62,
+     0.36
+    ],
+    "king": [
+     0.32,
+     0.36
+    ],
+    "bribe": [
+     0.295,
+     0.17
+    ],
+    "grip": [
+     0.55,
+     0.42
+    ],
+    "chair": [
+     0.68,
+     0.42
+    ],
+    "street": [
+     0.12,
+     0.15
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "datering": [
+     0.745,
+     0.078
+    ]
+   }
+  },
+  "diptych": {
+   "file": "src/diptych.jpg",
+   "commons": "File:David Diptych The Judgment of Cambyses.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "hall": {
+   "file": "src/hall.jpg",
+   "commons": "File:Bruges City Hall Interior.jpg",
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "end": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "herodotus": {
+   "file": "src/herodotus.jpg",
+   "commons": "File:Bust of Herodotus in Palazzo Massimo (Rome).JPG",
+   "long": 2560,
+   "points": {
+    "face": [
+     0.52,
+     0.34
+    ]
+   },
+   "credit": "Bust of Herodotus, Palazzo Massimo, Rome: photo by Livioandronico2013, CC BY-SA 4.0, via Wikimedia Commons"
+  }
+ },
+ "formula": "F1",
+ "format": "reel",
+ "hook_type": "dark",
+ "teaser": "The painting that warned Bruges's judges",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "say": {
+  "1498": "fourteen ninety-eight"
+ },
+ "ipa": {
+  "Sisamnes": "sɪsˈæmniːz",
+  "Cambyses": "kæmbˈaɪsiːz",
+  "Groeningemuseum": "ɡɹˈuːnɪŋə mjuːzˈiːəm",
+  "Gerard": "ʒeɪɹˈɑːɹ",
+  "Herodotus": "hɪɹˈɒdətəs"
+ },
+ "respell": {
+  "Sisamnes": "sih-SAM-neez",
+  "Cambyses": "kam-BY-seez",
+  "Groeningemuseum": "GROO-ning-uh-myoo-ZEE-um",
+  "Gerard": "zhay-RAR"
+ },
+ "chirp_say": {
+  "Sisamnes": "Sis-am-neez",
+  "Cambyses": "Cam-by-seez",
+  "Groeningemuseum": "Groo-ning-eh museum"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Every judge in Bruges had to look at *this.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "paint",
+   "perf": [
+    [
+     "In 1498,",
+     0.3,
+     0.95
+    ],
+    [
+     "Gerard David painted it for the Bruges town hall.",
+     0.8,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "story",
+   "perf": [
+    [
+     "The story comes from Herodotus.",
+     0.35,
+     0.95
+    ],
+    [
+     "A Persian judge, Sisamnes,",
+     0.3,
+     0.94
+    ],
+    [
+     "took a bribe for an unjust verdict.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "king",
+   "perf": [
+    [
+     "Herodotus says King Cambyses",
+     0.25,
+     0.95
+    ],
+    [
+     "had him killed and skinned.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "alive",
+   "perf": [
+    [
+     "David shows him *alive.*",
+     0.6,
+     0.86
+    ],
+    [
+     "Tied down on a table,",
+     0.3,
+     0.94
+    ],
+    [
+     "while four men peel away his skin.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "crowd",
+   "perf": [
+    [
+     "And the crowd looks like the Bruges of David's own day.",
+     0.9,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "strips",
+   "perf": [
+    [
+     "The skin was cut into strips,",
+     0.3,
+     0.94
+    ],
+    [
+     "and laid over the judge's seat.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "son",
+   "perf": [
+    [
+     "Then the king named a new judge:",
+     0.4,
+     0.94
+    ],
+    [
+     "the dead man's own *son.*",
+     0.9,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Look at the top right corner.",
+     0.4,
+     0.94
+    ],
+    [
+     "There he sits, on his father's skin,",
+     0.35,
+     0.92
+    ],
+    [
+     "told to remember what he sits on.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "warn",
+   "perf": [
+    [
+     "And the aldermen of Bruges saw it every day,",
+     0.3,
+     0.94
+    ],
+    [
+     "a warning to stay *honest.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Groeningemuseum, in Bruges.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "Gerard David",
+  "born": 1460,
+  "died": 1523,
+  "painting": "The Judgement of Cambyses",
+  "year": "1498",
+  "museum": "Groeningemuseum",
+  "city": "Bruges",
+  "image": "flay",
+  "image_credit": "Groeningemuseum, Bruges (Musea Brugge), via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1523,
+  "note": "Gerard David d. 1523: public domain. Both panels and the diptych PD; Bruges City Hall interior CC0; Herodotus bust photo CC BY-SA 4.0 (Livioandronico2013) -> credited."
+ },
+ "cover": {
+  "question": "What is his chair <i>made of?</i>",
+  "name": "GERARD DAVID",
+  "work": "The Judgement of Cambyses, 1498",
+  "focus": [
+   0.84,
+   0.19
+  ],
+  "span": 0.32,
+  "answered_by": "His father's skin: Cambyses had the corrupt judge Sisamnes flayed, covered the judge's seat with the skin and made his son judge in his place (top right corner of the panel)"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "flay",
+   "from": "face@2.4",
+   "to": "face@2.6",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.8-0.03",
+   "img": "flay",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "paint-0.08",
+   "img": "arrest",
+   "from": "date@2.2",
+   "to": "date@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "paint.2-0.05",
+   "img": "diptych",
+   "from": "center@0.34",
+   "to": "center@0.36",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "paint.8-0.05",
+   "img": "hall",
+   "from": "center@1.05",
+   "to": "end@1.15",
+   "kind": "image",
+   "gray": 0.6
+  },
+  {
+   "at": "story-0.08",
+   "img": "herodotus",
+   "from": "face@1.25",
+   "to": "face@1.4",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "story.5-0.05",
+   "img": "arrest",
+   "from": "judge@2.0",
+   "to": "judge@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "story.9-0.05",
+   "img": "arrest",
+   "from": "bribe@3.2",
+   "to": "bribe@3.4",
+   "kind": "image"
+  },
+  {
+   "at": "king-0.08",
+   "img": "arrest",
+   "from": "king@2.0",
+   "to": "king@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "king.4-0.05",
+   "img": "arrest",
+   "from": "grip@2.2",
+   "to": "grip@2.0",
+   "kind": "image",
+   "gray": 0.5
+  },
+  {
+   "at": "alive-0.08",
+   "img": "flay",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "alive.4-0.05",
+   "img": "flay",
+   "from": "body@1.5",
+   "to": "body@1.6",
+   "sway": 0.006
+  },
+  {
+   "at": "alive.9-0.05",
+   "img": "flay",
+   "from": "four@1.0",
+   "to": "four@1.04",
+   "sway": 0.008
+  },
+  {
+   "at": "crowd-0.08",
+   "img": "flay",
+   "from": "crowd@2.0",
+   "to": "crowd2@2.1",
+   "sway": 0.006
+  },
+  {
+   "at": "crowd.6-0.05",
+   "img": "arrest",
+   "from": "street@2.6",
+   "to": "street@2.75",
+   "kind": "image"
+  },
+  {
+   "at": "strips-0.08",
+   "img": "flay",
+   "from": "leg@2.0",
+   "to": "leg@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "strips.6-0.05",
+   "img": "arrest",
+   "from": "chair@1.7",
+   "to": "chair@1.85",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "son-0.08",
+   "img": "flay",
+   "from": "king@2.2",
+   "to": "king@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "son.7-0.05",
+   "img": "flay",
+   "from": "face@2.8",
+   "to": "face@2.95",
+   "gray": 0.6,
+   "sway": 0.004
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "flay",
+   "from": "four@1.0",
+   "to": "four@1.04",
+   "dolly": [
+    0,
+    0.2
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "flay",
+   "from": "son@3.2",
+   "to": "son@3.4",
+   "sway": 0.004
+  },
+  {
+   "at": "payoff.13-0.05",
+   "img": "flay",
+   "from": "skin@3.4",
+   "to": "skin@3.2",
+   "sway": 0.004
+  },
+  {
+   "at": "warn-0.08",
+   "img": "hall",
+   "from": "center@1.1",
+   "to": "center@1.2",
+   "kind": "image"
+  },
+  {
+   "at": "warn.9-0.05",
+   "img": "diptych",
+   "from": "center@0.34",
+   "to": "center@0.32",
+   "kind": "image",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "ending-0.08",
+   "img": "flay",
+   "from": "facelow@1.9",
+   "to": "facelow@2.05",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "ring",
+   "at": "paint.1",
+   "to": "paint.2-0.1",
+   "img": "arrest",
+   "point": "datering",
+   "rx": 150,
+   "ry": 60,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "paint",
+   "to": "paint.2-0.1",
+   "text": "DATED ON THE PANEL · 1498"
+  },
+  {
+   "type": "label",
+   "from": "paint.2",
+   "to": "paint.8-0.1",
+   "text": "GERARD DAVID · TWO PANELS"
+  },
+  {
+   "type": "label",
+   "from": "paint.8",
+   "to": "story-0.1",
+   "text": "BRUGES TOWN HALL · TODAY"
+  },
+  {
+   "type": "label",
+   "from": "story",
+   "to": "story.5-0.1",
+   "text": "HERODOTUS · HISTORIES, BOOK 5"
+  },
+  {
+   "type": "credit",
+   "from": "story",
+   "to": "story.5-0.1",
+   "text": "PHOTO: LIVIOANDRONICO2013 · CC BY-SA 4.0"
+  },
+  {
+   "type": "label",
+   "from": "story.5",
+   "to": "story.9-0.1",
+   "text": "THE JUDGE · SISAMNES"
+  },
+  {
+   "type": "label",
+   "from": "story.9",
+   "to": "king-0.1",
+   "text": "BACKGROUND · THE BRIBE"
+  },
+  {
+   "type": "label",
+   "from": "king",
+   "to": "alive-0.1",
+   "text": "KING CAMBYSES"
+  },
+  {
+   "type": "hotspot",
+   "at": "alive.10",
+   "to": "alive$+0.3",
+   "img": "flay",
+   "point": "m1"
+  },
+  {
+   "type": "hotspot",
+   "at": "alive.10+0.15",
+   "to": "alive$+0.3",
+   "img": "flay",
+   "point": "m2"
+  },
+  {
+   "type": "hotspot",
+   "at": "alive.10+0.3",
+   "to": "alive$+0.3",
+   "img": "flay",
+   "point": "m3"
+  },
+  {
+   "type": "hotspot",
+   "at": "alive.10+0.45",
+   "to": "alive$+0.3",
+   "img": "flay",
+   "point": "m4"
+  },
+  {
+   "type": "label",
+   "from": "crowd.6",
+   "to": "strips-0.1",
+   "text": "BRUGES · AS DAVID KNEW IT"
+  },
+  {
+   "type": "label",
+   "from": "strips.6",
+   "to": "son-0.1",
+   "text": "THE JUDGE'S SEAT"
+  },
+  {
+   "type": "ring",
+   "at": "payoff.3",
+   "to": "payoff.6-0.1",
+   "img": "flay",
+   "point": "sonscene",
+   "rx": 120,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "payoff.6",
+   "to": "warn-0.1",
+   "text": "HIS SON · THE NEW JUDGE"
+  },
+  {
+   "type": "label",
+   "from": "warn",
+   "to": "warn.9-0.1",
+   "text": "BRUGES · THE ALDERMEN"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "GROENINGEMUSEUM · BRUGES"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": -5,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "story-0.2",
+    "king$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "payoff$+0.5"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.8-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "son.11",
+   "fx": "impact",
+   "gain": 0.4
+  }
+ ],
+ "facts": [
+  {
+   "claim": "The Judgement of Cambyses by Gerard David (c. 1460–1523), dated 1498 (the date is painted on the arrest panel); oil on oak, two panels, 182.3 × 318.6 cm overall",
+   "source": "https://www.museabrugge.be/en/collection/work/id/0000_gro0040_i-0041_i ; https://en.wikipedia.org/wiki/The_Judgement_of_Cambyses"
+  },
+  {
+   "claim": "Commissioned by the Bruges municipal authorities for the town hall; the aldermen saw it daily, a reminder to be incorruptible and fair (hung as 'justice panels' in the city hall)",
+   "source": "https://www.museabrugge.be/en/collection/work/id/0000_gro0040_i-0041_i ; https://vlaamseprimitieven.vlaamsekunstcollectie.be/en/collection/judgement-of-cambyses/ ; https://en.wikipedia.org/wiki/The_Judgement_of_Cambyses"
+  },
+  {
+   "claim": "The story comes from Herodotus, Histories 5.25: Sisamnes, a royal judge, took a bribe to give an unjust judgment",
+   "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=5:chapter=25 ; https://en.wikipedia.org/wiki/Sisamnes"
+  },
+  {
+   "claim": "Herodotus: Cambyses 'had cut his throat and flayed off all his skin' (Godley transl.) — killed, then skinned",
+   "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=5:chapter=25"
+  },
+  {
+   "claim": "David's right panel shows Sisamnes being flayed alive on a table, four executioners at work (the leg already stripped); the background of the left panel shows Sisamnes accepting the bribe",
+   "source": "https://vlaamseprimitieven.vlaamsekunstcollectie.be/en/collection/judgement-of-cambyses/ ; https://www.worldhistory.org/image/3244/the-judgement-of-cambyses-david/ ; https://commons.wikimedia.org/wiki/File:Gerard_David_-_The_Judgment_of_Cambyses,_panel_2_-_The_shedding_of_the_corrupt_judge_Sisamnes.jpg"
+  },
+  {
+   "claim": "David set the scene as if it took place in Bruges in his own time (contemporary buildings and dress)",
+   "source": "https://www.museabrugge.be/en/collection/work/id/0000_gro0040_i-0041_i ; https://en.wikipedia.org/wiki/Sisamnes"
+  },
+  {
+   "claim": "Herodotus: Cambyses cut leather strips from the skin and covered the seat Sisamnes had judged from",
+   "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=5:chapter=25"
+  },
+  {
+   "claim": "Cambyses appointed Sisamnes' son (Otanes) judge in his place, 'admonishing him to keep in mind the nature of the throne on which he was sitting'",
+   "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=5:chapter=25"
+  },
+  {
+   "claim": "Upper right of the flaying panel: the son, Otanes, sits as judge on the chair draped with his father's skin",
+   "source": "https://vlaamseprimitieven.vlaamsekunstcollectie.be/en/collection/judgement-of-cambyses/ ; https://en.wikipedia.org/wiki/The_Judgement_of_Cambyses"
+  },
+  {
+   "claim": "Hangs in the Groeningemuseum, Bruges (inv. 0000.GRO0040.I-0041.I)",
+   "source": "https://www.museabrugge.be/en/collection/work/id/0000_gro0040_i-0041_i"
+  },
+  {
+   "claim": "(caption P.S.) In August 2012 Yulia Tymoshenko's supporters showed a reproduction of the painting to the judge reviewing her case",
+   "source": "https://en.wikipedia.org/wiki/The_Judgement_of_Cambyses (citing Lenta.ru, 16 Aug 2012)"
+  }
+ ],
+ "caption": "Every judge in Bruges had to look at this.\n\nIn 1498 Gerard David finished two huge panels for the Bruges town hall. The story comes from Herodotus: Sisamnes, a royal judge in Persia, took a bribe to give an unjust verdict, and King Cambyses had him killed and skinned. David paints him alive, tied to a table, while four men peel away his skin, and dresses the whole crowd like the people of Bruges in his own day.\n\nHerodotus says the skin was cut into strips and laid over the judge's seat. Then the king named a new judge: the dead man's own son, told to remember what he was sitting on. Look at the top right corner of the panel: there he is, on his father's skin.\n\nThe aldermen of Bruges saw it every day, as a warning to stay honest.\n\nP.S. In 2012 Yulia Tymoshenko's supporters showed a copy of this painting to the judge reviewing her case.\n\n🖤 Would you take a bribe under this painting?",
+ "caption_short": "Every judge in Bruges had to look at this: a corrupt judge skinned, and his son made to sit on the skin. 🖤",
+ "youtube_title": "What is his chair made of? Gerard David's Judgement of Cambyses",
+ "hashtags_instagram": [
+  "#gerarddavid",
+  "#judgementofcambyses",
+  "#arthistory",
+  "#bruges",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#gerarddavid",
+  "#judgementofcambyses",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#gerarddavid",
+  "#judgementofcambyses",
+  "#groeningemuseum",
+  "#bruges",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#herodotus",
+  "#flemishprimitives",
+  "#darkhistory"
+ ]
+}
