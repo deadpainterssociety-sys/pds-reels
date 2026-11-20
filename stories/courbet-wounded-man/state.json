@@ -1,9 +1,22 @@
 {
  "status": "approved",
- "updated": "2026-11-20T10:05:55+01:00",
+ "updated": "2026-11-20T21:02:02+01:00",
  "validated_at": "2026-11-18T03:41:23+01:00",
  "duration_s": 29.9,
  "review_message": 461,
  "sent_at": "2026-11-20T09:03:50+01:00",
- "approved_at": "2026-11-20T10:05:55+01:00"
+ "approved_at": "2026-11-20T10:05:55+01:00",
+ "instagram": {
+  "error": "no public URL for the video",
+  "attempts": 1
+ },
+ "youtube": {
+  "id": "QgCw7oXk4qA",
+  "url": "https://youtube.com/shorts/QgCw7oXk4qA"
+ },
+ "tiktok": {
+  "skipped": "not set up yet (TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN)",
+  "manual": true
+ },
+ "manual_sent": true
 }
