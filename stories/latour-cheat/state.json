@@ -1,6 +1,6 @@
 {
- "status": "approved",
- "updated": "2026-11-21T15:10:55+01:00",
+ "status": "posted",
+ "updated": "2026-11-21T21:01:53+01:00",
  "validated_at": "2026-11-19T03:45:33+01:00",
  "duration_s": 112.2,
  "review_message": 493,
@@ -8,5 +8,17 @@
  "feedback": [
   "Bad pronunciation of Georges de la Tour. Please make sure it is well pronounced, we already talked about this"
  ],
- "approved_at": "2026-11-21T15:10:55+01:00"
+ "approved_at": "2026-11-21T15:10:55+01:00",
+ "instagram": {
+  "id": "18104702768425060",
+  "url": "https://www.instagram.com/reel/DgBCkdDDFaK/"
+ },
+ "youtube": {
+  "id": "y1wY6aKPREM",
+  "url": "https://youtube.com/shorts/y1wY6aKPREM"
+ },
+ "tiktok": {
+  "skipped": "turned off in config.json"
+ },
+ "posted_at": "2026-11-21T21:01:53+01:00"
 }
