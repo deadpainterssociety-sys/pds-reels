@@ -1,0 +1,3911 @@
+{
+ "slug": "hunt-conscience-long",
+ "format": "long",
+ "slot": "2026-11-26",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "William Holman Hunt",
+  "born": 1827,
+  "died": 1910,
+  "painting": "The Awakening Conscience",
+  "year": "1853",
+  "museum": "Tate Britain",
+  "city": "London",
+  "image": "conscience",
+  "image_credit": "Tate, London, via Google Art Project / Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1910,
+  "note": "Hunt d. 1910: public domain. Paintings and drawings by Hunt, Rossetti (d. 1882), Millais (d. 1896), Egg (d. 1863), Lawrence, Cozens, Levin, Phiz, Pellegrini: public domain. CC photos (Sailko's photos of the framed painting, Tate Britain by Julian Herzog) credited on screen and in the description. Music: Schumann (Musopen, public domain) and Chopin nocturnes (Musopen, Constantin Stephan, CC0)."
+ },
+ "say": {
+  "1851": "eighteen fifty-one",
+  "1853": "eighteen fifty-three",
+  "1854": "eighteen fifty-four",
+  "1835": "eighteen thirty-five",
+  "1850": "eighteen fifty",
+  "1856": "eighteen fifty-six",
+  "1859": "eighteen fifty-nine",
+  "1863": "eighteen sixty-three",
+  "1925": "nineteen twenty-five"
+ },
+ "ipa": {
+  "Millais": "mˈɪleɪ",
+  "Rossetti": "ɹəzˈɛti",
+  "Ranelagh": "ɹˈænələ",
+  "Combe": "kˈuːm",
+  "Cremorne": "kɹəmˈɔːɹn",
+  "Peggotty": "pˈɛɡəti",
+  "Fairbairn": "fˈɛɹbɛɹn",
+  "Athenaeum": "ˌæθənˈiːəm",
+  "convenance": "kɔ̃vnˈɑ̃s",
+  "maison": "mɛzˈɔ̃",
+  "Shoreham": "ʃˈɔːɹəm",
+  "Pancras": "pˈæŋkɹəs"
+ },
+ "chirp_say": {
+  "Millais": "Millay",
+  "Ranelagh": "Rannela",
+  "Combe": "Coom",
+  "Cremorne": "Cre-morn",
+  "maison de convenance": "mezzon de convenahnce"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "She isn't his wife, and she has just realised it.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "At first glance,",
+     0.2,
+     0.94
+    ],
+    [
+     "a young couple at the piano.",
+     0.65,
+     0.94
+    ],
+    [
+     "Then you see her hands.",
+     0.39,
+     0.92
+    ],
+    [
+     "A ring on almost every finger,",
+     0.26,
+     0.94
+    ],
+    [
+     "except the one for a wedding.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "The man who painted her",
+     0.13,
+     0.95
+    ],
+    [
+     "believed a woman like this could still be saved.",
+     0.52,
+     0.94
+    ],
+    [
+     "And in real life,",
+     0.2,
+     0.94
+    ],
+    [
+     "he tried to remake his model:",
+     0.26,
+     0.93
+    ],
+    [
+     "a barmaid from the back streets of Chelsea.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "It didn't go the way he planned.",
+     0.52,
+     0.92
+    ],
+    [
+     "Even the face you see today",
+     0.26,
+     0.94
+    ],
+    [
+     "isn't the face he first painted.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "This is the story of two women:",
+     0.39,
+     0.93
+    ],
+    [
+     "the one he painted,",
+     0.26,
+     0.93
+    ],
+    [
+     "and the one who wouldn't play the part.",
+     2.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "In 1851,",
+     0.26,
+     0.95
+    ],
+    [
+     "William Holman Hunt is a young painter in London,",
+     0.2,
+     0.95
+    ],
+    [
+     "one of the founders of the Pre-Raphaelite Brotherhood,",
+     0.2,
+     0.95
+    ],
+    [
+     "a small band of rebels against the Royal Academy.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "On his easel in Chelsea is a picture of Christ at night,",
+     0.26,
+     0.95
+    ],
+    [
+     "knocking at a door overgrown with weeds.",
+     0.52,
+     0.94
+    ],
+    [
+     "He calls it *The Light of the World.*",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "And he starts to think about its opposite.",
+     0.52,
+     0.93
+    ],
+    [
+     "Not a vision,",
+     0.26,
+     0.94
+    ],
+    [
+     "but a scene from modern life:",
+     0.26,
+     0.94
+    ],
+    [
+     "a soul being called away from a lower life.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "He had been reading *David Copperfield,*",
+     0.26,
+     0.95
+    ],
+    [
+     "and he was moved by old Peggotty,",
+     0.2,
+     0.95
+    ],
+    [
+     "searching for little Emily",
+     0.2,
+     0.95
+    ],
+    [
+     "after she has become an outcast.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "So Hunt went around,",
+     0.2,
+     0.94
+    ],
+    [
+     "in his own words,",
+     0.26,
+     0.94
+    ],
+    [
+     "to the different haunts of fallen girls,",
+     0.26,
+     0.93
+    ],
+    [
+     "looking for a setting.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1f",
+   "perf": [
+    [
+     "Then he found a verse in the Book of Proverbs.",
+     0.52,
+     0.94
+    ],
+    [
+     "*As he that taketh away a garment in cold weather,*",
+     0.26,
+     0.9
+    ],
+    [
+     "*so is he that singeth songs to an heavy heart.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c1g",
+   "perf": [
+    [
+     "A song,",
+     0.26,
+     0.93
+    ],
+    [
+     "sung by the wrong man at the wrong moment,",
+     0.39,
+     0.94
+    ],
+    [
+     "could wake a conscience.",
+     0.65,
+     0.92
+    ],
+    [
+     "The man who had led her astray",
+     0.2,
+     0.94
+    ],
+    [
+     "would deliver the message",
+     0.2,
+     0.94
+    ],
+    [
+     "without knowing it.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1h",
+   "perf": [
+    [
+     "His friend, the painter Augustus Egg,",
+     0.2,
+     0.95
+    ],
+    [
+     "talked about the idea to a Manchester industrialist,",
+     0.2,
+     0.95
+    ],
+    [
+     "Thomas Fairbairn.",
+     0.52,
+     0.93
+    ],
+    [
+     "Fairbairn commissioned the picture.",
+     0.52,
+     0.94
+    ],
+    [
+     "And Hunt put off a journey to the Holy Land",
+     0.2,
+     0.95
+    ],
+    [
+     "to paint it.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "Hunt wanted the room to be true.",
+     0.52,
+     0.93
+    ],
+    [
+     "So he rented one in St John's Wood,",
+     0.26,
+     0.95
+    ],
+    [
+     "at a house called Woodbine Villa.",
+     0.52,
+     0.94
+    ],
+    [
+     "The Tate calls it a *maison de convenance:*",
+     0.26,
+     0.93
+    ],
+    [
+     "a house where gentlemen met the women they kept.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "Look at the furniture.",
+     0.52,
+     0.92
+    ],
+    [
+     "Everything is new.",
+     0.39,
+     0.92
+    ],
+    [
+     "The fine books on the table",
+     0.2,
+     0.94
+    ],
+    [
+     "look as if no one has ever read them.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "The critic John Ruskin would call it",
+     0.2,
+     0.95
+    ],
+    [
+     "the *fatal newness* of the room.",
+     0.52,
+     0.9
+    ],
+    [
+     "Nothing in it had ever been part of a home.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "Hunt worked on it through 1853.",
+     0.39,
+     0.95
+    ],
+    [
+     "The dark London winter slowed him down.",
+     0.39,
+     0.94
+    ],
+    [
+     "He needed one bright day to finish.",
+     0.65,
+     0.93
+    ],
+    [
+     "In January 1854,",
+     0.26,
+     0.95
+    ],
+    [
+     "it came.",
+     0.52,
+     0.9
+    ],
+    [
+     "By four o'clock, he was done.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2f",
+   "perf": [
+    [
+     "That same night,",
+     0.26,
+     0.94
+    ],
+    [
+     "he caught the mail train,",
+     0.26,
+     0.95
+    ],
+    [
+     "on his way to the East.",
+     0.52,
+     0.94
+    ],
+    [
+     "His friend John Everett Millais",
+     0.2,
+     0.95
+    ],
+    [
+     "ran to the station buffet",
+     0.2,
+     0.95
+    ],
+    [
+     "to grab him something to eat.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "But who is the woman at the piano?",
+     0.52,
+     0.92
+    ],
+    [
+     "Her name was Annie Miller.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "She was born in 1835 in Chelsea,",
+     0.26,
+     0.95
+    ],
+    [
+     "the daughter of a soldier",
+     0.2,
+     0.95
+    ],
+    [
+     "who had been wounded in the Napoleonic Wars.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "Hunt first noticed her in 1850,",
+     0.26,
+     0.95
+    ],
+    [
+     "when she was fifteen,",
+     0.26,
+     0.93
+    ],
+    [
+     "an uneducated barmaid",
+     0.2,
+     0.94
+    ],
+    [
+     "at a pub near his studio.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "Hunt was a deeply religious man,",
+     0.26,
+     0.94
+    ],
+    [
+     "and he made a plan.",
+     0.52,
+     0.92
+    ],
+    [
+     "He would pay for her to learn to read and write,",
+     0.2,
+     0.95
+    ],
+    [
+     "to speak and behave like a lady.",
+     0.52,
+     0.94
+    ],
+    [
+     "And when she was ready,",
+     0.26,
+     0.94
+    ],
+    [
+     "he would marry her.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "On the canvas,",
+     0.26,
+     0.94
+    ],
+    [
+     "he was painting a fallen woman",
+     0.2,
+     0.94
+    ],
+    [
+     "called to a better life.",
+     0.52,
+     0.93
+    ],
+    [
+     "In his own life,",
+     0.26,
+     0.94
+    ],
+    [
+     "he was trying to write the same story",
+     0.2,
+     0.94
+    ],
+    [
+     "with a real woman.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "When he left for the East,",
+     0.26,
+     0.94
+    ],
+    [
+     "he left her lessons,",
+     0.26,
+     0.94
+    ],
+    [
+     "money for her keep,",
+     0.26,
+     0.94
+    ],
+    [
+     "and a list of the painters she was allowed to sit for.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3g",
+   "perf": [
+    [
+     "One name,",
+     0.26,
+     0.93
+    ],
+    [
+     "the story goes,",
+     0.26,
+     0.93
+    ],
+    [
+     "was definitely not on that list:",
+     0.39,
+     0.93
+    ],
+    [
+     "his fellow founder of the Brotherhood,",
+     0.2,
+     0.95
+    ],
+    [
+     "Dante Gabriel Rossetti.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "Now look closely at the painting.",
+     0.52,
+     0.92
+    ],
+    [
+     "Hunt meant it to be read,",
+     0.26,
+     0.93
+    ],
+    [
+     "like a page.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "Under the table,",
+     0.26,
+     0.94
+    ],
+    [
+     "a cat has caught a bird.",
+     0.39,
+     0.92
+    ],
+    [
+     "The bird's wing is broken.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "On the floor,",
+     0.26,
+     0.94
+    ],
+    [
+     "a man's glove,",
+     0.26,
+     0.93
+    ],
+    [
+     "pulled off and dropped.",
+     0.52,
+     0.93
+    ],
+    [
+     "The Tate reads it as a warning:",
+     0.26,
+     0.94
+    ],
+    [
+     "a kept woman, once cast off,",
+     0.26,
+     0.93
+    ],
+    [
+     "was likely to end up on the street.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "Beside it,",
+     0.26,
+     0.94
+    ],
+    [
+     "a tangle of wool",
+     0.2,
+     0.94
+    ],
+    [
+     "from an unfinished tapestry:",
+     0.39,
+     0.94
+    ],
+    [
+     "the web she's caught in.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "On the piano,",
+     0.26,
+     0.94
+    ],
+    [
+     "a clock",
+     0.2,
+     0.93
+    ],
+    [
+     "with a small figure of a woman,",
+     0.26,
+     0.93
+    ],
+    [
+     "sealed under a glass dome.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4f",
+   "perf": [
+    [
+     "On the floor,",
+     0.26,
+     0.94
+    ],
+    [
+     "a song sheet:",
+     0.26,
+     0.93
+    ],
+    [
+     "*Tears, Idle Tears,*",
+     0.26,
+     0.9
+    ],
+    [
+     "Tennyson's poem,",
+     0.2,
+     0.94
+    ],
+    [
+     "set to music by Edward Lear.",
+     0.78,
+     0.94
+    ],
+    [
+     "And on the piano,",
+     0.26,
+     0.94
+    ],
+    [
+     "the song he's playing:",
+     0.26,
+     0.94
+    ],
+    [
+     "Thomas Moore's *Oft in the Stilly Night,*",
+     0.39,
+     0.92
+    ],
+    [
+     "a song about the memory of happier days.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4g",
+   "perf": [
+    [
+     "Behind them,",
+     0.26,
+     0.94
+    ],
+    [
+     "in the mirror,",
+     0.26,
+     0.94
+    ],
+    [
+     "you can see what she sees:",
+     0.39,
+     0.93
+    ],
+    [
+     "a window,",
+     0.26,
+     0.93
+    ],
+    [
+     "and a garden in the spring sunshine.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4h",
+   "perf": [
+    [
+     "Even the frame tells the story.",
+     0.39,
+     0.93
+    ],
+    [
+     "Hunt designed it himself:",
+     0.39,
+     0.93
+    ],
+    [
+     "bells for warning,",
+     0.26,
+     0.93
+    ],
+    [
+     "marigolds for sorrow,",
+     0.39,
+     0.93
+    ],
+    [
+     "and above her head,",
+     0.26,
+     0.93
+    ],
+    [
+     "a star.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c4i",
+   "perf": [
+    [
+     "Hunt had his own title for it:",
+     0.39,
+     0.93
+    ],
+    [
+     "*The Still Small Voice.*",
+     0.65,
+     0.88
+    ],
+    [
+     "It was a friend in Oxford, Thomas Combe,",
+     0.2,
+     0.95
+    ],
+    [
+     "who suggested the one it still has:",
+     0.39,
+     0.94
+    ],
+    [
+     "*The Awakening Conscience.*",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "In the spring of 1854,",
+     0.26,
+     0.95
+    ],
+    [
+     "the Royal Academy showed it,",
+     0.26,
+     0.94
+    ],
+    [
+     "in the same exhibition",
+     0.2,
+     0.95
+    ],
+    [
+     "as *The Light of the World.*",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "The critics were baffled.",
+     0.52,
+     0.92
+    ],
+    [
+     "Some visitors thought they were looking at a brother and sister,",
+     0.26,
+     0.95
+    ],
+    [
+     "in the middle of a quarrel.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "The *Morning Chronicle* called it",
+     0.2,
+     0.94
+    ],
+    [
+     "an absolutely disagreeable picture.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "And the *Athenaeum* wrote",
+     0.2,
+     0.94
+    ],
+    [
+     "that the author of *The Bridge of Sighs,*",
+     0.26,
+     0.94
+    ],
+    [
+     "a poem about a woman who drowns herself in the Thames,",
+     0.39,
+     0.95
+    ],
+    [
+     "could not have conceived",
+     0.2,
+     0.93
+    ],
+    [
+     "a more *painful*-looking face.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "Then, in late May,",
+     0.26,
+     0.94
+    ],
+    [
+     "John Ruskin,",
+     0.2,
+     0.93
+    ],
+    [
+     "the great defender of the Brotherhood,",
+     0.26,
+     0.94
+    ],
+    [
+     "wrote to *The Times.*",
+     0.65,
+     0.92
+    ],
+    [
+     "People gaze at it in a blank wonder,",
+     0.26,
+     0.92
+    ],
+    [
+     "he wrote,",
+     0.2,
+     0.93
+    ],
+    [
+     "and leave it hopelessly.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "So he explained it.",
+     0.39,
+     0.93
+    ],
+    [
+     "The song,",
+     0.26,
+     0.93
+    ],
+    [
+     "the room,",
+     0.26,
+     0.93
+    ],
+    [
+     "the bird.",
+     0.52,
+     0.92
+    ],
+    [
+     "And her face:",
+     0.39,
+     0.92
+    ],
+    [
+     "the lips half open,",
+     0.26,
+     0.92
+    ],
+    [
+     "*the eyes filled with the fearful light of futurity,*",
+     0.26,
+     0.9
+    ],
+    [
+     "*and with tears of ancient days.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5g",
+   "perf": [
+    [
+     "*There is not a single object in all that room,*",
+     0.26,
+     0.92
+    ],
+    [
+     "he wrote,",
+     0.26,
+     0.93
+    ],
+    [
+     "*but it becomes tragical,*",
+     0.26,
+     0.9
+    ],
+    [
+     "*if rightly read.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5h",
+   "perf": [
+    [
+     "Far away in the Holy Land,",
+     0.26,
+     0.94
+    ],
+    [
+     "Hunt read Ruskin's letter,",
+     0.26,
+     0.94
+    ],
+    [
+     "and was encouraged.",
+     0.65,
+     0.93
+    ],
+    [
+     "But in Manchester,",
+     0.26,
+     0.94
+    ],
+    [
+     "the man who had paid for the painting",
+     0.2,
+     0.95
+    ],
+    [
+     "would have to live with that face.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "Back in London,",
+     0.26,
+     0.94
+    ],
+    [
+     "Annie was not following the plan.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "She sat for Millais,",
+     0.26,
+     0.93
+    ],
+    [
+     "who was on the list.",
+     0.52,
+     0.93
+    ],
+    [
+     "But she also sat for Rossetti,",
+     0.26,
+     0.93
+    ],
+    [
+     "and for his friend,",
+     0.2,
+     0.94
+    ],
+    [
+     "the painter George Price Boyce.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "They took her out to restaurants,",
+     0.26,
+     0.94
+    ],
+    [
+     "for walks in the park,",
+     0.26,
+     0.94
+    ],
+    [
+     "and to the Cremorne pleasure gardens,",
+     0.26,
+     0.94
+    ],
+    [
+     "where she danced with Boyce.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "Hunt came home in 1856.",
+     0.52,
+     0.93
+    ],
+    [
+     "When he heard,",
+     0.26,
+     0.93
+    ],
+    [
+     "he is said to have declared:",
+     0.39,
+     0.93
+    ],
+    [
+     "*I will never forgive Gabriel.*",
+     1.3,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "And there was a second problem.",
+     0.52,
+     0.92
+    ],
+    [
+     "Fairbairn could not bear the woman's expression.",
+     0.52,
+     0.93
+    ],
+    [
+     "He asked Hunt to *soften* it.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c6f",
+   "perf": [
+    [
+     "So Hunt worked on her face again.",
+     0.52,
+     0.92
+    ],
+    [
+     "He was ill with fever.",
+     0.52,
+     0.92
+    ],
+    [
+     "The picture went off to an exhibition in Birmingham",
+     0.2,
+     0.95
+    ],
+    [
+     "before he was happy with it.",
+     0.78,
+     0.93
+    ],
+    [
+     "The next spring he tried again.",
+     0.39,
+     0.93
+    ],
+    [
+     "*I think that I have materially bettered it now,*",
+     0.26,
+     0.9
+    ],
+    [
+     "he wrote to Edward Lear.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6g",
+   "perf": [
+    [
+     "But half a century later,",
+     0.26,
+     0.94
+    ],
+    [
+     "he still had his doubts.",
+     0.52,
+     0.92
+    ],
+    [
+     "In his memoirs he wrote",
+     0.2,
+     0.94
+    ],
+    [
+     "that the painting was never sent back to him,",
+     0.2,
+     0.94
+    ],
+    [
+     "to make certain that its last state",
+     0.2,
+     0.93
+    ],
+    [
+     "compensated for its first.",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "Hunt and Annie made up,",
+     0.26,
+     0.93
+    ],
+    [
+     "and quarrelled,",
+     0.26,
+     0.93
+    ],
+    [
+     "and made up again.",
+     0.65,
+     0.92
+    ],
+    [
+     "But Annie had met someone else:",
+     0.26,
+     0.93
+    ],
+    [
+     "a viscount,",
+     0.26,
+     0.93
+    ],
+    [
+     "Lord Ranelagh.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "In 1859,",
+     0.26,
+     0.95
+    ],
+    [
+     "Hunt broke off the engagement.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "Here is the twist.",
+     0.65,
+     0.9
+    ],
+    [
+     "In his painting,",
+     0.26,
+     0.94
+    ],
+    [
+     "a kept woman hears a song",
+     0.2,
+     0.94
+    ],
+    [
+     "and turns towards the light.",
+     0.65,
+     0.92
+    ],
+    [
+     "In his life,",
+     0.26,
+     0.94
+    ],
+    [
+     "Hunt had cast himself as that light.",
+     0.65,
+     0.92
+    ],
+    [
+     "But Annie had her own idea",
+     0.2,
+     0.93
+    ],
+    [
+     "of a better life.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "Ranelagh,",
+     0.2,
+     0.93
+    ],
+    [
+     "the story goes,",
+     0.26,
+     0.93
+    ],
+    [
+     "told her to sue Hunt",
+     0.2,
+     0.94
+    ],
+    [
+     "for breaking his promise to marry her.",
+     0.65,
+     0.94
+    ],
+    [
+     "Instead,",
+     0.39,
+     0.92
+    ],
+    [
+     "she married his cousin.",
+     0.65,
+     0.92
+    ],
+    [
+     "In July 1863,",
+     0.26,
+     0.95
+    ],
+    [
+     "at St Pancras Church,",
+     0.26,
+     0.94
+    ],
+    [
+     "Annie Miller became the wife of Captain Thomas Thomson.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c7e",
+   "perf": [
+    [
+     "There was one last scene.",
+     0.52,
+     0.92
+    ],
+    [
+     "Annie still had a trunk full of Hunt's letters.",
+     0.39,
+     0.94
+    ],
+    [
+     "Her husband suggested threatening to give them to the newspapers.",
+     0.52,
+     0.95
+    ],
+    [
+     "Hunt's friends assumed",
+     0.2,
+     0.94
+    ],
+    [
+     "that he bought them back.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c7f",
+   "perf": [
+    [
+     "Years later,",
+     0.26,
+     0.94
+    ],
+    [
+     "Hunt saw her again,",
+     0.26,
+     0.94
+    ],
+    [
+     "on Richmond Hill.",
+     0.52,
+     0.93
+    ],
+    [
+     "A buxom matron,",
+     0.26,
+     0.92
+    ],
+    [
+     "as he put it,",
+     0.26,
+     0.93
+    ],
+    [
+     "with a carriage full of children.",
+     0.52,
+     0.92
+    ],
+    [
+     "Happily married.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7g",
+   "perf": [
+    [
+     "Annie lived until 1925,",
+     0.26,
+     0.94
+    ],
+    [
+     "and died at ninety,",
+     0.26,
+     0.93
+    ],
+    [
+     "by the sea,",
+     0.2,
+     0.93
+    ],
+    [
+     "in Shoreham.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7h",
+   "perf": [
+    [
+     "So look at the woman at the piano one more time.",
+     0.65,
+     0.92
+    ],
+    [
+     "Her face is the one",
+     0.2,
+     0.93
+    ],
+    [
+     "its owner could live with,",
+     0.26,
+     0.92
+    ],
+    [
+     "painted over the first.",
+     0.78,
+     0.9
+    ],
+    [
+     "But her hands still tell the story:",
+     0.39,
+     0.93
+    ],
+    [
+     "rings on every finger but one.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7i",
+   "perf": [
+    [
+     "Hunt painted a woman who is saved",
+     0.2,
+     0.94
+    ],
+    [
+     "by a voice from outside the room.",
+     0.78,
+     0.92
+    ],
+    [
+     "The real Annie found her own way out.",
+     2.08,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the galleries of Tate Britain, in London.",
+     1.3,
+     0.92
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "conscience": {
+   "file": "src/conscience.jpg",
+   "commons": "File:William Holman Hunt - The Awakening Conscience - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.535,
+     0.215
+    ],
+    "eyes": [
+     0.535,
+     0.195
+    ],
+    "hands": [
+     0.56,
+     0.515
+    ],
+    "keys": [
+     0.645,
+     0.49
+    ],
+    "man": [
+     0.2,
+     0.42
+    ],
+    "couple": [
+     0.38,
+     0.36
+    ],
+    "cat": [
+     0.05,
+     0.755
+    ],
+    "bird": [
+     0.08,
+     0.815
+    ],
+    "glove": [
+     0.585,
+     0.925
+    ],
+    "wool": [
+     0.86,
+     0.92
+    ],
+    "tears": [
+     0.12,
+     0.95
+    ],
+    "music": [
+     0.8,
+     0.37
+    ],
+    "clock": [
+     0.87,
+     0.24
+    ],
+    "mirror": [
+     0.25,
+     0.24
+    ],
+    "window": [
+     0.27,
+     0.2
+    ],
+    "noteL": [
+     0.12,
+     0.05
+    ],
+    "noteR": [
+     0.86,
+     0.06
+    ],
+    "books": [
+     0.07,
+     0.58
+    ],
+    "piano": [
+     0.82,
+     0.58
+    ],
+    "upper": [
+     0.5,
+     0.3
+    ],
+    "room": [
+     0.5,
+     0.36
+    ],
+    "hem": [
+     0.48,
+     0.84
+    ],
+    "lower": [
+     0.5,
+     0.75
+    ]
+   }
+  },
+  "frame": {
+   "file": "src/frame.jpg",
+   "commons": "File:William holman hunt, il risveglio della coscienza, 1853, 01.jpg",
+   "credit": "The Awakening Conscience in its frame: photo Sailko, CC BY 3.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "painting": [
+     0.43,
+     0.42
+    ],
+    "verse": [
+     0.5,
+     0.925
+    ],
+    "border": [
+     0.07,
+     0.45
+    ],
+    "top": [
+     0.5,
+     0.07
+    ]
+   }
+  },
+  "clockph": {
+   "file": "src/clockph.jpg",
+   "commons": "File:William holman hunt, il risveglio della coscienza, 1853, 04 orologio su pianoforte.jpg",
+   "credit": "Detail of the clock: photo Sailko, CC BY 3.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "clock": [
+     0.58,
+     0.3
+    ],
+    "music": [
+     0.4,
+     0.7
+    ],
+    "title": [
+     0.54,
+     0.62
+    ]
+   }
+  },
+  "light": {
+   "file": "src/light.jpg",
+   "commons": "File:Hunt-light-of-the-world.jpeg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.51,
+     0.24
+    ],
+    "lantern": [
+     0.73,
+     0.68
+    ],
+    "door": [
+     0.12,
+     0.45
+    ],
+    "upper": [
+     0.5,
+     0.3
+    ]
+   }
+  },
+  "hunt": {
+   "file": "src/hunt.jpg",
+   "commons": "File:William Holman Hunt - Self-Portrait - Google Art Project.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.51,
+     0.4
+    ]
+   }
+  },
+  "coasts": {
+   "file": "src/coasts.jpg",
+   "commons": "File:William Holman Hunt - Our English Coasts, 1852 (`Strayed Sheep') - Google Art Project.jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "sheep": [
+     0.6,
+     0.45
+    ]
+   }
+  },
+  "peggotty": {
+   "file": "src/peggotty.jpg",
+   "commons": "File:Rencontre avec Dan Pegpotty poursuivant ses recherches (David Copperfield).jpeg",
+   "points": {
+    "center": [
+     0.5,
+     0.52
+    ],
+    "men": [
+     0.4,
+     0.56
+    ]
+   }
+  },
+  "egg": {
+   "file": "src/egg.jpg",
+   "commons": "File:Past and Present Number One.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "woman": [
+     0.8,
+     0.86
+    ],
+    "husband": [
+     0.72,
+     0.43
+    ]
+   }
+  },
+  "annie": {
+   "file": "src/annie.jpg",
+   "commons": "File:Dante Gabriel Rossetti - Annie Miller.jpg",
+   "points": {
+    "center": [
+     0.6,
+     0.45
+    ],
+    "face": [
+     0.8,
+     0.32
+    ]
+   }
+  },
+  "annie2": {
+   "file": "src/annie2.jpg",
+   "commons": "File:Annie Miller by Dante Gabriel Rossetti (1828-1882).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.61,
+     0.5
+    ]
+   }
+  },
+  "harp": {
+   "file": "src/harp.jpg",
+   "commons": "File:Dante Gabriel Rossetti - The Harp Player (Annie Miller).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.44,
+     0.19
+    ],
+    "body": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "helen": {
+   "file": "src/helen.jpg",
+   "commons": "File:Hamburg Kunsthalle Dante Gabriel Rosetti Helen of Troy.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.49,
+     0.38
+    ]
+   }
+  },
+  "rossetti": {
+   "file": "src/rossetti.jpg",
+   "commons": "File:Dante Gabriel Rossetti - Self-portrait, 1847.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.52,
+     0.44
+    ]
+   }
+  },
+  "ruskin": {
+   "file": "src/ruskin.jpg",
+   "commons": "File:Millais Ruskin.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.6,
+     0.2
+    ],
+    "body": [
+     0.6,
+     0.4
+    ]
+   }
+  },
+  "combe": {
+   "file": "src/combe.jpg",
+   "commons": "File:John Everett Millais (1829-1896) - Thomas Combe (1796–1872) - WA1894.9 - Ashmolean Museum.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.53,
+     0.25
+    ],
+    "body": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "moore": {
+   "file": "src/moore.jpg",
+   "commons": "File:Thomas Lawrence (1769-1830) - Thomas Moore (1779–1852), Poet - TC Oils P 124 - Trinity College.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.55,
+     0.38
+    ]
+   }
+  },
+  "stilly": {
+   "file": "src/stilly.jpg",
+   "commons": "File:Oft in the stilly night arranged for the Spanish guitar by B.F. Peale LCCN2015650312.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "title": [
+     0.45,
+     0.1
+    ],
+    "lyrics": [
+     0.5,
+     0.33
+    ]
+   }
+  },
+  "lear": {
+   "file": "src/lear.jpg",
+   "commons": "File:Edward Lear 1867.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.48,
+     0.3
+    ]
+   }
+  },
+  "scapegoat": {
+   "file": "src/scapegoat.jpg",
+   "commons": "File:William Holman Hunt - The Scapegoat.jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "goat": [
+     0.45,
+     0.6
+    ]
+   }
+  },
+  "finding": {
+   "file": "src/finding.jpg",
+   "commons": "File:William Holman Hunt - The Finding of the Saviour in the Temple - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.45,
+     0.5
+    ],
+    "boy": [
+     0.63,
+     0.27
+    ]
+   }
+  },
+  "cremorne": {
+   "file": "src/cremorne.jpg",
+   "commons": "File:Cremorne The Dancing Platform at Cremorne Gardens by Phoebus Levin 1864.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ],
+    "dancers": [
+     0.55,
+     0.7
+    ]
+   }
+  },
+  "ranelagh": {
+   "file": "src/ranelagh.jpg",
+   "commons": "File:Carlo Pellegrini - Politicians - Vanity Fair ^He has suceeded in volunteering^ Viscount Ranelagh 25 June 1870 - B1979.14.920 - Yale Center for British Art.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.42,
+     0.28
+    ],
+    "body": [
+     0.47,
+     0.45
+    ]
+   }
+  },
+  "richmond": {
+   "file": "src/richmond.jpg",
+   "commons": "File:John Robert Cozens - The Thames from Richmond Hill Looking Southwest - Google Art Project.jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.6
+    ],
+    "river": [
+     0.5,
+     0.78
+    ]
+   }
+  },
+  "tate": {
+   "file": "src/tate.jpg",
+   "commons": "File:Tate Britain 2020.jpg",
+   "depth": true,
+   "credit": "Tate Britain, London: photo Julian Herzog, CC BY 4.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "facade": [
+     0.45,
+     0.55
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "conscience",
+   "from": "face@2.6",
+   "to": "face@2.45"
+  },
+  {
+   "at": "cold1.8-0.10",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "hit": "big",
+   "frame": true
+  },
+  {
+   "at": "cold2",
+   "img": "conscience",
+   "from": "couple@1.3",
+   "to": "couple@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "cold2.9-0.10",
+   "img": "conscience",
+   "from": "hands@2.6",
+   "to": "hands@2.8",
+   "fade": 0.6
+  },
+  {
+   "at": "cold2.20-0.10",
+   "img": "conscience",
+   "from": "hands@3.4",
+   "to": "hands@3.55",
+   "fade": 0.5
+  },
+  {
+   "at": "cold3",
+   "img": "hunt",
+   "from": "face@1.25",
+   "to": "face@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "cold3.5-0.10",
+   "img": "conscience",
+   "from": "window@2.0",
+   "to": "window@2.12",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3.14-0.10",
+   "img": "annie",
+   "from": "face@1.35",
+   "to": "face@1.45",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3.25-0.10",
+   "img": "annie2",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 0.5
+  },
+  {
+   "at": "cold4",
+   "img": "conscience",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "fade": 0.8
+  },
+  {
+   "at": "cold4.7-0.10",
+   "img": "conscience",
+   "from": "eyes@3.2",
+   "to": "eyes@3.05",
+   "fade": 0.6
+  },
+  {
+   "at": "cold5",
+   "img": "conscience",
+   "from": "face@1.8",
+   "to": "face@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "cold5.11-0.10",
+   "img": "helen",
+   "from": "face@1.35",
+   "to": "face@1.45",
+   "fade": 0.6
+  },
+  {
+   "at": "cold5$-0.60",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.65",
+   "dim": 0.3,
+   "fade": 1.2,
+   "frame": true
+  },
+  {
+   "at": "c1a",
+   "img": "hunt",
+   "from": "face@1.15",
+   "to": "face@1.25",
+   "fade": 1.0
+  },
+  {
+   "at": "c1a.11-0.10",
+   "img": "coasts",
+   "from": "center@1.0",
+   "to": "sheep@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c1b",
+   "img": "light",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c1b.12-0.10",
+   "img": "light",
+   "from": "door@1.3",
+   "to": "door@1.4",
+   "dim": 0.15,
+   "fade": 0.6
+  },
+  {
+   "at": "c1b.19-0.10",
+   "img": "light",
+   "from": "upper@0.55",
+   "to": "upper@0.57",
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c1c",
+   "img": "light",
+   "from": "lantern@1.8",
+   "to": "lantern@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "c1c.11-0.10",
+   "img": "conscience",
+   "from": "couple@1.25",
+   "to": "couple@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c1d",
+   "img": "peggotty",
+   "from": "center@0.7",
+   "to": "center@0.72",
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c1e",
+   "img": "conscience",
+   "from": "upper@1.15",
+   "to": "room@1.25",
+   "gray": 0.6,
+   "dim": 0.2,
+   "fade": 1.0
+  },
+  {
+   "at": "c1f",
+   "img": "frame",
+   "from": "painting@0.62",
+   "to": "painting@0.64",
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c1f.10-0.10",
+   "img": "frame",
+   "from": "verse@1.9",
+   "to": "verse@2.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c1g",
+   "img": "conscience",
+   "from": "keys@2.4",
+   "to": "keys@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c1g.17-0.40",
+   "img": "conscience",
+   "from": "man@2.2",
+   "to": "man@2.35",
+   "fade": 0.6
+  },
+  {
+   "at": "c1g.26-0.10",
+   "img": "conscience",
+   "from": "man@2.6",
+   "to": "man@2.7",
+   "fade": 0.5
+  },
+  {
+   "at": "c1h",
+   "img": "egg",
+   "from": "husband@1.3",
+   "to": "husband@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c1h.16-0.10",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "gray": 0.3,
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c1h.20-0.10",
+   "img": "scapegoat",
+   "from": "center@1.0",
+   "to": "goat@1.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c2a",
+   "img": "conscience",
+   "from": "window@1.7",
+   "to": "window@1.8",
+   "fade": 1.0
+  },
+  {
+   "at": "c2a.7-0.10",
+   "img": "conscience",
+   "from": "upper@1.2",
+   "to": "upper@1.28",
+   "fade": 0.8
+  },
+  {
+   "at": "c2a.22-0.30",
+   "img": "conscience",
+   "from": "room@1.35",
+   "to": "room@1.45",
+   "fade": 0.8
+  },
+  {
+   "at": "c2b",
+   "img": "conscience",
+   "from": "piano@1.8",
+   "to": "piano@1.95",
+   "fade": 0.8
+  },
+  {
+   "at": "c2b.4-0.10",
+   "img": "conscience",
+   "from": "books@2.4",
+   "to": "books@2.55",
+   "fade": 0.6
+  },
+  {
+   "at": "c2b.8-0.10",
+   "img": "conscience",
+   "from": "books@2.9",
+   "to": "books@3.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c",
+   "img": "ruskin",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c2c.13-0.10",
+   "img": "conscience",
+   "from": "piano@1.5",
+   "to": "music@1.6",
+   "dim": 0.15,
+   "fade": 0.8
+  },
+  {
+   "at": "c2e",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "gray": 0.6,
+   "dim": 0.25,
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c2e.20-0.10",
+   "img": "conscience",
+   "from": "window@1.9",
+   "to": "window@2.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c2f",
+   "img": "hunt",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "gray": 0.6,
+   "fade": 1.0
+  },
+  {
+   "at": "c2f.19-0.10",
+   "img": "light",
+   "from": "lantern@1.6",
+   "to": "lantern@1.7",
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c3a",
+   "img": "conscience",
+   "from": "face@2.4",
+   "to": "face@2.55",
+   "fade": 1.0
+  },
+  {
+   "at": "c3a.8-0.10",
+   "img": "annie",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c3b",
+   "img": "harp",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c3c",
+   "img": "annie",
+   "from": "center@1.0",
+   "to": "face@1.2",
+   "fade": 1.0
+  },
+  {
+   "at": "c3d",
+   "img": "hunt",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c3d.12-0.30",
+   "img": "annie2",
+   "from": "face@1.2",
+   "to": "face@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d.30-0.30",
+   "img": "conscience",
+   "from": "hands@2.8",
+   "to": "hands@2.95",
+   "fade": 0.8
+  },
+  {
+   "at": "c3e",
+   "img": "conscience",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "fade": 0.8
+  },
+  {
+   "at": "c3e.14-0.10",
+   "img": "annie",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c3f",
+   "img": "scapegoat",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "gray": 0.4,
+   "fade": 1.0
+  },
+  {
+   "at": "c3f.14-0.10",
+   "img": "annie2",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c3g",
+   "img": "harp",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c3g.17-0.10",
+   "img": "rossetti",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "fade": 0.6,
+   "frame": true
+  },
+  {
+   "at": "c4a",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "fade": 1.2,
+   "frame": true
+  },
+  {
+   "at": "c4a.12-0.10",
+   "img": "conscience",
+   "from": "lower@1.0",
+   "to": "lower@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c4b",
+   "img": "conscience",
+   "from": "cat@2.8",
+   "to": "cat@2.95",
+   "fade": 0.8
+  },
+  {
+   "at": "c4b.10-0.30",
+   "img": "conscience",
+   "from": "bird@3.4",
+   "to": "bird@3.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c4c",
+   "img": "conscience",
+   "from": "glove@3.0",
+   "to": "glove@3.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c4c.11-0.30",
+   "img": "conscience",
+   "from": "hem@2.0",
+   "to": "hem@2.1",
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c4d",
+   "img": "conscience",
+   "from": "wool@2.8",
+   "to": "wool@3.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c4e",
+   "img": "clockph",
+   "from": "clock@1.3",
+   "to": "clock@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c4e.12-0.10",
+   "img": "conscience",
+   "from": "clock@3.4",
+   "to": "clock@3.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c4f",
+   "img": "conscience",
+   "from": "tears@3.0",
+   "to": "tears@3.15",
+   "fade": 0.8
+  },
+  {
+   "at": "c4f.11-0.10",
+   "img": "lear",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "fade": 0.6,
+   "frame": true
+  },
+  {
+   "at": "c4f.17-0.10",
+   "img": "clockph",
+   "from": "title@1.4",
+   "to": "music@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c4f.25-0.10",
+   "img": "moore",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "fade": 0.6,
+   "frame": true
+  },
+  {
+   "at": "c4f.34-0.10",
+   "img": "stilly",
+   "from": "lyrics@1.2",
+   "to": "lyrics@1.3",
+   "dim": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c4g",
+   "img": "conscience",
+   "from": "mirror@2.2",
+   "to": "mirror@2.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c4g.11-0.10",
+   "img": "conscience",
+   "from": "window@3.0",
+   "to": "window@3.2",
+   "fade": 0.6
+  },
+  {
+   "at": "c4h",
+   "img": "frame",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c4h.10-0.10",
+   "img": "frame",
+   "from": "border@1.6",
+   "to": "border@1.7",
+   "dim": 0.2,
+   "fade": 0.6
+  },
+  {
+   "at": "c4h.16-0.10",
+   "img": "frame",
+   "from": "top@1.6",
+   "to": "top@1.7",
+   "dim": 0.2,
+   "fade": 0.6
+  },
+  {
+   "at": "c4i",
+   "img": "conscience",
+   "from": "face@2.0",
+   "to": "face@2.1",
+   "gray": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c4i.12-0.30",
+   "img": "combe",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c4i.27-0.40",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c5a",
+   "img": "light",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "conscience",
+   "labels": [
+    "THE LIGHT OF THE WORLD",
+    "THE AWAKENING CONSCIENCE"
+   ],
+   "fade": 1.0
+  },
+  {
+   "at": "c5b",
+   "img": "conscience",
+   "from": "couple@1.4",
+   "to": "couple@1.5",
+   "fade": 1.0
+  },
+  {
+   "at": "c5b.4-0.10",
+   "img": "conscience",
+   "from": "man@2.2",
+   "to": "man@2.35",
+   "fade": 0.6
+  },
+  {
+   "at": "c5c",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "gray": 0.5,
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c5d",
+   "img": "conscience",
+   "from": "face@2.4",
+   "to": "face@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c5d.23-0.10",
+   "img": "conscience",
+   "from": "eyes@3.2",
+   "to": "eyes@3.4",
+   "fade": 0.6
+  },
+  {
+   "at": "c5e",
+   "img": "ruskin",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "fade": 1.0
+  },
+  {
+   "at": "c5e.16-0.10",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "gray": 0.4,
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c5f",
+   "img": "conscience",
+   "from": "keys@2.4",
+   "to": "keys@2.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c5f.7-0.20",
+   "img": "conscience",
+   "from": "upper@1.25",
+   "to": "upper@1.32",
+   "fade": 0.5
+  },
+  {
+   "at": "c5f.9-0.20",
+   "img": "conscience",
+   "from": "bird@3.2",
+   "to": "bird@3.35",
+   "fade": 0.5
+  },
+  {
+   "at": "c5f.10-0.10",
+   "img": "conscience",
+   "from": "face@2.6",
+   "to": "face@2.75",
+   "fade": 0.6
+  },
+  {
+   "at": "c5f.18-0.20",
+   "img": "conscience",
+   "from": "eyes@3.4",
+   "to": "eyes@3.55",
+   "fade": 0.6
+  },
+  {
+   "at": "c5g",
+   "img": "conscience",
+   "from": "room@1.0",
+   "to": "room@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "c5g.12-0.10",
+   "img": "conscience",
+   "from": "piano@1.4",
+   "to": "piano@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c5h",
+   "img": "finding",
+   "from": "center@1.0",
+   "to": "boy@1.15",
+   "fade": 1.0
+  },
+  {
+   "at": "c5h.13-0.10",
+   "img": "conscience",
+   "from": "face@2.2",
+   "to": "face@2.35",
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c6a",
+   "img": "annie",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "fade": 1.0
+  },
+  {
+   "at": "c6b",
+   "img": "annie2",
+   "from": "face@1.25",
+   "to": "face@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.9-0.10",
+   "img": "harp",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c6c",
+   "img": "cremorne",
+   "from": "center@0.75",
+   "to": "center@0.77",
+   "fade": 1.0,
+   "frame": true
+  },
+  {
+   "at": "c6c.17-0.10",
+   "img": "cremorne",
+   "from": "dancers@1.25",
+   "to": "dancers@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c6d",
+   "img": "hunt",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "gray": 0.4,
+   "fade": 1.0
+  },
+  {
+   "at": "c6d.14-0.10",
+   "img": "rossetti",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "gray": 0.5,
+   "fade": 0.6,
+   "frame": true
+  },
+  {
+   "at": "c6e",
+   "img": "conscience",
+   "from": "face@2.6",
+   "to": "face@2.75",
+   "fade": 1.0
+  },
+  {
+   "at": "c6e.13-0.10",
+   "img": "conscience",
+   "from": "eyes@3.3",
+   "to": "eyes@3.45",
+   "fade": 0.6
+  },
+  {
+   "at": "c6f",
+   "img": "conscience",
+   "from": "face@2.2",
+   "to": "face@2.3",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c6f.12-0.10",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "gray": 0.3,
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c6f.27-0.10",
+   "img": "lear",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c6g",
+   "img": "conscience",
+   "from": "noteL@2.0",
+   "to": "noteL@2.12",
+   "fade": 1.0
+  },
+  {
+   "at": "c6g.25-0.30",
+   "img": "conscience",
+   "from": "face@2.4",
+   "to": "face@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c7a",
+   "img": "annie2",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c7a.11-0.10",
+   "img": "ranelagh",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "fade": 0.8,
+   "frame": true
+  },
+  {
+   "at": "c7b",
+   "img": "conscience",
+   "from": "hands@3.0",
+   "to": "hands@3.15",
+   "gray": 0.6,
+   "fade": 0.8
+  },
+  {
+   "at": "c7c",
+   "img": "conscience",
+   "from": "face@2.0",
+   "to": "face@2.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c7c.14-0.10",
+   "img": "conscience",
+   "from": "window@2.2",
+   "to": "window@2.35",
+   "fade": 0.6
+  },
+  {
+   "at": "c7c.18-0.10",
+   "img": "hunt",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c7c.28-0.10",
+   "img": "helen",
+   "from": "face@1.3",
+   "to": "face@1.42",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d",
+   "img": "ranelagh",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c7d.16-0.10",
+   "img": "helen",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d.21-0.10",
+   "img": "annie",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c7e",
+   "img": "annie2",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "fade": 1.0
+  },
+  {
+   "at": "c7e.24-0.10",
+   "img": "hunt",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c7f",
+   "img": "richmond",
+   "from": "river@1.25",
+   "to": "river@1.35",
+   "fade": 1.0
+  },
+  {
+   "at": "c7f.9-0.10",
+   "img": "richmond",
+   "from": "river@1.4",
+   "to": "river@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c7g",
+   "img": "annie",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "fade": 1.0
+  },
+  {
+   "at": "c7h",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "hit": "big",
+   "frame": true
+  },
+  {
+   "at": "c7h.11-0.10",
+   "img": "conscience",
+   "from": "face@2.6",
+   "to": "face@2.75",
+   "fade": 0.8
+  },
+  {
+   "at": "c7h.25-0.10",
+   "img": "conscience",
+   "from": "hands@3.0",
+   "to": "hands@3.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c7i",
+   "img": "conscience",
+   "from": "window@1.9",
+   "to": "window@2.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c7i.15-0.30",
+   "img": "annie",
+   "from": "face@1.45",
+   "to": "face@1.55",
+   "fade": 0.8
+  },
+  {
+   "at": "ending",
+   "img": "tate",
+   "from": "facade@1.0",
+   "to": "facade@1.06",
+   "fade": 1.2
+  },
+  {
+   "at": "ending$+0.60",
+   "img": "conscience",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "fade": 1.2,
+   "frame": true
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold5$-0.50",
+   "to": "c1a-0.60",
+   "kicker": "WILLIAM HOLMAN HUNT · 1853",
+   "text": "The Awakening Conscience"
+  },
+  {
+   "type": "chapter",
+   "from": "c1h$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "A Room in St John's Wood"
+  },
+  {
+   "type": "chapter",
+   "from": "c2f$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "Annie"
+  },
+  {
+   "type": "chapter",
+   "from": "c3g$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "Look Closely"
+  },
+  {
+   "type": "chapter",
+   "from": "c4i$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "A Painful Face"
+  },
+  {
+   "type": "chapter",
+   "from": "c5h$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "While He Was Away"
+  },
+  {
+   "type": "chapter",
+   "from": "c6g$+0.35",
+   "to": "c7a+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "Annie's Choice"
+  },
+  {
+   "type": "chapter",
+   "from": "c1a-0.50",
+   "to": "c1a+1.80",
+   "kicker": "CHAPTER I",
+   "text": "The Still Small Voice"
+  },
+  {
+   "type": "label",
+   "from": "cold1.8+0.30",
+   "to": "cold2.9-0.20",
+   "text": "THE AWAKENING CONSCIENCE · HUNT · 1853"
+  },
+  {
+   "type": "ring",
+   "from": "cold2.20+0.20",
+   "to": "cold2$+0.60",
+   "point": "hands",
+   "img": "conscience",
+   "rx": 170,
+   "ry": 130,
+   "rot": 0
+  },
+  {
+   "type": "lower",
+   "from": "cold3+0.20",
+   "to": "cold3.5-0.15",
+   "text": "William Holman Hunt",
+   "sub": "1827–1910 · SELF-PORTRAIT, 1845"
+  },
+  {
+   "type": "lower",
+   "from": "cold3.14+0.10",
+   "to": "cold3$+0.60",
+   "text": "Annie Miller",
+   "sub": "1835–1925 · DRAWN BY ROSSETTI"
+  },
+  {
+   "type": "label",
+   "from": "cold5.11",
+   "to": "cold5$-0.70",
+   "text": "ANNIE MILLER AS HELEN OF TROY · ROSSETTI"
+  },
+  {
+   "type": "label",
+   "from": "c1a.11+0.10",
+   "to": "c1b-0.20",
+   "text": "HUNT · OUR ENGLISH COASTS · 1852"
+  },
+  {
+   "type": "label",
+   "from": "c1b+1.70",
+   "to": "c1c.11-0.15",
+   "text": "THE LIGHT OF THE WORLD · HUNT · 1851–53"
+  },
+  {
+   "type": "label",
+   "from": "c1d",
+   "to": "c1d$+0.60",
+   "text": "DAVID COPPERFIELD · PHIZ · 1850"
+  },
+  {
+   "type": "label",
+   "from": "c1f",
+   "to": "c1f$+1.00",
+   "text": "HUNT'S FRAME · PROVERBS 25:20"
+  },
+  {
+   "type": "credit",
+   "from": "c1f",
+   "to": "c1f$+1.00",
+   "text": "Photo: Sailko, CC BY 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c1h",
+   "to": "c1h.16-0.15",
+   "text": "AUGUSTUS EGG · PAST AND PRESENT No. 1 · 1858"
+  },
+  {
+   "type": "label",
+   "from": "c1h.20",
+   "to": "c1h$+0.60",
+   "text": "HUNT · THE SCAPEGOAT · THE DEAD SEA, 1854"
+  },
+  {
+   "type": "label",
+   "from": "c2a.7+0.10",
+   "to": "c2b-0.20",
+   "text": "WOODBINE VILLA · ST JOHN'S WOOD"
+  },
+  {
+   "type": "lower",
+   "from": "c2c+0.20",
+   "to": "c2c.13-0.15",
+   "text": "John Ruskin",
+   "sub": "1819–1900 · PORTRAIT BY MILLAIS, 1853–54"
+  },
+  {
+   "type": "lower",
+   "from": "c3a.8+0.20",
+   "to": "c3a$+0.60",
+   "text": "Annie Miller",
+   "sub": "1835–1925 · DRAWN BY ROSSETTI, c. 1860"
+  },
+  {
+   "type": "label",
+   "from": "c3b",
+   "to": "c3b$+0.60",
+   "text": "ANNIE MILLER · ROSSETTI, THE HARP PLAYER"
+  },
+  {
+   "type": "label",
+   "from": "c3f",
+   "to": "c3f.14-0.15",
+   "text": "HUNT · THE SCAPEGOAT · 1854–56"
+  },
+  {
+   "type": "lower",
+   "from": "c3g.17+0.10",
+   "to": "c3g$+0.60",
+   "text": "Dante Gabriel Rossetti",
+   "sub": "1828–1882 · SELF-PORTRAIT, 1847"
+  },
+  {
+   "type": "ring",
+   "from": "c4b.3",
+   "to": "c4b$+0.60",
+   "point": "bird",
+   "img": "conscience",
+   "rx": 200,
+   "ry": 120,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "from": "c4c.5-0.10",
+   "to": "c4c.11-0.40",
+   "point": "glove",
+   "img": "conscience",
+   "rx": 170,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c4e",
+   "to": "c4e.12-0.15",
+   "text": "THE CLOCK UNDER ITS GLASS DOME"
+  },
+  {
+   "type": "credit",
+   "from": "c4e",
+   "to": "c4e.12-0.15",
+   "text": "Photo: Sailko, CC BY 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c4f.11+0.10",
+   "to": "c4f.17-0.15",
+   "text": "Edward Lear",
+   "sub": "1812–1888 · POET, PAINTER, COMPOSER"
+  },
+  {
+   "type": "credit",
+   "from": "c4f.17",
+   "to": "c4f.25-0.15",
+   "text": "Photo: Sailko, CC BY 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c4f.25+0.10",
+   "to": "c4f.34-0.15",
+   "text": "Thomas Moore",
+   "sub": "1779–1852 · BY THOMAS LAWRENCE"
+  },
+  {
+   "type": "label",
+   "from": "c4f.34",
+   "to": "c4f$+0.60",
+   "text": "OFT IN THE STILLY NIGHT · SHEET MUSIC, 1826"
+  },
+  {
+   "type": "label",
+   "from": "c4h",
+   "to": "c4h$+0.80",
+   "text": "THE FRAME, DESIGNED BY HUNT"
+  },
+  {
+   "type": "credit",
+   "from": "c4h",
+   "to": "c4h$+0.80",
+   "text": "Photo: Sailko, CC BY 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c4i.12",
+   "to": "c4i.27-0.45",
+   "text": "Thomas Combe",
+   "sub": "1796–1872 · PORTRAIT BY MILLAIS, 1850"
+  },
+  {
+   "type": "quote",
+   "from": "c5c-0.10",
+   "to": "c5c$+0.90",
+   "text": "This is an absolutely disagreeable picture.",
+   "sub": "MORNING CHRONICLE · 29 APRIL 1854"
+  },
+  {
+   "type": "quote",
+   "from": "c5d.23-0.10",
+   "to": "c5d$+1.00",
+   "text": "The author of \"The Bridge of Sighs\" could not have conceived a more painful-looking face.",
+   "sub": "THE ATHENAEUM · 1854"
+  },
+  {
+   "type": "lower",
+   "from": "c5e+0.20",
+   "to": "c5e.16-0.15",
+   "text": "John Ruskin",
+   "sub": "LETTER TO THE TIMES · 25 MAY 1854"
+  },
+  {
+   "type": "quote",
+   "from": "c5g-0.10",
+   "to": "c5g$+1.00",
+   "text": "There is not a single object in all that room… but it becomes tragical, if rightly read.",
+   "sub": "JOHN RUSKIN · THE TIMES · 25 MAY 1854"
+  },
+  {
+   "type": "label",
+   "from": "c5h",
+   "to": "c5h.13-0.15",
+   "text": "HUNT · THE FINDING OF THE SAVIOUR IN THE TEMPLE"
+  },
+  {
+   "type": "label",
+   "from": "c6b.9",
+   "to": "c6b$+0.60",
+   "text": "ROSSETTI · THE HARP PLAYER (ANNIE MILLER)"
+  },
+  {
+   "type": "label",
+   "from": "c6c",
+   "to": "c6c$+0.60",
+   "text": "CREMORNE GARDENS · PHOEBUS LEVIN · 1864"
+  },
+  {
+   "type": "quote",
+   "from": "c6d.14-0.10",
+   "to": "c6d$+1.00",
+   "text": "I will never forgive Gabriel.",
+   "sub": "HUNT ON ROSSETTI · AS QUOTED BY G. H. FLEMING"
+  },
+  {
+   "type": "quote",
+   "from": "c6f.33-0.10",
+   "to": "c6f$+1.00",
+   "text": "I think that I have materially bettered it now.",
+   "sub": "HUNT TO EDWARD LEAR · 16 APRIL 1857"
+  },
+  {
+   "type": "ring",
+   "from": "c6g+0.30",
+   "to": "c6g.25-0.40",
+   "point": "noteL",
+   "img": "conscience",
+   "rx": 260,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "quote",
+   "from": "c6g.25-0.30",
+   "to": "c6g$+1.00",
+   "text": "…to make certain that its last state compensated for its first.",
+   "sub": "HUNT · MEMOIRS, 1905"
+  },
+  {
+   "type": "lower",
+   "from": "c7a.11+0.10",
+   "to": "c7a$+0.60",
+   "text": "Viscount Ranelagh",
+   "sub": "1812–1885 · VANITY FAIR, 1870"
+  },
+  {
+   "type": "label",
+   "from": "c7c.28",
+   "to": "c7c$+0.60",
+   "text": "ANNIE MILLER AS HELEN OF TROY · ROSSETTI, 1863"
+  },
+  {
+   "type": "label",
+   "from": "c7f",
+   "to": "c7f$+0.60",
+   "text": "THE THAMES FROM RICHMOND HILL · J. R. COZENS"
+  },
+  {
+   "type": "ring",
+   "from": "c7h.32-0.10",
+   "to": "c7h$+0.80",
+   "point": "hands",
+   "img": "conscience",
+   "rx": 200,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending+0.10",
+   "to": "ending$+1.00",
+   "text": "TATE BRITAIN · LONDON · ROOM 10"
+  },
+  {
+   "type": "credit",
+   "from": "ending",
+   "to": "ending$+0.60",
+   "text": "Photo: Julian Herzog, CC BY 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "end",
+   "from": "ending$+1.00",
+   "to": "ending$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "c1h$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c2f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c3g$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c4i$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c5h$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c6g$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  }
+ ],
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -8.0,
+  "duck_db": -7,
+  "fx_db": -12,
+  "transpose": 0,
+  "bar": 5.5,
+  "tracks": [
+   {
+    "file": "src/music/m_n72.ogg",
+    "commons": "File:Chopin Nocturne in Em, Op. posth. 72.ogg",
+    "from": 0,
+    "to": "c1a+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 0.8,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne in E minor, Op. 72 No. 1 · Musopen, Constantin Stephan, CC0"
+   },
+   {
+    "file": "src/music/m_dreaming.ogg",
+    "commons": "File:Robert Schumann - scenes from childhood, op. 15 - vii. dreaming.ogg",
+    "from": "cold5$-0.50",
+    "to": "c2a+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Schumann, Scenes from Childhood: Dreaming · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_n37.ogg",
+    "commons": "File:Chopin- Nocturne op. 37 no. 1.ogg",
+    "from": "c1h$-0.50",
+    "to": "c3a+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne Op. 37 No. 1 · Musopen, Constantin Stephan, CC0"
+   },
+   {
+    "file": "src/music/m_poet.ogg",
+    "commons": "File:Robert Schumann - scenes from childhood, op. 15 - xiii. the poet speaks.ogg",
+    "from": "c2f$-0.50",
+    "to": "c4a+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Schumann, Scenes from Childhood: The Poet Speaks · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_n55.ogg",
+    "commons": "File:Chopin - Nocturne-op-55-no-1.ogg",
+    "from": "c3g$-0.50",
+    "to": "c5a+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne Op. 55 No. 1 · Musopen, Constantin Stephan, CC0"
+   },
+   {
+    "file": "src/music/m_n37.ogg",
+    "commons": "File:Chopin- Nocturne op. 37 no. 1.ogg",
+    "from": "c4i$-0.50",
+    "to": "c6a+1.50",
+    "start": 60.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne Op. 37 No. 1 · Musopen, Constantin Stephan, CC0"
+   },
+   {
+    "file": "src/music/m_fright.ogg",
+    "commons": "File:Robert Schumann - scenes from childhood, op. 15 - xi. frightening.ogg",
+    "from": "c5h$-0.50",
+    "to": "c6e+0.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Schumann, Scenes from Childhood: Frightening · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_n72.ogg",
+    "commons": "File:Chopin Nocturne in Em, Op. posth. 72.ogg",
+    "from": "c6d$-0.50",
+    "to": "c7a+1.50",
+    "start": 40.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Nocturne in E minor, Op. 72 No. 1 · Musopen, Constantin Stephan, CC0"
+   },
+   {
+    "file": "src/music/m_asleep.ogg",
+    "commons": "File:Robert Schumann - scenes from childhood, op. 15 - xii. child falling asleep.ogg",
+    "from": "c6g$-0.50",
+    "to": "c7h+1.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Schumann, Scenes from Childhood: Child Falling Asleep · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_dreaming.ogg",
+    "commons": "File:Robert Schumann - scenes from childhood, op. 15 - vii. dreaming.ogg",
+    "from": "c7g$-0.50",
+    "start": 0.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 8.0,
+    "credit": "Schumann, Scenes from Childhood: Dreaming · Musopen, public domain"
+   }
+  ]
+ },
+ "facts": [
+  {
+   "claim": "The Awakening Conscience, oil on canvas, 1853, by William Holman Hunt (1827–1910); Tate Britain, London (T02075); 76.2 × 55.9 cm; presented by Sir Colin and Lady Anderson 1976; on display in Room 10",
+   "source": "https://www.tate.org.uk/art/artworks/hunt-the-awakening-conscience-t02075 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904"
+  },
+  {
+   "claim": "At first glance it may look like a young married couple, or a brother and sister; but she is his mistress (half dressed, no wedding ring); The woman's left hand shows the absence of a wedding ring, although rings are worn on every other finger",
+   "source": "https://www.tate.org.uk/art/art-terms/p/pre-raphaelite/why-were-pre-raphaelites-so-shocking ; https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10"
+  },
+  {
+   "claim": "Annie Miller, the model, was an uneducated barmaid whom Hunt met in 1850 when she was fifteen; she lived/worked in Chelsea",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10 ; https://en.wikipedia.org/wiki/Annie_Miller ; https://victorianweb.org/painting/dgr/drawings/18.html"
+  },
+  {
+   "claim": "Hunt tried to 'rescue' and educate Annie Miller to make her his wife; the face we see now was repainted later by Hunt",
+   "source": "https://victorianweb.org/painting/dgr/drawings/18.html ; https://guggums.com/the-pre-raphaelites/the-pre-raphaelite-brotherhood/women-of-the-pre-raphaelite-circle/annie-miller/ ; https://en.wikipedia.org/wiki/Annie_Miller"
+  },
+  {
+   "claim": "Hunt was one of the founders of the Pre-Raphaelite Brotherhood (1848) with Millais and Rossetti, a rebellion against the Royal Academy's teaching",
+   "source": "https://en.wikipedia.org/wiki/William_Holman_Hunt ; https://www.tate.org.uk/art/art-terms/p/pre-raphaelite"
+  },
+  {
+   "claim": "In 1851, with The Light of the World on his easel at Chelsea, Hunt thought his spiritual subject called for 'a material counterpart' showing how 'the appeal of the spirit of heavenly love calls a soul to abandon a lower life' (Hunt's memoir). Tate notes Hunt dated the idea 1851 in his first edition and 1853 in his second",
+   "source": "https://archive.org/details/preraphaelitismp02huntuoft (vol. II pp. 429–30) ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "The Light of the World shows Christ at night knocking at a door overgrown with weeds and ivy, never opened (Ruskin's description reprinted by Hunt)",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I pp. 416–17) ; https://en.wikipedia.org/wiki/The_Light_of_the_World_(painting)"
+  },
+  {
+   "claim": "Hunt: in reading David Copperfield he had been deeply touched by old Peggotty's search for little Emily when she had become an outcast, and 'went about to different haunts of fallen girls to find a locality suitable'",
+   "source": "https://archive.org/details/preraphaelitismp02huntuoft (vol. II p. 429) ; https://victorianweb.org/painting/whh/paintings/9.html ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "The verse from Proverbs 25:20 led him to the subject: 'As he that taketh away a garment in cold weather, so is he that singeth songs to an heavy heart'; it is on the frame",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I p. 347) ; https://archive.org/details/preraphaelitismp02huntuoft (vol. II p. 430) ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Hunt's idea: 'the companion of the girl's fall might himself be the unconscious utterer of a divine message', his song stirring her memories while he 'still sings on'",
+   "source": "https://archive.org/details/preraphaelitismp02huntuoft (vol. II p. 430)"
+  },
+  {
+   "claim": "Augustus Egg talked about Hunt's design to the Manchester businessman Thomas Fairbairn, who commissioned the picture; to paint it Hunt deferred his journey to the East",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I pp. 347–8) ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Hunt hired a room at Woodbine Villa, 7 Alpha Place, St John's Wood, a 'maison de convenance' (where men kept their mistresses), as the setting",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Ruskin on the room: everything new — the rosewood furniture's 'terrible lustre', 'its fatal newness', nothing 'that has the old thoughts of home upon it', the embossed books 'marked with no happy wearing of beloved leaves'",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I pp. 418–19, Ruskin's letter to The Times, 25 May 1854) ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "The picture was begun by February 1853 and completed in January 1854, when Hunt left for the Middle East",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8"
+  },
+  {
+   "claim": "Hunt: the dark weather delayed his finishing; he waited for one bright day; 'by four o'clock I had accomplished all'; he left that night by the mail train, and Millais, seeing him off at the station, rushed to the buffet for food because he had not had time to dine; Annie Miller was born in 1835 in Chelsea; her father Henry had been a soldier in the 14th Dragoons, wounded in the Napoleonic Wars",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I pp. 360, 365) ; https://en.wikipedia.org/wiki/Annie_Miller ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html"
+  },
+  {
+   "claim": "Hunt found her at a pub near his studio; he arranged for her to learn to read and to take lessons in deportment, intending to marry her; he planned to marry her after her schooling",
+   "source": "https://guggums.com/the-pre-raphaelites/the-pre-raphaelite-brotherhood/women-of-the-pre-raphaelite-circle/annie-miller/ ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html ; https://victorianweb.org/painting/dgr/drawings/18.html"
+  },
+  {
+   "claim": "Hunt was deeply religious; he went to the Holy Land to paint biblical subjects truthfully",
+   "source": "https://en.wikipedia.org/wiki/William_Holman_Hunt ; https://guggums.com/the-pre-raphaelites/the-pre-raphaelite-brotherhood/women-of-the-pre-raphaelite-circle/annie-miller/"
+  },
+  {
+   "claim": "Before leaving in 1854, Hunt arranged for her education and left money for her upkeep and a list of artists (including Millais) she could sit for",
+   "source": "https://en.wikipedia.org/wiki/Annie_Miller ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html ; https://guggums.com/the-pre-raphaelites/the-pre-raphaelite-brotherhood/women-of-the-pre-raphaelite-circle/annie-miller/"
+  },
+  {
+   "claim": "Hunt definitely did not want Annie to sit for Rossetti (Nahum: 'strictly forbade her to model for other artists, in particular Rossetti'); hedged as 'the story goes'",
+   "source": "https://guggums.com/the-pre-raphaelites/the-pre-raphaelite-brotherhood/women-of-the-pre-raphaelite-circle/annie-miller/ ; https://victorianweb.org/painting/dgr/drawings/18.html ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html"
+  },
+  {
+   "claim": "The painting is meant to be 'read': a cat toying with a broken-winged bird under the table symbolises the woman's plight; A man's discarded glove warns that the likely fate of a cast-off mistress was prostitution (Tate)",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10 ; https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904 ; https://www.tate.org.uk/art/art-terms/p/pre-raphaelite/why-were-pre-raphaelites-so-shocking"
+  },
+  {
+   "claim": "A tangled skein of yarn (wools of an unfinished tapestry) on the floor symbolises the web in which the girl is entrapped; The clock on the piano is encased in a glass dome; Tate's label: 'the female figure enclosed in a glass dome'",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10 ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904"
+  },
+  {
+   "claim": "On the floor: the sheet music of Edward Lear's setting of Tennyson's 'Tears, Idle Tears'; on the piano: Thomas Moore's 'Oft in the Stilly Night', whose words speak of sad memories of a happier past",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://archive.org/details/preraphaelitismp02huntuoft (vol. II p. 430)"
+  },
+  {
+   "claim": "The mirror behind her reflects the sunlit spring garden she gazes at through the window",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10 ; https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904"
+  },
+  {
+   "claim": "The frame, designed by Hunt: bells and marigolds for warning and sorrow, a star above her head as a sign of spiritual revelation",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10 ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Hunt's original title was 'The still small voice'; it was Thomas Combe (Hunt's patron in Oxford) who suggested 'The Awakening Conscience'",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/Thomas_Combe"
+  },
+  {
+   "claim": "Both paintings were exhibited at the Royal Academy in 1854 (The Awakening Conscience no. 377, The Light of the World no. 508); reviews appeared from 29 April; Athenaeum 1854: 'Innocent and unenlightened spectators suppose it to represent a quarrel between a brother and sister'; and 'The author of \"The Bridge of Sighs\" could not have conceived a more painful-looking face'; Morning Chronicle, 29 April 1854: 'This is an absolutely disagreeable picture'",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://archive.org/details/preraphaelitism01hunt (vol. I pp. 405–6) ; https://archive.org/details/preraphaelitism01hunt (vol. I p. 405) ; https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://archive.org/details/preraphaelitism01hunt (vol. I p. 406)"
+  },
+  {
+   "claim": "'The Bridge of Sighs' is Thomas Hood's poem about a woman who drowns herself in the Thames; Ruskin's letter to The Times, 25 May 1854: 'People gaze at it in a blank wonder, and leave it hopelessly'; her face: 'the lips half open… the eyes filled with the fearful light of futurity and with tears of ancient days'",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://en.wikipedia.org/wiki/The_Bridge_of_Sighs_(poem) ; https://archive.org/details/preraphaelitism01hunt (vol. I p. 418) ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=10"
+  },
+  {
+   "claim": "Ruskin: 'There is not a single object in all that room, common, modern, vulgar …, but it becomes tragical, if rightly read'",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I p. 419) ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Ruskin had defended the Pre-Raphaelites before (letters to The Times, 1851) and defended this picture and the PRB",
+   "source": "https://shafe.co.uk/?p=6136 ; https://en.wikipedia.org/wiki/Pre-Raphaelite_Brotherhood"
+  },
+  {
+   "claim": "Hunt read Ruskin's letters in the Holy Land: 'It could not but gratify and encourage me to read these words'",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I p. 419)"
+  },
+  {
+   "claim": "While Hunt was away, Annie sat for Millais (on the approved list), and against Hunt's wishes for George Price Boyce and for Rossetti; She accompanied Rossetti and Boyce to restaurants and for walks in the park, and went to the Cremorne pleasure gardens, where she danced with Boyce",
+   "source": "https://en.wikipedia.org/wiki/Annie_Miller ; https://victorianweb.org/painting/dgr/drawings/18.html ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html"
+  },
+  {
+   "claim": "Hunt returned from his travels in 1856; on discovering this he declared 'I will never forgive Gabriel' (Fleming, quoted by Nahum)",
+   "source": "https://en.wikipedia.org/wiki/Annie_Miller ; https://victorianweb.org/painting/dgr/drawings/18.html"
+  },
+  {
+   "claim": "Fairbairn (who paid 350 guineas) could not bear the woman's expression and persuaded Hunt to soften it; Hunt: 'the possessors, feeling that the expression of the girl was painful, persuaded me to change it'",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://archive.org/details/preraphaelitism01hunt (vol. I p. 418, note) ; https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8"
+  },
+  {
+   "claim": "In spring 1856 Hunt worked on the head while suffering from fever, before the picture went to the Birmingham Society of Artists; on 16 April 1857 he wrote to Edward Lear: 'I think that I have materially bettered it now'",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "In his memoirs (1905) Hunt wrote that the picture was taken back before he was sure, and 'it was never sent to me to make certain that its last state compensated for its first'",
+   "source": "https://archive.org/details/preraphaelitism01hunt (vol. I p. 418, note)"
+  },
+  {
+   "claim": "Hunt and Annie quarrelled and reconciled; she became involved with the 7th Viscount Ranelagh; Hunt broke off the engagement in 1859; Ranelagh suggested she sue Hunt for breach of promise; Ranelagh's first cousin Captain Thomas Thomson fell in love with her; they married on 23 July 1863 at St Pancras Church",
+   "source": "https://en.wikipedia.org/wiki/Annie_Miller ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html"
+  },
+  {
+   "claim": "Thomson suggested threatening to give Annie's trunk full of letters from Hunt to the newspapers; Hunt's friends assumed he bought back the letters; Years later Hunt met her on Richmond Hill, 'a buxom matron with a carriage full of children', and learned that she was happily married",
+   "source": "https://en.wikipedia.org/wiki/Annie_Miller ; https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html"
+  },
+  {
+   "claim": "Annie Miller died in 1925 at Shoreham-by-Sea, aged 90",
+   "source": "https://en.wikipedia.org/wiki/Annie_Miller"
+  },
+  {
+   "claim": "Hunt retouched the painting in 1864 and 1886, as his notes in the spandrels (usually covered by the frame) record",
+   "source": "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  }
+ ],
+ "next": false,
+ "youtube": {
+  "titles": [
+   "It Looks Innocent Until You See Her Hands",
+   "The Painter Who Tried to Remake His Model"
+  ],
+  "description_lead": "William Holman Hunt's The Awakening Conscience (1853, Tate Britain) looks like a couple at the piano, until you see her hands: rings on every finger but the wedding finger. She is a kept woman, and a song has just woken her conscience. Hunt painted it in a rented room at Woodbine Villa in St John's Wood, a 'maison de convenance', and his model was Annie Miller, a Chelsea barmaid he had met when she was fifteen and planned to educate and marry. While he was in the Holy Land she sat for Rossetti and danced at Cremorne; the buyer, Thomas Fairbairn, couldn't bear her painful expression and Hunt repainted her face; in 1863 Annie married Captain Thomas Thomson. John Ruskin defended the painting in The Times: 'not a single object in all that room… but it becomes tragical, if rightly read.'",
+  "hashtags": [
+   "#arthistory",
+   "#preraphaelites",
+   "#tatebritain"
+  ],
+  "credits": [
+   "The Awakening Conscience (1853), The Light of the World, Our English Coasts, The Scapegoat, The Finding of the Saviour in the Temple and a self-portrait by William Holman Hunt: public domain, via Wikimedia Commons (Tate; Keble College, Oxford; Lady Lever Art Gallery; Birmingham Museums; and other collections).",
+   "Drawings and paintings of Annie Miller by Dante Gabriel Rossetti (Helen of Troy, Hamburger Kunsthalle, photo Ad Meskens, released into the public domain); Rossetti's self-portrait, 1847; John Ruskin and Thomas Combe by John Everett Millais; Augustus Egg, Past and Present No. 1 (Tate); Thomas Moore by Thomas Lawrence; Phiz's illustration for David Copperfield; Phoebus Levin, The Dancing Platform at Cremorne Gardens (London Museum); Viscount Ranelagh by Carlo Pellegrini, Vanity Fair 1870 (Yale Center for British Art); John Robert Cozens, The Thames from Richmond Hill; Oft in the Stilly Night, sheet music, 1826 (Library of Congress); Edward Lear, photograph: public domain, via Wikimedia Commons.",
+   "The Awakening Conscience in its frame, and the clock detail: photos Sailko, CC BY 3.0, via Wikimedia Commons.",
+   "Tate Britain, London: photo Julian Herzog, CC BY 4.0, via Wikimedia Commons.",
+   "Music: Robert Schumann, Scenes from Childhood (Musopen, public domain); Frédéric Chopin, Nocturnes Op. 37 No. 1, Op. 55 No. 1 and Op. 72 No. 1 (Musopen, Constantin Stephan, CC0)."
+  ],
+  "thumbnail": {
+   "image": "conscience",
+   "focus": [
+    0.53,
+    0.3
+   ],
+   "span": 0.42,
+   "words": "Not His WIFE"
+  },
+  "intro_chapter": "Not His Wife",
+  "outro_chapter": "Where It Hangs Today",
+  "sources": [
+   "https://www.tate.org.uk/art/artworks/hunt-the-awakening-conscience-t02075",
+   "https://web.archive.org/web/2008/http://www.tate.org.uk/servlet/ViewWork?cgroupid=-1&workid=6996&searchid=false&roomid=false&tabview=text&texttype=8",
+   "https://www.tate.org.uk/art/art-terms/p/pre-raphaelite/why-were-pre-raphaelites-so-shocking",
+   "https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904",
+   "https://en.wikipedia.org/wiki/The_Awakening_Conscience",
+   "https://en.wikipedia.org/wiki/Annie_Miller",
+   "https://archive.org/details/preraphaelitism01hunt",
+   "https://archive.org/details/preraphaelitismp02huntuoft",
+   "https://victorianweb.org/painting/whh/paintings/9.html",
+   "https://victorianweb.org/painting/dgr/drawings/18.html",
+   "https://guggums.com/the-pre-raphaelites/the-pre-raphaelite-brotherhood/women-of-the-pre-raphaelite-circle/annie-miller/",
+   "https://web.archive.org/web/20111008111654/http://preraphaelites.net/anniemiller.html",
+   "https://shafe.co.uk/?p=6136",
+   "https://en.wikipedia.org/wiki/William_Holman_Hunt"
+  ],
+  "pinned_comment": "Hunt's own title for the painting was 'The Still Small Voice'. His friend Thomas Combe renamed it.\n\nWhich detail gave it away for you: the hands, the cat, or the glove? 🖤"
+ }
+}
