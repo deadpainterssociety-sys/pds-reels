@@ -1,0 +1,3735 @@
+{
+ "slug": "repin-cossacks-long",
+ "format": "long",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "Ilya Repin",
+  "born": 1844,
+  "died": 1930,
+  "painting": "Reply of the Zaporozhian Cossacks",
+  "year": "1880–1891",
+  "museum": "State Russian Museum",
+  "city": "St Petersburg",
+  "image": "cossacks",
+  "image_credit": "State Russian Museum, St Petersburg, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1930,
+  "note": "Repin d. 1930: public domain. Period portraits and photographs public domain (Kramskoi 1886, Repin's portraits, photographs before 1910). CC photos (Mikhailovsky Palace, Kharkiv Art Museum, Kachanivka) credited on screen and in the description. Music: Mussorgsky, Musopen recordings, public domain."
+ },
+ "say": {
+  "1670s": "sixteen-seventies",
+  "1878": "eighteen seventy-eight",
+  "1880": "eighteen eighty",
+  "1885": "eighteen eighty-five",
+  "1888": "eighteen eighty-eight",
+  "1891": "eighteen ninety-one",
+  "1897": "eighteen ninety-seven",
+  "1907": "nineteen oh seven",
+  "2014": "twenty fourteen",
+  "2022": "twenty twenty-two"
+ },
+ "ipa": {
+  "Repin": "ɹˈɛpɪn",
+  "Repin's": "ɹˈɛpɪnz",
+  "Zaporozhian": "zˌæpəɹˈoʊʒiən",
+  "Zaporozhians": "zˌæpəɹˈoʊʒiənz",
+  "Mehmed": "mˈɛmɛd",
+  "Dnieper": "nˈiːpɚ",
+  "Khortytsia": "xɔɹtˈɪtsjə",
+  "Mamontov": "mˈɑːməntɔf",
+  "Abramtsevo": "ɐbɹˈɑːmtsɨvə",
+  "Serov": "sɛɹˈɔf",
+  "Tarnovsky": "tɑːɹnˈɔfski",
+  "Yavornytsky": "jɑːvɔɹnˈɪtski",
+  "Sirko": "sˈiːɹkoʊ",
+  "Dragomirov": "dɹɑːɡəmˈiːɹɔf",
+  "Stravinsky": "stɹəvˈɪnski",
+  "Alekseyev": "ɐlɛksˈeɪɛf",
+  "Kuban": "kuːbˈɑːn",
+  "Benois": "bɛnwˈɑː",
+  "Vitebsk": "vˈiːtɛpsk",
+  "Kharkiv": "xˈɑːɹkɪf",
+  "Chuhuiv": "tʃuːhˈuːjɪf",
+  "Kyiv": "kˈiːɪf",
+  "Dmytro": "dmˈɪtɹoʊ",
+  "Vasyl": "vˈɑːsɪl",
+  "Savva": "sˈɑːvə",
+  "Fyodor": "fjˈɔːdɚ",
+  "Bulba": "bˈʊlbə",
+  "Ilya": "ɪljˈɑː"
+ },
+ "chirp_say": {
+  "Yavornytsky": "Yavor-nitsky",
+  "Khortytsia": "Khor-titsya",
+  "Abramtsevo": "Ah-bram-tsevo",
+  "Chuhuiv": "Choo-hoo-yiv",
+  "Alekseyev": "Alek-say-ev",
+  "Dragomirov": "Drago-meerov",
+  "Sirko": "Seerko",
+  "Benois": "Ben-wah",
+  "Mamontov": "Mamon-tov"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "These men are laughing at an emperor.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "They're Cossacks,",
+     0.26,
+     0.94
+    ],
+    [
+     "and they're writing to the Sultan of the Ottoman Empire,",
+     0.26,
+     0.96
+    ],
+    [
+     "one of the most powerful men on earth.",
+     0.91,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "Every line is an insult.",
+     0.39,
+     0.92
+    ],
+    [
+     "Some are too filthy to read out here.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "The letter may never have existed.",
+     0.39,
+     0.93
+    ],
+    [
+     "But the men did.",
+     0.91,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "Almost every face belongs to a real person:",
+     0.33,
+     0.95
+    ],
+    [
+     "a general,",
+     0.26,
+     0.94
+    ],
+    [
+     "a historian,",
+     0.26,
+     0.94
+    ],
+    [
+     "an opera star,",
+     0.26,
+     0.94
+    ],
+    [
+     "a coachman.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "cold6",
+   "perf": [
+    [
+     "It took Ilya Repin eleven years.",
+     0.39,
+     0.93
+    ],
+    [
+     "And when it was done,",
+     0.26,
+     0.94
+    ],
+    [
+     "another emperor paid a fortune for it.",
+     2.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "The story goes like this.",
+     0.52,
+     0.93
+    ],
+    [
+     "Sometime in the 1670s,",
+     0.26,
+     0.95
+    ],
+    [
+     "Sultan Mehmed the Fourth",
+     0.2,
+     0.95
+    ],
+    [
+     "sends a letter to the Zaporozhian Cossacks,",
+     0.26,
+     0.95
+    ],
+    [
+     "a free army of warriors",
+     0.2,
+     0.95
+    ],
+    [
+     "living beyond the rapids of the Dnieper River,",
+     0.2,
+     0.95
+    ],
+    [
+     "in what is now Ukraine.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1a2",
+   "perf": [
+    [
+     "Runaway peasants,",
+     0.26,
+     0.94
+    ],
+    [
+     "adventurers,",
+     0.26,
+     0.94
+    ],
+    [
+     "men with no master.",
+     0.52,
+     0.93
+    ],
+    [
+     "They elected their own leaders,",
+     0.26,
+     0.95
+    ],
+    [
+     "and they spent their lives fighting the Ottomans and the Crimean Tatars.",
+     0.91,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "c1a3",
+   "perf": [
+    [
+     "Mehmed had been sultan since the age of six.",
+     0.39,
+     0.95
+    ],
+    [
+     "Under him, the empire reached deeper into Europe than ever,",
+     0.26,
+     0.96
+    ],
+    [
+     "and a few years later, his army would be at the gates of Vienna.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "He lists his titles.",
+     0.39,
+     0.94
+    ],
+    [
+     "Brother of the sun and moon.",
+     0.39,
+     0.92
+    ],
+    [
+     "Lord of kingdom after kingdom.",
+     0.52,
+     0.93
+    ],
+    [
+     "And he orders them to surrender,",
+     0.26,
+     0.94
+    ],
+    [
+     "*voluntarily and without any resistance.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "The Cossacks write back.",
+     0.52,
+     0.93
+    ],
+    [
+     "They call him a Babylonian scullion,",
+     0.26,
+     0.94
+    ],
+    [
+     "a Macedonian wheelwright,",
+     0.26,
+     0.94
+    ],
+    [
+     "a brewer of Jerusalem,",
+     0.39,
+     0.94
+    ],
+    [
+     "and things that are much, much worse.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "They explain that they can't date the letter,",
+     0.2,
+     0.95
+    ],
+    [
+     "because they don't own a calendar.",
+     0.52,
+     0.94
+    ],
+    [
+     "And they sign off with an invitation",
+     0.26,
+     0.94
+    ],
+    [
+     "we'll leave to your imagination.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "Did any of this happen?",
+     0.52,
+     0.92
+    ],
+    [
+     "Probably not as written.",
+     0.52,
+     0.92
+    ],
+    [
+     "Many versions survive,",
+     0.26,
+     0.95
+    ],
+    [
+     "with different dates,",
+     0.26,
+     0.95
+    ],
+    [
+     "different signatures,",
+     0.26,
+     0.95
+    ],
+    [
+     "even different Cossacks.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c1f",
+   "perf": [
+    [
+     "Historians think it began as a pamphlet,",
+     0.26,
+     0.95
+    ],
+    [
+     "one of many fake letters from the sultan",
+     0.2,
+     0.95
+    ],
+    [
+     "that went around Europe.",
+     0.65,
+     0.94
+    ],
+    [
+     "But two centuries later,",
+     0.26,
+     0.95
+    ],
+    [
+     "people were still copying it out by hand.",
+     0.52,
+     0.94
+    ],
+    [
+     "In Ukraine, Repin said,",
+     0.2,
+     0.94
+    ],
+    [
+     "every church sexton had a copy.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "In the summer of 1878,",
+     0.26,
+     0.95
+    ],
+    [
+     "Repin is a guest at Abramtsevo,",
+     0.26,
+     0.95
+    ],
+    [
+     "the country estate of Savva Mamontov,",
+     0.2,
+     0.95
+    ],
+    [
+     "a railway tycoon who loves to collect artists.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c2a2",
+   "perf": [
+    [
+     "Repin had grown up with these stories.",
+     0.39,
+     0.94
+    ],
+    [
+     "He was born in Chuhuiv, in Ukraine,",
+     0.26,
+     0.95
+    ],
+    [
+     "and as a young man he had illustrated Gogol's Cossack novel, *Taras Bulba.*",
+     0.52,
+     0.95
+    ],
+    [
+     "Gogol wrote about them for good reason, he said.",
+     0.26,
+     0.95
+    ],
+    [
+     "It's all true.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "Russia has just fought another war against the Ottoman Empire.",
+     0.52,
+     0.96
+    ],
+    [
+     "And the story goes that one evening,",
+     0.2,
+     0.95
+    ],
+    [
+     "someone reads the old Cossack letter out loud.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "Repin can't let it go.",
+     0.52,
+     0.92
+    ],
+    [
+     "Before the summer is over,",
+     0.2,
+     0.95
+    ],
+    [
+     "he has made a first pencil sketch:",
+     0.26,
+     0.94
+    ],
+    [
+     "Cossacks around a table,",
+     0.26,
+     0.94
+    ],
+    [
+     "laughing.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c2d",
+   "perf": [
+    [
+     "Two years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "he goes to see their land for himself.",
+     0.52,
+     0.94
+    ],
+    [
+     "He takes his fifteen-year-old pupil,",
+     0.2,
+     0.95
+    ],
+    [
+     "Valentin Serov,",
+     0.26,
+     0.93
+    ],
+    [
+     "who will become a great painter too.",
+     0.91,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "They travel along the Dnieper,",
+     0.26,
+     0.95
+    ],
+    [
+     "past the rapids,",
+     0.26,
+     0.94
+    ],
+    [
+     "to Khortytsia island,",
+     0.2,
+     0.94
+    ],
+    [
+     "the old heartland of the Cossacks.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2f",
+   "perf": [
+    [
+     "Repin draws everything:",
+     0.39,
+     0.93
+    ],
+    [
+     "faces in the villages,",
+     0.26,
+     0.94
+    ],
+    [
+     "old weapons,",
+     0.26,
+     0.94
+    ],
+    [
+     "clothes.",
+     0.52,
+     0.93
+    ],
+    [
+     "A collector, Vasyl Tarnovsky,",
+     0.2,
+     0.95
+    ],
+    [
+     "opens his whole collection of Cossack antiquities to him.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2g",
+   "perf": [
+    [
+     "That autumn,",
+     0.26,
+     0.94
+    ],
+    [
+     "Leo Tolstoy comes to his studio in Moscow",
+     0.26,
+     0.95
+    ],
+    [
+     "and tells him to think bigger.",
+     0.52,
+     0.92
+    ],
+    [
+     "Not a funny little episode,",
+     0.2,
+     0.94
+    ],
+    [
+     "but the spirit of a whole people.",
+     0.52,
+     0.93
+    ],
+    [
+     "Repin makes the canvas wider,",
+     0.26,
+     0.94
+    ],
+    [
+     "and adds more men.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2h",
+   "perf": [
+    [
+     "Repin is already in love with his Cossacks.",
+     0.39,
+     0.94
+    ],
+    [
+     "He writes to his friend, the critic Vladimir Stasov:",
+     0.52,
+     0.95
+    ],
+    [
+     "*No one on this earth*",
+     0.2,
+     0.9
+    ],
+    [
+     "*has felt liberty, equality and fraternity*",
+     0.2,
+     0.9
+    ],
+    [
+     "*as deeply as they!*",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "Here is the secret of this painting.",
+     0.52,
+     0.93
+    ],
+    [
+     "Repin didn't invent these Cossacks.",
+     0.52,
+     0.93
+    ],
+    [
+     "He cast them.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "The scribe in the middle,",
+     0.2,
+     0.94
+    ],
+    [
+     "grinning as he writes,",
+     0.26,
+     0.94
+    ],
+    [
+     "is Dmytro Yavornytsky,",
+     0.26,
+     0.93
+    ],
+    [
+     "a young historian of the Cossacks",
+     0.2,
+     0.95
+    ],
+    [
+     "who became Repin's adviser.",
+     0.78,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "He didn't want to pose.",
+     0.39,
+     0.93
+    ],
+    [
+     "So Repin handed him a magazine of cartoons,",
+     0.26,
+     0.95
+    ],
+    [
+     "waited for the smile,",
+     0.39,
+     0.93
+    ],
+    [
+     "and painted it.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "The old ataman leaning over him with a pipe,",
+     0.2,
+     0.94
+    ],
+    [
+     "the legendary Ivan Sirko,",
+     0.26,
+     0.93
+    ],
+    [
+     "is a real general:",
+     0.26,
+     0.94
+    ],
+    [
+     "Mikhail Dragomirov,",
+     0.2,
+     0.93
+    ],
+    [
+     "commander of the army in Kyiv.",
+     0.52,
+     0.94
+    ],
+    [
+     "When Repin met him,",
+     0.2,
+     0.95
+    ],
+    [
+     "he is said to have cried:",
+     0.26,
+     0.94
+    ],
+    [
+     "*a living Sirko!*",
+     1.04,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "c3d2",
+   "perf": [
+    [
+     "Dragomirov was famous for his wit.",
+     0.39,
+     0.94
+    ],
+    [
+     "The story goes that he once forgot the tsar's name day,",
+     0.26,
+     0.95
+    ],
+    [
+     "and sent his congratulations two days late, by telegram:",
+     0.39,
+     0.95
+    ],
+    [
+     "*for the third day we've been drinking to Your Majesty's health.*",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "And somewhere in this crowd",
+     0.2,
+     0.94
+    ],
+    [
+     "is Fyodor Stravinsky,",
+     0.26,
+     0.93
+    ],
+    [
+     "a star of the opera in St Petersburg,",
+     0.26,
+     0.95
+    ],
+    [
+     "and the father of the composer",
+     0.13,
+     0.95
+    ],
+    [
+     "Igor Stravinsky.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "The hardest model to get",
+     0.2,
+     0.95
+    ],
+    [
+     "was a bald head.",
+     0.52,
+     0.9
+    ],
+    [
+     "Repin wanted the back of one particular skull,",
+     0.2,
+     0.95
+    ],
+    [
+     "belonging to an imperial official, Georgy Alekseyev,",
+     0.26,
+     0.95
+    ],
+    [
+     "who refused to sit.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3g",
+   "perf": [
+    [
+     "So Yavornytsky invited him to breakfast",
+     0.2,
+     0.95
+    ],
+    [
+     "and brought out his coin collection.",
+     0.39,
+     0.94
+    ],
+    [
+     "While Alekseyev bent over the coins,",
+     0.2,
+     0.95
+    ],
+    [
+     "Repin quietly drew the back of his head.",
+     0.78,
+     0.93
+    ],
+    [
+     "It takes centuries, he supposedly said,",
+     0.2,
+     0.94
+    ],
+    [
+     "to make a head like that.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3h",
+   "perf": [
+    [
+     "The collector Tarnovsky became the judge.",
+     0.39,
+     0.94
+    ],
+    [
+     "His coachman became a ragged warrior.",
+     0.52,
+     0.94
+    ],
+    [
+     "A professor,",
+     0.26,
+     0.94
+    ],
+    [
+     "a teacher,",
+     0.26,
+     0.94
+    ],
+    [
+     "a student,",
+     0.39,
+     0.94
+    ],
+    [
+     "even a stranger Repin met on a river pier.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "Then Repin got stuck.",
+     0.65,
+     0.9
+    ],
+    [
+     "Again and again,",
+     0.26,
+     0.94
+    ],
+    [
+     "he put the Cossacks aside",
+     0.2,
+     0.95
+    ],
+    [
+     "and painted something else.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "A religious procession.",
+     0.39,
+     0.93
+    ],
+    [
+     "A saint stopping an execution.",
+     0.52,
+     0.93
+    ],
+    [
+     "And in 1885,",
+     0.26,
+     0.95
+    ],
+    [
+     "Ivan the Terrible,",
+     0.26,
+     0.92
+    ],
+    [
+     "cradling the son he has just struck down.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "Perhaps the darkest picture he ever painted,",
+     0.26,
+     0.93
+    ],
+    [
+     "made between the laughs.",
+     0.52,
+     0.92
+    ],
+    [
+     "The tsar banned it from exhibition.",
+     0.52,
+     0.94
+    ],
+    [
+     "We told that story in a Short on this channel.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "But Repin always came back to the Cossacks.",
+     0.52,
+     0.94
+    ],
+    [
+     "In 1888,",
+     0.26,
+     0.95
+    ],
+    [
+     "he went all the way to the Kuban,",
+     0.2,
+     0.95
+    ],
+    [
+     "in the Caucasus,",
+     0.26,
+     0.94
+    ],
+    [
+     "where descendants of the Zaporozhians still lived,",
+     0.2,
+     0.95
+    ],
+    [
+     "to draw their faces.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "In 1891,",
+     0.26,
+     0.95
+    ],
+    [
+     "it was finally done.",
+     0.52,
+     0.92
+    ],
+    [
+     "Over two metres high,",
+     0.26,
+     0.94
+    ],
+    [
+     "three and a half wide.",
+     0.65,
+     0.94
+    ],
+    [
+     "And along the bottom edge,",
+     0.2,
+     0.95
+    ],
+    [
+     "next to his name,",
+     0.26,
+     0.94
+    ],
+    [
+     "Repin wrote the years it had cost him:",
+     0.26,
+     0.95
+    ],
+    [
+     "1880 to 1891.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "Not everyone laughed.",
+     0.52,
+     0.92
+    ],
+    [
+     "The critic Alexandre Benois",
+     0.2,
+     0.94
+    ],
+    [
+     "called it coarse and ridiculous.",
+     0.39,
+     0.93
+    ],
+    [
+     "Others said it had no ideals at all.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "But one man liked it enough",
+     0.2,
+     0.94
+    ],
+    [
+     "to pay thirty-five thousand rubles,",
+     0.26,
+     0.93
+    ],
+    [
+     "an enormous sum:",
+     0.39,
+     0.92
+    ],
+    [
+     "Alexander the Third,",
+     0.2,
+     0.93
+    ],
+    [
+     "Emperor of all Russia.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "Think about that.",
+     0.52,
+     0.92
+    ],
+    [
+     "A painting of free men mocking an emperor",
+     0.26,
+     0.94
+    ],
+    [
+     "went to hang in an emperor's palace.",
+     0.78,
+     0.9
+    ],
+    [
+     "More than a century earlier,",
+     0.26,
+     0.94
+    ],
+    [
+     "Catherine the Great's army had destroyed the last fortress of the Cossacks.",
+     0.39,
+     0.95
+    ],
+    [
+     "Now her great-great-grandson owned their portrait.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "Repin wrote to Yavornytsky with the news,",
+     0.26,
+     0.95
+    ],
+    [
+     "and one word:",
+     0.39,
+     0.92
+    ],
+    [
+     "*hurrah!*",
+     1.04,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "With the money,",
+     0.26,
+     0.94
+    ],
+    [
+     "he bought a country estate near Vitebsk,",
+     0.26,
+     0.95
+    ],
+    [
+     "where he would spend his summers for years.",
+     0.78,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "The painting won gold medals in Munich and Budapest.",
+     0.39,
+     0.95
+    ],
+    [
+     "And in 1897,",
+     0.26,
+     0.95
+    ],
+    [
+     "the next tsar, Nicholas the Second,",
+     0.2,
+     0.94
+    ],
+    [
+     "gave it to a new museum in St Petersburg:",
+     0.26,
+     0.95
+    ],
+    [
+     "the Russian Museum.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "But Repin wasn't finished with them.",
+     0.52,
+     0.93
+    ],
+    [
+     "He had already started a second version,",
+     0.2,
+     0.95
+    ],
+    [
+     "meant to be more historically accurate.",
+     0.78,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "Look closely,",
+     0.39,
+     0.92
+    ],
+    [
+     "and you can spot the differences.",
+     0.39,
+     0.94
+    ],
+    [
+     "The scribe is older now,",
+     0.26,
+     0.94
+    ],
+    [
+     "and he peers at the letter",
+     0.2,
+     0.94
+    ],
+    [
+     "through little round spectacles.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "That version ended up in Kharkiv,",
+     0.26,
+     0.94
+    ],
+    [
+     "in Ukraine,",
+     0.26,
+     0.94
+    ],
+    [
+     "not far from the town where Repin was born.",
+     0.65,
+     0.94
+    ],
+    [
+     "In 1907, Repin gave the same museum his portrait of General Dragomirov,",
+     0.2,
+     0.96
+    ],
+    [
+     "his living Sirko.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "In March 2022,",
+     0.26,
+     0.95
+    ],
+    [
+     "Russian shelling shattered the museum's windows.",
+     0.52,
+     0.95
+    ],
+    [
+     "Its staff took the second Cossacks off the wall",
+     0.2,
+     0.95
+    ],
+    [
+     "and moved it to safety.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "And this June,",
+     0.26,
+     0.94
+    ],
+    [
+     "a Russian drone set the museum on fire.",
+     0.78,
+     0.94
+    ],
+    [
+     "The second Cossacks survived.",
+     2.2,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7a0",
+   "perf": [
+    [
+     "Years later, at a dinner in his honour,",
+     0.2,
+     0.95
+    ],
+    [
+     "Yavornytsky raised a glass to Repin.",
+     0.39,
+     0.94
+    ],
+    [
+     "He thanked him for making the Cossacks famous.",
+     0.39,
+     0.94
+    ],
+    [
+     "We were small, he said,",
+     0.2,
+     0.93
+    ],
+    [
+     "close to the ground.",
+     0.39,
+     0.93
+    ],
+    [
+     "Now we stand a head taller.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "Since 2014,",
+     0.26,
+     0.95
+    ],
+    [
+     "Ukrainian soldiers have restaged this painting",
+     0.2,
+     0.95
+    ],
+    [
+     "again and again,",
+     0.26,
+     0.94
+    ],
+    [
+     "in uniform,",
+     0.26,
+     0.94
+    ],
+    [
+     "writing replies of their own.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "So,",
+     0.26,
+     0.92
+    ],
+    [
+     "did the Cossacks really write to the sultan?",
+     0.52,
+     0.93
+    ],
+    [
+     "Probably not like this.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "But Repin wasn't painting a document.",
+     0.39,
+     0.93
+    ],
+    [
+     "He was painting a laugh.",
+     0.65,
+     0.9
+    ],
+    [
+     "Free men,",
+     0.26,
+     0.92
+    ],
+    [
+     "laughing at an empire,",
+     0.26,
+     0.92
+    ],
+    [
+     "and meaning every word.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "The letter may never have been sent.",
+     0.52,
+     0.92
+    ],
+    [
+     "It's still being written.",
+     2.08,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the State Russian Museum, in St Petersburg.",
+     1.3,
+     0.92
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "cossacks": {
+   "file": "src/cossacks.jpg",
+   "commons": "File:Ilja Jefimowitsch Repin - Reply of the Zaporozhian Cossacks - Yorck.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "taras": [
+     0.73,
+     0.27
+    ],
+    "belly": [
+     0.723,
+     0.45
+    ],
+    "scribe": [
+     0.523,
+     0.555
+    ],
+    "quill": [
+     0.5,
+     0.63
+    ],
+    "letter": [
+     0.53,
+     0.66
+    ],
+    "sirko": [
+     0.578,
+     0.43
+    ],
+    "pipe": [
+     0.57,
+     0.46
+    ],
+    "bald": [
+     0.597,
+     0.62
+    ],
+    "shirtless": [
+     0.4,
+     0.57
+    ],
+    "back": [
+     0.37,
+     0.64
+    ],
+    "oldman": [
+     0.315,
+     0.48
+    ],
+    "young": [
+     0.425,
+     0.46
+    ],
+    "laugher": [
+     0.542,
+     0.285
+    ],
+    "headband": [
+     0.347,
+     0.23
+    ],
+    "fist": [
+     0.43,
+     0.2
+    ],
+    "hat": [
+     0.65,
+     0.12
+    ],
+    "left": [
+     0.22,
+     0.3
+    ],
+    "right": [
+     0.82,
+     0.42
+    ],
+    "table": [
+     0.55,
+     0.66
+    ],
+    "sig": [
+     0.535,
+     0.975
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "upper": [
+     0.5,
+     0.36
+    ],
+    "crowd": [
+     0.45,
+     0.4
+    ]
+   }
+  },
+  "kharkiv": {
+   "file": "src/kharkiv.jpg",
+   "commons": "File:Reply of the Zaporozhian Cossacks (sketch, 1893, Kharkiv).jpg",
+   "depth": true,
+   "points": {
+    "scribe": [
+     0.53,
+     0.55
+    ],
+    "taras": [
+     0.9,
+     0.29
+    ],
+    "shirtless": [
+     0.37,
+     0.6
+    ],
+    "center": [
+     0.5,
+     0.5
+    ],
+    "upper": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "gtg": {
+   "file": "src/gtg.jpg",
+   "commons": "File:Reply of the Zaporozhian Cossacks (sketch, 1880-90, GTG) 2.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "left": [
+     0.35,
+     0.45
+    ],
+    "right": [
+     0.65,
+     0.45
+    ]
+   }
+  },
+  "ateneum": {
+   "file": "src/ateneum.jpg",
+   "commons": "File:Repin Study for Zaporozhian cossacks Ateneum.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "heads": [
+     0.45,
+     0.4
+    ]
+   }
+  },
+  "sketch78": {
+   "file": "src/sketch78.jpg",
+   "commons": "File:Repin Zaporozhtsy sketch 1878 2.JPG",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "pencil": {
+   "file": "src/pencil.jpg",
+   "commons": "File:Repin Zaporozhian Cossacks pencil study ca 1880.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "studyhat": {
+   "file": "src/studyhat.jpg",
+   "commons": "File:Repin Zaporozhian cossack wearing a hat etc end of 1880s gtg.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "left": [
+     0.4,
+     0.4
+    ]
+   }
+  },
+  "repin": {
+   "file": "src/repin94.jpg",
+   "commons": "File:1894Репин.jpg",
+   "points": {
+    "face": [
+     0.56,
+     0.3
+    ],
+    "body": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "yav": {
+   "file": "src/yav.jpg",
+   "commons": "File:Dmytro Yavornytsky (1855-1940).jpg",
+   "points": {
+    "face": [
+     0.38,
+     0.11
+    ],
+    "body": [
+     0.45,
+     0.25
+    ]
+   }
+  },
+  "drag": {
+   "file": "src/drag.jpg",
+   "commons": "File:Dragomirov Mikhail Ivanovich 2.jpg",
+   "points": {
+    "face": [
+     0.46,
+     0.265
+    ],
+    "body": [
+     0.48,
+     0.4
+    ]
+   }
+  },
+  "dragrepin": {
+   "file": "src/dragrepin.jpg",
+   "commons": "File:Dragomirov by Repin.jpg",
+   "points": {
+    "face": [
+     0.48,
+     0.3
+    ],
+    "body": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "sirkostudy": {
+   "file": "src/sirko.jpg",
+   "commons": "File:Sirko by Repin.jpg",
+   "points": {
+    "face": [
+     0.7,
+     0.42
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "strav": {
+   "file": "src/strav.jpg",
+   "commons": "File:Stravinskiy FI.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.25
+    ],
+    "body": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "mehmed": {
+   "file": "src/mehmed.jpg",
+   "commons": "File:Sultan Mehmed IV (2).jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.46,
+     0.235
+    ],
+    "bust": [
+     0.47,
+     0.3
+    ],
+    "body": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "tolstoy": {
+   "file": "src/tolstoy.jpg",
+   "commons": "File:Ilya Efimovich Repin (1844-1930) - Portrait of Leo Tolstoy (1887).jpg",
+   "points": {
+    "face": [
+     0.55,
+     0.33
+    ],
+    "body": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "serov": {
+   "file": "src/serov.jpg",
+   "commons": "File:Valentin Alexandrovich Serov - Self-portrait.jpg",
+   "points": {
+    "face": [
+     0.55,
+     0.42
+    ],
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "mamontov": {
+   "file": "src/mamontov.jpg",
+   "commons": "File:Mamontov by Repin 1878.jpg",
+   "depth": true,
+   "points": {
+    "face": [
+     0.5,
+     0.32
+    ],
+    "body": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "palace": {
+   "file": "src/palace.jpg",
+   "commons": "File:SPB Palace square and Alexander's column 1890-1900.jpg",
+   "depth": true,
+   "points": {
+    "column": [
+     0.53,
+     0.42
+    ],
+    "square": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  "museum": {
+   "file": "src/museum.jpg",
+   "commons": "File:2018 SPb Mikhailovsky Palace 01.jpg",
+   "depth": true,
+   "credit": "The Mikhailovsky Palace (State Russian Museum), St Petersburg: photo Andrey Korzun, CC BY-SA 4.0",
+   "points": {
+    "facade": [
+     0.5,
+     0.45
+    ],
+    "door": [
+     0.5,
+     0.6
+    ]
+   }
+  },
+  "stasov": {
+   "file": "src/stasov.jpg",
+   "commons": "File:Stasov by Repin 1889.jpg",
+   "points": {
+    "face": [
+     0.45,
+     0.19
+    ],
+    "body": [
+     0.47,
+     0.42
+    ]
+   }
+  },
+  "sich": {
+   "file": "src/sich.jpg",
+   "commons": "File:План Запорожской Сечи на 1742 г. Денис де Боскит. Грав.нач.XIXв ГИМ e1.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "river": [
+     0.6,
+     0.62
+    ]
+   }
+  },
+  "ivan": {
+   "file": "src/ivan.jpg",
+   "commons": "File:Répine Ivan le Terrible et son fils Ivan principale version 1883 - 1885.jpg",
+   "depth": true,
+   "points": {
+    "eyes": [
+     0.495,
+     0.29
+    ],
+    "faces": [
+     0.51,
+     0.34
+    ],
+    "son": [
+     0.525,
+     0.4
+    ],
+    "center": [
+     0.5,
+     0.52
+    ]
+   }
+  },
+  "alex3": {
+   "file": "src/alex3.jpg",
+   "commons": "File:Kramskoy Alexander III.jpg",
+   "points": {
+    "face": [
+     0.47,
+     0.2
+    ],
+    "body": [
+     0.47,
+     0.45
+    ]
+   }
+  },
+  "kachan": {
+   "file": "src/kachan.jpg",
+   "commons": "File:Exterior of palace in Kachanivka 24.jpg",
+   "depth": true,
+   "credit": "Kachanivka palace: photo Dmytro Petishkin, CC BY 4.0",
+   "points": {
+    "palace": [
+     0.5,
+     0.55
+    ]
+   }
+  },
+  "kmuseum": {
+   "file": "src/xudmuzej.jpg",
+   "commons": "File:Xud-muzej.jpg",
+   "credit": "Kharkiv Art Museum: photo San4oss, CC BY-SA 4.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "kursk": {
+   "file": "src/kursk.jpg",
+   "commons": "File:Ilya Repin - Крестный ход в Курской губернии - Google Art Project.jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.45,
+     0.55
+    ],
+    "shrine": [
+     0.88,
+     0.3
+    ]
+   }
+  },
+  "nicholas": {
+   "file": "src/nicholas.jpg",
+   "commons": "File:Ilja Jefimowitsch Repin - Saint Nicholas of Myra saves three innocents from death.jpg",
+   "points": {
+    "saint": [
+     0.45,
+     0.24
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "zdravnevo": {
+   "file": "src/zdravnevo.jpg",
+   "commons": "File:109. Здравнево. Усадьба Ильи Репина.jpg",
+   "depth": true,
+   "credit": "Zdravnevo, Repin's estate near Vitebsk: photo GAlexandrova, CC BY-SA 4.0",
+   "points": {
+    "house": [
+     0.5,
+     0.55
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "cossacks",
+   "from": "taras@2.5",
+   "to": "taras@2.35"
+  },
+  {
+   "at": "cold1.6-0.10",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "hit": "big",
+   "dolly": [
+    0,
+    0.03
+   ]
+  },
+  {
+   "at": "cold2.4-0.10",
+   "img": "cossacks",
+   "from": "scribe@2.2",
+   "to": "scribe@2.35",
+   "fade": 0.6
+  },
+  {
+   "at": "cold2.7-0.10",
+   "img": "mehmed",
+   "from": "bust@1.3",
+   "to": "bust@1.4",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3",
+   "img": "cossacks",
+   "from": "laugher@2.3",
+   "to": "laugher@2.45",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3.5-0.10",
+   "img": "cossacks",
+   "from": "oldman@2.4",
+   "to": "oldman@2.55",
+   "fade": 0.5
+  },
+  {
+   "at": "cold4",
+   "img": "cossacks",
+   "from": "letter@2.6",
+   "to": "letter@2.45",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "cold4.6-0.10",
+   "img": "cossacks",
+   "from": "sirko@1.9",
+   "to": "sirko@2.0",
+   "fade": 0.5
+  },
+  {
+   "at": "cold5.9-0.10",
+   "img": "drag",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "gray": 1,
+   "fade": 0.4
+  },
+  {
+   "at": "cold5.11-0.10",
+   "img": "yav",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.4
+  },
+  {
+   "at": "cold5.13-0.10",
+   "img": "strav",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.4
+  },
+  {
+   "at": "cold5.16-0.10",
+   "img": "cossacks",
+   "from": "right@1.5",
+   "to": "right@1.6",
+   "fade": 0.4
+  },
+  {
+   "at": "cold6",
+   "img": "repin",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "cold6.11-0.10",
+   "img": "alex3",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "fade": 0.6
+  },
+  {
+   "at": "cold6.16-0.10",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dim": 0.3,
+   "fade": 1.2
+  },
+  {
+   "at": "c1a",
+   "img": "mehmed",
+   "from": "face@1.35",
+   "to": "face@1.45",
+   "fade": 1.0
+  },
+  {
+   "at": "c1a.18-0.10",
+   "img": "cossacks",
+   "from": "crowd@1.3",
+   "to": "crowd@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c1a.26-0.10",
+   "img": "sich",
+   "from": "river@1.0",
+   "to": "river@1.08",
+   "gray": 0.4,
+   "dim": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c1a2",
+   "img": "cossacks",
+   "from": "shirtless@2.0",
+   "to": "shirtless@2.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c1a2.7-0.10",
+   "img": "cossacks",
+   "from": "sirko@1.7",
+   "to": "sirko@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c1a2.17-0.10",
+   "img": "cossacks",
+   "from": "headband@2.0",
+   "to": "headband@2.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c1a3",
+   "img": "mehmed",
+   "from": "bust@1.0",
+   "to": "face@1.15",
+   "fade": 1.0
+  },
+  {
+   "at": "c1a3.32-0.60",
+   "img": "mehmed",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "dim": 0.25,
+   "fade": 0.6
+  },
+  {
+   "at": "c1b",
+   "img": "mehmed",
+   "from": "bust@1.25",
+   "to": "bust@1.35",
+   "fade": 0.8
+  },
+  {
+   "at": "c1b.15-0.10",
+   "img": "cossacks",
+   "from": "scribe@1.8",
+   "to": "scribe@1.9",
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c1c",
+   "img": "cossacks",
+   "from": "scribe@2.4",
+   "to": "scribe@2.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c1c.8-0.10",
+   "img": "cossacks",
+   "from": "laugher@2.2",
+   "to": "laugher@2.3",
+   "fade": 0.4
+  },
+  {
+   "at": "c1c.11-0.10",
+   "img": "cossacks",
+   "from": "oldman@2.2",
+   "to": "oldman@2.3",
+   "fade": 0.4
+  },
+  {
+   "at": "c1c.14-0.10",
+   "img": "cossacks",
+   "from": "belly@1.9",
+   "to": "belly@2.0",
+   "fade": 0.4
+  },
+  {
+   "at": "c1c.17-0.10",
+   "img": "cossacks",
+   "from": "young@2.3",
+   "to": "young@2.4",
+   "fade": 0.4
+  },
+  {
+   "at": "c1d",
+   "img": "cossacks",
+   "from": "letter@2.9",
+   "to": "letter@2.75",
+   "fade": 0.8
+  },
+  {
+   "at": "c1d.14-0.10",
+   "img": "cossacks",
+   "from": "hat@1.9",
+   "to": "hat@2.0",
+   "fade": 0.6
+  },
+  {
+   "at": "c1e",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.6,
+   "fade": 1.0
+  },
+  {
+   "at": "c1e.9-0.10",
+   "img": "cossacks",
+   "from": "letter@2.3",
+   "to": "letter@2.4",
+   "gray": 0.6,
+   "fade": 0.8
+  },
+  {
+   "at": "c1f",
+   "img": "gtg",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "fade": 1.0
+  },
+  {
+   "at": "c1f.19-0.10",
+   "img": "gtg",
+   "from": "right@1.3",
+   "to": "left@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c1f.31-0.10",
+   "img": "repin",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c2a",
+   "img": "mamontov",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 1.0
+  },
+  {
+   "at": "c2a2",
+   "img": "repin",
+   "from": "face@1.45",
+   "to": "face@1.55",
+   "fade": 1.0
+  },
+  {
+   "at": "c2a2.21-0.10",
+   "img": "cossacks",
+   "from": "taras@2.0",
+   "to": "taras@2.12",
+   "fade": 0.8
+  },
+  {
+   "at": "c2a2.27-0.10",
+   "img": "cossacks",
+   "from": "belly@1.6",
+   "to": "belly@1.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c2b",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "upper@1.15",
+   "gray": 0.7,
+   "dim": 0.2,
+   "fade": 1.0
+  },
+  {
+   "at": "c2c",
+   "img": "sketch78",
+   "from": "center@0.52",
+   "to": "center@0.54",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2d",
+   "img": "pencil",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2d.16-0.10",
+   "img": "serov",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c2e",
+   "img": "sich",
+   "from": "center@1.0",
+   "to": "river@1.15",
+   "dim": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c2f",
+   "img": "studyhat",
+   "from": "center@1.0",
+   "to": "left@1.12",
+   "dim": 0.25,
+   "fade": 1.0
+  },
+  {
+   "at": "c2f.9-0.10",
+   "img": "ateneum",
+   "from": "heads@1.05",
+   "to": "heads@1.15",
+   "dim": 0.25,
+   "fade": 0.6
+  },
+  {
+   "at": "c2f.10-0.10",
+   "img": "kachan",
+   "from": "palace@1.0",
+   "to": "palace@1.08",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c2g",
+   "img": "tolstoy",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2g.28-0.10",
+   "img": "gtg",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "c2h",
+   "img": "stasov",
+   "from": "face@1.2",
+   "to": "body@1.0",
+   "fade": 1.0
+  },
+  {
+   "at": "c2h.17-0.10",
+   "img": "cossacks",
+   "from": "upper@1.15",
+   "to": "upper@1.22",
+   "dim": 0.35,
+   "fade": 0.8
+  },
+  {
+   "at": "c3a",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 1.0
+  },
+  {
+   "at": "c3a.12-0.10",
+   "img": "cossacks",
+   "from": "crowd@1.25",
+   "to": "crowd@1.32",
+   "hit": "small"
+  },
+  {
+   "at": "c3b",
+   "img": "cossacks",
+   "from": "scribe@2.4",
+   "to": "scribe@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c3b.10-0.10",
+   "img": "yav",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c3c",
+   "img": "cossacks",
+   "from": "scribe@2.8",
+   "to": "scribe@3.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d",
+   "img": "cossacks",
+   "from": "sirko@2.4",
+   "to": "sirko@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d.17-0.10",
+   "img": "drag",
+   "from": "body@1.0",
+   "to": "face@1.4",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c3d.25-0.10",
+   "img": "sirkostudy",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c3d2",
+   "img": "dragrepin",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c3d2.26-0.10",
+   "img": "cossacks",
+   "from": "pipe@2.5",
+   "to": "pipe@2.6",
+   "dim": 0.35,
+   "fade": 0.6
+  },
+  {
+   "at": "c3e",
+   "img": "cossacks",
+   "from": "left@1.3",
+   "to": "crowd@1.3",
+   "fade": 1.0
+  },
+  {
+   "at": "c3e.6-0.10",
+   "img": "strav",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c3f",
+   "img": "cossacks",
+   "from": "bald@2.3",
+   "to": "bald@2.45",
+   "fade": 0.8
+  },
+  {
+   "at": "c3f.17-0.10",
+   "img": "cossacks",
+   "from": "bald@3.0",
+   "to": "bald@3.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c3g",
+   "img": "cossacks",
+   "from": "table@1.6",
+   "to": "table@1.7",
+   "fade": 0.8
+  },
+  {
+   "at": "c3g.18-0.10",
+   "img": "cossacks",
+   "from": "bald@2.0",
+   "to": "bald@2.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c3g.26-0.10",
+   "img": "cossacks",
+   "from": "bald@2.7",
+   "to": "bald@2.85",
+   "fade": 0.6
+  },
+  {
+   "at": "c3h",
+   "img": "cossacks",
+   "from": "center@1.15",
+   "to": "center@1.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c3h.13-0.10",
+   "img": "cossacks",
+   "from": "taras@2.3",
+   "to": "taras@2.4",
+   "fade": 0.4
+  },
+  {
+   "at": "c3h.15-0.10",
+   "img": "cossacks",
+   "from": "shirtless@2.3",
+   "to": "shirtless@2.4",
+   "fade": 0.4
+  },
+  {
+   "at": "c3h.17-0.10",
+   "img": "cossacks",
+   "from": "young@2.4",
+   "to": "young@2.5",
+   "fade": 0.4
+  },
+  {
+   "at": "c3h.18-0.10",
+   "img": "cossacks",
+   "from": "oldman@2.4",
+   "to": "oldman@2.55",
+   "fade": 0.5
+  },
+  {
+   "at": "c4a",
+   "img": "pencil",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "gray": 0.6,
+   "fade": 1.0
+  },
+  {
+   "at": "c4b",
+   "img": "kursk",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c4b.4-0.10",
+   "img": "nicholas",
+   "from": "saint@1.2",
+   "to": "saint@1.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c4b.11-0.10",
+   "img": "ivan",
+   "from": "faces@1.6",
+   "to": "faces@1.72",
+   "fade": 0.8
+  },
+  {
+   "at": "c4c",
+   "img": "ivan",
+   "from": "eyes@2.4",
+   "to": "eyes@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "c4c.11-0.10",
+   "img": "alex3",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 0.5,
+   "fade": 0.6
+  },
+  {
+   "at": "c4c.17-0.10",
+   "img": "ivan",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c4d",
+   "img": "cossacks",
+   "from": "laugher@1.6",
+   "to": "laugher@1.7",
+   "fade": 1.0
+  },
+  {
+   "at": "c4d.17-0.10",
+   "img": "studyhat",
+   "from": "center@1.0",
+   "to": "left@1.15",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c4d.28-0.10",
+   "img": "ateneum",
+   "from": "center@1.0",
+   "to": "heads@1.12",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c4e",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "hit": "big"
+  },
+  {
+   "at": "c4e.15-0.10",
+   "img": "cossacks",
+   "from": "sig@2.0",
+   "to": "sig@2.15",
+   "fade": 0.8
+  },
+  {
+   "at": "c5a",
+   "img": "cossacks",
+   "from": "right@1.4",
+   "to": "right@1.5",
+   "gray": 0.5,
+   "fade": 1.0
+  },
+  {
+   "at": "c5a.12-0.10",
+   "img": "cossacks",
+   "from": "left@1.4",
+   "to": "left@1.5",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c5b",
+   "img": "alex3",
+   "from": "body@1.0",
+   "to": "face@1.3",
+   "fade": 1.0
+  },
+  {
+   "at": "c5c",
+   "img": "palace",
+   "from": "square@1.0",
+   "to": "column@1.12",
+   "gray": 0.4,
+   "dim": 0.25,
+   "fade": 1.0
+  },
+  {
+   "at": "c5c.18-0.10",
+   "img": "sich",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "gray": 0.6,
+   "dim": 0.35,
+   "fade": 0.8
+  },
+  {
+   "at": "c5c.35-0.10",
+   "img": "cossacks",
+   "from": "taras@2.0",
+   "to": "taras@2.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c5d",
+   "img": "yav",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c5d.10-0.25",
+   "img": "cossacks",
+   "from": "scribe@2.6",
+   "to": "scribe@2.7",
+   "fade": 0.4
+  },
+  {
+   "at": "c5e",
+   "img": "zdravnevo",
+   "from": "house@1.0",
+   "to": "house@1.08",
+   "fade": 1.0
+  },
+  {
+   "at": "c5f",
+   "img": "cossacks",
+   "from": "upper@1.2",
+   "to": "upper@1.28",
+   "fade": 1.0
+  },
+  {
+   "at": "c5f.18-0.10",
+   "img": "museum",
+   "from": "facade@1.0",
+   "to": "facade@1.08",
+   "fade": 0.8
+  },
+  {
+   "at": "c6a",
+   "img": "kharkiv",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dim": 0.15,
+   "fade": 1.2
+  },
+  {
+   "at": "c6b",
+   "img": "cossacks",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "kharkiv",
+   "labels": [
+    "ST PETERSBURG · 1880–1891",
+    "KHARKIV · 1889–1893"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.8-0.10",
+   "img": "kharkiv",
+   "from": "scribe@2.6",
+   "to": "scribe@2.75",
+   "fade": 0.8
+  },
+  {
+   "at": "c6c",
+   "img": "kmuseum",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c6c.17-0.10",
+   "img": "dragrepin",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6d",
+   "img": "kharkiv",
+   "from": "upper@1.15",
+   "to": "upper@1.22",
+   "gray": 1,
+   "dim": 0.3,
+   "fade": 1.0
+  },
+  {
+   "at": "c6e",
+   "img": "kharkiv",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.45,
+   "fade": 1.0
+  },
+  {
+   "at": "c6e.11-0.10",
+   "img": "kharkiv",
+   "from": "taras@1.7",
+   "to": "taras@1.8",
+   "hit": "small"
+  },
+  {
+   "at": "c7a0",
+   "img": "yav",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c7a0.22-0.10",
+   "img": "cossacks",
+   "from": "scribe@1.9",
+   "to": "scribe@2.0",
+   "fade": 0.8
+  },
+  {
+   "at": "c7a",
+   "img": "cossacks",
+   "from": "left@1.25",
+   "to": "right@1.25",
+   "dim": 0.2,
+   "fade": 1.0
+  },
+  {
+   "at": "c7b",
+   "img": "cossacks",
+   "from": "letter@2.4",
+   "to": "letter@2.55",
+   "fade": 1.0
+  },
+  {
+   "at": "c7c",
+   "img": "cossacks",
+   "from": "taras@2.2",
+   "to": "taras@2.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c7c.11-0.10",
+   "img": "cossacks",
+   "from": "laugher@2.0",
+   "to": "laugher@2.1",
+   "fade": 0.6
+  },
+  {
+   "at": "c7c.17-0.10",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "hit": "big"
+  },
+  {
+   "at": "c7d",
+   "img": "cossacks",
+   "from": "scribe@1.9",
+   "to": "scribe@2.0",
+   "fade": 1.0
+  },
+  {
+   "at": "c7d.7-0.10",
+   "img": "cossacks",
+   "from": "quill@2.6",
+   "to": "quill@2.75",
+   "fade": 0.8
+  },
+  {
+   "at": "ending",
+   "img": "cossacks",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "fade": 1.2
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold6.16-0.10",
+   "to": "cold6$+0.60",
+   "kicker": "ILYA REPIN · 1880–1891",
+   "text": "The Cossacks' Reply"
+  },
+  {
+   "type": "chapter",
+   "from": "cold6$+0.35",
+   "to": "c1a+1.60",
+   "kicker": "CHAPTER I",
+   "text": "The Letter"
+  },
+  {
+   "type": "chapter",
+   "from": "c1f$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "A Laugh at Abramtsevo"
+  },
+  {
+   "type": "chapter",
+   "from": "c2h$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "Friends in Costume"
+  },
+  {
+   "type": "chapter",
+   "from": "c3h$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "Eleven Years"
+  },
+  {
+   "type": "chapter",
+   "from": "c4e$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "An Emperor's Price"
+  },
+  {
+   "type": "chapter",
+   "from": "c5f$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "The Other Cossacks"
+  },
+  {
+   "type": "chapter",
+   "from": "c6e$+0.35",
+   "to": "c7a0+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "The Reply"
+  },
+  {
+   "type": "label",
+   "from": "cold1.6+0.30",
+   "to": "cold2.4-0.20",
+   "text": "REPLY OF THE ZAPOROZHIAN COSSACKS · REPIN"
+  },
+  {
+   "type": "lower",
+   "from": "cold2.7+0.10",
+   "to": "cold2$+0.50",
+   "text": "Mehmed IV",
+   "sub": "OTTOMAN SULTAN · 1648–1687"
+  },
+  {
+   "type": "lower",
+   "from": "cold5.9+0.10",
+   "to": "cold5.11-0.15",
+   "text": "Mikhail Dragomirov",
+   "sub": "GENERAL"
+  },
+  {
+   "type": "lower",
+   "from": "cold5.11+0.10",
+   "to": "cold5.13-0.15",
+   "text": "Dmytro Yavornytsky",
+   "sub": "HISTORIAN"
+  },
+  {
+   "type": "lower",
+   "from": "cold5.13+0.10",
+   "to": "cold5.16-0.15",
+   "text": "Fyodor Stravinsky",
+   "sub": "OPERA BASS"
+  },
+  {
+   "type": "lower",
+   "from": "cold6+0.20",
+   "to": "cold6.11-0.15",
+   "text": "Ilya Repin",
+   "sub": "1844–1930 · SELF-PORTRAIT, 1894"
+  },
+  {
+   "type": "lower",
+   "from": "cold6.11+0.10",
+   "to": "cold6.16-0.15",
+   "text": "Alexander III",
+   "sub": "EMPEROR OF RUSSIA · KRAMSKOI, 1886"
+  },
+  {
+   "type": "label",
+   "from": "c1a",
+   "to": "c1a.18-0.15",
+   "text": "SULTAN MEHMED IV · c. 1682"
+  },
+  {
+   "type": "label",
+   "from": "c1a.26",
+   "to": "c1a2-0.20",
+   "text": "THE ZAPOROZHIAN SICH · PLAN OF 1742"
+  },
+  {
+   "type": "quote",
+   "from": "c1b.15-0.10",
+   "to": "c1b$+1.00",
+   "text": "Voluntarily and without any resistance.",
+   "sub": "THE SULTAN'S LETTER · AS THE LEGEND TELLS IT"
+  },
+  {
+   "type": "quote",
+   "from": "c1c.4-0.10",
+   "to": "c1c.17-0.25",
+   "text": "Thou Babylonian scullion, Macedonian wheelwright, brewer of Jerusalem…",
+   "sub": "THE COSSACKS' REPLY · ONE TRANSLATION"
+  },
+  {
+   "type": "label",
+   "from": "c1f",
+   "to": "c1f.31-0.15",
+   "text": "OIL SKETCH · TRETYAKOV GALLERY"
+  },
+  {
+   "type": "lower",
+   "from": "c2a+0.30",
+   "to": "c2a$+0.60",
+   "text": "Savva Mamontov",
+   "sub": "1841–1918 · PORTRAIT BY REPIN, 1878"
+  },
+  {
+   "type": "label",
+   "from": "c2c",
+   "to": "c2c$+0.60",
+   "text": "FIRST SKETCH · ABRAMTSEVO · 1878"
+  },
+  {
+   "type": "label",
+   "from": "c2d",
+   "to": "c2d.16-0.15",
+   "text": "PENCIL STUDY · c. 1880"
+  },
+  {
+   "type": "lower",
+   "from": "c2d.16+0.10",
+   "to": "c2d$+0.60",
+   "text": "Valentin Serov",
+   "sub": "1865–1911 · SELF-PORTRAIT"
+  },
+  {
+   "type": "label",
+   "from": "c2e",
+   "to": "c2e$+0.50",
+   "text": "THE ZAPOROZHIAN SICH · PLAN OF 1742"
+  },
+  {
+   "type": "label",
+   "from": "c2f",
+   "to": "c2f.10-0.15",
+   "text": "REPIN'S STUDIES OF COSSACKS"
+  },
+  {
+   "type": "label",
+   "from": "c2f.10",
+   "to": "c2f$+0.60",
+   "text": "KACHANIVKA · TARNOVSKY'S ESTATE"
+  },
+  {
+   "type": "credit",
+   "from": "c2f.10",
+   "to": "c2f$+0.60",
+   "text": "Photo: Dmytro Petishkin, CC BY 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c2g+0.30",
+   "to": "c2g.28-0.15",
+   "text": "Leo Tolstoy",
+   "sub": "PORTRAIT BY REPIN, 1887"
+  },
+  {
+   "type": "lower",
+   "from": "c2h+0.30",
+   "to": "c2h.17-0.15",
+   "text": "Vladimir Stasov",
+   "sub": "CRITIC · PORTRAIT BY REPIN, 1889"
+  },
+  {
+   "type": "quote",
+   "from": "c2h.17-0.10",
+   "to": "c2h$+1.00",
+   "text": "No one on this earth has felt liberty, equality and fraternity as deeply as they!",
+   "sub": "REPIN TO VLADIMIR STASOV · 6 NOVEMBER 1880"
+  },
+  {
+   "type": "ring",
+   "from": "c3b.5",
+   "to": "c3b.10-0.20",
+   "point": "scribe",
+   "img": "cossacks",
+   "rx": 150,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "lower",
+   "from": "c3b.10+0.10",
+   "to": "c3b$+0.60",
+   "text": "Dmytro Yavornytsky",
+   "sub": "1855–1940 · HISTORIAN OF THE COSSACKS"
+  },
+  {
+   "type": "ring",
+   "from": "c3d.3",
+   "to": "c3d.17-0.20",
+   "point": "sirko",
+   "img": "cossacks",
+   "rx": 150,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "lower",
+   "from": "c3d.17+0.10",
+   "to": "c3d.25-0.15",
+   "text": "Mikhail Dragomirov",
+   "sub": "1830–1905 · GENERAL, KIEV MILITARY DISTRICT"
+  },
+  {
+   "type": "label",
+   "from": "c3d.25",
+   "to": "c3d$+0.60",
+   "text": "REPIN · STUDY FOR SIRKO · 1889"
+  },
+  {
+   "type": "label",
+   "from": "c3d2",
+   "to": "c3d2.26-0.15",
+   "text": "GENERAL DRAGOMIROV · BY REPIN, 1889"
+  },
+  {
+   "type": "quote",
+   "from": "c3d2.26-0.10",
+   "to": "c3d2$+1.00",
+   "text": "For the third day we've been drinking to Your Majesty's health.",
+   "sub": "DRAGOMIROV'S TELEGRAM · AS THE STORY GOES"
+  },
+  {
+   "type": "lower",
+   "from": "c3e.6+0.10",
+   "to": "c3e$+0.60",
+   "text": "Fyodor Stravinsky",
+   "sub": "1843–1902 · BASS, MARIINSKY THEATRE"
+  },
+  {
+   "type": "ring",
+   "from": "c3g.18+0.10",
+   "to": "c3g.26-0.20",
+   "point": "bald",
+   "img": "cossacks",
+   "rx": 190,
+   "ry": 180,
+   "rot": 0
+  },
+  {
+   "type": "lower",
+   "from": "c3f.22",
+   "to": "c3f$+0.60",
+   "text": "Georgy Alekseyev",
+   "sub": "IMPERIAL COURT OFFICIAL · THE BACK OF HIS HEAD"
+  },
+  {
+   "type": "label",
+   "from": "c4b",
+   "to": "c4b.4-0.15",
+   "text": "RELIGIOUS PROCESSION IN KURSK PROVINCE · 1880–1883"
+  },
+  {
+   "type": "label",
+   "from": "c4b.4",
+   "to": "c4b.11-0.15",
+   "text": "SAINT NICHOLAS STOPS AN EXECUTION · 1888"
+  },
+  {
+   "type": "label",
+   "from": "c4b.11",
+   "to": "c4c.11-0.15",
+   "text": "IVAN THE TERRIBLE AND HIS SON · 1885"
+  },
+  {
+   "type": "label",
+   "from": "c4d.17",
+   "to": "c4d$+0.60",
+   "text": "STUDIES · END OF THE 1880s"
+  },
+  {
+   "type": "ring",
+   "from": "c4e.20+0.20",
+   "to": "c4e$+1.00",
+   "point": "sig",
+   "img": "cossacks",
+   "rx": 260,
+   "ry": 90,
+   "rot": 0
+  },
+  {
+   "type": "stamp",
+   "from": "c5b.8+0.10",
+   "to": "c5b.14-0.10",
+   "text": "35,000 RUBLES"
+  },
+  {
+   "type": "lower",
+   "from": "c5b.14+0.10",
+   "to": "c5b$+0.60",
+   "text": "Alexander III",
+   "sub": "EMPEROR OF RUSSIA 1881–1894"
+  },
+  {
+   "type": "label",
+   "from": "c5c",
+   "to": "c5c.18-0.15",
+   "text": "PALACE SQUARE · ST PETERSBURG · 1890s"
+  },
+  {
+   "type": "label",
+   "from": "c5c.18",
+   "to": "c5c.35-0.15",
+   "text": "THE LAST SICH · DESTROYED 1775"
+  },
+  {
+   "type": "label",
+   "from": "c5e",
+   "to": "c5e$+0.60",
+   "text": "ZDRAVNEVO · NEAR VITEBSK"
+  },
+  {
+   "type": "credit",
+   "from": "c5e",
+   "to": "c5e$+0.60",
+   "text": "Photo: GAlexandrova, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c5f.18",
+   "to": "c5f$+1.00",
+   "text": "THE RUSSIAN MUSEUM · ST PETERSBURG"
+  },
+  {
+   "type": "credit",
+   "from": "c5f.18",
+   "to": "c5f$+1.00",
+   "text": "Photo: Andrey Korzun, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c6a",
+   "to": "c6b-0.15",
+   "text": "THE SECOND VERSION · KHARKIV ART MUSEUM"
+  },
+  {
+   "type": "ring",
+   "from": "c6b.22-0.40",
+   "to": "c6b$+0.80",
+   "point": "scribe",
+   "img": "kharkiv",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c6c",
+   "to": "c6c.17-0.15",
+   "text": "KHARKIV ART MUSEUM"
+  },
+  {
+   "type": "credit",
+   "from": "c6c",
+   "to": "c6c.17-0.15",
+   "text": "Photo: San4oss, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c6c.17",
+   "to": "c6c$+0.60",
+   "text": "GENERAL DRAGOMIROV · BY REPIN, 1889"
+  },
+  {
+   "type": "label",
+   "from": "c6d",
+   "to": "c6e$+0.60",
+   "text": "KHARKIV · 2022 · 2026"
+  },
+  {
+   "type": "label",
+   "from": "c7a",
+   "to": "c7a$+0.60",
+   "text": "RESTAGED BY UKRAINIAN SOLDIERS SINCE 2014"
+  },
+  {
+   "type": "lower",
+   "from": "c7d.7-0.10",
+   "to": "c7d$+1.20",
+   "text": "Reply of the Zaporozhian Cossacks",
+   "sub": "ILYA REPIN · 1880–1891 · STATE RUSSIAN MUSEUM"
+  },
+  {
+   "type": "pin",
+   "from": "ending+0.10",
+   "to": "ending$+1.00",
+   "text": "STATE RUSSIAN MUSEUM · ST PETERSBURG · ROOM 34"
+  },
+  {
+   "type": "end",
+   "from": "ending$+1.00",
+   "to": "ending$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "cold6$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c1f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c2h$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c3h$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c4e$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c5f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c6e$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c5b.8+0.10",
+   "fx": "impact",
+   "gain": 0.22
+  }
+ ],
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -8.0,
+  "duck_db": -7,
+  "fx_db": -12,
+  "transpose": 0,
+  "bar": 5.5,
+  "_tracks_note": "Mussorgsky cue sheet (21 Nov 2026), Pictures at an Exhibition (1874) and Night on Bald Mountain, Musopen recordings: Bydlo (the heavy ox-cart) under the cold open and the finished painting, Limoges (market chatter) for the insults and the friends in costume, the Old Castle for the journey south, the Promenade for the casting, Catacombs for Ivan and for Kharkiv, Bald Mountain's quiet dawn for the emperor's purchase, the Great Gate of Kiev for the end.",
+  "tracks": [
+   {
+    "file": "src/music/m_bydlo.ogg",
+    "from": 0,
+    "to": "c1a+1.50",
+    "start": 30.0,
+    "gain_db": 0,
+    "fade_in": 0.8,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Bydlo"
+   },
+   {
+    "file": "src/music/m_limoges.ogg",
+    "from": "cold6$-0.50",
+    "to": "c2a+1.50",
+    "start": 0.0,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Limoges"
+   },
+   {
+    "file": "src/music/m_castle.ogg",
+    "from": "c1f$-0.50",
+    "to": "c3a+1.50",
+    "start": 0.0,
+    "gain_db": 2,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: The Old Castle"
+   },
+   {
+    "file": "src/music/m_promenade.ogg",
+    "from": "c2h$-0.50",
+    "to": "c3d2+1.50",
+    "start": 0.0,
+    "gain_db": 3,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Promenade"
+   },
+   {
+    "file": "src/music/m_limoges.ogg",
+    "from": "c3d$-0.50",
+    "to": "c4a+1.50",
+    "start": 34.0,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Limoges"
+   },
+   {
+    "file": "src/music/m_catacombae.ogg",
+    "from": "c3h$-0.50",
+    "to": "c4d+1.50",
+    "start": 0.0,
+    "gain_db": -2,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Catacombs"
+   },
+   {
+    "file": "src/music/m_bydlo.ogg",
+    "from": "c4c$-0.50",
+    "to": "c5a+1.50",
+    "start": 71.5,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Bydlo"
+   },
+   {
+    "file": "src/music/m_bald.ogg",
+    "from": "c4e$-0.50",
+    "to": "c6a+1.50",
+    "start": 600.0,
+    "gain_db": 4,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky (arr. Rimsky-Korsakov), Night on Bald Mountain · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_catacombae.ogg",
+    "from": "c5f$-0.50",
+    "to": "c7a0+1.50",
+    "start": 40.0,
+    "gain_db": -2,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Catacombs"
+   },
+   {
+    "file": "src/music/m_kiev.ogg",
+    "from": "c6e$-0.50",
+    "start": 256.0,
+    "gain_db": -3,
+    "fade_in": 2.5,
+    "fade_out": 8.0,
+    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: The Great Gate of Kiev"
+   }
+  ]
+ },
+ "facts": [
+  {
+   "claim": "Ilya Repin's 'Reply of the Zaporozhian Cossacks' (Zaporozhian Cossacks), oil on canvas, 203 × 358 cm, 1880–1891, State Russian Museum, St Petersburg (inv. Ж-4005); it depicts the legendary insulting reply of the Zaporozhian Cossacks, led by Ataman Ivan Sirko, to Sultan Mehmed IV",
+   "source": "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "The legend is set in the 1670s (Wikipedia: 1676; the museum: 1675); the sultan demanded the Cossacks submit, and they replied with an insulting, profane letter",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en ; https://www.rbth.com/arts/333391-ilya-repin-cossacks-letter-real-fake"
+  },
+  {
+   "claim": "The Zaporozhian Cossacks lived 'beyond the rapids' of the Dnieper (the origin of the name), as free men on the steppe frontier, defending against the Crimean Tatars; their numbers grew with peasants fleeing serfdom; their councils and otamans were elected",
+   "source": "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en ; https://en.wikipedia.org/wiki/Zaporozhian_Cossacks ; https://www.encyclopediaofukraine.com/pages/Z/A/ZaporizhiaThe.htm"
+  },
+  {
+   "claim": "Mehmed IV became sultan in 1648 at the age of six; under him the Ottoman Empire reached its greatest territorial extent in Europe; his army besieged Vienna in 1683",
+   "source": "https://en.wikipedia.org/wiki/Mehmed_IV ; https://www.britannica.com/biography/Mehmed-IV ; https://artsandculture.google.com/entity/m01dmnp"
+  },
+  {
+   "claim": "In the widely circulated text the sultan lists grandiose titles and orders the Cossacks to submit 'voluntarily and without any resistance'; the reply calls him (in one translation) 'Babylonian scullion, Macedonian wheelwright, brewer of Jerusalem' and worse, and is dated by the moon because they have no calendar",
+   "source": "https://www.rbth.com/arts/333391-ilya-repin-cossacks-letter-real-fake ; https://www.dailyartmagazine.com/zaporozhian-cossacks-reply/ ; https://arthistoryproject.com/artists/ilya-repin/reply-of-the-zaporozhian-cossacks"
+  },
+  {
+   "claim": "Historians regard the correspondence as apocryphal: no reliable evidence it happened; its versions differ in dates, signatories and recipients; Waugh traced how the text changed in the 18th century; it belongs to a family of fake letters attributed to the sultan (translated from Dutch and German newsletters, anti-Turkish pamphlets)",
+   "source": "https://en.wikipedia.org/wiki/Correspondence_between_the_Ottoman_sultan_and_the_Cossacks ; https://www.rbth.com/arts/333391-ilya-repin-cossacks-letter-real-fake ; https://www.birmingham.ac.uk/documents/college-artslaw/cmr1900/9789004309173-125-waugh.pdf"
+  },
+  {
+   "claim": "Copies kept being made by hand (e.g. a manuscript dated 1733 in the Kyiv-Pechersk Lavra, 19th-century copies); Repin said that 'in Little Russia every sexton has a copy of this apocrypha'",
+   "source": "https://dergipark.org.tr/tr/download/article-file/1300231 ; https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "In summer 1878 Repin was at Savva Mamontov's Abramtsevo estate near Moscow, where he heard the story and made his first pencil sketch (dated 26 June or 26 July 1878, sources differ), during/after the Russo-Turkish War of 1877–78",
+   "source": "https://www.rbth.com/arts/333391-ilya-repin-cossacks-letter-real-fake ; https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol ; https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "Savva Mamontov, railway industrialist and patron, hosted artists at Abramtsevo",
+   "source": "https://en.wikipedia.org/wiki/Savva_Mamontov ; https://www.rbth.com/arts/333391-ilya-repin-cossacks-letter-real-fake"
+  },
+  {
+   "claim": "Repin was born in 1844 in Chuguyev (Chuhuiv), Kharkiv province, today Ukraine; he knew the Cossack letter from his youth there; he illustrated Gogol's Taras Bulba (1872); he said of the Cossacks 'Gogol wrote about them for good reason, it's all true!'",
+   "source": "https://www.britannica.com/biography/Ilya-Yefimovich-Repin ; https://www.ukrinform.ua/rubric-culture/3337821-z-cogo-smialisa-zaporozci-repina.html ; https://www.encyclopediaofukraine.com/pages%5CR%5CE%5CRepinIlia.htm ; https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "In spring 1880 Repin travelled to the Zaporizhzhia region with the young Valentin Serov (born January 1865, so 15), visiting Khortytsia and the Dnieper rapids and the collector Vasyl Tarnovsky at Kachanivka, who showed him his collection of Cossack antiquities; Serov's 1880 Cossack drawings are in the Russian Museum",
+   "source": "https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf ; https://rusmuseumvrm.ru/online_resources/art_gallery/serov/index.php?lang=en ; https://en.wikipedia.org/wiki/Ilya_Repin"
+  },
+  {
+   "claim": "The first Zaporozhian Sich was built c. 1552 on (Mala) Khortytsia island",
+   "source": "https://encyclopediaofukraine.com/pages%5CZ%5CA%5CZaporozhianSich.htm"
+  },
+  {
+   "claim": "Repin studied Cossack weapons and clothing and sketched objects of Cossack life",
+   "source": "https://kyivpost.com/post/19333 ; https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "In October 1880 Leo Tolstoy discussed the study with Repin in his Moscow studio and advised a broader picture expressing the spirit of the people rather than a small incident; Repin enlarged the composition and added figures",
+   "source": "https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf ; https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol"
+  },
+  {
+   "claim": "Repin to Stasov, 6 November 1880 (translation printed by W. K. Lang): 'No one on this earth has felt liberty, equality and fraternity as deeply as they!'",
+   "source": "https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol"
+  },
+  {
+   "claim": "The figures were painted from real people Repin knew; the scribe is the historian Dmytro Yavornytsky (Evarnitsky), Repin's consultant, whom Repin met in 1887; he was reluctant to pose and Repin got his expression by showing him a magazine of caricatures",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol ; https://www.vokrugsveta.ru/article/235851 ; https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf"
+  },
+  {
+   "claim": "Ataman Ivan Sirko was modelled on General Mikhail Dragomirov, commander of the Kiev Military District (spring 1889); Repin reportedly exclaimed 'A living Sirko!'",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://www.vokrugsveta.ru/article/235851 ; https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf"
+  },
+  {
+   "claim": "Anecdote (told as a story): Dragomirov forgot Alexander III's name day and two days later telegraphed 'For the third day we've been drinking to Your Majesty's health'",
+   "source": "https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "Fyodor Stravinsky, Mariinsky opera singer and father of Igor Stravinsky, posed for one of the Cossacks (per Repin's 1926 recollection)",
+   "source": "https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://en.wikipedia.org/wiki/Fyodor_Stravinsky"
+  },
+  {
+   "claim": "Georgy Alekseyev, an imperial court official, refused to let Repin sketch the back of his bald head; Yavornytsky distracted him with his coin collection while Repin drew; Repin reportedly said 'It takes centuries to create a head like that!'",
+   "source": "https://www.vokrugsveta.ru/article/235851 ; https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "Other models: the collector Vasyl Tarnovsky as the judge; his coachman as the Cossack Holota; Professor Alexander Rubets; the teacher Kostiantyn Belonovsky; a student; and an old man Repin met on a pier at Alexandrovsk (Zaporizhzhia)",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol ; https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "Repin repeatedly set the painting aside for other works: Religious Procession in Kursk Province (1880–83), Ivan the Terrible and His Son Ivan (1885), Saint Nicholas Saves Three Innocents from Death (1888)",
+   "source": "https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol ; https://en.wikipedia.org/wiki/Ilya_Repin"
+  },
+  {
+   "claim": "Alexander III banned the exhibition of Ivan the Terrible and His Son Ivan in 1885 (lifted after about three months)",
+   "source": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_and_His_Son_Ivan ; stories/repin-ivan/story.json facts"
+  },
+  {
+   "claim": "In 1888 Repin travelled to the Caucasus/Kuban (stanitsa Pashkovskaya) to study descendants of the Zaporozhian Cossacks",
+   "source": "https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "Repin finished in 1891 and recorded the years along the lower edge with his signature ('И.Репин 1880-91', bottom centre)",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://commons.wikimedia.org/wiki/File:Repin_Cossacks.jpg"
+  },
+  {
+   "claim": "Critical reception was mixed: Alexandre Benois called it 'a coarse and ridiculous spectacle'; Nikolai Ghe faulted its lack of idealism",
+   "source": "https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol"
+  },
+  {
+   "claim": "Alexander III bought the painting for 35,000 rubles, an enormous sum for the time; it hung in the Winter Palace until 1897, when Nicholas II gave it to the Russian Museum",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://www.sgu.ru/archive/old.sgu.ru/files/nodes/9850/08.pdf ; https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en ; https://www.topofart.com/artists/Repin/"
+  },
+  {
+   "claim": "The last Zaporozhian Sich was destroyed by a Russian army on 15–16 June 1775, in the reign of Catherine II; Alexander III was her great-great-grandson (Catherine → Paul I → Nicholas I → Alexander II → Alexander III)",
+   "source": "https://encyclopediaofukraine.com/pages%5CZ%5CA%5CZaporozhianSich.htm ; https://en.wikipedia.org/wiki/Alexander_III_of_Russia"
+  },
+  {
+   "claim": "Repin wrote to Yavornytsky that the tsar had bought his Zaporozhians: 'Hurrah!'",
+   "source": "https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf"
+  },
+  {
+   "claim": "With the 35,000 rubles Repin bought the estate of Zdravnevo near Vitebsk (May 1892), where he spent summers until about 1900–1902",
+   "source": "https://www.sgu.ru/archive/old.sgu.ru/files/nodes/9850/08.pdf ; https://www.pnp.ru/in-world/svoe-gosudarstvo-russkogo-khudozhnika-v-belarusi.html ; https://www.atlasobscura.com/places/zdravnevo-ilya-repin"
+  },
+  {
+   "claim": "The painting won gold medals at the 1895 international exhibitions in Munich and Budapest",
+   "source": "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en"
+  },
+  {
+   "claim": "Repin began a second, more 'historically authentic/accurate' version in 1889 (dated 1893); in 1932 it went from the Tretyakov Gallery to Kharkiv, and since 1935 it is in the Kharkiv Art Museum; in it the scribe is older and wears spectacles",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://moniacs.kh.ua/en/kharkiv-art-museum/ ; https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf ; https://commons.wikimedia.org/wiki/File:Reply_of_the_Zaporozhian_Cossacks_(sketch,_1893,_Kharkiv).jpg"
+  },
+  {
+   "claim": "In 1907 Repin donated his portrait of General Dragomirov to the Kharkiv museum (then the City Art and Industry Museum)",
+   "source": "https://en.wikipedia.org/wiki/Kharkiv_Art_Museum"
+  },
+  {
+   "claim": "In March 2022 Russian shelling shattered the Kharkiv Art Museum's windows; staff took the second version of the Cossacks off the wall and moved it to safety",
+   "source": "https://www.theartnewspaper.com/2022/03/25/ukraine-culture-in-peril ; https://www.dailysabah.com/arts/kharkiv-museum-tries-to-save-russian-art-from-russias-invasion/news ; https://kyivindependent.com/russia-destroys-ukraines-historic-heritage-steals-rare-collections-from-museums/"
+  },
+  {
+   "claim": "On 14 June 2026 a Russian drone strike set the Kharkiv Art Museum on fire; Repin's second version of the Cossacks survived",
+   "source": "https://kyivindependent.com/kharkiv-art-museum-in-flames-after-cynical-russian-drone-attack/ ; https://www.ukrinform.net/rubric-ato/4133761-art-museum-in-kharkiv-catches-fire-after-shelling-infant-injured.html ; https://www.humanrightsfirst.org/russian-attack-devastates-kharkiv-art-museum"
+  },
+  {
+   "claim": "Yavornytsky later toasted Repin at a dinner in his honour, thanking him for making Cossack history known: 'We were small, close to the ground; now we stand a head taller'",
+   "source": "https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf"
+  },
+  {
+   "claim": "Since 2014 Ukrainian soldiers have restaged the painting in photographs (Yuriy Bilak, Donbas 2015; 2022; Emeric Lhuisset 2023; 53rd Brigade 2024)",
+   "source": "https://www.rferl.org/a/ukraine-wartime--trend-ilya-repin-painting-cossacks-reply-recreation/33612657.html ; https://www.radiosvoboda.org/a/zaporozhtsi-pyshut-lysta-ryepin-fotohrafiyi-viyna/33620969.html"
+  }
+ ],
+ "next": false,
+ "youtube": {
+  "titles": [
+   "These Men Are Laughing at an Emperor",
+   "A Tsar Paid a Fortune for This Insult"
+  ],
+  "description_lead": "Ilya Repin spent eleven years (1880–1891) painting the Zaporozhian Cossacks writing their legendary, very rude reply to the Ottoman sultan Mehmed IV, a letter that historians think was probably never written as we know it. Almost every laughing face is a real person Repin knew: the historian Dmytro Yavornytsky is the scribe, General Mikhail Dragomirov is the ataman Ivan Sirko, the opera bass Fyodor Stravinsky is somewhere in the crowd, and a court official who refused to pose lent the back of his bald head without knowing it. Tsar Alexander III paid 35,000 rubles for the painting. Repin's second version survives in Kharkiv, Ukraine.",
+  "hashtags": [
+   "#arthistory",
+   "#repin",
+   "#cossacks"
+  ],
+  "credits": [
+   "Paintings and drawings by Ilya Repin (State Russian Museum, St Petersburg; Tretyakov Gallery, Moscow; Kharkiv Art Museum; Ateneum, Helsinki; other collections): public domain, via Wikimedia Commons.",
+   "Alexander III by Ivan Kramskoi, 1886; Sultan Mehmed IV, c. 1682; self-portrait of Valentin Serov; plan of the Zaporozhian Sich, 1742; photographs of Dmytro Yavornytsky, Mikhail Dragomirov and Fyodor Stravinsky; Palace Square, St Petersburg, 1890s: public domain, via Wikimedia Commons.",
+   "The Mikhailovsky Palace (State Russian Museum), St Petersburg: photo Andrey Korzun, CC BY-SA 4.0, via Wikimedia Commons.",
+   "Kharkiv Art Museum: photo San4oss, CC BY-SA 4.0, via Wikimedia Commons.",
+   "Kachanivka palace: photo Dmytro Petishkin, CC BY 4.0, via Wikimedia Commons.",
+   "Zdravnevo, Repin's estate near Vitebsk: photo GAlexandrova, CC BY-SA 4.0, via Wikimedia Commons."
+  ],
+  "thumbnail": {
+   "image": "cossacks",
+   "focus": [
+    0.7,
+    0.3
+   ],
+   "span": 0.34,
+   "words": "INSULTING an Empire"
+  },
+  "intro_chapter": "The Laugh",
+  "outro_chapter": "Where It Hangs Today",
+  "sources": [
+   "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en",
+   "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks",
+   "https://en.wikipedia.org/wiki/Correspondence_between_the_Ottoman_sultan_and_the_Cossacks",
+   "https://mail.19thc-artworldwide.org/spring02/the-legendary-cossacks-anarchy-and-nationalism-in-the-conceptions-of-ilya-repin-and-nikolai-gogol",
+   "https://www.rbth.com/arts/333391-ilya-repin-cossacks-letter-real-fake",
+   "https://www.birmingham.ac.uk/documents/college-artslaw/cmr1900/9789004309173-125-waugh.pdf",
+   "https://www.vokrugsveta.ru/article/235851",
+   "https://job.gorod.dp.ua/history/doc/zaporozhtsi.pdf",
+   "https://www.sgu.ru/archive/old.sgu.ru/files/nodes/9850/08.pdf",
+   "https://www.encyclopediaofukraine.com/pages/Z/A/ZaporizhiaThe.htm",
+   "https://encyclopediaofukraine.com/pages%5CZ%5CA%5CZaporozhianSich.htm",
+   "https://www.britannica.com/biography/Mehmed-IV",
+   "https://en.wikipedia.org/wiki/Kharkiv_Art_Museum",
+   "https://www.theartnewspaper.com/2022/03/25/ukraine-culture-in-peril",
+   "https://kyivindependent.com/kharkiv-art-museum-in-flames-after-cynical-russian-drone-attack/",
+   "https://www.humanrightsfirst.org/russian-attack-devastates-kharkiv-art-museum",
+   "https://www.rferl.org/a/ukraine-wartime--trend-ilya-repin-painting-cossacks-reply-recreation/33612657.html"
+  ],
+  "pinned_comment": "Historians think the Cossacks' letter is probably a legend. Repin painted the laugh anyway, with his friends in costume.\n\nIf you could add one real person to this crowd, who would it be? 🖤"
+ }
+}
