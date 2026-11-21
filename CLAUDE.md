@@ -190,6 +190,7 @@ hook_type "dark"|"time-gap"|"craft"|"sacred-strange"|"dark-legend"|"damage"|"hid
 teaser    "≤ 48 characters, shown on the previous reel's NEXT card"
 experiment {id, arm} while a test runs (EXPERIMENTS.md)
 next      (optional) override the NEXT card text for THIS reel; false = no card (manual builds outside the schedule)
+related_video (optional) the long video's URL when this Short is its trailer (a Pinned row says so)
 meta      {painter, born, died, painting, year, museum, city, image (main image key), image_credit, nude?}
 cover     {question (<i>…</i>), name (PAINTER IN CAPS), work ("Title, year"), focus [x,y], span, at?, answered_by}
 rights    {creator_died, note}

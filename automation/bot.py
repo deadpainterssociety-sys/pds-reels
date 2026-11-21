@@ -79,8 +79,8 @@ def review(slug, revised=False):
     c = captions(slug)
     facts = "\n".join(f"• {T.esc(f['claim'])}" for f in st.get("facts", []))
     T.send(chat, f"<b>Instagram caption</b><blockquote expandable>{T.esc(c['instagram'][:1700])}</blockquote>\n"
-                 f"<b>TikTok</b><blockquote expandable>{T.esc(c['tiktok'][:600])}</blockquote>\n"
-                 f"<b>YouTube title</b>\n{T.esc(c['youtube_title'])}\n\n<b>Facts checked</b><blockquote expandable>{facts[:1200]}</blockquote>")
+                 + (f"<b>TikTok</b><blockquote expandable>{T.esc(c['tiktok'][:600])}</blockquote>\n" if CONFIG["platforms"].get("tiktok", True) else "")
+                 + f"<b>YouTube title</b>\n{T.esc(c['youtube_title'])}\n\n<b>Facts checked</b><blockquote expandable>{facts[:1200]}</blockquote>")
     set_state(slug, status="sent", review_message=msg["message_id"], sent_at=now().isoformat(timespec="seconds"))
     print("review sent:", slug)
 
@@ -120,7 +120,8 @@ HELP = ("Commands:\n/status — what's scheduled\n/post — publish approved ree
         "/rule &lt;text&gt; — a rule for all future reels\n/brief — the latest analysis brief again\n/pause, /resume\n"
         "/voice — the narration voice (on, off, help)\n\n"
         "🎙 Send a voice message (1–3 min, reading in English) to clone that voice: you get test versions to choose from.\n"
-        "📊 Send a screenshot of TikTok Studio → Analytics → Content any time: it goes into the next brief.\n\nOn a reel: ✅ / ❌ / ✏️ buttons, or just reply "
+        + ("📊 Send a screenshot of TikTok Studio → Analytics → Content any time: it goes into the next brief.\n\n"
+           if CONFIG["platforms"].get("tiktok", True) else "\n") + "On a reel: ✅ / ❌ / ✏️ buttons, or just reply "
         "<i>yes</i>, <i>no</i>, or what you want changed.")
 
 
@@ -400,11 +401,16 @@ def posted(slug):
     s, c = state(slug), captions(slug); lines = [f"📣 <b>Posted:</b> {T.esc(title_of(slug))}"]
     for k, name in (("instagram", "Instagram"), ("youtube", "YouTube"), ("tiktok", "TikTok")):
         r = s.get(k) or {}
+        if not CONFIG["platforms"].get(k, True) and not r.get("url"): continue      # turned off: say nothing
         if r.get("url"): lines.append(f"• {name}: {r['url']}")
         elif r.get("mode") == "inbox": lines.append(f"• {name}: draft is in your TikTok inbox — open TikTok, tap the notification, paste the caption below, post")
         elif r.get("error"): lines.append(f"• {name}: ⚠️ {T.esc(r['error'][:200])}")
         elif r.get("manual"): lines.append(f"• {name}: 📲 not connected yet — file + caption below, post it by hand")
         elif r.get("skipped"): lines.append(f"• {name}: off ({T.esc(r['skipped'])})")
+    rel = story(slug).get("related_video")          # a trailer Short for a long video (story.json "related_video")
+    if rel and (s.get("youtube") or {}).get("url"):
+        lines.append(f"🔗 YouTube Studio → this Short → Edit → <b>Related video</b> → pick the long video ({T.esc(rel)}): "
+                     "the API can't set it, and it puts a tap-through link on the Short")
     T.send(chat_id(), "\n".join(lines))
     if (s.get("tiktok") or {}).get("mode") == "inbox":
         T.send(chat_id(), f"<code>{T.esc(c['tiktok'][:2000])}</code>")

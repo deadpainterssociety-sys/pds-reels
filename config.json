@@ -14,7 +14,7 @@
   "platforms": {
     "instagram": true,
     "youtube": true,
-    "tiktok": true
+    "tiktok": false
   },
   "tiktok_mode": "inbox",
   "youtube_privacy": "public",
