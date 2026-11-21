@@ -32,7 +32,7 @@ if os.path.exists(VISUALS): exec(open(VISUALS).read())   # images, shots, overla
 FACTS = json.load(open(os.path.join(HERE, "facts.json"))) if os.path.exists(os.path.join(HERE, "facts.json")) else []
 
 story = {
- "slug": "repin-cossacks-long", "format": "long", "voice": "af_heart", "speed": 0.94, "tail": 22.0,
+ "slug": "repin-cossacks-long", "format": "long", "slot": "2026-11-23", "voice": "af_heart", "speed": 0.94, "tail": 22.0,
  "meta": {"painter": "Ilya Repin", "born": 1844, "died": 1930, "painting": "Reply of the Zaporozhian Cossacks", "year": "1880–1891",
           "museum": "State Russian Museum", "city": "St Petersburg", "image": "cossacks",
           "image_credit": "State Russian Museum, St Petersburg, via Wikimedia Commons (public domain)"},

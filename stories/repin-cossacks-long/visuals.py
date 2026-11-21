@@ -242,7 +242,14 @@ ov("end", A("ending", end=True, off=1.0), A("ending", end=True, off=21.0), kicke
 SFX += [{"at": A(prev, end=True, off=0.35), "fx": "impact", "gain": 0.22} for prev, _, _, _ in CH] + [
  {"at": A("c5b", "thirty-five", off=0.1), "fx": "impact", "gain": 0.22},
 ]
-T = lambda f, frm, to, credit, **kw: {"file": f"src/music/{f}", "from": frm, **({"to": to} if to is not None else {}), "start": kw.pop("start", 0),
+CM = {"m_bydlo.ogg": "File:Modest Mussorgsky - pictures at an exhibition - iv. bydlo - sempre moderato, pesante.ogg",
+      "m_limoges.ogg": "File:Modest Mussorgsky - pictures at an exhibition - vii. limoges. le marche - allegretto vivo, sempre scherzando.ogg",
+      "m_castle.ogg": "File:Modest Mussorgsky - pictures at an exhibition - ii. il vecchio castello - andante.ogg",
+      "m_promenade.ogg": "File:Modest Mussorgsky - pictures at an exhibition - promenade - moderato comodo e con delicatezza.ogg",
+      "m_catacombae.ogg": "File:Modest Mussorgsky - pictures at an exhibition - viii. catacombae. sepulcrum romanum - largo.ogg",
+      "m_bald.ogg": "File:Modest Mussorgsky - night on bald mountain.ogg",
+      "m_kiev.ogg": "File:Modest Mussorgsky - pictures at an exhibition - x. la grande porte de kiev - allegro alla breve. maestoso. con grandezza.ogg"}
+T = lambda f, frm, to, credit, **kw: {"file": f"src/music/{f}", "commons": CM[f], "from": frm, **({"to": to} if to is not None else {}), "start": kw.pop("start", 0),
                                      "gain_db": kw.pop("gain_db", 0), "fade_in": kw.pop("fade_in", 2.5), "fade_out": kw.pop("fade_out", 3.0), "credit": credit}
 PX = "Mussorgsky, Pictures at an Exhibition: {} · Musopen, public domain"
 # track start points (s) in each recording, tuned to the voice timeline (loudness maps, 5-s windows): Bydlo's build under the

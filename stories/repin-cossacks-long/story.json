@@ -1,6 +1,7 @@
 {
  "slug": "repin-cossacks-long",
  "format": "long",
+ "slot": "2026-11-23",
  "voice": "af_heart",
  "speed": 0.94,
  "tail": 22.0,
@@ -3431,6 +3432,7 @@
   "tracks": [
    {
     "file": "src/music/m_bydlo.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - iv. bydlo - sempre moderato, pesante.ogg",
     "from": 0,
     "to": "c1a+1.50",
     "start": 30.0,
@@ -3441,6 +3443,7 @@
    },
    {
     "file": "src/music/m_limoges.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - vii. limoges. le marche - allegretto vivo, sempre scherzando.ogg",
     "from": "cold6$-0.50",
     "to": "c2a+1.50",
     "start": 0.0,
@@ -3451,6 +3454,7 @@
    },
    {
     "file": "src/music/m_castle.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - ii. il vecchio castello - andante.ogg",
     "from": "c1f$-0.50",
     "to": "c3a+1.50",
     "start": 0.0,
@@ -3461,6 +3465,7 @@
    },
    {
     "file": "src/music/m_promenade.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - promenade - moderato comodo e con delicatezza.ogg",
     "from": "c2h$-0.50",
     "to": "c3d2+1.50",
     "start": 0.0,
@@ -3471,6 +3476,7 @@
    },
    {
     "file": "src/music/m_limoges.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - vii. limoges. le marche - allegretto vivo, sempre scherzando.ogg",
     "from": "c3d$-0.50",
     "to": "c4a+1.50",
     "start": 34.0,
@@ -3481,6 +3487,7 @@
    },
    {
     "file": "src/music/m_catacombae.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - viii. catacombae. sepulcrum romanum - largo.ogg",
     "from": "c3h$-0.50",
     "to": "c4d+1.50",
     "start": 0.0,
@@ -3491,6 +3498,7 @@
    },
    {
     "file": "src/music/m_bydlo.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - iv. bydlo - sempre moderato, pesante.ogg",
     "from": "c4c$-0.50",
     "to": "c5a+1.50",
     "start": 71.5,
@@ -3501,6 +3509,7 @@
    },
    {
     "file": "src/music/m_bald.ogg",
+    "commons": "File:Modest Mussorgsky - night on bald mountain.ogg",
     "from": "c4e$-0.50",
     "to": "c6a+1.50",
     "start": 600.0,
@@ -3511,6 +3520,7 @@
    },
    {
     "file": "src/music/m_catacombae.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - viii. catacombae. sepulcrum romanum - largo.ogg",
     "from": "c5f$-0.50",
     "to": "c7a0+1.50",
     "start": 40.0,
@@ -3521,6 +3531,7 @@
    },
    {
     "file": "src/music/m_kiev.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - x. la grande porte de kiev - allegro alla breve. maestoso. con grandezza.ogg",
     "from": "c6e$-0.50",
     "start": 256.0,
     "gain_db": -3,

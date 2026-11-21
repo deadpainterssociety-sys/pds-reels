@@ -112,6 +112,10 @@ sort cleanly by the promise the title makes. Every story declares one `hook_type
 
 ## 3b. Long-form videos (YouTube, from 6 Nov 2026)
 
+**Made by themselves since 21 Nov 2026** (workflow `longform.yml`, Saturday and Sunday 20:47 Madrid, right after Gigi's
+weekly Claude limit renews): Claude follows `LONG.md` (reference: `stories/repin-cossacks-long`, Gigi's "10/10"), the
+workflow voices, renders, uploads as private scheduled for the slot (Mon/Thu 19:00) and sends Gigi the preview.
+
 From the YouTube market study (6 Nov 2026): the winners tell one dark or astonishing painting story in 8–12 minutes,
 every week, with a text-free close-up thumbnail and a short statement title; the decliners got longer and rarer.
 YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).

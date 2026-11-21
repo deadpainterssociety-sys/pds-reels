@@ -1,0 +1,135 @@
+# Long videos, made by themselves (Gigi, 21 Nov 2026: "automate the creation of these videos, just like the shorts").
+# Saturday and Sunday 20:47 Madrid, right after Gigi's weekly Claude limit renews (Saturday 20:00), so the week's two long
+# videos are written first. Each run fills the next empty long slot (Monday/Thursday 19:00, at least 20 h ahead, within
+# 10 days: automation/long_plan.py).
+#   write   - Claude researches, writes and plans the video (LONG.md; the reference is stories/repin-cossacks-long), with
+#             the fast Kokoro voice for timing and still checks. Its source images/music go to the private release.
+#   produce - no Claude: the final voice (Chirp 3 HD Enceladus), render (3 of the 4 cores), QA, upload to YouTube as PRIVATE
+#             scheduled for the slot, and the preview + thumbnails + notes to Gigi on Telegram. Nothing goes public
+#             before the slot; Gigi can set it to Private in Studio and ask for changes in a Claude chat.
+name: longform
+on:
+  schedule:
+    - cron: "47 19 * * 6"     # Saturday 20:47 Madrid (winter; 21:47 in summer)
+    - cron: "47 19 * * 0"     # Sunday 20:47
+  workflow_dispatch:
+    inputs:
+      date: { description: "slot to fill (YYYY-MM-DD, a Monday/Thursday); empty = the next empty slot", required: false, default: "" }
+      idea: { description: "optional painting / angle for this one", required: false, default: "" }
+      slug: { description: "skip the writing: produce this already-written long story", required: false, default: "" }
+concurrency: { group: longform, cancel-in-progress: false }
+permissions: { contents: write, actions: write }
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    outputs:
+      slug: ${{ steps.slug.outputs.slug }}
+      publish_at: ${{ steps.need.outputs.publish_at }}
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: need
+        if: inputs.slug == ''
+        run: python3 automation/long_plan.py next "${{ inputs.date }}"
+      - if: steps.need.outputs.need == 'true' && steps.need.outputs.resume == ''
+        uses: ./.github/actions/setup
+        with: { voice: none }
+      - name: Claude writes the long video
+        if: steps.need.outputs.need == 'true' && steps.need.outputs.resume == ''
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VOICE: kokoro
+          MAX_TURNS: "900"
+          DATE: ${{ steps.need.outputs.date }}
+          PUBLISH_AT: ${{ steps.need.outputs.publish_at }}
+          IDEA: ${{ inputs.idea }}
+          DRAFT: ${{ steps.need.outputs.draft }}
+        run: |
+          TASK="LONG VIDEO: produce the long video for the slot $DATE (it goes public $PUBLISH_AT). LONG.md is your complete brief - follow it exactly; the reference is stories/repin-cossacks-long."
+          if [ -n "$DRAFT" ]; then TASK="$TASK An earlier run left stories/$DRAFT unfinished for this slot: finish that one (re-download its sources with python3 automation/release.py download-src $DRAFT if it has any, else fetch_images), fix what python3 automation/validate_long.py $DRAFT lists."; fi
+          if [ -n "$IDEA" ]; then TASK="$TASK Gigi suggested this idea - use it if it passes the rules: $IDEA"; fi
+          ./automation/run_claude.sh "$TASK"
+      - id: slug
+        if: always() && steps.need.outputs.need == 'true'
+        run: |
+          if [ -n "${{ steps.need.outputs.resume }}" ]; then echo "slug=${{ steps.need.outputs.resume }}" >> "$GITHUB_OUTPUT"
+          else python3 automation/long_plan.py written "${{ steps.need.outputs.date }}"; fi
+      - name: Check the story
+        if: steps.slug.outputs.slug != '' && steps.need.outputs.resume == ''
+        run: python3 automation/validate_long.py "${{ steps.slug.outputs.slug }}"
+      - name: Keep the source images and music in the private release (not in git)
+        if: steps.slug.outputs.slug != '' && steps.need.outputs.resume == ''
+        env: { GITHUB_TOKEN: "${{ github.token }}" }
+        run: python3 automation/release.py upload-src "${{ steps.slug.outputs.slug }}"
+      - if: always() && steps.need.outputs.need == 'true'
+        run: ./automation/commit.sh "long ${{ steps.slug.outputs.slug }} written for ${{ steps.need.outputs.date }}" stories STORY_QUEUE.md pipeline/pronounce.json
+      - if: failure()
+        run: |
+          if [ -f "$RUNNER_TEMP/claude_limit" ]; then
+            python3 automation/bot.py say "⏳ Claude hit your plan's usage limit while writing the long video for ${{ steps.need.outputs.date }}. It tries again at the next run (Saturday/Sunday 20:47), or start longform by hand."
+          else
+            python3 automation/bot.py say "⚠️ The long-video writer failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
+
+  produce:
+    needs: write
+    if: needs.write.outputs.slug != '' || inputs.slug != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    env:
+      SLUG: ${{ inputs.slug || needs.write.outputs.slug }}
+      GITHUB_TOKEN: ${{ github.token }}
+      GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: ./.github/actions/setup
+        with: { voice: none }
+      - name: Sources and slot
+        id: slot
+        run: |
+          python3 automation/release.py download-src "$SLUG"
+          python3 automation/long_plan.py slot "$SLUG"
+      - name: Final voice (Chirp 3 HD) and alignment
+        run: |
+          python3 pipeline/tts.py "$SLUG"
+          python3 pipeline/align.py "$SLUG" | tail -40
+      - name: Build, score, thumbnails, QA stills
+        run: |
+          python3 pipeline/build_story.py "$SLUG"
+          python3 pipeline/score.py "$SLUG"
+          python3 pipeline/thumb.py "$SLUG"
+          T=$(python3 automation/long_plan.py stills "$SLUG")
+          python3 pipeline/preview_stills.py "$SLUG" "$T"
+      - name: Render (about 40-60 min)
+        run: cd studio && CONCURRENCY=3 node render_long.mjs "$SLUG" "../stories/$SLUG/build/video.mp4" 12
+      - name: Finalize (master, review and upload copies, description, chapters, captions)
+        run: python3 pipeline/long_finalize.py "$SLUG"
+      - name: QA
+        run: |
+          python3 pipeline/long_qa.py "$SLUG" | tee qa.txt
+          grep -q "ALL GOOD" qa.txt
+      - name: Upload to YouTube (private, scheduled)
+        run: |
+          python3 automation/youtube.py long "$SLUG" "${{ steps.slot.outputs.publish_at }}" | tee yt.json
+          python3 - <<'PY'
+          import json, os, sys
+          sys.path.insert(0, "automation")
+          from common import set_state
+          r = json.load(open("yt.json"))
+          set_state(os.environ["SLUG"], status="scheduled", youtube_id=r["id"], youtube_url=r["url"], publish_at=r["publish_at"], captions=bool(r.get("captions")))
+          PY
+      - run: ./automation/commit.sh "long $SLUG scheduled"
+      - name: Preview, thumbnails and notes to Gigi
+        run: python3 automation/long_plan.py tell "$SLUG"
+      - if: failure()
+        run: python3 automation/bot.py say "⚠️ The long video $SLUG failed while being produced (voice/render/QA/upload) — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
