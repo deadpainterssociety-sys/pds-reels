@@ -114,7 +114,11 @@ for a, b in zip(shots, shots[1:]):
 
 # ---------- overlays ----------
 overlays = []
+dropped_years = [ov.get("text", "") for ov in st.get("overlays", []) if LONG and ov["type"] == "year"]
+if dropped_years:   # Gigi, 21 Nov 2026: long videos say dates in the narration, never as big date banners
+    print(f"!! long video: {len(dropped_years)} big date card(s) left out (PLAYBOOK §4, 21 Nov): {', '.join(dropped_years)}")
 for ov in st.get("overlays", []):
+    if LONG and ov["type"] == "year": continue
     o = {k: v for k, v in ov.items() if k not in ("from", "to", "at")}
     o["t0"] = T(ov.get("from", ov.get("at")))
     o["t1"] = T(ov["to"]) if "to" in ov else o["t0"] + 2.5

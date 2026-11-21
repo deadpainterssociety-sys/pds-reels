@@ -131,7 +131,8 @@ YouTube numbers are the only ones that count (Gigi, 6 Nov 2026).
   chapter cards, each ending on an open question → a twist near the middle → the payoff → the plain line
   "It hangs in the <Museum>, in <City>." → a 20 s end screen.
 - **Pace.** ≈ 135 wpm (story `speed` 0.94, phrase pauses ×1.3), a new shot every 4–8 s, crossfades between related
-  shots, hard cuts with a hit only on reveals. Dates as big year cards, names as lower thirds, quotes as quote cards.
+  shots, hard cuts with a hit only on reveals. Dates only in the narration (and in the small top-left labels), never as big
+  date cards (Gigi, 21 Nov 2026); names as lower thirds, quotes as quote cards.
 - **Title.** A statement of ≤ 9 words and ≤ 60 characters, no numbers; legend or praise first, horror second. Two
   titles and two thumbnails tested per video (Test & Compare).
 - **Thumbnail.** Style D close-up at 1280×720 (`pipeline/thumb.py`): A = no text, B = at most three words.
@@ -170,4 +171,7 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (17 Nov 2026) Never only extreme close-ups: every reel shows the whole painting (or most of it) at least once, where it fits naturally in the story (e.g. the line that describes the scene). For nudes a single small framed view of the whole painting (`z < 1`, `"frame": true`) is fine; the close-up rules still hold for every other shot and the cover.
 - (17 Nov 2026) Posting times: Shorts at 17:00 and 21:00 Madrid, long videos at 19:00 (2 h apart). The audience peak is 18:00-24:00 Madrid (US 40 %, UK 6 %); mornings are dead.
 - (2026-11-19, from data · brief 2026-11-19 P1) F1 length (19 Nov 2026): aim for 59–62 s including the 2.2 s tail (about 130–138 spoken words). If the voice check runs past 62 s, cut a beat or a clause; never speed the voice up to fit.
+- (21 Nov 2026) Long videos: no big date banners ("JANUARY 1938", "1907"…). Viewers care about the story, not the
+  timeline: say the date normally in the narration and move on. The small mono label top-left (place · date) may stay;
+  `build_story.py` leaves out any `year` overlay in a long video.
 <!-- new rules go here -->
