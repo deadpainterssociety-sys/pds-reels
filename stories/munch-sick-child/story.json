@@ -1,0 +1,627 @@
+{
+ "slug": "munch-sick-child",
+ "formula": "F4",
+ "format": "series",
+ "hook_type": "dark-legend",
+ "teaser": "Munch's dying sister, painted six times",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "first": {
+   "file": "src/first.jpg",
+   "commons": "File:Edvard Munch - The Sick Child - NG.M.00839 - National Museum of Art, Architecture and Design.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.37,
+     0.28
+    ],
+    "eye": [
+     0.38,
+     0.24
+    ],
+    "hands": [
+     0.46,
+     0.5
+    ],
+    "woman": [
+     0.58,
+     0.32
+    ],
+    "scratch": [
+     0.78,
+     0.28
+    ]
+   }
+  },
+  "gbg1896": {
+   "file": "src/gbg1896.jpg",
+   "commons": "File:Edvard Munch The Sick Girl.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.36,
+     0.28
+    ]
+   }
+  },
+  "tate1907": {
+   "file": "src/tate1907.jpg",
+   "commons": "File:Edvard Munch - The sick child (1907) - Tate Modern.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.36,
+     0.28
+    ]
+   }
+  },
+  "mm1925": {
+   "file": "src/mm1925.jpg",
+   "commons": "File:Edvard Munch, Det syge barn, 1925, MM.M.00051, Munchmuseet, Oslo.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.36,
+     0.28
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Watch Munch paint his sister's death,",
+     0.1,
+     0.95
+    ],
+    [
+     "six times *over.*",
+     0.4,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "y1877",
+   "perf": [
+    [
+     "1877.",
+     0.15,
+     0.97
+    ],
+    [
+     "Sophie dies of tuberculosis.",
+     0.15,
+     0.96
+    ],
+    [
+     "She is *fifteen.*",
+     0.35,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1886",
+   "perf": [
+    [
+     "1886.",
+     0.15,
+     0.97
+    ],
+    [
+     "His first version.",
+     0.15,
+     0.96
+    ],
+    [
+     "Painted, scrubbed out, painted *again.*",
+     0.3,
+     0.94
+    ],
+    [
+     "A critic calls it",
+     0.1,
+     0.96
+    ],
+    [
+     "a *half-rubbed-out* sketch.",
+     0.4,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "y1896",
+   "perf": [
+    [
+     "1896.",
+     0.15,
+     0.97
+    ],
+    [
+     "Again, in Paris.",
+     0.15,
+     0.96
+    ],
+    [
+     "*Warmer* colours.",
+     0.35,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "y1907",
+   "perf": [
+    [
+     "1907.",
+     0.15,
+     0.97
+    ],
+    [
+     "Twice more.",
+     0.15,
+     0.96
+    ],
+    [
+     "Brighter, and *simpler.*",
+     0.35,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "y1925",
+   "perf": [
+    [
+     "1925.",
+     0.15,
+     0.97
+    ],
+    [
+     "Nearly fifty years after she died.",
+     0.4,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "grey",
+   "perf": [
+    [
+     "He felt the first one was too grey.",
+     0.15,
+     0.95
+    ],
+    [
+     "*Heavy as lead.*",
+     0.5,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "memory",
+   "perf": [
+    [
+     "Maybe no single picture could hold the memory.",
+     0.4,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Yet that grey one",
+     0.1,
+     0.95
+    ],
+    [
+     "he called his *breakthrough.*",
+     0.5,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Museum, in Oslo.",
+     0.3,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "Edvard Munch",
+  "born": 1863,
+  "died": 1944,
+  "painting": "The Sick Child",
+  "year": "1885–86",
+  "museum": "National Museum",
+  "city": "Oslo",
+  "image": "first",
+  "image_credit": "Nasjonalmuseet, Oslo, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1944,
+  "note": "Munch d. 1944: public domain in the EU since 2015; all versions shown painted 1885–1925 (US: published before 1931). Commons files tagged public domain (Nasjonalmuseet NG.M.00839, Göteborgs konstmuseum, Tate N05042, Munchmuseet MM.M.00051)."
+ },
+ "say": {
+  "1877": "eighteen seventy-seven",
+  "1886": "eighteen eighty-six",
+  "1896": "eighteen ninety-six",
+  "1907": "nineteen oh seven",
+  "1925": "nineteen twenty-five"
+ },
+ "ipa": {
+  "Munch": "mˈʊŋk",
+  "Sophie": "sofˈi"
+ },
+ "respell": {
+  "Munch": "MOONK",
+  "Sophie": "so-FEE"
+ },
+ "chirp_say": {
+  "Munch": "Moonk",
+  "Sophie": "So-fee"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "first",
+   "kind": "image",
+   "from": "face@2.2",
+   "to": "face@2.05"
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "first",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "y1877-0.1",
+   "img": "first",
+   "kind": "image",
+   "from": "face@1.6",
+   "to": "face@1.72",
+   "gray": 1
+  },
+  {
+   "at": "y1877.5-0.05",
+   "img": "first",
+   "kind": "image",
+   "from": "hands@1.9",
+   "to": "hands@2.05",
+   "gray": 1
+  },
+  {
+   "at": "y1886-0.1",
+   "img": "first",
+   "kind": "image",
+   "from": "center@0.56",
+   "to": "center@0.59",
+   "frame": true
+  },
+  {
+   "at": "y1886.4-0.05",
+   "img": "first",
+   "kind": "image",
+   "from": "scratch@2.0",
+   "to": "scratch@2.15"
+  },
+  {
+   "at": "y1886.9-0.05",
+   "img": "first",
+   "from": "woman@1.6",
+   "to": "woman@1.7",
+   "sway": 0.006
+  },
+  {
+   "at": "y1896-0.1",
+   "img": "gbg1896",
+   "kind": "image",
+   "from": "center@0.56",
+   "to": "center@0.59",
+   "frame": true,
+   "dim": 0.1
+  },
+  {
+   "at": "y1896.4-0.05",
+   "img": "gbg1896",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "dim": 0.1
+  },
+  {
+   "at": "y1907-0.1",
+   "img": "tate1907",
+   "kind": "image",
+   "from": "center@0.56",
+   "to": "center@0.59",
+   "frame": true
+  },
+  {
+   "at": "y1907.3-0.05",
+   "img": "tate1907",
+   "kind": "image",
+   "from": "face@1.3",
+   "to": "face@1.4"
+  },
+  {
+   "at": "y1925-0.1",
+   "img": "mm1925",
+   "kind": "image",
+   "from": "center@0.56",
+   "to": "center@0.59",
+   "frame": true
+  },
+  {
+   "at": "y1925.1-0.05",
+   "img": "mm1925",
+   "kind": "image",
+   "from": "face@1.5",
+   "to": "face@1.65"
+  },
+  {
+   "at": "grey-0.1",
+   "img": "first",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "sway": 0.006
+  },
+  {
+   "at": "grey.8-0.05",
+   "img": "first",
+   "kind": "image",
+   "from": "woman@1.9",
+   "to": "woman@2.05"
+  },
+  {
+   "at": "memory-0.1",
+   "img": "first",
+   "kind": "image",
+   "from": "eye@2.6",
+   "to": "eye@2.45"
+  },
+  {
+   "at": "payoff-0.1",
+   "img": "first",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "first",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "y1877",
+   "to": "y1886-0.1",
+   "text": "1877 · SOPHIE MUNCH, 15"
+  },
+  {
+   "type": "label",
+   "from": "y1886",
+   "to": "y1896-0.1",
+   "text": "1885–86 · NATIONAL MUSEUM, OSLO"
+  },
+  {
+   "type": "label",
+   "from": "y1896",
+   "to": "y1907-0.1",
+   "text": "1896 · GOTHENBURG"
+  },
+  {
+   "type": "label",
+   "from": "y1907",
+   "to": "y1925-0.1",
+   "text": "1907 · TATE, LONDON"
+  },
+  {
+   "type": "label",
+   "from": "y1925",
+   "to": "grey-0.1",
+   "text": "1925 · MUNCH MUSEUM, OSLO"
+  },
+  {
+   "type": "label",
+   "from": "grey",
+   "to": "payoff-0.1",
+   "text": "1885–86 · THE FIRST"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "NATIONAL MUSEUM · OSLO"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "y1877-0.2",
+    "y1925$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "y1886",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "y1896",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "y1907",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "y1925",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.7",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Why paint her <i>six times?</i>",
+  "name": "EDVARD MUNCH",
+  "work": "The Sick Child, 1885–86",
+  "focus": [
+   0.37,
+   0.28
+  ],
+  "span": 0.45,
+  "answered_by": "He felt the first version was too grey, 'heavy as lead', and (the museum thinks) no single picture could hold his memory of his dying sister Sophie; yet he called that first one his breakthrough."
+ },
+ "facts": [
+  {
+   "claim": "The Sick Child is a group of six paintings by Munch, made from 1885 to the late 1920s, all based on the death of his sister Johanne Sophie from tuberculosis",
+   "source": "https://munch.no/en/our-collection/the-sick-child ; https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)"
+  },
+  {
+   "claim": "Sophie died of tuberculosis in 1877, at the age of 15",
+   "source": "https://nasjonalmuseet.no/en/collection/object/NG.M.00839 ; https://munch.no/en/our-collection/the-sick-child"
+  },
+  {
+   "claim": "The first version (1885–86, National Museum, Oslo) took over a year: Munch painted, scrubbed out and repainted it; shown at the 1886 Autumn Exhibition as 'Study'",
+   "source": "https://en.wikipedia.org/wiki/The_Sick_Child_(Munch) ; https://nasjonalmuseet.no/en/collection/object/NG.M.00839"
+  },
+  {
+   "claim": "Critic Andreas Aubert (1886): 'In its present form this study(!) is merely a discarded half-rubbed-out sketch'",
+   "source": "https://en.wikipedia.org/wiki/The_Sick_Child_(Munch) ; https://19thcenturyart-facos.com/artwork/sick-child"
+  },
+  {
+   "claim": "The second version was painted in Paris in 1896 for the collector Olaf Schou; it is now in the Gothenburg Museum of Art",
+   "source": "https://collection.goteborgskonstmuseum.se/en/collection/item/8531 ; https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)"
+  },
+  {
+   "claim": "Two versions date from 1907: one commissioned by Ernest Thiel (Thiel Gallery, Stockholm), one now at Tate, London",
+   "source": "https://thielska.zetcom.net/en/collection/item/732/ ; https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)"
+  },
+  {
+   "claim": "A version of 1925 (or earlier) is in the Munch Museum, Oslo; the last, signed and dated 1926, is probably the sixth",
+   "source": "https://munch.no/en/our-collection/the-sick-child ; https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)"
+  },
+  {
+   "claim": "Munch thought the colours of the first version were not vivid enough, too grey, 'heavy as lead'; he probably felt one picture couldn't cover every aspect of his memory",
+   "source": "https://munch.no/en/our-collection/the-sick-child"
+  },
+  {
+   "claim": "Munch: 'With the sick child I broke new ground – it was a breakthrough in my art'",
+   "source": "https://munch.no/en/our-collection/the-sick-child ; https://en.wikipedia.org/wiki/The_Sick_Child_(Munch)"
+  },
+  {
+   "claim": "The first version hangs in the National Museum, Oslo (Room 060, The Collection Exhibition – Edvard Munch)",
+   "source": "https://nasjonalmuseet.no/en/collection/object/NG.M.00839"
+  }
+ ],
+ "caption": "Watch Edvard Munch paint his sister's death, six times over.\n\nIn 1877 his sister Sophie died of tuberculosis. She was 15. Eight years later he painted the scene: Sophie in bed, a woman bowed beside her. He painted it, scrubbed it out and painted it again for more than a year, and showed it in 1886 under the title 'Study'. The critic Andreas Aubert called it a 'half-rubbed-out sketch'.\n\nIn 1896, in Paris, he painted it again for a collector (Gothenburg). In 1907, twice more (Thiel Gallery, Stockholm; Tate, London). By 1925, nearly fifty years after she died, another one (Munch Museum, Oslo), and a last one dated 1926.\n\nWhy? He felt the first was too grey, 'heavy as lead'. The Munch Museum thinks no single picture could hold the whole memory. Yet that grey first version is the one he called his breakthrough.\n\n🖤 Which version would you hang?",
+ "caption_short": "Watch Munch paint his sister's death, six times over. He called the first one 'heavy as lead'. 🖤",
+ "youtube_title": "Why paint her six times? Munch's The Sick Child, 1885–1926",
+ "hashtags_instagram": [
+  "#munch",
+  "#thesickchild",
+  "#arthistory",
+  "#oslo",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#munch",
+  "#thesickchild",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#munch",
+  "#edvardmunch",
+  "#thesickchild",
+  "#nasjonalmuseet",
+  "#oslo",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#grief",
+  "#expressionism"
+ ]
+}

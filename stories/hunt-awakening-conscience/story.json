@@ -1,0 +1,1002 @@
+{
+ "slug": "hunt-awakening-conscience",
+ "formula": "F2",
+ "format": "two-minute",
+ "hook_type": "hidden",
+ "images": {
+  "conscience": {
+   "file": "src/conscience.jpg",
+   "commons": "File:William Holman Hunt - The Awakening Conscience - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.53,
+     0.21
+    ],
+    "eyes": [
+     0.53,
+     0.185
+    ],
+    "rings": [
+     0.56,
+     0.51
+    ],
+    "hands": [
+     0.55,
+     0.52
+    ],
+    "man": [
+     0.17,
+     0.43
+    ],
+    "couple": [
+     0.38,
+     0.38
+    ],
+    "cat": [
+     0.06,
+     0.75
+    ],
+    "bird": [
+     0.08,
+     0.82
+    ],
+    "glove": [
+     0.6,
+     0.93
+    ],
+    "music": [
+     0.79,
+     0.4
+    ],
+    "keys": [
+     0.7,
+     0.5
+    ],
+    "clock": [
+     0.86,
+     0.24
+    ],
+    "mirror": [
+     0.27,
+     0.26
+    ],
+    "noteR": [
+     0.88,
+     0.05
+    ],
+    "noteL": [
+     0.1,
+     0.04
+    ],
+    "floor": [
+     0.45,
+     0.9
+    ],
+    "table": [
+     0.12,
+     0.6
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This woman's face",
+     0.1,
+     0.95
+    ],
+    [
+     "is not the one he first *painted.*",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "intro",
+   "perf": [
+    [
+     "William Holman Hunt finished it in 1853.",
+     0.35,
+     0.95
+    ],
+    [
+     "At first glance,",
+     0.15,
+     0.95
+    ],
+    [
+     "a young married couple.",
+     0.2,
+     0.94
+    ],
+    [
+     "Or a brother and sister,",
+     0.15,
+     0.94
+    ],
+    [
+     "at the piano.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "hand",
+   "perf": [
+    [
+     "Look at her left hand.",
+     0.3,
+     0.95
+    ],
+    [
+     "A ring on almost every finger.",
+     0.3,
+     0.94
+    ],
+    [
+     "Except one.",
+     0.2,
+     0.9
+    ],
+    [
+     "The *wedding* finger.",
+     0.6,
+     0.88
+    ],
+    [
+     "She isn't his wife.",
+     0.25,
+     0.93
+    ],
+    [
+     "She's his *mistress,*",
+     0.2,
+     0.88
+    ],
+    [
+     "in an apartment he pays for.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "cat",
+   "perf": [
+    [
+     "Now look under the table.",
+     0.3,
+     0.95
+    ],
+    [
+     "A cat is toying with a *bird.*",
+     0.3,
+     0.92
+    ],
+    [
+     "The bird is trying to get away.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "glove",
+   "perf": [
+    [
+     "Look at the floor.",
+     0.3,
+     0.95
+    ],
+    [
+     "A glove, pulled off and dropped.",
+     0.3,
+     0.94
+    ],
+    [
+     "Tate reads it as her future:",
+     0.2,
+     0.95
+    ],
+    [
+     "a woman used,",
+     0.15,
+     0.93
+    ],
+    [
+     "then *thrown away.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "song",
+   "perf": [
+    [
+     "Look at the piano.",
+     0.3,
+     0.95
+    ],
+    [
+     "He's idly playing a song.",
+     0.3,
+     0.95
+    ],
+    [
+     "And the tune reminds her",
+     0.1,
+     0.95
+    ],
+    [
+     "of the life she had *before.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "dome",
+   "perf": [
+    [
+     "Look at the clock on the piano.",
+     0.3,
+     0.95
+    ],
+    [
+     "A tiny figure of a woman,",
+     0.15,
+     0.94
+    ],
+    [
+     "trapped under a glass *dome.*",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "mirror",
+   "perf": [
+    [
+     "So she rises from his lap.",
+     0.3,
+     0.94
+    ],
+    [
+     "Look at the mirror behind them.",
+     0.3,
+     0.95
+    ],
+    [
+     "A sunlit garden.",
+     0.25,
+     0.93
+    ],
+    [
+     "The world outside.",
+     0.25,
+     0.93
+    ],
+    [
+     "A way *out.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ruskin",
+   "perf": [
+    [
+     "The critic John Ruskin wrote to The Times",
+     0.1,
+     0.95
+    ],
+    [
+     "that every object in this room is *tragic,*",
+     0.2,
+     0.92
+    ],
+    [
+     "if you read it right.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "face",
+   "perf": [
+    [
+     "Now look at her face.",
+     0.4,
+     0.9
+    ],
+    [
+     "Lips parted,",
+     0.15,
+     0.93
+    ],
+    [
+     "eyes fixed on the light.",
+     0.6,
+     0.93
+    ],
+    [
+     "In 1854, a critic wrote",
+     0.15,
+     0.95
+    ],
+    [
+     "that nobody could imagine",
+     0.1,
+     0.95
+    ],
+    [
+     "a more *painful*-looking face.",
+     0.8,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "buyer",
+   "perf": [
+    [
+     "The man who bought it,",
+     0.1,
+     0.95
+    ],
+    [
+     "a Manchester industrialist,",
+     0.1,
+     0.95
+    ],
+    [
+     "Thomas Fairbairn,",
+     0.3,
+     0.92
+    ],
+    [
+     "couldn't bear her expression.",
+     0.3,
+     0.92
+    ],
+    [
+     "He asked Hunt to *soften* it.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "So Hunt painted her face *again.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "coda",
+   "perf": [
+    [
+     "Look at the top corners.",
+     0.3,
+     0.95
+    ],
+    [
+     "Hunt wrote his repairs on the canvas itself.",
+     0.3,
+     0.95
+    ],
+    [
+     "Retouched in 1864.",
+     0.2,
+     0.95
+    ],
+    [
+     "Mended again in 1886.",
+     0.6,
+     0.95
+    ],
+    [
+     "That first face",
+     0.1,
+     0.95
+    ],
+    [
+     "is *lost.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "reflect",
+   "perf": [
+    [
+     "What we see now",
+     0.1,
+     0.94
+    ],
+    [
+     "is the face a rich man could *live* with.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in Tate Britain, in London.",
+     0.3,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "teaser": "The face a rich man couldn't bear to see",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "William Holman Hunt",
+  "born": 1827,
+  "died": 1910,
+  "painting": "The Awakening Conscience",
+  "year": "1853",
+  "museum": "Tate Britain",
+  "city": "London",
+  "image": "conscience",
+  "image_credit": "Tate, via Google Art Project / Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1910,
+  "note": "Hunt d. 1910: public domain worldwide. Commons file (Google Art Project, Tate T02075) tagged public domain."
+ },
+ "say": {
+  "1853": "eighteen fifty-three",
+  "1854": "eighteen fifty-four",
+  "1864": "eighteen sixty-four",
+  "1886": "eighteen eighty-six"
+ },
+ "ipa": {
+  "Fairbairn": "fˈɛɹbɛɹn"
+ },
+ "respell": {
+  "Fairbairn": "FAIR-bairn"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "conscience",
+   "kind": "image",
+   "from": "eyes@2.6",
+   "to": "eyes@2.45"
+  },
+  {
+   "at": "hook.2-0.05",
+   "img": "conscience",
+   "from": "face@1.7",
+   "to": "face@1.8",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.9-0.05",
+   "img": "conscience",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "intro.7-0.05",
+   "img": "conscience",
+   "from": "couple@1.4",
+   "to": "couple@1.5",
+   "sway": 0.006
+  },
+  {
+   "at": "intro.14-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "center@0.62",
+   "to": "center@0.65",
+   "frame": true
+  },
+  {
+   "at": "hand-0.08",
+   "img": "conscience",
+   "kind": "image",
+   "from": "hands@2.0",
+   "to": "hands@2.15"
+  },
+  {
+   "at": "hand.5-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "rings@3.2",
+   "to": "rings@3.4"
+  },
+  {
+   "at": "hand.16-0.05",
+   "img": "conscience",
+   "from": "man@1.8",
+   "to": "man@1.9",
+   "sway": 0.006
+  },
+  {
+   "at": "hand.23-0.05",
+   "img": "conscience",
+   "from": "center@1.15",
+   "to": "center@1.2",
+   "sway": 0.006
+  },
+  {
+   "at": "cat-0.08",
+   "img": "conscience",
+   "kind": "image",
+   "from": "table@1.9",
+   "to": "table@2.05"
+  },
+  {
+   "at": "cat.5-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "cat@3.0",
+   "to": "cat@3.2"
+  },
+  {
+   "at": "cat.12-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "bird@3.4",
+   "to": "bird@3.6"
+  },
+  {
+   "at": "glove-0.08",
+   "img": "conscience",
+   "kind": "image",
+   "from": "floor@2.0",
+   "to": "floor@2.15"
+  },
+  {
+   "at": "glove.4-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "glove@3.4",
+   "to": "glove@3.6"
+  },
+  {
+   "at": "glove.10-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "face@1.9",
+   "to": "face@2.0",
+   "gray": 0.6
+  },
+  {
+   "at": "song-0.08",
+   "img": "conscience",
+   "from": "music@2.0",
+   "to": "music@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "song.4-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "keys@2.4",
+   "to": "keys@2.55"
+  },
+  {
+   "at": "song.9-0.05",
+   "img": "conscience",
+   "from": "face@1.9",
+   "to": "face@2.05",
+   "sway": 0.006
+  },
+  {
+   "at": "dome-0.08",
+   "img": "conscience",
+   "kind": "image",
+   "from": "clock@2.6",
+   "to": "clock@2.8"
+  },
+  {
+   "at": "mirror-0.08",
+   "img": "conscience",
+   "from": "couple@1.3",
+   "to": "couple@1.38",
+   "sway": 0.006
+  },
+  {
+   "at": "mirror.6-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "mirror@2.2",
+   "to": "mirror@2.35"
+  },
+  {
+   "at": "mirror.15-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "mirror@3.0",
+   "to": "mirror@3.2"
+  },
+  {
+   "at": "ruskin-0.08",
+   "img": "conscience",
+   "kind": "image",
+   "from": "center@0.62",
+   "to": "center@0.65",
+   "frame": true
+  },
+  {
+   "at": "ruskin.8-0.05",
+   "img": "conscience",
+   "from": "center@1.1",
+   "to": "center@1.15",
+   "sway": 0.008
+  },
+  {
+   "at": "face-0.08",
+   "img": "conscience",
+   "from": "face@2.0",
+   "to": "face@2.15",
+   "sway": 0.006,
+   "hit": "small"
+  },
+  {
+   "at": "face.5-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "eyes@3.0",
+   "to": "eyes@3.2"
+  },
+  {
+   "at": "face.12-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "face@2.4",
+   "to": "face@2.55",
+   "gray": 1
+  },
+  {
+   "at": "buyer-0.08",
+   "img": "conscience",
+   "from": "center@1.2",
+   "to": "center@1.26",
+   "gray": 1,
+   "sway": 0.006
+  },
+  {
+   "at": "buyer.10-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "eyes@2.8",
+   "to": "eyes@2.95",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "conscience",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "coda-0.08",
+   "img": "conscience",
+   "kind": "image",
+   "from": "noteR@2.6",
+   "to": "noteR@2.75"
+  },
+  {
+   "at": "coda.13-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "noteL@2.6",
+   "to": "noteL@2.75"
+  },
+  {
+   "at": "coda.16-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "noteR@3.2",
+   "to": "noteR@3.35"
+  },
+  {
+   "at": "coda.20-0.05",
+   "img": "conscience",
+   "kind": "image",
+   "from": "face@2.6",
+   "to": "face@2.75",
+   "gray": 0.7
+  },
+  {
+   "at": "reflect-0.08",
+   "img": "conscience",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "sway": 0.008
+  },
+  {
+   "at": "ending-0.08",
+   "img": "conscience",
+   "from": "face@1.6",
+   "to": "face@1.7",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "intro",
+   "to": "intro.14-0.1",
+   "text": "WILLIAM HOLMAN HUNT · 1853"
+  },
+  {
+   "type": "label",
+   "from": "intro.14",
+   "to": "hand-0.1",
+   "text": "TATE BRITAIN · LONDON"
+  },
+  {
+   "type": "ring",
+   "at": "hand.13",
+   "to": "hand.16-0.1",
+   "img": "conscience",
+   "point": "rings",
+   "rx": 150,
+   "ry": 110,
+   "rot": -15
+  },
+  {
+   "type": "label",
+   "from": "hand.20",
+   "to": "cat-0.1",
+   "text": "THE MISTRESS"
+  },
+  {
+   "type": "ring",
+   "at": "cat.12",
+   "to": "glove-0.1",
+   "img": "conscience",
+   "point": "bird",
+   "rx": 200,
+   "ry": 120,
+   "rot": -10
+  },
+  {
+   "type": "ring",
+   "at": "glove.4",
+   "to": "glove.10-0.1",
+   "img": "conscience",
+   "point": "glove",
+   "rx": 170,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "dome.13",
+   "to": "mirror-0.1",
+   "img": "conscience",
+   "point": "clock",
+   "rx": 170,
+   "ry": 230,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "ruskin",
+   "to": "face-0.1",
+   "text": "JOHN RUSKIN · THE TIMES, 1854"
+  },
+  {
+   "type": "label",
+   "from": "face.12",
+   "to": "buyer-0.1",
+   "text": "THE ATHENAEUM · 1854"
+  },
+  {
+   "type": "label",
+   "from": "buyer",
+   "to": "payoff-0.1",
+   "text": "THOMAS FAIRBAIRN · THE BUYER"
+  },
+  {
+   "type": "label",
+   "from": "coda.13",
+   "to": "coda.16-0.1",
+   "text": "\"PICTURE RETOUCHED ... 1864\""
+  },
+  {
+   "type": "label",
+   "from": "coda.16",
+   "to": "coda.20-0.1",
+   "text": "\"... AMBER 86\""
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+1",
+   "text": "TATE BRITAIN · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "glove.4-0.05",
+   "glove.10-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "face.12-0.2",
+    "buyer$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "payoff$+0.6"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.9-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "hand.13",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "cat.11",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "glove.5",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.5",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Why did he <i>change her face?</i>",
+  "name": "WILLIAM HOLMAN HUNT",
+  "work": "The Awakening Conscience, 1853",
+  "focus": [
+   0.53,
+   0.22
+  ],
+  "span": 0.4,
+  "answered_by": "The buyer, Thomas Fairbairn, couldn't bear the woman's painful expression (a kept mistress waking to her conscience) and asked Hunt to soften it; Hunt repainted the face."
+ },
+ "facts": [
+  {
+   "claim": "The Awakening Conscience, oil on canvas, 1853, by William Holman Hunt; Tate Britain, London (T02075), on display in 'Beauty as Protest', Room 10",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904"
+  },
+  {
+   "claim": "At first it seems to show a young married couple or perhaps a brother and sister",
+   "source": "https://www.tate.org.uk/art/art-terms/p/pre-raphaelite/why-were-pre-raphaelites-so-shocking"
+  },
+  {
+   "claim": "She wears rings on every finger except the wedding finger; she is not his wife but his mistress, in an apartment he has provided for her",
+   "source": "https://www.tate.org.uk/art/art-terms/p/pre-raphaelite/why-were-pre-raphaelites-so-shocking ; https://shafe.co.uk/?p=6136 ; https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Under the table a cat toys with a bird that is trying to escape",
+   "source": "https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://victorianweb.org/painting/whh/paintings/9.html"
+  },
+  {
+   "claim": "A fallen, cast-off glove on the floor hints that she will be discarded (Tate's reading)",
+   "source": "https://www.tate.org.uk/art/art-terms/p/pre-raphaelite/why-were-pre-raphaelites-so-shocking ; https://shafe.co.uk/?p=6136"
+  },
+  {
+   "claim": "The tune he idly plays on the piano reminds her of her earlier life, and she rises from his lap towards the bright outside world, seen in the mirror",
+   "source": "https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904"
+  },
+  {
+   "claim": "The clock on the piano is under glass; Tate's label: a female figure enclosed in a glass dome",
+   "source": "https://www.tate.org.uk/visit/tate-britain/display/historic-early-modern-british-art/1845-1904 ; https://shafe.co.uk/?p=6136 ; https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "Ruskin defended the picture in a letter to The Times (1854): not a single object in the room but it becomes tragical if read rightly",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://shafe.co.uk/?p=6136"
+  },
+  {
+   "claim": "The Athenaeum (1854): 'The author of The Bridge of Sighs could not have conceived a more painful-looking face'",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience"
+  },
+  {
+   "claim": "The buyer, Manchester industrialist Thomas Fairbairn, could not bear the woman's expression and asked Hunt to soften it; Hunt repainted the face",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://shafe.co.uk/?p=6136"
+  },
+  {
+   "claim": "Hunt retouched the painting in 1864 and again in 1886; his own notes on the canvas corners read 'picture retouched with same vehicle in 1864' and '... I have now filled up with amber 86'",
+   "source": "https://en.wikipedia.org/wiki/The_Awakening_Conscience ; https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Awakening_Conscience_-_Google_Art_Project.jpg"
+  }
+ ],
+ "caption": "This woman's face is not the one William Holman Hunt first painted.\n\nThe Awakening Conscience (1853) looks at first like a young couple at the piano. Then look closer. She wears rings on every finger except the wedding finger: she is his mistress, in an apartment he pays for. Under the table a cat toys with a bird that is trying to escape. A glove lies cast off on the floor (Tate reads it as her fate: used, then discarded). The song he idly plays reminds her of the life she had before, and she rises from his lap toward the sunlit garden we see in the mirror. John Ruskin wrote to The Times that every object in the room becomes tragic if read rightly.\n\nIn 1854 The Athenaeum wrote that nobody 'could have conceived a more painful-looking face'. The buyer, Manchester industrialist Thomas Fairbairn, couldn't bear her expression and asked Hunt to soften it. So Hunt painted her face again. He retouched the picture in 1864 and again in 1886, and wrote his repairs on the canvas itself, in the top corners. The first face is lost.\n\n🖤 Would you have kept the painful face?",
+ "caption_short": "This woman's face is not the one Hunt first painted. The buyer couldn't bear it. 🖤",
+ "youtube_title": "Why did he change her face? Holman Hunt's The Awakening Conscience",
+ "hashtags_instagram": [
+  "#holmanhunt",
+  "#theawakeningconscience",
+  "#arthistory",
+  "#tatebritain",
+  "#preraphaelite"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#holmanhunt",
+  "#theawakeningconscience",
+  "#hiddendetails"
+ ],
+ "hashtags": [
+  "#holmanhunt",
+  "#williamholmanhunt",
+  "#theawakeningconscience",
+  "#tatebritain",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#preraphaelites"
+ ]
+}
