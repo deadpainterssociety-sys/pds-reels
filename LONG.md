@@ -84,5 +84,15 @@ Telegram. You never publish, never call YouTube/Telegram, never read secrets. Bu
   `pinned_comment` (one line of extra fact + a question). `"next": False`. Add `"slot": "<YYYY-MM-DD>"` at the top level.
 - `python automation/validate_long.py <slug>` must print no problems. Fix everything it lists and run it again.
 - Do NOT render (the workflow renders on a bigger machine), do not commit or push, do not schedule anything.
+## 8. The trailer Short (sends Shorts viewers to this film; Gigi, 21 Nov 2026)
+- `python automation/long_plan.py shorts <slug>` lists our Shorts of the same painting. If it lists any, do nothing
+  more: the bot reminds Gigi to link them to the film in Studio when it goes public.
+- If it prints `none`: add a row at the TOP of `STORY_QUEUE.md` **Pinned** dated the day after your slot (`YYYY-MM-DD`),
+  so the night shift makes the trailer: Painting (museum) | the angle: ONE anecdote from your film, complete in itself
+  and NOT its throughline or payoff (a side story with a face or a detail on screen: a model, a prank, an object), 1–2
+  sentences with its facts | its `hook_type` | notes: "Trailer Short for `<slug>`" (exactly these words, CLAUDE.md step 1
+  has the rules), a slug `<painter>-<keyword>`, the leads (your facts.json entry numbers, the main image's Commons file,
+  the points from visuals.py it needs). The reference row is the one for `repin-cossacks-long` (in Done once made).
+
 - Write `stories/<slug>/notes.txt` (3 short lines, sent to Gigi with the preview): the story in one line, anything
-  you were unsure about, anything she should check. Then stop.
+  you were unsure about, anything she should check, and the trailer's angle (or which Short will link to the film). Then stop.

@@ -26,7 +26,7 @@ import datetime, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import telegram as T
 from common import (CONFIG, ROOT, captions, date_for, gh_output, jload, jsave, now, out_dir, publish_until, schedule, set_state,
-                    slot_time, slots, state, story,
+                    slot_time, slots, state, story, long_for_short, long_public, long_title, is_main_short,
                     title_of, today, upcoming)
 
 BS = "automation/bot_state.json"
@@ -407,10 +407,12 @@ def posted(slug):
         elif r.get("error"): lines.append(f"• {name}: ⚠️ {T.esc(r['error'][:200])}")
         elif r.get("manual"): lines.append(f"• {name}: 📲 not connected yet — file + caption below, post it by hand")
         elif r.get("skipped"): lines.append(f"• {name}: off ({T.esc(r['skipped'])})")
-    rel = story(slug).get("related_video")          # a trailer Short for a long video (story.json "related_video")
-    if rel and (s.get("youtube") or {}).get("url"):
-        lines.append(f"🔗 YouTube Studio → this Short → Edit → <b>Related video</b> → pick the long video ({T.esc(rel)}): "
-                     "the API can't set it, and it puts a tap-through link on the Short")
+    lg = long_for_short(slug) if is_main_short(slug) else None   # a Short of a painting we made a long video about
+    if lg and long_public(lg) and (s.get("youtube") or {}).get("url") and s.get("related_told") != lg:
+        lines.append(f"🔗 <b>Link it to the long video</b>: YouTube Studio → this Short → <b>Related video</b> → "
+                     f"“{T.esc(long_title(lg))}” ({T.esc(state(lg).get('youtube_url', ''))}). The API can't set it; "
+                     "it puts a tap-through link on the Short.")
+        s = set_state(slug, related_told=lg)
     T.send(chat_id(), "\n".join(lines))
     if (s.get("tiktok") or {}).get("mode") == "inbox":
         T.send(chat_id(), f"<code>{T.esc(c['tiktok'][:2000])}</code>")

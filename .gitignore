@@ -8,6 +8,7 @@ stories/*/out/*
 !stories/*/out/cover.jpg
 !stories/*/out/caption.txt
 !stories/*/out/captions.srt
+!stories/*-long/out/thumb_a.jpg
 *.part
 *.tmp
 __pycache__/

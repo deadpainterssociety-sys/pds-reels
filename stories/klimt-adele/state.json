@@ -1,6 +1,6 @@
 {
  "status": "posted",
- "updated": "2026-11-07T14:03:58+01:00",
+ "updated": "2026-11-21T19:37:08+01:00",
  "validated_at": "2026-11-06T03:57:07+01:00",
  "duration_s": 67.8,
  "review_message": 113,
@@ -19,5 +19,6 @@
   "manual": true
  },
  "posted_at": "2026-11-07T14:02:40+01:00",
- "manual_sent": true
+ "manual_sent": true,
+ "related_told": "klimt-adele-long"
 }

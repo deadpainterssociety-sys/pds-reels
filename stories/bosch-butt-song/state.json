@@ -1,6 +1,6 @@
 {
  "status": "posted",
- "updated": "2026-11-14T14:03:33+01:00",
+ "updated": "2026-11-21T19:37:08+01:00",
  "validated_at": "2026-11-10T03:35:17+01:00",
  "duration_s": 58.9,
  "review_message": 315,
@@ -19,5 +19,6 @@
   "manual": true
  },
  "posted_at": "2026-11-14T14:02:34+01:00",
- "manual_sent": true
+ "manual_sent": true,
+ "related_told": "bosch-garden-long"
 }

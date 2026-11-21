@@ -45,3 +45,6 @@ jobs:
           print("\n\n".join(out))
           PY
           if [ -s msg.html ]; then python3 automation/bot.py say "$(cat msg.html)"; fi
+      - name: Shorts to link to the long videos (Studio "Related video", told once per pair)
+        run: python3 automation/long_plan.py links
+      - run: ./automation/commit.sh "long videos - Shorts to link told" stories

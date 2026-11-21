@@ -18,6 +18,7 @@ export type Overlay = {
   type: "label" | "title" | "pin" | "ring" | "hotspot" | "stamp" | "credit" | "cut" | "next"; t0: number; t1: number;
   text?: string; kicker?: string; sub?: string; point?: { x: number; y: number }; rx?: number; ry?: number; rot?: number; color?: string;
   box?: [number, number, number, number]; shade?: number;   // cut: kept area in image fractions [x0,y0,x1,y1]; shade = when the removed strips tint
+  img?: string; arrow?: boolean;                             // next: a trailer Short's full-film card (the long video's thumbnail + an arrow to the link)
 };
 export type MapData = { land: string[]; focus: string[]; cities: Record<string, [number, number]> };
 export type Word = { w: string; s: number; e: number; em?: number };
@@ -251,8 +252,15 @@ const Over: React.FC<{ o: Overlay; t: number; pt: (q: { x: number; y: number }) 
       </svg>;
     }
     case "next": {  // silent end card: "NEXT" + tomorrow's teaser, in the caption zone once the last caption has gone
+      // (a trailer Short: "THE FULL FILM" + the long video's thumbnail and title + an arrow down to the Related video link)
       const kk = easeOut(ramp(t, o.t0, o.t0 + 0.45)); const kl = easeOut(ramp(t, o.t0 + 0.1, o.t0 + 0.7));
-      return <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(0,0,0,0) 48%, rgba(0,0,0,${0.62 * kk}) 82%)` }}>
+      const ka = easeOut(ramp(t, o.t0 + 0.5, o.t0 + 0.9)); const bob = Math.sin((t - o.t0) * 5) * 8;
+      return <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(0,0,0,${o.img ? 0.35 * kk : 0}) 30%, rgba(0,0,0,${0.62 * kk}) 82%)` }}>
+        {o.img && <div style={{ position: "absolute", left: (W - 720) / 2, top: st.captionTop - 520, width: 720, height: 405, opacity: kk,
+          transform: `translateY(${(1 - kk) * 40}px) scale(${0.94 + 0.06 * kk})`, boxShadow: "0 18px 60px rgba(0,0,0,0.7)", border: "3px solid rgba(244,240,232,0.85)" }}>
+          <Img src={staticFile(o.img)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>}
+        {o.arrow && <svg width="88" height="88" viewBox="0 0 24 24" style={{ position: "absolute", left: W / 2 - 44, top: st.captionTop + 200 + bob, opacity: ka }}>
+          <path d="M12 3v15M5 12l7 7 7-7" fill="none" stroke={st.accent} strokeWidth={2.6} strokeLinecap="round" strokeLinejoin="round" /></svg>}
         <div style={{ position: "absolute", left: 90, right: 90, top: st.captionTop - 60, textAlign: "center", opacity: kk, transform: `translateY(${(1 - kk) * 26}px)` }}>
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 22, marginBottom: 22 }}>
             <div style={{ width: 70 * kl, height: 3, background: st.accent }} />

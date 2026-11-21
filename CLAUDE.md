@@ -45,6 +45,15 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
   stories that already have `"experiment": {"id": …}` for it; on a tie take A), follow that arm's instruction, and
   record `"experiment": {"id": "E1", "arm": "A"}` in story.json. Everything else stays as the playbook says.
 - Slug: `painter-keyword` in lowercase ASCII (e.g. `caravaggio-goliath`).
+- **Trailer Shorts** (a Pinned row says "Trailer Short for `<long-slug>`"; Gigi, 21 Nov 2026): a Short that sends viewers
+  to one of our long videos. Same painting as the long video on purpose: the never-repeat rule doesn't apply to it.
+  Set `"related_long": "<long-slug>"`. Tell ONLY the row's one anecdote, complete in itself; never retell the film's main
+  story or give away its payoff. The line before the last is exactly "The whole story is a film on our channel." (the
+  verbal cue YouTube recommends in the last 5 s), then the usual last line; `tail` 2.6 (the end card shows the film's
+  thumbnail and title with an arrow to the link, instead of the NEXT card; still write a `teaser`). Caption: one line
+  before the closing question, "🎬 The whole story is a film on our YouTube channel: “<film title>”". Formula: F1, or F3
+  when the other reel of that day is F1. Trailers stay outside the rotation: put the trailer's Done row just ABOVE the
+  current bottom row, so the next story still follows the bottom row's formula.
 
 ### 2. Research and verify (this is what protects the channel)
 - WebSearch, then WebFetch the best results: the museum's own page first, then Wikipedia **and its cited sources**,
@@ -190,7 +199,7 @@ hook_type "dark"|"time-gap"|"craft"|"sacred-strange"|"dark-legend"|"damage"|"hid
 teaser    "≤ 48 characters, shown on the previous reel's NEXT card"
 experiment {id, arm} while a test runs (EXPERIMENTS.md)
 next      (optional) override the NEXT card text for THIS reel; false = no card (manual builds outside the schedule)
-related_video (optional) the long video's URL when this Short is its trailer (a Pinned row says so)
+related_long (optional) the slug of the long video this Short is the trailer of (a Pinned row says so): end card + Studio link
 meta      {painter, born, died, painting, year, museum, city, image (main image key), image_credit, nude?}
 cover     {question (<i>…</i>), name (PAINTER IN CAPS), work ("Title, year"), focus [x,y], span, at?, answered_by}
 rights    {creator_died, note}

@@ -145,13 +145,37 @@ def next_teaser():
     return None
 
 
-teaser = None if LONG else next_teaser()
-if teaser:
+def full_film():
+    """a trailer Short (story.json "related_long"): its end card points to the long video instead of tomorrow's reel -
+    the long one's thumbnail and title, and an arrow down to YouTube's Related video link (YouTube's own advice: a visual
+    cue in the last seconds). The thumbnail is the long's out/thumb_a.jpg (committed with it)."""
+    lg = st.get("related_long")
+    if LONG or not lg: return None
+    try: lst = json.load(open(os.path.join(STORIES, lg, "story.json")))
+    except (OSError, ValueError): print(f"!! related_long '{lg}': no such story"); return None
+    title = (lst.get("youtube", {}).get("titles") or [lst.get("meta", {}).get("painting", "")])[0]
+    card = {"type": "next", "kicker": "THE FULL FILM", "text": title, "arrow": True}
+    th = os.path.join(STORIES, lg, "out", "thumb_a.jpg")
+    if os.path.exists(th):
+        im = Image.open(th).convert("RGB"); im.thumbnail((760, 760), Image.LANCZOS)
+        im.save(os.path.join(pub, "fullfilm.jpg"), quality=90); card["img"] = f"stories/{slug}/fullfilm.jpg"
+    else: print(f"!! related_long '{lg}': no out/thumb_a.jpg yet, the full-film card shows the title only")
+    return card
+
+
+film = full_film()
+teaser = None if (LONG or film) else next_teaser()
+if film:
+    t0 = round(tl["lines"][-1]["e"] + 0.6, 3)
+    if tl["duration"] - t0 < 1.8: print(f"!! the FULL FILM card gets only {tl['duration'] - t0:.1f} s: set \"tail\": 2.6")
+    overlays.append({**film, "t0": t0, "t1": tl["duration"] + 1})
+    print(f"FULL FILM card: {film['text']}" + (" (with thumbnail)" if film.get("img") else ""))
+elif teaser:
     t0 = round(tl["lines"][-1]["e"] + 0.6, 3)   # after the last caption has gone
     if tl["duration"] - t0 < 1.2: print(f"!! the NEXT card gets only {tl['duration'] - t0:.1f} s: set \"tail\": 2.2 and re-run from step 1")
     overlays.append({"type": "next", "kicker": "NEXT", "text": teaser, "t0": t0, "t1": tl["duration"] + 1})
     print(f"NEXT card: {teaser}")
-else:
+elif not LONG:
     print("NEXT card: none (no teaser for the next scheduled story)")
 for f in st.get("flashes", []): flashes.append(T(f))
 nocap = [[T(a), T(b)] for a, b in st.get("nocap", [])]

@@ -107,6 +107,60 @@ def title_of(slug):
     return f"{m.get('painter', slug)}, {m.get('painting', '')} — “{q}”".strip()
 
 
+# ---------------------------------------------------------------- Shorts <-> long videos (YouTube "Related video" links)
+def _norm_title(t):
+    import unicodedata
+    t = unicodedata.normalize("NFKD", re.sub(r"\(.*?\)", "", t or "")).encode("ascii", "ignore").decode().lower()
+    t = re.sub(r"[^a-z0-9]+", " ", t).strip()
+    return re.sub(r"^(the|a|an|portrait of( the)?) ", "", t)
+
+
+def same_painting(a, b):
+    """two story.json dicts about the same painting: same painter's surname and the same title (a Short's title may add
+    a detail in brackets or after the long one's: 'The Garden of Earthly Delights (right panel, Hell)'), or the same main file"""
+    ma, mb = a.get("meta", {}), b.get("meta", {})
+    main = lambda st, m: (st.get("images", {}).get(m.get("image"), {}) or {}).get("commons")
+    if main(a, ma) and main(a, ma) == main(b, mb): return True
+    sur = lambda m: (_norm_title(m.get("painter", "")).split() or [""])[-1]
+    if not sur(ma) or sur(ma) != sur(mb): return False
+    ta, tb = _norm_title(ma.get("painting")), _norm_title(mb.get("painting"))
+    return bool(ta and tb) and (ta == tb or ta.startswith(tb + " ") or tb.startswith(ta + " "))
+
+
+def _story_slugs(): return sorted(d for d in os.listdir(os.path.join(ROOT, "stories")) if os.path.isfile(os.path.join(ROOT, "stories", d, "story.json")))
+def is_long(slug): return slug.endswith("-long") or story(slug).get("format") == "long"
+def is_main_short(slug):   # an English Short of the main channel (not a long video, not the Spanish edition)
+    return not is_long(slug) and not slug.endswith("-es") and not str(story(slug).get("lang", "en")).startswith("es")
+
+
+def long_public(slug):
+    s = state(slug)
+    try: return bool(s.get("youtube_url")) and datetime.datetime.fromisoformat(s["publish_at"]) <= now()
+    except (KeyError, ValueError, TypeError): return False
+
+
+def long_title(slug):
+    t = story(slug).get("youtube", {}).get("titles") or [""]
+    return t[0] or story(slug).get("meta", {}).get("painting", slug)
+
+
+def long_for_short(slug):
+    """the long video a Short belongs to: story.json "related_long" (a trailer Short; false = none), else the long video
+    of the same painting (newest first)"""
+    st = story(slug)
+    if "related_long" in st: return st["related_long"] or None
+    for d in sorted((d for d in _story_slugs() if is_long(d)), reverse=True):
+        if same_painting(st, story(d)): return d
+    return None
+
+
+def shorts_for_long(slug):
+    """English main-channel Shorts of the same painting as this long video (any status), oldest first"""
+    lg = story(slug)
+    return [d for d in _story_slugs() if is_main_short(d) and long_for_short(d) == slug
+            and (story(d).get("related_long") == slug or same_painting(story(d), lg))]
+
+
 def env(name, required=True):
     v = os.environ.get(name, "").strip()
     if required and not v: raise SystemExit(f"missing secret/env {name}")

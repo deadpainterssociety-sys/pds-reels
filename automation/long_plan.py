@@ -8,6 +8,9 @@ usage: python automation/long_plan.py next [YYYY-MM-DD]   prints and writes need
        python automation/long_plan.py slot <slug>          its publish_at -> $GITHUB_OUTPUT
        python automation/long_plan.py stills <slug>        QA still times (every few shots), comma-separated
        python automation/long_plan.py tell <slug>          thumbnails + preview + notes to Gigi on Telegram (after the upload)
+       python automation/long_plan.py shorts <slug>        our Shorts of the same painting ("none" = it needs a trailer Short)
+       python automation/long_plan.py links                Telegram: which Shorts to link to the long videos that are public
+                                                           (YouTube Studio "Related video"; each pair is told once)
 """
 import datetime, glob, json, os, sys
 from common import CONFIG, ROOT, TZ, now
@@ -100,6 +103,30 @@ def tell(slug):
                   f"Something wrong? Set it to Private in Studio and tell Claude in a chat.\n{r.get('studio', '')}"))
 
 
+def shorts(slug):
+    from common import shorts_for_long, state
+    found = shorts_for_long(slug)
+    for d in found: print(d, state(d).get("status"), (state(d).get("youtube") or {}).get("url", ""))
+    if not found: print("none")
+
+
+def links():
+    """Shorts of a painting whose long video is public: remind Gigi once to set Studio's Related video (the API can't)"""
+    import html, telegram as T, bot
+    from common import is_long, long_public, long_title, set_state, shorts_for_long, state, title_of, _story_slugs
+    rows = []
+    for lg in (d for d in _story_slugs() if is_long(d) and long_public(d)):
+        for sh in shorts_for_long(lg):
+            s = state(sh); url = (s.get("youtube") or {}).get("url")
+            if not url or s.get("related_told") == lg: continue
+            rows.append((sh, lg, f"• <a href=\"{html.escape(url)}\">{html.escape(title_of(sh))}</a>\n   → “{html.escape(long_title(lg))}”"))
+    if not rows: return print("no new Short-to-long links")
+    T.send(bot.chat_id(), "🔗 <b>Link these Shorts to their long video</b> (YouTube Studio → the Short → <b>Related video</b> → "
+                          "the long one; the API can't do it):\n" + "\n".join(r[2] for r in rows))
+    for sh, lg, _ in rows: set_state(sh, related_told=lg)
+    print("told", len(rows), "link(s)")
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "next"
     if cmd == "written": return gh_out(slug=written(sys.argv[2]))
@@ -108,6 +135,8 @@ def main():
         return gh_out(publish_at=publish_at(st["slot"]))
     if cmd == "stills": return print(stills(sys.argv[2]))
     if cmd == "tell": return tell(sys.argv[2])
+    if cmd == "shorts": return shorts(sys.argv[2])
+    if cmd == "links": return links()
     t = taken()
     if cmd == "list":
         for d in slots(): print(d, *t.get(d, ("-",)))

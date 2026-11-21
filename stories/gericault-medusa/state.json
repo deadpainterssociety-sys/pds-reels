@@ -1,6 +1,6 @@
 {
  "status": "posted",
- "updated": "2026-11-09T14:57:54+01:00",
+ "updated": "2026-11-21T19:37:08+01:00",
  "validated_at": "2026-11-07T03:31:21+01:00",
  "duration_s": 64.2,
  "review_message": 156,
@@ -19,5 +19,6 @@
   "manual": true
  },
  "posted_at": "2026-11-09T14:56:45+01:00",
- "manual_sent": true
+ "manual_sent": true,
+ "related_told": "gericault-raft-long"
 }
