@@ -262,5 +262,10 @@
   "ig_location_id": null,
   "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"AXOP7MHDlZmQfqmMAhbYAV2\"}}",
   "ig_location_id_checked": "2026-11-20"
+ },
+ "State Russian Museum, St Petersburg": {
+  "lat": null,
+  "lon": null,
+  "lat_checked": "2026-11-21"
  }
 }
