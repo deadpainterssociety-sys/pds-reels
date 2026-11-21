@@ -37,9 +37,7 @@
   "Georges": "ZHORZH",
   "Tour": "TOOR"
  },
- "chirp_say": {
-  "Georges de La Tour": "Zhorzh duh La Toor"
- },
+ "chirp_say": {},
  "lines": [
   {
    "id": "hook",

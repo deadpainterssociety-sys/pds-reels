@@ -174,4 +174,5 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (21 Nov 2026) Long videos: no big date banners ("JANUARY 1938", "1907"…). Viewers care about the story, not the
   timeline: say the date normally in the narration and move on. The small mono label top-left (place · date) may stay;
   `build_story.py` leaves out any `year` overlay in a long video.
+- (21 Nov 2026) French names in the final Chirp voice must sound French (Georges de La Tour was still wrong after the 6 Nov rule). Chirp reads made-up respellings literally: `chirp_say` "Zhorzh duh La Toor" came out as "Zorz". For a famous French name, give Chirp the real French spelling (no `chirp_say`): it knows painters' names. Use `chirp_say` only for a name Chirp is known to get wrong, and only with syllables English can read ("Zhee-vair-nee", "Koor-bay"), never clusters like "rzh". Keep `ipa`/`respell` for the Kokoro check and Chatterbox.
 <!-- new rules go here -->
