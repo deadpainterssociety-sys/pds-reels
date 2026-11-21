@@ -244,7 +244,7 @@ SFX += [{"at": A(prev, end=True, off=0.35), "fx": "impact", "gain": 0.22} for pr
 ]
 T = lambda f, frm, to, credit, **kw: {"file": f"src/music/{f}", "from": frm, **({"to": to} if to is not None else {}), "start": kw.pop("start", 0),
                                      "gain_db": kw.pop("gain_db", 0), "fade_in": kw.pop("fade_in", 2.5), "fade_out": kw.pop("fade_out", 3.0), "credit": credit}
-PX = "Mussorgsky, Pictures at an Exhibition · Musopen, public domain"
+PX = "Mussorgsky, Pictures at an Exhibition: {} · Musopen, public domain"
 # track start points (s) in each recording, tuned to the voice timeline (loudness maps, 5-s windows): Bydlo's build under the
 # cold open, its climax on "it was finally done" (c4e), Catacombs' loudest bar on the Kharkiv fire (c6e), the Great Gate's
 # finale under the last lines and the end screen
@@ -255,15 +255,15 @@ MUSIC.update({
                  "the friends in costume, the Old Castle for the journey south, the Promenade for the casting, Catacombs for Ivan and "
                  "for Kharkiv, Bald Mountain's quiet dawn for the emperor's purchase, the Great Gate of Kiev for the end.",
  "tracks": [
-  T("m_bydlo.ogg", 0, A("c1a", off=1.5), PX + ": Bydlo", start=30.0, fade_in=0.8),
-  T("m_limoges.ogg", A("cold6", end=True, off=-0.5), A("c2a", off=1.5), PX + ": Limoges", start=0.0, gain_db=-1),
-  T("m_castle.ogg", A("c1f", end=True, off=-0.5), A("c3a", off=1.5), PX + ": The Old Castle", start=0.0, gain_db=2),
-  T("m_promenade.ogg", A("c2h", end=True, off=-0.5), A("c3d2", off=1.5), PX + ": Promenade", start=0.0, gain_db=3),
-  T("m_limoges.ogg", A("c3d", end=True, off=-0.5), A("c4a", off=1.5), PX + ": Limoges", start=34.0, gain_db=-1),
-  T("m_catacombae.ogg", A("c3h", end=True, off=-0.5), A("c4d", off=1.5), PX + ": Catacombs", start=0.0, gain_db=-2),
-  T("m_bydlo.ogg", A("c4c", end=True, off=-0.5), A("c5a", off=1.5), PX + ": Bydlo", start=71.5),
-  T("m_bald.ogg", A("c4e", end=True, off=-0.5), A("c6a", off=1.5), "Mussorgsky (arr. Rimsky-Korsakov), Night on Bald Mountain · Musopen, public domain", start=600.0, gain_db=4),
-  T("m_catacombae.ogg", A("c5f", end=True, off=-0.5), A("c7a0", off=1.5), PX + ": Catacombs", start=40.0, gain_db=-2),
-  T("m_kiev.ogg", A("c6e", end=True, off=-0.5), None, PX + ": The Great Gate of Kiev", start=256.0, gain_db=-3, fade_out=8.0),
+  T("m_bydlo.ogg", 0, A("c1a", off=1.5), PX.format("Bydlo"), start=30.0, fade_in=0.8),
+  T("m_limoges.ogg", A("cold6", end=True, off=-0.5), A("c2a", off=1.5), PX.format("Limoges"), start=0.0, gain_db=-1),
+  T("m_castle.ogg", A("c1f", end=True, off=-0.5), A("c3a", off=1.5), PX.format("The Old Castle"), start=0.0, gain_db=2),
+  T("m_promenade.ogg", A("c2h", end=True, off=-0.5), A("c3d2", off=1.5), PX.format("Promenade"), start=0.0, gain_db=3),
+  T("m_limoges.ogg", A("c3d", end=True, off=-0.5), A("c4a", off=1.5), PX.format("Limoges"), start=34.0, gain_db=-1),
+  T("m_catacombae.ogg", A("c3h", end=True, off=-0.5), A("c4d", off=1.5), PX.format("Catacombs"), start=0.0, gain_db=-2),
+  T("m_bydlo.ogg", A("c4c", end=True, off=-0.5), A("c5a", off=1.5), PX.format("Bydlo"), start=71.5),
+  T("m_bald.ogg", A("c4e", end=True, off=-0.5), A("c6a", off=1.5), "Mussorgsky, Night on Bald Mountain · Musopen, public domain", start=600.0, gain_db=4),
+  T("m_catacombae.ogg", A("c5f", end=True, off=-0.5), A("c7a0", off=1.5), PX.format("Catacombs"), start=40.0, gain_db=-2),
+  T("m_kiev.ogg", A("c6e", end=True, off=-0.5), None, PX.format("The Great Gate of Kiev"), start=256.0, gain_db=-3, fade_out=8.0),
  ],
 })

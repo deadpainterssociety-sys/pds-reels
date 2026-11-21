@@ -3437,7 +3437,7 @@
     "gain_db": 0,
     "fade_in": 0.8,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Bydlo"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Bydlo · Musopen, public domain"
    },
    {
     "file": "src/music/m_limoges.ogg",
@@ -3447,7 +3447,7 @@
     "gain_db": -1,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Limoges"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Limoges · Musopen, public domain"
    },
    {
     "file": "src/music/m_castle.ogg",
@@ -3457,7 +3457,7 @@
     "gain_db": 2,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: The Old Castle"
+    "credit": "Mussorgsky, Pictures at an Exhibition: The Old Castle · Musopen, public domain"
    },
    {
     "file": "src/music/m_promenade.ogg",
@@ -3467,7 +3467,7 @@
     "gain_db": 3,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Promenade"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Promenade · Musopen, public domain"
    },
    {
     "file": "src/music/m_limoges.ogg",
@@ -3477,7 +3477,7 @@
     "gain_db": -1,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Limoges"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Limoges · Musopen, public domain"
    },
    {
     "file": "src/music/m_catacombae.ogg",
@@ -3487,7 +3487,7 @@
     "gain_db": -2,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Catacombs"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Catacombs · Musopen, public domain"
    },
    {
     "file": "src/music/m_bydlo.ogg",
@@ -3497,7 +3497,7 @@
     "gain_db": 0,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Bydlo"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Bydlo · Musopen, public domain"
    },
    {
     "file": "src/music/m_bald.ogg",
@@ -3507,7 +3507,7 @@
     "gain_db": 4,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky (arr. Rimsky-Korsakov), Night on Bald Mountain · Musopen, public domain"
+    "credit": "Mussorgsky, Night on Bald Mountain · Musopen, public domain"
    },
    {
     "file": "src/music/m_catacombae.ogg",
@@ -3517,7 +3517,7 @@
     "gain_db": -2,
     "fade_in": 2.5,
     "fade_out": 3.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: Catacombs"
+    "credit": "Mussorgsky, Pictures at an Exhibition: Catacombs · Musopen, public domain"
    },
    {
     "file": "src/music/m_kiev.ogg",
@@ -3526,7 +3526,7 @@
     "gain_db": -3,
     "fade_in": 2.5,
     "fade_out": 8.0,
-    "credit": "Mussorgsky, Pictures at an Exhibition · Musopen, public domain: The Great Gate of Kiev"
+    "credit": "Mussorgsky, Pictures at an Exhibition: The Great Gate of Kiev · Musopen, public domain"
    }
   ]
  },
@@ -3569,7 +3569,7 @@
   },
   {
    "claim": "Repin was born in 1844 in Chuguyev (Chuhuiv), Kharkiv province, today Ukraine; he knew the Cossack letter from his youth there; he illustrated Gogol's Taras Bulba (1872); he said of the Cossacks 'Gogol wrote about them for good reason, it's all true!'",
-   "source": "https://www.britannica.com/biography/Ilya-Yefimovich-Repin ; https://www.ukrinform.ua/rubric-culture/3337821-z-cogo-smialisa-zaporozci-repina.html ; https://www.encyclopediaofukraine.com/pages%5CR%5CE%5CRepinIlia.htm ; https://www.vokrugsveta.ru/article/235851"
+   "source": "https://www.britannica.com/EBchecked/topic/498358 ; https://www.ukrinform.ua/rubric-culture/3337821-z-cogo-smialisa-zaporozci-repina.html ; https://www.encyclopediaofukraine.com/pages%5CR%5CE%5CRepinIlia.htm ; https://www.vokrugsveta.ru/article/235851"
   },
   {
    "claim": "In spring 1880 Repin travelled to the Zaporizhzhia region with the young Valentin Serov (born January 1865, so 15), visiting Khortytsia and the Dnieper rapids and the collector Vasyl Tarnovsky at Kachanivka, who showed him his collection of Cossack antiquities; Serov's 1880 Cossack drawings are in the Russian Museum",
