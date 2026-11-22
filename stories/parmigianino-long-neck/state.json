@@ -1,6 +1,6 @@
 {
- "status": "approved",
- "updated": "2026-11-22T15:24:18+01:00",
+ "status": "posted",
+ "updated": "2026-11-22T21:01:24+01:00",
  "validated_at": "2026-11-20T03:39:52+01:00",
  "duration_s": 25.3,
  "review_message": 517,
@@ -8,5 +8,17 @@
  "feedback": [
   "The last two texts overlap in one time frame: The ‘next painting video’ text appears before the ‘It hangs in the …’ disappears."
  ],
- "approved_at": "2026-11-22T15:24:18+01:00"
+ "approved_at": "2026-11-22T15:24:18+01:00",
+ "instagram": {
+  "id": "18021757925986297",
+  "url": "https://www.instagram.com/reel/DgDnVTMj7GG/"
+ },
+ "youtube": {
+  "id": "PLcM69-ZBgU",
+  "url": "https://youtube.com/shorts/PLcM69-ZBgU"
+ },
+ "tiktok": {
+  "skipped": "turned off in config.json"
+ },
+ "posted_at": "2026-11-22T21:01:24+01:00"
 }
