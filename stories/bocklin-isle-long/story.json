@@ -1,0 +1,3747 @@
+{
+ "slug": "bocklin-isle-long",
+ "format": "long",
+ "slot": "2026-11-30",
+ "voice": "af_heart",
+ "speed": 0.94,
+ "tail": 22.0,
+ "meta": {
+  "painter": "Arnold Böcklin",
+  "born": 1827,
+  "died": 1901,
+  "painting": "Isle of the Dead (third version)",
+  "year": "1883",
+  "museum": "Alte Nationalgalerie",
+  "city": "Berlin",
+  "image": "isle",
+  "image_credit": "Alte Nationalgalerie, Staatliche Museen zu Berlin, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1901,
+  "note": "Böcklin d. 1901, Klinger d. 1920, Sterl d. 1932: public domain. Period photographs before 1925 public domain; Bundesarchiv photos CC BY-SA 3.0 de. Dalí's works (in copyright) are narrated, never shown; no photos of Dalí. CC photos (Bundesarchiv, museum and place photos, the 1901 version) credited on screen and in the description. Music: Mahler, Schumann, Chopin, Rachmaninoff (his own 1920s recording), Beethoven: public-domain / CC0 recordings from Commons."
+ },
+ "say": {
+  "1865": "eighteen sixty-five",
+  "1877": "eighteen seventy-seven",
+  "1880": "eighteen eighty",
+  "1884": "eighteen eighty-four",
+  "1886": "eighteen eighty-six",
+  "1901": "nineteen oh one",
+  "1907": "nineteen oh seven",
+  "1932": "nineteen thirty-two",
+  "1936": "nineteen thirty-six",
+  "1940": "nineteen forty",
+  "1945": "nineteen forty-five",
+  "1980": "nineteen eighty"
+ },
+ "ipa": {
+  "Böcklin": "bˈœklɪn",
+  "Böcklin's": "bˈœklɪnz",
+  "Berna": "bˈɛɹnə",
+  "Toteninsel": "tˈoʊtənˌɪnzəl",
+  "Gurlitt": "ɡˈʊɹlɪt",
+  "Klinger": "klˈɪŋɚ",
+  "Ischia": "ˈɪskiə",
+  "Corfu": "kɔɹfˈuː",
+  "Rachmaninoff": "ɹɑːxmˈɑːnɪnɔf",
+  "Strindberg": "stɹˈɪndbɛɹj",
+  "Chirico": "kˈiːɹɪkoʊ",
+  "Dalí": "dɑːlˈiː",
+  "Wuppertal": "vˈʊpɚtɑːl",
+  "Berghof": "bˈɛɹkhoʊf",
+  "Schwarz": "ʃvˈɑːɹts",
+  "Worms": "vˈɔɹms",
+  "Gallen": "ɡˈɑːlən",
+  "Nationalgalerie": "nˌɑːtsjoʊnˈɑːlɡɑːləɹˌiː",
+  "Alte": "ˈɑːltə",
+  "Angela": "ˈɑːndʒɛlə",
+  "Carlo": "kˈɑːɹloʊ",
+  "Nabokov": "nəbˈɔːkəf",
+  "Sergei": "sɛɹɡˈeɪ",
+  "Giorgio": "dʒˈɔːɹdʒoʊ",
+  "Birgit": "bˈɪɹɡɪt",
+  "Georg": "ɡˈeɪɔɹk",
+  "Zürich": "tsˈʏɹɪç",
+  "diphtheria": "dɪfθˈɪɹiə"
+ },
+ "chirp_say": {
+  "Toteninsel": "Toe-ten-in-zel",
+  "Berghof": "Bairg-hof",
+  "Wuppertal": "Voop-er-tahl",
+  "Worms": "Vorms"
+ },
+ "lines": [
+  {
+   "id": "cold1",
+   "perf": [
+    [
+     "This island was painted for one grieving woman.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold2",
+   "perf": [
+    [
+     "A boat glides towards it.",
+     0.39,
+     0.93
+    ],
+    [
+     "A figure in white stands over a coffin.",
+     0.39,
+     0.93
+    ],
+    [
+     "No one on the island is waiting.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold3",
+   "perf": [
+    [
+     "She asked the painter for a picture to dream on.",
+     0.52,
+     0.93
+    ],
+    [
+     "And then the whole world started dreaming on it.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "cold4",
+   "perf": [
+    [
+     "A composer wrote music from a cheap black-and-white print.",
+     0.39,
+     0.95
+    ],
+    [
+     "Salvador Dalí painted it again and again.",
+     0.39,
+     0.94
+    ],
+    [
+     "And Adolf Hitler bought it,",
+     0.26,
+     0.92
+    ],
+    [
+     "and hung it on his wall.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "cold5",
+   "perf": [
+    [
+     "How did one widow's private picture",
+     0.2,
+     0.94
+    ],
+    [
+     "become the island a whole century couldn't stop looking at?",
+     2.4,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c1a",
+   "perf": [
+    [
+     "Florence,",
+     0.26,
+     0.94
+    ],
+    [
+     "the spring of 1880.",
+     0.52,
+     0.94
+    ],
+    [
+     "Arnold Böcklin is fifty-two,",
+     0.26,
+     0.94
+    ],
+    [
+     "a Swiss painter who has made his home in Italy.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c1b",
+   "perf": [
+    [
+     "He paints gods, sea monsters and nymphs,",
+     0.26,
+     0.95
+    ],
+    [
+     "and he is famous in Germany for it.",
+     0.52,
+     0.94
+    ],
+    [
+     "On his easel that spring stands something different:",
+     0.26,
+     0.95
+    ],
+    [
+     "a dark little island,",
+     0.26,
+     0.93
+    ],
+    [
+     "cut off from the world.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1c",
+   "perf": [
+    [
+     "One day,",
+     0.26,
+     0.94
+    ],
+    [
+     "a young widow visits his studio.",
+     0.52,
+     0.93
+    ],
+    [
+     "Her name is Marie Berna.",
+     0.39,
+     0.93
+    ],
+    [
+     "She was born in New York,",
+     0.26,
+     0.95
+    ],
+    [
+     "and she married a German, Georg Berna.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c1d",
+   "perf": [
+    [
+     "In 1865,",
+     0.26,
+     0.95
+    ],
+    [
+     "Georg died of diphtheria.",
+     0.39,
+     0.92
+    ],
+    [
+     "He was twenty-nine.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c1e",
+   "perf": [
+    [
+     "Fifteen years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "Marie stands in front of the unfinished island,",
+     0.26,
+     0.95
+    ],
+    [
+     "and asks for one of her own.",
+     0.52,
+     0.93
+    ],
+    [
+     "In memory of her husband.",
+     0.52,
+     0.92
+    ],
+    [
+     "A picture to dream on.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c1f",
+   "perf": [
+    [
+     "Böcklin paints her a second version.",
+     0.39,
+     0.94
+    ],
+    [
+     "Many accounts say it was at her request",
+     0.2,
+     0.95
+    ],
+    [
+     "that he added the two things you can't stop looking at:",
+     0.39,
+     0.95
+    ],
+    [
+     "a coffin, hung with garlands,",
+     0.39,
+     0.92
+    ],
+    [
+     "and a figure wrapped in white,",
+     0.26,
+     0.92
+    ],
+    [
+     "standing over it.",
+     1.17,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c1g",
+   "perf": [
+    [
+     "In June, he sends it off.",
+     0.39,
+     0.94
+    ],
+    [
+     "He calls it the Tomb Island.",
+     0.52,
+     0.93
+    ],
+    [
+     "And he writes to her",
+     0.2,
+     0.94
+    ],
+    [
+     "that she will be able to dream herself into the world of shadows,",
+     0.52,
+     0.92
+    ],
+    [
+     "until she is afraid to break the solemn silence with a loud word.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c1h",
+   "perf": [
+    [
+     "Six months later,",
+     0.26,
+     0.95
+    ],
+    [
+     "Marie Berna married again.",
+     0.52,
+     0.93
+    ],
+    [
+     "She kept the island for the rest of her life.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c2a",
+   "perf": [
+    [
+     "Why was Böcklin the man for this picture?",
+     0.52,
+     0.93
+    ],
+    [
+     "Look at how he painted himself, eight years earlier.",
+     1.04,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c2b",
+   "perf": [
+    [
+     "Brush in hand,",
+     0.26,
+     0.94
+    ],
+    [
+     "he listens.",
+     0.52,
+     0.9
+    ],
+    [
+     "And behind him,",
+     0.26,
+     0.93
+    ],
+    [
+     "Death is playing the fiddle,",
+     0.26,
+     0.92
+    ],
+    [
+     "right next to his ear.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c2c",
+   "perf": [
+    [
+     "It wasn't just a pose.",
+     0.52,
+     0.92
+    ],
+    [
+     "Böcklin and his wife, Angela,",
+     0.26,
+     0.94
+    ],
+    [
+     "had fourteen children.",
+     0.52,
+     0.93
+    ],
+    [
+     "They lost eight of them.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c2d",
+   "perf": [
+    [
+     "In March 1877,",
+     0.26,
+     0.95
+    ],
+    [
+     "their baby daughter, Maria Anna,",
+     0.26,
+     0.94
+    ],
+    [
+     "died at seven months old.",
+     0.52,
+     0.92
+    ],
+    [
+     "She was buried in Florence,",
+     0.26,
+     0.94
+    ],
+    [
+     "in the English Cemetery,",
+     0.26,
+     0.94
+    ],
+    [
+     "close to Böcklin's studio.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2e",
+   "perf": [
+    [
+     "A small walled hill of graves and cypress trees.",
+     0.52,
+     0.93
+    ],
+    [
+     "Some writers think he had it in mind when he painted his island.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c2f",
+   "perf": [
+    [
+     "Where the island itself came from,",
+     0.2,
+     0.95
+    ],
+    [
+     "no one knows for sure.",
+     0.52,
+     0.93
+    ],
+    [
+     "People have pointed to a tiny chapel island off Corfu,",
+     0.26,
+     0.95
+    ],
+    [
+     "though Böcklin never went there.",
+     0.78,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c2g",
+   "perf": [
+    [
+     "A likelier model is the castle rock of Ischia,",
+     0.26,
+     0.95
+    ],
+    [
+     "near Naples,",
+     0.26,
+     0.94
+    ],
+    [
+     "where he spent the autumn before Marie came.",
+     0.52,
+     0.94
+    ],
+    [
+     "But Böcklin never painted a place.",
+     0.52,
+     0.92
+    ],
+    [
+     "He painted a feeling.",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3a",
+   "perf": [
+    [
+     "Three years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "a Berlin art dealer named Fritz Gurlitt",
+     0.2,
+     0.95
+    ],
+    [
+     "ordered a third version.",
+     0.52,
+     0.93
+    ],
+    [
+     "This one.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3b",
+   "perf": [
+    [
+     "The rocks turn pale and grey.",
+     0.39,
+     0.93
+    ],
+    [
+     "The cypresses grow taller and darker.",
+     0.52,
+     0.93
+    ],
+    [
+     "The light comes from nowhere.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c3c",
+   "perf": [
+    [
+     "And Gurlitt gave it the name we still use.",
+     0.39,
+     0.94
+    ],
+    [
+     "Not Tomb Island.",
+     0.39,
+     0.92
+    ],
+    [
+     "*Die Toteninsel.*",
+     0.39,
+     0.88
+    ],
+    [
+     "The Isle of the Dead.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3d",
+   "perf": [
+    [
+     "Now look closely at the rock on the right.",
+     0.52,
+     0.92
+    ],
+    [
+     "Above one of the tomb doors,",
+     0.26,
+     0.93
+    ],
+    [
+     "two letters are painted into the stone.",
+     0.78,
+     0.92
+    ],
+    [
+     "A. B.",
+     1.04,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "c3e",
+   "perf": [
+    [
+     "Arnold Böcklin.",
+     0.78,
+     0.88
+    ],
+    [
+     "From this version on,",
+     0.26,
+     0.94
+    ],
+    [
+     "the painter put his own initials",
+     0.2,
+     0.94
+    ],
+    [
+     "on one of the graves.",
+     1.56,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c3f",
+   "perf": [
+    [
+     "Gurlitt knew what he had.",
+     0.39,
+     0.94
+    ],
+    [
+     "He had the painter Max Klinger make an etching of it,",
+     0.39,
+     0.95
+    ],
+    [
+     "so it could be printed and sold.",
+     0.52,
+     0.93
+    ],
+    [
+     "The museum in Berlin says it was this version that made the picture famous.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c3g",
+   "perf": [
+    [
+     "The orders kept coming.",
+     0.39,
+     0.93
+    ],
+    [
+     "A fourth version in 1884.",
+     0.39,
+     0.94
+    ],
+    [
+     "A fifth in 1886,",
+     0.26,
+     0.94
+    ],
+    [
+     "for the museum in Leipzig.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c3h",
+   "perf": [
+    [
+     "In January 1901,",
+     0.26,
+     0.95
+    ],
+    [
+     "Böcklin died near Florence.",
+     0.52,
+     0.92
+    ],
+    [
+     "He was buried in Florence.",
+     0.78,
+     0.92
+    ],
+    [
+     "And that same year,",
+     0.26,
+     0.94
+    ],
+    [
+     "his son Carlo signed one more island,",
+     0.26,
+     0.94
+    ],
+    [
+     "painted after his father's design.",
+     2.2,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4a",
+   "perf": [
+    [
+     "By then,",
+     0.26,
+     0.94
+    ],
+    [
+     "the Isle of the Dead was everywhere.",
+     0.78,
+     0.92
+    ],
+    [
+     "Prints of it hung in homes all over Germany.",
+     0.52,
+     0.95
+    ],
+    [
+     "In a novel,",
+     0.2,
+     0.94
+    ],
+    [
+     "Vladimir Nabokov wrote",
+     0.2,
+     0.94
+    ],
+    [
+     "that you could find one in every Berlin home.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c4b",
+   "perf": [
+    [
+     "The Swedish playwright August Strindberg",
+     0.2,
+     0.95
+    ],
+    [
+     "ended a play with it.",
+     0.52,
+     0.93
+    ],
+    [
+     "In the very last moment of his *Ghost Sonata,*",
+     0.26,
+     0.94
+    ],
+    [
+     "Böcklin's island appears in the distance.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4c",
+   "perf": [
+    [
+     "In May 1907,",
+     0.26,
+     0.95
+    ],
+    [
+     "a Russian composer living in Dresden",
+     0.2,
+     0.95
+    ],
+    [
+     "came across a black-and-white reproduction in Paris.",
+     0.78,
+     0.95
+    ],
+    [
+     "Sergei Rachmaninoff.",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c4d",
+   "perf": [
+    [
+     "Two years later,",
+     0.26,
+     0.95
+    ],
+    [
+     "he conducted the first performance of his symphonic poem,",
+     0.26,
+     0.95
+    ],
+    [
+     "*Isle of the Dead.*",
+     0.52,
+     0.88
+    ],
+    [
+     "You can hear the oars in it:",
+     0.26,
+     0.93
+    ],
+    [
+     "a slow, rocking rhythm,",
+     0.26,
+     0.92
+    ],
+    [
+     "like water against a boat.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c4e",
+   "perf": [
+    [
+     "Then he saw one of the paintings in colour.",
+     0.52,
+     0.93
+    ],
+    [
+     "And he was disappointed.",
+     0.52,
+     0.9
+    ],
+    [
+     "If I had seen the original first, he supposedly said,",
+     0.26,
+     0.94
+    ],
+    [
+     "I probably would not have written it.",
+     0.39,
+     0.92
+    ],
+    [
+     "I like it in black and white.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c4f",
+   "perf": [
+    [
+     "Composers came back to it again and again.",
+     0.39,
+     0.94
+    ],
+    [
+     "Nearly thirty pieces of music were written after this one picture.",
+     2.2,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "c5a",
+   "perf": [
+    [
+     "The next generation of painters",
+     0.2,
+     0.95
+    ],
+    [
+     "didn't see an old-fashioned picture.",
+     0.39,
+     0.93
+    ],
+    [
+     "They saw a dream.",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5b",
+   "perf": [
+    [
+     "Giorgio de Chirico,",
+     0.26,
+     0.93
+    ],
+    [
+     "whose empty squares and long shadows changed modern art,",
+     0.26,
+     0.95
+    ],
+    [
+     "wrote that each of Böcklin's works is a shock.",
+     0.78,
+     0.93
+    ],
+    [
+     "The Surrealists agreed.",
+     0.52,
+     0.93
+    ],
+    [
+     "And one of them more than all the others.",
+     1.04,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c5c",
+   "perf": [
+    [
+     "In 1932,",
+     0.26,
+     0.95
+    ],
+    [
+     "Salvador Dalí painted his own version.",
+     0.39,
+     0.93
+    ],
+    [
+     "He gave it a title as long as a sentence:",
+     0.39,
+     0.94
+    ],
+    [
+     "*The True Painting of the Isle of the Dead by Arnold Böcklin,*",
+     0.26,
+     0.9
+    ],
+    [
+     "*at the Hour of the Angelus.*",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c5d",
+   "perf": [
+    [
+     "The Angelus is the evening prayer bell,",
+     0.26,
+     0.94
+    ],
+    [
+     "and the subject of another painting Dalí couldn't let go of.",
+     0.39,
+     0.95
+    ],
+    [
+     "That one is a story of its own.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c5e",
+   "perf": [
+    [
+     "It is not a copy.",
+     0.39,
+     0.92
+    ],
+    [
+     "You have to find Böcklin's island in it yourself.",
+     0.78,
+     0.92
+    ],
+    [
+     "It hangs today in a museum in Wuppertal, in Germany.",
+     1.04,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "c5f",
+   "perf": [
+    [
+     "Two years later, Dalí was still painting it.",
+     0.39,
+     0.94
+    ],
+    [
+     "The central courtyard of the island.",
+     0.26,
+     0.93
+    ],
+    [
+     "The western courtyard.",
+     0.52,
+     0.93
+    ],
+    [
+     "And he named the disease himself.",
+     0.39,
+     0.92
+    ],
+    [
+     "In the titles of those paintings,",
+     0.2,
+     0.94
+    ],
+    [
+     "he wrote a word:",
+     0.39,
+     0.92
+    ],
+    [
+     "*obsession.*",
+     2.2,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "c6a",
+   "perf": [
+    [
+     "But in Germany,",
+     0.26,
+     0.94
+    ],
+    [
+     "another man had been looking at Böcklin.",
+     0.78,
+     0.92
+    ],
+    [
+     "Adolf Hitler loved his paintings.",
+     0.39,
+     0.93
+    ],
+    [
+     "At one time, he owned eleven of them.",
+     1.04,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6b",
+   "perf": [
+    [
+     "In 1936,",
+     0.26,
+     0.95
+    ],
+    [
+     "the third Isle of the Dead,",
+     0.2,
+     0.94
+    ],
+    [
+     "the one Gurlitt had ordered,",
+     0.2,
+     0.94
+    ],
+    [
+     "came up for sale.",
+     0.52,
+     0.93
+    ],
+    [
+     "It had passed through Worms, Zürich, St. Gallen and Munich.",
+     0.52,
+     0.95
+    ],
+    [
+     "Now a Munich dealer sold it",
+     0.2,
+     0.94
+    ],
+    [
+     "to the administration of the Reich Chancellery.",
+     1.3,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6c",
+   "perf": [
+    [
+     "According to the historian Birgit Schwarz,",
+     0.26,
+     0.95
+    ],
+    [
+     "it first hung at the Berghof,",
+     0.26,
+     0.93
+    ],
+    [
+     "Hitler's house in the Bavarian Alps.",
+     0.52,
+     0.94
+    ],
+    [
+     "Then,",
+     0.26,
+     0.92
+    ],
+    [
+     "from 1940,",
+     0.26,
+     0.94
+    ],
+    [
+     "in his new Reich Chancellery in Berlin.",
+     1.17,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "c6d",
+   "perf": [
+    [
+     "Think about that.",
+     0.65,
+     0.9
+    ],
+    [
+     "A picture made for a widow to dream on,",
+     0.26,
+     0.93
+    ],
+    [
+     "hanging in the house of the man who would send millions to their deaths.",
+     1.56,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c6e",
+   "perf": [
+    [
+     "Then the war came back to Berlin.",
+     0.52,
+     0.92
+    ],
+    [
+     "The fourth version,",
+     0.26,
+     0.93
+    ],
+    [
+     "hanging in a bank in the city,",
+     0.26,
+     0.94
+    ],
+    [
+     "burned in a bombing raid.",
+     0.52,
+     0.9
+    ],
+    [
+     "Only a black-and-white photograph is left.",
+     1.17,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c6f",
+   "perf": [
+    [
+     "And in 1945,",
+     0.26,
+     0.95
+    ],
+    [
+     "when the Chancellery fell,",
+     0.26,
+     0.93
+    ],
+    [
+     "Hitler's island vanished.",
+     2.2,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7a",
+   "perf": [
+    [
+     "For thirty-five years,",
+     0.26,
+     0.94
+    ],
+    [
+     "nobody knew where it was.",
+     0.78,
+     0.92
+    ],
+    [
+     "Then, in 1980,",
+     0.26,
+     0.95
+    ],
+    [
+     "it came back.",
+     0.52,
+     0.9
+    ],
+    [
+     "The National Gallery in Berlin bought it",
+     0.2,
+     0.95
+    ],
+    [
+     "from a former diplomat.",
+     1.17,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c7b",
+   "perf": [
+    [
+     "So why couldn't they stop looking at it?",
+     0.78,
+     0.9
+    ],
+    [
+     "A widow,",
+     0.26,
+     0.92
+    ],
+    [
+     "a composer,",
+     0.26,
+     0.92
+    ],
+    [
+     "a surrealist,",
+     0.26,
+     0.92
+    ],
+    [
+     "a dictator.",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7c",
+   "perf": [
+    [
+     "Look at the painting again.",
+     0.52,
+     0.92
+    ],
+    [
+     "Nobody tells you who is in the coffin.",
+     0.39,
+     0.92
+    ],
+    [
+     "Nobody tells you who the figure in white is.",
+     0.39,
+     0.92
+    ],
+    [
+     "The island has no name,",
+     0.26,
+     0.92
+    ],
+    [
+     "no place,",
+     0.26,
+     0.92
+    ],
+    [
+     "no time.",
+     1.04,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7d",
+   "perf": [
+    [
+     "Böcklin painted an empty island,",
+     0.39,
+     0.92
+    ],
+    [
+     "and left the rest to us.",
+     0.78,
+     0.9
+    ],
+    [
+     "Marie Berna saw her husband.",
+     0.52,
+     0.92
+    ],
+    [
+     "Rachmaninoff heard a boat.",
+     0.52,
+     0.92
+    ],
+    [
+     "Dalí saw his obsession.",
+     0.52,
+     0.92
+    ],
+    [
+     "And Hitler,",
+     0.39,
+     0.9
+    ],
+    [
+     "we can only guess.",
+     1.3,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "c7d2",
+   "perf": [
+    [
+     "Today, Marie's island hangs in New York,",
+     0.26,
+     0.94
+    ],
+    [
+     "at the Metropolitan Museum.",
+     0.52,
+     0.94
+    ],
+    [
+     "The first one is in Basel,",
+     0.26,
+     0.94
+    ],
+    [
+     "Böcklin's home town.",
+     0.52,
+     0.93
+    ],
+    [
+     "The fifth is still in Leipzig.",
+     1.04,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c7e",
+   "perf": [
+    [
+     "Next spring,",
+     0.26,
+     0.94
+    ],
+    [
+     "for Böcklin's two hundredth birthday,",
+     0.26,
+     0.94
+    ],
+    [
+     "the four islands that survive",
+     0.2,
+     0.94
+    ],
+    [
+     "will hang side by side in Berlin for the first time.",
+     0.52,
+     0.94
+    ],
+    [
+     "Even Böcklin never saw them together.",
+     1.3,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c7f",
+   "perf": [
+    [
+     "It was meant to be a picture to dream on.",
+     0.52,
+     0.9
+    ],
+    [
+     "Everyone who looks at it",
+     0.2,
+     0.92
+    ],
+    [
+     "brings their own dead.",
+     2.08,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Alte Nationalgalerie, in Berlin.",
+     1.3,
+     0.92
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "isle": {
+   "file": "src/isle.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel III (Alte Nationalgalerie, Berlin).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "figure": [
+     0.373,
+     0.81
+    ],
+    "coffin": [
+     0.385,
+     0.845
+    ],
+    "oarsman": [
+     0.345,
+     0.83
+    ],
+    "boat": [
+     0.37,
+     0.85
+    ],
+    "ab": [
+     0.81,
+     0.47
+    ],
+    "abdoor": [
+     0.81,
+     0.5
+    ],
+    "portal": [
+     0.7,
+     0.49
+    ],
+    "cypress": [
+     0.55,
+     0.28
+    ],
+    "landing": [
+     0.5,
+     0.75
+    ],
+    "lefttombs": [
+     0.28,
+     0.47
+    ],
+    "leftcliff": [
+     0.22,
+     0.3
+    ],
+    "rightrock": [
+     0.83,
+     0.45
+    ],
+    "sky": [
+     0.5,
+     0.15
+    ],
+    "water": [
+     0.55,
+     0.9
+    ],
+    "island": [
+     0.55,
+     0.5
+    ]
+   }
+  },
+  "basel": {
+   "file": "src/basel.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel I (Basel, Kunstmuseum).jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "boat": [
+     0.42,
+     0.8
+    ],
+    "island": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "met": {
+   "file": "src/met.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel II (Metropolitan Museum of Art).jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "boat": [
+     0.43,
+     0.82
+    ],
+    "island": [
+     0.5,
+     0.55
+    ]
+   }
+  },
+  "leipzig": {
+   "file": "src/leipzig.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel V (Museum der bildenden Künste Leipzig).jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "boat": [
+     0.47,
+     0.88
+    ]
+   }
+  },
+  "v4": {
+   "file": "src/v4.jpg",
+   "commons": "File:Arnold Böcklin - Die Toteninsel - Version 4 sw.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "boat": [
+     0.32,
+     0.87
+    ]
+   }
+  },
+  "klinger": {
+   "file": "src/klinger.jpg",
+   "commons": "File:Klinger - Die Toteninsel (nach Böcklin) 1890.jpeg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "boat": [
+     0.37,
+     0.8
+    ]
+   }
+  },
+  "fiddler": {
+   "file": "src/fiddler.jpg",
+   "commons": "File:Arnold Boecklin-fiedelnder Tod.jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.48,
+     0.25
+    ],
+    "skull": [
+     0.7,
+     0.25
+    ],
+    "both": [
+     0.58,
+     0.27
+    ],
+    "violin": [
+     0.85,
+     0.32
+    ],
+    "brush": [
+     0.2,
+     0.82
+    ]
+   }
+  },
+  "self62": {
+   "file": "src/self62.jpg",
+   "commons": "File:Arnold Böcklin - Selbstbildnis (1862, Kunstmuseum Basel).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.41,
+     0.31
+    ]
+   }
+  },
+  "terrace": {
+   "file": "src/terrace.jpg",
+   "commons": "File:Arnold Böcklin auf der Terrasse seiner Villa in San Domenico bei Fiesole in der Nähe von Florenz.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.62,
+     0.38
+    ],
+    "body": [
+     0.6,
+     0.5
+    ]
+   }
+  },
+  "family": {
+   "file": "src/family.jpg",
+   "commons": "File:Arnold Böcklin mit seiner Frau und seinem Sohn Carlo.jpg",
+   "points": {
+    "center": [
+     0.55,
+     0.45
+    ],
+    "face": [
+     0.71,
+     0.44
+    ],
+    "angela": [
+     0.34,
+     0.47
+    ],
+    "carlo": [
+     0.58,
+     0.25
+    ]
+   }
+  },
+  "angela": {
+   "file": "src/angela.jpg",
+   "commons": "File:Böcklin - Bildnis Angela Böcklin als Muse, 1863, 1451.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "face": [
+     0.35,
+     0.14
+    ],
+    "body": [
+     0.45,
+     0.3
+    ]
+   }
+  },
+  "marie": {
+   "file": "src/marie.jpg",
+   "commons": "File:Marie von Oriola hstad r 4 nr 22647.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.4,
+     0.42
+    ],
+    "body": [
+     0.45,
+     0.45
+    ]
+   }
+  },
+  "rachm": {
+   "file": "src/rachm.jpg",
+   "commons": "File:Rachmaninoff by Sterl 1909.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.28
+    ],
+    "body": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "berghof": {
+   "file": "src/berghof2.jpg",
+   "commons": "File:Bundesarchiv Bild 183-1999-0412-502, Obersalzberg, Berghof von Adolf Hitler.jpg",
+   "credit": "The Berghof: Bundesarchiv, Bild 183-1999-0412-502, photo Heinrich Hoffmann, CC BY-SA 3.0 de",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "chancellery": {
+   "file": "src/chancellery.jpg",
+   "commons": "File:Bundesarchiv Bild 183-H26034, Berlin, Neue Reichskanzlei, Arbeitszimmer Hitlers.jpg",
+   "credit": "New Reich Chancellery, 1939: Bundesarchiv, Bild 183-H26034, photo Heinrich Hoffmann, CC BY-SA 3.0 de",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "gallery": {
+   "file": "src/gallery.jpg",
+   "commons": "File:Alte Nationalgalerie at night (MK).jpg",
+   "depth": true,
+   "credit": "Alte Nationalgalerie, Berlin: photo Mathias Krumbholz, CC BY-SA 3.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "room": {
+   "file": "src/room.jpg",
+   "commons": "File:Alte Nationalgalerie, Arnold Böcklin, die Toteninsel.JPG",
+   "credit": "The Isle of the Dead in the Alte Nationalgalerie: photo Dguendel, CC BY 4.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "pontikonisi": {
+   "file": "src/pontikonisi.jpg",
+   "commons": "File:Pontikonisi (Corfu) 01.jpg",
+   "depth": true,
+   "credit": "Pontikonisi, Corfu: photo GualdimG, CC BY-SA 4.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "cemetery": {
+   "file": "src/cemetery.jpg",
+   "commons": "File:Firenze - Florence - Piazzale Donatello - View SSE on Il Cimitero degli Inglesi 1828-1877.jpg",
+   "depth": true,
+   "credit": "The English Cemetery, Florence: photo Txllxt TxllxT, CC BY-SA 4.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "strindberg": {
+   "file": "src/strindberg.jpg",
+   "commons": "File:Strindberg 1911.jpg",
+   "credit": "August Strindberg, 1911: photo Axel Malmström, CC BY 4.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.36
+    ],
+    "body": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "ischia": {
+   "file": "src/ischia.jpg",
+   "commons": "File:Castello Aragonese (Ischia).jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "hitler": {
+   "file": "src/hitler.jpg",
+   "commons": "File:Bundesarchiv Bild 183-S33882, Adolf Hitler retouched.jpg",
+   "credit": "Adolf Hitler: Bundesarchiv, Bild 183-S33882, CC BY-SA 3.0 de",
+   "points": {
+    "center": [
+     0.5,
+     0.4
+    ],
+    "face": [
+     0.59,
+     0.16
+    ],
+    "body": [
+     0.55,
+     0.3
+    ]
+   }
+  },
+  "villa": {
+   "file": "src/villa.jpg",
+   "commons": "File:Arnold Böcklin - Villa by the Sea - Google Art Project.jpg",
+   "depth": true,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "v1901": {
+   "file": "src/v1901.jpg",
+   "commons": "File:Arnold e carlo böcklin, l'isola dei morti, 1901.JPG",
+   "credit": "Arnold and Carlo Böcklin, Isle of the Dead, 1901: photo Sailko, CC BY-SA 3.0",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": "cold1",
+   "img": "isle",
+   "from": "figure@2.6",
+   "to": "figure@2.45"
+  },
+  {
+   "at": "cold1.6-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "hit": "big",
+   "dolly": [
+    0,
+    0.03
+   ]
+  },
+  {
+   "at": "cold2",
+   "img": "isle",
+   "from": "boat@2.0",
+   "to": "boat@2.15",
+   "fade": 0.6
+  },
+  {
+   "at": "cold2.6-0.10",
+   "img": "isle",
+   "from": "coffin@2.8",
+   "to": "figure@2.9",
+   "fade": 0.6
+  },
+  {
+   "at": "cold2.13-0.10",
+   "img": "isle",
+   "from": "landing@1.6",
+   "to": "landing@1.7",
+   "fade": 0.6
+  },
+  {
+   "at": "cold3",
+   "img": "marie",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "cold3.10-0.10",
+   "img": "isle",
+   "from": "cypress@1.5",
+   "to": "cypress@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "cold4",
+   "img": "rachm",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "frame": true,
+   "fade": 0.5
+  },
+  {
+   "at": "cold4.9-0.10",
+   "img": "isle",
+   "from": "portal@2.0",
+   "to": "portal@2.1",
+   "fade": 0.5
+  },
+  {
+   "at": "cold4.17-0.10",
+   "img": "hitler",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.5
+  },
+  {
+   "at": "cold4.21-0.10",
+   "img": "chancellery",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "fade": 0.5
+  },
+  {
+   "at": "cold5",
+   "img": "isle",
+   "from": "figure@1.8",
+   "to": "figure@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "cold5.6-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dim": 0.3,
+   "fade": 1.2
+  },
+  {
+   "at": "c1a",
+   "img": "villa",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "dim": 0.15,
+   "fade": 1.0
+  },
+  {
+   "at": "c1a.5-0.10",
+   "img": "self62",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c1b",
+   "img": "villa",
+   "from": "center@1.15",
+   "to": "center@1.22",
+   "fade": 0.8
+  },
+  {
+   "at": "c1b.15-0.10",
+   "img": "basel",
+   "from": "island@1.1",
+   "to": "island@1.18",
+   "fade": 0.8
+  },
+  {
+   "at": "c1c",
+   "img": "basel",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c1c.8-0.10",
+   "img": "marie",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c1c.19-0.10",
+   "img": "marie",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c1d",
+   "img": "isle",
+   "from": "coffin@3.0",
+   "to": "coffin@3.15",
+   "gray": 0.6,
+   "fade": 0.8
+  },
+  {
+   "at": "c1d.6-0.10",
+   "img": "isle",
+   "from": "figure@3.2",
+   "to": "figure@3.35",
+   "gray": 0.6,
+   "dim": 0.2,
+   "fade": 0.6
+  },
+  {
+   "at": "c1e",
+   "img": "basel",
+   "from": "island@1.3",
+   "to": "island@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c1e.18-0.10",
+   "img": "marie",
+   "from": "face@1.4",
+   "to": "face@1.5",
+   "gray": 1,
+   "fade": 0.6
+  },
+  {
+   "at": "c1e.23-0.10",
+   "img": "met",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c1f",
+   "img": "met",
+   "from": "island@1.25",
+   "to": "island@1.32",
+   "fade": 0.8
+  },
+  {
+   "at": "c1f.26-0.10",
+   "img": "met",
+   "from": "boat@2.8",
+   "to": "boat@2.95",
+   "fade": 0.6
+  },
+  {
+   "at": "c1f.32-0.10",
+   "img": "met",
+   "from": "boat@3.3",
+   "to": "boat@3.45",
+   "fade": 0.6
+  },
+  {
+   "at": "c1g",
+   "img": "met",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c1g.17-0.10",
+   "img": "met",
+   "from": "island@1.5",
+   "to": "island@1.6",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c1h",
+   "img": "marie",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c1h.7-0.10",
+   "img": "met",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c2a",
+   "img": "fiddler",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "fade": 1.0
+  },
+  {
+   "at": "c2b",
+   "img": "fiddler",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c2b.5-0.10",
+   "img": "fiddler",
+   "from": "skull@1.7",
+   "to": "skull@1.8",
+   "fade": 0.6
+  },
+  {
+   "at": "c2b.13-0.10",
+   "img": "fiddler",
+   "from": "both@1.4",
+   "to": "both@1.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c2c",
+   "img": "angela",
+   "from": "body@1.0",
+   "to": "face@1.25",
+   "fade": 0.8
+  },
+  {
+   "at": "c2c.13-0.10",
+   "img": "family",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c2d",
+   "img": "isle",
+   "from": "lefttombs@2.2",
+   "to": "lefttombs@2.35",
+   "gray": 0.7,
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c2d.13-0.10",
+   "img": "cemetery",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "gray": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c2e",
+   "img": "cemetery",
+   "from": "center@1.15",
+   "to": "center@1.22",
+   "gray": 0.3,
+   "fade": 0.6
+  },
+  {
+   "at": "c2e.9-0.10",
+   "img": "isle",
+   "from": "cypress@1.4",
+   "to": "cypress@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c2f",
+   "img": "isle",
+   "from": "island@1.2",
+   "to": "island@1.28",
+   "fade": 0.8
+  },
+  {
+   "at": "c2f.11-0.10",
+   "img": "pontikonisi",
+   "from": "center@1.2",
+   "to": "center@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c2g",
+   "img": "ischia",
+   "from": "center@1.0",
+   "to": "center@1.08",
+   "fade": 0.8
+  },
+  {
+   "at": "c2g.19-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 1.0
+  },
+  {
+   "at": "c3a",
+   "img": "basel",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.4,
+   "fade": 1.0
+  },
+  {
+   "at": "c3a.14-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "hit": "big"
+  },
+  {
+   "at": "c3b",
+   "img": "basel",
+   "from": "full",
+   "to": "full",
+   "kind": "pair",
+   "img2": "isle",
+   "labels": [
+    "BASEL · 1880",
+    "BERLIN · 1883"
+   ],
+   "fade": 0.8
+  },
+  {
+   "at": "c3b.6-0.10",
+   "img": "isle",
+   "from": "cypress@1.6",
+   "to": "cypress@1.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c3b.12-0.10",
+   "img": "isle",
+   "from": "sky@1.5",
+   "to": "sky@1.6",
+   "fade": 0.6
+  },
+  {
+   "at": "c3c",
+   "img": "isle",
+   "from": "island@1.2",
+   "to": "island@1.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c3c.12-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.6
+  },
+  {
+   "at": "c3d",
+   "img": "isle",
+   "from": "rightrock@1.6",
+   "to": "rightrock@1.75",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d.9-0.10",
+   "img": "isle",
+   "from": "abdoor@3.0",
+   "to": "abdoor@3.2",
+   "fade": 0.8
+  },
+  {
+   "at": "c3d.22-0.10",
+   "img": "isle",
+   "from": "ab@4.0",
+   "to": "ab@4.15",
+   "dim": -0.2,
+   "fade": 0.6
+  },
+  {
+   "at": "c3e.2-0.10",
+   "img": "isle",
+   "from": "ab@2.4",
+   "to": "ab@2.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c3e.12-0.10",
+   "img": "isle",
+   "from": "rightrock@1.3",
+   "to": "rightrock@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c3f",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c3f.3-0.10",
+   "img": "klinger",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c3f.16-0.10",
+   "img": "klinger",
+   "from": "boat@1.8",
+   "to": "boat@1.9",
+   "dim": 0.25,
+   "fade": 0.6
+  },
+  {
+   "at": "c3f.23-0.10",
+   "img": "isle",
+   "from": "landing@1.3",
+   "to": "landing@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c3g",
+   "img": "v4",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c3g.9-0.10",
+   "img": "leipzig",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "c3h",
+   "img": "terrace",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c3h.7-0.10",
+   "img": "terrace",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "gray": 0.3,
+   "fade": 0.6
+  },
+  {
+   "at": "c3h.12-0.10",
+   "img": "v1901",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "fade": 0.8
+  },
+  {
+   "at": "c4a",
+   "img": "klinger",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dim": 0.25,
+   "fade": 1.0
+  },
+  {
+   "at": "c4a.9-0.10",
+   "img": "klinger",
+   "from": "boat@1.5",
+   "to": "boat@1.6",
+   "dim": 0.25,
+   "fade": 0.6
+  },
+  {
+   "at": "c4a.18-0.10",
+   "img": "isle",
+   "from": "island@1.3",
+   "to": "island@1.4",
+   "gray": 0.8,
+   "fade": 0.8
+  },
+  {
+   "at": "c4b",
+   "img": "strindberg",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c4b.10-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "sky@1.15",
+   "dim": 0.2,
+   "fade": 1.0
+  },
+  {
+   "at": "c4c",
+   "img": "klinger",
+   "from": "center@1.15",
+   "to": "center@1.22",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c4c.16-0.10",
+   "img": "rachm",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "fade": 0.6
+  },
+  {
+   "at": "c4d",
+   "img": "rachm",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c4d.16-0.10",
+   "img": "isle",
+   "from": "oarsman@2.6",
+   "to": "oarsman@2.75",
+   "fade": 0.8
+  },
+  {
+   "at": "c4d.27-0.10",
+   "img": "isle",
+   "from": "water@1.6",
+   "to": "water@1.7",
+   "fade": 0.6
+  },
+  {
+   "at": "c4e",
+   "img": "leipzig",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "c4e.13-0.10",
+   "img": "rachm",
+   "from": "face@1.5",
+   "to": "face@1.6",
+   "fade": 0.8
+  },
+  {
+   "at": "c4e.30-0.10",
+   "img": "klinger",
+   "from": "boat@2.0",
+   "to": "boat@2.1",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c4f",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.6,
+   "fade": 0.8
+  },
+  {
+   "at": "c4f.8-0.10",
+   "img": "isle",
+   "from": "figure@2.0",
+   "to": "figure@2.1",
+   "fade": 0.8
+  },
+  {
+   "at": "c5a",
+   "img": "leipzig",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "fade": 1.0
+  },
+  {
+   "at": "c5b",
+   "img": "basel",
+   "from": "island@1.2",
+   "to": "island@1.28",
+   "gray": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c5b.21-0.10",
+   "img": "isle",
+   "from": "lefttombs@1.8",
+   "to": "lefttombs@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "c5c",
+   "img": "met",
+   "from": "island@1.2",
+   "to": "island@1.28",
+   "fade": 0.8
+  },
+  {
+   "at": "c5c.8-0.10",
+   "img": "isle",
+   "from": "sky@1.4",
+   "to": "sky@1.5",
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c5d",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.4,
+   "fade": 0.8
+  },
+  {
+   "at": "c5d.18-0.10",
+   "img": "isle",
+   "from": "figure@2.2",
+   "to": "figure@2.3",
+   "fade": 0.8
+  },
+  {
+   "at": "c5e",
+   "img": "leipzig",
+   "from": "boat@1.8",
+   "to": "boat@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "c5e.14-0.10",
+   "img": "isle",
+   "from": "island@1.25",
+   "to": "island@1.32",
+   "dim": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c5f",
+   "img": "klinger",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dim": 0.25,
+   "fade": 0.8
+  },
+  {
+   "at": "c5f.14-0.10",
+   "img": "basel",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.6
+  },
+  {
+   "at": "c5f.17-0.10",
+   "img": "isle",
+   "from": "portal@2.4",
+   "to": "portal@2.5",
+   "fade": 0.6
+  },
+  {
+   "at": "c5f.33-0.20",
+   "img": "isle",
+   "from": "cypress@2.0",
+   "to": "cypress@2.1",
+   "dim": 0.3,
+   "fade": 0.6
+  },
+  {
+   "at": "c6a",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 0.6,
+   "fade": 1.0
+  },
+  {
+   "at": "c6a.10-0.10",
+   "img": "hitler",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6b",
+   "img": "isle",
+   "from": "island@1.2",
+   "to": "island@1.28",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.17-0.10",
+   "img": "isle",
+   "from": "lefttombs@1.6",
+   "to": "lefttombs@1.7",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c6b.27-0.10",
+   "img": "isle",
+   "from": "boat@1.8",
+   "to": "boat@1.9",
+   "gray": 0.5,
+   "fade": 0.8
+  },
+  {
+   "at": "c6c",
+   "img": "berghof",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6c.18-0.10",
+   "img": "chancellery",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.8
+  },
+  {
+   "at": "c6d",
+   "img": "isle",
+   "from": "figure@2.4",
+   "to": "figure@2.55",
+   "fade": 1.0
+  },
+  {
+   "at": "c6d.12-0.10",
+   "img": "chancellery",
+   "from": "center@1.1",
+   "to": "center@1.17",
+   "gray": 1,
+   "dim": 0.2,
+   "fade": 0.8
+  },
+  {
+   "at": "c6e",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.4,
+   "fade": 1.0
+  },
+  {
+   "at": "c6e.7-0.10",
+   "img": "v4",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "frame": true,
+   "fade": 0.8
+  },
+  {
+   "at": "c6e.22-0.10",
+   "img": "v4",
+   "from": "boat@1.8",
+   "to": "boat@1.9",
+   "fade": 0.8
+  },
+  {
+   "at": "c6f",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "dim": 0.5,
+   "fade": 1.0
+  },
+  {
+   "at": "c6f.7-0.10",
+   "img": "isle",
+   "from": "figure@2.0",
+   "to": "figure@2.1",
+   "gray": 1,
+   "dim": 0.3,
+   "fade": 0.8
+  },
+  {
+   "at": "c7a",
+   "img": "isle",
+   "from": "island@1.2",
+   "to": "island@1.25",
+   "gray": 0.6,
+   "dim": 0.2,
+   "fade": 1.0
+  },
+  {
+   "at": "c7a.11-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "hit": "big"
+  },
+  {
+   "at": "c7a.14-0.10",
+   "img": "gallery",
+   "from": "center@1.0",
+   "to": "center@1.07",
+   "fade": 0.8
+  },
+  {
+   "at": "c7b",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c7b.8-0.10",
+   "img": "marie",
+   "from": "face@1.3",
+   "to": "face@1.35",
+   "gray": 1,
+   "fade": 0.4
+  },
+  {
+   "at": "c7b.11-0.10",
+   "img": "rachm",
+   "from": "face@0.62",
+   "to": "face@0.64",
+   "frame": true,
+   "fade": 0.4
+  },
+  {
+   "at": "c7b.13-0.10",
+   "img": "isle",
+   "from": "portal@2.0",
+   "to": "portal@2.1",
+   "fade": 0.4
+  },
+  {
+   "at": "c7b.15-0.10",
+   "img": "hitler",
+   "from": "body@0.62",
+   "to": "body@0.64",
+   "frame": true,
+   "gray": 1,
+   "fade": 0.4
+  },
+  {
+   "at": "c7c",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 1.0
+  },
+  {
+   "at": "c7c.5-0.10",
+   "img": "isle",
+   "from": "coffin@3.0",
+   "to": "coffin@3.15",
+   "fade": 0.8
+  },
+  {
+   "at": "c7c.13-0.10",
+   "img": "isle",
+   "from": "figure@3.2",
+   "to": "figure@3.35",
+   "fade": 0.6
+  },
+  {
+   "at": "c7c.17-0.10",
+   "img": "isle",
+   "from": "island@1.3",
+   "to": "island@1.38",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d",
+   "img": "isle",
+   "from": "cypress@1.4",
+   "to": "cypress@1.5",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d.11-0.10",
+   "img": "met",
+   "from": "boat@2.2",
+   "to": "boat@2.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c7d.16-0.10",
+   "img": "klinger",
+   "from": "boat@2.0",
+   "to": "boat@2.1",
+   "dim": 0.25,
+   "fade": 0.6
+  },
+  {
+   "at": "c7d.20-0.10",
+   "img": "isle",
+   "from": "portal@2.2",
+   "to": "portal@2.3",
+   "fade": 0.6
+  },
+  {
+   "at": "c7d.24-0.10",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "gray": 1,
+   "dim": 0.3,
+   "fade": 0.6
+  },
+  {
+   "at": "c7d2",
+   "img": "met",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d2.11-0.10",
+   "img": "basel",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c7d2.20-0.10",
+   "img": "leipzig",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 0.8
+  },
+  {
+   "at": "c7e",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "fade": 1.0
+  },
+  {
+   "at": "c7e.12-0.10",
+   "img": "room",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "fade": 0.8
+  },
+  {
+   "at": "c7e.23-0.10",
+   "img": "fiddler",
+   "from": "face@1.3",
+   "to": "face@1.4",
+   "fade": 0.8
+  },
+  {
+   "at": "c7f",
+   "img": "isle",
+   "from": "boat@1.7",
+   "to": "boat@1.8",
+   "fade": 1.0
+  },
+  {
+   "at": "c7f.10-0.10",
+   "img": "isle",
+   "from": "figure@2.4",
+   "to": "figure@2.55",
+   "fade": 0.8
+  },
+  {
+   "at": "ending",
+   "img": "isle",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "fade": 1.2
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "cold5.6-0.10",
+   "to": "cold5$+0.60",
+   "kicker": "ARNOLD BÖCKLIN · 1880–1886",
+   "text": "Isle of the Dead"
+  },
+  {
+   "type": "chapter",
+   "from": "cold5$+0.35",
+   "to": "c1a+1.60",
+   "kicker": "CHAPTER I",
+   "text": "A Picture to Dream On"
+  },
+  {
+   "type": "chapter",
+   "from": "c1h$+0.35",
+   "to": "c2a+1.60",
+   "kicker": "CHAPTER II",
+   "text": "The Painter and Death"
+  },
+  {
+   "type": "chapter",
+   "from": "c2g$+0.35",
+   "to": "c3a+1.60",
+   "kicker": "CHAPTER III",
+   "text": "The Dealer's Title"
+  },
+  {
+   "type": "chapter",
+   "from": "c3h$+0.35",
+   "to": "c4a+1.60",
+   "kicker": "CHAPTER IV",
+   "text": "An Island in Every Home"
+  },
+  {
+   "type": "chapter",
+   "from": "c4f$+0.35",
+   "to": "c5a+1.60",
+   "kicker": "CHAPTER V",
+   "text": "The Surrealist's Obsession"
+  },
+  {
+   "type": "chapter",
+   "from": "c5f$+0.35",
+   "to": "c6a+1.60",
+   "kicker": "CHAPTER VI",
+   "text": "The Buyer"
+  },
+  {
+   "type": "chapter",
+   "from": "c6f$+0.35",
+   "to": "c7a+1.60",
+   "kicker": "CHAPTER VII",
+   "text": "The Empty Island"
+  },
+  {
+   "type": "label",
+   "from": "cold1.6+0.30",
+   "to": "cold2.6-0.20",
+   "text": "ISLE OF THE DEAD · BÖCKLIN · 1883"
+  },
+  {
+   "type": "lower",
+   "from": "cold3+0.20",
+   "to": "cold3.10-0.15",
+   "text": "Marie Berna",
+   "sub": "1846–1915 · LATER COUNTESS VON ORIOLA"
+  },
+  {
+   "type": "lower",
+   "from": "cold4+0.20",
+   "to": "cold4.9-0.15",
+   "text": "Sergei Rachmaninoff",
+   "sub": "COMPOSER · DRAWN BY ROBERT STERL, 1909"
+  },
+  {
+   "type": "lower",
+   "from": "cold4.17+0.10",
+   "to": "cold4.21-0.15",
+   "text": "Adolf Hitler",
+   "sub": "OWNED THIS PAINTING 1936–1945"
+  },
+  {
+   "type": "credit",
+   "from": "cold4.17+0.10",
+   "to": "cold4$+0.60",
+   "text": "Photos: Bundesarchiv, CC BY-SA 3.0 de, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "cold4.21+0.10",
+   "to": "cold4$+0.60",
+   "text": "HITLER'S STUDY · NEW REICH CHANCELLERY · 1939"
+  },
+  {
+   "type": "label",
+   "from": "c1a",
+   "to": "c1a.5-0.15",
+   "text": "BÖCKLIN · VILLA BY THE SEA · 1878"
+  },
+  {
+   "type": "lower",
+   "from": "c1a.5+0.10",
+   "to": "c1a$+0.60",
+   "text": "Arnold Böcklin",
+   "sub": "1827–1901 · SELF-PORTRAIT, 1862"
+  },
+  {
+   "type": "label",
+   "from": "c1b.15",
+   "to": "c1c.8-0.15",
+   "text": "THE FIRST VERSION · 1880 · KUNSTMUSEUM BASEL"
+  },
+  {
+   "type": "lower",
+   "from": "c1c.8+0.10",
+   "to": "c1c.19-0.15",
+   "text": "Marie Berna",
+   "sub": "BORN MARIE CHRIST · NEW YORK, 1846"
+  },
+  {
+   "type": "ring",
+   "from": "c1f.26",
+   "to": "c1f.32-0.20",
+   "point": "boat",
+   "img": "met",
+   "rx": 170,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c1e.23",
+   "to": "c1g.17-0.15",
+   "text": "THE SECOND VERSION · 1880 · FOR MARIE BERNA"
+  },
+  {
+   "type": "quote",
+   "from": "c1g.17-0.10",
+   "to": "c1g$+1.00",
+   "text": "Sie werden sich hineinträumen können in die Welt der Schatten…",
+   "sub": "BÖCKLIN TO MARIE BERNA · 29 JUNE 1880"
+  },
+  {
+   "type": "label",
+   "from": "c1h.7",
+   "to": "c1h$+0.60",
+   "text": "METROPOLITAN MUSEUM OF ART · NEW YORK"
+  },
+  {
+   "type": "label",
+   "from": "c2a",
+   "to": "c2c-0.15",
+   "text": "SELF-PORTRAIT WITH DEATH PLAYING THE FIDDLE · 1872"
+  },
+  {
+   "type": "lower",
+   "from": "c2c.5+0.10",
+   "to": "c2c.13-0.15",
+   "text": "Angela Böcklin",
+   "sub": "BORN PASCUCCI · PORTRAIT BY BÖCKLIN, 1863"
+  },
+  {
+   "type": "label",
+   "from": "c2c.13",
+   "to": "c2c$+0.60",
+   "text": "ARNOLD, ANGELA AND CARLO BÖCKLIN · c. 1900"
+  },
+  {
+   "type": "label",
+   "from": "c2d.13",
+   "to": "c2e.9-0.15",
+   "text": "THE ENGLISH CEMETERY · FLORENCE"
+  },
+  {
+   "type": "credit",
+   "from": "c2d.13",
+   "to": "c2e.9-0.15",
+   "text": "Photo: Txllxt TxllxT, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c2f.11",
+   "to": "c2g-0.15",
+   "text": "PONTIKONISI · CORFU"
+  },
+  {
+   "type": "credit",
+   "from": "c2f.11",
+   "to": "c2g-0.15",
+   "text": "Photo: GualdimG, CC BY-SA 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "label",
+   "from": "c2g",
+   "to": "c2g.19-0.15",
+   "text": "CASTELLO ARAGONESE · ISCHIA"
+  },
+  {
+   "type": "lower",
+   "from": "c3a.8",
+   "to": "c3a.14-0.15",
+   "text": "Fritz Gurlitt",
+   "sub": "ART DEALER · BERLIN"
+  },
+  {
+   "type": "label",
+   "from": "c3a.14+0.30",
+   "to": "c3b-0.15",
+   "text": "THE THIRD VERSION · 1883 · ALTE NATIONALGALERIE"
+  },
+  {
+   "type": "ring",
+   "from": "c3d.22+0.10",
+   "to": "c3e.2-0.20",
+   "point": "ab",
+   "img": "isle",
+   "rx": 150,
+   "ry": 110,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c3f.3",
+   "to": "c3f.23-0.15",
+   "text": "MAX KLINGER · ETCHING AFTER BÖCKLIN · 1890"
+  },
+  {
+   "type": "label",
+   "from": "c3g",
+   "to": "c3g.9-0.15",
+   "text": "THE FOURTH VERSION · 1884 · LOST"
+  },
+  {
+   "type": "label",
+   "from": "c3g.9",
+   "to": "c3g$+0.60",
+   "text": "THE FIFTH VERSION · 1886 · LEIPZIG"
+  },
+  {
+   "type": "label",
+   "from": "c3h",
+   "to": "c3h.12-0.15",
+   "text": "BÖCKLIN AT FIESOLE · c. 1900"
+  },
+  {
+   "type": "label",
+   "from": "c3h.12",
+   "to": "c3h$+0.60",
+   "text": "ARNOLD AND CARLO BÖCKLIN · 1901"
+  },
+  {
+   "type": "credit",
+   "from": "c3h.12",
+   "to": "c3h$+0.60",
+   "text": "Photo: Sailko, CC BY-SA 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c4b+0.20",
+   "to": "c4b.10-0.15",
+   "text": "August Strindberg",
+   "sub": "PLAYWRIGHT · 1911"
+  },
+  {
+   "type": "credit",
+   "from": "c4b+0.20",
+   "to": "c4b.10-0.15",
+   "text": "Photo: Axel Malmström, CC BY 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c4c.16+0.10",
+   "to": "c4c$+0.60",
+   "text": "Sergei Rachmaninoff",
+   "sub": "1873–1943 · DRAWN BY ROBERT STERL, 1909"
+  },
+  {
+   "type": "label",
+   "from": "c4e",
+   "to": "c4e.13-0.15",
+   "text": "THE FIFTH VERSION · 1886 · LEIPZIG"
+  },
+  {
+   "type": "quote",
+   "from": "c4e.13-0.10",
+   "to": "c4e$+1.00",
+   "text": "If I had seen first the original, I, probably, would have not written my Isle of the Dead.",
+   "sub": "RACHMANINOFF · AS QUOTED"
+  },
+  {
+   "type": "quote",
+   "from": "c5b.12-0.10",
+   "to": "c5b.21-0.10",
+   "text": "Each of Böcklin's works is a shock.",
+   "sub": "GIORGIO DE CHIRICO"
+  },
+  {
+   "type": "quote",
+   "from": "c5c.18-0.10",
+   "to": "c5c$+1.00",
+   "text": "The True Painting of the Isle of the Dead by Arnold Böcklin at the Hour of the Angelus",
+   "sub": "SALVADOR DALÍ · 1932 · VON DER HEYDT-MUSEUM, WUPPERTAL"
+  },
+  {
+   "type": "label",
+   "from": "c5f.23",
+   "to": "c5f$+0.60",
+   "text": "DALÍ · 1934 · \"RECONSTRUCTIVE OBSESSION AFTER BÖCKLIN\""
+  },
+  {
+   "type": "lower",
+   "from": "c6a.10+0.10",
+   "to": "c6a$+0.60",
+   "text": "Adolf Hitler",
+   "sub": "BOUGHT THE THIRD VERSION IN 1936"
+  },
+  {
+   "type": "credit",
+   "from": "c6a.10+0.10",
+   "to": "c6a$+0.60",
+   "text": "Photo: Bundesarchiv, Bild 183-S33882, CC BY-SA 3.0 de"
+  },
+  {
+   "type": "label",
+   "from": "c6c",
+   "to": "c6c.18-0.15",
+   "text": "THE BERGHOF · OBERSALZBERG"
+  },
+  {
+   "type": "credit",
+   "from": "c6c",
+   "to": "c6c.18-0.15",
+   "text": "Photo: Heinrich Hoffmann, Bundesarchiv, CC BY-SA 3.0 de"
+  },
+  {
+   "type": "label",
+   "from": "c6c.18",
+   "to": "c6c$+0.60",
+   "text": "NEW REICH CHANCELLERY · BERLIN · 1939"
+  },
+  {
+   "type": "credit",
+   "from": "c6c.18",
+   "to": "c6c$+0.60",
+   "text": "Photo: Heinrich Hoffmann, Bundesarchiv, CC BY-SA 3.0 de"
+  },
+  {
+   "type": "credit",
+   "from": "c6d.12",
+   "to": "c6d$+0.60",
+   "text": "Photo: Heinrich Hoffmann, Bundesarchiv, CC BY-SA 3.0 de"
+  },
+  {
+   "type": "label",
+   "from": "c6e.7",
+   "to": "c6e$+0.60",
+   "text": "THE FOURTH VERSION · 1884 · BURNED IN THE WAR"
+  },
+  {
+   "type": "label",
+   "from": "c7a.14",
+   "to": "c7a$+0.60",
+   "text": "ALTE NATIONALGALERIE · BERLIN"
+  },
+  {
+   "type": "credit",
+   "from": "c7a.14",
+   "to": "c7a$+0.60",
+   "text": "Photo: Mathias Krumbholz, CC BY-SA 3.0, Wikimedia Commons"
+  },
+  {
+   "type": "credit",
+   "from": "c7b.15",
+   "to": "c7c+0.40",
+   "text": "Photo: Bundesarchiv, Bild 183-S33882, CC BY-SA 3.0 de"
+  },
+  {
+   "type": "ring",
+   "from": "c7c.5+0.10",
+   "to": "c7c.13-0.20",
+   "point": "coffin",
+   "img": "isle",
+   "rx": 150,
+   "ry": 90,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "c7d2",
+   "to": "c7d2.11-0.15",
+   "text": "METROPOLITAN MUSEUM · NEW YORK"
+  },
+  {
+   "type": "label",
+   "from": "c7d2.11",
+   "to": "c7d2.20-0.15",
+   "text": "KUNSTMUSEUM BASEL"
+  },
+  {
+   "type": "label",
+   "from": "c7d2.20",
+   "to": "c7d2$+0.60",
+   "text": "MUSEUM DER BILDENDEN KÜNSTE · LEIPZIG"
+  },
+  {
+   "type": "label",
+   "from": "c7e.12",
+   "to": "c7e.23-0.15",
+   "text": "ALTE NATIONALGALERIE · 19 MARCH – 1 AUGUST 2027"
+  },
+  {
+   "type": "credit",
+   "from": "c7e.12",
+   "to": "c7e.23-0.15",
+   "text": "Photo: Dguendel, CC BY 4.0, Wikimedia Commons"
+  },
+  {
+   "type": "lower",
+   "from": "c7f.10-0.10",
+   "to": "c7f$+1.20",
+   "text": "Isle of the Dead",
+   "sub": "ARNOLD BÖCKLIN · 1883 · ALTE NATIONALGALERIE"
+  },
+  {
+   "type": "pin",
+   "from": "ending+0.10",
+   "to": "ending$+0.50",
+   "text": "ALTE NATIONALGALERIE · BERLIN"
+  },
+  {
+   "type": "end",
+   "from": "ending$+1.00",
+   "to": "ending$+21.00",
+   "kicker": "NEXT",
+   "text": ""
+  }
+ ],
+ "sfx": [
+  {
+   "at": "cold5$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c1h$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c2g$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c3h$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c4f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c5f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  },
+  {
+   "at": "c6f$+0.35",
+   "fx": "impact",
+   "gain": 0.22
+  }
+ ],
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -8.0,
+  "duck_db": -7,
+  "fx_db": -12,
+  "transpose": 0,
+  "bar": 5.5,
+  "_tracks_note": "Cue sheet (22 Nov 2026): Mahler's Adagietto opens and closes the film; Schumann's Träumerei (Dreaming) for the widow's picture to dream on; the scherzo of Mahler's Fourth, which Alma Mahler said was written under the spell of Böcklin's fiddling Death, for the painter and death; its slow movement for the third version; Rachmaninoff playing his own prelude for the prints and the composer; the Moonlight sonata for Dalí's dream; Chopin's funeral march for Hitler and the war.",
+  "tracks": [
+   {
+    "file": "src/music/m_adagietto.ogg",
+    "commons": "File:Mahler Symphony No. 5, IV. Adagietto.ogg",
+    "from": 0,
+    "to": "c1a+1.50",
+    "start": 168.0,
+    "gain_db": 0,
+    "fade_in": 0.8,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 5: Adagietto · Peabody Symphony Orchestra · CC0"
+   },
+   {
+    "file": "src/music/m_dreaming.ogg",
+    "commons": "File:Robert Schumann - scenes from childhood, op. 15 - vii. dreaming.ogg",
+    "from": "cold5$-0.50",
+    "to": "c2a+1.50",
+    "start": 0.0,
+    "gain_db": 1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Schumann, Kinderszenen: Träumerei · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_scherzo.ogg",
+    "commons": "File:Mahler Symphony No.4 in G major 2. In gemachlicher Bewegung (Mahler) European Archive.ogg",
+    "from": "c1h$-0.50",
+    "to": "c3a+1.50",
+    "start": 0.0,
+    "gain_db": -1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 4: II · European Archive, public domain"
+   },
+   {
+    "file": "src/music/m_ruhevoll.ogg",
+    "commons": "File:Mahler Symphony No.4 in G major 3. Ruhevoil (Mahler) European Archive.ogg",
+    "from": "c2g$-0.50",
+    "to": "c4a+1.50",
+    "start": 0.0,
+    "gain_db": 1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Mahler, Symphony No. 4: III · European Archive, public domain"
+   },
+   {
+    "file": "src/music/m_rach.ogg",
+    "commons": "File:Sergei Rachmaninoff performs Rachmaninoff's Prelude in C sharp minor, Op. 3.ogg",
+    "from": "c3h$-0.50",
+    "to": "c5a+1.50",
+    "start": 0.0,
+    "gain_db": -3,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Rachmaninoff, Prelude in C-sharp minor, played by the composer · public domain"
+   },
+   {
+    "file": "src/music/m_moonlight.ogg",
+    "commons": "File:Ludwig van Beethoven - sonata no. 14 in c sharp minor 'moonlight', op. 27 no. 2 - i. adagio sostenuto.ogg",
+    "from": "c4f$-0.50",
+    "to": "c6a+1.50",
+    "start": 0.0,
+    "gain_db": 1,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Beethoven, Moonlight Sonata: I · Musopen, public domain"
+   },
+   {
+    "file": "src/music/m_funebre.ogg",
+    "commons": "File:Chopin Pitman sonata no 2 in b flat minor funeral march III marche funebre lento.ogg",
+    "from": "c5f$-0.50",
+    "to": "c7a+1.50",
+    "start": 20.0,
+    "gain_db": -2,
+    "fade_in": 2.5,
+    "fade_out": 3.0,
+    "credit": "Chopin, Sonata No. 2: Marche funèbre · Paul Pitman, public domain"
+   },
+   {
+    "file": "src/music/m_adagietto.ogg",
+    "commons": "File:Mahler Symphony No. 5, IV. Adagietto.ogg",
+    "from": "c6f$-0.50",
+    "start": 488.0,
+    "gain_db": 0,
+    "fade_in": 2.5,
+    "fade_out": 8.0,
+    "credit": "Mahler, Symphony No. 5: Adagietto · Peabody Symphony Orchestra · CC0"
+   }
+  ]
+ },
+ "facts": [
+  {
+   "claim": "Böcklin (born Basel, 16 October 1827) was a Swiss painter working in Florence in 1880, aged 52; known for mythological scenes (gods, sea creatures, nymphs) and famous in Germany",
+   "source": "https://en.wikipedia.org/wiki/Arnold_B%C3%B6cklin ; https://www.smb.museum/presse/pressemitteilungen/detail/museumsinsel-berlin-alte-nationalgalerie-ausstellung-boecklin-jenseits-des-mythos-fuehrt-2027-alle-vier-noch-erhaltenen-versionen-der-toteninsel-zusammen/"
+  },
+  {
+   "claim": "In spring (April) 1880 the young widow Marie Berna visited Böcklin's studio in Florence, where the first version stood unfinished, and asked for 'ein Bild zum Träumen' (a picture to dream by)",
+   "source": "https://recherche.smb.museum/detail/967648 ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Marie Berna was born Marie Christ in New York (1846); she married Georg Berna in 1864; Georg Berna died on 18 October 1865, of diphtheria, aged 29",
+   "source": "https://de.wikipedia.org/wiki/Marie_von_Oriola ; https://de.wikipedia.org/wiki/Georg_Berna"
+  },
+  {
+   "claim": "She commissioned the picture in memory of her late husband",
+   "source": "https://de.wikipedia.org/wiki/Marie_von_Oriola ; https://collectionapi.metmuseum.org/public/collection/v1/objects/435683"
+  },
+  {
+   "claim": "Böcklin painted her the second version (June 1880, oil on wood), now in the Metropolitan Museum",
+   "source": "https://collectionapi.metmuseum.org/public/collection/v1/objects/435683 ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "The coffin and the white-shrouded figure were added at Berna's request according to en.wikipedia (de.wikipedia: added soon after, to this and the first version) — narrated as 'many accounts say'",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Böcklin's letter of 29 June 1880: the picture 'Die Gräberinsel' (Tomb Island) was sent off; 'Sie werden sich hineinträumen können in die Welt der Schatten … Bis sie Scheu haben werden die feierliche Stille durch ein lautes Wort zu stören' (paraphrased in the narration)",
+   "source": "https://de.wikipedia.org/wiki/Die_Toteninsel ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "Marie Berna married Count Waldemar von Oriola on 18 December 1880 and owned the painting until her death in 1915; the Met acquired it in 1926",
+   "source": "https://de.wikipedia.org/wiki/Marie_von_Oriola ; https://collectionapi.metmuseum.org/public/collection/v1/objects/435683"
+  },
+  {
+   "claim": "Self-Portrait with Death Playing the Fiddle, 1872, Alte Nationalgalerie: Death plays a fiddle behind the painter, who holds a brush",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Death_Playing_the_Fiddle"
+  },
+  {
+   "claim": "Böcklin and Angela Pascucci had fourteen children; he lost eight of them (five died in childhood, three more before him)",
+   "source": "https://de.wikipedia.org/wiki/Arnold_B%C3%B6cklin ; https://en.wikipedia.org/wiki/Arnold_B%C3%B6cklin"
+  },
+  {
+   "claim": "Daughter Maria Anna Böcklin died on 20 March 1877 aged 7 months and is buried in the English Cemetery, Florence, close to Böcklin's studio",
+   "source": "http://www.florin.ms/IslandDead.html ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "The English Cemetery is a walled hill with cypresses; that it inspired the island is a hedged suggestion (de.wikipedia: 'denkbar', per Olaf Metzel)",
+   "source": "http://www.florin.ms/IslandDead.html ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Pontikonisi near Corfu is sometimes named as the model, but Böcklin never went there (unconfirmed)",
+   "source": "https://de.wikipedia.org/wiki/Die_Toteninsel ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "Böcklin spent autumn 1879 on Ischia and saw the Castello Aragonese; the museum says the motif may have come back to him when Berna asked (hedged)",
+   "source": "https://recherche.smb.museum/detail/967648 ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "The third version (1883, oil on wood, 80 × 150 cm) was commissioned by the Berlin dealer Fritz Gurlitt",
+   "source": "https://recherche.smb.museum/detail/967648 ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "The title 'Die Toteninsel' comes not from Böcklin but from his dealer Fritz Gurlitt",
+   "source": "https://de.wikipedia.org/wiki/Die_Toteninsel ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "From the third version on, one of the burial chambers in the rocks on the right bears Böcklin's initials 'A.B.'",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Gurlitt had Max Klinger make an etching of the painting (1890)",
+   "source": "https://recherche.smb.museum/detail/967648 ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "The Berlin museum: it was this version that founded the picture's extraordinary fame ('die den außerordentlichen Ruhm des Bildes … begründete')",
+   "source": "https://recherche.smb.museum/detail/967648"
+  },
+  {
+   "claim": "Fourth version 1884; fifth version 1886, commissioned for the Leipzig museum (Museum der bildenden Künste)",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Böcklin died on 16 January 1901 near Florence (San Domenico, Fiesole) and was buried in Florence (Cimitero degli Allori)",
+   "source": "https://en.wikipedia.org/wiki/Arnold_B%C3%B6cklin ; https://www.smb.museum/presse/pressemitteilungen/detail/museumsinsel-berlin-alte-nationalgalerie-ausstellung-boecklin-jenseits-des-mythos-fuehrt-2027-alle-vier-noch-erhaltenen-versionen-der-toteninsel-zusammen/"
+  },
+  {
+   "claim": "A 1901 version signed 'A. Böcklin invenit' / 'Carlo Böcklin fecit 1901' by his son Carlo after his design; now in the Hermitage",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Reproductions were hugely popular in Germany; Nabokov's novel Despair (1936) says prints could be found in every Berlin home",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883"
+  },
+  {
+   "claim": "Strindberg's The Ghost Sonata (1907) ends with Böcklin's Island of the Dead seen in the distance",
+   "source": "https://www.gradesaver.com/the-ghost-sonata/study-guide/summary-part-5 ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Rachmaninoff, then living in Dresden, saw a black-and-white reproduction in Paris in May 1907",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(Rachmaninoff) ; https://en.wikipedia.org/wiki/Sergei_Rachmaninoff"
+  },
+  {
+   "claim": "He composed the symphonic poem Isle of the Dead, Op. 29, in 1909 and conducted its premiere in Moscow",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(Rachmaninoff) ; https://www.berliner-philharmoniker.de/en/programme-notes/sergei-rachmaninoff-isle-of-the-dead-symphonic-poem-op-29"
+  },
+  {
+   "claim": "The recurring 5/8 figure may depict the oarsman's rowing or the movement of the water",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(Rachmaninoff)"
+  },
+  {
+   "claim": "He was disappointed by the colour original: 'If I had seen first the original, I, probably, would have not written my Isle of the Dead. I like it in black and white.' (as quoted)",
+   "source": "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(Rachmaninoff)"
+  },
+  {
+   "claim": "The painting inspired nearly thirty compositions (FAZ); Max Reger's 'Die Toteninsel' is No. 3 of his Böcklin suite, Op. 128 (1913)",
+   "source": "https://de.wikipedia.org/wiki/Die_Toteninsel ; https://de.wikipedia.org/wiki/Vier_Tondichtungen_nach_Arnold_B%C3%B6cklin"
+  },
+  {
+   "claim": "De Chirico: 'Each of Böcklin's works is a shock'; Surrealists such as Max Ernst and Salvador Dalí admired Böcklin",
+   "source": "https://en.wikipedia.org/wiki/Arnold_B%C3%B6cklin"
+  },
+  {
+   "claim": "Dalí, 1932: 'Le Vrai Tableau de « L'Île des morts » d'Arnold Böcklin à l'heure de l'Angélus', oil on canvas, Von der Heydt-Museum, Wuppertal",
+   "source": "https://catalogues.salvador-dali.org/catalogues/en/heritageobject/391-0f20/ ; https://salvador-dali.org/en/artwork/catalogue-raisonne-paintings/obra/308/print/the-real-painting-of-the-isle-of-the-death-by-arnold-boecklin-at-the-angelus-time ; https://www.wikiart.org/en/salvador-dali/the-true-painting-of-the-isle-of-the-dead-by-arnold-böcklin-at-the-hour-of-the-angelus"
+  },
+  {
+   "claim": "Dalí leaves the link between title and scene for the viewer to work out",
+   "source": "https://reactormag.com/a-picture-to-dream-over-the-isle-of-the-dead/"
+  },
+  {
+   "claim": "The Angelus is the evening prayer; Dalí was obsessed with Millet's The Angelus",
+   "source": "https://en.wikipedia.org/wiki/The_Angelus_(painting) ; https://www.salvador-dali.org/en/artwork/catalogue-raisonne/obra/308/"
+  },
+  {
+   "claim": "1934: Dalí's 'Cour centrale de l'Île des morts (obsession reconstitutive d'après Böcklin)' and 'Cour ouest de l'Île des morts (obsession reconstitutive d'après Böcklin)'",
+   "source": "https://salvador-dali.org/fr/oeuvre/catalogue-raisonne-peinture/obra/340/print/cour-centrale-de-l-ile-des-morts-obsession-reconstitutive-d-apres-boecklin ; https://salvador-dali.org/fr/oeuvre/catalogue-raisonne-peinture/obra/391/print/cour-ouest-de-l-ile-des-morts-obsession-reconstitutive-d-apres-boecklin"
+  },
+  {
+   "claim": "Hitler at one time owned 11 Böcklin paintings (NYT, 12 Jan 2002, via en.wikipedia)",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "Provenance: Gurlitt 1884 → Schön, Worms → Zürich/Rheineck → St. Gallen → Chemnitz → Munich → Sturzenegger, St. Gallen 1931–36 → Munich dealers (Fritz Nathan; Maria Almas-Dietrich) 1936 → Verwaltung der Reichskanzlei, Berlin, 1936–1945 → missing → bought 1980 from Wolfgang Böttger, former consul general",
+   "source": "https://recherche.smb.museum/detail/967648 ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "It hung at the Berghof and from 1940 in the New Reich Chancellery (Birgit Schwarz, Geniewahn, 2009)",
+   "source": "https://de.wikipedia.org/wiki/Die_Toteninsel ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)"
+  },
+  {
+   "claim": "The fourth version, later in Heinrich Thyssen's Berlin bank branch, burned in a WWII bombing raid; only a black-and-white photograph survives",
+   "source": "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://de.wikipedia.org/wiki/Die_Toteninsel"
+  },
+  {
+   "claim": "Today: second version Met, New York; first version Kunstmuseum Basel (Böcklin's home town); fifth version Leipzig",
+   "source": "https://collectionapi.metmuseum.org/public/collection/v1/objects/435683 ; https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings) ; https://en.wikipedia.org/wiki/Arnold_B%C3%B6cklin"
+  },
+  {
+   "claim": "Spring 2027 (19 March – 1 August), for Böcklin's 200th birthday, the Alte Nationalgalerie reunites all four surviving versions for the first time; 'Selbst Böcklin sah die Werke nie versammelt'",
+   "source": "https://www.smb.museum/presse/pressemitteilungen/detail/museumsinsel-berlin-alte-nationalgalerie-ausstellung-boecklin-jenseits-des-mythos-fuehrt-2027-alle-vier-noch-erhaltenen-versionen-der-toteninsel-zusammen/"
+  }
+ ],
+ "next": false,
+ "youtube": {
+  "titles": [
+   "The Painting Hitler and Dalí Couldn't Stop Looking At",
+   "A Widow Asked for This Painting. Hitler Bought It."
+  ],
+  "description_lead": "In the spring of 1880, the young widow Marie Berna asked Arnold Böcklin for \"a picture to dream on\" in memory of her husband, who had died of diphtheria at 29. He painted her an island of tombs and cypresses, with a coffin and a figure in white arriving by boat. Böcklin called it the Tomb Island; his dealer Fritz Gurlitt named it Die Toteninsel, the Isle of the Dead. There are five versions (1880–1886) and one more finished by his son Carlo in 1901. Rachmaninoff wrote a symphonic poem after a black-and-white reproduction, Salvador Dalí painted \"The True Painting of the Isle of the Dead by Arnold Böcklin at the Hour of the Angelus\" (1932) and called his 1934 versions a \"reconstructive obsession\", and in 1936 the third version, the one with Böcklin's own initials on a tomb, was bought for Adolf Hitler's Reich Chancellery. It vanished in 1945 and came back to Berlin's Nationalgalerie in 1980.",
+  "hashtags": [
+   "#arthistory",
+   "#bocklin",
+   "#isleofthedead"
+  ],
+  "credits": [
+   "Paintings by Arnold Böcklin (Alte Nationalgalerie, Berlin; Kunstmuseum Basel; Metropolitan Museum of Art, New York; Museum der bildenden Künste, Leipzig), the lost fourth version (photograph), Max Klinger's etching after Böcklin (1890), Robert Sterl's drawing of Rachmaninoff (1909), the photograph of Marie von Oriola (Hessisches Staatsarchiv Darmstadt) and photographs of Böcklin at Fiesole by Carlo Brogi: public domain, via Wikimedia Commons.",
+   "Arnold and Carlo Böcklin, Isle of the Dead, 1901: photo Sailko, CC BY-SA 3.0, via Wikimedia Commons.",
+   "Adolf Hitler: Bundesarchiv, Bild 183-S33882, CC BY-SA 3.0 de. The Berghof: Bundesarchiv, Bild 183-1999-0412-502, photo Heinrich Hoffmann, CC BY-SA 3.0 de. Hitler's study in the New Reich Chancellery, 1939: Bundesarchiv, Bild 183-H26034, photo Heinrich Hoffmann, CC BY-SA 3.0 de.",
+   "Alte Nationalgalerie, Berlin: photo Mathias Krumbholz, CC BY-SA 3.0, via Wikimedia Commons.",
+   "The Isle of the Dead in the Alte Nationalgalerie: photo Dguendel, CC BY 4.0, via Wikimedia Commons.",
+   "Pontikonisi, Corfu: photo GualdimG, CC BY-SA 4.0, via Wikimedia Commons.",
+   "The English Cemetery, Florence: photo Txllxt TxllxT, CC BY-SA 4.0, via Wikimedia Commons.",
+   "August Strindberg, 1911: photo Axel Malmström, CC BY 4.0, via Wikimedia Commons.",
+   "Castello Aragonese, Ischia: photo Dudva, CC0, via Wikimedia Commons.",
+   "Salvador Dalí's paintings are described, not shown."
+  ],
+  "thumbnail": {
+   "image": "isle",
+   "focus": [
+    0.4,
+    0.72
+   ],
+   "span": 0.45,
+   "words": "HITLER'S Island"
+  },
+  "intro_chapter": "The Island",
+  "outro_chapter": "Where It Hangs Today",
+  "sources": [
+   "https://recherche.smb.museum/detail/967648",
+   "https://www.metmuseum.org/art/collection/search/435683",
+   "https://en.wikipedia.org/wiki/Island_of_the_Dead_(paintings)",
+   "https://de.wikipedia.org/wiki/Die_Toteninsel",
+   "https://de.wikipedia.org/wiki/Marie_von_Oriola",
+   "https://de.wikipedia.org/wiki/Georg_Berna",
+   "https://en.wikipedia.org/wiki/Arnold_B%C3%B6cklin",
+   "https://en.wikipedia.org/wiki/Self-Portrait_with_Death_Playing_the_Fiddle",
+   "http://www.florin.ms/IslandDead.html",
+   "https://en.wikipedia.org/wiki/Isle_of_the_Dead_(Rachmaninoff)",
+   "https://www.berliner-philharmoniker.de/en/programme-notes/sergei-rachmaninoff-isle-of-the-dead-symphonic-poem-op-29",
+   "https://catalogues.salvador-dali.org/catalogues/en/heritageobject/391-0f20/",
+   "https://salvador-dali.org/fr/oeuvre/catalogue-raisonne-peinture/obra/340/print/cour-centrale-de-l-ile-des-morts-obsession-reconstitutive-d-apres-boecklin",
+   "https://reactormag.com/a-picture-to-dream-over-the-isle-of-the-dead/",
+   "https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883",
+   "https://www.smb.museum/presse/pressemitteilungen/detail/museumsinsel-berlin-alte-nationalgalerie-ausstellung-boecklin-jenseits-des-mythos-fuehrt-2027-alle-vier-noch-erhaltenen-versionen-der-toteninsel-zusammen/"
+  ],
+  "pinned_comment": "Look at the rock on the right in the 1883 version: from that version on, Böcklin painted his own initials, A.B., above one of the tombs.\n\nWho do you think is in the coffin? 🖤"
+ }
+}
