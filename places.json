@@ -275,5 +275,13 @@
   "ig_location_id": null,
   "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"AU9ca184JYqbhozR90eCdgv\"}}",
   "ig_location_id_checked": "2026-11-21"
+ },
+ "Groeningemuseum, Bruges": {
+  "lat": 51.2058726,
+  "lon": 3.2257874,
+  "lat_checked": "2026-11-22",
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"Advxd8VtsXFqQw0SLPSXtwk\"}}",
+  "ig_location_id_checked": "2026-11-22"
  }
 }
