@@ -179,4 +179,8 @@ Rules Gigi added after watching reels or reading the analytics. They override an
   timeline: say the date normally in the narration and move on. The small mono label top-left (place · date) may stay;
   `build_story.py` leaves out any `year` overlay in a long video.
 - (21 Nov 2026) French names in the final Chirp voice must sound French (Georges de La Tour was still wrong after the 6 Nov rule). Chirp reads made-up respellings literally: `chirp_say` "Zhorzh duh La Toor" came out as "Zorz". For a famous French name, give Chirp the real French spelling (no `chirp_say`): it knows painters' names. Use `chirp_say` only for a name Chirp is known to get wrong, and only with syllables English can read ("Zhee-vair-nee", "Koor-bay"), never clusters like "rzh". Keep `ipa`/`respell` for the Kokoro check and Chatterbox.
+- (22 Nov 2026) The ending texts never overlap: the last caption ("It hangs in the …") and the museum `pin` must be gone
+  before the NEXT / FULL FILM card appears (it fades in at the last line's end + 0.6 s). End the pin at `ending$+0.5`
+  (not `+1`). In F3 caption reels the last card is held 1.6 s after its words, so also add `"nocap": [["ending$+0.5",
+  "ending$+4"]]`. Check with `python pipeline/preview_stills.py <slug> <ending end + 0.2>,<ending end + 0.8>`.
 <!-- new rules go here -->

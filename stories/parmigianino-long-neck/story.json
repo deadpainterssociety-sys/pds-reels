@@ -242,7 +242,12 @@
   "heartbeat_gain": 0.2
  },
  "sfx": [],
- "nocap": [],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
  "cover": {
   "question": "What did he <i>never finish?</i>",
   "name": "PARMIGIANINO",
@@ -449,7 +454,7 @@
   {
    "type": "pin",
    "from": "ending.1",
-   "to": "ending$+1",
+   "to": "ending$+0.5",
    "text": "UFFIZI · FLORENCE"
   }
  ]

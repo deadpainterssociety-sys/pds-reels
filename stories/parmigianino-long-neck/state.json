@@ -1,10 +1,10 @@
 {
- "status": "revising",
- "updated": "2026-11-22T09:19:02+01:00",
+ "status": "sent",
+ "updated": "2026-11-22T09:33:42+01:00",
  "validated_at": "2026-11-20T03:39:52+01:00",
  "duration_s": 25.3,
- "review_message": 507,
- "sent_at": "2026-11-22T08:59:27+01:00",
+ "review_message": 517,
+ "sent_at": "2026-11-22T09:33:42+01:00",
  "feedback": [
   "The last two texts overlap in one time frame: The ‘next painting video’ text appears before the ‘It hangs in the …’ disappears."
  ]
