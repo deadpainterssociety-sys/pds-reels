@@ -1,0 +1,407 @@
+{
+ "slug": "vigee-lebrun-smile",
+ "formula": "F3",
+ "format": "caption",
+ "silent": true,
+ "hook_type": "hidden",
+ "teaser": "The smile that scandalised Paris",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "meta": {
+  "painter": "Élisabeth Vigée Le Brun",
+  "born": 1755,
+  "died": 1842,
+  "painting": "Madame Vigée Le Brun and Her Daughter Julie",
+  "year": "1786",
+  "museum": "Louvre",
+  "city": "Paris",
+  "image": "smile",
+  "image_credit": "Musée du Louvre, Paris, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1842,
+  "note": "Vigée Le Brun d. 1842: public domain. Frans Hals d. 1666: PD. Music: Mozart, Piano Sonata No. 11, I, performed by Bernd Krueger, CC BY-SA 3.0 de -> credited."
+ },
+ "say": {
+  "1787": "seventeen eighty-seven"
+ },
+ "ipa": {
+  "Louvre": "lˈuːvɹə",
+  "Vigée": "viʒˈeɪ",
+  "Le Brun": "lə bɹˈœ̃"
+ },
+ "respell": {
+  "Vigée": "vee-ZHAY",
+  "Le Brun": "luh BRUHN",
+  "Louvre": "LOO-vruh"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This smile shocked Paris.",
+     0.75,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "salon",
+   "perf": [
+    [
+     "She showed this self-portrait at the Paris Salon of 1787.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "teeth",
+   "perf": [
+    [
+     "Look closely: she shows her *teeth.*",
+     0.55,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "mouth",
+   "perf": [
+    [
+     "In art, an open mouth meant the poor, the mad, or children.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "sugar",
+   "perf": [
+    [
+     "And with all that sugar, real teeth were often bad.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "critic",
+   "perf": [
+    [
+     "A critic called it an affectation all people of taste condemned.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "mother",
+   "perf": [
+    [
+     "Worst of all, he wrote, in a *mother.*",
+     0.7,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Louvre, in Paris.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "smile": {
+   "file": "src/smile.jpg",
+   "commons": "File:Élisabeth-Louise Vigée-Le Brun - Madame Vigée-Le Brun et sa fille (1786).JPG",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.42,
+     0.29
+    ],
+    "faceup": [
+     0.42,
+     0.36
+    ],
+    "mouth": [
+     0.425,
+     0.322
+    ],
+    "mouthup": [
+     0.425,
+     0.36
+    ],
+    "julie": [
+     0.37,
+     0.42
+    ],
+    "julieup": [
+     0.37,
+     0.48
+    ],
+    "hands": [
+     0.45,
+     0.56
+    ],
+    "bust": [
+     0.43,
+     0.42
+    ]
+   }
+  },
+  "babbe": {
+   "file": "src/babbe.jpg",
+   "commons": "File:Frans Hals Malle Babbe about 1640-1646 Gemäldegalerie Berlin 9387.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.55
+    ],
+    "mouth": [
+     0.47,
+     0.68
+    ],
+    "mouthup": [
+     0.48,
+     0.72
+    ]
+   }
+  }
+ },
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_mozart_k331.ogg",
+    "commons": "File:Mozart - Piano Sonata No. 11 in A major - I. Andante grazioso.ogg",
+    "from": 0,
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "credit": "Mozart, Piano Sonata No. 11, I. Andante grazioso · Bernd Krueger, CC BY-SA 3.0 de"
+   }
+  ],
+  "heartbeat": [
+   0.2,
+   "hook.2-0.15"
+  ],
+  "heartbeat_gain": 0.2
+ },
+ "sfx": [],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "img": "smile",
+   "kind": "image",
+   "from": "mouthup@2.2",
+   "to": "mouthup@2.1"
+  },
+  {
+   "at": "hook.2-0.05",
+   "img": "smile",
+   "from": "bust@1.0",
+   "to": "bust@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "salon-0.12",
+   "img": "smile",
+   "kind": "image",
+   "from": "faceup@1.5",
+   "to": "faceup@1.62"
+  },
+  {
+   "at": "teeth-0.12",
+   "img": "smile",
+   "kind": "image",
+   "from": "mouthup@2.5",
+   "to": "mouthup@2.6"
+  },
+  {
+   "at": "mouth-0.12",
+   "img": "babbe",
+   "kind": "image",
+   "from": "mouthup@1.2",
+   "to": "mouthup@1.3",
+   "gray": 0.4
+  },
+  {
+   "at": "sugar-0.12",
+   "img": "smile",
+   "kind": "image",
+   "from": "mouthup@2.0",
+   "to": "mouthup@2.1"
+  },
+  {
+   "at": "critic-0.12",
+   "img": "smile",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.04",
+   "sway": 0.003
+  },
+  {
+   "at": "mother-0.12",
+   "img": "smile",
+   "kind": "image",
+   "from": "julieup@1.7",
+   "to": "julieup@1.8"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "smile",
+   "from": "faceup@1.6",
+   "to": "faceup@1.7",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "salon",
+   "to": "teeth-0.12",
+   "text": "VIGÉE LE BRUN · 1786"
+  },
+  {
+   "type": "ring",
+   "at": "teeth.4",
+   "to": "teeth$+0.4",
+   "img": "smile",
+   "point": "mouth",
+   "rx": 120,
+   "ry": 70,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "mouth",
+   "to": "sugar-0.12",
+   "text": "FRANS HALS · MALLE BABBE"
+  },
+  {
+   "type": "label",
+   "from": "critic",
+   "to": "mother-0.12",
+   "text": "A CRITIC · SALON OF 1787"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "LOUVRE · PARIS"
+  }
+ ],
+ "cover": {
+  "question": "Why did her smile <i>shock?</i>",
+  "name": "ÉLISABETH VIGÉE LE BRUN",
+  "work": "Self-Portrait with Her Daughter Julie, 1786",
+  "focus": [
+   0.42,
+   0.31
+  ],
+  "span": 0.6,
+  "answered_by": "She showed her teeth: in art an open mouth meant the poor, the mad or children; a critic called it an affectation condemned by all people of taste, worse in a mother"
+ },
+ "facts": [
+  {
+   "claim": "Élisabeth Vigée Le Brun, Madame Vigée Le Brun and Her Daughter Julie, 1786, oil on wood, 105 × 84 cm, Musée du Louvre (INV 3069)",
+   "source": "https://ac.nau.edu/omeka-s/s/elisabeth-louise-vigee-le-brun/item/6108 ; https://en.wikipedia.org/wiki/Self-Portrait_with_Julie_(Maternal_Tenderness)"
+  },
+  {
+   "claim": "Her open smile showing her teeth shocked critics: the self-portrait with her daughter was shown at the Paris Salon of 1787",
+   "source": "https://cabinetmagazine.org/issues/17/jones.php ; https://www.spectator.co.uk/article/how-the-smile-came-to-paris-briefly ; https://artsandculture.google.com/story/WgUBJhgvKCCoLw"
+  },
+  {
+   "claim": "She smiles with her teeth visible; per Colin Jones (The Smile Revolution in Eighteenth-Century Paris, 2014) this was unusual in elite portraiture",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_with_Julie_(Maternal_Tenderness) ; https://cabinetmagazine.org/issues/17/jones.php"
+  },
+  {
+   "claim": "Jones: an open mouth in Western art had very negative connotations: plebeian, insane or demented, or children who had not attained the age of reason",
+   "source": "https://cabinetmagazine.org/issues/17/jones.php"
+  },
+  {
+   "claim": "Jones: eighteenth-century teeth were often bad, linked to sugar consumption",
+   "source": "https://cabinetmagazine.org/issues/17/jones.php"
+  },
+  {
+   "claim": "A commentator (Jones: anonymous; Artnet: the Mémoires secrets) condemned 'An affectation which artists, art-lovers and persons of taste have been united in condemning … in smiling she shows her teeth. This affectation is particularly out of place in a mother.'",
+   "source": "https://cabinetmagazine.org/issues/17/jones.php ; https://www.spectator.co.uk/article/how-the-smile-came-to-paris-briefly"
+  },
+  {
+   "claim": "Comparison image: Frans Hals, Malle Babbe (c. 1640), Gemäldegalerie Berlin, an open-mouthed laughing figure",
+   "source": "https://commons.wikimedia.org/wiki/File:Frans_Hals_Malle_Babbe_about_1640-1646_Gemäldegalerie_Berlin_9387.jpg"
+  }
+ ],
+ "caption": "This smile shocked Paris.\n\nIn 1786 Élisabeth Vigée Le Brun, Marie Antoinette's portrait painter, painted herself hugging her daughter Julie, and she showed it at the Paris Salon of 1787. Look closely: her lips are parted, and you can see her teeth.\n\nThat was the problem. As the historian Colin Jones explains, in Western art an open mouth had long belonged to the poor, the mad or small children, the people who couldn't control themselves, like Frans Hals's laughing Malle Babbe. And in an age of sugar, real teeth were often bad. Elegant sitters kept their lips closed.\n\nOne commentator was outraged. Smiling so that she shows her teeth, he wrote, was \"an affectation which artists, art-lovers and persons of taste have been united in condemning\", and \"particularly out of place in a mother\".\n\n🖤 Would you have smiled for your portrait?",
+ "caption_short": "This smile shocked Paris in 1787. Look closely: she shows her teeth. 🖤",
+ "youtube_title": "Why did her smile shock Paris? Vigée Le Brun's Self-Portrait with Julie",
+ "hashtags_instagram": [
+  "#vigeelebrun",
+  "#selfportrait",
+  "#arthistory",
+  "#louvre",
+  "#womeninart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vigeelebrun",
+  "#selfportrait",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#vigeelebrun",
+  "#elisabethvigeelebrun",
+  "#selfportrait",
+  "#louvre",
+  "#paris",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#womeninart",
+  "#smile"
+ ]
+}

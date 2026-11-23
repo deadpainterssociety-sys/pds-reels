@@ -1,0 +1,725 @@
+{
+ "slug": "delaroche-jane-grey",
+ "formula": "F1",
+ "format": "reel",
+ "hook_type": "time-gap",
+ "teaser": "The painting a flood hid for 45 years",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Paul Delaroche",
+  "born": 1797,
+  "died": 1856,
+  "painting": "The Execution of Lady Jane Grey",
+  "year": "1833",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "jane",
+  "image_credit": "National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1856,
+  "note": "Delaroche d. 1856: public domain. John Martin d. 1854: PD. Tower scaffold site photo CC0. Tate Britain photo CC BY 2.0 -> credited."
+ },
+ "say": {
+  "1554": "fifteen fifty-four",
+  "1833": "eighteen thirty-three",
+  "1928": "nineteen twenty-eight",
+  "1973": "nineteen seventy-three",
+  "45": "forty-five",
+  "16": "sixteen",
+  "17": "seventeen"
+ },
+ "ipa": {
+  "Delaroche": "dəlɑːɹˈɔʃ"
+ },
+ "respell": {
+  "Delaroche": "duh-lah-ROSH"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "For 45 years, everyone thought this painting was *destroyed.*",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "jane",
+   "perf": [
+    [
+     "This is Lady Jane Grey,",
+     0.3,
+     0.96
+    ],
+    [
+     "Queen of England for just nine days.",
+     0.75,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "exec",
+   "perf": [
+    [
+     "In 1554, at 16 or 17,",
+     0.3,
+     0.96
+    ],
+    [
+     "she was beheaded at the Tower of London.",
+     0.75,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "blind",
+   "perf": [
+    [
+     "Blindfolded, she couldn't find the block.",
+     0.4,
+     0.94
+    ],
+    [
+     "\"What shall I do?\" she cried.",
+     0.3,
+     0.92
+    ],
+    [
+     "\"Where is it?\"",
+     0.75,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "paint",
+   "perf": [
+    [
+     "In 1833, Paul Delaroche painted that moment,",
+     0.3,
+     0.96
+    ],
+    [
+     "and at the Paris Salon it caused a *sensation.*",
+     0.75,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "tate",
+   "perf": [
+    [
+     "In January 1928, it lay in the Tate's basement,",
+     0.25,
+     0.95
+    ],
+    [
+     "when the Thames burst its banks and flooded it.",
+     0.4,
+     0.95
+    ],
+    [
+     "The painting was written off as lost.",
+     0.75,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "found",
+   "perf": [
+    [
+     "In 1973, a young curator,",
+     0.25,
+     0.96
+    ],
+    [
+     "hunting for another lost painting,",
+     0.3,
+     0.96
+    ],
+    [
+     "found rolls of canvas under a table.",
+     0.75,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "roll",
+   "perf": [
+    [
+     "Inside one of them was Lady Jane.",
+     0.4,
+     0.94
+    ],
+    [
+     "It was almost *untouched.*",
+     0.75,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Today, it's one of Britain's best-loved paintings.",
+     0.75,
+     0.94
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "jane": {
+   "file": "src/jane.jpg",
+   "commons": "File:PAUL DELAROCHE - Ejecución de Lady Jane Grey (National Gallery de Londres, 1834).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "mid": [
+     0.5,
+     0.48
+    ],
+    "face": [
+     0.46,
+     0.38
+    ],
+    "faceup": [
+     0.46,
+     0.43
+    ],
+    "blind": [
+     0.455,
+     0.37
+    ],
+    "hands": [
+     0.41,
+     0.64
+    ],
+    "block": [
+     0.47,
+     0.79
+    ],
+    "straw": [
+     0.52,
+     0.88
+    ],
+    "faint": [
+     0.11,
+     0.47
+    ],
+    "weep": [
+     0.23,
+     0.32
+    ],
+    "execface": [
+     0.83,
+     0.16
+    ],
+    "execup": [
+     0.83,
+     0.22
+    ],
+    "axe": [
+     0.95,
+     0.78
+    ],
+    "dress": [
+     0.36,
+     0.76
+    ],
+    "priest": [
+     0.54,
+     0.37
+    ]
+   }
+  },
+  "delaroche": {
+   "file": "src/delaroche.jpg",
+   "commons": "File:Paul Delaroche - Self-portrait.jpg",
+   "points": {
+    "face": [
+     0.5,
+     0.3
+    ],
+    "center": [
+     0.5,
+     0.45
+    ]
+   }
+  },
+  "scaffold": {
+   "file": "src/scaffold.jpg",
+   "commons": "File:Scaffold Site.JPG",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "glass": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "tate": {
+   "file": "src/tate.jpg",
+   "commons": "File:Tate Britain, Millbank, London (4137655271).jpg",
+   "credit": "Tate Britain, Millbank: photo by mira66 (Flickr), CC BY 2.0, via Wikimedia Commons",
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ],
+    "window": [
+     0.5,
+     0.7
+    ]
+   }
+  },
+  "martin": {
+   "file": "src/martin.jpg",
+   "commons": "File:Destruction of Pompeii and Herculaneum.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "city": [
+     0.62,
+     0.4
+    ],
+    "people": [
+     0.38,
+     0.8
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "jane",
+   "from": "faceup@2.2",
+   "to": "faceup@2.35",
+   "sway": 0.006
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "jane",
+   "from": "mid@1.0",
+   "to": "mid@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "jane-0.08",
+   "img": "jane",
+   "from": "faceup@1.6",
+   "to": "faceup@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "jane.5-0.05",
+   "img": "jane",
+   "from": "hands@1.4",
+   "to": "hands@1.5",
+   "sway": 0.006
+  },
+  {
+   "at": "exec-0.08",
+   "img": "jane",
+   "from": "execup@1.6",
+   "to": "execup@1.72",
+   "sway": 0.006
+  },
+  {
+   "at": "exec.9-0.05",
+   "img": "scaffold",
+   "kind": "image",
+   "from": "center@1.05",
+   "to": "center@1.15",
+   "gray": 0.7
+  },
+  {
+   "at": "blind-0.08",
+   "img": "jane",
+   "from": "faceup@2.0",
+   "to": "faceup@2.15",
+   "sway": 0.006
+  },
+  {
+   "at": "blind.2-0.05",
+   "img": "jane",
+   "from": "hands@2.0",
+   "to": "hands@2.12",
+   "sway": 0.006
+  },
+  {
+   "at": "blind.6-0.05",
+   "img": "jane",
+   "from": "block@1.8",
+   "to": "block@1.92",
+   "sway": 0.006
+  },
+  {
+   "at": "blind.12-0.05",
+   "img": "jane",
+   "kind": "image",
+   "from": "blind@2.6",
+   "to": "blind@2.75"
+  },
+  {
+   "at": "paint-0.08",
+   "img": "delaroche",
+   "kind": "image",
+   "from": "center@0.85",
+   "to": "center@0.9",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "paint.4-0.05",
+   "img": "jane",
+   "kind": "image",
+   "from": "center@0.52",
+   "to": "center@0.54",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "tate-0.08",
+   "img": "tate",
+   "kind": "image",
+   "from": "center@1.05",
+   "to": "center@1.15",
+   "gray": 1,
+   "dim": 0.15
+  },
+  {
+   "at": "tate.9-0.05",
+   "img": "jane",
+   "kind": "image",
+   "from": "straw@1.7",
+   "to": "straw@1.85",
+   "gray": 1
+  },
+  {
+   "at": "tate.18-0.05",
+   "img": "jane",
+   "kind": "image",
+   "from": "faceup@1.8",
+   "to": "faceup@1.95",
+   "gray": 1,
+   "dim": 0.1
+  },
+  {
+   "at": "found-0.08",
+   "img": "martin",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "city@1.1",
+   "gray": 0.6
+  },
+  {
+   "at": "found.10-0.05",
+   "img": "jane",
+   "kind": "image",
+   "from": "dress@1.8",
+   "to": "dress@1.95",
+   "gray": 1
+  },
+  {
+   "at": "roll.5-0.05",
+   "img": "jane",
+   "from": "mid@1.0",
+   "to": "mid@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "roll.9-0.05",
+   "img": "jane",
+   "from": "faceup@2.0",
+   "to": "faceup@2.12",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff-0.08",
+   "img": "jane",
+   "from": "weep@1.8",
+   "to": "weep@1.92",
+   "sway": 0.006
+  },
+  {
+   "at": "payoff.4-0.05",
+   "img": "jane",
+   "from": "faint@1.8",
+   "to": "faint@1.92",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.08",
+   "img": "jane",
+   "from": "faceup@1.55",
+   "to": "faceup@1.65",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "jane",
+   "to": "exec-0.1",
+   "text": "LADY JANE GREY · 1553"
+  },
+  {
+   "type": "label",
+   "from": "exec",
+   "to": "exec.9-0.1",
+   "text": "THE EXECUTIONER"
+  },
+  {
+   "type": "label",
+   "from": "exec.9",
+   "to": "blind-0.1",
+   "text": "TOWER OF LONDON · SCAFFOLD SITE"
+  },
+  {
+   "type": "label",
+   "from": "blind",
+   "to": "blind.12-0.1",
+   "text": "12 FEBRUARY 1554"
+  },
+  {
+   "type": "ring",
+   "at": "blind.6",
+   "to": "blind.12-0.1",
+   "img": "jane",
+   "point": "block",
+   "rx": 140,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "paint",
+   "to": "paint.4-0.1",
+   "text": "PAUL DELAROCHE · 1797–1856"
+  },
+  {
+   "type": "label",
+   "from": "paint.4",
+   "to": "tate-0.1",
+   "text": "PARIS SALON · 1834"
+  },
+  {
+   "type": "label",
+   "from": "tate",
+   "to": "tate.9-0.1",
+   "text": "TATE GALLERY · LONDON"
+  },
+  {
+   "type": "credit",
+   "from": "tate",
+   "to": "tate.9-0.1",
+   "text": "PHOTO: MIRA66 · CC BY 2.0"
+  },
+  {
+   "type": "label",
+   "from": "tate.9",
+   "to": "found-0.1",
+   "text": "THAMES FLOOD · 7 JANUARY 1928"
+  },
+  {
+   "type": "stamp",
+   "from": "tate.21",
+   "to": "tate$+0.4",
+   "text": "WRITTEN OFF"
+  },
+  {
+   "type": "label",
+   "from": "found",
+   "to": "found.10-0.1",
+   "text": "JOHN MARTIN · ALSO LOST IN 1928"
+  },
+  {
+   "type": "label",
+   "from": "found.10",
+   "to": "roll.5-0.1",
+   "text": "TATE · 1973"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "music": {
+  "transpose": 1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "exec-0.2",
+    "paint$+0.2"
+   ],
+   "choir": [
+    "roll.5-0.1",
+    "roll$+0.5"
+   ]
+  },
+  "heartbeat": [
+   "found.10",
+   "roll.5-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "exec.8",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "tate.21",
+   "fx": "tick",
+   "gain": 0.3
+  }
+ ],
+ "nocap": [],
+ "cover": {
+  "question": "Where was it <i>hiding?</i>",
+  "name": "PAUL DELAROCHE",
+  "work": "The Execution of Lady Jane Grey, 1833",
+  "focus": [
+   0.46,
+   0.42
+  ],
+  "span": 0.45,
+  "answered_by": "Rolled up under a table at the Tate: written off after the 1928 Thames flood, found in 1973 by a curator hunting for a lost John Martin"
+ },
+ "facts": [
+  {
+   "claim": "Paul Delaroche, The Execution of Lady Jane Grey, 1833, oil on canvas, 246 × 297 cm, National Gallery, London",
+   "source": "https://www.nationalgallery.org.uk/paintings/paul-delaroche-the-execution-of-lady-jane-grey ; https://en.wikipedia.org/wiki/The_Execution_of_Lady_Jane_Grey"
+  },
+  {
+   "claim": "Lady Jane Grey was Queen of England for nine days (July 1553)",
+   "source": "https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/painting-history-delaroche-and-lady-jane-grey ; https://en.wikipedia.org/wiki/Lady_Jane_Grey"
+  },
+  {
+   "claim": "She was beheaded at the Tower of London on 12 February 1554, aged 16 or 17 (the National Gallery says 17; Wikipedia: 'either 16 or 17')",
+   "source": "https://en.wikipedia.org/wiki/Lady_Jane_Grey ; https://www.nationalgallery.org.uk/paintings/paul-delaroche-the-execution-of-lady-jane-grey"
+  },
+  {
+   "claim": "Blindfolded, she could not find the block and cried 'What shall I do? Where is it?' (Chronicle of Queen Jane and of Two Years of Queen Mary, an anonymous contemporary account)",
+   "source": "https://en.wikipedia.org/wiki/Lady_Jane_Grey"
+  },
+  {
+   "claim": "Delaroche painted it in 1833; it created a sensation at the Paris Salon of 1834",
+   "source": "https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/painting-history-delaroche-and-lady-jane-grey ; https://www.nationalgallery.org.uk/paintings/paul-delaroche-the-execution-of-lady-jane-grey"
+  },
+  {
+   "claim": "Bequeathed to the National Gallery in 1902; it was stored at the Tate, whose basement was flooded when the Thames burst its banks on 7 January 1928",
+   "source": "https://en.wikipedia.org/wiki/The_Execution_of_Lady_Jane_Grey ; https://nzherald.co.nz/entertainment/the-discovery-of-lady-jane-rolled-up-under-the-table/7FZEV3I4B5CUWFDVXXZVPVGURQ ; https://tate.org.uk/visit/tate-britain/day-thames-broke-its-banks-and-flooded-tate-britain"
+  },
+  {
+   "claim": "For decades it was thought to have been destroyed in the 1928 flood",
+   "source": "https://www.nationalgallery.org.uk/paintings/paul-delaroche-the-execution-of-lady-jane-grey ; https://en.wikipedia.org/wiki/The_Execution_of_Lady_Jane_Grey"
+  },
+  {
+   "claim": "In 1973 Christopher Johnstone, a junior Tate curator researching John Martin, looked for Martin's Destruction of Pompeii and Herculaneum (listed as lost in the flood) and found rolled canvases under a table in conservation; the Martin was rolled up with the Delaroche, which was in 'virtually pristine condition'",
+   "source": "https://nzherald.co.nz/entertainment/the-discovery-of-lady-jane-rolled-up-under-the-table/7FZEV3I4B5CUWFDVXXZVPVGURQ ; https://en.wikipedia.org/wiki/The_Execution_of_Lady_Jane_Grey"
+  },
+  {
+   "claim": "First exhibited at the National Gallery in 1975; 'one of the nation's best-loved paintings'",
+   "source": "https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/painting-history-delaroche-and-lady-jane-grey ; https://www.nationalgallery.org.uk/paintings/paul-delaroche-the-execution-of-lady-jane-grey"
+  }
+ ],
+ "caption": "For 45 years, everyone thought this painting was destroyed.\n\nLady Jane Grey was Queen of England for just nine days in July 1553. On 12 February 1554, aged 16 or 17, she was beheaded at the Tower of London. A contemporary chronicle says that, blindfolded, she couldn't find the block and cried: \"What shall I do? Where is it?\"\n\nIn 1833 the French painter Paul Delaroche painted that moment, and at the Paris Salon of 1834 it caused a sensation. It was left to the National Gallery in London in 1902 and was kept at the Tate. On 7 January 1928 the Thames burst its banks and flooded the Tate's basement, and the painting was written off as lost.\n\nIn 1973 a young Tate curator, Christopher Johnstone, went looking for another painting lost in the flood, John Martin's Destruction of Pompeii and Herculaneum. Under a big table in the conservation studio he found rolls of canvas. The Martin was rolled up with the Delaroche, and Lady Jane was in almost pristine condition. Since 1975 she has been one of Britain's best-loved paintings.\n\n🖤 Would you have checked under the table?",
+ "caption_short": "For 45 years, everyone thought this painting was destroyed. It was rolled up under a table. 🖤",
+ "youtube_title": "Lost for 45 years, found under a table: Delaroche's Lady Jane Grey",
+ "hashtags_instagram": [
+  "#delaroche",
+  "#ladyjanegrey",
+  "#arthistory",
+  "#nationalgallery",
+  "#tudorhistory"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#delaroche",
+  "#ladyjanegrey",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#delaroche",
+  "#pauldelaroche",
+  "#ladyjanegrey",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#tudors",
+  "#lostart"
+ ]
+}

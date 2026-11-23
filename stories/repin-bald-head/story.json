@@ -1,0 +1,426 @@
+{
+ "slug": "repin-bald-head",
+ "formula": "F3",
+ "format": "caption",
+ "silent": true,
+ "related_long": "repin-cossacks-long",
+ "hook_type": "craft",
+ "teaser": "The head Repin painted behind its owner's back",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.6,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "meta": {
+  "painter": "Ilya Repin",
+  "born": 1844,
+  "died": 1930,
+  "painting": "Reply of the Zaporozhian Cossacks",
+  "year": "1880–1891",
+  "museum": "State Russian Museum",
+  "city": "St Petersburg",
+  "image": "cossacks",
+  "image_credit": "State Russian Museum, St Petersburg, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1930,
+  "note": "Repin d. 1930: public domain (EU 70 years; painting finished 1891, so also PD in the US). Photo of Yavornytsky (d. 1940, photo pre-1917) PD on Commons. Music: Mussorgsky, Limoges (Musopen), public domain."
+ },
+ "say": {},
+ "ipa": {
+  "Repin": "ɹˈɛpɪn"
+ },
+ "respell": {
+  "Repin": "REP-in"
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This bald head was painted without its owner's consent.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "owner",
+   "perf": [
+    [
+     "Its owner, a court official, refused to pose.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "friend",
+   "perf": [
+    [
+     "The story goes, a friend distracted him while Repin drew.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "centuries",
+   "perf": [
+    [
+     "Repin reportedly said a head like that takes centuries.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "recognised",
+   "perf": [
+    [
+     "Later he recognised his head, and was not pleased.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "faces",
+   "perf": [
+    [
+     "Almost every face here is a real person from Repin's life.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "film",
+   "perf": [
+    [
+     "The whole story is a film on our channel.",
+     0.55,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the State Russian Museum, in St Petersburg.",
+     0.3,
+     0.97
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "cossacks": {
+   "file": "src/cossacks.jpg",
+   "commons": "File:Ilja Jefimowitsch Repin - Reply of the Zaporozhian Cossacks - Yorck.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "bald": [
+     0.595,
+     0.64
+    ],
+    "scribe": [
+     0.54,
+     0.585
+    ],
+    "sirko": [
+     0.575,
+     0.43
+    ],
+    "taras": [
+     0.73,
+     0.26
+    ],
+    "baldup": [
+     0.595,
+     0.7
+    ],
+    "crown": [
+     0.6,
+     0.635
+    ],
+    "scribeup": [
+     0.54,
+     0.64
+    ],
+    "sirkoup": [
+     0.575,
+     0.48
+    ],
+    "tarasup": [
+     0.73,
+     0.31
+    ],
+    "tablezone": [
+     0.57,
+     0.62
+    ]
+   }
+  },
+  "yav": {
+   "file": "src/yav.jpg",
+   "commons": "File:Dmytro Yavornytsky (1855-1940).jpg",
+   "points": {
+    "face": [
+     0.39,
+     0.1
+    ],
+    "faceup": [
+     0.39,
+     0.17
+    ],
+    "body": [
+     0.45,
+     0.25
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "cossacks",
+   "kind": "image",
+   "from": "baldup@2.3",
+   "to": "baldup@2.15"
+  },
+  {
+   "at": "hook.8-0.05",
+   "img": "cossacks",
+   "from": "tablezone@1.0",
+   "to": "tablezone@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "owner-0.12",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "baldup@1.6",
+   "to": "baldup@1.72"
+  },
+  {
+   "at": "friend-0.12",
+   "img": "yav",
+   "kind": "image",
+   "from": "faceup@1.15",
+   "to": "faceup@1.25",
+   "gray": 1
+  },
+  {
+   "at": "friend.7-0.05",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "scribeup@2.0",
+   "to": "scribeup@2.12"
+  },
+  {
+   "at": "centuries-0.12",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "baldup@2.45",
+   "to": "baldup@2.3"
+  },
+  {
+   "at": "recognised-0.12",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "baldup@1.8",
+   "to": "baldup@1.92"
+  },
+  {
+   "at": "faces-0.12",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "center@0.32",
+   "to": "center@0.335",
+   "frame": true,
+   "sway": 0.002
+  },
+  {
+   "at": "faces.5-0.05",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "tarasup@1.7",
+   "to": "tarasup@1.82"
+  },
+  {
+   "at": "film-0.12",
+   "img": "cossacks",
+   "kind": "image",
+   "from": "sirkoup@1.7",
+   "to": "sirkoup@1.82"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "cossacks",
+   "from": "baldup@1.45",
+   "to": "baldup@1.55",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "owner",
+   "to": "friend-0.12",
+   "text": "THE BALD HEAD · SEEN FROM BEHIND"
+  },
+  {
+   "type": "label",
+   "from": "friend",
+   "to": "friend.7-0.1",
+   "text": "YAVORNYTSKY · REPIN'S FRIEND"
+  },
+  {
+   "type": "label",
+   "from": "friend.7",
+   "to": "centuries-0.12",
+   "text": "YAVORNYTSKY · AS THE SCRIBE"
+  },
+  {
+   "type": "ring",
+   "at": "centuries.3",
+   "to": "centuries$+0.3",
+   "img": "cossacks",
+   "point": "crown",
+   "rx": 170,
+   "ry": 190,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "faces",
+   "to": "faces.5-0.1",
+   "text": "REPIN · 1880–1891"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "STATE RUSSIAN MUSEUM · ST PETERSBURG"
+  }
+ ],
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_limoges.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - vii. limoges. le marche - allegretto vivo, sempre scherzando.ogg",
+    "from": 0,
+    "start": 0,
+    "gain_db": -1,
+    "fade_in": 0.3,
+    "fade_out": 2.5,
+    "credit": "Mussorgsky, Pictures at an Exhibition: Limoges · Musopen, public domain"
+   }
+  ],
+  "heartbeat": [
+   0.2,
+   "hook.8-0.15"
+  ],
+  "heartbeat_gain": 0.2
+ },
+ "sfx": [],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
+ "cover": {
+  "question": "Who refused to <i>pose?</i>",
+  "name": "ILYA REPIN",
+  "work": "Reply of the Zaporozhian Cossacks, 1880–1891",
+  "focus": [
+   0.595,
+   0.6
+  ],
+  "span": 0.6,
+  "answered_by": "The owner of the bald head in the centre: a court official, Georgy Alekseyev, who refused to pose; the story goes Repin sketched it while a friend distracted him"
+ },
+ "facts": [
+  {
+   "claim": "Ilya Repin, Reply of the Zaporozhian Cossacks, 1880–1891, oil on canvas, State Russian Museum, St Petersburg",
+   "source": "https://rusmuseumvrm.ru/data/collections/painting/19_20/zh_4005/?lang=en ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "The bald head seen from behind (centre) belongs to Georgy (Georgi) Alekseyev, an imperial court official, who refused to pose for it (Wikipedia: he felt it was undignified)",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "Repin sketched the back of his head while he was distracted (hedged 'the story goes': Vokrug Sveta says Yavornytsky showed the numismatist his coin collection; Wikipedia says he was looking at prints)",
+   "source": "https://www.vokrugsveta.ru/article/235851 ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "Repin reportedly exclaimed 'It takes centuries to create a head like that!' (translated from Russian: 'Нужны века, чтоб создать такой затылок!'; paraphrased and hedged)",
+   "source": "https://www.vokrugsveta.ru/article/235851"
+  },
+  {
+   "claim": "When he saw the painting, Alekseyev recognised his head and was not pleased",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "The historian Dmytro Yavornytsky, Repin's consultant and friend, posed for the scribe",
+   "source": "https://www.ukrinform.ua/rubric-culture/3337821-z-cogo-smialisa-zaporozci-repina.html ; https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks"
+  },
+  {
+   "claim": "The Cossacks who posed were Repin's friends and acquaintances (Yavornytsky, General Dragomirov as Sirko, Rubets, Tarnovsky, Fyodor Stravinsky…): 'almost every face'",
+   "source": "https://en.wikipedia.org/wiki/Reply_of_the_Zaporozhian_Cossacks ; https://www.ukrinform.ua/rubric-culture/3337821-z-cogo-smialisa-zaporozci-repina.html"
+  }
+ ],
+ "caption": "This bald head was painted without its owner's consent.\n\nIn the middle of Ilya Repin's Reply of the Zaporozhian Cossacks (1880–1891), one Cossack turns his back to us: a shining bald head. It belonged to Georgy Alekseyev, an imperial court official, who refused to pose. The story goes that while he was distracted (Repin's friend, the historian Dmytro Yavornytsky, showed him a collection), Repin quickly sketched the back of his head. Repin is said to have exclaimed that a head like that takes centuries to make. When Alekseyev saw the finished painting, he recognised his own head, and he was not pleased.\n\nAlmost every face in that laughing crowd is a real person from Repin's life: Yavornytsky is the scribe, General Dragomirov is the ataman Sirko.\n\n🎬 The whole story is a film on our YouTube channel: “These Men Are Laughing at an Emperor”\n\n🖤 Would you have let him paint you?",
+ "caption_short": "This bald head was painted without its owner's consent. Repin sketched it while a friend distracted him. 🖤",
+ "youtube_title": "Who refused to pose? Repin's Reply of the Zaporozhian Cossacks",
+ "hashtags_instagram": [
+  "#repin",
+  "#zaporozhiancossacks",
+  "#arthistory",
+  "#stpetersburg",
+  "#arthistoryfacts"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#repin",
+  "#zaporozhiancossacks",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#repin",
+  "#ilyarepin",
+  "#zaporozhiancossacks",
+  "#russianmuseum",
+  "#stpetersburg",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#cossacks"
+ ]
+}
