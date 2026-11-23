@@ -81,7 +81,7 @@ Telegram. You never publish, never call YouTube/Telegram, never read secrets. Bu
 - `titles`: A and B, ≤ 60 characters, a statement, no numbers, no "you won't believe"; borrowed fame when there is
   one. `description_lead` (facts, names), `hashtags` (3), `credits` (all images: PD lines + every CC author/licence),
   `sources` (12–18 best public URLs), `thumbnail`, `intro_chapter`, `outro_chapter` (not a chapter name),
-  `pinned_comment` (one line of extra fact + a question). `"next": False`. Add `"slot": "<YYYY-MM-DD>"` at the top level.
+  `pinned_comment` (one line of extra fact + a question, ending with our signature 👁️, never a heart). `"next": False`. Add `"slot": "<YYYY-MM-DD>"` at the top level.
 - `python automation/validate_long.py <slug>` must print no problems. Fix everything it lists and run it again.
 - Do NOT render (the workflow renders on a bigger machine), do not commit or push, do not schedule anything.
 ## 8. The trailer Short (sends Shorts viewers to this film; Gigi, 21 Nov 2026)

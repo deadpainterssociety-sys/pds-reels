@@ -184,4 +184,5 @@ Rules Gigi added after watching reels or reading the analytics. They override an
   (not `+1`). In F3 caption reels the last card is held 1.6 s after its words, so also add `"nocap": [["ending$+0.5",
   "ending$+4"]]`. Check with `python pipeline/preview_stills.py <slug> <ending end + 0.2>,<ending end + 0.8>`.
 - (22 Nov 2026) Borrowed fame: when a famous person is truly tied to the painting (Dalí obsessed over Millet's *Angelus* and Böcklin's *Isle of the Dead*; Hitler owned a version of the Isle; Rachmaninoff wrote music after it), name them in the title (Shorts `youtube_title`, long videos `titles`) and give them a real beat in the script, e.g. "Dalí Obsessed Over This Single Painting for Decades". Only links you have verified; a famous person's works still in copyright are narrated, never shown.
+- (23 Nov 2026) Our signature emoji is 👁️, never a heart: captions, pinned comments, posts, everything (the old 🖤 is retired; no ❤️/🖤/🤍 either).
 <!-- new rules go here -->

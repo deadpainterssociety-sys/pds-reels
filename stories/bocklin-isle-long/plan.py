@@ -78,7 +78,7 @@ story = {
                          "https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/arnold-boecklin-the-isle-of-the-dead-1883",
                          "https://www.smb.museum/presse/pressemitteilungen/detail/museumsinsel-berlin-alte-nationalgalerie-ausstellung-boecklin-jenseits-des-mythos-fuehrt-2027-alle-vier-noch-erhaltenen-versionen-der-toteninsel-zusammen/"],
              "pinned_comment": "Look at the rock on the right in the 1883 version: from that version on, Böcklin painted his own initials, A.B., above one of the tombs.\n\n"
-                               "Who do you think is in the coffin? 🖤"},
+                               "Who do you think is in the coffin? 👁️"},
 }
 try: from script import SAY, IPA, CHIRP
 except ImportError: SAY, IPA, CHIRP = {}, {}, {}

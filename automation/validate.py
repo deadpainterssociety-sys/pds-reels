@@ -94,6 +94,8 @@ def problems(slug):
         bad = [f"{l['id']} ({l.get('match')})" for l in t["lines"] if l.get("match") is not None and l["match"] < 0.85]
         if bad: p.append("voice check failed on: " + ", ".join(bad))
     if not st.get("caption") or not st.get("hashtags"): p.append("caption/hashtags missing")
+    if any(re.search("[\\u2764\\u2665\\U0001F5A4\\U0001F90D\\U0001F90E\\U0001F9E1\\U0001F49B-\\U0001F49F\\U0001F493-\\U0001F498\\U0001FA75-\\U0001FA77]", str(st.get(k, ""))) for k in ("caption", "caption_short", "youtube_title")):
+        p.append("a heart emoji in the captions: our signature is 👁️ (PLAYBOOK, 23 Nov)")
     p += hook_problems(st) + visual_problems(st, sd)
     if not any(e["slug"] == slug for e in schedule()): p.append("not on the schedule (run automation/plan.py add)")
     return p

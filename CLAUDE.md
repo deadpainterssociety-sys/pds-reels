@@ -149,7 +149,7 @@ For each reel, do steps 1–10 completely before starting the next one. Budget �
 
 ### 8. Captions
 - `caption` (Instagram/YouTube, 600–1200 characters): retell the story with the facts (numbers, names), end with a
-  question to the audience (e.g. "🖤 Would you have noticed?"). An optional "P.S." with one extra verified fact is welcome.
+  question to the audience (e.g. "👁️ Would you have noticed?"; 👁️ is our signature, never a heart: Gigi, 23 Nov 2026). An optional "P.S." with one extra verified fact is welcome.
 - `caption_short` (TikTok, ≤ 150 characters, the hook), `youtube_title` (≤ 70 characters: the hook or cover question
   first, then the painting's or painter's name, which people search for).
 - **Hashtags: Instagram and TikTok accept 5 at most**, so each platform gets its own best five (exactly 5, no more):

@@ -168,7 +168,7 @@ def poll(emit=True):
         if not text: continue
         if not chat and msg.get("chat", {}).get("type") == "private" and text.startswith("/start"):
             chat = bs["chat_id"] = cid
-            T.send(chat, "🖤 Linked. This chat will get every reel for review.\n\n" + HELP); continue
+            T.send(chat, "👁️ Linked. This chat will get every reel for review.\n\n" + HELP); continue
         if cid != str(chat): continue
         low = text.lower().strip(" .!")
         if text.startswith("/start") or text.startswith("/help"): T.send(chat, HELP); continue

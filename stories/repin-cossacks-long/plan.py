@@ -80,7 +80,7 @@ story = {
                          "https://www.humanrightsfirst.org/russian-attack-devastates-kharkiv-art-museum",
                          "https://www.rferl.org/a/ukraine-wartime--trend-ilya-repin-painting-cossacks-reply-recreation/33612657.html"],
              "pinned_comment": "Historians think the Cossacks' letter is probably a legend. Repin painted the laugh anyway, with his friends in costume.\n\n"
-                               "If you could add one real person to this crowd, who would it be? 🖤"},
+                               "If you could add one real person to this crowd, who would it be? 👁️"},
 }
 json.dump(story, open(os.path.join(HERE, "story.json"), "w"), indent=1, ensure_ascii=False)
 print(f"story.json: {len(L)} lines, {sum(len(w) for w in WORDS.values())} words, {len(S)} shots, {len(O)} overlays")

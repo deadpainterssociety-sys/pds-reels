@@ -46,6 +46,8 @@ def check(slug, light=False):
         if len(t) > 60: p.append(f"title over 60 characters: {t}")
     for k in ("description_lead", "hashtags", "credits", "sources", "thumbnail", "intro_chapter", "outro_chapter", "pinned_comment"):
         if not yt.get(k): p.append(f"youtube.{k} missing")
+    if re.search("[\\u2764\\u2665\\U0001F5A4\\U0001F90D\\U0001F90E\\U0001F9E1\\U0001F49B-\\U0001F49F\\U0001F493-\\U0001F498\\U0001FA75-\\U0001FA77]", json.dumps(yt, ensure_ascii=False)):
+        p.append("a heart emoji in the youtube fields: our signature is 👁️ (PLAYBOOK, 23 Nov)")
     credits = " ".join(yt.get("credits", []))
     for k, im in imgs.items():
         c = im.get("credit")

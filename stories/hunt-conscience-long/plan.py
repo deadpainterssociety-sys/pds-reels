@@ -72,7 +72,7 @@ story = {
                          "https://shafe.co.uk/?p=6136",
                          "https://en.wikipedia.org/wiki/William_Holman_Hunt"],
              "pinned_comment": "Hunt's own title for the painting was 'The Still Small Voice'. His friend Thomas Combe renamed it.\n\n"
-                               "Which detail gave it away for you: the hands, the cat, or the glove? 🖤"},
+                               "Which detail gave it away for you: the hands, the cat, or the glove? 👁️"},
 }
 json.dump(story, open(os.path.join(HERE, "story.json"), "w"), indent=1, ensure_ascii=False)
 print(f"story.json: {len(L)} lines, {sum(len(w) for w in WORDS.values())} words, {len(S)} shots, {len(O)} overlays")
