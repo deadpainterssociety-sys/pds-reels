@@ -171,8 +171,9 @@
   "lat": 51.491111,
   "lon": -0.1275,
   "lat_checked": "2026-11-10",
-  "ig_note": "no own Facebook place page found (only the umbrella 'Tate' page): left untagged on purpose",
-  "ig_location_id_checked": "2026-11-10"
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"AKH1yImD3PudCmG1vhLqter\"}}",
+  "ig_location_id_checked": "2026-11-23",
+  "ig_location_id": null
  },
  "The National Gallery, London": {
   "lat": 51.508889,
