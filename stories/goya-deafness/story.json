@@ -1,0 +1,702 @@
+{
+ "slug": "goya-deafness",
+ "formula": "F4",
+ "format": "series",
+ "hook_type": "dark-legend",
+ "teaser": "Watch Goya's world go dark",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "sabbath": {
+   "file": "src/sabbath2.jpg",
+   "commons": "File:Francisco de Goya y Lucientes - Witches' Sabbath (The Great He-Goat).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "witch": [
+     0.405,
+     0.31
+    ],
+    "hooded": [
+     0.555,
+     0.27
+    ],
+    "right": [
+     0.65,
+     0.32
+    ],
+    "group": [
+     0.55,
+     0.32
+    ],
+    "goat": [
+     0.24,
+     0.2
+    ],
+    "faceup": [
+     0.555,
+     0.36
+    ]
+   }
+  },
+  "parasol": {
+   "file": "src/parasol.jpg",
+   "commons": "File:El Quitasol (Goya).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "woman": [
+     0.33,
+     0.33
+    ],
+    "man": [
+     0.555,
+     0.24
+    ],
+    "couple": [
+     0.44,
+     0.36
+    ],
+    "womanup": [
+     0.33,
+     0.4
+    ]
+   }
+  },
+  "lunatics": {
+   "file": "src/lunatics.jpg",
+   "commons": "File:Courtyard with Lunatics by Goya 1794.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "fight": [
+     0.5,
+     0.66
+    ],
+    "crowd": [
+     0.45,
+     0.66
+    ],
+    "grin": [
+     0.8,
+     0.79
+    ],
+    "arms": [
+     0.31,
+     0.56
+    ]
+   }
+  },
+  "mayo": {
+   "file": "src/mayo.jpg",
+   "commons": "File:El Tres de Mayo, by Francisco de Goya, from Prado (cropped).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "shirt": [
+     0.27,
+     0.22
+    ],
+    "guns": [
+     0.68,
+     0.28
+    ],
+    "victim": [
+     0.27,
+     0.3
+    ]
+   }
+  },
+  "aprendo": {
+   "file": "src/aprendo.jpg",
+   "commons": "File:Goya - Aun aprendo, D04151.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.47,
+     0.38
+    ],
+    "faceup": [
+     0.47,
+     0.45
+    ],
+    "text": [
+     0.8,
+     0.13
+    ],
+    "sticks": [
+     0.6,
+     0.6
+    ],
+    "textview": [
+     0.72,
+     0.3
+    ]
+   }
+  },
+  "dog": {
+   "file": "src/dog.jpg",
+   "commons": "File:Goya Dog.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "head": [
+     0.44,
+     0.805
+    ],
+    "eye": [
+     0.4,
+     0.8
+    ],
+    "headup": [
+     0.44,
+     0.835
+    ],
+    "slope": [
+     0.5,
+     0.75
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Watch Goya's world go *dark*",
+     0.1,
+     0.92
+    ],
+    [
+     "after he loses his hearing.",
+     0.6,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1777",
+   "perf": [
+    [
+     "1777.",
+     0.18,
+     0.96
+    ],
+    [
+     "A sunny day out,",
+     0.12,
+     0.97
+    ],
+    [
+     "painted for a royal tapestry.",
+     0.45,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "deaf",
+   "perf": [
+    [
+     "Then, at 46,",
+     0.12,
+     0.96
+    ],
+    [
+     "an illness leaves him *deaf.*",
+     0.55,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "y1794",
+   "perf": [
+    [
+     "1794.",
+     0.18,
+     0.96
+    ],
+    [
+     "A yard full of madmen,",
+     0.12,
+     0.97
+    ],
+    [
+     "a scene he says he *witnessed.*",
+     0.45,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "y1814",
+   "perf": [
+    [
+     "1814.",
+     0.18,
+     0.96
+    ],
+    [
+     "French soldiers shoot Spaniards",
+     0.08,
+     0.97
+    ],
+    [
+     "before dawn.",
+     0.45,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "y1820",
+   "perf": [
+    [
+     "Around 1820.",
+     0.18,
+     0.96
+    ],
+    [
+     "In his seventies,",
+     0.1,
+     0.97
+    ],
+    [
+     "he covers the walls of his own house",
+     0.08,
+     0.97
+    ],
+    [
+     "with *nightmares.*",
+     0.6,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "draw",
+   "perf": [
+    [
+     "In France, at about 80,",
+     0.1,
+     0.96
+    ],
+    [
+     "he draws an old man on two sticks.",
+     0.35,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "words",
+   "perf": [
+    [
+     "Above him, he writes:",
+     0.25,
+     0.95
+    ],
+    [
+     "“I am still *learning.*”",
+     0.7,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "dead",
+   "perf": [
+    [
+     "He died at 82.",
+     0.6,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Prado, in Madrid.",
+     0.3,
+     0.96
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "Francisco de Goya",
+  "born": 1746,
+  "died": 1828,
+  "painting": "The Dog",
+  "year": "c. 1820–1823",
+  "museum": "Prado",
+  "city": "Madrid",
+  "image": "dog",
+  "image_credit": "Museo del Prado, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1828,
+  "note": "Goya d. 1828: public domain. All six works PD on Commons (Prado: The Dog, Witches' Sabbath, The Parasol, The Third of May 1808, Aún aprendo D04151; Meadows Museum: Yard with Lunatics)."
+ },
+ "say": {
+  "1777": "seventeen seventy-seven",
+  "1794": "seventeen ninety-four",
+  "1814": "eighteen fourteen",
+  "1820": "eighteen twenty",
+  "46": "forty-six",
+  "80": "eighty",
+  "82": "eighty-two"
+ },
+ "ipa": {},
+ "respell": {},
+ "chirp_say": {},
+ "shots": [
+  {
+   "at": 0,
+   "img": "dog",
+   "kind": "image",
+   "from": "headup@3.2",
+   "to": "headup@3.0"
+  },
+  {
+   "at": "hook.4-0.05",
+   "img": "dog",
+   "from": "slope@1.0",
+   "to": "slope@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "y1777-0.1",
+   "img": "parasol",
+   "kind": "image",
+   "from": "couple@1.05",
+   "to": "couple@1.15"
+  },
+  {
+   "at": "y1777.3-0.05",
+   "img": "parasol",
+   "kind": "image",
+   "from": "womanup@1.9",
+   "to": "womanup@2.05"
+  },
+  {
+   "at": "deaf-0.1",
+   "img": "parasol",
+   "kind": "image",
+   "from": "woman@2.6",
+   "to": "woman@2.75",
+   "gray": 1
+  },
+  {
+   "at": "y1794-0.1",
+   "img": "lunatics",
+   "kind": "image",
+   "from": "crowd@1.1",
+   "to": "crowd@1.2"
+  },
+  {
+   "at": "y1794.5-0.05",
+   "img": "lunatics",
+   "kind": "image",
+   "from": "grin@1.9",
+   "to": "grin@2.05",
+   "dim": -0.2
+  },
+  {
+   "at": "y1814-0.1",
+   "img": "mayo",
+   "kind": "image",
+   "from": "victim@1.1",
+   "to": "victim@1.2"
+  },
+  {
+   "at": "y1814.4-0.05",
+   "img": "mayo",
+   "kind": "image",
+   "from": "guns@1.5",
+   "to": "guns@1.6"
+  },
+  {
+   "at": "y1820-0.1",
+   "img": "sabbath",
+   "kind": "image",
+   "from": "center@0.19",
+   "to": "center@0.2",
+   "frame": true,
+   "dim": -0.4
+  },
+  {
+   "at": "y1820.4-0.05",
+   "img": "sabbath",
+   "kind": "image",
+   "from": "group@1.1",
+   "to": "group@1.2",
+   "dim": -0.4
+  },
+  {
+   "at": "y1820.12-0.05",
+   "img": "dog",
+   "from": "headup@2.3",
+   "to": "headup@2.45",
+   "hit": "big"
+  },
+  {
+   "at": "draw-0.1",
+   "img": "aprendo",
+   "kind": "image",
+   "from": "center@0.9",
+   "to": "center@0.95"
+  },
+  {
+   "at": "draw.5-0.05",
+   "img": "aprendo",
+   "kind": "image",
+   "from": "faceup@1.5",
+   "to": "faceup@1.6"
+  },
+  {
+   "at": "words-0.1",
+   "img": "aprendo",
+   "kind": "image",
+   "from": "textview@1.12",
+   "to": "textview@1.18"
+  },
+  {
+   "at": "dead-0.1",
+   "img": "aprendo",
+   "kind": "image",
+   "from": "face@2.1",
+   "to": "face@2.25"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "dog",
+   "from": "headup@2.4",
+   "to": "headup@2.5",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "y1777",
+   "to": "deaf-0.1",
+   "text": "1777 · PRADO, MADRID"
+  },
+  {
+   "type": "label",
+   "from": "deaf",
+   "to": "y1794-0.1",
+   "text": "1792–93 · DEAF AT 46"
+  },
+  {
+   "type": "label",
+   "from": "y1794",
+   "to": "y1814-0.1",
+   "text": "1794 · MEADOWS MUSEUM, DALLAS"
+  },
+  {
+   "type": "label",
+   "from": "y1814",
+   "to": "y1820-0.1",
+   "text": "1814 · PRADO, MADRID"
+  },
+  {
+   "type": "label",
+   "from": "y1820",
+   "to": "draw-0.1",
+   "text": "C. 1820–23 · HIS OWN WALLS"
+  },
+  {
+   "type": "label",
+   "from": "draw",
+   "to": "dead-0.1",
+   "text": "C. 1826 · BORDEAUX"
+  },
+  {
+   "type": "ring",
+   "at": "words.3",
+   "to": "dead-0.1",
+   "img": "aprendo",
+   "point": "text",
+   "rx": 300,
+   "ry": 80,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "MUSEO DEL PRADO · MADRID"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "deaf-0.2",
+    "y1820$+0.2"
+   ],
+   "choir": [
+    "words-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.4-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "y1777",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "y1794",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "y1814",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "y1820",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "words.4",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "What did he write at <i>80?</i>",
+  "name": "FRANCISCO DE GOYA",
+  "work": "The Dog, c. 1820–23",
+  "focus": [
+   0.44,
+   0.805
+  ],
+  "span": 0.45,
+  "answered_by": "'Aún aprendo', I am still learning: the words over his drawing of an old man on two sticks, made in Bordeaux at about 80 (Prado)"
+ },
+ "facts": [
+  {
+   "claim": "The Parasol (c. 1777, Prado) is a cartoon painted for a tapestry for the dining room of the Prince and Princess of Asturias at the royal palace of El Pardo",
+   "source": "https://en.wikipedia.org/wiki/The_Parasol ; https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "Between late 1792 and early 1793 an undiagnosed illness left Goya (born 30 March 1746) deaf, aged about 46",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya ; https://blog.oup.com/2016/04/francisco-goya-deafness/"
+  },
+  {
+   "claim": "Yard with Lunatics (c. 1794, Meadows Museum, Dallas): in a 1794 letter to Bernardo de Iriarte Goya called it 'a scene I witnessed at Zaragoza'",
+   "source": "https://en.wikipedia.org/wiki/Yard_with_Lunatics ; https://medhum.med.nyu.edu/view/10318"
+  },
+  {
+   "claim": "The Third of May 1808 (painted 1814, Prado) shows French soldiers executing Spaniards in the early hours after the 2 May uprising",
+   "source": "https://en.wikipedia.org/wiki/The_Third_of_May_1808"
+  },
+  {
+   "claim": "The Black Paintings (c. 1819/1820–1823), including Witches' Sabbath and The Dog, were painted in oil directly on the plaster walls of his house, the Quinta del Sordo, when Goya was in his seventies (about 75); now in the Prado",
+   "source": "https://en.wikipedia.org/wiki/Witches%27_Sabbath_(The_Great_He-Goat) ; https://en.wikipedia.org/wiki/The_Dog_(Goya) ; https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "Goya left Spain in 1824 for Bordeaux, France",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  },
+  {
+   "claim": "'Aún aprendo' (I am still learning), Bordeaux album G.54, c. 1824–28 (Prado: c. 1826, D04151): an old man with a long beard leaning on two sticks, the motto written above him; long considered a self-portrait",
+   "source": "https://fundaciongoyaenaragon.es/eng/obra/aun-aprendo-g-54/1753 ; https://www.museodelprado.es/en/the-collection/art-work/i-am-still-learning/f0c1615c-8c5f-4e80-b7bc-702ec9f4d2f3"
+  },
+  {
+   "claim": "Goya died in Bordeaux on 16 April 1828, aged 82",
+   "source": "https://en.wikipedia.org/wiki/Francisco_Goya"
+  }
+ ],
+ "caption": "Watch Goya's world go dark.\n\nIn 1777 he paints sunny picnics and parasols, cartoons for the royal tapestries of El Pardo. Then, between late 1792 and early 1793, an illness nobody has ever diagnosed leaves him deaf, at 46.\n\nIn 1794 he paints a courtyard of madmen wrestling while a keeper beats them, \"a scene I witnessed at Zaragoza\", he writes to a friend. In 1814 come French soldiers shooting Spaniards before dawn (The Third of May 1808). Around 1820, in his seventies, he covers the walls of his own house outside Madrid with the Black Paintings: witches, a goat-devil, and this dog, sinking behind a slope.\n\nIn 1824 he leaves Spain for Bordeaux. There, at about 80, he draws an old man with a white beard on two sticks, and above him writes \"Aún aprendo\": I am still learning. He died on 16 April 1828, aged 82.\n\nThe Dog, the Black Paintings, the Parasol and the drawing are all in the Prado, in Madrid.\n\n👁️ Which year would you hang on your wall?",
+ "caption_short": "Watch Goya's world go dark after he lost his hearing. And what he wrote at 80. 👁️",
+ "youtube_title": "Watch Goya's world go dark: from sunny picnics to The Dog",
+ "hashtags_instagram": [
+  "#goya",
+  "#blackpaintings",
+  "#arthistory",
+  "#prado",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#goya",
+  "#blackpaintings",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#goya",
+  "#franciscogoya",
+  "#thedog",
+  "#blackpaintings",
+  "#prado",
+  "#madrid",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#romanticism"
+ ]
+}

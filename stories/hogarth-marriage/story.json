@@ -1,0 +1,1046 @@
+{
+ "slug": "hogarth-marriage",
+ "images": {
+  "deal": {
+   "file": "src/deal.jpg",
+   "commons": "File:William Hogarth - Marriage A-la-Mode 1 The Marriage Settlement.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "lawyerup": [
+     0.29,
+     0.52
+    ],
+    "lawyer": [
+     0.285,
+     0.465
+    ],
+    "quill": [
+     0.33,
+     0.55
+    ],
+    "fathers": [
+     0.63,
+     0.6
+    ],
+    "earlup": [
+     0.79,
+     0.6
+    ],
+    "earl": [
+     0.795,
+     0.535
+    ],
+    "foot": [
+     0.665,
+     0.84
+    ],
+    "hand": [
+     0.76,
+     0.64
+    ],
+    "heart": [
+     0.76,
+     0.615
+    ],
+    "tree": [
+     0.81,
+     0.86
+    ],
+    "conqueror": [
+     0.81,
+     0.9
+    ],
+    "treelabel": [
+     0.81,
+     0.885
+    ],
+    "house": [
+     0.72,
+     0.36
+    ],
+    "coins": [
+     0.66,
+     0.7
+    ],
+    "coin": [
+     0.66,
+     0.675
+    ],
+    "alderup": [
+     0.47,
+     0.6
+    ],
+    "contract": [
+     0.52,
+     0.68
+    ],
+    "brideup": [
+     0.245,
+     0.56
+    ],
+    "bride": [
+     0.245,
+     0.515
+    ],
+    "groomwhole": [
+     0.12,
+     0.62
+    ],
+    "groomup": [
+     0.1,
+     0.56
+    ],
+    "snuff": [
+     0.11,
+     0.66
+    ],
+    "snuffbox": [
+     0.11,
+     0.635
+    ],
+    "neck": [
+     0.112,
+     0.525
+    ],
+    "neckview": [
+     0.11,
+     0.56
+    ],
+    "pair": [
+     0.18,
+     0.6
+    ],
+    "ringview": [
+     0.28,
+     0.69
+    ],
+    "ring": [
+     0.29,
+     0.675
+    ],
+    "medusa": [
+     0.18,
+     0.27
+    ],
+    "medusaview": [
+     0.18,
+     0.3
+    ],
+    "dogs": [
+     0.07,
+     0.875
+    ],
+    "dogsview": [
+     0.12,
+     0.8
+    ],
+    "whisper": [
+     0.265,
+     0.54
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "One man at this wedding deal",
+     0.1,
+     0.95
+    ],
+    [
+     "will *kill* the groom.",
+     0.8,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "intro",
+   "perf": [
+    [
+     "William Hogarth painted it around 1743,",
+     0.3,
+     0.95
+    ],
+    [
+     "the first of six scenes.",
+     0.3,
+     0.95
+    ],
+    [
+     "Two fathers are making a deal",
+     0.2,
+     0.95
+    ],
+    [
+     "over their children's heads.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "earl",
+   "perf": [
+    [
+     "Look at the man on the right.",
+     0.3,
+     0.95
+    ],
+    [
+     "An earl.",
+     0.2,
+     0.95
+    ],
+    [
+     "Gout in his foot,",
+     0.2,
+     0.95
+    ],
+    [
+     "one hand on his heart,",
+     0.3,
+     0.95
+    ],
+    [
+     "the other pointing at his family tree.",
+     0.3,
+     0.95
+    ],
+    [
+     "It grows out of William the *Conqueror.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "window",
+   "perf": [
+    [
+     "Now look through the window.",
+     0.3,
+     0.95
+    ],
+    [
+     "His new house is only half built.",
+     0.3,
+     0.95
+    ],
+    [
+     "The money seems to have run *out.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "alderman",
+   "perf": [
+    [
+     "Across the table, the bride's father,",
+     0.2,
+     0.95
+    ],
+    [
+     "a rich city alderman,",
+     0.2,
+     0.95
+    ],
+    [
+     "squints at the contract through his glasses.",
+     0.3,
+     0.95
+    ],
+    [
+     "His cash goes to the earl.",
+     0.3,
+     0.95
+    ],
+    [
+     "His daughter gets a *title.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "groom",
+   "perf": [
+    [
+     "Now look at the groom, on the left.",
+     0.3,
+     0.95
+    ],
+    [
+     "He's not even facing her.",
+     0.3,
+     0.95
+    ],
+    [
+     "He admires himself in a mirror",
+     0.2,
+     0.95
+    ],
+    [
+     "and takes a pinch of snuff.",
+     0.6,
+     0.93
+    ],
+    [
+     "Look at his neck.",
+     0.3,
+     0.92
+    ],
+    [
+     "That black patch",
+     0.15,
+     0.95
+    ],
+    [
+     "may hide a *syphilis* sore.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "bride",
+   "perf": [
+    [
+     "The bride has turned away too.",
+     0.3,
+     0.95
+    ],
+    [
+     "Look at her hands.",
+     0.3,
+     0.95
+    ],
+    [
+     "She slides her wedding ring",
+     0.15,
+     0.95
+    ],
+    [
+     "along a handkerchief.",
+     0.8,
+     0.92
+    ],
+    [
+     "Above her head,",
+     0.15,
+     0.95
+    ],
+    [
+     "a painted Medusa screams",
+     0.15,
+     0.95
+    ],
+    [
+     "the rage she can't say out loud.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "dogs",
+   "perf": [
+    [
+     "Look down at their feet.",
+     0.3,
+     0.95
+    ],
+    [
+     "Two dogs,",
+     0.2,
+     0.95
+    ],
+    [
+     "chained together by the neck.",
+     0.4,
+     0.93
+    ],
+    [
+     "That's the *marriage.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "lawyer",
+   "perf": [
+    [
+     "And look who's leaning close.",
+     0.3,
+     0.95
+    ],
+    [
+     "The lawyer,",
+     0.2,
+     0.95
+    ],
+    [
+     "sharpening his quill,",
+     0.2,
+     0.95
+    ],
+    [
+     "whispering in her ear.",
+     0.4,
+     0.93
+    ],
+    [
+     "Hogarth named him *Silvertongue.*",
+     1.0,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Four scenes later,",
+     0.2,
+     0.95
+    ],
+    [
+     "the groom catches him with his wife,",
+     0.2,
+     0.95
+    ],
+    [
+     "and Silvertongue",
+     0.15,
+     0.92
+    ],
+    [
+     "stabs him with a *sword.*",
+     1.0,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "coda",
+   "perf": [
+    [
+     "The lawyer is hanged.",
+     0.3,
+     0.95
+    ],
+    [
+     "The bride poisons herself.",
+     0.4,
+     0.93
+    ],
+    [
+     "And in the very last scene,",
+     0.2,
+     0.95
+    ],
+    [
+     "her father pulls the wedding ring",
+     0.15,
+     0.95
+    ],
+    [
+     "off her dead finger.",
+     1.0,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "reflect",
+   "perf": [
+    [
+     "It all started at this table,",
+     0.2,
+     0.95
+    ],
+    [
+     "with a *signature.*",
+     1.0,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "formula": "F2",
+ "format": "two-minute",
+ "hook_type": "hidden",
+ "teaser": "The wedding deal that ends in murder",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.9,
+ "tail": 2.2,
+ "say": {
+  "1743": "seventeen forty-three",
+  "Silvertongue": "silver tongue"
+ },
+ "ipa": {
+  "Hogarth": "hˈoʊɡɑːɹθ"
+ },
+ "respell": {},
+ "chirp_say": {},
+ "shots": [
+  {
+   "at": 0,
+   "img": "deal",
+   "from": "lawyerup@2.4",
+   "to": "lawyerup@2.25",
+   "kind": "image"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "deal",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "intro-0.08",
+   "img": "deal",
+   "from": "center@0.42",
+   "to": "center@0.44",
+   "frame": true,
+   "kind": "image"
+  },
+  {
+   "at": "intro.11-0.05",
+   "img": "deal",
+   "from": "fathers@1.0",
+   "to": "fathers@1.05",
+   "sway": 0.006
+  },
+  {
+   "at": "earl-0.1",
+   "img": "deal",
+   "from": "earlup@1.9",
+   "to": "earlup@2.0",
+   "kind": "image"
+  },
+  {
+   "at": "earl.9-0.05",
+   "img": "deal",
+   "from": "foot@2.3",
+   "to": "foot@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "earl.13-0.05",
+   "img": "deal",
+   "from": "hand@2.2",
+   "to": "hand@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "earl.18-0.05",
+   "img": "deal",
+   "from": "tree@1.9",
+   "to": "tree@2.05",
+   "kind": "image"
+  },
+  {
+   "at": "earl.25-0.05",
+   "img": "deal",
+   "from": "conqueror@2.8",
+   "to": "conqueror@3.0",
+   "kind": "image"
+  },
+  {
+   "at": "window-0.1",
+   "img": "deal",
+   "from": "house@2.1",
+   "to": "house@2.25",
+   "kind": "image"
+  },
+  {
+   "at": "window.13-0.05",
+   "img": "deal",
+   "from": "coins@2.4",
+   "to": "coins@2.55",
+   "kind": "image"
+  },
+  {
+   "at": "alderman-0.1",
+   "img": "deal",
+   "from": "alderup@1.9",
+   "to": "alderup@2.05",
+   "kind": "image"
+  },
+  {
+   "at": "alderman.10-0.05",
+   "img": "deal",
+   "from": "contract@2.4",
+   "to": "contract@2.55",
+   "kind": "image"
+  },
+  {
+   "at": "alderman.17-0.05",
+   "img": "deal",
+   "from": "coins@2.7",
+   "to": "coins@2.85",
+   "kind": "image"
+  },
+  {
+   "at": "alderman.23-0.05",
+   "img": "deal",
+   "from": "brideup@2.2",
+   "to": "brideup@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "groom-0.1",
+   "img": "deal",
+   "from": "groomwhole@1.4",
+   "to": "groomwhole@1.5",
+   "sway": 0.006
+  },
+  {
+   "at": "groom.13-0.05",
+   "img": "deal",
+   "from": "groomup@2.3",
+   "to": "groomup@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "groom.19-0.05",
+   "img": "deal",
+   "from": "snuff@2.6",
+   "to": "snuff@2.75",
+   "kind": "image"
+  },
+  {
+   "at": "groom.25-0.05",
+   "img": "deal",
+   "from": "neckview@3.1",
+   "to": "neckview@3.3",
+   "kind": "image"
+  },
+  {
+   "at": "bride-0.1",
+   "img": "deal",
+   "from": "pair@1.5",
+   "to": "pair@1.6",
+   "sway": 0.006
+  },
+  {
+   "at": "bride.6-0.05",
+   "img": "deal",
+   "from": "ringview@2.6",
+   "to": "ringview@2.75",
+   "kind": "image"
+  },
+  {
+   "at": "bride.18-0.05",
+   "img": "deal",
+   "from": "medusaview@2.5",
+   "to": "medusaview@2.65",
+   "kind": "image"
+  },
+  {
+   "at": "dogs-0.1",
+   "img": "deal",
+   "from": "dogsview@1.5",
+   "to": "dogsview@1.6",
+   "kind": "image"
+  },
+  {
+   "at": "dogs.12-0.05",
+   "img": "deal",
+   "from": "dogsview@1.9",
+   "to": "dogsview@2.0",
+   "kind": "image"
+  },
+  {
+   "at": "lawyer-0.1",
+   "img": "deal",
+   "from": "lawyerup@2.0",
+   "to": "lawyerup@2.1",
+   "kind": "image"
+  },
+  {
+   "at": "lawyer.7-0.05",
+   "img": "deal",
+   "from": "quill@2.6",
+   "to": "quill@2.75",
+   "kind": "image"
+  },
+  {
+   "at": "lawyer.10-0.05",
+   "img": "deal",
+   "from": "whisper@2.1",
+   "to": "whisper@2.2",
+   "kind": "image"
+  },
+  {
+   "at": "lawyer.14-0.05",
+   "img": "deal",
+   "from": "lawyerup@2.7",
+   "to": "lawyerup@2.85",
+   "hit": "big",
+   "kind": "image"
+  },
+  {
+   "at": "payoff-0.1",
+   "img": "deal",
+   "from": "groomup@2.0",
+   "to": "groomup@2.15",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "payoff.10-0.05",
+   "img": "deal",
+   "from": "lawyerup@2.3",
+   "to": "lawyerup@2.45",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "payoff.14-0.05",
+   "img": "deal",
+   "from": "groomwhole@1.7",
+   "to": "groomwhole@1.8",
+   "gray": 1,
+   "hit": "small",
+   "kind": "image"
+  },
+  {
+   "at": "coda-0.1",
+   "img": "deal",
+   "from": "lawyer@2.0",
+   "to": "lawyer@2.15",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "coda.4-0.05",
+   "img": "deal",
+   "from": "brideup@2.3",
+   "to": "brideup@2.45",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "coda.8-0.05",
+   "img": "deal",
+   "from": "ringview@2.7",
+   "to": "ringview@2.85",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "coda.14-0.05",
+   "img": "deal",
+   "from": "alderup@2.2",
+   "to": "alderup@2.35",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "reflect-0.1",
+   "img": "deal",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "reflect.6-0.05",
+   "img": "deal",
+   "from": "contract@2.0",
+   "to": "contract@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "deal",
+   "from": "brideup@1.6",
+   "to": "brideup@1.7",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "intro",
+   "to": "intro.11-0.1",
+   "text": "WILLIAM HOGARTH · C. 1743"
+  },
+  {
+   "type": "label",
+   "from": "intro.11",
+   "to": "earl-0.1",
+   "text": "MARRIAGE A-LA-MODE · 1 OF 6"
+  },
+  {
+   "type": "label",
+   "from": "earl",
+   "to": "window-0.1",
+   "text": "THE EARL"
+  },
+  {
+   "type": "label",
+   "from": "alderman",
+   "to": "alderman.23-0.1",
+   "text": "THE BRIDE'S FATHER"
+  },
+  {
+   "type": "label",
+   "from": "groom",
+   "to": "bride-0.1",
+   "text": "THE GROOM"
+  },
+  {
+   "type": "label",
+   "from": "bride",
+   "to": "dogs-0.1",
+   "text": "THE BRIDE"
+  },
+  {
+   "type": "label",
+   "from": "lawyer",
+   "to": "payoff-0.1",
+   "text": "THE LAWYER"
+  },
+  {
+   "type": "label",
+   "from": "payoff",
+   "to": "coda-0.1",
+   "text": "SCENE 5 · THE BAGNIO"
+  },
+  {
+   "type": "label",
+   "from": "coda",
+   "to": "reflect-0.1",
+   "text": "SCENE 6 · THE LADY'S DEATH"
+  },
+  {
+   "type": "ring",
+   "at": "groom.29",
+   "to": "bride-0.1",
+   "img": "deal",
+   "point": "neck",
+   "rx": 70,
+   "ry": 70,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "bride.13",
+   "to": "bride.18-0.1",
+   "img": "deal",
+   "point": "ring",
+   "rx": 90,
+   "ry": 70,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "dogs.7",
+   "to": "lawyer-0.1",
+   "img": "deal",
+   "point": "dogs",
+   "rx": 170,
+   "ry": 120,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "dogs.5-0.05",
+   "dogs.12-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "payoff-0.2",
+    "coda$+0.2"
+   ],
+   "choir": [
+    "reflect-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.7-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "groom.30",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "dogs.7",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "payoff.16",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Which one is the <i>killer?</i>",
+  "name": "WILLIAM HOGARTH",
+  "work": "Marriage A-la-Mode, c. 1743",
+  "focus": [
+   0.25,
+   0.5
+  ],
+  "span": 0.4,
+  "answered_by": "The lawyer Silvertongue, whispering to the bride: four scenes later he kills the groom with a sword (National Gallery)"
+ },
+ "meta": {
+  "painter": "William Hogarth",
+  "born": 1697,
+  "died": 1764,
+  "painting": "Marriage A-la-Mode: 1, The Marriage Settlement",
+  "year": "about 1743",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "deal",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1764,
+  "note": "Hogarth d. 1764: public domain. Commons file tagged public domain (National Gallery NG113)."
+ },
+ "facts": [
+  {
+   "claim": "The Marriage Settlement, about 1743, is the first of six paintings in Hogarth's Marriage A-la-Mode (painted 1743–45), now in the National Gallery, London",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "The earl, who has gout and rests his foot on a footstool, has one hand on his heart and points to a family tree reaching back to William the Conqueror",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement"
+  },
+  {
+   "claim": "Through the window an unfinished house is visible, suggesting the earl's finances are strained; Wikipedia calls him the 'bankrupt Earl Squanderfield'",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "The bride's father, a rich alderman, peers through spectacles at the marriage settlement; the cash from the money bags goes to the earl",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement"
+  },
+  {
+   "claim": "The groom admires himself in a mirror and takes snuff; a large black spot on his neck suggests syphilis (Wikipedia: a black patch that may conceal a syphilitic sore)",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "The bride plays with her wedding ring on her veil/handkerchief (Wikipedia: a handkerchief threaded through her wedding ring); a Medusa above her expresses the rage she cannot voice",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "Two dogs chained together at the neck sit at the couple's feet, mirroring the marriage",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "Silvertongue, the lawyer, sharpens his quill and whispers in the bride's ear",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "In scene 5 (The Bagnio) the groom, now earl, catches his wife with Silvertongue and is fatally wounded by him with a sword",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  },
+  {
+   "claim": "In scene 6 the countess poisons herself after learning Silvertongue has been hanged; her father removes the wedding ring from her finger",
+   "source": "https://www.nationalgallery.org.uk/paintings/william-hogarth-marriage-a-la-mode-1-the-marriage-settlement ; https://en.wikipedia.org/wiki/Marriage_A-la-Mode_(Hogarth)"
+  }
+ ],
+ "caption": "One man at this wedding deal will kill the groom.\n\nWilliam Hogarth painted The Marriage Settlement around 1743, the first of six scenes of Marriage A-la-Mode. On the right, a broke earl with gout points at his family tree, growing out of William the Conqueror; through the window his new house stands half built. Across the table the bride's father, a rich city alderman, reads the contract through his glasses. His cash goes to the earl; his daughter gets a title.\n\nThe groom admires himself in a mirror and takes snuff. The black patch on his neck may hide a syphilis sore. The bride turns away and slides her ring along a handkerchief, under a screaming Medusa. At their feet, two dogs chained together by the neck. And leaning in to whisper in her ear: the lawyer, Silvertongue.\n\nFour scenes later, the groom catches them together and Silvertongue kills him with a sword. The lawyer is hanged, the bride poisons herself, and her father pulls the wedding ring off her dead finger.\n\nAll six paintings hang in the National Gallery, in London.\n\n👁️ Which detail did you spot first?",
+ "caption_short": "One man at this 1743 wedding deal will kill the groom. Can you spot him? 👁️",
+ "youtube_title": "Which one is the killer? Hogarth's Marriage A-la-Mode",
+ "hashtags_instagram": [
+  "#hogarth",
+  "#marriagealamode",
+  "#arthistory",
+  "#nationalgallery",
+  "#truecrime"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#hogarth",
+  "#marriagealamode",
+  "#truecrime"
+ ],
+ "hashtags": [
+  "#hogarth",
+  "#williamhogarth",
+  "#marriagealamode",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#satire",
+  "#georgian"
+ ]
+}

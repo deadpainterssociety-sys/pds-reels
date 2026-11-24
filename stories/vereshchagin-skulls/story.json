@@ -1,0 +1,706 @@
+{
+ "slug": "vereshchagin-skulls",
+ "images": {
+  "skulls": {
+   "file": "src/skulls.jpg",
+   "commons": "File:Vasily Vereshchagin - Апофеоз войны - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "front": [
+     0.62,
+     0.8
+    ],
+    "pyramid": [
+     0.55,
+     0.48
+    ],
+    "crow": [
+     0.54,
+     0.42
+    ],
+    "crowup": [
+     0.54,
+     0.48
+    ],
+    "top": [
+     0.58,
+     0.3
+    ],
+    "plain": [
+     0.18,
+     0.5
+    ],
+    "city": [
+     0.93,
+     0.42
+    ],
+    "sky": [
+     0.75,
+     0.15
+    ],
+    "left": [
+     0.35,
+     0.6
+    ]
+   }
+  },
+  "portrait": {
+   "file": "src/portrait.jpg",
+   "commons": "File:Ivan Kramskoi, Vasily Vereshchagin, 1883, Tretyakov Gallery 681.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.33
+    ],
+    "faceup": [
+     0.5,
+     0.42
+    ]
+   }
+  },
+  "wall": {
+   "file": "src/wall.jpg",
+   "commons": "File:У крепостной стены.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "soldiers": [
+     0.45,
+     0.5
+    ],
+    "soldier": [
+     0.38,
+     0.5
+    ],
+    "drum": [
+     0.72,
+     0.55
+    ]
+   }
+  },
+  "ship": {
+   "file": "src/ship.jpg",
+   "commons": "File:Petropavlovsk - NH 84769-A.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.55
+    ]
+   }
+  },
+  "sinking": {
+   "file": "src/sinking.jpg",
+   "commons": "File:Petropavlovsk destruction 1904.jpeg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This pile of skulls",
+     0.1,
+     0.97
+    ],
+    [
+     "is a *gift.*",
+     0.64,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "painter",
+   "perf": [
+    [
+     "Vasily Vereshchagin painted it in 1871,",
+     0.26,
+     0.97
+    ],
+    [
+     "and he had seen war up close.",
+     0.59,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "samarkand",
+   "perf": [
+    [
+     "Three years earlier,",
+     0.25,
+     0.97
+    ],
+    [
+     "he was with the Russian army",
+     0.15,
+     0.97
+    ],
+    [
+     "at the siege of Samarkand, in Central Asia,",
+     0.26,
+     0.97
+    ],
+    [
+     "and was decorated for bravery.",
+     0.77,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "scene",
+   "perf": [
+    [
+     "Then he painted what war leaves behind.",
+     0.34,
+     0.95
+    ],
+    [
+     "A dead plain.",
+     0.26,
+     0.95
+    ],
+    [
+     "A ruined city.",
+     0.26,
+     0.95
+    ],
+    [
+     "Crows,",
+     0.25,
+     0.9
+    ],
+    [
+     "and *skulls.*",
+     0.77,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "banned",
+   "perf": [
+    [
+     "Russia's government banned it from public exhibition.",
+     0.34,
+     0.96
+    ],
+    [
+     "In Germany, Field Marshal Moltke",
+     0.2,
+     0.96
+    ],
+    [
+     "reportedly kept his soldiers from seeing it.",
+     0.77,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "death",
+   "perf": [
+    [
+     "In 1904,",
+     0.25,
+     0.96
+    ],
+    [
+     "Vereshchagin went to war one last time.",
+     0.3,
+     0.96
+    ],
+    [
+     "His battleship hit mines and sank.",
+     0.34,
+     0.9
+    ],
+    [
+     "He died with nearly 700 others.",
+     0.77,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "tamerlane",
+   "perf": [
+    [
+     "He had first called this painting",
+     0.15,
+     0.96
+    ],
+    [
+     "The Triumph of *Tamerlane.*",
+     0.42,
+     0.9
+    ],
+    [
+     "Then he wrote on the frame:",
+     0.42,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "Dedicated to all the great conquerors,",
+     0.3,
+     0.88
+    ],
+    [
+     "past, present",
+     0.25,
+     0.88
+    ],
+    [
+     "and *future.*",
+     0.85,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Tretyakov Gallery, in Moscow.",
+     0.26,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "formula": "F1",
+ "format": "reel",
+ "hook_type": "dark",
+ "teaser": "A pile of skulls with a dedication",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "say": {
+  "1871": "eighteen seventy-one",
+  "1904": "nineteen oh four",
+  "700": "seven hundred"
+ },
+ "ipa": {
+  "Vereshchagin": "vɛɹɛʃʧˈɑːɡɪn",
+  "Vereshchagin's": "vɛɹəʃˈɑːɡɪnz",
+  "Vasily": "vəsˈiːli",
+  "Moltke": "mˈoʊltkə",
+  "Petropavlovsk": "pɛtɹəpˈævləfsk",
+  "Tretyakov": "tɹˈɛtjəkˌɔf",
+  "Samarkand": "sˈæmɚkˌænd",
+  "Tamerlane": "tˈæmɚleɪn"
+ },
+ "respell": {
+  "Vereshchagin": "veh-resh-CHAH-gin",
+  "Vasily": "vah-SEE-lee",
+  "Moltke": "MOLT-kuh",
+  "Petropavlovsk": "peh-troh-PAHV-lofsk",
+  "Tretyakov": "TRET-yah-kov"
+ },
+ "chirp_say": {},
+ "meta": {
+  "painter": "Vasily Vereshchagin",
+  "born": 1842,
+  "died": 1904,
+  "painting": "The Apotheosis of War",
+  "year": "1871",
+  "museum": "Tretyakov Gallery",
+  "city": "Moscow",
+  "image": "skulls",
+  "image_credit": "State Tretyakov Gallery, Moscow, via Wikimedia Commons / Google Art Project (public domain)"
+ },
+ "rights": {
+  "creator_died": 1904,
+  "note": "Vereshchagin d. 1904, Kramskoi d. 1887: public domain. Petropavlovsk photo 1899 (US Naval History and Heritage Command NH 84769-A, PD); French newspaper print 24 Apr 1904 (Gallica, PD)."
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "skulls",
+   "from": "front@2.3",
+   "to": "front@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "hook.3-0.05",
+   "img": "skulls",
+   "from": "pyramid@1.0",
+   "to": "pyramid@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "painter-0.1",
+   "img": "portrait",
+   "from": "center@1.25",
+   "to": "center@1.32",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "painter.6-0.05",
+   "img": "wall",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "samarkand-0.1",
+   "img": "wall",
+   "from": "soldiers@1.4",
+   "to": "soldiers@1.5",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "samarkand.9-0.05",
+   "img": "wall",
+   "from": "soldier@1.9",
+   "to": "soldier@2.0",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "samarkand.17-0.05",
+   "img": "wall",
+   "from": "drum@1.8",
+   "to": "drum@1.9",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "scene-0.1",
+   "img": "skulls",
+   "from": "center@0.4",
+   "to": "center@0.42",
+   "frame": true,
+   "kind": "image"
+  },
+  {
+   "at": "scene.7-0.05",
+   "img": "skulls",
+   "from": "plain@1.6",
+   "to": "plain@1.7",
+   "kind": "image"
+  },
+  {
+   "at": "scene.10-0.05",
+   "img": "skulls",
+   "from": "city@2.2",
+   "to": "city@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "scene.13-0.05",
+   "img": "skulls",
+   "from": "crowup@2.5",
+   "to": "crowup@2.65",
+   "kind": "image"
+  },
+  {
+   "at": "scene.14-0.05",
+   "img": "skulls",
+   "from": "front@1.8",
+   "to": "front@1.9",
+   "hit": "small"
+  },
+  {
+   "at": "banned-0.1",
+   "img": "skulls",
+   "from": "pyramid@1.3",
+   "to": "pyramid@1.4",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "banned.7-0.05",
+   "img": "skulls",
+   "from": "left@1.8",
+   "to": "left@1.9",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "death-0.1",
+   "img": "portrait",
+   "from": "faceup@1.6",
+   "to": "faceup@1.7",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "death.9-0.05",
+   "img": "ship",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "death.11-0.05",
+   "img": "sinking",
+   "from": "center@0.85",
+   "to": "center@0.88",
+   "frame": true,
+   "kind": "image"
+  },
+  {
+   "at": "death.15-0.05",
+   "img": "skulls",
+   "from": "sky@2.0",
+   "to": "sky@2.1",
+   "gray": 1,
+   "kind": "image"
+  },
+  {
+   "at": "tamerlane-0.1",
+   "img": "skulls",
+   "from": "pyramid@1.5",
+   "to": "pyramid@1.6",
+   "sway": 0.006
+  },
+  {
+   "at": "tamerlane.10-0.05",
+   "img": "skulls",
+   "from": "top@2.0",
+   "to": "top@2.15",
+   "kind": "image"
+  },
+  {
+   "at": "payoff-0.1",
+   "img": "skulls",
+   "from": "pyramid@1.0",
+   "to": "pyramid@1.05",
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.6-0.05",
+   "img": "skulls",
+   "from": "front@1.9",
+   "to": "front@2.0",
+   "kind": "image"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "skulls",
+   "from": "crowup@1.8",
+   "to": "crowup@1.9",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "painter.1",
+   "to": "painter.6-0.1",
+   "kicker": "PORTRAIT BY KRAMSKOI · 1883",
+   "text": "Vasily <i>Vereshchagin</i>"
+  },
+  {
+   "type": "label",
+   "from": "painter.6",
+   "to": "samarkand-0.1",
+   "text": "HIS PAINTING · 1871"
+  },
+  {
+   "type": "label",
+   "from": "samarkand",
+   "to": "scene-0.1",
+   "text": "SAMARKAND · JUNE 1868"
+  },
+  {
+   "type": "label",
+   "from": "scene",
+   "to": "scene.7-0.1",
+   "text": "THE APOTHEOSIS OF WAR · 1871"
+  },
+  {
+   "type": "stamp",
+   "from": "banned.2",
+   "to": "banned.7-0.1",
+   "text": "BANNED"
+  },
+  {
+   "type": "label",
+   "from": "death.9",
+   "to": "death.11-0.1",
+   "text": "PETROPAVLOVSK · 1899"
+  },
+  {
+   "type": "label",
+   "from": "death.11",
+   "to": "death.15-0.1",
+   "text": "PORT ARTHUR · 13 APRIL 1904"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "TRETYAKOV GALLERY · MOSCOW"
+  }
+ ],
+ "nocap": [
+  [
+   "painter.1",
+   "painter.6-0.1"
+  ]
+ ],
+ "music": {
+  "transpose": -4,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "painter-0.2",
+    "death$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.3-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "banned.2",
+   "fx": "impact",
+   "gain": 0.3
+  },
+  {
+   "at": "death.12",
+   "fx": "impact",
+   "gain": 0.3
+  }
+ ],
+ "cover": {
+  "question": "Who is this <i>gift</i> for?",
+  "name": "VASILY VERESHCHAGIN",
+  "work": "The Apotheosis of War, 1871",
+  "focus": [
+   0.57,
+   0.42
+  ],
+  "span": 0.6,
+  "answered_by": "The frame's dedication: 'to all the great conquerors, past, present and future'; he had first called it The Triumph of Tamerlane"
+ },
+ "facts": [
+  {
+   "claim": "Vereshchagin painted The Apotheosis of War in 1871 (Munich); a pile of skulls with crows on a barren plain, a ruined city behind; Tretyakov Gallery, Moscow",
+   "source": "https://en.wikipedia.org/wiki/The_Apotheosis_of_War ; https://eclecticlight.co/2022/08/05/vasily-vereshchagin-painting-realities-of-war/ ; https://artreview.com/the-haunting-return-of-vasily-vereshchagin-the-apotheosis-of-war/"
+  },
+  {
+   "claim": "He was with General Kaufman's expedition in Central Asia and was decorated (Cross of St George, 4th class) for his heroism at the siege of Samarkand, 2–8 June 1868",
+   "source": "https://en.wikipedia.org/wiki/Vasily_Vereshchagin ; https://eclecticlight.co/2022/08/05/vasily-vereshchagin-painting-realities-of-war/"
+  },
+  {
+   "claim": "The painting was banned from public exhibition in Russia (the government prevented it being shown at his exhibitions)",
+   "source": "https://eclecticlight.co/2022/08/05/vasily-vereshchagin-painting-realities-of-war/ ; https://en.wikipedia.org/wiki/The_Apotheosis_of_War ; https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Vereshchagin,_Vassili_Vassilievich"
+  },
+  {
+   "claim": "Helmuth von Moltke the Elder reportedly ordered that German soldiers be barred from seeing the painting (hedged: one source)",
+   "source": "https://en.wikipedia.org/wiki/The_Apotheosis_of_War"
+  },
+  {
+   "claim": "He died on 13 April 1904 when the battleship Petropavlovsk struck mines off Port Arthur and sank, with most of the crew and Admiral Makarov; nearly 700 died (Wikipedia: 27 officers and 652 men)",
+   "source": "https://en.wikipedia.org/wiki/Vasily_Vereshchagin ; https://eclecticlight.co/2022/08/05/vasily-vereshchagin-painting-realities-of-war/ ; https://en.wikipedia.org/wiki/Russian_battleship_Petropavlovsk_(1894)"
+  },
+  {
+   "claim": "He first planned to call it The Triumph of Tamerlane",
+   "source": "https://arthive.com/vasilyvasilyevichvereshchagin/works/25401~ ; https://sartle.com/artwork/the-apotheosis-of-war-vasily-vereshchagin"
+  },
+  {
+   "claim": "He wrote on the frame: 'Dedicated to all the great conquerors: past, present and future'",
+   "source": "https://artreview.com/the-haunting-return-of-vasily-vereshchagin-the-apotheosis-of-war/ ; https://en.wikipedia.org/wiki/The_Apotheosis_of_War"
+  },
+  {
+   "claim": "Portrait of Vereshchagin by Ivan Kramskoi, 1883 (Tretyakov Gallery)",
+   "source": "https://commons.wikimedia.org/wiki/File:Ivan_Kramskoi,_Vasily_Vereshchagin,_1883,_Tretyakov_Gallery_681.jpg"
+  }
+ ],
+ "caption": "This pile of skulls is a gift.\n\nVasily Vereshchagin painted The Apotheosis of War in 1871, and he had seen war up close. Three years earlier he was with the Russian army at the siege of Samarkand, in Central Asia, and was decorated with the Cross of St George for bravery.\n\nThen he painted what war leaves behind: a dead plain, a ruined city, crows, and a pyramid of skulls. Russia banned it from public exhibition, and in Germany Field Marshal Moltke reportedly kept his soldiers away from it.\n\nIn 1904 Vereshchagin went to war one last time, aboard the battleship Petropavlovsk. On 13 April she hit mines off Port Arthur and sank; he died with nearly 700 others, among them Admiral Makarov.\n\nHe had first called the painting The Triumph of Tamerlane. Then he wrote on the frame: \"Dedicated to all the great conquerors: past, present and future.\"\n\nIt hangs in the Tretyakov Gallery, in Moscow.\n\n👁️ Who would you dedicate it to?",
+ "caption_short": "This pile of skulls is a gift, and the painter wrote on the frame who it's for. 👁️",
+ "youtube_title": "Who is this gift for? Vereshchagin's The Apotheosis of War",
+ "hashtags_instagram": [
+  "#vereshchagin",
+  "#apotheosisofwar",
+  "#arthistory",
+  "#moscow",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vereshchagin",
+  "#apotheosisofwar",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#vereshchagin",
+  "#apotheosisofwar",
+  "#tretyakovgallery",
+  "#moscow",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#antiwar",
+  "#russianart"
+ ]
+}
