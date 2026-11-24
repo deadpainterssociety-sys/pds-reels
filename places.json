@@ -267,7 +267,10 @@
  "State Russian Museum, St Petersburg": {
   "lat": null,
   "lon": null,
-  "lat_checked": "2026-11-21"
+  "lat_checked": "2026-11-21",
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"A2HmnvGXKvKaVB8mX9TlQ5n\"}}",
+  "ig_location_id_checked": "2026-11-24"
  },
  "Museum of Fine Arts, Houston, Houston": {
   "lat": 29.7256347,
