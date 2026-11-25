@@ -9,6 +9,7 @@ compares the arms once both have enough reels with 3 days of data, and proposes 
 
 | id | Question | Arm A | Arm B | Main metric | Started | Length |
 |---|---|---|---|---|---|---|
+| E3 | Do silent caption Shorts (F3) beat our other formats when they get half the slots? (Gigi, 25 Nov: "proceed with the F3 2-week test, 1/day") | F3 silent caption Short (FORMULAS.md F3) | Not F3: the rotation F1 → F4 → F2 without F3 (the formula after the last F1/F4/F2 row in STORY_QUEUE.md Done) | YouTube engaged views at 72 h; then subscribers per 1,000 views | 27 Nov 2026 | 2 weeks, to 10 Dec (one F3 a day; the day's other reel is arm B) |
 <!-- running -->
 
 ## Next

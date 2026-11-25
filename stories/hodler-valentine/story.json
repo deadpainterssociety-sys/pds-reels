@@ -676,5 +676,9 @@
   "#deadpainterssociety",
   "#symbolism",
   "#grief"
- ]
+ ],
+ "experiment": {
+  "id": "E3",
+  "arm": "B"
+ }
 }

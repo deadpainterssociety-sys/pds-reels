@@ -15,6 +15,9 @@ broke out for other channels and proposes changes here; Gigi's ✅ on Telegram w
   the rotation. The reels already written before it (to 17 Nov, and 19 Nov 14:00) stay F1.
 - Order: **F1 → F3 → F4 → F2**, then again. Each new story takes the formula after the one in the bottom row of
   STORY_QUEUE.md **Done** (an empty Formula cell = F1) and appends its own row there with its formula. The two reels of one day are never the same formula.
+- **Test E3 (27 Nov to 10 Dec 2026, EXPERIMENTS.md):** every day has exactly one F3. Arm A stories are F3; arm B stories follow
+  F1 → F4 → F2 without F3 (the formula after the last F1/F4/F2 row in Done). Two reels of one day: one of each arm. From
+  11 Dec the normal rotation resumes from the bottom row of Done.
 - Trailer Shorts (CLAUDE.md step 1, "Trailer Shorts") stay outside the rotation: F1 (F3 if the day's other reel is F1), their Done row goes just above the bottom row.
 - Pick the story to fit the formula (some stories only work as F1): if no good story fits the formula today, take the next
   formula and say so in the run notes. Never force a weak story into a formula.

@@ -420,5 +420,9 @@
   "#deadpainterssociety",
   "#marktwain",
   "#renaissance"
- ]
+ ],
+ "experiment": {
+  "id": "E3",
+  "arm": "A"
+ }
 }
