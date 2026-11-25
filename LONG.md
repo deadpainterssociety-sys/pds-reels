@@ -74,12 +74,18 @@ Telegram. You never publish, never call YouTube/Telegram, never read secrets. Bu
   `build/resolved.json`), assemble contact sheets of 20 and **Read every sheet**. Check: faces not cut, the right person
   under each lower third, labels readable, nothing blurry/black/empty, CC credits present, no awkward crops. Fix and
   re-check the fixed shots. Expect two or three rounds.
-- `python pipeline/thumb.py <slug>`: thumb A (no text) and B (`youtube.thumbnail.words`, ≤ 3 words, one in caps).
+- `python pipeline/thumb.py <slug>`: thumb A (no text) and B (`youtube.thumbnail.words`, ≤ 4 words, one in caps).
   Read both: a close-up on the most expressive face(s), span ≈ 0.3–0.45, nothing cut awkwardly.
+- **Packaging sells a question, not a mood (Gigi, 25 Nov 2026: Repin's "These Men Are Laughing at an Emperor" +
+  "INSULTING an Empire" got 147 impressions and 0 clicks).** The thumbnail shows ONE action or oddity a stranger can
+  read at phone size (the scribe writing the letter, not a crowd), and its words pose the question or claim the video
+  answers ("RUDEST Letter in History", "Why Are They LAUGHING?"), never a vague label. The title makes a concrete claim
+  about what is on screen BEFORE naming the painting (Inspiraggio's pattern: "This Painting Terrified an Entire
+  Government"); title and thumbnail words complement each other, never repeat each other.
 
 ## 7. YouTube fields (`plan.py` → `story["youtube"]`) and checks
-- `titles`: A and B, ≤ 60 characters, a statement, no numbers, no "you won't believe"; borrowed fame when there is
-  one. `description_lead` (facts, names), `hashtags` (3), `credits` (all images: PD lines + every CC author/licence),
+- `titles`: A and B, ≤ 60 characters, a concrete claim or question about what is on screen (see the packaging rule in
+  step 6), no numbers, no "you won't believe"; borrowed fame when there is one. `description_lead` (facts, names), `hashtags` (3), `credits` (all images: PD lines + every CC author/licence),
   `sources` (12–18 best public URLs), `thumbnail`, `intro_chapter`, `outro_chapter` (not a chapter name),
   `pinned_comment` (one line of extra fact + a question, ending with our signature 👁️, never a heart). `"next": False`. Add `"slot": "<YYYY-MM-DD>"` at the top level.
 - `python automation/validate_long.py <slug>` must print no problems. Fix everything it lists and run it again.
