@@ -1,0 +1,424 @@
+{
+ "slug": "titian-urbino-twain",
+ "formula": "F3",
+ "variant": "look-closer",
+ "format": "caption",
+ "silent": true,
+ "hook_type": "hidden",
+ "teaser": "The painting Mark Twain called the vilest",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "meta": {
+  "painter": "Titian",
+  "born": 1488,
+  "died": 1576,
+  "painting": "Venus of Urbino",
+  "year": "1538",
+  "museum": "Uffizi",
+  "city": "Florence",
+  "image": "venus",
+  "image_credit": "Uffizi Galleries, Florence, via Wikimedia Commons / Google Art Project (public domain)",
+  "nude": true
+ },
+ "rights": {
+  "creator_died": 1576,
+  "note": "Titian d. 1576: public domain. Mark Twain photo, 1907, Library of Congress: public domain. Music: Vivaldi, Spring I, performed by John Harrison, CC BY-SA 4.0 -> credited."
+ },
+ "say": {},
+ "ipa": {},
+ "respell": {},
+ "chirp_say": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Mark Twain called this the vilest picture in the world.",
+     0.75,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "quote",
+   "perf": [
+    [
+     "“The foulest, the vilest, the obscenest picture the world possesses.”",
+     0.55,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "brothel",
+   "perf": [
+    [
+     "He was sure it had been painted for a brothel.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "dog",
+   "perf": [
+    [
+     "Look at the dog asleep at her feet: fidelity in marriage.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "maids",
+   "perf": [
+    [
+     "Look at the maids behind her, with a wedding dress.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "myrtle",
+   "perf": [
+    [
+     "Look at the myrtle in the window: love that lasts.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "reveal",
+   "perf": [
+    [
+     "Many historians see a *marriage* painting.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Uffizi, in Florence.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "venus": {
+   "file": "src/venus.jpg",
+   "commons": "File:Tiziano's Venere di Urbino (from The History BLog).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "eyes": [
+     0.19,
+     0.37
+    ],
+    "face": [
+     0.2,
+     0.4
+    ],
+    "dog": [
+     0.89,
+     0.68
+    ],
+    "dogup": [
+     0.89,
+     0.72
+    ],
+    "maids": [
+     0.81,
+     0.27
+    ],
+    "maidsup": [
+     0.76,
+     0.33
+    ],
+    "myrtle": [
+     0.6,
+     0.21
+    ],
+    "myrtleup": [
+     0.6,
+     0.26
+    ]
+   }
+  },
+  "twain": {
+   "file": "src/twain.jpg",
+   "commons": "File:Mark Twain LCCN2004672770.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.53,
+     0.42
+    ],
+    "faceup": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "venuswhole": {
+   "file": "src/venus.jpg",
+   "commons": "File:Tiziano's Venere di Urbino (from The History BLog).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_vivaldi_spring.oga",
+    "commons": "File:Vivaldi - Four Seasons 1 Spring mvt 1 Allegro - John Harrison violin.oga",
+    "from": 0,
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "credit": "Vivaldi, The Four Seasons, Spring, I. Allegro · John Harrison, CC BY-SA 4.0"
+   }
+  ]
+ },
+ "sfx": [],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
+ "shots": [
+  {
+   "at": 0,
+   "img": "venus",
+   "kind": "image",
+   "from": "eyes@3.4",
+   "to": "eyes@3.25"
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "venus",
+   "from": "eyes@3.0",
+   "to": "eyes@3.1",
+   "dolly": [
+    0,
+    0.1
+   ],
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "quote-0.12",
+   "img": "twain",
+   "kind": "image",
+   "from": "faceup@1.35",
+   "to": "faceup@1.45"
+  },
+  {
+   "at": "brothel-0.12",
+   "img": "venuswhole",
+   "kind": "image",
+   "from": "center@0.4",
+   "to": "center@0.42",
+   "frame": true
+  },
+  {
+   "at": "dog-0.12",
+   "img": "venus",
+   "kind": "image",
+   "from": "dogup@2.2",
+   "to": "dogup@2.35"
+  },
+  {
+   "at": "maids-0.12",
+   "img": "venus",
+   "kind": "image",
+   "from": "maidsup@2.0",
+   "to": "maidsup@2.1"
+  },
+  {
+   "at": "myrtle-0.12",
+   "img": "venus",
+   "kind": "image",
+   "from": "myrtleup@2.8",
+   "to": "myrtleup@2.95"
+  },
+  {
+   "at": "reveal-0.12",
+   "img": "venus",
+   "from": "eyes@3.1",
+   "to": "eyes@3.2",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "venus",
+   "kind": "image",
+   "from": "dogup@1.9",
+   "to": "dogup@2.0",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "quote",
+   "to": "brothel-0.12",
+   "text": "MARK TWAIN · A TRAMP ABROAD, 1880"
+  },
+  {
+   "type": "label",
+   "from": "brothel",
+   "to": "dog-0.12",
+   "text": "TITIAN · VENUS OF URBINO, 1538"
+  },
+  {
+   "type": "ring",
+   "at": "dog.3",
+   "to": "dog$+0.3",
+   "img": "venus",
+   "point": "dog",
+   "rx": 230,
+   "ry": 130,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "maids.3",
+   "to": "maids$+0.3",
+   "img": "venus",
+   "point": "maids",
+   "rx": 150,
+   "ry": 230,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "myrtle.3",
+   "to": "myrtle$+0.3",
+   "img": "venus",
+   "point": "myrtle",
+   "rx": 170,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "UFFIZI · FLORENCE"
+  }
+ ],
+ "cover": {
+  "question": "Was Mark Twain <i>wrong?</i>",
+  "name": "TITIAN",
+  "work": "Venus of Urbino, 1538",
+  "focus": [
+   0.2,
+   0.39
+  ],
+  "span": 0.42,
+  "answered_by": "Twain called it the vilest picture in the world and was sure it was painted for a brothel; the dog (fidelity), the maids with a wedding dress and the myrtle (lasting love) lead many historians to see a marriage painting",
+  "at": 0.75
+ },
+ "facts": [
+  {
+   "claim": "Titian, Venus of Urbino, 1538, Uffizi Galleries, Florence; bought from Titian by Guidobaldo II della Rovere (letter of 1538)",
+   "source": "https://www.uffizi.it/en/artworks/venus-urbino-titian ; https://en.wikipedia.org/wiki/Venus_of_Urbino"
+  },
+  {
+   "claim": "Mark Twain, A Tramp Abroad (1880), ch. L: 'the foulest, the vilest, the obscenest picture the world possesses--Titian's Venus'",
+   "source": "https://atlas.cs.brown.edu/data/gutenberg/5/7/8/5788/5788.txt ; https://en.wikipedia.org/wiki/Venus_of_Urbino"
+  },
+  {
+   "claim": "Twain: 'Without any question it was painted for a bagnio [brothel] and it was probably refused because it was a trifle too strong.'",
+   "source": "https://atlas.cs.brown.edu/data/gutenberg/5/7/8/5788/5788.txt"
+  },
+  {
+   "claim": "The sleeping dog at the foot of the bed refers to fidelity in marriage",
+   "source": "https://www.uffizi.it/en/artworks/venus-urbino-titian ; https://en.wikipedia.org/wiki/Venus_of_Urbino"
+  },
+  {
+   "claim": "Behind her, one maid searches a chest (cassone) while the other carries the gold and light-blue wedding dress on her shoulder",
+   "source": "https://www.uffizi.it/en/artworks/venus-urbino-titian ; https://en.wikipedia.org/wiki/Venus_of_Urbino"
+  },
+  {
+   "claim": "The myrtle on the windowsill is linked to Venus and to constant love",
+   "source": "https://www.uffizi.it/en/artworks/venus-urbino-titian"
+  },
+  {
+   "claim": "Many scholars read it as a marriage painting, possibly for Guidobaldo's marriage to Giulia Varano (1534) or its consummation (hedged)",
+   "source": "https://en.wikipedia.org/wiki/Venus_of_Urbino (Goffen 1997) ; https://www.uffizi.it/en/artworks/venus-urbino-titian"
+  },
+  {
+   "claim": "Guidobaldo called it simply 'the nude woman' (la donna nuda)",
+   "source": "https://en.wikipedia.org/wiki/Venus_of_Urbino (Hale) ; https://www.metmuseum.org/toah/hd/marr/hd_marr.htm"
+  },
+  {
+   "claim": "It came to Florence with Vittoria della Rovere's dowry (Medici, 1633) and has hung in the Uffizi since 1736",
+   "source": "https://www.uffizi.it/en/artworks/venus-urbino-titian ; https://en.wikipedia.org/wiki/Venus_of_Urbino"
+  }
+ ],
+ "caption": "Mark Twain called this the vilest picture in the world.\n\nIn A Tramp Abroad (1880) he described Titian's Venus of Urbino, hanging in the Uffizi's Tribune, as \"the foulest, the vilest, the obscenest picture the world possesses\". It wasn't her nakedness, he wrote, but \"the attitude of one of her arms and hand\". And he was sure it had been painted for a bagnio, a brothel.\n\nNow look closer. At her feet a little dog sleeps: for the Uffizi, a sign of fidelity in marriage. Behind her, two maids put away a gold and light-blue wedding dress in a chest. On the windowsill, a myrtle, the plant of Venus and lasting love.\n\nThe buyer, Guidobaldo della Rovere, simply called it \"the nude woman\". Many historians think it was made for a marriage, perhaps his own to Giulia Varano.\n\nP.S. It reached Florence in 1633, in the dowry of Vittoria della Rovere, a bride.\n\n👁️ Who do you believe, Twain or the dog?",
+ "caption_short": "Mark Twain called this the vilest picture in the world. Look at the dog. 👁️",
+ "youtube_title": "Was Mark Twain wrong? Titian's Venus of Urbino",
+ "hashtags_instagram": [
+  "#titian",
+  "#venusofurbino",
+  "#arthistory",
+  "#uffizi",
+  "#marktwain"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#titian",
+  "#venusofurbino",
+  "#marktwain"
+ ],
+ "hashtags": [
+  "#titian",
+  "#venusofurbino",
+  "#uffizi",
+  "#florence",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#marktwain",
+  "#renaissance"
+ ]
+}

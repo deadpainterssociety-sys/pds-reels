@@ -1,0 +1,680 @@
+{
+ "slug": "hodler-valentine",
+ "formula": "F4",
+ "format": "series",
+ "hook_type": "dark-legend",
+ "teaser": "He painted her every day until the end",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "bed1914": {
+   "file": "src/bed1914.jpg",
+   "commons": "File:Hodler - Valentine Godé-Darel im Krankenbett - 1914.jpeg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.25,
+     0.29
+    ],
+    "faceup": [
+     0.25,
+     0.36
+    ],
+    "eye": [
+     0.24,
+     0.25
+    ],
+    "hand": [
+     0.37,
+     0.54
+    ],
+    "watch": [
+     0.935,
+     0.11
+    ],
+    "roses": [
+     0.93,
+     0.53
+    ],
+    "bust": [
+     0.28,
+     0.42
+    ]
+   }
+  },
+  "p1912": {
+   "file": "src/p1912.jpg",
+   "commons": "File:Ferdinand Hodler - Bildnis Valentine Godé-Darel - 1133 - Kunsthaus Zürich.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.32
+    ],
+    "faceup": [
+     0.5,
+     0.4
+    ]
+   }
+  },
+  "hair1913": {
+   "file": "src/hair1913.jpg",
+   "commons": "File:Hodler - Valentine Godé-Darel mit aufgelöstem Haar - 1913.jpeg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.38
+    ],
+    "faceup": [
+     0.5,
+     0.45
+    ],
+    "eyes": [
+     0.53,
+     0.3
+    ]
+   }
+  },
+  "staech1914": {
+   "file": "src/staech1914.jpg",
+   "commons": "File:Ferdinand Hodler - Portrait de Valentine Godé-Darel 1914.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.42
+    ],
+    "faceup": [
+     0.5,
+     0.5
+    ],
+    "eyes": [
+     0.5,
+     0.34
+    ]
+   }
+  },
+  "basel1915": {
+   "file": "src/basel1915.jpg",
+   "commons": "File:Dying Valentine.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.76,
+     0.24
+    ],
+    "faceup": [
+     0.74,
+     0.32
+    ]
+   }
+  },
+  "dead": {
+   "file": "src/dead.jpg",
+   "commons": "File:Dead woman on her deathbed (26 January 1915) by Ferdinand Hodler.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.84,
+     0.38
+    ],
+    "hands": [
+     0.56,
+     0.46
+    ],
+    "upper": [
+     0.72,
+     0.42
+    ]
+   }
+  },
+  "lake": {
+   "file": "src/lake.jpg",
+   "commons": "File:Ferdinand Hodler - Genfersee bei Sonnenuntergang - 1157 - Kunsthaus Zürich.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "horizon": [
+     0.5,
+     0.68
+    ],
+    "sky": [
+     0.5,
+     0.45
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Watch Hodler paint the woman he loved",
+     0.1,
+     0.92
+    ],
+    [
+     "as cancer takes her.",
+     0.5,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "y1912",
+   "perf": [
+    [
+     "1912.",
+     0.18,
+     0.96
+    ],
+    [
+     "Valentine Godé-Darel,",
+     0.1,
+     0.95
+    ],
+    [
+     "his lover and his model.",
+     0.45,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "y1913",
+   "perf": [
+    [
+     "1913.",
+     0.18,
+     0.96
+    ],
+    [
+     "She has his daughter,",
+     0.15,
+     0.96
+    ],
+    [
+     "and doctors find *cancer.*",
+     0.5,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "y1914",
+   "perf": [
+    [
+     "1914.",
+     0.18,
+     0.96
+    ],
+    [
+     "Two operations.",
+     0.25,
+     0.95
+    ],
+    [
+     "He sits by her bed,",
+     0.1,
+     0.96
+    ],
+    [
+     "and keeps *painting.*",
+     0.5,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1915",
+   "perf": [
+    [
+     "January 24, 1915.",
+     0.2,
+     0.95
+    ],
+    [
+     "The last time he paints her *alive.*",
+     0.5,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "dead",
+   "perf": [
+    [
+     "She dies the next day.",
+     0.3,
+     0.94
+    ],
+    [
+     "The day after,",
+     0.1,
+     0.95
+    ],
+    [
+     "he paints her once more.",
+     0.5,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "lake",
+   "perf": [
+    [
+     "Then he paints the lake of Geneva at sunset,",
+     0.2,
+     0.95
+    ],
+    [
+     "in long, flat lines.",
+     0.3,
+     0.94
+    ],
+    [
+     "For Hodler, the horizontal meant *death.*",
+     0.7,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Kunstmuseum Solothurn, in Solothurn.",
+     0.3,
+     0.96
+    ]
+   ]
+  }
+ ],
+ "meta": {
+  "painter": "Ferdinand Hodler",
+  "born": 1853,
+  "died": 1918,
+  "painting": "Valentine Godé-Darel in Her Sickbed",
+  "year": "1914",
+  "museum": "Kunstmuseum Solothurn",
+  "city": "Solothurn",
+  "image": "bed1914",
+  "image_credit": "Kunstmuseum Solothurn, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1918,
+  "note": "Hodler d. 1918: public domain. All works PD on Commons; the 1914 portrait (Staechelin collection) and the 26 Jan 1915 deathbed painting are photos of 2D works (CC0 / PD-Art)."
+ },
+ "say": {
+  "1912": "nineteen twelve",
+  "1913": "nineteen thirteen",
+  "1914": "nineteen fourteen",
+  "1915": "nineteen fifteen",
+  "24": "twenty-fourth",
+  "Solothurn": "Solo-thern"
+ },
+ "ipa": {
+  "Hodler": "hˈoʊdlɚ",
+  "Godé-Darel": "ɡoʊdˈeɪ dɑːɹˈɛl",
+  "Valentine": "vɑːlɑːntˈiːn",
+  "Kunstmuseum": "kˈʊnstmuːzˌeɪʊm"
+ },
+ "respell": {
+  "Hodler": "HOHD-ler",
+  "Godé-Darel": "go-DAY dah-REL",
+  "Valentine": "vah-lahn-TEEN",
+  "Solothurn": "ZOH-loh-toorn"
+ },
+ "chirp_say": {
+  "Solothurn": "Solothurn"
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "bed1914",
+   "kind": "image",
+   "from": "faceup@2.4",
+   "to": "faceup@2.25"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "bed1914",
+   "from": "bust@1.0",
+   "to": "bust@1.05",
+   "dolly": [
+    0,
+    0.15
+   ],
+   "sway": 0.01,
+   "hit": "big"
+  },
+  {
+   "at": "y1912-0.1",
+   "img": "p1912",
+   "kind": "image",
+   "from": "center@0.82",
+   "to": "center@0.86",
+   "frame": true
+  },
+  {
+   "at": "y1913-0.1",
+   "img": "hair1913",
+   "kind": "image",
+   "from": "faceup@1.1",
+   "to": "faceup@1.2"
+  },
+  {
+   "at": "y1913.5-0.05",
+   "img": "hair1913",
+   "kind": "image",
+   "from": "eyes@1.9",
+   "to": "eyes@2.05"
+  },
+  {
+   "at": "y1914-0.1",
+   "img": "staech1914",
+   "kind": "image",
+   "from": "faceup@1.2",
+   "to": "faceup@1.3"
+  },
+  {
+   "at": "y1914.3-0.05",
+   "img": "bed1914",
+   "kind": "image",
+   "from": "center@0.4",
+   "to": "center@0.42",
+   "frame": true
+  },
+  {
+   "at": "y1914.8-0.05",
+   "img": "bed1914",
+   "from": "hand@2.0",
+   "to": "hand@2.15"
+  },
+  {
+   "at": "y1915-0.1",
+   "img": "basel1915",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.63",
+   "frame": true
+  },
+  {
+   "at": "y1915.3-0.05",
+   "img": "basel1915",
+   "kind": "image",
+   "from": "faceup@0.95",
+   "to": "faceup@1.0",
+   "frame": true
+  },
+  {
+   "at": "dead-0.1",
+   "img": "dead",
+   "kind": "image",
+   "from": "center@0.29",
+   "to": "center@0.3",
+   "frame": true
+  },
+  {
+   "at": "dead.5-0.05",
+   "img": "dead",
+   "kind": "image",
+   "from": "face@1.7",
+   "to": "face@1.8"
+  },
+  {
+   "at": "lake-0.1",
+   "img": "lake",
+   "kind": "image",
+   "from": "center@0.66",
+   "to": "center@0.7",
+   "frame": true
+  },
+  {
+   "at": "lake.13-0.05",
+   "img": "lake",
+   "kind": "image",
+   "from": "horizon@0.95",
+   "to": "horizon@1.0",
+   "frame": true
+  },
+  {
+   "at": "ending-0.1",
+   "img": "bed1914",
+   "from": "faceup@1.8",
+   "to": "faceup@1.9",
+   "sway": 0.006,
+   "hit": "big"
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "y1912",
+   "to": "y1913-0.1",
+   "text": "1912 · KUNSTHAUS ZÜRICH"
+  },
+  {
+   "type": "label",
+   "from": "y1913",
+   "to": "y1914-0.1",
+   "text": "1913 · MUSEUM ZU ALLERHEILIGEN"
+  },
+  {
+   "type": "label",
+   "from": "y1914",
+   "to": "y1914.3-0.05",
+   "text": "1914"
+  },
+  {
+   "type": "label",
+   "from": "y1914.3",
+   "to": "y1915-0.1",
+   "text": "1914 · KUNSTMUSEUM SOLOTHURN"
+  },
+  {
+   "type": "label",
+   "from": "y1915",
+   "to": "dead-0.1",
+   "text": "24 JAN 1915 · KUNSTMUSEUM BASEL"
+  },
+  {
+   "type": "label",
+   "from": "dead",
+   "to": "lake-0.1",
+   "text": "26 JANUARY 1915"
+  },
+  {
+   "type": "label",
+   "from": "lake",
+   "to": "ending-0.1",
+   "text": "1915 · KUNSTHAUS ZÜRICH"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "KUNSTMUSEUM SOLOTHURN"
+  }
+ ],
+ "nocap": [],
+ "music": {
+  "transpose": -1,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "y1913-0.2",
+    "dead$+0.2"
+   ],
+   "choir": [
+    "lake.13-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.7-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "y1912",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1913",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1914",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1915",
+   "fx": "tick",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Did he stop at her <i>death?</i>",
+  "name": "FERDINAND HODLER",
+  "work": "Valentine Godé-Darel in Her Sickbed, 1914",
+  "focus": [
+   0.27,
+   0.34
+  ],
+  "span": 0.62,
+  "answered_by": "No: he painted her on 24 January 1915, the day before she died, painted her again the day after her death, then painted Lake Geneva at sunset in horizontal lines, which he associated with death"
+ },
+ "facts": [
+  {
+   "claim": "Valentine Godé-Darel was Hodler's mistress (from 1908/09) and his model; he stayed married",
+   "source": "https://en.wikipedia.org/wiki/Ferdinand_Hodler ; https://hekint.org/2021/08/30/love-and-death-painting-the-farewell/ ; https://www.metmuseum.org/art/collection/search/667993"
+  },
+  {
+   "claim": "Portrait of Valentine Godé-Darel, 1912, Kunsthaus Zürich (inv. 1133)",
+   "source": "https://www.wikidata.org/wiki/Q131584952 ; https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Bildnis_Valentine_God%C3%A9-Darel_-_1133_-_Kunsthaus_Z%C3%BCrich.jpg"
+  },
+  {
+   "claim": "Valentine Godé-Darel with Loose Hair, 1913, Museum zu Allerheiligen, Schaffhausen",
+   "source": "https://www.wikidata.org/wiki/Q117535955"
+  },
+  {
+   "claim": "Their daughter (Paulette/Pauline) was born at the end of 1913; Valentine was diagnosed with a gynaecological (uterine) cancer in 1913",
+   "source": "https://hekint.org/2021/08/30/love-and-death-painting-the-farewell/ ; https://en.wikipedia.org/wiki/Ferdinand_Hodler (Hauptman & Hodler 2007, p. 36)"
+  },
+  {
+   "claim": "Two operations in 1914 (January and June), plus radium therapy",
+   "source": "https://en.wikipedia.org/wiki/Ferdinand_Hodler (Pestalozzi, J Clin Oncol 2002) ; https://hekint.org/2021/08/30/love-and-death-painting-the-farewell/"
+  },
+  {
+   "claim": "Hodler sat at her bedside and painted her decline in a long series (more than twenty paintings, many drawings)",
+   "source": "https://en.wikipedia.org/wiki/Ferdinand_Hodler ; https://eclecticlight.co/2018/05/16/ferdinand-hodler-death-and-eternity-1915-1918-wed-16/ ; https://hekint.org/2021/08/30/love-and-death-painting-the-farewell/"
+  },
+  {
+   "claim": "Valentine Godé-Darel in Her Sickbed, 1914, Kunstmuseum Solothurn",
+   "source": "https://www.wikidata.org/wiki/Q117532917 ; https://arthistoryproject.com/artists/ferdinand-hodler/valentine-gode-darel-in-hospital-bed"
+  },
+  {
+   "claim": "24 January 1915: Valentine Godé-Darel one day before her death (Kunstmuseum Basel, inv. 1855), the last work showing her alive",
+   "source": "https://hekint.org/2021/08/30/love-and-death-painting-the-farewell/ ; https://eclecticlight.co/2018/05/16/ferdinand-hodler-death-and-eternity-1915-1918-wed-16/ ; https://www.wikidata.org/wiki/Q115693981"
+  },
+  {
+   "claim": "She died on 25 January 1915; the day after, Hodler painted her on her deathbed (signed '1915 Jan 26')",
+   "source": "https://hekint.org/2021/08/30/love-and-death-painting-the-farewell/ ; https://www.metmuseum.org/art/collection/search/667993"
+  },
+  {
+   "claim": "Lake Geneva at Sunset (Kunsthaus Zürich) was created after her death on 25 January 1915; Hodler associated the horizontal with death",
+   "source": "https://artsandculture.google.com/asset/hwFkSPvQ5fkssw"
+  },
+  {
+   "claim": "Hodler died in Geneva on 19 May 1918",
+   "source": "https://en.wikipedia.org/wiki/Ferdinand_Hodler"
+  }
+ ],
+ "caption": "Watch Ferdinand Hodler paint the woman he loved as cancer takes her.\n\nValentine Godé-Darel was his lover and his model (he stayed married). In 1913 she had his daughter, and doctors found a gynaecological cancer. In 1914 came two operations, and radium treatment. Hodler sat by her bed in Vevey and kept painting: more than twenty paintings and many drawings of her decline.\n\nOn 24 January 1915 he painted her for the last time alive (Kunstmuseum Basel). She died the next day. On 26 January he painted her once more, laid out on her deathbed.\n\nThen he painted Lake Geneva at sunset: nothing but long horizontal bands. For Hodler, the horizontal was the line of death.\n\nP.S. He died three years later, in May 1918.\n\n👁️ Could you have kept painting?",
+ "caption_short": "Watch Hodler paint the woman he loved as cancer takes her. And what he painted the day after. 👁️",
+ "youtube_title": "Did he stop at her death? Hodler's paintings of the dying Valentine",
+ "hashtags_instagram": [
+  "#hodler",
+  "#valentinegodedarel",
+  "#arthistory",
+  "#switzerland",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#hodler",
+  "#valentinegodedarel",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#hodler",
+  "#ferdinandhodler",
+  "#valentinegodedarel",
+  "#kunstmuseumsolothurn",
+  "#solothurn",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#symbolism",
+  "#grief"
+ ]
+}
