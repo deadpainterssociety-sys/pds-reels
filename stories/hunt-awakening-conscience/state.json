@@ -1,6 +1,6 @@
 {
  "status": "posted",
- "updated": "2026-11-23T21:02:35+01:00",
+ "updated": "2026-11-26T20:00:33+01:00",
  "validated_at": "2026-11-21T04:07:17+01:00",
  "duration_s": 107.3,
  "review_message": 537,
@@ -18,5 +18,6 @@
  "tiktok": {
   "skipped": "turned off in config.json"
  },
- "posted_at": "2026-11-23T21:02:35+01:00"
+ "posted_at": "2026-11-23T21:02:35+01:00",
+ "related_told": "hunt-conscience-long"
 }
