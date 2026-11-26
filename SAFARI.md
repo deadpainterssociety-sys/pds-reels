@@ -140,3 +140,77 @@ Proposed to Gigi in the 19 Nov brief: the F3 "Look closer" variant (18 Nov notes
 
 To watch next (by eye, interactive): both Repetti Shorts (opening, pace, how a 170-s Short keeps people); Mr Historian
 "The Strange Eyes of Trees"; Indian Painting Explained's Saraswati (58 s, one painting, symbol by symbol).
+
+## 2026-11-26 — third safari (scheduled, watched in the built-in browser)
+
+Search (Data API, last 60 days, 625 units) found 63 breakouts; most already studied or not storytelling (13 "Rate this
+painting" clips, Thehistoryboy's one-word devotional reels, Tavern Covers memes, The Art Behind's 6-s text loops, a
+Picasso documentary clip, a living artist's cat paintings). Watched the 7 best candidates not yet in this notebook,
+muted (frame sheet, 4 large frames, YouTube transcript where one exists). Two turned out not to be art history.
+
+| Short | channel (subs, median Short) | views | × median | length | voice | frame 1 |
+|---|---|---|---|---|---|---|
+| Always Focus on Saraswati, Lakshmi Will Follow You | Indian Painting Explained (32k, 79k) | 7.0M | 89× | 57 s | a speaker's talk (VO) + sentence captions | Ravi Varma-style Saraswati + "Always focus on Saraswati." |
+| Einstein Tried to Ruin a Photo, But Made History | art decoded (12.4k, 50k) | 2.0M | 40× | 24 s | none, music; sentence captions | the tongue photo + "Everyone knows Einstein's iconic tongue photo. But here's what happened before it!" |
+| L'urlo di Munch: cosa sta facendo davvero? | Alberto Repetti Artist (64k, 9.3k) | 154k | 17× | 170 s | creator on camera (Italian), auto captions | creator holding a print of The Scream + "SKRIK (URLO) 91 × 73.5 cm" label |
+| Vermeer ti fa credere che lei si volti | Alberto Repetti Artist | 134k | 14× | 166 s | creator on camera (Italian) | creator, finger raised: "a detail nobody has ever shown you" |
+| The World's Most Famous Painting Was Created by Accident | Cloud recap (459k, 112k) | 0.97M | 9× | 69 s | VO + one-word captions; 16:9 | TV-drama footage of Leonardo at the Last Supper wall |
+| The Strange Eyes of Trees | Mr Historian (7.8k, 12.6k) | 2.3M | 185× | 25 s | none, music | aspen bark "eyes": NOT ART (nature photos), excluded from the counts |
+| "Remorse? Never heard of him" | Old_History01 (11.6k, 30k) | 2.3M | 74× | 10 s | none, music | sculpture + "USA: We're ashamed…": a meme, not storytelling, excluded |
+
+Per Short:
+- **Saraswati** — premise: in the paintings Lakshmi (wealth) stands because she comes and goes, Saraswati (knowledge)
+  sits because she stays; so chase knowledge and money follows. Only 2–3 images in 57 s (Saraswati alone, then Saraswati
+  seated under the standing Lakshmi held for ~45 s); a cut rhythm of zero. The voice is a lecture clip, the captions one
+  sentence each. Payoff = a life rule ("a fool and his money are soon parted"). Why: sharing and saving (251k likes, 1.9k
+  comments): the painting is a key to advice people send to their family. AVD comes from the idea, not the cuts.
+- **Einstein** — premise: the famous tongue photo was a joke at the end of a long day of posing. 6 photos in time order,
+  a cut every ~3–4 s: the tongue photo → "He had spent hours posing for photographers" → in the car, "they asked for one
+  more" → the snap → "The silly moment became legendary" → "He even ordered signed copies for his friends!" Ends on the
+  twist and loops to the same photo. Why: VVSA from an image everybody recognises + "here's what happened before it".
+- **Munch** — premise: the figure isn't screaming, he presses his hands to his ears against "the great scream through
+  nature". Opens by stating the common belief, then the turn. Creator on camera alternating with the painting (full →
+  face → the red sky), big red date cards (1893, 1895), place labels. Escalates: Munch's diary → the 1895 title → a medical
+  student calls him mad → the pencil line in the sky, "Could only have been painted by a madman", confirmed in his hand by
+  the National Museum (2021). Ends "Does knowing its story change how you see it? Tell me in the comments."
+- **Vermeer** — premise: the Girl with a Pearl Earring isn't a portrait (a tronie), and Vermeer fakes her movement. Myth
+  first ("forget the novels and Hollywood"), then "look at…" beats on one painting with drawn green construction lines: the
+  turban's tail defies gravity → soft face vs hard colour blocks → the "pearl" is two strokes of white, the lower one the
+  collar's reflection. Ends "Had you noticed the collar's reflection in the pearl? Tell me in the comments."
+- **Last Supper (Cloud recap)** — a recap of a TV drama (16:9 footage, one-word captions); a big channel's average hit.
+  Reused footage: not for us.
+
+Patterns (n = 16 art-history storytelling Shorts, three safaris; trees and the meme excluded):
+- Length 6–170 s, median 32 s; 9 of 16 ≤ 37 s; 3 over 2 minutes (Jesse Speaks, both Repetti) and all three have a face
+  on camera. The 52–70 s ones (Rédemption, Saraswati, Mona Lisa, Last Supper) state the premise in line 1.
+- Frame 1 states the premise or dares the viewer about the image on screen: 15/16 (Last Supper unclear).
+- NEW — **the icon + the turn**: 6/16 open on something everybody already knows and turn it: "Everyone knows Einstein's
+  tongue photo. But…", "The Scream represents a person screaming. [It doesn't.]", "Forget the novels: she isn't real",
+  "Did you know the Mona Lisa became famous because someone stole it?", the Last Supper "by accident", and Saraswati's
+  "she sits for a reason". They are this week's 5 art storytelling breakouts plus the Mona Lisa theft (2nd safari).
+  Recognition buys the first second (VVSA); the turn makes the viewer stay for the proof (AVD).
+- One painting for the whole Short: 6/16 (Rédemption, St Agnes, Saraswati, Munch, Vermeer, the UFO Nativities).
+- Escalation to a payoff: 13/16.
+- Ending: a question to the viewer 5/16 — both Repetti questions are about the detail just shown ("Had you noticed…?"),
+  not a generic opinion poll; payoff sent to the comments 2/16; a loop 4/16.
+- Voice: confirmed voice 7/16 (3 with a face on camera, 1 lecture clip, 3 VO); no voice, music + text 7/16.
+- A cut every 1.5–4 s is NOT universal: Saraswati holds one image ~45 s at 89×. When the idea is useful (a rule to live
+  by) people stay without cuts.
+
+Not for us (noted so we don't drift): reused footage (TV dramas, lecture clips), devotional advice as the payoff, memes.
+
+To watch next: Nabasen Vault "And When Did You Last See Your Father?" (Yeames, 31 s, 388k, 11×) and "The Homecoming"
+(Rockwell, 28 s); Stories Behind Art's all-time top Shorts; Past Cover "Pink and blue" (Then vs now); Indian Painting
+Explained's Shiva/Kundalini (24 s, one painting); Spanish-language breakouts.
+
+### Proposals for the lab
+
+**ONE change: F2 opens on the myth and closes on the detail ("the icon + the turn").** F2 picks a painting most viewers
+already know (Mona Lisa, The Scream, Pearl Earring, Night Watch-level fame, inside our rights rules). Line 1 states the
+belief everyone holds and turns it in ≤ 12 words ("Everyone thinks he's screaming. Look at his hands."); the "Look at …"
+beats are the proof; the line before the plain ending asks whether the viewer had noticed that one detail ("Had you
+seen the words in the sky?"), answered by the reel itself, never "the meaning is in the comments".
+Evidence: Alberto Repetti · Munch's Scream · 154k · 17× · 170 s; Alberto Repetti · Vermeer's Pearl · 134k · 14× · 166 s
+(the only F2-length breakouts in our niche, both built this way); art decoded · Einstein's tongue photo · 2.0M · 40× · 24 s
+and Curio Kids Lab · Mona Lisa theft · 1.3M · 2956× · 66 s show the same opening at F3 and F1 lengths.
+Test: the next 2 F2 stories, compared with Bruegel's Blue Cloak (F2) on VVSA and AVD %.
