@@ -214,3 +214,11 @@ Evidence: Alberto Repetti · Munch's Scream · 154k · 17× · 170 s; Alberto Re
 (the only F2-length breakouts in our niche, both built this way); art decoded · Einstein's tongue photo · 2.0M · 40× · 24 s
 and Curio Kids Lab · Mona Lisa theft · 1.3M · 2956× · 66 s show the same opening at F3 and F1 lengths.
 Test: the next 2 F2 stories, compared with Bruegel's Blue Cloak (F2) on VVSA and AVD %.
+
+## 2026-11-26 — Thursday lab (numbers only)
+
+The runner's 8 dossiers are numbers only again (yt-dlp asked for cookies); the interactive safari above covers this
+week. Our formulas on YouTube (last known): F3 n=5, 1,542 views at 24 h (F1 588), VVSA 52.9 %, 69 % viewed — the
+caption format breaks out for us too (Parmigianino "look closer" 3,807 at 72 h, 3.8x). F2 n=3, VVSA 61.6 %, 2.6 subs/1k,
+but Hunt (a less-known painting) 252 at 24 h, which supports the icon + turn proposal. F4 n=4, 90 % viewed but VVSA
+48.1 % and 0.9 subs/1k. Proposed to Gigi in the 26 Nov brief: F2 "icon + turn" (P1).
