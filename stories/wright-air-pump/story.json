@@ -1,0 +1,409 @@
+{
+ "slug": "wright-air-pump",
+ "formula": "F3",
+ "format": "caption",
+ "silent": true,
+ "variant": "look-closer",
+ "hook_type": "dark",
+ "experiment": {
+  "id": "E3",
+  "arm": "A"
+ },
+ "teaser": "The bird whose fate is left to you",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "images": {
+  "pump": {
+   "file": "src/pump.jpg",
+   "commons": "File:An Experiment on a Bird in an Air Pump by Joseph Wright of Derby, 1768.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.45
+    ],
+    "bird": [
+     0.52,
+     0.265
+    ],
+    "birdup": [
+     0.52,
+     0.31
+    ],
+    "eyes": [
+     0.375,
+     0.27
+    ],
+    "eyesup": [
+     0.375,
+     0.33
+    ],
+    "lecturerup": [
+     0.43,
+     0.36
+    ],
+    "girl": [
+     0.655,
+     0.46
+    ],
+    "girlup": [
+     0.65,
+     0.52
+    ],
+    "skull": [
+     0.485,
+     0.69
+    ],
+    "skullup": [
+     0.485,
+     0.74
+    ],
+    "valve": [
+     0.39,
+     0.48
+    ],
+    "valveup": [
+     0.39,
+     0.53
+    ],
+    "moon": [
+     0.94,
+     0.25
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This family is watching a bird suffocate, for science.",
+     0.75,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "pump",
+   "perf": [
+    [
+     "A lecturer pumps the air out of the glass.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "bird",
+   "perf": [
+    [
+     "Inside, a rare cockatoo struggles to breathe.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "girl",
+   "perf": [
+    [
+     "Look at the girl who can't bear to watch.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "skull",
+   "perf": [
+    [
+     "Look at the skull glowing behind the glass.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "valve",
+   "perf": [
+    [
+     "His hand is on the valve: air back in, or death.",
+     0.6,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "you",
+   "perf": [
+    [
+     "And he's looking straight at *you,* as if you decide.",
+     0.7,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "say": {},
+ "ipa": {},
+ "respell": {},
+ "chirp_say": {},
+ "meta": {
+  "painter": "Joseph Wright of Derby",
+  "born": 1734,
+  "died": 1797,
+  "painting": "An Experiment on a Bird in the Air Pump",
+  "year": "1768",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "pump",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1797,
+  "note": "Wright of Derby d. 1797: public domain. Commons file tagged public domain (National Gallery NG725)."
+ },
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_moonlight1.ogg",
+    "commons": "File:Ludwig van Beethoven - sonata no. 14 in c sharp minor 'moonlight', op. 27 no. 2 - i. adagio sostenuto.ogg",
+    "from": 0,
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "credit": "Beethoven, Moonlight Sonata, I. Adagio sostenuto · Paul Pitman (Musopen), public domain"
+   }
+  ]
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "pump",
+   "kind": "image",
+   "from": "birdup@3.0",
+   "to": "birdup@2.85"
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "pump",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "dolly": [
+    0,
+    0.1
+   ],
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "pump-0.12",
+   "img": "pump",
+   "kind": "image",
+   "from": "center@0.44",
+   "to": "center@0.46",
+   "frame": true
+  },
+  {
+   "at": "bird-0.12",
+   "img": "pump",
+   "kind": "image",
+   "from": "birdup@2.5",
+   "to": "birdup@2.65"
+  },
+  {
+   "at": "girl-0.12",
+   "img": "pump",
+   "kind": "image",
+   "from": "girlup@2.3",
+   "to": "girlup@2.45"
+  },
+  {
+   "at": "skull-0.12",
+   "img": "pump",
+   "kind": "image",
+   "from": "skullup@2.6",
+   "to": "skullup@2.75"
+  },
+  {
+   "at": "valve-0.12",
+   "img": "pump",
+   "kind": "image",
+   "from": "valveup@2.6",
+   "to": "valveup@2.75"
+  },
+  {
+   "at": "you-0.12",
+   "img": "pump",
+   "from": "eyesup@2.4",
+   "to": "eyesup@2.5",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "pump",
+   "kind": "image",
+   "from": "lecturerup@1.5",
+   "to": "lecturerup@1.6",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "pump",
+   "to": "bird-0.12",
+   "text": "JOSEPH WRIGHT OF DERBY · 1768"
+  },
+  {
+   "type": "ring",
+   "at": "girl.3",
+   "to": "girl$+0.3",
+   "img": "pump",
+   "point": "girl",
+   "rx": 170,
+   "ry": 170,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "skull.3",
+   "to": "skull$+0.3",
+   "img": "pump",
+   "point": "skull",
+   "rx": 190,
+   "ry": 190,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "valve.4",
+   "to": "valve$+0.3",
+   "img": "pump",
+   "point": "valve",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
+ "sfx": [],
+ "cover": {
+  "question": "Who decides if it <i>dies?</i>",
+  "name": "JOSEPH WRIGHT OF DERBY",
+  "work": "An Experiment on a Bird in the Air Pump, 1768",
+  "focus": [
+   0.445,
+   0.29
+  ],
+  "span": 0.6,
+  "answered_by": "The lecturer has his hand on the valve that can let air back in, but he looks straight out at the viewer, as if we decide (National Gallery)"
+ },
+ "facts": [
+  {
+   "claim": "Joseph Wright of Derby painted An Experiment on a Bird in the Air Pump in 1768; it is in the National Gallery, London (NG725)",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "A travelling lecturer demonstrates a vacuum by pumping the air out of a glass vessel holding a bird, in front of a family audience at night",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "The bird is rare: the National Gallery calls it a white cockatoo (Wikipedia: a cockatiel, rare at the time); it convulses as it struggles to breathe",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "The elder girl cannot bear to watch and covers her eyes; her father comforts her",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "The only light is a candle hidden behind a large glass bowl containing a human skull (National Gallery; Wikipedia: 'may be a human skull')",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "The lecturer has one hand on the valve: he can let air back in and revive the bird, or not",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump"
+  },
+  {
+   "claim": "The lecturer looks straight out of the picture, as if the decision about the bird rests with the viewer",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "The painting does not show whether the bird survives; the boy with the cage may be lowering it (bird lives) or raising it",
+   "source": "https://www.nationalgallery.org.uk/paintings/joseph-wright-of-derby-an-experiment-on-a-bird-in-the-air-pump ; https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  },
+  {
+   "claim": "The moon in the window is often read as a nod to the Lunar Society, which met at full moon",
+   "source": "https://en.wikipedia.org/wiki/An_Experiment_on_a_Bird_in_the_Air_Pump"
+  }
+ ],
+ "caption": "This family is watching a bird suffocate, for science.\n\nJoseph Wright of Derby painted An Experiment on a Bird in the Air Pump in 1768. A travelling lecturer pumps the air out of a glass globe, and inside it a rare white cockatoo struggles to breathe. The younger girl stares up at it; her elder sister can't bear to watch and hides her eyes while their father holds her. The only light is a candle hidden behind a glass bowl with a skull in it.\n\nLook at the lecturer's hand: it is on the valve. He can let the air back in and revive the bird, or not. And he isn't looking at the bird. He looks straight out of the painting, at you, as if the decision were yours. Wright never shows us how it ends: the boy by the window may be lowering the empty cage for the bird, or hauling it back up.\n\nIt hangs in the National Gallery, in London.\n\nP.S. The moon in the window is often read as a nod to the Lunar Society, the scientists who met at full moon so they could ride home by its light.\n\n👁️ Would you let the air back in?",
+ "caption_short": "This family is watching a bird suffocate, for science. And the lecturer is looking at you. 👁️",
+ "youtube_title": "Who decides if it dies? Wright of Derby's Bird in the Air Pump",
+ "hashtags_instagram": [
+  "#josephwrightofderby",
+  "#airpump",
+  "#arthistory",
+  "#nationalgallery",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#josephwright",
+  "#airpump",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#josephwrightofderby",
+  "#wrightofderby",
+  "#airpump",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#enlightenment",
+  "#science"
+ ]
+}

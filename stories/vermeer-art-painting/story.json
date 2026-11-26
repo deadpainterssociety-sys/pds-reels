@@ -1,0 +1,1030 @@
+{
+ "slug": "vermeer-art-painting",
+ "formula": "F2",
+ "format": "two-minute",
+ "hook_type": "hidden",
+ "experiment": {
+  "id": "E3",
+  "arm": "B"
+ },
+ "teaser": "The Vermeer that Hitler bought",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.9,
+ "tail": 2.2,
+ "images": {
+  "art": {
+   "file": "src/art.jpg",
+   "commons": "File:Jan Vermeer - The Art of Painting - Google Art Project.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.437,
+     0.44
+    ],
+    "faceview": [
+     0.44,
+     0.47
+    ],
+    "modelwhole": [
+     0.46,
+     0.58
+    ],
+    "laurel": [
+     0.44,
+     0.42
+    ],
+    "trumpet": [
+     0.38,
+     0.5
+    ],
+    "trumpetend": [
+     0.31,
+     0.505
+    ],
+    "book": [
+     0.47,
+     0.5
+    ],
+    "beret": [
+     0.72,
+     0.47
+    ],
+    "doublet": [
+     0.71,
+     0.6
+    ],
+    "stockings": [
+     0.82,
+     0.8
+    ],
+    "painter": [
+     0.73,
+     0.62
+    ],
+    "map": [
+     0.7,
+     0.33
+    ],
+    "crease": [
+     0.695,
+     0.32
+    ],
+    "chandelier": [
+     0.65,
+     0.18
+    ],
+    "eagle": [
+     0.645,
+     0.09
+    ],
+    "eagleview": [
+     0.645,
+     0.13
+    ],
+    "sigview": [
+     0.5,
+     0.48
+    ],
+    "signature": [
+     0.53,
+     0.474
+    ],
+    "sigup": [
+     0.52,
+     0.49
+    ],
+    "canvas": [
+     0.8,
+     0.52
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Vermeer never sold this painting.",
+     0.3,
+     0.93
+    ],
+    [
+     "Its last buyer was a *dictator.*",
+     0.9,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "intro",
+   "perf": [
+    [
+     "Johannes Vermeer painted it around 1666,",
+     0.3,
+     0.95
+    ],
+    [
+     "and kept it until he died,",
+     0.2,
+     0.95
+    ],
+    [
+     "even deep in debt.",
+     0.8,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "painter",
+   "perf": [
+    [
+     "Look at the painter.",
+     0.3,
+     0.95
+    ],
+    [
+     "His back is turned,",
+     0.2,
+     0.95
+    ],
+    [
+     "his face hidden.",
+     0.3,
+     0.95
+    ],
+    [
+     "A beret, a slashed black doublet,",
+     0.2,
+     0.95
+    ],
+    [
+     "bright red stockings.",
+     0.4,
+     0.95
+    ],
+    [
+     "Tradition says it's Vermeer *himself.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "model",
+   "perf": [
+    [
+     "Now look at his model.",
+     0.3,
+     0.95
+    ],
+    [
+     "A crown of laurel,",
+     0.2,
+     0.95
+    ],
+    [
+     "a trumpet,",
+     0.2,
+     0.95
+    ],
+    [
+     "a heavy book.",
+     0.4,
+     0.95
+    ],
+    [
+     "She's posing as Clio,",
+     0.2,
+     0.95
+    ],
+    [
+     "the muse of *history.*",
+     0.6,
+     0.88
+    ],
+    [
+     "The trumpet stands for fame.",
+     0.9,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "map",
+   "perf": [
+    [
+     "Now look behind her.",
+     0.3,
+     0.95
+    ],
+    [
+     "A huge map of the Netherlands,",
+     0.2,
+     0.95
+    ],
+    [
+     "with a crease down the middle,",
+     0.3,
+     0.95
+    ],
+    [
+     "right where the country was split in two:",
+     0.2,
+     0.95
+    ],
+    [
+     "the Spanish south,",
+     0.2,
+     0.95
+    ],
+    [
+     "the free north.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "eagle",
+   "perf": [
+    [
+     "Look up.",
+     0.3,
+     0.95
+    ],
+    [
+     "The gold chandelier is crowned",
+     0.15,
+     0.95
+    ],
+    [
+     "by a double-headed *eagle.*",
+     0.4,
+     0.9
+    ],
+    [
+     "Experts read it as the emblem of the Habsburgs,",
+     0.15,
+     0.95
+    ],
+    [
+     "who once ruled it all.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "signature",
+   "perf": [
+    [
+     "And look at the map's edge,",
+     0.15,
+     0.95
+    ],
+    [
+     "just behind her collar.",
+     0.3,
+     0.95
+    ],
+    [
+     "That's where he *signed* it.",
+     0.9,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "widow",
+   "perf": [
+    [
+     "When he died,",
+     0.2,
+     0.95
+    ],
+    [
+     "his widow handed it to her mother,",
+     0.2,
+     0.95
+    ],
+    [
+     "to keep it from his creditors.",
+     0.4,
+     0.95
+    ],
+    [
+     "Then it slips out of the record.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "hooch",
+   "perf": [
+    [
+     "In 1813,",
+     0.2,
+     0.95
+    ],
+    [
+     "a count in Vienna bought it for 50 florins,",
+     0.3,
+     0.95
+    ],
+    [
+     "as a painting by Pieter de *Hooch.*",
+     0.6,
+     0.9
+    ],
+    [
+     "Someone had forged de Hooch's name on it.",
+     0.4,
+     0.95
+    ],
+    [
+     "Only around 1860",
+     0.15,
+     0.95
+    ],
+    [
+     "did it get Vermeer's name back.",
+     0.9,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "hitler",
+   "perf": [
+    [
+     "Then, in 1940,",
+     0.2,
+     0.95
+    ],
+    [
+     "the count's family sold it",
+     0.2,
+     0.95
+    ],
+    [
+     "to a man planning a museum in Linz.",
+     0.8,
+     0.93
+    ],
+    [
+     "Adolf *Hitler.*",
+     1.0,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "coda",
+   "perf": [
+    [
+     "During the war,",
+     0.15,
+     0.95
+    ],
+    [
+     "it was hidden in a salt mine",
+     0.2,
+     0.95
+    ],
+    [
+     "at Altaussee.",
+     0.4,
+     0.95
+    ],
+    [
+     "American troops brought it out in 1945,",
+     0.3,
+     0.95
+    ],
+    [
+     "and gave it to Austria.",
+     0.6,
+     0.93
+    ],
+    [
+     "The count's heirs said he'd been forced to sell.",
+     0.3,
+     0.95
+    ],
+    [
+     "In 2011, Austria said *no.*",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "reflect",
+   "perf": [
+    [
+     "He painted the muse of history,",
+     0.2,
+     0.95
+    ],
+    [
+     "holding the trumpet of fame,",
+     0.3,
+     0.95
+    ],
+    [
+     "and for decades,",
+     0.2,
+     0.95
+    ],
+    [
+     "history gave his painting to another *man.*",
+     1.0,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Kunsthistorisches Museum, in Vienna.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "say": {
+  "1666": "sixteen sixty-six",
+  "1813": "eighteen thirteen",
+  "50": "fifty",
+  "1860": "eighteen sixty",
+  "1940": "nineteen forty",
+  "1945": "nineteen forty-five",
+  "2011": "twenty eleven"
+ },
+ "ipa": {
+  "Vermeer": "vɚmˈɪɹ",
+  "Kunsthistorisches": "kˈʊnsthɪstˌoːɹɪʃəs",
+  "Hooch": "hˈoʊx",
+  "Altaussee": "ˈɑːltaʊseɪ",
+  "Clio": "klˈaɪoʊ",
+  "Pieter": "pˈiːtəɹ",
+  "Johannes": "joʊhˈɑːnəs"
+ },
+ "respell": {
+  "Hooch": "HOHKH",
+  "Altaussee": "AHLT-ow-say",
+  "Kunsthistorisches": "KOONST-his-TOR-ish-es"
+ },
+ "chirp_say": {
+  "Kunsthistorisches": "Koonst-historishes"
+ },
+ "meta": {
+  "painter": "Johannes Vermeer",
+  "born": 1632,
+  "died": 1675,
+  "painting": "The Art of Painting",
+  "year": "about 1666–68",
+  "museum": "Kunsthistorisches Museum",
+  "city": "Vienna",
+  "image": "art",
+  "image_credit": "Kunsthistorisches Museum, Vienna, via Google Arts & Culture / Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1675,
+  "note": "Vermeer d. 1675: public domain. Commons file (Google Art Project) tagged public domain."
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "art",
+   "from": "faceview@2.6",
+   "to": "faceview@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "hook.10-0.05",
+   "img": "art",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.12
+   ],
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "intro-0.08",
+   "img": "art",
+   "from": "center@0.62",
+   "to": "center@0.64",
+   "kind": "image",
+   "frame": true
+  },
+  {
+   "at": "intro.6-0.05",
+   "img": "art",
+   "from": "painter@1.2",
+   "to": "painter@1.26",
+   "sway": 0.006
+  },
+  {
+   "at": "painter-0.1",
+   "img": "art",
+   "from": "beret@2.0",
+   "to": "beret@2.12",
+   "kind": "image"
+  },
+  {
+   "at": "painter.11-0.05",
+   "img": "art",
+   "from": "doublet@2.2",
+   "to": "doublet@2.35",
+   "kind": "image"
+  },
+  {
+   "at": "painter.17-0.05",
+   "img": "art",
+   "from": "stockings@2.3",
+   "to": "stockings@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "painter.20-0.05",
+   "img": "art",
+   "from": "painter@1.35",
+   "to": "painter@1.42",
+   "sway": 0.006
+  },
+  {
+   "at": "model-0.1",
+   "img": "art",
+   "from": "modelwhole@1.5",
+   "to": "modelwhole@1.58",
+   "sway": 0.006
+  },
+  {
+   "at": "model.5-0.05",
+   "img": "art",
+   "from": "laurel@2.8",
+   "to": "laurel@2.95",
+   "kind": "image"
+  },
+  {
+   "at": "model.9-0.05",
+   "img": "art",
+   "from": "trumpet@2.4",
+   "to": "trumpet@2.55",
+   "kind": "image"
+  },
+  {
+   "at": "model.11-0.05",
+   "img": "art",
+   "from": "book@2.6",
+   "to": "book@2.75",
+   "kind": "image"
+  },
+  {
+   "at": "model.14-0.05",
+   "img": "art",
+   "from": "faceview@2.2",
+   "to": "faceview@2.32",
+   "kind": "image"
+  },
+  {
+   "at": "model.22-0.05",
+   "img": "art",
+   "from": "trumpetend@2.4",
+   "to": "trumpetend@2.55",
+   "kind": "image"
+  },
+  {
+   "at": "map-0.1",
+   "img": "art",
+   "from": "map@1.4",
+   "to": "map@1.48",
+   "kind": "image"
+  },
+  {
+   "at": "map.10-0.05",
+   "img": "art",
+   "from": "crease@2.3",
+   "to": "crease@2.45",
+   "kind": "image"
+  },
+  {
+   "at": "map.24-0.05",
+   "img": "art",
+   "from": "crease@2.8",
+   "to": "crease@2.95",
+   "kind": "image"
+  },
+  {
+   "at": "eagle-0.1",
+   "img": "art",
+   "from": "chandelier@1.8",
+   "to": "chandelier@1.9",
+   "kind": "image"
+  },
+  {
+   "at": "eagle.7-0.05",
+   "img": "art",
+   "from": "eagleview@3.0",
+   "to": "eagleview@3.15",
+   "kind": "image"
+  },
+  {
+   "at": "eagle.11-0.05",
+   "img": "art",
+   "from": "map@1.2",
+   "to": "map@1.27",
+   "kind": "image"
+  },
+  {
+   "at": "signature-0.1",
+   "img": "art",
+   "from": "sigview@2.0",
+   "to": "sigview@2.12",
+   "kind": "image"
+  },
+  {
+   "at": "signature.10-0.05",
+   "img": "art",
+   "from": "sigup@3.2",
+   "to": "sigup@3.4",
+   "kind": "image"
+  },
+  {
+   "at": "widow-0.1",
+   "img": "art",
+   "from": "faceview@1.8",
+   "to": "faceview@1.9",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "widow.10-0.05",
+   "img": "art",
+   "from": "painter@1.4",
+   "to": "painter@1.48",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "widow.16-0.05",
+   "img": "art",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hooch-0.1",
+   "img": "art",
+   "from": "beret@1.8",
+   "to": "beret@1.9",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hooch.11-0.05",
+   "img": "art",
+   "from": "sigview@2.4",
+   "to": "sigview@2.55",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hooch.18-0.05",
+   "img": "art",
+   "from": "sigup@3.0",
+   "to": "sigup@3.2",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hooch.26-0.05",
+   "img": "art",
+   "from": "beret@2.0",
+   "to": "beret@2.12",
+   "kind": "image"
+  },
+  {
+   "at": "hitler-0.1",
+   "img": "art",
+   "from": "eagleview@2.4",
+   "to": "eagleview@2.55",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hitler.8-0.05",
+   "img": "art",
+   "from": "map@1.5",
+   "to": "map@1.58",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "hitler.16-0.05",
+   "img": "art",
+   "from": "faceview@2.3",
+   "to": "faceview@2.4",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "coda-0.1",
+   "img": "art",
+   "from": "modelwhole@1.6",
+   "to": "modelwhole@1.68",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "coda.12-0.05",
+   "img": "art",
+   "from": "painter@1.4",
+   "to": "painter@1.48",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "coda.24-0.05",
+   "img": "art",
+   "from": "stockings@2.0",
+   "to": "stockings@2.12",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "coda.33-0.05",
+   "img": "art",
+   "from": "book@2.4",
+   "to": "book@2.52",
+   "kind": "image",
+   "gray": 1
+  },
+  {
+   "at": "reflect-0.1",
+   "img": "art",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "reflect.6-0.05",
+   "img": "art",
+   "from": "trumpet@2.2",
+   "to": "trumpet@2.32",
+   "kind": "image"
+  },
+  {
+   "at": "reflect.14-0.05",
+   "img": "art",
+   "from": "faceview@2.5",
+   "to": "faceview@2.62",
+   "kind": "image"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "art",
+   "from": "faceview@1.7",
+   "to": "faceview@1.78",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "intro",
+   "to": "painter-0.1",
+   "text": "JOHANNES VERMEER · C. 1666–68"
+  },
+  {
+   "type": "label",
+   "from": "model.14",
+   "to": "map-0.1",
+   "text": "CLIO · MUSE OF HISTORY"
+  },
+  {
+   "type": "label",
+   "from": "map",
+   "to": "eagle-0.1",
+   "text": "MAP OF THE 17 PROVINCES"
+  },
+  {
+   "type": "ring",
+   "at": "eagle.9",
+   "to": "eagle.11-0.1",
+   "img": "art",
+   "point": "eagle",
+   "rx": 150,
+   "ry": 130,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "signature.13",
+   "to": "widow-0.1",
+   "img": "art",
+   "point": "signature",
+   "rx": 150,
+   "ry": 80,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "widow",
+   "to": "hooch-0.1",
+   "text": "DELFT · 1676"
+  },
+  {
+   "type": "label",
+   "from": "hooch",
+   "to": "hitler-0.1",
+   "text": "VIENNA · 1813"
+  },
+  {
+   "type": "label",
+   "from": "hitler",
+   "to": "coda-0.1",
+   "text": "1940 · SOLD TO HITLER"
+  },
+  {
+   "type": "label",
+   "from": "coda",
+   "to": "coda.24-0.1",
+   "text": "ALTAUSSEE SALT MINE · 1945"
+  },
+  {
+   "type": "label",
+   "from": "coda.24",
+   "to": "reflect-0.1",
+   "text": "RESTITUTION CLAIM · 2011"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "KUNSTHISTORISCHES · VIENNA"
+  }
+ ],
+ "music": {
+  "transpose": 3,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "widow-0.2",
+    "hitler.15"
+   ],
+   "choir": [
+    "reflect-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   "hitler-0.1",
+   "hitler.16-0.15"
+  ]
+ },
+ "sfx": [
+  {
+   "at": "signature.13",
+   "fx": "tick",
+   "gain": 0.4
+  },
+  {
+   "at": "hitler.16",
+   "fx": "impact",
+   "gain": 0.35
+  }
+ ],
+ "nocap": [],
+ "cover": {
+  "question": "How did <i>Hitler</i> get this?",
+  "name": "JOHANNES VERMEER",
+  "work": "The Art of Painting, c. 1666–68",
+  "focus": [
+   0.45,
+   0.46
+  ],
+  "span": 0.42,
+  "answered_by": "In 1940 Count Czernin's family sold it to Hitler for his planned museum in Linz; the heirs later said the sale was forced, Austria rejected the claim in 2011"
+ },
+ "facts": [
+  {
+   "claim": "Vermeer painted The Art of Painting around 1666–68; it is in the Kunsthistorisches Museum, Vienna",
+   "source": "https://khm.at/en/object/2574 ; https://en.wikipedia.org/wiki/The_Art_of_Painting"
+  },
+  {
+   "claim": "Vermeer never sold the painting during his lifetime, even when in debt (Montias)",
+   "source": "https://en.wikipedia.org/wiki/The_Art_of_Painting"
+  },
+  {
+   "claim": "The painter is seen from behind, face hidden, in a beret and an elegant black doublet slashed at the sleeves and back, with short breeches and coloured stockings; it is traditionally seen as a self-portrait",
+   "source": "https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://essentialvermeer.com/catalogue/art_of_painting.html"
+  },
+  {
+   "claim": "The model poses as Clio, the muse of history, with a laurel wreath, a trumpet (fame) and a book",
+   "source": "https://khm.at/en/object/2574 ; https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://essentialvermeer.com/catalogue/art_of_painting.html"
+  },
+  {
+   "claim": "The map shows the Seventeen Provinces of the Netherlands (published by Claes Jansz. Visscher); a crease divides the Spanish south from the independent northern provinces",
+   "source": "https://khm.at/en/object/2574 ; https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://essentialvermeer.com/catalogue/art_of_painting.html"
+  },
+  {
+   "claim": "The gold chandelier is crowned by a double-headed eagle, generally read as the Habsburg emblem, recalling when that dynasty ruled the Netherlands (some read it differently)",
+   "source": "https://essentialvermeer.com/catalogue/art_of_painting.html ; https://en.wikipedia.org/wiki/The_Art_of_Painting"
+  },
+  {
+   "claim": "Vermeer signed it on the lower border of the map, behind the model's collar: 'I Ver-Meer'",
+   "source": "https://khm.at/en/object/2574 ; https://essentialvermeer.com/catalogue/art_of_painting.html ; https://en.wikipedia.org/wiki/The_Art_of_Painting"
+  },
+  {
+   "claim": "In February 1676 his widow Catharina Bolnes transferred it to her mother Maria Thins to shield it from creditors; after the 1677 sale it vanishes from the record",
+   "source": "https://www.essentialvermeer.com/history/provenance-art-of-painting.html ; https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://khm.at/en/object/2574"
+  },
+  {
+   "claim": "In 1813 Count Rudolf Czernin bought it in Vienna for 50 florins as a work by Pieter de Hooch, whose signature was forged on it; it was recognised as a Vermeer around 1860",
+   "source": "https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://www.essentialvermeer.com/history/provenance-art-of-painting.html"
+  },
+  {
+   "claim": "In 1940 Count Jaromir Czernin sold it to Adolf Hitler, for his planned museum in Linz",
+   "source": "https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://khm.at/en/object/2574 ; https://essentialvermeer.com/catalogue/art_of_painting.html"
+  },
+  {
+   "claim": "During the war it was stored in the Altaussee salt mine; recovered in 1945, the Americans handed it to Austria; it came to the KHM on 7 November 1946",
+   "source": "https://en.wikipedia.org/wiki/The_Art_of_Painting ; https://www.essentialvermeer.com/history/provenance-art-of-painting.html ; https://khm.at/en/object/2574"
+  },
+  {
+   "claim": "The Czernin heirs claimed the sale was made under duress; Austria's restitution panel rejected the claim in March 2011",
+   "source": "https://www.bloomberg.com/news/articles/2011-03-18/heirs-claim-for-hitler-s-vermeer-painting-is-rejected-by-austrian-panel ; https://www.essentialvermeer.com/history/provenance-art-of-painting.html ; https://en.wikipedia.org/wiki/The_Art_of_Painting"
+  }
+ ],
+ "caption": "Vermeer never sold this painting. Its last buyer was a dictator.\n\nJohannes Vermeer painted The Art of Painting around 1666–68 and kept it until he died, even deep in debt. Look at the painter: his back turned, face hidden, in a slashed black doublet. Tradition says it's Vermeer himself. His model poses as Clio, the muse of history, with a laurel crown, a trumpet for fame and a book. Behind her, a map of the Netherlands with a crease right where the country was split in two. Above, a chandelier crowned by a double-headed eagle, read as the emblem of the Habsburgs. And on the map's edge, behind her collar, his signature.\n\nIn 1676 his widow handed it to her mother to keep it from creditors. In 1813 Count Czernin bought it in Vienna for 50 florins as a Pieter de Hooch, with a forged de Hooch signature. Only around 1860 did it get Vermeer's name back. In 1940 the Czernin family sold it to Adolf Hitler for the museum he planned in Linz. It spent the war in the Altaussee salt mine; American troops recovered it in 1945 and gave it to Austria. The heirs said the sale was forced. In 2011 Austria said no.\n\nIt hangs in the Kunsthistorisches Museum, in Vienna.\n\n👁️ Which detail did you spot first?",
+ "caption_short": "Vermeer never sold this painting. Its last buyer was Hitler. 👁️",
+ "youtube_title": "How did Hitler get this? Vermeer's The Art of Painting",
+ "hashtags_instagram": [
+  "#vermeer",
+  "#theartofpainting",
+  "#arthistory",
+  "#vienna",
+  "#nazilooted"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vermeer",
+  "#theartofpainting",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#vermeer",
+  "#johannesvermeer",
+  "#theartofpainting",
+  "#kunsthistorischesmuseum",
+  "#vienna",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#hitler",
+  "#ww2"
+ ]
+}
