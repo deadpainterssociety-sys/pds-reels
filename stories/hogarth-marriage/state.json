@@ -1,9 +1,10 @@
 {
- "status": "sent",
- "updated": "2026-11-26T16:00:05+01:00",
+ "status": "approved",
+ "updated": "2026-11-26T17:17:40+01:00",
  "validated_at": "2026-11-24T03:58:05+01:00",
  "duration_s": 103.1,
  "review_message": 596,
  "sent_at": "2026-11-26T09:46:17+01:00",
- "nudged": true
+ "nudged": true,
+ "approved_at": "2026-11-26T17:17:40+01:00"
 }
