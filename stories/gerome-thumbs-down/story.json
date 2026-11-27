@@ -1,0 +1,712 @@
+{
+ "slug": "gerome-thumbs-down",
+ "formula": "F1",
+ "format": "reel",
+ "hook_type": "hidden",
+ "experiment": {
+  "id": "E3",
+  "arm": "B"
+ },
+ "teaser": "The painting that hooked Ridley Scott",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "meta": {
+  "painter": "Jean-Léon Gérôme",
+  "born": 1824,
+  "died": 1904,
+  "painting": "Pollice Verso",
+  "year": "1872",
+  "museum": "Phoenix Art Museum",
+  "city": "Phoenix",
+  "image": "pollice",
+  "image_credit": "Phoenix Art Museum, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1904,
+  "note": "Gérôme d. 1904: public domain. Nadar photo (Nadar d. 1910) and the 1879 pamphlet are public domain; helmet photo CC BY-SA 4.0 (Mary Harrsch), credited."
+ },
+ "say": {
+  "1872": "eighteen seventy-two"
+ },
+ "ipa": {
+  "Gérôme": "ʒeɪɹˈoʊm",
+  "Gérôme's": "ʒeɪɹˈoʊmz",
+  "Léon": "leɪˈɔn",
+  "Pollice": "pˈɑlɪtʃeɪ",
+  "Verso": "vˈɛɹsoʊ",
+  "Vestal": "vˈɛstəl"
+ },
+ "respell": {
+  "Gérôme": "zhay-ROME",
+  "Léon": "lay-ON",
+  "Pollice": "POL-ee-chay",
+  "Verso": "VAIR-so"
+ },
+ "chirp_say": {},
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Our idea of thumbs down",
+     0.25,
+     0.95
+    ],
+    [
+     "comes from *this* painting.",
+     0.9,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "paint",
+   "perf": [
+    [
+     "Jean-Léon Gérôme painted it in 1872.",
+     0.35,
+     0.95
+    ],
+    [
+     "A gladiator stands over a beaten man,",
+     0.3,
+     0.95
+    ],
+    [
+     "and the arena gives its verdict.",
+     0.75,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "vestals",
+   "perf": [
+    [
+     "Even the Vestal Virgins,",
+     0.25,
+     0.95
+    ],
+    [
+     "Rome's sacred priestesses,",
+     0.3,
+     0.95
+    ],
+    [
+     "turn their thumbs down.",
+     0.35,
+     0.93
+    ],
+    [
+     "Kill him.",
+     0.85,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "homework",
+   "perf": [
+    [
+     "Its armour copies gear dug up at Pompeii.",
+     0.75,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "title",
+   "perf": [
+    [
+     "He called it Pollice Verso,",
+     0.3,
+     0.95
+    ],
+    [
+     "Latin for, with a turned thumb.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "twist",
+   "perf": [
+    [
+     "But turned which way?",
+     0.4,
+     0.92
+    ],
+    [
+     "Up, down, sideways?",
+     0.4,
+     0.93
+    ],
+    [
+     "Nobody knows.",
+     0.75,
+     0.85
+    ],
+    [
+     "Some scholars think a thumb pointing *up* meant death.",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "scott",
+   "perf": [
+    [
+     "Over a century later,",
+     0.25,
+     0.95
+    ],
+    [
+     "producers showed Ridley Scott a copy.",
+     0.35,
+     0.95
+    ],
+    [
+     "He hadn't even read the script.",
+     0.4,
+     0.95
+    ],
+    [
+     "\"That image spoke to me\", he said,",
+     0.25,
+     0.95
+    ],
+    [
+     "\"of the Roman Empire in all its glory and wickedness.\"",
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "payoff",
+   "perf": [
+    [
+     "The film was *Gladiator.*",
+     0.4,
+     0.9
+    ],
+    [
+     "And its thumbs come from this painting,",
+     0.3,
+     0.93
+    ],
+    [
+     "not from *Rome.*",
+     0.9,
+     0.85
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Phoenix Art Museum, in Phoenix.",
+     0.0,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "images": {
+  "pollice": {
+   "file": "src/pollice.jpg",
+   "commons": "File:Jean-Leon Gerome Pollice Verso.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "centerup": [
+     0.5,
+     0.56
+    ],
+    "vestals": [
+     0.78,
+     0.2
+    ],
+    "vestalsup": [
+     0.78,
+     0.27
+    ],
+    "vestalface": [
+     0.86,
+     0.18
+    ],
+    "vestalfaceup": [
+     0.86,
+     0.24
+    ],
+    "thumb": [
+     0.6,
+     0.265
+    ],
+    "thumbup": [
+     0.62,
+     0.31
+    ],
+    "crowd": [
+     0.73,
+     0.1
+    ],
+    "crowdup": [
+     0.73,
+     0.16
+    ],
+    "victor": [
+     0.31,
+     0.45
+    ],
+    "victorup": [
+     0.32,
+     0.52
+    ],
+    "foot": [
+     0.38,
+     0.87
+    ],
+    "footup": [
+     0.4,
+     0.8
+    ],
+    "hand": [
+     0.48,
+     0.72
+    ],
+    "handup": [
+     0.47,
+     0.77
+    ]
+   }
+  },
+  "nadar": {
+   "file": "src/nadar.jpg",
+   "commons": "File:Jean-Léon Gérôme by Nadar.jpg",
+   "long": 2400,
+   "points": {
+    "face": [
+     0.5,
+     0.3
+    ],
+    "faceup": [
+     0.5,
+     0.37
+    ]
+   }
+  },
+  "helmet": {
+   "file": "src/helmet.jpg",
+   "commons": "File:Roman gladiator helmet found in the gladiator barracks in Pompeii 1st century CE.jpg",
+   "long": 2400,
+   "credit": "Gladiator helmet from Pompeii, photo Mary Harrsch, CC BY-SA 4.0, via Wikimedia Commons",
+   "points": {
+    "helmet": [
+     0.5,
+     0.5
+    ],
+    "helmetup": [
+     0.5,
+     0.55
+    ]
+   }
+  },
+  "pamphlet": {
+   "file": "src/pamphlet.jpg",
+   "commons": "File:Pollice Verso--pamphlet--Paris--1879.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "avecaesar": {
+   "file": "src/avecaesar.jpg",
+   "commons": "File:Jean-Léon Gérôme - Ave Caesar! Morituri te salutant (1859).jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "emperor": [
+     0.5,
+     0.3
+    ]
+   }
+  }
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "pollice",
+   "kind": "image",
+   "from": "vestalsup@2.6",
+   "to": "vestalsup@2.45"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "pollice",
+   "from": "centerup@1.0",
+   "to": "centerup@1.06",
+   "dolly": [
+    0,
+    0.1
+   ],
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "paint-0.1",
+   "img": "nadar",
+   "kind": "image",
+   "from": "faceup@1.4",
+   "to": "faceup@1.5",
+   "gray": 1
+  },
+  {
+   "at": "paint.6-0.05",
+   "img": "pollice",
+   "from": "footup@1.9",
+   "to": "footup@2.0"
+  },
+  {
+   "at": "paint.13-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "center@0.36",
+   "to": "center@0.37",
+   "frame": true
+  },
+  {
+   "at": "vestals-0.1",
+   "img": "pollice",
+   "from": "vestalsup@1.9",
+   "to": "vestalsup@2.0"
+  },
+  {
+   "at": "vestals.4-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "vestalfaceup@2.8",
+   "to": "vestalfaceup@2.9"
+  },
+  {
+   "at": "vestals.7-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "thumbup@3.0",
+   "to": "thumbup@3.1"
+  },
+  {
+   "at": "vestals.11-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "footup@2.6",
+   "to": "footup@2.7",
+   "hit": "small"
+  },
+  {
+   "at": "homework-0.1",
+   "img": "helmet",
+   "kind": "image",
+   "from": "helmetup@1.0",
+   "to": "helmetup@1.08"
+  },
+  {
+   "at": "title-0.1",
+   "img": "pollice",
+   "kind": "image",
+   "from": "crowdup@2.2",
+   "to": "crowdup@2.3",
+   "gray": 1
+  },
+  {
+   "at": "twist-0.1",
+   "img": "pamphlet",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "twist.9-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "handup@2.4",
+   "to": "handup@2.5",
+   "gray": 1
+  },
+  {
+   "at": "scott-0.1",
+   "img": "pollice",
+   "kind": "image",
+   "from": "center@0.36",
+   "to": "center@0.38",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "scott.10-0.05",
+   "img": "pollice",
+   "from": "victorup@1.8",
+   "to": "victorup@1.9",
+   "gray": 1
+  },
+  {
+   "at": "scott.16-0.05",
+   "img": "avecaesar",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.06",
+   "gray": 1
+  },
+  {
+   "at": "payoff-0.1",
+   "img": "pollice",
+   "from": "victorup@1.6",
+   "to": "victorup@1.7",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "payoff.4-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "thumbup@2.4",
+   "to": "thumbup@2.5"
+  },
+  {
+   "at": "payoff.11-0.05",
+   "img": "pollice",
+   "kind": "image",
+   "from": "crowdup@2.0",
+   "to": "crowdup@2.1"
+  },
+  {
+   "at": "ending-0.1",
+   "img": "pollice",
+   "kind": "image",
+   "from": "vestalfaceup@2.2",
+   "to": "vestalfaceup@2.3",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "title",
+   "from": "paint.1",
+   "to": "paint.6-0.1",
+   "kicker": "PHOTO BY NADAR",
+   "text": "Jean-Léon <i>Gérôme</i>"
+  },
+  {
+   "type": "label",
+   "from": "paint.13",
+   "to": "vestals-0.1",
+   "text": "POLLICE VERSO · 1872"
+  },
+  {
+   "type": "ring",
+   "at": "vestals.8",
+   "to": "vestals.11-0.1",
+   "img": "pollice",
+   "point": "thumb",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "homework",
+   "to": "title-0.1",
+   "text": "HELMET FROM POMPEII · NAPLES"
+  },
+  {
+   "type": "credit",
+   "from": "homework",
+   "to": "title-0.1",
+   "text": "Photo: Mary Harrsch, CC BY-SA 4.0"
+  },
+  {
+   "type": "title",
+   "from": "title.1",
+   "to": "title$",
+   "kicker": "LATIN · WITH A TURNED THUMB",
+   "text": "Pollice <i>Verso</i>"
+  },
+  {
+   "type": "label",
+   "from": "twist",
+   "to": "twist.9-0.1",
+   "text": "THE THUMB DEBATE · PARIS, 1879"
+  },
+  {
+   "type": "label",
+   "from": "scott.10",
+   "to": "scott.16-0.1",
+   "text": "RIDLEY SCOTT · GLADIATOR"
+  },
+  {
+   "type": "label",
+   "from": "scott.16",
+   "to": "payoff-0.1",
+   "text": "GÉRÔME · AVE CAESAR!, 1859"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "PHOENIX ART MUSEUM · ARIZONA"
+  }
+ ],
+ "sfx": [
+  {
+   "at": "vestals.11",
+   "fx": "impact",
+   "gain": 0.3
+  }
+ ],
+ "nocap": [
+  [
+   "title.1",
+   "title$"
+  ]
+ ],
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "paint-0.2",
+    "twist$+0.2"
+   ],
+   "choir": [
+    "payoff-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   "scott.16",
+   "payoff-0.15"
+  ]
+ },
+ "cover": {
+  "question": "Did Gladiator get the <i>thumb</i> wrong?",
+  "name": "JEAN-LÉON GÉRÔME",
+  "work": "Pollice Verso, 1872",
+  "focus": [
+   0.75,
+   0.22
+  ],
+  "span": 0.45,
+  "answered_by": "Gérôme's painting popularized thumbs-down = death and inspired Ridley Scott's Gladiator; nobody knows which way the Roman thumb really turned (some scholars: thumb up meant death)"
+ },
+ "facts": [
+  {
+   "claim": "Gérôme's painting greatly popularized the idea that thumbs up meant life and thumbs down meant death",
+   "source": "https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me) ; https://penelope.uchicago.edu/~grout/encyclopaedia_romana/gladiators/polliceverso.html"
+  },
+  {
+   "claim": "Jean-Léon Gérôme finished Pollice Verso in 1872 (work paused during the Franco-Prussian War); the victor stands over a fallen gladiator in the Colosseum",
+   "source": "https://phxart.org/blog/pollice-verso/ ; https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me)"
+  },
+  {
+   "claim": "Spectators, including the Vestals, give the thumbs-down to the victorious murmillo; the beaten retiarius raises two fingers for mercy",
+   "source": "https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me) ; https://penelope.uchicago.edu/~grout/encyclopaedia_romana/gladiators/polliceverso.html"
+  },
+  {
+   "claim": "The gladiators' armour follows designs found at Pompeii (Köhne et al. 2000), though the murmillo's has some inaccuracies",
+   "source": "https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me)"
+  },
+  {
+   "claim": "Pollice verso is Latin for 'with a turned thumb'; the phrase comes from Juvenal (verso pollice) and Prudentius (converso pollice)",
+   "source": "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/gladiators/polliceverso.html ; https://phxart.org/blog/pollice-verso/"
+  },
+  {
+   "claim": "Which way the thumb turned (up, down, sideways or hidden) is not known; Anthony Corbeill argues an upward thumb meant death, a thumb pressed down meant mercy",
+   "source": "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/gladiators/polliceverso.html ; https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me) ; https://penelope.uchicago.edu/Thayer/E/Journals//AJP/13/2/Pollice_Verso*.html"
+  },
+  {
+   "claim": "Producers (Walter Parkes, with Douglas Wick) showed Ridley Scott a reproduction of the painting before he had read the script; he signed on",
+   "source": "https://www.tcm.com/articles/276744/gladiator ; https://www.mentalfloss.com/entertainment/movies/15-epic-facts-about-gladiator ; https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me)"
+  },
+  {
+   "claim": "Ridley Scott: 'That image spoke to me of the Roman Empire in all its glory and wickedness.'",
+   "source": "https://www.mentalfloss.com/entertainment/movies/15-epic-facts-about-gladiator ; https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me)"
+  },
+  {
+   "claim": "The film was Gladiator (2000), in which Commodus's thumb gestures follow the popular image the painting created",
+   "source": "https://penelope.uchicago.edu/~grout/encyclopaedia_romana/gladiators/polliceverso.html ; https://en.wikipedia.org/wiki/Pollice_Verso_(G%C3%A9r%C3%B4me)"
+  },
+  {
+   "claim": "The painting was acquired by the Phoenix Art Museum in 1968 (museum purchase, 1968.52)",
+   "source": "https://phxart.org/blog/pollice-verso/ ; https://phxart.org/arts/pollice-verso/"
+  }
+ ],
+ "caption": "Our idea of \"thumbs down\" comes from this painting.\n\nJean-Léon Gérôme finished Pollice Verso in 1872. A gladiator stands over a beaten man in the Colosseum, and the crowd gives its verdict. Even the Vestal Virgins, Rome's sacred priestesses, lean over the wall with their thumbs turned down: kill him. Gérôme did his research: the gladiators' armour follows designs found at Pompeii.\n\nThe title is Latin for \"with a turned thumb\", words from Roman writers like Juvenal. But turned which way? Nobody knows. Up, down, sideways, hidden in the fist: the sources never say, and some scholars think a thumb pointing up meant death.\n\nOver a century later, producers showed Ridley Scott a reproduction of this painting before he had even read a script. \"That image spoke to me of the Roman Empire in all its glory and wickedness,\" he said. The film was Gladiator, and its thumbs come from Gérôme, not from Rome.\n\nIt hangs in the Phoenix Art Museum, in Phoenix, Arizona (bought in 1968).\n\n👁️ Which way would you have guessed?",
+ "caption_short": "Gladiator's thumbs down came from this 1872 painting, not from Rome. Nobody knows which way the Romans really turned it. 👁️",
+ "youtube_title": "Did Gladiator Get the Thumb Wrong? Gérôme's Pollice Verso",
+ "hashtags_instagram": [
+  "#gerome",
+  "#polliceverso",
+  "#arthistory",
+  "#phoenix",
+  "#gladiator"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#gerome",
+  "#gladiator",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#gerome",
+  "#jeanleongerome",
+  "#polliceverso",
+  "#phoenixartmuseum",
+  "#phoenix",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#gladiator",
+  "#ancientrome"
+ ]
+}

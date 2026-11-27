@@ -1,0 +1,408 @@
+{
+ "slug": "vangogh-smoking-skull",
+ "formula": "F3",
+ "format": "caption",
+ "silent": true,
+ "hook_type": "dark-legend",
+ "experiment": {
+  "id": "E3",
+  "arm": "A"
+ },
+ "teaser": "Van Gogh's joke about death",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "images": {
+  "skull": {
+   "file": "src/skull.jpg",
+   "commons": "File:Kop van een skelet met brandende sigaret - s0083V1962 - Van Gogh Museum.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "teeth": [
+     0.56,
+     0.52
+    ],
+    "teethup": [
+     0.57,
+     0.645
+    ],
+    "eyes": [
+     0.53,
+     0.37
+    ],
+    "eyesup": [
+     0.52,
+     0.5
+    ],
+    "cig": [
+     0.72,
+     0.555
+    ],
+    "cigup": [
+     0.66,
+     0.66
+    ],
+    "skullup": [
+     0.5,
+     0.42
+    ]
+   }
+  },
+  "pipe": {
+   "file": "src/pipe.jpg",
+   "commons": "File:Zelfportret met pijp - s0158V1962 - Van Gogh Museum.jpg",
+   "long": 2400,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.4
+    ],
+    "faceup": [
+     0.5,
+     0.47
+    ],
+    "pipe": [
+     0.36,
+     0.66
+    ],
+    "pipeup": [
+     0.42,
+     0.66
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "Van Gogh painted this skeleton smoking, as a *joke.*",
+     0.7,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "student",
+   "perf": [
+    [
+     "In 1886, he was an art student in Antwerp.",
+     0.45,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "lessons",
+   "perf": [
+    [
+     "Students drew skeletons, but nobody painted one.",
+     0.45,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "meals",
+   "perf": [
+    [
+     "In nine months, he ate maybe six or seven hot meals.",
+     0.45,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "smoke",
+   "perf": [
+    [
+     "He smoked a lot, so he'd feel less *hungry.*",
+     0.45,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "teeth",
+   "perf": [
+    [
+     "His teeth were breaking off, one after another.",
+     0.6,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "question",
+   "perf": [
+    [
+     "A joke about death, or about *himself?*",
+     0.6,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Van Gogh Museum, in Amsterdam.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "say": {
+  "1886": "eighteen eighty-six"
+ },
+ "ipa": {},
+ "respell": {},
+ "chirp_say": {},
+ "meta": {
+  "painter": "Vincent van Gogh",
+  "born": 1853,
+  "died": 1890,
+  "painting": "Head of a Skeleton with a Burning Cigarette",
+  "year": "1886",
+  "museum": "Van Gogh Museum",
+  "city": "Amsterdam",
+  "image": "skull",
+  "image_credit": "Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation), via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1890,
+  "note": "Van Gogh d. 1890: public domain. Commons files from the Van Gogh Museum tagged public domain."
+ },
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_danse.ogg",
+    "commons": "File:Kevin MacLeod - Camille Saint-Sans Danse Macabre - Light Dance.ogg",
+    "from": 0,
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 1.2,
+    "credit": "Saint-Saëns, Danse macabre (Light Dance) · Kevin MacLeod, CC BY 3.0, via Wikimedia Commons"
+   }
+  ]
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "skull",
+   "kind": "image",
+   "from": "teethup@2.4",
+   "to": "teethup@2.3"
+  },
+  {
+   "at": "hook.5-0.05",
+   "img": "skull",
+   "from": "skullup@1.05",
+   "to": "skullup@1.1",
+   "dolly": [
+    0,
+    0.1
+   ],
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "student-0.12",
+   "img": "skull",
+   "kind": "image",
+   "from": "center@0.6",
+   "to": "center@0.62",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "lessons-0.12",
+   "img": "skull",
+   "kind": "image",
+   "from": "eyesup@1.8",
+   "to": "eyesup@1.95",
+   "gray": 1
+  },
+  {
+   "at": "meals-0.12",
+   "img": "pipe",
+   "kind": "image",
+   "from": "faceup@1.5",
+   "to": "faceup@1.62",
+   "gray": 1,
+   "dim": -0.2
+  },
+  {
+   "at": "smoke-0.12",
+   "img": "pipe",
+   "kind": "image",
+   "from": "pipeup@1.9",
+   "to": "pipeup@2.05",
+   "gray": 1,
+   "dim": -0.2
+  },
+  {
+   "at": "teeth-0.12",
+   "img": "skull",
+   "kind": "image",
+   "from": "teethup@2.7",
+   "to": "teethup@2.85",
+   "hit": "big"
+  },
+  {
+   "at": "question-0.12",
+   "img": "skull",
+   "from": "eyesup@2.0",
+   "to": "eyesup@2.1",
+   "sway": 0.006
+  },
+  {
+   "at": "ending-0.12",
+   "img": "skull",
+   "kind": "image",
+   "from": "cigup@1.6",
+   "to": "cigup@1.7",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "student",
+   "to": "lessons-0.12",
+   "text": "ANTWERP · 1886"
+  },
+  {
+   "type": "label",
+   "from": "meals",
+   "to": "teeth-0.12",
+   "text": "VAN GOGH · SELF-PORTRAIT, 1886"
+  },
+  {
+   "type": "ring",
+   "at": "teeth.1",
+   "to": "teeth$+0.3",
+   "img": "skull",
+   "point": "teeth",
+   "rx": 230,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "VAN GOGH MUSEUM · AMSTERDAM"
+  }
+ ],
+ "sfx": [],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
+ "cover": {
+  "question": "Why is this skeleton <i>smoking?</i>",
+  "name": "VINCENT VAN GOGH",
+  "work": "Head of a Skeleton with a Burning Cigarette, 1886",
+  "focus": [
+   0.55,
+   0.47
+  ],
+  "span": 0.8,
+  "answered_by": "A student's joke in Antwerp (skeletons were drawn at the academy, never painted), made while he was starving, smoking to dull his hunger and losing his teeth"
+ },
+ "facts": [
+  {
+   "claim": "Van Gogh painted the skeleton with a lit cigarette as a (juvenile) joke; the Van Gogh Museum dates it January–February 1886",
+   "source": "https://artsandculture.google.com/asset/head-of-a-skeleton-with-a-burning-cigarette-vincent-van-gogh/hQGZa2I9Xi6lpA ; https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette"
+  },
+  {
+   "claim": "He painted it in early 1886 while studying at the art academy in Antwerp (Royal Academy of Fine Arts)",
+   "source": "https://artsandculture.google.com/asset/head-of-a-skeleton-with-a-burning-cigarette-vincent-van-gogh/hQGZa2I9Xi6lpA ; https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette"
+  },
+  {
+   "claim": "Drawing skeletons was a standard exercise at the academy, but painting them was not part of the curriculum",
+   "source": "https://artsandculture.google.com/asset/head-of-a-skeleton-with-a-burning-cigarette-vincent-van-gogh/hQGZa2I9Xi6lpA ; https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette"
+  },
+  {
+   "claim": "Letter to Theo, Antwerp, c. 3-4 February 1886: since moving into his own studio on 1 May (1885) he had 'not had a hot dinner more than perhaps six or seven times since'",
+   "source": "https://www.webexhibits.org/vangogh/letter/16/449.htm ; https://vangoghletters.org/vg/letters/let558/letter.html"
+  },
+  {
+   "claim": "Same letter: he had made it worse 'by smoking a great deal, which I did the more because then one does not feel an empty stomach so much'",
+   "source": "https://www.webexhibits.org/vangogh/letter/16/449.htm ; https://vangoghletters.org/vg/letters/let558/letter.html"
+  },
+  {
+   "claim": "Same letter: 'more and more of my teeth broke off' (vangoghletters.org: teeth breaking off one after another); he paid a dentist 50 francs",
+   "source": "https://www.webexhibits.org/vangogh/letter/16/449.htm ; https://vangoghletters.org/vg/letters/let558/letter.html"
+  },
+  {
+   "claim": "Wikipedia: likely meant as a kind of joke, probably also a comment on conservative academic practice; interpretations differ (a joke born of boredom, or death treated with humour); painted when van Gogh was in poor health. The narration leaves the question open",
+   "source": "https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette"
+  },
+  {
+   "claim": "Van Gogh was a keen smoker and continued to smoke until his death in 1890",
+   "source": "https://en.wikipedia.org/wiki/Skull_of_a_Skeleton_with_Burning_Cigarette"
+  },
+  {
+   "claim": "The painting belongs to the Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)",
+   "source": "https://artsandculture.google.com/asset/head-of-a-skeleton-with-a-burning-cigarette-vincent-van-gogh/hQGZa2I9Xi6lpA ; https://www.vangoghmuseum.nl/en/collection/s0083V1962"
+  }
+ ],
+ "caption": "Van Gogh painted this skeleton smoking, as a joke.\n\nIn January and February 1886 he was a student at the art academy in Antwerp. Drawing skeletons was a standard exercise there, to learn anatomy; painting them was not part of the lessons. So, somewhere between classes, he gave this one a lit cigarette.\n\nThe joke has a darker side. In a letter to his brother Theo that February, Vincent wrote that since the previous May he had not had a hot dinner more than perhaps six or seven times. He had been \"smoking a great deal\", because then you don't feel an empty stomach so much, and more and more of his teeth were breaking off. A doctor told him he absolutely must take better care of himself.\n\nA few weeks later he left Antwerp for Paris. He kept smoking until his death in 1890.\n\nIt hangs in the Van Gogh Museum, in Amsterdam.\n\n👁️ A joke about death, or about himself?",
+ "caption_short": "Van Gogh painted this skeleton smoking, as a joke. But he was the one smoking to forget his hunger. 👁️",
+ "youtube_title": "Why is this skeleton smoking? Van Gogh's Skull with a Cigarette",
+ "hashtags_instagram": [
+  "#vangogh",
+  "#skullwithcigarette",
+  "#arthistory",
+  "#vangoghmuseum",
+  "#darkart"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#vangogh",
+  "#skeleton",
+  "#darkhistory"
+ ],
+ "hashtags": [
+  "#vangogh",
+  "#vincentvangogh",
+  "#skullwithcigarette",
+  "#vangoghmuseum",
+  "#amsterdam",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#mementomori"
+ ]
+}
