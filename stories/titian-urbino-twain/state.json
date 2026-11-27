@@ -1,6 +1,6 @@
 {
  "status": "approved",
- "updated": "2026-11-27T17:01:02+01:00",
+ "updated": "2026-11-27T17:01:52+01:00",
  "validated_at": "2026-11-25T03:46:39+01:00",
  "duration_s": 29.4,
  "review_message": 619,
@@ -8,7 +8,7 @@
  "approved_at": "2026-11-27T09:53:21+01:00",
  "instagram": {
   "error": "no public URL for the video",
-  "attempts": 1
+  "attempts": 2
  },
  "youtube": {
   "id": "_3ZE7XXdjQY",
