@@ -303,5 +303,13 @@
   "ig_location_id": null,
   "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"AKGBxJjkYNabSLN2pDQcZa4\"}}",
   "ig_location_id_checked": "2026-11-26"
+ },
+ "Kunstmuseum Solothurn, Solothurn": {
+  "lat": 47.2103348,
+  "lon": 7.537471,
+  "lat_checked": "2026-11-27",
+  "ig_location_id": null,
+  "ig_note": "Meta refused the place search: Instagram pages/search: HTTP 400 {\"error\":{\"message\":\"Authorization Error\",\"code\":100,\"type\":\"OAuthException\",\"fbtrace_id\":\"A97yJtNNGuCHkHmjGVFkY8H\"}}",
+  "ig_location_id_checked": "2026-11-27"
  }
 }

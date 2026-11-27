@@ -1,9 +1,21 @@
 {
- "status": "approved",
- "updated": "2026-11-27T09:54:08+01:00",
+ "status": "posted",
+ "updated": "2026-11-27T21:02:16+01:00",
  "validated_at": "2026-11-25T03:46:39+01:00",
  "duration_s": 42.0,
  "review_message": 622,
  "sent_at": "2026-11-27T09:10:54+01:00",
- "approved_at": "2026-11-27T09:54:08+01:00"
+ "approved_at": "2026-11-27T09:54:08+01:00",
+ "instagram": {
+  "id": "17937813120147601",
+  "url": "https://www.instagram.com/reel/DgQfYzXABLu/"
+ },
+ "youtube": {
+  "id": "E9-6tpU99lg",
+  "url": "https://youtube.com/shorts/E9-6tpU99lg"
+ },
+ "tiktok": {
+  "skipped": "turned off in config.json"
+ },
+ "posted_at": "2026-11-27T21:02:16+01:00"
 }
