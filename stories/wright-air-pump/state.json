@@ -1,10 +1,10 @@
 {
- "status": "revising",
- "updated": "2026-11-28T13:58:07+01:00",
+ "status": "sent",
+ "updated": "2026-11-28T14:10:48+01:00",
  "validated_at": "2026-11-26T03:42:07+01:00",
  "duration_s": 27.6,
- "review_message": 638,
- "sent_at": "2026-11-28T09:02:26+01:00",
+ "review_message": 650,
+ "sent_at": "2026-11-28T14:10:48+01:00",
  "feedback": [
   "The music starts like 3 seconds late. Make it start correctly"
  ]

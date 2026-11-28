@@ -194,9 +194,9 @@
     "file": "src/music/m_moonlight1.ogg",
     "commons": "File:Ludwig van Beethoven - sonata no. 14 in c sharp minor 'moonlight', op. 27 no. 2 - i. adagio sostenuto.ogg",
     "from": 0,
-    "start": 0,
+    "start": 4.45,
     "gain_db": 0,
-    "fade_in": 0.4,
+    "fade_in": 0.1,
     "fade_out": 2.5,
     "credit": "Beethoven, Moonlight Sonata, I. Adagio sostenuto · Paul Pitman (Musopen), public domain"
    }
