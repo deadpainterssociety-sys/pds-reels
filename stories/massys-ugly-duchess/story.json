@@ -1,0 +1,420 @@
+{
+ "slug": "massys-ugly-duchess",
+ "formula": "F3",
+ "format": "caption",
+ "silent": true,
+ "hook_type": "hidden",
+ "experiment": {
+  "id": "E3",
+  "arm": "A"
+ },
+ "teaser": "The woman painted to be laughed at",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.95,
+ "tail": 2.2,
+ "style": {
+  "captionWords": 14,
+  "captionChars": 72,
+  "captionTop": 1170,
+  "captionMode": "card"
+ },
+ "images": {
+  "duchess": {
+   "file": "src/duchess.jpg",
+   "commons": "File:Quentin Matsys - A Grotesque old woman.jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "eyes": [
+     0.6,
+     0.37
+    ],
+    "faceup": [
+     0.6,
+     0.5
+    ],
+    "brooch": [
+     0.47,
+     0.17
+    ],
+    "headdress": [
+     0.5,
+     0.24
+    ],
+    "hand": [
+     0.66,
+     0.88
+    ],
+    "bust": [
+     0.55,
+     0.5
+    ],
+    "jaw": [
+     0.66,
+     0.47
+    ],
+    "ear": [
+     0.42,
+     0.45
+    ],
+    "open": [
+     0.6,
+     0.49
+    ],
+    "jawup": [
+     0.64,
+     0.56
+    ],
+    "bud": [
+     0.675,
+     0.8
+    ]
+   }
+  },
+  "tenniel": {
+   "file": "src/tenniel.jpg",
+   "commons": "File:Alice par John Tenniel 21.png",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "duchess": [
+     0.55,
+     0.5
+    ],
+    "face": [
+     0.55,
+     0.47
+    ],
+    "faceup": [
+     0.55,
+     0.62
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "This woman was painted for people to *laugh* at.",
+     0.75,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "headdress",
+   "perf": [
+    [
+     "Look at her headdress, decades out of fashion.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "rose",
+   "perf": [
+    [
+     "Look at the rosebud, held out to win a man.",
+     0.55,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "mock",
+   "perf": [
+    [
+     "It mocked old people dressing as if still young.",
+     0.6,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "face",
+   "perf": [
+    [
+     "Look at her face: some doctors see a real bone disease.",
+     0.6,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "sick",
+   "perf": [
+    [
+     "If they're right, the joke was on a *sick* woman.",
+     0.75,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "alice",
+   "perf": [
+    [
+     "Her face later inspired the Duchess in Alice in Wonderland.",
+     0.6,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the National Gallery, in London.",
+     0.3,
+     0.95
+    ]
+   ]
+  }
+ ],
+ "say": {},
+ "ipa": {},
+ "respell": {},
+ "chirp_say": {},
+ "meta": {
+  "painter": "Quinten Massys",
+  "born": 1466,
+  "died": 1530,
+  "painting": "An Old Woman (The Ugly Duchess)",
+  "year": "about 1513",
+  "museum": "National Gallery",
+  "city": "London",
+  "image": "duchess",
+  "image_credit": "The National Gallery, London, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1530,
+  "note": "Massys d. 1530, Tenniel d. 1914: public domain. Both Commons files tagged public domain."
+ },
+ "music": {
+  "pad": false,
+  "whooshes": false,
+  "music_db": -4,
+  "transpose": 0,
+  "bar": 4.5,
+  "tracks": [
+   {
+    "file": "src/music/m_castle.ogg",
+    "commons": "File:Modest Mussorgsky - pictures at an exhibition - ii. il vecchio castello - andante.ogg",
+    "from": 0,
+    "start": 0,
+    "gain_db": 0,
+    "fade_in": 0.4,
+    "fade_out": 2.5,
+    "credit": "Mussorgsky, Pictures at an Exhibition: The Old Castle · Musopen, public domain"
+   }
+  ]
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "duchess",
+   "kind": "image",
+   "from": "open@2.5",
+   "to": "open@2.35"
+  },
+  {
+   "at": "hook.7-0.05",
+   "img": "duchess",
+   "from": "center@1.0",
+   "to": "center@1.05",
+   "dolly": [
+    0,
+    0.1
+   ],
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "headdress-0.12",
+   "img": "duchess",
+   "kind": "image",
+   "from": "headdress@1.8",
+   "to": "headdress@1.95"
+  },
+  {
+   "at": "rose-0.12",
+   "img": "duchess",
+   "kind": "image",
+   "from": "hand@3.0",
+   "to": "hand@3.1"
+  },
+  {
+   "at": "mock-0.12",
+   "img": "duchess",
+   "kind": "image",
+   "from": "center@0.8",
+   "to": "center@0.84",
+   "frame": true
+  },
+  {
+   "at": "face-0.12",
+   "img": "duchess",
+   "kind": "image",
+   "from": "jawup@2.2",
+   "to": "jawup@2.3"
+  },
+  {
+   "at": "sick-0.12",
+   "img": "duchess",
+   "from": "faceup@2.5",
+   "to": "faceup@2.6",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "alice-0.12",
+   "img": "tenniel",
+   "kind": "image",
+   "from": "faceup@1.3",
+   "to": "faceup@1.38"
+  },
+  {
+   "at": "ending-0.12",
+   "img": "duchess",
+   "kind": "image",
+   "from": "faceup@1.6",
+   "to": "faceup@1.7",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "headdress",
+   "to": "rose-0.12",
+   "text": "QUINTEN MASSYS · ABOUT 1513"
+  },
+  {
+   "type": "ring",
+   "at": "headdress.4",
+   "to": "headdress$+0.3",
+   "img": "duchess",
+   "point": "brooch",
+   "rx": 260,
+   "ry": 200,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "rose.3",
+   "to": "rose$+0.3",
+   "img": "duchess",
+   "point": "bud",
+   "rx": 150,
+   "ry": 150,
+   "rot": 0
+  },
+  {
+   "type": "ring",
+   "at": "face.3",
+   "to": "face$+0.3",
+   "img": "duchess",
+   "point": "jaw",
+   "rx": 230,
+   "ry": 260,
+   "rot": 0
+  },
+  {
+   "type": "label",
+   "from": "alice",
+   "to": "ending-0.12",
+   "text": "JOHN TENNIEL · ALICE · 1865"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "NATIONAL GALLERY · LONDON"
+  }
+ ],
+ "nocap": [
+  [
+   "ending$+0.5",
+   "ending$+4"
+  ]
+ ],
+ "sfx": [],
+ "cover": {
+  "question": "Why did they <i>laugh</i> at her?",
+  "name": "QUINTEN MASSYS",
+  "work": "An Old Woman (The Ugly Duchess), about 1513",
+  "focus": [
+   0.6,
+   0.4
+  ],
+  "span": 0.5,
+  "answered_by": "Massys painted her as a satire: an old woman in the fashions of her youth, a low bodice and a rosebud held out to a man, mocking old people who dress and flirt as if still young (National Gallery)"
+ },
+ "facts": [
+  {
+   "claim": "Quinten Massys painted An Old Woman ('The Ugly Duchess') about 1513, oil on oak; it is in the National Gallery, London",
+   "source": "https://www.nationalgallery.org.uk/paintings/quinten-massys-an-old-woman-the-ugly-duchess ; https://en.wikipedia.org/wiki/The_Ugly_Duchess"
+  },
+  {
+   "claim": "It is a satirical portrait: with its pendant, An Old Man, it mocks old people who dress and behave as if they were still young",
+   "source": "https://www.nationalgallery.org.uk/paintings/quinten-massys-an-old-woman-the-ugly-duchess"
+  },
+  {
+   "claim": "Her horned headdress and dress were the fashion of her youth, decades out of date by about 1513",
+   "source": "https://www.nationalgallery.org.uk/paintings/quinten-massys-an-old-woman-the-ugly-duchess ; https://en.wikipedia.org/wiki/The_Ugly_Duchess"
+  },
+  {
+   "claim": "She holds a red rosebud; in the pendant portrait she offers it to the old man, trying to win (seduce) him; the bud signalled she was seeking a suitor",
+   "source": "https://www.nationalgallery.org.uk/paintings/quinten-massys-an-old-woman-the-ugly-duchess ; https://en.wikipedia.org/wiki/The_Ugly_Duchess"
+  },
+  {
+   "claim": "Some doctors have suggested she had Paget's disease of bone (J. Dequeker, BMJ 1989; surgeon Michael Baum, 2008); the National Gallery thinks a folkloric, fictional figure more likely, so the narration says 'if they're right'",
+   "source": "https://en.wikipedia.org/wiki/The_Ugly_Duchess ; https://www.historynewsnetwork.org/article/55523 ; https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/the-ugly-duchess-beauty-and-satire-in-the-renaissance"
+  },
+  {
+   "claim": "The painting (or a version of it) inspired John Tenniel's Duchess in Lewis Carroll's Alice's Adventures in Wonderland (1865)",
+   "source": "https://www.nationalgallery.org.uk/paintings/quinten-massys-an-old-woman-the-ugly-duchess ; https://en.wikipedia.org/wiki/The_Ugly_Duchess ; https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/the-ugly-duchess-beauty-and-satire-in-the-renaissance"
+  }
+ ],
+ "caption": "This woman was painted for people to laugh at.\n\nQuinten Massys painted her in Antwerp around 1513. Look at her horned headdress and her dress: the fashion of her youth, decades out of date. Look at her low, tight bodice, a scandal at her age, and the red rosebud in her hand. She was half of a pair: in the matching portrait of an old man, she holds the bud out to him, trying to win him over. The pair mocked old people who dressed and flirted as if they were still young.\n\nNow look at her face. In 1989 a doctor writing in the British Medical Journal suggested she had Paget's disease, a real condition that thickens and deforms the bones; surgeon Michael Baum made a similar case in 2008. The National Gallery thinks she is more likely a figure from carnival folklore. But if the doctors are right, the joke was on a sick woman.\n\nCenturies later, her face inspired John Tenniel's Duchess in Alice in Wonderland (1865).\n\nIt hangs in the National Gallery, in London.\n\n👁️ Would you have laughed?",
+ "caption_short": "This woman was painted for people to laugh at. Then doctors looked at her face. 👁️",
+ "youtube_title": "Why did they laugh at her? The Ugly Duchess by Quinten Massys",
+ "hashtags_instagram": [
+  "#quintenmassys",
+  "#theuglyduchess",
+  "#arthistory",
+  "#nationalgallery",
+  "#aliceinwonderland"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#quintenmassys",
+  "#theuglyduchess",
+  "#aliceinwonderland"
+ ],
+ "hashtags": [
+  "#quintenmassys",
+  "#theuglyduchess",
+  "#uglyduchess",
+  "#nationalgallery",
+  "#london",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#aliceinwonderland",
+  "#renaissance"
+ ]
+}

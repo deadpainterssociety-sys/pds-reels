@@ -1,0 +1,625 @@
+{
+ "slug": "durer-self-christ",
+ "formula": "F4",
+ "format": "series",
+ "hook_type": "sacred-strange",
+ "experiment": {
+  "id": "E3",
+  "arm": "B"
+ },
+ "teaser": "The painter who posed as Christ",
+ "voice": "af_heart",
+ "lang": "en-us",
+ "speed": 0.92,
+ "tail": 2.2,
+ "images": {
+  "p1500": {
+   "file": "src/p1500.jpg",
+   "commons": "File:Albrecht Dürer - 1500 self-portrait (High resolution and detail).jpg",
+   "depth": true,
+   "long": 3840,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "eyes": [
+     0.5,
+     0.25
+    ],
+    "faceup": [
+     0.5,
+     0.33
+    ],
+    "bust": [
+     0.5,
+     0.4
+    ],
+    "hand": [
+     0.47,
+     0.86
+    ],
+    "handup": [
+     0.47,
+     0.82
+    ],
+    "inscription": [
+     0.85,
+     0.27
+    ]
+   }
+  },
+  "p1484": {
+   "file": "src/p1484.jpg",
+   "commons": "File:Durer-self-portrait-at-the-age-of-thirteen.jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.55,
+     0.3
+    ],
+    "faceup": [
+     0.55,
+     0.4
+    ]
+   },
+   "frame": true
+  },
+  "p1491": {
+   "file": "src/p1491.jpg",
+   "commons": "File:Selbstbildnis mit Binde (Duerer).jpg",
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.6,
+     0.55
+    ],
+    "faceup": [
+     0.6,
+     0.62
+    ]
+   }
+  },
+  "p1493": {
+   "file": "src/p1493.jpg",
+   "commons": "File:Albrecht-self.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.48,
+     0.27
+    ],
+    "faceup": [
+     0.48,
+     0.36
+    ],
+    "thistle": [
+     0.78,
+     0.8
+    ],
+    "thistleup": [
+     0.76,
+     0.86
+    ]
+   }
+  },
+  "p1498": {
+   "file": "src/p1498.jpg",
+   "commons": "File:Dürer, Albrecht - Self-Portrait (Madrid) - 1498.jpg",
+   "long": 3000,
+   "points": {
+    "center": [
+     0.5,
+     0.5
+    ],
+    "face": [
+     0.5,
+     0.25
+    ],
+    "faceup": [
+     0.5,
+     0.35
+    ],
+    "gloves": [
+     0.8,
+     0.93
+    ],
+    "glovesup": [
+     0.75,
+     0.97
+    ],
+    "dress": [
+     0.55,
+     0.62
+    ]
+   }
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "perf": [
+    [
+     "These self-portraits show a goldsmith's son",
+     0.1,
+     0.96
+    ],
+    [
+     "turning himself into *Christ.*",
+     0.4,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "y1484",
+   "perf": [
+    [
+     "1484.",
+     0.15,
+     0.97
+    ],
+    [
+     "A boy draws himself in a mirror.",
+     0.2,
+     0.97
+    ],
+    [
+     "Later he writes: when I was still a *child.*",
+     0.4,
+     0.92
+    ]
+   ]
+  },
+  {
+   "id": "y1491",
+   "perf": [
+    [
+     "1491.",
+     0.18,
+     0.96
+    ],
+    [
+     "A young journeyman,",
+     0.1,
+     0.96
+    ],
+    [
+     "his hand pressed to his face.",
+     0.4,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "y1493",
+   "perf": [
+    [
+     "1493.",
+     0.18,
+     0.96
+    ],
+    [
+     "At 22, holding a thistle,",
+     0.15,
+     0.96
+    ],
+    [
+     "probably for the bride waiting at home.",
+     0.4,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "y1498",
+   "perf": [
+    [
+     "1498.",
+     0.18,
+     0.96
+    ],
+    [
+     "Back from Italy,",
+     0.1,
+     0.96
+    ],
+    [
+     "in silk gloves, dressed like a *gentleman.*",
+     0.4,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "y1500",
+   "perf": [
+    [
+     "1500.",
+     0.15,
+     0.97
+    ],
+    [
+     "He faces us, his hand raised,",
+     0.1,
+     0.96
+    ],
+    [
+     "his face like *Christ's.*",
+     0.6,
+     0.88
+    ]
+   ]
+  },
+  {
+   "id": "letter",
+   "perf": [
+    [
+     "From Venice he wrote:",
+     0.15,
+     0.96
+    ],
+    [
+     "there, he was a gentleman.",
+     0.2,
+     0.96
+    ],
+    [
+     "At home, a *parasite.*",
+     0.6,
+     0.86
+    ]
+   ]
+  },
+  {
+   "id": "ending",
+   "perf": [
+    [
+     "It hangs in the Alte Pinakothek, in Munich.",
+     0.3,
+     0.96
+    ]
+   ]
+  }
+ ],
+ "say": {
+  "1484": "fourteen eighty-four",
+  "1491": "fourteen ninety-one",
+  "1493": "fourteen ninety-three",
+  "1498": "fourteen ninety-eight",
+  "1500": "fifteen hundred",
+  "22": "twenty-two",
+  "Alte": "Alta",
+  "Pinakothek": "Pinnacotake"
+ },
+ "ipa": {},
+ "respell": {
+  "Alte": "AHL-tuh",
+  "Pinakothek": "pin-ah-ko-TAKE"
+ },
+ "chirp_say": {
+  "Alte": "Alte",
+  "Pinakothek": "Pinakothek"
+ },
+ "meta": {
+  "painter": "Albrecht Dürer",
+  "born": 1471,
+  "died": 1528,
+  "painting": "Self-Portrait at Twenty-Eight (Self-Portrait in a Fur Coat)",
+  "year": "1500",
+  "museum": "Alte Pinakothek",
+  "city": "Munich",
+  "image": "p1500",
+  "image_credit": "Alte Pinakothek, Munich, via Wikimedia Commons (public domain)"
+ },
+ "rights": {
+  "creator_died": 1528,
+  "note": "Dürer d. 1528: public domain. All five Commons files tagged public domain."
+ },
+ "music": {
+  "transpose": 2,
+  "bar": 4.5,
+  "chords": [
+   [
+    45,
+    52,
+    57
+   ],
+   [
+    41,
+    48,
+    57
+   ],
+   [
+    43,
+    50,
+    59
+   ],
+   [
+    40,
+    47,
+    56
+   ]
+  ],
+  "sections": {
+   "cold": [
+    "y1484-0.2",
+    "y1498$+0.2"
+   ],
+   "choir": [
+    "y1500.6-0.1",
+    "ending$+0.8"
+   ]
+  },
+  "heartbeat": [
+   0.3,
+   "hook.6-0.15"
+  ]
+ },
+ "shots": [
+  {
+   "at": 0,
+   "img": "p1500",
+   "kind": "image",
+   "from": "faceup@2.4",
+   "to": "faceup@2.25"
+  },
+  {
+   "at": "hook.6-0.05",
+   "img": "p1500",
+   "from": "bust@1.0",
+   "to": "bust@1.05",
+   "dolly": [
+    0,
+    0.12
+   ],
+   "sway": 0.008,
+   "hit": "big"
+  },
+  {
+   "at": "y1484-0.1",
+   "img": "p1484",
+   "kind": "image",
+   "from": "center@0.8",
+   "to": "center@0.84",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "y1484.8-0.05",
+   "img": "p1484",
+   "kind": "image",
+   "from": "faceup@0.95",
+   "to": "faceup@1.0",
+   "frame": true,
+   "gray": 1
+  },
+  {
+   "at": "y1491-0.1",
+   "img": "p1491",
+   "kind": "image",
+   "from": "faceup@1.6",
+   "to": "faceup@1.7",
+   "gray": 1
+  },
+  {
+   "at": "y1493-0.1",
+   "img": "p1493",
+   "kind": "image",
+   "from": "faceup@1.7",
+   "to": "faceup@1.85"
+  },
+  {
+   "at": "y1493.3-0.05",
+   "img": "p1493",
+   "kind": "image",
+   "from": "thistleup@2.2",
+   "to": "thistleup@2.35"
+  },
+  {
+   "at": "y1498-0.1",
+   "img": "p1498",
+   "kind": "image",
+   "from": "faceup@1.6",
+   "to": "faceup@1.75"
+  },
+  {
+   "at": "y1498.4-0.05",
+   "img": "p1498",
+   "kind": "image",
+   "from": "dress@1.15",
+   "to": "dress@1.22"
+  },
+  {
+   "at": "y1500-0.1",
+   "img": "p1500",
+   "kind": "image",
+   "from": "center@1.0",
+   "to": "center@1.05"
+  },
+  {
+   "at": "y1500.4-0.05",
+   "img": "p1500",
+   "kind": "image",
+   "from": "handup@2.0",
+   "to": "handup@2.15"
+  },
+  {
+   "at": "y1500.6-0.05",
+   "img": "p1500",
+   "from": "faceup@1.9",
+   "to": "faceup@2.0",
+   "sway": 0.006,
+   "hit": "big"
+  },
+  {
+   "at": "letter-0.1",
+   "img": "p1500",
+   "kind": "image",
+   "from": "eyes@2.6",
+   "to": "eyes@2.75",
+   "gray": 1
+  },
+  {
+   "at": "ending-0.1",
+   "img": "p1500",
+   "kind": "image",
+   "from": "faceup@1.5",
+   "to": "faceup@1.6",
+   "sway": 0.006
+  }
+ ],
+ "overlays": [
+  {
+   "type": "label",
+   "from": "y1484",
+   "to": "y1491-0.1",
+   "text": "1484 · ALBERTINA, VIENNA"
+  },
+  {
+   "type": "label",
+   "from": "y1491",
+   "to": "y1493-0.1",
+   "text": "C. 1491 · ERLANGEN"
+  },
+  {
+   "type": "label",
+   "from": "y1493",
+   "to": "y1498-0.1",
+   "text": "1493 · LOUVRE, PARIS"
+  },
+  {
+   "type": "label",
+   "from": "y1498",
+   "to": "y1500-0.1",
+   "text": "1498 · PRADO, MADRID"
+  },
+  {
+   "type": "label",
+   "from": "y1500",
+   "to": "letter-0.1",
+   "text": "1500 · ALTE PINAKOTHEK"
+  },
+  {
+   "type": "label",
+   "from": "letter",
+   "to": "ending-0.1",
+   "text": "VENICE · 1506 · LETTER"
+  },
+  {
+   "type": "pin",
+   "from": "ending.1",
+   "to": "ending$+0.5",
+   "text": "ALTE PINAKOTHEK · MUNICH"
+  }
+ ],
+ "sfx": [
+  {
+   "at": "y1484",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1491",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1493",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1498",
+   "fx": "tick",
+   "gain": 0.35
+  },
+  {
+   "at": "y1500",
+   "fx": "tick",
+   "gain": 0.35
+  }
+ ],
+ "cover": {
+  "question": "Is this <i>Christ</i>, or him?",
+  "name": "ALBRECHT DÜRER",
+  "work": "Self-Portrait, 1500",
+  "focus": [
+   0.5,
+   0.27
+  ],
+  "span": 0.45,
+  "answered_by": "It is Dürer himself at 28, painted frontally with a blessing-like hand, in the way contemporary images showed Christ (Wikipedia; Alte Pinakothek)"
+ },
+ "facts": [
+  {
+   "claim": "Dürer's father, Albrecht Dürer the Elder, was a goldsmith in Nuremberg",
+   "source": "https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer"
+  },
+  {
+   "claim": "In 1484, as a boy of 12 or 13, Dürer drew himself in silverpoint from a mirror (Albertina, Vienna); the inscription added later reads 'This I drew myself from a mirror in the year 1484, when I was still a child'",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_at_the_Age_of_13 ; https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer"
+  },
+  {
+   "claim": "Self-portrait with a Bandage, pen drawing, 1491–92, University Library Erlangen-Nuremberg: his hand pressed to his face; after his apprenticeship with Wolgemut (1486–90) Dürer travelled as a journeyman from 1490",
+   "source": "https://commons.wikimedia.org/wiki/File:Selbstbildnis_mit_Binde_(Duerer).jpg ; https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer"
+  },
+  {
+   "claim": "1493: Portrait of the Artist Holding a Thistle (Louvre), his first painted self-portrait, probably sent to his fiancée Agnes Frey in Nuremberg; the plant (eryngium) is often read as a sign of fidelity; he married her in July 1494",
+   "source": "https://en.wikipedia.org/wiki/Portrait_of_the_Artist_Holding_a_Thistle ; https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer"
+  },
+  {
+   "claim": "1498: Self-portrait at 26 (Prado), painted after his first trip to Italy, in extravagant Italian-style clothes and silk gloves, raising himself to the social position he thought an artist deserved",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Madrid)"
+  },
+  {
+   "claim": "1500: Self-Portrait at Twenty-Eight (Alte Pinakothek, Munich): frontal, symmetrical, the hand as if blessing; it resembles contemporary depictions of Christ, read as 'stunning arrogance or blasphemy'; a frontal pose was exceptional for a secular portrait",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Munich)"
+  },
+  {
+   "claim": "In a letter from Venice (1506, to Willibald Pirckheimer) Dürer wrote that there he was a gentleman, at home only a parasite",
+   "source": "https://en.wikipedia.org/wiki/Self-Portrait_(D%C3%BCrer,_Madrid) ; https://en.wikipedia.org/wiki/Albrecht_D%C3%BCrer"
+  }
+ ],
+ "caption": "These self-portraits show a goldsmith's son turning himself into Christ.\n\n1484: still a boy, Albrecht Dürer draws himself in silverpoint from a mirror. Decades later he adds a note: \"This I drew myself from a mirror in the year 1484, when I was still a child.\"\nAbout 1491: a young journeyman, his hand pressed to his face.\n1493: at 22 he paints himself holding a thistle, probably for Agnes Frey, the bride waiting for him in Nuremberg.\n1498: back from his first trip to Italy, he wears silk gloves and Italian finery, dressed like a gentleman.\n1500: at 28 he faces us head-on, symmetrical, his hand raised as if in blessing. No secular portrait looked like this: it was how painters showed Christ. Arrogance or blasphemy? Historians still argue.\n\nFrom Venice in 1506 he wrote to his friend Pirckheimer that there he was a gentleman, at home only a parasite.\n\nIt hangs in the Alte Pinakothek, in Munich.\n\n👁️ Which one would you hang on your wall?",
+ "caption_short": "These self-portraits show a goldsmith's son turning himself into Christ. Dürer, 1484 → 1500. 👁️",
+ "youtube_title": "Is this Christ, or him? Albrecht Dürer's self-portraits, 1484–1500",
+ "hashtags_instagram": [
+  "#albrechtdurer",
+  "#selfportrait",
+  "#arthistory",
+  "#altepinakothek",
+  "#renaissance"
+ ],
+ "hashtags_tiktok": [
+  "#arthistory",
+  "#arttok",
+  "#albrechtdurer",
+  "#selfportrait",
+  "#historytok"
+ ],
+ "hashtags": [
+  "#albrechtdurer",
+  "#durer",
+  "#selfportrait",
+  "#altepinakothek",
+  "#munich",
+  "#arthistory",
+  "#painting",
+  "#museum",
+  "#artstory",
+  "#deadpainterssociety",
+  "#renaissance",
+  "#christ"
+ ]
+}
