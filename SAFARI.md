@@ -222,3 +222,29 @@ week. Our formulas on YouTube (last known): F3 n=5, 1,542 views at 24 h (F1 588)
 caption format breaks out for us too (Parmigianino "look closer" 3,807 at 72 h, 3.8x). F2 n=3, VVSA 61.6 %, 2.6 subs/1k,
 but Hunt (a less-known painting) 252 at 24 h, which supports the icon + turn proposal. F4 n=4, 90 % viewed but VVSA
 48.1 % and 0.9 subs/1k. Proposed to Gigi in the 26 Nov brief: F2 "icon + turn" (P1).
+
+## 2026-11-28 — long-video case study: Etternitum (Gigi's find, watched in the built-in browser)
+
+Spanish channel @Etternitum, started 29 Oct 2026 (our age), 2.34k subscribers, 50 uploads = 41 Shorts (mostly 1–3k views,
+like ours) + **9 long videos, all since 22 Nov, one a day**. Two of the nine broke out:
+
+| Long video (English title shown / original) | Length | Views | Age |
+|---|---|---|---|
+| The Devil Everyone Wants to Follow / *Si el Diablo Existe, Tiene Esta Cara* (Stasiak, *Allegory of Satan*, c. 1900, Kraków) | 5:43 | 190,162 | 35 h |
+| The Image of God the Pope Banned | 5:56 | 123k | 6 d |
+| The Oldest Face of Jesus Has Two Faces | 6:50 | 17k | 1 d |
+| No One Painted the End of the World Like Him (John Martin) | 7:54 | 12k | 3 d |
+| This Painting Is Still Terrifying 410 Years Later | 6:44 | 9.9k | 5 d |
+| How Did We Miss This for 440 Years? | 8:33 | 8.2k | 2 d |
+| Once You See It, You Can NEVER Unsee It | 7:21 | 3.4k | 4 d |
+| The Most Brutal Painting of the Dutch Golden Age | 6:54 | 2.9k | 2 d |
+
+What the devil video is: a tight close-up of the devil's smiling, friendly face (frame 1 and the whole thumbnail, NO text),
+then skulls and coins at 4 s, slow pans over one painting, the painter's self-portrait at 1:20, chapters every ~35 s,
+plain narration. Production is simpler than ours. What it has that we don't:
+1. **Auto-dubbing**: audio tracks Spanish (original), English, Portuguese (BR), Arabic, plus translated titles. One channel,
+   four language markets. Our Bosch video has no dubbed track.
+2. **Topic**: the devil, God, Jesus, the apocalypse: sacred-strange and taboo subjects with one face that carries it.
+3. **Packaging**: the title and the face are one idea ("If the devil exists, he has this face" + a smiling young man).
+4. **Length 6–8 min** and **one long video a day** (9 tries in 7 days, 2 hits).
+Their median long video (~9k views) is ~75× ours (~120).
