@@ -12,6 +12,7 @@ on:
   schedule:
     - cron: "47 19 * * 6"     # Saturday 20:47 Madrid (winter; 21:47 in summer)
     - cron: "47 19 * * 0"     # Sunday 20:47
+    - cron: "47 19 * * 3"     # Wednesday 20:47 (third weekly film since 28 Nov 2026)
   workflow_dispatch:
     inputs:
       date: { description: "slot to fill (YYYY-MM-DD, a Monday/Thursday); empty = the next empty slot", required: false, default: "" }

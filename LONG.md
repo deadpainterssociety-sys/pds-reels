@@ -6,35 +6,44 @@ task**; CLAUDE.md's rules on what you may touch, sources and honesty still apply
 and the whole last section, *Learned from feedback*: Gigi's corrections override everything).
 
 **The reference is `stories/repin-cossacks-long/`** (Gigi, 21 Nov 2026: "10/10 video. THIS IS THE QUALITY I EXPECT").
-Open its `script.py`, `plan.py`, `visuals.py`, `facts.json` first and copy their structure, density and care. Your story
+Open its `script.py`, `plan.py`, `visuals.py`, `facts.json` first and copy their structure, density and care. It runs 9:20; ours are now 6–8 minutes, so keep its density and cut a chapter or two, never the care. Your story
 lives in `stories/<painter-keyword>-long/` with the same four files; `plan.py` writes `story.json`.
 
-Your task names the slot: the date it goes public (Monday or Thursday, 19:00 Madrid). The workflow, not you, voices the
+Your task names the slot: the date it goes public (Monday, Thursday or Saturday, 19:00 Madrid; three a week since 28 Nov 2026). The workflow, not you, voices the
 final narration (Chirp 3 HD "Enceladus"), renders, uploads it as private scheduled, and sends Gigi the preview on
-Telegram. You never publish, never call YouTube/Telegram, never read secrets. Budget: about 2.5–3.5 hours of work.
+Telegram. You never publish, never call YouTube/Telegram, never read secrets. Budget: about 2–2.5 hours of work.
 
 ## 1. Pick the story
+- **Taboo is king (Gigi, 28 Nov 2026).** Every long video is a painting whose thumbnail you simply HAVE to click:
+  religious taboo (Satan, a banned image of God, a scandalous Madonna), sexual taboo (who really posed, an affair, a
+  painting censored for desire; framed safely, faces not bodies), political taboo (banned, burned, a ruler insulted),
+  death, madness, the occult. A pleasant masterpiece with a nice backstory is not a long video any more.
+- **Proven demand beats novelty.** Etternitum's two hits (190k, 123k in their first week of long videos) were remakes of
+  topics Inspiraggio had taken past 800k (SAFARI.md, 28 Nov). Before you commit, search YouTube for the painting
+  (WebSearch `site:youtube.com <painting> <painter>`): a big video on it (≥ 300k) proves people want it, so make it with
+  a better title, thumbnail and our own research, never their script or angle. About two in three long videos should be
+  proven topics; one in three a taboo discovery nobody has covered yet. Name what you found in notes.txt.
 - `STORY_QUEUE.md` → "Long videos (to plan)": take the row whose date is your slot; else the first row without a date
   or "MADE". Hard filters as for Shorts (painter died before 1956, visitable museum, a public-domain image ≥ 3000 px).
-  If it fails, take the next row. Mark the row `<date> — MADE (<slug>)`, and keep at least 3 unmade rows in that table
-  (add new ones from the best-performing Shorts and SAFARI.md; one line each with the angle).
+  If it fails, or it is not taboo, take the next row. Mark the row `<date> — MADE (<slug>)`, and keep at least 3 unmade rows in that table
+  (add new taboo ones from the best-performing Shorts, SAFARI.md and Inspiraggio's most popular videos; one line each with the angle).
 - One throughline with a turn in the middle and a payoff that answers the title. The long version of a Short we posted
   is good (the Short then funnels to it); a fresh story is fine too.
 
 ## 2. Research (this protects the channel)
 - Museum page first, then Wikipedia (read via wikiwand.com if wikipedia.org refuses) **and its cited sources**, then
   scholars, catalogues, major newspapers; Russian/Ukrainian/Spanish/… sources are fine (translate yourself).
-- `facts.json`: 30–40 entries `{"claim", "source": "url ; url"}`, one per narrated claim; two sources wherever they
+- `facts.json`: 20–30 entries `{"claim", "source": "url ; url"}`, one per narrated claim; two sources wherever they
   differ. Numbers, dates, names, quotes exactly as the source has them. Legends and anecdotes are narrated as such
   ("the story goes", "he supposedly said"). Where sources conflict on a date, narrate the season or the year only.
 - Quotes on screen: the words of a cited source (for a translation, a translation a source prints), under ~20 words.
 - Current events (wars, lawsuits, thefts): state facts plainly, name who did what as the sources do, no opinions.
 
 ## 3. Script (`script.py`: `L = [(id, [[text, pause_s, speed], …]), …]`)
-- **1,250–1,450 words** (≈ 9–10.5 min with Enceladus), plain spoken English, short phrases, no clichés, no jokes at the end.
-- **Cold open ≤ 35 s**: line 1 is ONE claim about the painting on screen, ≤ 10 words, no date ("These men are laughing at
+- **850–1,100 words** (≈ 6–8 min with Enceladus; Gigi, 28 Nov 2026: shorter until we monetize), plain spoken English, short phrases, no clichés, no jokes at the end.
+- **Cold open ≤ 25 s**: line 1 is ONE claim about the painting on screen, ≤ 10 words, no date ("These men are laughing at
   an emperor."). Then the stakes, the human angle, the promise. (Bosch lost 57 % of viewers in its first 25 s.)
-- 6–7 chapters, each a step of the story with its own small turn; time order; a "Look closely" moment on the painting;
+- 4–6 chapters, each a step of the story with its own small turn; time order; a "Look closely" moment on the painting;
   the twist about two thirds in; the last chapter answers the title and the cold open, then ends with a reflective
   line and **exactly**: "It hangs in the <Museum>, in <City>."
 - Hedges where the facts are legends. Dates said normally; years in `say` ("1891": "eighteen ninety-one").

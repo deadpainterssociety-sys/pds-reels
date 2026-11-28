@@ -21,14 +21,14 @@ def check(slug, light=False):
     lines = st.get("lines", [])
     texts = [" ".join(x[0] for x in l["perf"]) for l in lines]
     n = sum(words(t) for t in texts)
-    if not 1150 <= n <= 1600: p.append(f"{n} spoken words (want 1,250–1,450)")
+    if not 800 <= n <= 1200: p.append(f"{n} spoken words (want 850–1,100)")
     if texts:
         first = re.sub(r"[*_]", "", texts[0])
         if words(first) > 12: p.append(f"line 1 has {words(first)} words (≤ 10: one claim about the painting)")
         if re.search(r"\b1\d{3}\b|\b20\d\d\b", first): p.append("line 1 has a date: dates go later")
         if not re.fullmatch(r"It hangs in the .+, in .+\.", texts[-1].strip()): p.append('last line must be exactly "It hangs in the <Museum>, in <City>."')
     facts = st.get("facts", [])
-    if len(facts) < 25: p.append(f"{len(facts)} facts (want 30–40, one per narrated claim)")
+    if len(facts) < 18: p.append(f"{len(facts)} facts (want 20–30, one per narrated claim)")
     if any(not f.get("source", "").startswith("http") for f in facts): p.append("a fact without a source URL")
     imgs = st.get("images", {})
     main = st.get("meta", {}).get("image")
@@ -58,7 +58,7 @@ def check(slug, light=False):
     ov = st.get("overlays", [])
     if any(o.get("type") == "year" for o in ov): p.append("big date cards (year overlays) are not allowed in long videos")
     ch = [o for o in ov if o.get("type") == "chapter"]
-    if not 5 <= len(ch) <= 8: p.append(f"{len(ch)} chapter cards (want 6–7)")
+    if not 4 <= len(ch) <= 7: p.append(f"{len(ch)} chapter cards (want 4–6)")
     names = {o.get("text") for o in ch}
     if yt.get("outro_chapter") in names: p.append("outro_chapter repeats a chapter name")
     if not any(o.get("type") == "pin" for o in ov): p.append("no museum pin on the ending")

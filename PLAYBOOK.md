@@ -114,7 +114,7 @@ sort cleanly by the promise the title makes. Every story declares one `hook_type
 
 **Made by themselves since 21 Nov 2026** (workflow `longform.yml`, Saturday and Sunday 20:47 Madrid, right after Gigi's
 weekly Claude limit renews): Claude follows `LONG.md` (reference: `stories/repin-cossacks-long`, Gigi's "10/10"), the
-workflow voices, renders, uploads as private scheduled for the slot (Mon/Thu 19:00) and sends Gigi the preview.
+workflow voices, renders, uploads as private scheduled for the slot (Mon/Thu/Sat 19:00) and sends Gigi the preview.
 
 From the YouTube market study (6 Nov 2026): the winners tell one dark or astonishing painting story in 8–12 minutes,
 every week, with a text-free close-up thumbnail and a short statement title; the decliners got longer and rarer.
@@ -187,4 +187,5 @@ Rules Gigi added after watching reels or reading the analytics. They override an
 - (23 Nov 2026) Our signature emoji is 👁️, never a heart: captions, pinned comments, posts, everything (the old 🖤 is retired; no ❤️/🖤/🤍 either).
 - (2026-11-26, from data · brief 2026-11-26 P2) F4 hook (26 Nov 2026): line 1 of a series is a claim about the works on screen, not an instruction. Write "These self-portraits show his mind coming apart." or "These bridges were painted as his eyes failed.", never "Watch his…" or "Watch Monet's…". Everywhere else hooks stay as they are; "Look at …" beats later in a reel are fine.
 - (28 Nov 2026) Music starts with the video: a recorded track (`music.tracks`) often opens with seconds of silence. Measure it (`ffmpeg -i <track> -t 10 -af silencedetect=n=-50dB:d=0.2 -f null -`) and set the track's `"start"` to just before the first note (silence_end − 0.05 s), with a short `fade_in` (≤ 0.1 s), so the music is audible from 0 s.
+- (28 Nov 2026) Taboo is king, for Shorts and long videos: pick paintings whose thumbnail you simply HAVE to click (religious, sexual, political taboo, death, madness, the occult), framed safely. Proven demand beats novelty: a painting that already took another channel past 300k is a good pick with our own angle and research (LONG.md step 1). Long videos are 6–8 minutes and three a week (Mon/Thu/Sat 19:00) until we monetize.
 <!-- new rules go here -->
