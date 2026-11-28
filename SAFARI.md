@@ -247,4 +247,4 @@ plain narration. Production is simpler than ours. What it has that we don't:
 2. **Topic**: the devil, God, Jesus, the apocalypse: sacred-strange and taboo subjects with one face that carries it.
 3. **Packaging**: the title and the face are one idea ("If the devil exists, he has this face" + a smiling young man).
 4. **Length 6–8 min** and **one long video a day** (9 tries in 7 days, 2 hits).
-Their median long video (~9k views) is ~75× ours (~120).
+Their median long video (~10k views) is ~80× ours (~120).
